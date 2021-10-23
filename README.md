@@ -1,6 +1,6 @@
 # CollAction website
 
-[![Powered by Vercel](https://raw.githubusercontent.com/CollActionteam/website/main/public/powered-by-vercel.svg](https://vercel.com?utm_source=powered-by-vercel)
+[![Powered by Vercel](https://raw.githubusercontent.com/CollActionteam/website/main/public/powered-by-vercel.svg)](https://vercel.com?utm_source=powered-by-vercel)
 
 This repository contains the source code and assets required to build the [CollAction website](https://www.collaction.org/).
 
