@@ -4,7 +4,15 @@ This repository contains the source code and assets required to build the [CollA
 
 ## Getting Started
 
-First, run the development server:
+First, install dependencies by running:
+
+```bash
+npm install
+# or
+yarn
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
