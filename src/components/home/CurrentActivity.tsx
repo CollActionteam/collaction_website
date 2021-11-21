@@ -11,7 +11,7 @@ export default function CurrentActicity() {
           <p>
             Together with a team of developers from all over the world we’re
             building an app for iOS and Android. We aim to test the alpha
-            version before October 2021. Would you like to receive updates on
+            version in December 2021. Would you like to receive updates on
             our progress and be one of the first to use our app? <br />
             <br />
             Join our{" "}
@@ -38,7 +38,7 @@ export default function CurrentActicity() {
         <div className="px-4 pt-12">
           <h1 className="text-collaction text-2xl font-medium">History</h1>
           <p>
-            CollAction was founded in 2015 by Ron van den Akker and Spencer
+            CollAction was founded in 2016 by Ron van den Akker and Spencer
             Heijnen. After great successes with fashion-related crowdactions,
             their team decided to focus solely on{" "}
             <a className="text-collaction" href="https://slowfashion.global/">
