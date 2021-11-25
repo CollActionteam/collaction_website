@@ -1,4 +1,4 @@
-# CollAction website
+# CollAction Website
 
 [![Powered by Vercel](https://raw.githubusercontent.com/CollActionteam/website/main/public/powered-by-vercel.svg)](https://vercel.com/?utm_source=collaction&utm_campaign=oss)
 
