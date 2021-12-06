@@ -1,6 +1,7 @@
+/* eslint-disable react/no-unescaped-entities */
 import Head from "next/head";
 import Image from "next/image";
-import Button from "../components/asml/Button";
+import { ArrowSquareOut } from "phosphor-react";
 
 export default function ASMLPage() {
   return (
@@ -15,48 +16,135 @@ export default function ASMLPage() {
         />
       </Head>
 
-      <main className="h-screen w-screen relative flex flex-col justify-between py-4 px-0 md:pt-0">
-        <Button />
-        <div>
-          <div className="relative w-full md:w-3/5 mx-auto">
+      <div className="bg-white">
+        {/* CHECK THE PADDING-BOTTOM ONCE ALL CONTENT IS ADDED */}
+        <div className="px-5 md:px-8 pt-28 pb-12">
+          <div className="sm:w-100 mx-auto mb-15 md:mb-18 lg:mb-22">
+            <h1 className="text-black-400 text-center mb-8">
+              We connect people to solve collective action problems
+            </h1>
+
+            <div className="w-32 mx-auto">
+              <div className="relative leading-none">
+                <Image
+                  src="/black-logo-name.png"
+                  alt="black CollAction logo with text"
+                  width={623}
+                  height={152}
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="relative w-full md:w-11/12 lg:w-208 mx-auto">
             <Image
               priority
-              src="/Veganuary-ASML.png"
+              src="/veganuary-ASML-banner.png"
               alt="asml veganuary banner"
-              width={2076}
-              height={990}
+              width={12728}
+              height={7162}
+              className="rounded-3xl"
             />
           </div>
 
-          <h1 className="text-center text-3xl xs:text-4xl sm:text-5xl xl:text-6xl sm:leading-normal font-bold">
-            Coming Soon
-          </h1>
-        </div>
+          <button className="bg-accent text-white rounded-full p-3.5 w-72 shadow fixed bottom-8 inset-x-0 mx-auto">
+            <span className="align-middle">Participate</span>
+            <ArrowSquareOut className="h-6 w-6 inline-block ml-4" />
+          </button>
 
-        <div className="w-36 mx-auto">
-          <div className="relative leading-none">
-            <Image
-              src="/logo.svg"
-              alt="Collaction logo"
-              width={623}
-              height={152}
-            />
+          <div className="sm:w-100 mx-auto my-12 md:my-15 lg:my-26">
+            <div className="mb-13">
+              <h3 className="mb-8">
+                Hi, good to see you here! Welcome to the ASML edition of
+                Veganuary.
+              </h3>
+              <p className="mb-6">
+                Veganuary is an annual challenge that promotes veganism and
+                sustainable food consumption. Joining is easy, you will go
+                through the following steps:
+              </p>
+              <ul
+                style={{ listStyleType: "disclosure-closed" }}
+                className="pl-8"
+              >
+                <li className="mb-1">
+                  <strong>Step one:</strong> choose if you want to participate 5
+                  or 7 days a week
+                </li>
+                <li className="mb-1">
+                  <strong>Step two:</strong> choose your commitments
+                </li>
+                <li className="mb-1">
+                  <strong>Step three:</strong> stay tuned for extra activities
+                  and discounts
+                </li>
+                <li className="mb-1">
+                  <strong>Step four:</strong> see how big the impact is of the
+                  dietary change of you and your colleagues
+                </li>
+              </ul>
+            </div>
+
+            <div className="mb-13">
+              <h3 className="mb-8">Commitments</h3>
+              <p className="mb-6">
+                We'd love to optimize your personal impact. Eating vegan for a
+                full month can be a difficult task. To maximize the impact of
+                the ASML edition of Veganuary, there are multiple levels at
+                which you can participate at your own pace. Your challenge, your
+                rules. Therefore, it is still possible to join the challenge by
+                eating vegan for a full month, but eating vegetarian,
+                pescatarian, or simply not eating beef/cheese is also possible.
+              </p>
+            </div>
+
+            <div className="mb-13">
+              <h3 className="mb-8">Part-time</h3>
+              <p className="mb-6">
+                Would you like to have the weekends off? We've added a 5/7 days
+                a week option! :)
+              </p>
+              <p className="mb-6">
+                For each commitment you can earn points, depending on how many
+                kg CO2 equivalents were saved. The 5/7 days a week commitment
+                implies you do your commitments 5/7 days a week. The number of
+                points is then multiplied by 5/7.
+              </p>
+            </div>
+
+            <div className="mb-13">
+              <h3 className="mb-8">Extra activities</h3>
+              <p className="mb-6">
+                To keep you engaged, we have several events/discounts. You’ll be
+                informed about them later on here:
+              </p>
+              <ul
+                style={{ listStyleType: "disclosure-closed" }}
+                className="pl-8"
+              >
+                <li className="mb-1">Discount 1 - Coming Soon</li>
+                <li className="mb-1">Discount 2 - Coming Soon</li>
+              </ul>
+            </div>
+
+            <div className="mb-13">
+              <h3 className="mb-8">The impact you’ve made </h3>
+              <p className="mb-6">
+                Depending on your commitment you receive a certain badge at the
+                end of the month. We'll calculate your individual impact, as
+                well as that of the whole group!
+              </p>
+              <p className="mb-6">
+                Veganuary is a month where we can challenge ourselves. Let's try
+                it out together and help each other by sharing recipes, tips,
+                supplements, and more. Shifting to a more plant-based diet is
+                great for your health and the environment. Want to participate?
+                Click the participate button and fill out the form.
+              </p>
+            </div>
           </div>
         </div>
-
-        <style jsx>{`
-          main {
-            font-family: "Rubik", sans-serif;
-            background-color: #efefef;
-            color: #2b2f33;
-          }
-
-          h1 {
-            text-decoration: wavy overline #01c29a;
-            margin-top: 1.5rem;
-          }
-        `}</style>
-      </main>
+      </div>
     </>
   );
 }
