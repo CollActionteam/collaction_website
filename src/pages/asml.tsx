@@ -8,12 +8,6 @@ export default function ASMLPage() {
     <>
       <Head>
         <title>ASML | CollAction</title>
-
-        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;700&display=optional"
-          rel="stylesheet"
-        />
       </Head>
 
       <div className="bg-white">
@@ -148,10 +142,6 @@ export default function ASMLPage() {
                 Click the participate button and fill out the form.
               </p>
             </div>
-          </div>
-
-          <div>
-            <div className="sm:w-100 mx-auto my-12 md:my-15 lg:my-26"></div>
           </div>
         </div>
       </div>

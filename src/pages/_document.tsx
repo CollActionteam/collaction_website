@@ -4,7 +4,8 @@ import { GA_TRACKING_ID } from "../lib/constants";
 export default class MyDocument extends Document {
   render() {
     const currentURL = "https://collaction.org";
-    const description = "Do you want to make the world a better place? Do your actions feel like a drop in the ocean?";
+    const description =
+      "Do you want to make the world a better place? Do your actions feel like a drop in the ocean?";
     const previewImage = "/android-chrome-256x256.png";
     const pageTitle = "CollAction | Power to the Crowd | Act Now";
     return (
@@ -16,6 +17,12 @@ export default class MyDocument extends Document {
           <meta property="og:description" content={description} key="ogdesc" />
 
           <meta name="description" content={description} />
+
+          {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+          <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;700&display=optional"
+            rel="stylesheet"
+          />
 
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
