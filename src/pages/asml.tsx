@@ -55,7 +55,7 @@ export default function ASMLPage() {
           <div className="sm:w-100 mx-auto my-12 md:my-15 lg:my-26">
             <div className="mb-13">
               <h3 className="mb-8">
-                Hi, good to see you here! Welcome to the ASML edition of
+                Hi! Welcome to the ASML edition of
                 Veganuary.
               </h3>
               <p className="mb-6">
