@@ -5,7 +5,7 @@ export default function Terms() {
   return (
     <>
       <Head>
-        <title>CollAction | Terms & Conditions</title>
+        <title>Terms & Conditions | CollAction</title>
 
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link
