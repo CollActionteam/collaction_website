@@ -54,6 +54,21 @@ module.exports = {
         "title-sm": ["28px", "34px"],
         "title-lg": ["40px", "41px"],
       },
+      width: {
+        100: "25rem",
+        208: "52rem",
+      },
+      spacing: {
+        13: "3.25rem",
+        15: "3.75rem",
+        18: "4.5rem",
+        22: "5.5rem",
+        26: "6.5rem",
+      },
+      borderRadius: {
+        "3xl": "1.25rem",
+        "4xl": "1.5rem",
+      },
     },
   },
   variants: {
