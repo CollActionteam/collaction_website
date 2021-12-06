@@ -5,7 +5,7 @@ export default function ASMLPage() {
   return (
     <>
       <Head>
-        <title>ASML & CollAction</title>
+        <title>CollAction | ASML</title>
 
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link
