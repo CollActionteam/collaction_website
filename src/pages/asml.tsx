@@ -12,7 +12,7 @@ export default function ASMLPage() {
 
       <div className="bg-white">
         {/* CHECK THE PADDING-BOTTOM ONCE ALL CONTENT IS ADDED */}
-        <div className="px-5 md:px-8 pt-28 pb-12">
+        <div className="px-5 md:px-8 pt-28 pb-14 md:pb-12 lg:pb-1">
           <div className="sm:w-100 mx-auto mb-15 md:mb-18 lg:mb-22">
             <h1 className="text-black-400 text-center mb-8">
               We connect people to solve collective action problems
