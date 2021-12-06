@@ -27,4 +27,9 @@
   button {
     @apply font-bold text-button;
   }
+
+  b,
+  strong {
+    @apply font-bold;
+  }
 }
