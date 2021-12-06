@@ -35,8 +35,8 @@ export default function ASMLPage() {
               priority
               src="/veganuary-ASML-banner.png"
               alt="asml veganuary banner"
-              width={12728}
-              height={7162}
+              width={1273} 
+              height={716}
               className="rounded-3xl"
             />
           </div>
