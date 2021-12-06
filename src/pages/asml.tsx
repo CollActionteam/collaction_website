@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Button from "../components/asml/Button";
 
 export default function ASMLPage() {
   return (
@@ -15,6 +16,7 @@ export default function ASMLPage() {
       </Head>
 
       <main className="h-screen w-screen relative flex flex-col justify-between py-4 px-0 md:pt-0">
+        <Button />
         <div>
           <div className="relative w-full md:w-3/5 mx-auto">
             <Image
