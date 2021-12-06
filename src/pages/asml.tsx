@@ -47,10 +47,16 @@ export default function ASMLPage() {
             />
           </div>
 
-          <button className="bg-accent text-white rounded-full p-3.5 w-72 shadow fixed bottom-8 inset-x-0 mx-auto">
+          <a
+            href="https://forms.gle/A233e3PHzA8VwEBGA"
+            target="_blank"
+            rel="noreferrer"
+            className="bg-accent font-bold leading-none text-white text-center rounded-full p-3.5 w-72 shadow fixed bottom-8 inset-x-0 mx-auto"
+            aria-label="Participate"
+          >
             <span className="align-middle">Participate</span>
             <ArrowSquareOut className="h-6 w-6 inline-block ml-4" />
-          </button>
+          </a>
 
           <div className="sm:w-100 mx-auto my-12 md:my-15 lg:my-26">
             <div className="mb-13">
@@ -142,6 +148,10 @@ export default function ASMLPage() {
                 Click the participate button and fill out the form.
               </p>
             </div>
+          </div>
+
+          <div>
+            <div className="sm:w-100 mx-auto my-12 md:my-15 lg:my-26"></div>
           </div>
         </div>
       </div>
