@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-bold text-title-lg;
+  }
+
+  h4,
+  h5,
+  h6 {
+    @apply font-bold text-title-sm;
+  }
+
+  div,
+  p {
+    @apply font-light text-body;
+  }
+
+  button {
+    @apply font-bold text-button;
+  }
+}
