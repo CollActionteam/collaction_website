@@ -55,8 +55,10 @@ module.exports = {
         "title-lg": ["40px", "41px"],
       },
       width: {
-        100: "25rem",
         208: "52rem",
+      },
+      maxWidth: {
+        400: "400px",
       },
       spacing: {
         13: "3.25rem",
