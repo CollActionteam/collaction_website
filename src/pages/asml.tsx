@@ -2,6 +2,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import { ArrowSquareOut } from "phosphor-react";
+import ASMLBanner from "public/veganuary-ASML-banner.png";
+import CollActionLogoWithText from "public/black-logo-name.png";
 
 export default function ASMLPage() {
   return (
@@ -13,31 +15,32 @@ export default function ASMLPage() {
       <div className="bg-black-0">
         {/* CHECK THE PADDING-BOTTOM ONCE ALL CONTENT IS ADDED */}
         <div className="px-5 md:px-8 pt-28 pb-14 md:pb-12 lg:pb-1">
-          <div className="sm:w-100 mx-auto mb-15 md:mb-18 lg:mb-22">
+          <div className="max-w-400 mx-auto mb-15 md:mb-18 lg:mb-22">
             <h1 className="text-black-400 text-center mb-8">
               We connect people to solve collective action problems
             </h1>
 
-            <div className="w-32 mx-auto">
-              <div className="relative leading-none">
-                <Image
-                  src="/black-logo-name.png"
-                  alt="black CollAction logo with text"
-                  width={623}
-                  height={152}
-                />
-              </div>
+            <div className="w-32 mx-auto relative leading-none">
+              <Image
+                priority
+                src={CollActionLogoWithText}
+                alt="black CollAction logo with text"
+                layout="responsive"
+                placeholder="blur"
+                sizes="128px"
+              />
             </div>
           </div>
 
-          <div className="relative w-full md:w-11/12 lg:w-208 mx-auto">
+          <div className="relative block w-full md:w-11/12 lg:w-208 mx-auto">
             <Image
               priority
-              src="/veganuary-ASML-banner.png"
+              src={ASMLBanner}
               alt="asml veganuary banner"
-              width={1273} 
-              height={716}
               className="rounded-3xl"
+              layout="responsive"
+              sizes="(max-width: 768px) 90vw, 830px"
+              placeholder="blur"
             />
           </div>
 
@@ -52,11 +55,10 @@ export default function ASMLPage() {
             <ArrowSquareOut className="h-6 w-6 inline-block ml-4" />
           </a>
 
-          <div className="sm:w-100 mx-auto my-12 md:my-15 lg:my-26">
+          <div className="max-w-400 mx-auto my-12 md:my-15 lg:my-26">
             <div className="mb-13">
               <h3 className="mb-8">
-                Hi! Welcome to the ASML edition of
-                Veganuary.
+                Hi! Welcome to the ASML edition of Veganuary.
               </h3>
               <p className="mb-6">
                 Veganuary is an annual challenge that promotes veganism and
