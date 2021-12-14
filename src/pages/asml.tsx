@@ -52,7 +52,10 @@ export default function ASMLPage() {
             aria-label="Participate"
           >
             <span className="align-middle">Participate</span>
-            <ArrowSquareOut className="h-6 w-6 inline-block ml-4" />
+            <ArrowSquareOut
+              className="h-6 w-6 inline-block ml-4"
+              weight="bold"
+            />
           </a>
 
           <div className="max-w-400 mx-auto my-12 md:my-15 lg:my-26">
