@@ -11,7 +11,7 @@ export default function Avatar(props: AvatarProps) {
   return (
     <div className="w-20 hflex flex-col text-center pb-4">
       <a href={props.linkedin_github}>
-        <div className="block h-20">
+        <div className="h-20 overflow-hidden">
           <Image
             src={props.src}
             className="rounded-full"
