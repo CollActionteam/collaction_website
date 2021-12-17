@@ -13,9 +13,9 @@ import {
 // 1) place new files in the /public/discounts folder
 // 2) import it here
 // 3) reference your import in your discount object
-import Phood1 from "public/discounts/Phood-1.jpg";
-import Phood2 from "public/discounts/Phood-2.jpg";
-import Phood3 from "public/discounts/Phood-3.jpg";
+import Phood1 from "../../../public/discounts/Phood-1.jpg";
+import Phood2 from "../../../public/discounts/Phood-2.jpg";
+import Phood3 from "../../../public/discounts/Phood-3.jpg";
 
 const isDev = process.env.NODE_ENV === "development";
 
