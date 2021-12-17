@@ -75,7 +75,14 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      margin: ["odd", "last"],
+    },
+    scrollbar: ["rounded"],
   },
-  plugins: [],
+  plugins: [
+    require("tailwind-scrollbar"),
+    require("@tailwindcss/line-clamp"),
+    require("@tailwindcss/aspect-ratio"),
+  ],
 };
