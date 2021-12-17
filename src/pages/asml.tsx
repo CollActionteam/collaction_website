@@ -2,12 +2,13 @@
 import Head from "next/head";
 import Image from "next/image";
 import { ArrowSquareOut } from "phosphor-react";
+
 import ASMLBanner from "public/veganuary-ASML-banner.png";
 import CollActionLogoWithText from "public/black-logo-name.png";
 import AppPreviewCard1 from "public/app-preview-card-1.png";
 import AppPreviewCard2 from "public/app-preview-card-2.png";
 import AppPreviewCard3 from "public/app-preview-card-3.png";
-import AppPreviewCard1NoShadow from "public/Card1noborder.png";
+import Discounts from "src/components/asml/Discounts";
 
 export default function ASMLPage() {
   return (
@@ -61,12 +62,12 @@ export default function ASMLPage() {
             />
           </a>
 
-          <div className="max-w-500 mx-auto mt-12 md:mt-15 lg:mt-26">
-            <div className="mb-13">
-              <h3 className="mb-8">
+          <div className="mt-12 md:mt-15 lg:mt-26">
+            <div className="max-w-500 mx-auto mb-13">
+              <h4 className="mb-8">
                 Hi! Welcome to the ASML edition of Veganuary.
-              </h3>
-              <p className="mb-6">
+              </h4>
+              <p className="mb-6 last:mb-0">
                 Veganuary is an annual challenge that promotes veganism and
                 sustainable food consumption. Joining is easy, you will go
                 through the following steps:
@@ -93,9 +94,9 @@ export default function ASMLPage() {
               </ul>
             </div>
 
-            <div className="mb-13">
-              <h3 className="mb-8">Commitments</h3>
-              <p className="mb-6">
+            <div className="max-w-500 mx-auto mb-13">
+              <h4 className="mb-8">Commitments</h4>
+              <p className="mb-6 last:mb-0">
                 We'd love to optimize your personal impact. Eating vegan for a
                 full month can be a difficult task. To maximize the impact of
                 the ASML edition of Veganuary, there are multiple levels at
@@ -106,13 +107,13 @@ export default function ASMLPage() {
               </p>
             </div>
 
-            <div className="mb-13">
-              <h3 className="mb-8">Part-time</h3>
-              <p className="mb-6">
+            <div className="max-w-500 mx-auto mb-13">
+              <h4 className="mb-8">Part-time</h4>
+              <p className="mb-6 last:mb-0">
                 Would you like to have the weekends off? We've added a 5/7 days
                 a week option! :)
               </p>
-              <p className="mb-6">
+              <p className="mb-6 last:mb-0">
                 For each commitment you can earn points, depending on how many
                 kg CO2 equivalents were saved. The 5/7 days a week commitment
                 implies you do your commitments 5/7 days a week. The number of
@@ -121,30 +122,25 @@ export default function ASMLPage() {
             </div>
 
             <div className="mb-13">
-              <h3 className="mb-8">Extra activities</h3>
-              <p className="mb-6">
-                To keep you engaged, we have several events/discounts. You’ll be
-                informed about them later on here:
+              <h4 className="max-w-500 mx-auto mb-8">Extra activities</h4>
+              {/* if we add another paragraph, use the commented line in both and remove the used one */}
+              {/* <p className="max-w-500 mx-auto mb-6 last:mb-0"> */}
+              <p className="max-w-500 mx-auto mb-0">
+                To keep you engaged, we have several events/discounts on the
+                horizon. Come back soon to stay updated on our currently
+                offerings.
               </p>
-              <ul
-                style={{ listStyleType: "disclosure-closed" }}
-                className="pl-8"
-              >
-                <li className="mb-1">Discount 1 - Coming Soon</li>
-                <li className="mb-1">Discount 2 - Coming Soon</li>
-              </ul>
+              <Discounts />
             </div>
 
-            {/* Can use last variant if we extract this into a card */}
-            {/* https://v2.tailwindcss.com/docs/hover-focus-and-other-states#last-child */}
-            <div className="mb-0">
-              <h3 className="mb-8">The impact you’ve made </h3>
-              <p className="mb-6">
+            <div className="max-w-500 mx-auto mb-0">
+              <h4 className="mb-8">The impact you’ve made </h4>
+              <p className="mb-6 last:mb-0">
                 Depending on your commitment you receive a certain badge at the
                 end of the month. We'll calculate your individual impact, as
                 well as that of the whole group!
               </p>
-              <p className="mb-0">
+              <p className="mb-6 last:mb-0">
                 Veganuary is a month where we can challenge ourselves. Let's try
                 it out together and help each other by sharing recipes, tips,
                 supplements, and more. Shifting to a more plant-based diet is
@@ -184,7 +180,7 @@ export default function ASMLPage() {
                 />
               </div>
             </div>
-            <div className="bg-secondary text-black-400 max-w-400 w-full rounded-3xl px-10 lg:px-13 py-8 mb-5 md:mb-8 overflow-hidden">
+            <div className="bg-secondary text-black-400 max-w-400 w-full rounded-3xl px-10 lg:px-13 py-8 mb-5 md:mb-8 lg:mr-8 overflow-hidden lg:order-3">
               <h4 className="text-black-400 mb-5">
                 Participate at your own pace
               </h4>
@@ -201,7 +197,7 @@ export default function ASMLPage() {
                 />
               </div>
             </div>
-            <div className="bg-secondary text-black-400 max-w-400 w-full rounded-3xl px-10 lg:px-13 py-8 mb-5 md:mb-8 lg:mr-8 overflow-hidden">
+            <div className="bg-secondary text-black-400 max-w-400 w-full rounded-3xl px-10 lg:px-13 py-8 mb-5 md:mb-8 lg:mr-0 overflow-hidden lg:order-2">
               <div className="block -mt-14">
                 <Image
                   src={AppPreviewCard3}
