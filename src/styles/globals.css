@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 @layer base {
+  body,
+  div,
+  section,
+  main,
+  article {
+    @apply scrollbar scrollbar-thin scrollbar-thumb-accent scrollbar-track-black-0 scrollbar-thumb-rounded-3xl;
+  }
+
   body {
     @apply font-sans;
   }
