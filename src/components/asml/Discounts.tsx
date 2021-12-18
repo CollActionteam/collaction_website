@@ -13,9 +13,9 @@ import {
 // 1) place new files in the /public/discounts folder
 // 2) import it here
 // 3) reference your import in your discount object
-import Phood1 from "../../../public/discounts/Phood-1.jpg";
-import Phood2 from "../../../public/discounts/Phood-2.jpg";
-import Phood3 from "../../../public/discounts/Phood-3.jpg";
+import Phood1 from "public/discounts/phood-1.jpg";
+import Phood2 from "public/discounts/phood-2.jpg";
+import Phood3 from "public/discounts/phood-3.jpg";
 
 const isDev = process.env.NODE_ENV === "development";
 
@@ -67,19 +67,17 @@ export const discounts: DiscountType[] = [
     ),
   },
   {
-    publish: false,
+    publish: true,
     title: "Phood Kitchen",
     image: Phood3,
     links: {
       website: `https://phoodkitchen.com/`,
       phone: `31615400775`,
-      location: `http://www.mapcrunch.com/p/45.609227_-73.593939_301.78_1.08_0`,
+      location: ``,
       order: `https://weborder-eu.spont.cash/widget/?key=96033c478dc44494bf56e64d0f23fff6&source=direct&autoopen=none`,
     },
     content: (
       <>
-        <strong>Normal content</strong>
-        <br />
         Phood standard: hyper-local, fresh, functional food. All our bowls are
         free-from: sugar, unnatural additives, gluten and lactose.
         <br />
@@ -100,6 +98,7 @@ export const discounts: DiscountType[] = [
       </>
     ),
   },
+  // these are two other sample discounts only seen in development
   {
     publish: false,
     title: "Phood Kitchen",
