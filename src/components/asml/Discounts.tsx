@@ -206,7 +206,7 @@ function DiscountCard({ title, image, links, content }: DiscountType) {
   const [showContent, setShowContent] = useState(false);
 
   return (
-    <div className="bg-secondary max-w-400 w-full rounded-3xl overflow-hidden relative mb-7 odd:mr-7">
+    <div className="bg-secondary max-w-400 w-full rounded-3xl overflow-hidden relative mb-7 lg:odd:mr-7">
       {/* IMAGE */}
       <div className="relative w-full aspect-w-16 aspect-h-9">
         <Image
