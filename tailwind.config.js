@@ -51,7 +51,8 @@ module.exports = {
       fontSize: {
         button: ["15px", "20px"],
         body: ["17px", "26px"],
-        "title-sm": ["28px", "34px"],
+        "title-2": ["22px", "28px"],
+        "title-1": ["28px", "34px"],
         "title-lg": ["40px", "41px"],
       },
       width: {

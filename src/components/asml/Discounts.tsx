@@ -267,8 +267,8 @@ function DiscountCard({ title, image, links, content }: DiscountType) {
       </div>
       {/* TITLE & CONTENT */}
       <div className="px-8 sm:px-10">
-        <h4 className="mb-5 sm:mb-8">{title}</h4>
-        <div className="h-32 line-clamp-5">{content}</div>
+        <h4 className="text-black-400 mb-5 sm:mb-8">{title}</h4>
+        <div className="text-black-300 h-32 line-clamp-5">{content}</div>
       </div>
       {/* MAXIMIZE CONTENT ICON */}
       <div className="py-6 sm:py-8 pl-8 pr-5 sm:pl-10 sm:pr-8 text-right">
@@ -294,7 +294,7 @@ function DiscountCard({ title, image, links, content }: DiscountType) {
         <div className="flex flex-col justify-between h-full">
           {/* TITLE & CONTENT */}
           <div className="px-8 sm:px-10 pt-8 flex flex-col">
-            <h5 className="mb-6 sm:mb-8">{title}</h5>
+            <h5 className="text-title-2 mb-6 sm:mb-8">{title}</h5>
             <div className="overflow-y-scroll scrollbar-track-accent-500 scrollbar-thumb-secondary">
               {content}
             </div>
