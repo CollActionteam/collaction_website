@@ -193,7 +193,7 @@ export default function Discount() {
   if (!isDev && !discounts.filter(({ publish }) => publish).length) return null;
 
   return (
-    <div className="flex flex-wrap justify-center lg:justify-start mx-auto lg:max-w-4xl mt-12 lg:mt-15">
+    <div className="flex flex-wrap justify-center lg:justify-start mx-auto lg:max-w-4xl lg:w-208 mt-12 lg:mt-15">
       {discounts.map((discount, i) => {
         if (!isDev && !discount.publish) return null;
         return <DiscountCard key={discount.title + i} {...discount} />;
@@ -206,7 +206,7 @@ function DiscountCard({ title, image, links, content }: DiscountType) {
   const [showContent, setShowContent] = useState(false);
 
   return (
-    <div className="bg-secondary max-w-400 w-full rounded-3xl overflow-hidden relative mb-7 lg:odd:mr-7">
+    <div className="bg-secondary max-w-400 w-full rounded-3xl overflow-hidden relative mb-8 lg:odd:mr-8">
       {/* IMAGE */}
       <div className="relative w-full aspect-w-16 aspect-h-9">
         <Image
