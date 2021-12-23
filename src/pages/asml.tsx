@@ -73,22 +73,22 @@ export default function ASMLPage() {
                 through the following steps:
               </p>
               <ul
-                style={{ listStyleType: "disclosure-closed" }}
+                style={{ listStyleType: "decimal" }}
                 className="pl-8"
               >
                 <li className="mb-1">
-                  <strong>Step one:</strong> choose if you want to participate 5
+                  Choose if you want to participate 5
                   or 7 days a week
                 </li>
                 <li className="mb-1">
-                  <strong>Step two:</strong> choose your commitments
+                  Choose your commitments
                 </li>
                 <li className="mb-1">
-                  <strong>Step three:</strong> stay tuned for extra activities
+                  Stay tuned for extra activities
                   and discounts
                 </li>
                 <li className="mb-1">
-                  <strong>Step four:</strong> see how big the impact is of the
+                  See how big the impact is of the
                   dietary change of you and your colleagues
                 </li>
               </ul>
