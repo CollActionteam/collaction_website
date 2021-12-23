@@ -19,7 +19,7 @@ export default function ASMLPage() {
 
       <div>
         <div className="bg-black-0 px-5 md:px-8 py-28 md:pb-18">
-          <div className="max-w-400 mx-auto mb-15 md:mb-18 lg:mb-22">
+          <div className="max-w-600 mx-auto mb-15 md:mb-18 lg:mb-22">
             <h1 className="text-black-400 text-center mb-8">
               We connect people to solve collective action problems
             </h1>
@@ -63,9 +63,9 @@ export default function ASMLPage() {
           </a>
 
           <div className="mt-12 md:mt-15 lg:mt-26">
-            <div className="max-w-500 mx-auto mb-13">
+            <div className="max-w-600 mx-auto mb-13">
               <h4 className="mb-8">
-                Hi! Welcome to the ASML edition of Veganuary.
+                Hi, welcome to the ASML edition of Veganuary!
               </h4>
               <p className="mb-6 last:mb-0">
                 Veganuary is an annual challenge that promotes veganism and
@@ -94,7 +94,7 @@ export default function ASMLPage() {
               </ul>
             </div>
 
-            <div className="max-w-500 mx-auto mb-13">
+            <div className="max-w-600 mx-auto mb-13">
               <h4 className="mb-8">Commitments</h4>
               <p className="mb-6 last:mb-0">
                 We'd love to optimize your personal impact. Eating vegan for a
@@ -107,7 +107,7 @@ export default function ASMLPage() {
               </p>
             </div>
 
-            <div className="max-w-500 mx-auto mb-13">
+            <div className="max-w-600 mx-auto mb-13">
               <h4 className="mb-8">Part-time</h4>
               <p className="mb-6 last:mb-0">
                 Would you like to have the weekends off? We've added a 5/7 days
@@ -122,18 +122,18 @@ export default function ASMLPage() {
             </div>
 
             <div className="mb-13">
-              <h4 className="max-w-500 mx-auto mb-8">Extra activities</h4>
+              <h4 className="max-w-600 mx-auto mb-8">Extra activities</h4>
               {/* if we add another paragraph, use the commented line in both and remove the used one */}
               {/* <p className="max-w-500 mx-auto mb-6 last:mb-0"> */}
-              <p className="max-w-500 mx-auto mb-0">
-                To keep you engaged, we have several events/discounts on the
-                horizon. Come back soon to stay updated on our currently
-                offerings.
+              <p className="max-w-600 mx-auto mb-0">
+                Besides us, restaurants near you would like to motivate you as well! 
+                See below which deals are on offer. Note that for some restaurants 
+                you're required to show the email from December 13.
               </p>
               <Discounts />
             </div>
 
-            <div className="max-w-500 mx-auto mb-0">
+            <div className="max-w-600 mx-auto mb-0">
               <h4 className="mb-8">The impact you’ve made </h4>
               <p className="mb-6 last:mb-0">
                 Depending on your commitment you receive a certain badge at the
@@ -152,9 +152,9 @@ export default function ASMLPage() {
         </div>
 
         <div className="bg-black-400 px-5 md:px-8 pt-20 pb-24 md:pb-22 text-center">
-          <div className="max-w-500 mx-auto">
+          <div className="max-w-600 mx-auto">
             <h2 className="text-secondary mb-8">
-              The CollAction app is launching soon
+              The CollAction app launches soon
             </h2>
             <p className="text-black-0 mb-12">
               We’re working hard on getting the app in the App/Play Store. First
