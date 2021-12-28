@@ -14,7 +14,7 @@ export default function Terms() {
             <h1 className="text-collaction text-2xl font-medium">
               Impact Calculation
             </h1>
-            <p>Calculating your impact based on your commitments can be done here.</p>
+            <p>You can calculate your individual impact here!</p>
           </div>
         </div>
       </main>
