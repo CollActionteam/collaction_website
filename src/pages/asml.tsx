@@ -85,13 +85,21 @@ export default function ASMLPage() {
                 </li>
                 <li className="mb-1">
                   Stay tuned for extra activities
-                  and discounts
+                  and restaurant deals
                 </li>
                 <li className="mb-1">
-                  See how big the impact is of the
-                  dietary change of you and your colleagues
+                  See the impact of you and your colleagues after the
+                  dietary change
                 </li>
               </ul>
+              <p className="mb-6 last:mb-0">
+                <br />
+                Veganuary is a month where we can challenge ourselves. Let's try
+                it out together and help each other by sharing recipes, tips,
+                supplements, and more. Shifting to a more plant-based diet is
+                great for your health and the environment. Want to participate?
+                Click the participate button and fill out the form.
+              </p> 
             </div>
 
             <div className="max-w-600 mx-auto mb-13">
@@ -100,41 +108,29 @@ export default function ASMLPage() {
                 We'd love to optimize your personal impact. Eating vegan for a
                 full month can be a difficult task. To maximize the impact of
                 the ASML edition of Veganuary, there are multiple levels at
-                which you can participate at your own pace. Your challenge, your
-                rules. Therefore, it is still possible to join the challenge by
-                eating vegan for a full month, but eating vegetarian,
+                which you can participate. Your challenge, your
+                rules. Therefore, you can join the challenge by
+                eating vegan for a month, but eating vegetarian,
                 pescatarian, or simply not eating beef/cheese is also possible.
-              </p>
-            </div>
-
-            <div className="max-w-600 mx-auto mb-13">
-              <h4 className="mb-8">Part-time</h4>
-              <p className="mb-6 last:mb-0">
-                Would you like to have the weekends off? We've added a 5/7 days
-                a week option! :)
-              </p>
-              <p className="mb-6 last:mb-0">
-                For each commitment you can earn points, depending on how many
-                kg CO2 equivalents were saved. The 5/7 days a week commitment
-                implies you do your commitments 5/7 days a week. The number of
-                points is then multiplied by 5/7.
+                Would you like to have the weekends off? We've got you covered
+                with a '5/7 days as week' option!
               </p>
             </div>
 
             <div className="mb-13">
-              <h4 className="max-w-600 mx-auto mb-8">Extra activities</h4>
+              <h4 className="max-w-600 mx-auto mb-8">Restaurant Deals</h4>
               {/* if we add another paragraph, use the commented line in both and remove the used one */}
               {/* <p className="max-w-500 mx-auto mb-6 last:mb-0"> */}
               <p className="max-w-600 mx-auto mb-0">
-                Besides us, restaurants near you would like to motivate you as well! 
+                Besides us, restaurants would like to motivate you as well! 
                 See below which deals are on offer. Note that for some restaurants 
                 you're required to show the email from December 13.
               </p>
               <Discounts />
             </div>
 
-            <div className="max-w-600 mx-auto mb-0">
-              <h4 className="mb-8">The impact you’ve made </h4>
+            {/* <div className="max-w-600 mx-auto mb-0">
+              <h4 className="mb-8">Your Impact </h4>
               <p className="mb-6 last:mb-0">
                 Depending on your commitment you receive a certain badge at the
                 end of the month. We'll calculate your individual impact, as
@@ -147,7 +143,7 @@ export default function ASMLPage() {
                 great for your health and the environment. Want to participate?
                 Click the participate button and fill out the form.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -208,7 +204,7 @@ export default function ASMLPage() {
                 />
               </div>
               <h4 className="text-black-400 mb-5">Join the wave</h4>
-              <p className="text-black-200">Make an impact together.</p>
+              <p className="text-black-200">Make impact together.</p>
             </div>
           </div>
         </div>
