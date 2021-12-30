@@ -116,7 +116,7 @@ export default function Terms() {
             </ul>
           </p>
 
-          <p className="mb-6">
+          <p className="mb-6 last:mb-0">
             In the event of (suspected) use of the Platform in violation of
             these Terms of Use, we may take any action we deem necessary and
             appropriate, including (but not limited to) denying access to the
