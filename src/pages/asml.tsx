@@ -3,12 +3,14 @@ import Head from "next/head";
 import Image from "next/image";
 import { ArrowSquareOut } from "phosphor-react";
 
+import Discounts from "src/components/asml/Discounts";
+import CookiesBanner from "src/components/Cookies/CookiesBanner";
+
 import ASMLBanner from "public/veganuary-ASML-banner.png";
 import CollActionLogoWithText from "public/black-logo-name.png";
 import AppPreviewCard1 from "public/app-preview-card-1.png";
 import AppPreviewCard2 from "public/app-preview-card-2.png";
 import AppPreviewCard3 from "public/app-preview-card-3.png";
-import Discounts from "src/components/asml/Discounts";
 
 export default function ASMLPage() {
   return (
@@ -72,24 +74,17 @@ export default function ASMLPage() {
                 sustainable food consumption. Joining is easy, you will go
                 through the following steps:
               </p>
-              <ul
-                style={{ listStyleType: "decimal" }}
-                className="pl-8"
-              >
+              <ul style={{ listStyleType: "decimal" }} className="pl-8">
                 <li className="mb-1">
-                  Choose if you want to participate 5
-                  or 7 days a week
+                  Choose if you want to participate 5 or 7 days a week
+                </li>
+                <li className="mb-1">Choose your commitments</li>
+                <li className="mb-1">
+                  Stay tuned for extra activities and restaurant deals
                 </li>
                 <li className="mb-1">
-                  Choose your commitments
-                </li>
-                <li className="mb-1">
-                  Stay tuned for extra activities
-                  and restaurant deals
-                </li>
-                <li className="mb-1">
-                  See the impact of you and your colleagues after the
-                  dietary change
+                  See the impact of you and your colleagues after the dietary
+                  change
                 </li>
               </ul>
               <p className="mb-6 last:mb-0">
@@ -99,7 +94,7 @@ export default function ASMLPage() {
                 supplements, and more. Shifting to a more plant-based diet is
                 great for your health and the environment. Want to participate?
                 Click the participate button and fill out the form.
-              </p> 
+              </p>
             </div>
 
             <div className="max-w-600 mx-auto mb-13">
@@ -108,12 +103,12 @@ export default function ASMLPage() {
                 We'd love to optimize your personal impact. Eating vegan for a
                 full month can be a difficult task. To maximize the impact of
                 the ASML edition of Veganuary, there are multiple levels at
-                which you can participate. Your challenge, your
-                rules. Therefore, you can join the challenge by
-                eating vegan for a month, but eating vegetarian,
-                pescatarian, or simply not eating beef/cheese is also possible.
-                Would you like to have the weekends off? We've got you covered
-                with a '5/7 days as week' option!
+                which you can participate. Your challenge, your rules.
+                Therefore, you can join the challenge by eating vegan for a
+                month, but eating vegetarian, pescatarian, or simply not eating
+                beef/cheese is also possible. Would you like to have the
+                weekends off? We've got you covered with a '5/7 days as week'
+                option!
               </p>
             </div>
 
@@ -122,8 +117,8 @@ export default function ASMLPage() {
               {/* if we add another paragraph, use the commented line in both and remove the used one */}
               {/* <p className="max-w-500 mx-auto mb-6 last:mb-0"> */}
               <p className="max-w-600 mx-auto mb-0">
-                Besides us, restaurants would like to motivate you as well! 
-                See below which deals are on offer. Note that for some restaurants 
+                Besides us, restaurants would like to motivate you as well! See
+                below which deals are on offer. Note that for some restaurants
                 you're required to show the email from December 13.
               </p>
               <Discounts />
@@ -208,6 +203,8 @@ export default function ASMLPage() {
             </div>
           </div>
         </div>
+
+        <CookiesBanner />
       </div>
     </>
   );
