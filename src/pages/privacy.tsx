@@ -83,7 +83,7 @@ export default function Terms() {
           <h4 className="text-black-300 mb-8">
             What Personal Information do we collect?
           </h4>
-          <p className="mb-6">
+          <p className="mb-6 last:mb-0">
             In order to do the above, we collect and process Personal
             Information, comprising of your name, gender, date of birth,
             location, phone number, e-mail address, profile picture, and your
@@ -93,7 +93,7 @@ export default function Terms() {
             Google Analytics and Google Tag Manager in order to further develop
             and improve our website and the overall quality of our services. For
             more information on the use of cookies and other technologies,
-            please see ‘Use of cookies’ further below.{" "}
+            please see ‘Use of cookies’ further below.
           </p>
 
           <p className="mb-6 last:mb-0">
@@ -142,7 +142,7 @@ export default function Terms() {
             Does CollAction share my Personal Information with third parties?
           </h4>
 
-          <p className="mb-6">
+          <p className="mb-6 last:mb-0">
             CollAction is a non-profit organization dedicated to making the
             world a better place with the help of individuals like you. In
             accordance with our mission, CollAction will not sell to or share
@@ -211,26 +211,26 @@ export default function Terms() {
             Implementing Decision 2021/914/EU.
           </p>
           <h4 className="text-black-300 mb-8">What are cookies?</h4>
-          <p className="mb-6">
+          <p className="mb-6 last:mb-0">
             Cookies are text files placed on your device to collect standard
             Internet log information and visitor behaviour information.
             CollAction uses the following types of cookies:
           </p>
 
-          <p className="mb-6 last:mb-0">
+          <p className="mb-6">
             <em>Strictly necessary/ functional cookies</em>
           </p>
 
-          <p className="mb-6">
+          <p className="mb-6 last:mb-0">
             These are cookies that are necessary for the (basic) operation of
             our website, for example to keep you logged in.
           </p>
 
-          <p className="mb-6 last:mb-0">
+          <p className="mb-6">
             <em>Analytics cookies</em>
           </p>
 
-          <p className="mb-6">
+          <p className="mb-6 last:mb-0">
             CollAction makes use of third-party analytics services that use
             cookies, such as Google Analytics and Google Tag Manager. These are
             used to obtain relevant statistics and other information about the
@@ -241,11 +241,11 @@ export default function Terms() {
             anonymized before information is shared with Google.
           </p>
 
-          <p className="mb-6 last:mb-0">
+          <p className="mb-6">
             <em>Social media buttons</em>
           </p>
 
-          <p className="mb-6">
+          <p className="mb-6 last:mb-0">
             We have placed ‘social media buttons’ on our website an mobile
             application which allow you to connect to various social media
             platforms such as Facebook and Twitter to, for example, share a
@@ -261,7 +261,7 @@ export default function Terms() {
             <em>Disabling cookies</em>{" "}
           </p>
 
-          <p className="mb-6">
+          <p className="mb-6 last:mb-0">
             If you wish to disable the use and placement of cookies, we advise
             you to amend your internet browser settings. We do however note that
             disabling or deleting certain cookies may mean that you can no
@@ -288,11 +288,12 @@ export default function Terms() {
             You may revoke any consent given to us with regard to the
             collection, processing and use of your Personal Information at any
             time for the future and also generally request that CollAction stop
-            using and collecting your Personal Information (“opt out”). In
-            addition, you may do so by deleting your account.
+            using and collecting your Personal Information (
+            <strong>“opt out”</strong>). In addition, you may do so by deleting
+            your account.
           </p>
           <p className="mb-6">
-            To opt out, please submit a request to CollAction via e-mail or by
+            To opt out, please submit a request to CollAction via email or by
             post with the subject “Opt-Out request CollAction”. CollAction’s
             contact details can be found below. Upon receipt, verification, and
             confirmation of your request, CollAction will process your request
