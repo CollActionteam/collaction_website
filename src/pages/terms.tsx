@@ -227,7 +227,7 @@ export default function Terms() {
 
           <h4 className="text-black-300 mb-8">Contact Details</h4>
           <p className="mb-6">
-            Do you have any questions? Please contact us at{" "}
+            Would you like to contact us? Please email us at{" "}
             {
               <a
                 className="text-collaction"
@@ -237,8 +237,8 @@ export default function Terms() {
               >
                 terms@collaction.org
               </a>
-            }
-            , or by post:
+            }{" "}
+            or send a letter to:
           </p>
           <p className="mb-6 last:mb-0">
             Stichting CollAction
