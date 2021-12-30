@@ -23,14 +23,14 @@ export default function Terms() {
             <strong>“Policy”</strong>) carefully before using our website and
             mobile application, as it provides important information about how
             and why we gather and process personal information (
-            <strong>“Personal Information”</strong>)) about you when you use our
+            <strong>“Personal Information”</strong>) about you when you use our
             website or mobile application. Personal Information is information
             that can directly or indirectly be used to identify you.
           </p>
           <p className="mb-6">
-            Stichting CollAction (<strong>“CollAction”</strong>)) is the
+            Stichting CollAction (<strong>“CollAction”</strong>) is the
             controller of the data collected and processed, as is defined in EU
-            Regulation 2016/679 (<strong>“GDPR”</strong>)). Our contact details
+            Regulation 2016/679 (<strong>“GDPR”</strong>). Our contact details
             can be found further below.
           </p>
           <p className="mb-6 last:mb-0">
@@ -83,7 +83,7 @@ export default function Terms() {
           <h4 className="text-black-300 mb-8">
             What Personal Information do we collect?
           </h4>
-          <p className="mb-6 last:mb-0">
+          <p className="mb-6">
             In order to do the above, we collect and process Personal
             Information, comprising of your name, gender, date of birth,
             location, phone number, e-mail address, profile picture, and your
@@ -142,7 +142,7 @@ export default function Terms() {
             Does CollAction share my Personal Information with third parties?
           </h4>
 
-          <p className="mb-6 last:mb-0">
+          <p className="mb-6">
             CollAction is a non-profit organization dedicated to making the
             world a better place with the help of individuals like you. In
             accordance with our mission, CollAction will not sell to or share
@@ -210,27 +210,26 @@ export default function Terms() {
             contractual clauses adopted by the European Union Commission
             Implementing Decision 2021/914/EU.
           </p>
+
           <h4 className="text-black-300 mb-8">What are cookies?</h4>
-          <p className="mb-6 last:mb-0">
+          <p className="mb-6">
             Cookies are text files placed on your device to collect standard
             Internet log information and visitor behaviour information.
             CollAction uses the following types of cookies:
           </p>
 
-          <p className="mb-6">
+          <h5 className="text-body font-normal">
             <em>Strictly necessary/ functional cookies</em>
-          </p>
-
-          <p className="mb-6 last:mb-0">
+          </h5>
+          <p className="mb-6">
             These are cookies that are necessary for the (basic) operation of
             our website, for example to keep you logged in.
           </p>
 
-          <p className="mb-6">
+          <h5 className="text-body font-normal">
             <em>Analytics cookies</em>
-          </p>
-
-          <p className="mb-6 last:mb-0">
+          </h5>
+          <p className="mb-6">
             CollAction makes use of third-party analytics services that use
             cookies, such as Google Analytics and Google Tag Manager. These are
             used to obtain relevant statistics and other information about the
@@ -241,11 +240,10 @@ export default function Terms() {
             anonymized before information is shared with Google.
           </p>
 
-          <p className="mb-6">
+          <h5 className="text-body font-normal">
             <em>Social media buttons</em>
-          </p>
-
-          <p className="mb-6 last:mb-0">
+          </h5>
+          <p className="mb-6">
             We have placed ‘social media buttons’ on our website an mobile
             application which allow you to connect to various social media
             platforms such as Facebook and Twitter to, for example, share a
@@ -257,10 +255,9 @@ export default function Terms() {
             treat your Personal Information.
           </p>
 
-          <p className="mb-6">
-            <em>Disabling cookies</em>{" "}
-          </p>
-
+          <h5 className="text-body font-normal">
+            <em>Disabling cookies</em>
+          </h5>
           <p className="mb-6 last:mb-0">
             If you wish to disable the use and placement of cookies, we advise
             you to amend your internet browser settings. We do however note that
