@@ -97,7 +97,7 @@ export const discounts: DiscountType[] = [
         free-from: sugar, unnatural additives, gluten and lactose.
         <br />
         <br />
-        Our boxes are delivered fresh at your doostep every day.{" "}
+        Our boxes are delivered fresh at your doorstep every day.{" "}
         {/* <a
           href="https://weborder-eu.spont.cash/widget/?key=96033c478dc44494bf56e64d0f23fff6&source=direct&autoopen=none"
           target="_blank"
