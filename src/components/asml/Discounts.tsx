@@ -16,6 +16,14 @@ import {
 import Phood1 from "public/discounts/phood-1.jpg";
 import Phood2 from "public/discounts/phood-2.jpg";
 import Phood3 from "public/discounts/phood-3.jpg";
+import Phood from "public/discounts/phood.jpg";
+import Botanic from "public/discounts/botanicbites.png";
+import Calypso from "public/discounts/calypso.jpg";
+import Dijk9 from "public/discounts/dijk9.jpg";
+import Jungle from "public/discounts/junglecafe.jpeg";
+import Jungle2 from "public/discounts/junglecafe2.jpeg";
+import Tea from "public/discounts/teastories.jpg";
+
 
 const isDev = process.env.NODE_ENV === "development";
 
