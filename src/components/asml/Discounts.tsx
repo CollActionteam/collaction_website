@@ -20,7 +20,6 @@ import Dijk9 from "public/discounts/dijk9.jpg";
 import Jungle from "public/discounts/junglecafe.jpeg";
 import Tea from "public/discounts/teastories.jpg";
 
-
 const isDev = process.env.NODE_ENV === "development";
 
 type DiscountType = {
@@ -48,11 +47,7 @@ export const discounts: DiscountType[] = [
       location: `https://g.page/JungleCafeCateringEindhoven?share`,
       order: ``,
     },
-    content: (
-      <>
-        €4 for 2 vegan coffee, cappuccino or tea.
-      </>
-    ),
+    content: <>€4 for 2 vegan coffee, cappuccino or tea.</>,
   },
   {
     publish: true,
@@ -69,12 +64,13 @@ export const discounts: DiscountType[] = [
         15% discount on all products in the webshop using voucher FOOD IS LOVE.
         <br />
         <br />
-        We push PLANT BASED & fight FOOD WASTE. 
+        We push PLANT BASED & fight FOOD WASTE.
         <br />
         <br />
-        Botanic Bites makes the most tasty and sustainable food products using unwanted 
-        agricultural byproducts like mushroom stems or crazy looking tomatoes. Maybe you 
-        tried our Mushroom Kebab (Zwarma) before? If not, grab your chance now.
+        Botanic Bites makes the most tasty and sustainable food products using
+        unwanted agricultural byproducts like mushroom stems or crazy looking
+        tomatoes. Maybe you tried our Mushroom Kebab (Zwarma) before? If not,
+        grab your chance now.
       </>
     ),
   },
@@ -90,7 +86,6 @@ export const discounts: DiscountType[] = [
     },
     content: (
       <>
-        
         - 1 bowl / week: €17,50
         <br />
         - 3 bowls / week: €46,50
@@ -125,9 +120,8 @@ export const discounts: DiscountType[] = [
     },
     content: (
       <>
-        Free brownie from the house when you eat in for more than €15 pp.
-
-        NB: ASML employees that shows the email can get a brownie for themselves.
+        Free brownie from the house when you eat in for more than €15 pp. NB:
+        ASML employees that shows the email can get a brownie for themselves.
       </>
     ),
   },
@@ -142,11 +136,7 @@ export const discounts: DiscountType[] = [
       order: ``,
     },
     content: (
-      <>
-        20% discount on all products in store.
-
-        NB: closed until January 9.
-      </>
+      <>20% discount on all products in store. NB: closed until January 9.</>
     ),
   },
   {
@@ -168,13 +158,14 @@ export const discounts: DiscountType[] = [
         - 4 course homecooking menu: €45
         <br />
         <br />
-        Cooking has never been so easy. Our chefs have prepared everything down to the last detail. 
-        You just need to do the finishing touch. You do this with the help of our videos and 
-        make delicious dishes of star quality. Every dish is on the table in an instant.
+        Cooking has never been so easy. Our chefs have prepared everything down
+        to the last detail. You just need to do the finishing touch. You do this
+        with the help of our videos and make delicious dishes of star quality.
+        Every dish is on the table in an instant.
         <br />
         <br />
-        NB: don't forget to click on 'Vega' in case you'd like the vegetarian option.
-        NB: closed until January 13.
+        NB: don&apos;t forget to click on &apos;Vega&apos; in case you&apos;d
+        like the vegetarian option. NB: closed until January 13.
       </>
     ),
   },
