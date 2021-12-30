@@ -13,9 +13,12 @@ import {
 // 1) place new files in the /public/discounts folder
 // 2) import it here
 // 3) reference your import in your discount object
-import Phood1 from "public/discounts/phood-1.jpg";
-import Phood2 from "public/discounts/phood-2.jpg";
-import Phood3 from "public/discounts/phood-3.jpg";
+import Phood from "public/discounts/phood.jpg";
+import Botanic from "public/discounts/botanicbites.png";
+import Calypso from "public/discounts/calypso.jpg";
+import Dijk9 from "public/discounts/dijk9.jpg";
+import Jungle from "public/discounts/junglecafe.jpeg";
+import Tea from "public/discounts/teastories.jpg";
 
 const isDev = process.env.NODE_ENV === "development";
 
@@ -36,40 +39,45 @@ type DiscountType = {
 export const discounts: DiscountType[] = [
   {
     publish: true,
-    title: "Phood Kitchen",
-    image: Phood1,
+    title: "Jungle Café",
+    image: Jungle,
     links: {
-      website: `https://phoodkitchen.com/`,
-      phone: `31615400775`,
+      website: `https://www.junglecafecatering.nl/`,
+      phone: `31408453577`,
+      location: `https://g.page/JungleCafeCateringEindhoven?share`,
+      order: ``,
+    },
+    content: <>€4 for 2 vegan coffee, cappuccino or tea.</>,
+  },
+  {
+    publish: true,
+    title: "Botanic Bites",
+    image: Botanic,
+    links: {
+      website: `https://www.botanicbites.com/`,
+      phone: `31624240989`,
       location: ``,
-      order: `https://weborder-eu.spont.cash/widget/?key=96033c478dc44494bf56e64d0f23fff6&source=direct&autoopen=none`,
+      order: ``,
     },
     content: (
       <>
-        Phood standard: hyper-local, fresh, functional food. All our bowls are
-        free-from: sugar, unnatural additives, gluten and lactose.
+        15% discount on all products in the webshop using voucher FOOD IS LOVE.
         <br />
-        - 1 bowl / week: €17,50
         <br />
-        - 3 bowls / week: €46,50
+        We push PLANT BASED & fight FOOD WASTE.
         <br />
-        - 5 bowls / week: €60
         <br />
-        Our boxes are delivered fresh at your doostep every day.{" "}
-        <a
-          href="https://weborder-eu.spont.cash/widget/?key=96033c478dc44494bf56e64d0f23fff6&source=direct&autoopen=none"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Order your boxes now.
-        </a>
+        Botanic Bites makes the most tasty and sustainable food products using
+        unwanted agricultural byproducts like mushroom stems or crazy looking
+        tomatoes. Maybe you tried our Mushroom Kebab (Zwarma) before? If not,
+        grab your chance now.
       </>
     ),
   },
   {
     publish: true,
     title: "Phood Kitchen",
-    image: Phood3,
+    image: Phood,
     links: {
       website: `https://phoodkitchen.com/`,
       phone: `31615400775`,
@@ -78,111 +86,86 @@ export const discounts: DiscountType[] = [
     },
     content: (
       <>
-        Phood standard: hyper-local, fresh, functional food. All our bowls are
-        free-from: sugar, unnatural additives, gluten and lactose.
-        <br />
         - 1 bowl / week: €17,50
         <br />
         - 3 bowls / week: €46,50
         <br />
-        - 5 bowls / week: €60
+        - 5 bowls / week: €60,-
+        <br />
+        <br />
+        Phood standard: hyper-local, fresh, functional food. All our bowls are
+        free-from: sugar, unnatural additives, gluten and lactose.
+        <br />
         <br />
         Our boxes are delivered fresh at your doostep every day.{" "}
-        <a
+        {/* <a
           href="https://weborder-eu.spont.cash/widget/?key=96033c478dc44494bf56e64d0f23fff6&source=direct&autoopen=none"
           target="_blank"
           rel="noreferrer"
         >
           Order your boxes now.
-        </a>
+        </a> */}
       </>
     ),
   },
-  // these are two other sample discounts only seen in development
   {
     publish: false,
-    title: "Phood Kitchen",
-    image: Phood2,
+    title: "Bar Bistro Calypso",
+    image: Calypso,
     links: {
       website: ``,
-      phone: `31615400775`,
-      location: ``,
+      phone: `31403680691`,
+      location: `https://g.page/bistrocalypso?share`,
       order: ``,
     },
     content: (
       <>
-        <strong>Short content</strong>
-        <br />
-        Phood standard: hyper-local, fresh, functional food.
-        <br />
+        Free brownie from the house when you eat in for more than €15 pp. NB:
+        ASML employees that shows the email can get a brownie for themselves.
       </>
     ),
   },
   {
     publish: false,
-    title: "Phood Kitchen",
-    image: Phood1,
+    title: "Tea Stories",
+    image: Tea,
     links: {
-      website: `https://phoodkitchen.com/`,
-      phone: `31615400775`,
+      website: `https://goodteastories.com/`,
+      phone: `31625683566`,
+      location: `https://goo.gl/maps/oSm6E5JfVRRW6NpZ9`,
+      order: ``,
+    },
+    content: (
+      <>20% discount on all products in store. NB: closed until January 9.</>
+    ),
+  },
+  {
+    publish: true,
+    title: "Dijk9",
+    image: Dijk9,
+    links: {
+      website: `https://www.dijk9.nl/`,
+      phone: `314021223555`,
       location: ``,
-      order: `https://weborder-eu.spont.cash/widget/?key=96033c478dc44494bf56e64d0f23fff6&source=direct&autoopen=none`,
+      order: `https://www.dijk9.nl/easyhomecooking`,
     },
     content: (
       <>
-        <strong>Loooong content</strong>
+        Get free bonbons with the voucher ASML2022 when you order:
         <br />
-        Phood standard: hyper-local, fresh, functional food. All our bowls are
-        free-from: sugar, unnatural additives, gluten and lactose.
+        - 3 course homecooking menu: €35
         <br />
-        - 1 bowl / week: €17,50
+        - 4 course homecooking menu: €45
         <br />
-        - 3 bowls / week: €46,50
         <br />
-        - 5 bowls / week: €60
+        Cooking has never been so easy. Our chefs have prepared everything down
+        to the last detail. You just need to do the finishing touch. You do this
+        with the help of our videos and make delicious dishes of star quality.
+        Every dish is on the table in an instant.
         <br />
-        Our boxes are delivered fresh at your doostep every day.{" "}
-        <a
-          href="https://weborder-eu.spont.cash/widget/?key=96033c478dc44494bf56e64d0f23fff6&source=direct&autoopen=none"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Order your boxes now.
-        </a>
-        Phood standard: hyper-local, fresh, functional food. All our bowls are
-        free-from: sugar, unnatural additives, gluten and lactose.
         <br />
-        - 1 bowl / week: €17,50
-        <br />
-        - 3 bowls / week: €46,50
-        <br />
-        - 5 bowls / week: €60
-        <br />
-        Our boxes are delivered fresh at your doostep every day.{" "}
-        <a
-          href="https://weborder-eu.spont.cash/widget/?key=96033c478dc44494bf56e64d0f23fff6&source=direct&autoopen=none"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Order your boxes now.
-        </a>
-        Phood standard: hyper-local, fresh, functional food. All our bowls are
-        free-from: sugar, unnatural additives, gluten and lactose.
-        <br />
-        - 1 bowl / week: €17,50
-        <br />
-        - 3 bowls / week: €46,50
-        <br />
-        - 5 bowls / week: €60
-        <br />
-        Our boxes are delivered fresh at your doostep every day.{" "}
-        <a
-          href="https://weborder-eu.spont.cash/widget/?key=96033c478dc44494bf56e64d0f23fff6&source=direct&autoopen=none"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Order your boxes now.
-        </a>
+        NB: don&apos;t forget to click on &apos;Vega&apos; in case you&apos;d
+        like the vegetarian option. NB: closed until January 13.
       </>
     ),
   },
