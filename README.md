@@ -22,6 +22,24 @@ This repository contains the source code and assets required to build the [CollA
 
 - Open [http://localhost:3000](http://localhost:3000) in your browser and the website folder in your preferred code editor
 
+  > When starting the server you might receive the following error:
+  >
+  > `Error: The specified module could not be found.`
+  >
+  > Which is caused by:
+  >
+  > `@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node`
+  >
+  > You can track the issue on [this Next.js discussion](https://github.com/vercel/next.js/discussions/30468)
+  >
+  > Want a quick fix? Create a `.babelrc` in the root of your directory and paste the following:
+
+  ```
+  {
+    "presets": ["next/babel"]
+  }
+  ```
+
 ## Pushing Changes
 
 - Save your files
