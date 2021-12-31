@@ -8,7 +8,7 @@ import CollActionLogoWithText from "public/green-logo-name.png";
 
 export default function NavBar() {
   const { pathname } = useRouter();
-  console.log(pathname);
+
   return (
     <header
       className={clsx(
