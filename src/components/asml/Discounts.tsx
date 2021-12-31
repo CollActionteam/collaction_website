@@ -109,11 +109,11 @@ export const discounts: DiscountType[] = [
     ),
   },
   {
-    publish: false,
+    publish: true,
     title: "Bar Bistro Calypso",
     image: Calypso,
     links: {
-      website: ``,
+      website: `https://www.bistrocalypso.nl/`,
       phone: `31403680691`,
       location: `https://g.page/bistrocalypso?share`,
       order: ``,
@@ -121,12 +121,12 @@ export const discounts: DiscountType[] = [
     content: (
       <>
         Free brownie from the house when you eat in for more than €15 pp. NB:
-        ASML employees that shows the email can get a brownie for themselves.
+        ASML employees that show the email get a brownie for themselves.
       </>
     ),
   },
   {
-    publish: false,
+    publish: true,
     title: "Tea Stories",
     image: Tea,
     links: {

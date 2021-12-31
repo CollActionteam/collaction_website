@@ -16,7 +16,6 @@ export default function Terms() {
             version dated December 30th, 2021
           </p>
 
-          <h4 className="text-black-300 mb-8">Terms of Use Platform</h4>
           <p className="mb-6 last:mb-0">
             These terms of use, as amended from time to time (hereinafter
             referred to as the (<strong>"Terms of Use"</strong>) describe the
