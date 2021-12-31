@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
+import Footer from "src/components/Footer";
 import CookiesBanner from "src/components/Cookies/CookiesBanner";
 import * as gtag from "src/lib/gtag";
 import "src/styles/globals.css";
@@ -29,6 +30,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>CollAction</title>
       </Head>
       <Component {...pageProps} />
+      <Footer />
       <CookiesBanner />
     </>
   );
