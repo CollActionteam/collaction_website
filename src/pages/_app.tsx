@@ -5,8 +5,8 @@ import { useRouter } from "next/router";
 
 import Footer from "src/components/Footer";
 import NavBar from "src/components/NavBar";
-import CookiesBanner from "src/components/Cookies/CookiesBanner";
-import * as gtag from "src/lib/gtag";
+import Analytics from "src/components/Analytics";
+import * as gtag from "src/components/Analytics/gtag";
 import "src/styles/globals.css";
 import "src/styles/ticker.css";
 
@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <NavBar />
       <Component {...pageProps} />
       <Footer />
-      <CookiesBanner />
+      <Analytics />
     </>
   );
 }

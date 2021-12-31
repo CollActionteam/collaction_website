@@ -14,6 +14,8 @@ const cookieAcceptanceOptions: OptionsType = {
   maxAge: 365 * 24 * 60 * 60,
 };
 
+export const GA_TRACKING_ID = "G-8DEJX1KVE0";
+
 // accept/reject cookies
 export function makeCookieSelection(selection: SelectionType) {
   setCookies(cookieAcceptanceName, selection, cookieAcceptanceOptions);
