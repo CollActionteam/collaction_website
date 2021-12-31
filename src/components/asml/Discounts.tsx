@@ -121,7 +121,7 @@ export const discounts: DiscountType[] = [
     content: (
       <>
         Free brownie from the house when you eat in for more than €15 pp. NB:
-        ASML employees that shows the email can get a brownie for themselves.
+        ASML employees that show the email get a brownie for themselves.
       </>
     ),
   },
