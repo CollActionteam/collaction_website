@@ -109,7 +109,7 @@ export const discounts: DiscountType[] = [
     ),
   },
   {
-    publish: false,
+    publish: true,
     title: "Bar Bistro Calypso",
     image: Calypso,
     links: {
@@ -126,7 +126,7 @@ export const discounts: DiscountType[] = [
     ),
   },
   {
-    publish: false,
+    publish: true,
     title: "Tea Stories",
     image: Tea,
     links: {
