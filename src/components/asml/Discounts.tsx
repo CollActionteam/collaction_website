@@ -276,7 +276,7 @@ function DiscountCard({ title, image, links, content }: DiscountType) {
       >
         <div className="flex flex-col justify-between h-full">
           {/* TITLE & CONTENT */}
-          <div className="px-8 sm:px-10 pt-8 flex flex-col">
+          <div className="overflow-auto px-8 sm:px-10 pt-8 flex flex-col">
             <h5 className="text-title-2 mb-6 sm:mb-8">{title}</h5>
             <div className="overflow-y-scroll scrollbar-track-accent-500 scrollbar-thumb-secondary">
               {content}

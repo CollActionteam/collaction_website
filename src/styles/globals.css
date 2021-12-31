@@ -3,14 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  body,
-  div,
-  section,
-  main,
-  article {
-    @apply scrollbar scrollbar-thin scrollbar-thumb-accent scrollbar-track-black-0 scrollbar-thumb-rounded-3xl;
-  }
-
   body {
     @apply font-sans text-black-400;
   }
@@ -39,5 +31,16 @@
   b,
   strong {
     @apply font-bold;
+  }
+
+  /* https://github.com/adoxography/tailwind-scrollbar/issues/15#issuecomment-826363463 */
+  body,
+  .overflow-auto,
+  .overflow-scroll,
+  .overflow-x-auto,
+  .overflow-y-auto,
+  .overflow-x-scroll,
+  .overflow-y-scroll {
+    @apply scrollbar scrollbar-thin scrollbar-thumb-accent scrollbar-track-black-0 scrollbar-thumb-rounded-3xl;
   }
 }
