@@ -4,7 +4,6 @@ import Image from "next/image";
 import { ArrowSquareOut } from "phosphor-react";
 
 import Discounts from "src/components/asml/Discounts";
-import CookiesBanner from "src/components/Cookies/CookiesBanner";
 
 import ASMLBanner from "public/veganuary-ASML-banner.png";
 import CollActionLogoWithText from "public/black-logo-name.png";
@@ -49,20 +48,6 @@ export default function ASMLPage() {
               placeholder="blur"
             />
           </div>
-
-          <a
-            href="https://forms.office.com/r/haw1WhtRz1"
-            target="_blank"
-            rel="noreferrer"
-            className="bg-accent font-bold leading-none text-white text-center rounded-full p-3.5 w-72 shadow fixed bottom-8 inset-x-0 mx-auto z-50"
-            aria-label="Participate"
-          >
-            <span className="align-middle">Participate</span>
-            <ArrowSquareOut
-              className="h-6 w-6 inline-block ml-4"
-              weight="bold"
-            />
-          </a>
 
           <div className="mt-12 md:mt-15 lg:mt-26">
             <div className="max-w-600 mx-auto mb-13">
@@ -203,8 +188,18 @@ export default function ASMLPage() {
             </div>
           </div>
         </div>
-
-        <CookiesBanner />
+        {/* PARTICIPATE BUTTON */}
+        <a
+          href="https://forms.office.com/r/haw1WhtRz1"
+          target="_blank"
+          rel="noreferrer"
+          className="block bg-accent font-bold leading-none text-white text-center rounded-full p-3.5 mb-8 w-72 shadow sticky bottom-8 inset-x-0 mx-auto z-40"
+          aria-label="Participate"
+          style={{ marginTop: `calc(-52px - 2rem)` }}
+        >
+          <span className="align-middle">Participate</span>
+          <ArrowSquareOut className="h-6 w-6 inline-block ml-4" weight="bold" />
+        </a>
       </div>
     </>
   );

@@ -8,7 +8,7 @@ export default function CookiesBanner() {
   if (checkCookieSelection()) return null;
 
   return (
-    <div className="fixed bottom-0 inset-x-0 bg-secondary py-5 px-12 z-50">
+    <div className="sticky bottom-0 inset-x-0 bg-secondary py-5 px-12 z-50">
       {/* TEXT */}
       <p className="max-w-600 mx-auto text-black-300 text-center mb-5 ">
         We value your privacy. We and our partners use trackers to measure the

@@ -1,12 +1,12 @@
+import React, { useEffect } from "react";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import "../styles/globals.css";
-import "../styles/ticker.css";
-
-import React, { useEffect } from "react";
 import { useRouter } from "next/router";
-import * as gtag from "../lib/gtag";
-// import Layout from "../components/Layout";
+
+import CookiesBanner from "src/components/Cookies/CookiesBanner";
+import * as gtag from "src/lib/gtag";
+import "src/styles/globals.css";
+import "src/styles/ticker.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -28,9 +28,8 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>CollAction</title>
       </Head>
-      {/* <Layout> */}
       <Component {...pageProps} />
-      {/* </Layout> */}
+      <CookiesBanner />
     </>
   );
 }
