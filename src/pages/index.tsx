@@ -5,7 +5,6 @@ import WhatWeDo from "../components/home/WhatWeDo";
 import Vision from "../components/home/Vision";
 import Supporters from "../components/home/Supporters";
 import CurrentActicity from "../components/home/CurrentActivity";
-import NavigationBar from "src/components/home/NavigationBar";
 
 export default function HomePage() {
   let teams = {
@@ -29,7 +28,6 @@ export default function HomePage() {
 
   return (
     <div className="bg-white text-black-400">
-      <NavigationBar />
       <Ticker />
       <WhatWeDo />
       <Vision />
