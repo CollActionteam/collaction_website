@@ -113,7 +113,7 @@ export const discounts: DiscountType[] = [
     title: "Bar Bistro Calypso",
     image: Calypso,
     links: {
-      website: ``,
+      website: `https://www.bistrocalypso.nl/`,
       phone: `31403680691`,
       location: `https://g.page/bistrocalypso?share`,
       order: ``,
