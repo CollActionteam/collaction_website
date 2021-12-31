@@ -1,5 +1,3 @@
-import type { NextPage } from "next";
-
 import Team from "../components/home/Team";
 import Ticker from "../components/home/Ticker";
 import HelpOut from "../components/home/HelpOut";
@@ -7,9 +5,9 @@ import WhatWeDo from "../components/home/WhatWeDo";
 import Vision from "../components/home/Vision";
 import Supporters from "../components/home/Supporters";
 import CurrentActicity from "../components/home/CurrentActivity";
-import Layout from "../components/Layout";
+import NavigationBar from "src/components/home/NavigationBar";
 
-const Home: NextPage = () => {
+export default function HomePage() {
   let teams = {
     new: {
       name: "new",
@@ -30,7 +28,8 @@ const Home: NextPage = () => {
   };
 
   return (
-    <Layout>
+    <div className="bg-white text-black-400">
+      <NavigationBar />
       <Ticker />
       <WhatWeDo />
       <Vision />
@@ -39,8 +38,6 @@ const Home: NextPage = () => {
       <Team {...teams.new} />
       <HelpOut />
       <Team {...teams.old} />
-    </Layout>
+    </div>
   );
-};
-
-export default Home;
+}
