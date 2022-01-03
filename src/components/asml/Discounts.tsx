@@ -236,17 +236,18 @@ function DiscountCard({ title, image, links, content }: DiscountType) {
             <PhoneIcon weight="bold" size={24} />
           </a>
         )}
-        {links.order && (
-          <a
-            href={links.order}
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Order From Vendor"
-            className="bg-accent text-secondary text-button font-bold leading-none text-center rounded-full p-3 h-10 w-26 align-top"
-          >
-            Order
-          </a>
-        )}
+        <a
+          href={links.order}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Order From Vendor"
+          className={clsx(
+            links.order ? "bg-accent" : "bg-black-100 pointer-events-none",
+            "text-secondary text-button font-bold leading-none text-center rounded-full p-3 h-10 w-26 align-top"
+          )}
+        >
+          {links.order ? "Order" : "In-store"}
+        </a>
       </div>
       {/* TITLE & CONTENT */}
       <div className="px-8 sm:px-10">
