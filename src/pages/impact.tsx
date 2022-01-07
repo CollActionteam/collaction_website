@@ -1,21 +1,21 @@
+/* eslint-disable react/no-unescaped-entities */
 import Head from "next/head";
 import Image from "next/image";
 
-export default function Terms() {
+export default function Impact() {
   return (
     <>
       <Head>
-        <title>Impact | CollAction</title>
+        <title>Impact</title>
       </Head>
 
-      <main className="h-screen w-screen relative flex flex-col justify-between py-4 px-0 md:pt-0">
-        <div className="container mx-auto">
-          <div className="px-4">
-            <h1 className="text-collaction text-2xl font-medium">
-              Impact Calculation
-            </h1>
-            <p>You can calculate your individual impact here!</p>
-          </div>
+      <main className="bg-black-0 p-5 md:p-12">
+        <div className="max-w-600 mx-auto">
+          <h1 className="text-black-600 text-center mb-6">Impact</h1>
+
+          <p className="mb-6 last:mb-0">
+            The impact made by ASML will be shown on this page soon!
+          </p>
         </div>
       </main>
     </>

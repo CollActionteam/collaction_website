@@ -395,7 +395,17 @@ export default function Terms() {
           </p>
 
           <p className="mb-6 last:mb-0">
-            Telephone number: +3170 - 888 85 00
+            Telephone number:{" "}
+            {
+              <a
+                className="text-collaction"
+                href="tel:+31708888500"
+                target="_blank"
+                rel="noreferrer"
+              >
+                +3170 - 888 85 00
+              </a>
+            }
             <br />
             Address:
             <br />
