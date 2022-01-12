@@ -11,8 +11,8 @@ export default function CurrentActicity() {
           <p>
             Together with a team of developers from all over the world we’re
             building an app for iOS and Android. We aim to test the alpha
-            version in December 2021. Would you like to receive updates on
-            our progress and be one of the first to use our app? <br />
+            version in January 2022. Would you like to receive updates on our
+            progress and be one of the first to use our app? <br />
             <br />
             Join our{" "}
             <a

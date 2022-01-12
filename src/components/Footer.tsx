@@ -6,9 +6,10 @@ import { FiLinkedin, FiInstagram } from "react-icons/fi";
 import CollActionLogoWithText from "public/black-logo-name.png";
 import PoweredByVercel from "public/powered-by-vercel.svg";
 
-const phone = "+31708888500";
+const phone = "+31640394005";
 const email = "contact@collaction.org";
 const KvK = "65628608";
+const RSIN = "856193690";
 
 export default function Footer() {
   return (
@@ -53,17 +54,18 @@ export default function Footer() {
         </div>
 
         <div>
-          <h5 className="text-headline mb-5">Contact Us</h5>
+          <h5 className="text-headline mb-5">Reach us</h5>
           <ul className="list-none">
-            <li className="mb-5">
-              <a href={`tel:${phone}`}>Phone</a>
-            </li>
-            <li className="mb-5">
-              <a href={`mailto:${email}`}>Email</a>
+            <li className="mb-5 md:mb-0">
+              <a href={`tel:${phone}`}>+316 40394005</a>
             </li>
             <li className="mb-5 md:mb-0">
-              Bezuidenhoutseweg 30 <br />
-              2594 AV Den Haag
+              <a href={`mailto:${email}`}>contact@collaction.org</a>
+            </li>
+            <li className="mb-5">NL20TRIO0391190008</li>
+            <li className="mb-5 md:mb-0">
+              Hyacintenlaan 25 <br />
+              2015BA Haarlem
             </li>
           </ul>
         </div>
@@ -71,22 +73,23 @@ export default function Footer() {
         <div>
           <h5 className="text-headline mb-5">Legal</h5>
           <ul className="list-none">
-            <li className="mb-5">
+            <li className="mb-5 md:mb-0">
               <Link href="/privacy">
                 <a>Privacy policy</a>
               </Link>
             </li>
-            <li className="mb-5">
+            <li className="mb-5 md:mb-0">
               <Link href="/terms">
                 <a>Terms of use</a>
               </Link>
             </li>
-            <li className="mb-5">KvK: {KvK}</li>
-            <li className="mb-5 md:mb-0">
-              <Link href="/">
+            <li className="mb-5">
+              <Link href="/anbi">
                 <a>ANBI</a>
               </Link>
             </li>
+            <li className="mb-5 md:mb-0">KvK: {KvK}</li>
+            <li className="mb-5 md:mb-0">RSIN: {RSIN}</li>
           </ul>
         </div>
       </div>

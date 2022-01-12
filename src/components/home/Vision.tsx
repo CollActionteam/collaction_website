@@ -10,7 +10,7 @@ export default function Vision() {
           </h1>
           <p>
             Do you want to make the world a better place, but do your actions
-            feel like a drop in the ocean? Thanks to crowdacting you can take
+            feel like a drop in the ocean? Thanks to CrowdActing you can take
             action, together with many like minded individuals. Let’s not eat
             meat for a month together. Let’s reduce plastic together. Together,
             we make waves!
