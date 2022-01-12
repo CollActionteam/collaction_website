@@ -1,3 +1,4 @@
+/** @type {import('tailwindcss/tailwind-config').TailwindConfig} */
 module.exports = {
   content: [
     "./src/components/**/*.{js,ts,jsx,tsx}",
@@ -78,12 +79,6 @@ module.exports = {
         "4xl": "1.5rem",
       },
     },
-  },
-  variants: {
-    extend: {
-      margin: ["odd", "last"],
-    },
-    scrollbar: ["rounded"],
   },
   plugins: [
     // https://gist.github.com/parafeu/3cf1c52d374a52091a685ce030563411
