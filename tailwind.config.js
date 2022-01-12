@@ -1,6 +1,8 @@
 module.exports = {
-  purge: ["./src/**/*.{js,ts,jsx,tsx}"],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     // only used in index page
     container: {
@@ -84,7 +86,8 @@ module.exports = {
     scrollbar: ["rounded"],
   },
   plugins: [
-    require("tailwind-scrollbar"),
+    // https://gist.github.com/parafeu/3cf1c52d374a52091a685ce030563411
+    require("./src/plugins/scrollbar.js"),
     require("@tailwindcss/line-clamp"),
     require("@tailwindcss/aspect-ratio"),
   ],

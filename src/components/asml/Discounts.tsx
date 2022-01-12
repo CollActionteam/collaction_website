@@ -284,7 +284,7 @@ function DiscountCard({ title, image, links, content }: DiscountType) {
             </div>
           </div>
           {/* MINIMIZE CONTENT ICON */}
-          <div className="py-6 sm:py-8 pl-8 pr-5 sm:pl-10 sm:pr-8 text-right flex-shrink-0">
+          <div className="py-6 sm:py-8 pl-8 pr-5 sm:pl-10 sm:pr-8 text-right shrink-0">
             <button
               onClick={() => setShowContent(false)}
               className="inline-block bg-secondary text-black-100 p-2 rounded-full"
