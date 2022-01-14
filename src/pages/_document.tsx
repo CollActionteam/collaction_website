@@ -5,7 +5,7 @@ export default class MyDocument extends Document {
     const currentURL = "https://collaction.org";
     const description =
       "Do you want to make the world a better place? Do your actions feel like a drop in the ocean?";
-    const previewImage = "/android-chrome-256x256.png";
+    const previewImage = "/Logo_green.png";
     const pageTitle = "CollAction | Power to the Crowd | Act Now";
 
     return (
