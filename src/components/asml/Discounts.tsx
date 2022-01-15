@@ -57,11 +57,12 @@ export const discounts: DiscountType[] = [
       website: `https://www.botanicbites.com/`,
       phone: `31624240989`,
       location: ``,
-      order: ``,
+      order: `https://www.botanicbites.com/shop `,
     },
     content: (
       <>
-        15% discount on all products in the webshop using voucher FOOD IS LOVE.
+        15% discount on all products in the webshop using voucher ‘FOOD IS
+        LOVE’.
         <br />
         <br />
         We push PLANT BASED & fight FOOD WASTE.
@@ -86,18 +87,20 @@ export const discounts: DiscountType[] = [
     },
     content: (
       <>
-        - 1 bowl / week: €17,50
+        Get your FREE vegan broth base (€7,50) with every order above €22.
         <br />
-        - 3 bowls / week: €46,50
         <br />
-        - 5 bowls / week: €60,-
+        Simply order in our webshop and add ‘ASML22’ as a note and enjoy your
+        home-made healthy vegan broth for free.
         <br />
         <br />
         Phood standard: hyper-local, fresh, functional food. All our bowls are
         free-from: sugar, unnatural additives, gluten and lactose.
         <br />
         <br />
-        Our boxes are delivered fresh at your doorstep every day.{' '}
+        Our meals can be pre-ordered for take-away or delivered to your doorstep
+        from Thursday to Sunday. Our boxes are delivered fresh at your doorstep
+        every day.{' '}
         {/* <a
           href="https://weborder-eu.spont.cash/widget/?key=96033c478dc44494bf56e64d0f23fff6&source=direct&autoopen=none"
           target="_blank"
@@ -135,9 +138,7 @@ export const discounts: DiscountType[] = [
       location: `https://goo.gl/maps/oSm6E5JfVRRW6NpZ9`,
       order: ``,
     },
-    content: (
-      <>20% discount on all products in store. NB: closed until January 9.</>
-    ),
+    content: <>20% discount on all products in store.</>,
   },
   {
     publish: true,
@@ -165,7 +166,7 @@ export const discounts: DiscountType[] = [
         <br />
         <br />
         NB: don&apos;t forget to click on &apos;Vega&apos; in case you&apos;d
-        like the vegetarian option. NB: closed until January 13.
+        like the vegetarian option.
       </>
     ),
   },
