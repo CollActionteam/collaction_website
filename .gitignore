@@ -38,4 +38,3 @@ yarn-error.log*
 .babelrc
 
 package-lock.json
-yarn.lock
