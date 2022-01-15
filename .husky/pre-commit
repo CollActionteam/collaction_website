@@ -1,0 +1,12 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo '⏳ Running lint-staged command ⏳'
+
+yarn lint-staged ||
+(
+	echo '❌ An error occurred. Please fix it/them and try again. ❌'
+	false; 
+)
+
+echo '✅ Successful Commit ✅'
