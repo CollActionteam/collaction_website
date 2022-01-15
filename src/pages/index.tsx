@@ -1,22 +1,22 @@
-import Team from "../components/home/Team";
-import Ticker from "../components/home/Ticker";
-import HelpOut from "../components/home/HelpOut";
-import WhatWeDo from "../components/home/WhatWeDo";
-import Vision from "../components/home/Vision";
-import Supporters from "../components/home/Supporters";
-import CurrentActicity from "../components/home/CurrentActivity";
+import Team from '../components/home/Team';
+import Ticker from '../components/home/Ticker';
+import HelpOut from '../components/home/HelpOut';
+import WhatWeDo from '../components/home/WhatWeDo';
+import Vision from '../components/home/Vision';
+import Supporters from '../components/home/Supporters';
+import CurrentActicity from '../components/home/CurrentActivity';
 
 export default function HomePage() {
-  let teams = {
+  const teams = {
     new: {
-      name: "new",
-      title: "Meet the team",
-      background: "bg-black-0",
+      name: 'new',
+      title: 'Meet the team',
+      background: 'bg-black-0',
     },
     old: {
-      name: "old",
-      title: "The Giants",
-      background: "bg-black-0",
+      name: 'old',
+      title: 'The Giants',
+      background: 'bg-black-0',
       description: (
         <>
           You know the saying with shoulders and giants? <br />

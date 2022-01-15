@@ -1,12 +1,12 @@
-import React, { ReactNode } from "react";
-import clsx from "clsx";
+import React, { ReactNode } from 'react';
+import clsx from 'clsx';
 
-import Avatar from "../Avatar";
-import new_team from "../../data/new_team.json";
-import old_team from "../../data/old_team.json";
+import Avatar from '../Avatar';
+import new_team from '../../data/new_team.json';
+import old_team from '../../data/old_team.json';
 
 interface TeamProps {
-  name: string | "new" | "old";
+  name: string | 'new' | 'old';
   title: string;
   description?: string | ReactNode;
   background?: string;
@@ -20,8 +20,8 @@ interface IMember {
 }
 
 export default function Teams(props: TeamProps) {
-  var team_members = new_team.members.map((member: IMember) => {
-    let prefix = "/teams/" + props.name + "/";
+  let team_members = new_team.members.map((member: IMember) => {
+    const prefix = '/teams/' + props.name + '/';
     return (
       <Avatar
         key={member.name}
@@ -32,30 +32,34 @@ export default function Teams(props: TeamProps) {
     );
   });
 
-  if (props.name === "old") {
+  if (props.name === 'old') {
     team_members = old_team.members.map((member: IMember) => {
-      let prefix = "/teams/" + props.name + "/";
+      const prefix = '/teams/' + props.name + '/';
       return (
-        <Avatar key={member.name} src={prefix + member.photo} alt={member.name} />
+        <Avatar
+          key={member.name}
+          src={prefix + member.photo}
+          alt={member.name}
+        />
       );
     });
   }
 
   return (
-    <section className={clsx("px-5", "py-10", props.background || "")}>
+    <section className={clsx('px-5', 'py-10', props.background || '')}>
       <div
         className={clsx(
-          "pb-10",
-          "pb-12" && props.name === "old",
-          "text-center"
+          'pb-10',
+          'pb-12' && props.name === 'old',
+          'text-center'
         )}
       >
         <h1
           className={clsx(
-            "text-collaction",
-            "text-2xl",
-            "font-medium",
-            props.description && "mb-4"
+            'text-collaction',
+            'text-2xl',
+            'font-medium',
+            props.description && 'mb-4'
           )}
         >
           {props.title}

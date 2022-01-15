@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export default function CurrentActicity() {
   return (
@@ -14,7 +14,7 @@ export default function CurrentActicity() {
             version in January 2022. Would you like to receive updates on our
             progress and be one of the first to use our app? <br />
             <br />
-            Join our{" "}
+            Join our{' '}
             <a
               className="text-collaction"
               target="_blank"
@@ -22,8 +22,8 @@ export default function CurrentActicity() {
               href="https://forms.gle/A233e3PHzA8VwEBGA"
             >
               mailing list
-            </a>{" "}
-            here and/or follow us on{" "}
+            </a>{' '}
+            here and/or follow us on{' '}
             <a
               className="text-collaction"
               target="_blank"
@@ -40,10 +40,10 @@ export default function CurrentActicity() {
           <p>
             CollAction was founded in 2016 by Ron van den Akker and Spencer
             Heijnen. After great successes with fashion-related crowdactions,
-            their team decided to focus solely on{" "}
+            their team decided to focus solely on{' '}
             <a className="text-collaction" href="https://slowfashion.global/">
               SlowFashion
-            </a>{" "}
+            </a>{' '}
             in 2020. As there is still strong confidence that there&apos;s room
             for CollAction in this world, a new team has formed in 2021 and is
             expanding rapidly.

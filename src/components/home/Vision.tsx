@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export default function Vision() {
   return (
@@ -25,16 +25,16 @@ export default function Vision() {
         <div>
           <h1 className="text-collaction text-2xl font-medium">Our vision</h1>
           <p>
-            Solve all{" "}
+            Solve all{' '}
             <a
               href="https://en.wikipedia.org/wiki/Collective_action_problem"
               className="text-collaction"
               target="_blank"
               rel="noreferrer"
             >
-              {" "}
+              {' '}
               collective action problems
-            </a>{" "}
+            </a>{' '}
             in the world.
           </p>
         </div>

@@ -1,6 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
-import Head from "next/head";
-import Image from "next/image";
+import Head from 'next/head';
 
 export default function Terms() {
   return (
@@ -48,7 +46,7 @@ export default function Terms() {
           </h4>
           <p className="mb-6 last:mb-0">
             We collect and process your Personal Information in order to:
-            <ul style={{ listStyleType: "decimal" }} className="pl-8">
+            <ul style={{ listStyleType: 'decimal' }} className="pl-8">
               <li className="mb-1">
                 create a CollAction account for you at your request;
               </li>
@@ -99,7 +97,7 @@ export default function Terms() {
           <p className="mb-6 last:mb-0">
             Our processing of your Personal Information is based on one or more
             of the following legal grounds:
-            <ul style={{ listStyleType: "decimal" }} className="pl-8">
+            <ul style={{ listStyleType: 'decimal' }} className="pl-8">
               <li className="mb-1">
                 you have consented to the processing of your Personal
                 Information (Article 6 (1) sub a GDPR);
@@ -162,7 +160,7 @@ export default function Terms() {
             protection according to the European Commission. In that case,
             Personal Information will only be transferred under the following
             conditions:
-            <ul style={{ listStyleType: "decimal" }} className="pl-8">
+            <ul style={{ listStyleType: 'decimal' }} className="pl-8">
               <li className="mb-1">
                 you have consented to the proposed transfer of your Personal
                 Information (Article 6 (1) sub a GDPR);
@@ -265,7 +263,7 @@ export default function Terms() {
             longer access or use certain features of our website or mobile
             application or will reduce the overall functioning of our website
             and/or mobile application. For more information on how to disable
-            the use of Google Analytics specifically, please see{" "}
+            the use of Google Analytics specifically, please see{' '}
             {
               <a
                 className="text-collaction"
@@ -311,7 +309,7 @@ export default function Terms() {
           <p className="mb-6">
             Subject to certain legal limitations, you can at all times submit a
             request to CollAction to do the following:
-            <ul style={{ listStyleType: "decimal" }} className="pl-8">
+            <ul style={{ listStyleType: 'decimal' }} className="pl-8">
               <li className="mb-1">
                 gain access to your Personal Information (the right to access);
               </li>
@@ -360,7 +358,7 @@ export default function Terms() {
 
           <h4 className="text-black-300 mb-8">Contact Details</h4>
           <p className="mb-6">
-            Would you like to contact us? Please email us at{" "}
+            Would you like to contact us? Please email us at{' '}
             {
               <a
                 className="text-collaction"
@@ -370,7 +368,7 @@ export default function Terms() {
               >
                 privacy@collaction.org
               </a>
-            }{" "}
+            }{' '}
             or send a letter to:
           </p>
           <p className="mb-6 last:mb-0">
@@ -395,7 +393,7 @@ export default function Terms() {
           </p>
 
           <p className="mb-6 last:mb-0">
-            Telephone number:{" "}
+            Telephone number:{' '}
             {
               <a
                 className="text-collaction"

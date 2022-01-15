@@ -1,15 +1,15 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { FiLinkedin, FiInstagram } from "react-icons/fi";
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { FiLinkedin, FiInstagram } from 'react-icons/fi';
 
-import CollActionLogoWithText from "public/black-logo-name.png";
-import PoweredByVercel from "public/powered-by-vercel.svg";
+import CollActionLogoWithText from 'public/black-logo-name.png';
+import PoweredByVercel from 'public/powered-by-vercel.svg';
 
-const phone = "+31640394005";
-const email = "contact@collaction.org";
-const KvK = "65628608";
-const RSIN = "856193690";
+const phone = '+31640394005';
+const email = 'contact@collaction.org';
+const KvK = '65628608';
+const RSIN = '856193690';
 
 export default function Footer() {
   return (

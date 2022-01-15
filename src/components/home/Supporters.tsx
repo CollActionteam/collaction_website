@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export default function Supporters() {
   return (
@@ -18,7 +18,7 @@ export default function Supporters() {
         </div>
         <p>
           Would you like to support CollAction? <br /> Please send us a message
-          at{" "}
+          at{' '}
           <a className="text-collaction" href="mailto:tom@collaction.org">
             tom@collaction.org
           </a>

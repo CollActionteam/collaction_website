@@ -1,15 +1,14 @@
-/* eslint-disable react/no-unescaped-entities */
-import Head from "next/head";
-import Image from "next/image";
-import { ArrowSquareOut } from "phosphor-react";
+import Head from 'next/head';
+import Image from 'next/image';
+import { ArrowSquareOut } from 'phosphor-react';
 
-import Discounts from "src/components/asml/Discounts";
+import Discounts from 'src/components/asml/Discounts';
 
-import ASMLBanner from "public/veganuary-ASML-banner.png";
-import CollActionLogoWithText from "public/black-logo-name.png";
-import AppPreviewCard1 from "public/app-preview-card-1.png";
-import AppPreviewCard2 from "public/app-preview-card-2.png";
-import AppPreviewCard3 from "public/app-preview-card-3.png";
+import ASMLBanner from 'public/veganuary-ASML-banner.png';
+import CollActionLogoWithText from 'public/black-logo-name.png';
+import AppPreviewCard1 from 'public/app-preview-card-1.png';
+import AppPreviewCard2 from 'public/app-preview-card-2.png';
+import AppPreviewCard3 from 'public/app-preview-card-3.png';
 
 export default function ASMLPage() {
   return (
@@ -59,7 +58,7 @@ export default function ASMLPage() {
                 sustainable food consumption. Joining is easy, you will go
                 through the following steps:
               </p>
-              <ul style={{ listStyleType: "decimal" }} className="pl-8">
+              <ul style={{ listStyleType: 'decimal' }} className="pl-8">
                 <li className="mb-1">
                   Choose if you want to participate 5 or 7 days a week
                 </li>

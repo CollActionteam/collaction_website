@@ -1,12 +1,12 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 export default class MyDocument extends Document {
   render() {
-    const currentURL = "https://collaction.org";
+    const currentURL = 'https://collaction.org';
     const description =
-      "Do you want to make the world a better place? Do your actions feel like a drop in the ocean?";
-    const previewImage = "/android-chrome-256x256.png";
-    const pageTitle = "CollAction | Power to the Crowd | Act Now";
+      'Do you want to make the world a better place? Do your actions feel like a drop in the ocean?';
+    const previewImage = '/android-chrome-256x256.png';
+    const pageTitle = 'CollAction | Power to the Crowd | Act Now';
 
     return (
       <Html lang="en">

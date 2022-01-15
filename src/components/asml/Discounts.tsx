@@ -1,26 +1,26 @@
-import { useState } from "react";
-import Image from "next/image";
-import clsx from "clsx";
+import { useState } from 'react';
+import Image from 'next/image';
+import clsx from 'clsx';
 import {
   GlobeSimple as GlobeSimpleIcon,
   MapPin as MapPinIcon,
   Phone as PhoneIcon,
   Plus as PlusIcon,
   X as XIcon,
-} from "phosphor-react";
+} from 'phosphor-react';
 
 // DISCOUNT IMAGES
 // 1) place new files in the /public/discounts folder
 // 2) import it here
 // 3) reference your import in your discount object
-import Phood from "public/discounts/phood.jpg";
-import Botanic from "public/discounts/botanicbites.png";
-import Calypso from "public/discounts/calypso.jpg";
-import Dijk9 from "public/discounts/dijk9.jpg";
-import Jungle from "public/discounts/junglecafe.jpeg";
-import Tea from "public/discounts/teastories.jpg";
+import Phood from 'public/discounts/phood.jpg';
+import Botanic from 'public/discounts/botanicbites.png';
+import Calypso from 'public/discounts/calypso.jpg';
+import Dijk9 from 'public/discounts/dijk9.jpg';
+import Jungle from 'public/discounts/junglecafe.jpeg';
+import Tea from 'public/discounts/teastories.jpg';
 
-const isDev = process.env.NODE_ENV === "development";
+const isDev = process.env.NODE_ENV !== 'development';
 
 type DiscountType = {
   publish: boolean;
@@ -39,7 +39,7 @@ type DiscountType = {
 export const discounts: DiscountType[] = [
   {
     publish: true,
-    title: "Jungle Café",
+    title: 'Jungle Café',
     image: Jungle,
     links: {
       website: `https://www.junglecafecatering.nl/`,
@@ -51,7 +51,7 @@ export const discounts: DiscountType[] = [
   },
   {
     publish: true,
-    title: "Botanic Bites",
+    title: 'Botanic Bites',
     image: Botanic,
     links: {
       website: `https://www.botanicbites.com/`,
@@ -76,7 +76,7 @@ export const discounts: DiscountType[] = [
   },
   {
     publish: true,
-    title: "Phood Kitchen",
+    title: 'Phood Kitchen',
     image: Phood,
     links: {
       website: `https://phoodkitchen.com/`,
@@ -97,7 +97,7 @@ export const discounts: DiscountType[] = [
         free-from: sugar, unnatural additives, gluten and lactose.
         <br />
         <br />
-        Our boxes are delivered fresh at your doorstep every day.{" "}
+        Our boxes are delivered fresh at your doorstep every day.{' '}
         {/* <a
           href="https://weborder-eu.spont.cash/widget/?key=96033c478dc44494bf56e64d0f23fff6&source=direct&autoopen=none"
           target="_blank"
@@ -110,7 +110,7 @@ export const discounts: DiscountType[] = [
   },
   {
     publish: true,
-    title: "Bar Bistro Calypso",
+    title: 'Bar Bistro Calypso',
     image: Calypso,
     links: {
       website: `https://www.bistrocalypso.nl/`,
@@ -127,7 +127,7 @@ export const discounts: DiscountType[] = [
   },
   {
     publish: true,
-    title: "Tea Stories",
+    title: 'Tea Stories',
     image: Tea,
     links: {
       website: `https://goodteastories.com/`,
@@ -141,7 +141,7 @@ export const discounts: DiscountType[] = [
   },
   {
     publish: true,
-    title: "Dijk9",
+    title: 'Dijk9',
     image: Dijk9,
     links: {
       website: `https://www.dijk9.nl/`,
@@ -227,7 +227,7 @@ function DiscountCard({ title, image, links, content }: DiscountType) {
         )}
         {links.phone && (
           <a
-            href={"tel:" + links.phone}
+            href={'tel:' + links.phone}
             target="_blank"
             rel="noreferrer"
             aria-label="Phone Vendor"
@@ -242,11 +242,11 @@ function DiscountCard({ title, image, links, content }: DiscountType) {
           rel="noreferrer"
           aria-label="Order From Vendor"
           className={clsx(
-            links.order ? "bg-accent" : "bg-black-100 pointer-events-none",
-            "text-secondary text-button font-bold leading-none text-center rounded-full p-3 h-10 w-26 align-top"
+            links.order ? 'bg-accent' : 'bg-black-100 pointer-events-none',
+            'text-secondary text-button font-bold leading-none text-center rounded-full p-3 h-10 w-26 align-top'
           )}
         >
-          {links.order ? "Order" : "In-store"}
+          {links.order ? 'Order' : 'In-store'}
         </a>
       </div>
       {/* TITLE & CONTENT */}
@@ -267,12 +267,12 @@ function DiscountCard({ title, image, links, content }: DiscountType) {
       {/* OPENED CARD */}
       <div
         className={clsx(
-          "absolute top-0 left-0 w-full h-full bg-accent text-secondary rounded-3xl transition-opacity",
-          showContent ? "opacity-100" : "opacity-0 pointer-events-none"
+          'absolute top-0 left-0 w-full h-full bg-accent text-secondary rounded-3xl transition-opacity',
+          showContent ? 'opacity-100' : 'opacity-0 pointer-events-none'
         )}
         style={{
-          transitionDuration: "300ms",
-          transitionTimingFunction: "cubic-bezier(0,0,0.58,1)",
+          transitionDuration: '300ms',
+          transitionTimingFunction: 'cubic-bezier(0,0,0.58,1)',
         }}
       >
         <div className="flex flex-col justify-between h-full">

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export default function WhatWeDo() {
   return (
@@ -9,7 +9,8 @@ export default function WhatWeDo() {
             className="block h-20 w-auto mx-auto my-4"
             src="/steps/proposal.svg"
             alt="Proposal"
-            width={80} height={80}
+            width={80}
+            height={80}
           />
           <h2 className="text-collaction text-lg">Goal</h2>
           Choose or suggest a goal you would like to participate in
@@ -19,7 +20,8 @@ export default function WhatWeDo() {
             className="block h-20 w-auto mx-auto my-4"
             src="/steps/crowd.svg"
             alt="Crowd"
-            width={62} height={80}
+            width={62}
+            height={80}
           />
           <h2 className="text-collaction text-lg">Crowd</h2>
           See how your actions are magnified by the crowd that has equal goals
@@ -29,7 +31,8 @@ export default function WhatWeDo() {
             className="block h-20 w-auto mx-auto my-4"
             src="/steps/act.svg"
             alt="Act"
-            width={59} height={80}
+            width={59}
+            height={80}
           />
           <h2 className="text-collaction text-lg">Action</h2>
           Commit to the goal and make impact
@@ -45,7 +48,7 @@ export default function WhatWeDo() {
           helping to solve these problems can be fun, and way easier than people
           think. We will show that action can be taken by your group of friends,
           your department of colleagues, or just by you together with strangers.
-          You can make a real impact, make a real change, and have fun doing it.{" "}
+          You can make a real impact, make a real change, and have fun doing it.{' '}
           <br /> <br />
           On our app you can sign up for a challenge to participate in. We
           connect you to the people that also do the challenge, we show you what

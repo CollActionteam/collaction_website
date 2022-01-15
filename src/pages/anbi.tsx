@@ -1,6 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
-import Head from "next/head";
-import Image from "next/image";
+import Head from 'next/head';
 
 export default function Impact() {
   return (
@@ -16,7 +14,7 @@ export default function Impact() {
           <p className="mb-6 last:mb-0">
             Stichting CollAction is recognised by the Dutch tax authorities as
             an ANBI. This stands for "Algemeen Nut Beogende Instelling", which
-            translates to{" "}
+            translates to{' '}
             {
               <a
                 className="text-collaction"
@@ -38,7 +36,7 @@ export default function Impact() {
               target="_blank"
               rel="noreferrer"
             >
-              {" "}
+              {' '}
               collective action problems
             </a>
             . We do so by collaborating with like minded organisations to bring

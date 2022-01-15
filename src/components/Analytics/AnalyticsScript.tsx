@@ -1,10 +1,10 @@
-import Head from "next/head";
-import { getCookieSelection, GA_TRACKING_ID } from "./Analytics.utils";
+import Head from 'next/head';
+import { getCookieSelection, GA_TRACKING_ID } from './Analytics.utils';
 
 export default function AnalyticsScript() {
   if (!getCookieSelection()) return null;
   // we don't want to track analytics while in development
-  if (process.env.NODE_ENV !== "production") return null;
+  if (process.env.NODE_ENV !== 'production') return null;
 
   return (
     <Head>

@@ -1,7 +1,7 @@
-import React from "react";
-import Link from "next/link";
-import { Cookie } from "phosphor-react";
-import { makeCookieSelection } from "./Analytics.utils";
+import React from 'react';
+import Link from 'next/link';
+import { Cookie } from 'phosphor-react';
+import { makeCookieSelection } from './Analytics.utils';
 
 type Props = {
   setShowBanner: React.Dispatch<React.SetStateAction<boolean>>;
@@ -14,7 +14,7 @@ export default function CookiesBanner({ setShowBanner }: Props) {
       <p className="max-w-600 mx-auto text-black-300 text-center mb-5 ">
         We value your privacy. We and our partners use trackers to measure the
         audience of our website and to provide you with offers and improve on
-        our own operations.{" "}
+        our own operations.{' '}
         <Link href="/privacy">
           <a className="underline">
             More info on cookies and providers we use.
@@ -29,7 +29,7 @@ export default function CookiesBanner({ setShowBanner }: Props) {
           className="bg-black-0 text-black-100 font-bold leading-none text-center rounded-full p-3 h-13 w-72 mr-0 md:mr-3"
           onClick={() => {
             setShowBanner(false);
-            makeCookieSelection("0");
+            makeCookieSelection('0');
           }}
         >
           Reject
@@ -40,7 +40,7 @@ export default function CookiesBanner({ setShowBanner }: Props) {
           className="bg-accent text-white leading-none font-bold text-center rounded-full p-3 h-13 w-72 mb-3 md:mb-0"
           onClick={() => {
             setShowBanner(false);
-            makeCookieSelection("1");
+            makeCookieSelection('1');
           }}
         >
           <span className="align-middle">Accept</span>

@@ -1,6 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
-import Head from "next/head";
-import Image from "next/image";
+import Head from 'next/head';
 
 export default function Terms() {
   return (
@@ -20,15 +18,15 @@ export default function Terms() {
             These terms of use, as amended from time to time (hereinafter
             referred to as the (<strong>"Terms of Use"</strong>) describe the
             terms under which use may be made of the website and the application
-            (together and separately hereinafter also referred to as the{" "}
+            (together and separately hereinafter also referred to as the{' '}
             <strong>"Platform"</strong>) of and offered by Stichting CollAction
-            (hereinafter referred to as <strong>"CollAction"</strong> or{" "}
+            (hereinafter referred to as <strong>"CollAction"</strong> or{' '}
             <strong>"we"</strong> or <strong>"us"</strong>).
           </p>
 
           <h4 className="text-black-300 mb-8">Applicability and amendments</h4>
           <p className="mb-6 last:mb-0">
-            By using the Platform, you (hereinafter also referred to as the{" "}
+            By using the Platform, you (hereinafter also referred to as the{' '}
             <strong>"User"</strong>) agree to these Terms of Use, and these
             shall apply to your use of the Platform. We reserve the right to
             unilaterally amend these Terms of Use. We will endeavor to inform
@@ -59,7 +57,7 @@ export default function Terms() {
             carefully. You are also required to follow instructions and
             regulations issued by CollAction. The foregoing includes (among
             other things) that you:
-            <ul style={{ listStyleType: "decimal" }} className="pl-8">
+            <ul style={{ listStyleType: 'decimal' }} className="pl-8">
               <li className="mb-1">must fill in information truthfully;</li>
               <li className="mb-1">
                 may not share misleading or offensive information;
@@ -190,7 +188,7 @@ export default function Terms() {
 
           <h4 className="text-black-300 mb-8">Privacy and Cookie Policy</h4>
           <p className="mb-6 last:mb-0">
-            Please be referred to our{" "}
+            Please be referred to our{' '}
             {
               <a
                 className="text-collaction"
@@ -226,7 +224,7 @@ export default function Terms() {
 
           <h4 className="text-black-300 mb-8">Contact Details</h4>
           <p className="mb-6">
-            Would you like to contact us? Please email us at{" "}
+            Would you like to contact us? Please email us at{' '}
             {
               <a
                 className="text-collaction"
@@ -236,7 +234,7 @@ export default function Terms() {
               >
                 terms@collaction.org
               </a>
-            }{" "}
+            }{' '}
             or send a letter to:
           </p>
           <p className="mb-6 last:mb-0">

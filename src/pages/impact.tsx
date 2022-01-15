@@ -1,6 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
-import Head from "next/head";
-import Image from "next/image";
+import Head from 'next/head';
 
 export default function Impact() {
   return (

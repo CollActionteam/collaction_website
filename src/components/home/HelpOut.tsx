@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export default function HelpOut() {
   return (
@@ -9,7 +9,7 @@ export default function HelpOut() {
         </h1>
         <p>
           CollAction is run by volunteers only. Do you have a valuable skill set
-          and want to help us out? <br /> Please send a message to{" "}
+          and want to help us out? <br /> Please send a message to{' '}
           <a className="text-collaction" href="mailto:tom@collaction.org">
             tom@collaction.org
           </a>
