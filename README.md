@@ -6,19 +6,25 @@ This repository contains the source code and assets required to build the [CollA
 
 ## Getting Started
 
+- We suggest using [Node v16](https://nodejs.org/en/download/) and yarn (`npm i -g yarn`)
+
 - Clone the repo
 
   `git clone https://github.com/CollActionteam/website.git`
 
-- Navigate to the website folder in your CLI
+- Navigate to the website folder in your terminal
 
 - Install the dependencies
 
-  `npm install`
+  `yarn`
+
+- Install the dependencies
+
+  `yarn`
 
 - Start the development server
 
-  `npm run dev`
+  `yarn dev`
 
 - Open [http://localhost:3000](http://localhost:3000) in your browser and the website folder in your preferred code editor
 
@@ -32,13 +38,15 @@ This repository contains the source code and assets required to build the [CollA
   >
   > You can track the issue on [this Next.js discussion](https://github.com/vercel/next.js/discussions/30468)
   >
-  > Want a quick fix? Create a `.babelrc` in the root of your directory and paste the following:
+  > Want a quick fix? Upgrade to Node 16, if you haven't. Otherwise, you create a `.babelrc` in the root of your directory and paste the following:
 
   ```
   {
     "presets": ["next/babel"]
   }
   ```
+
+> If you are using VSCode, you'll probably want to download the suggested extentions
 
 ## Pushing Changes
 
