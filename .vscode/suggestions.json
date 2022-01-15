@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "irongeek.vscode-env",
+    "dbaeumer.vscode-eslint",
+    "csstools.postcss",
+    "bradlc.vscode-tailwindcss"
+  ]
+}
