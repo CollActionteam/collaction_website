@@ -6,7 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:check": "eslint src/**/*.{ts,tsx}",
+    "lint:fix": "eslint src/**/*.{ts,tsx} --fix",
+    "format:check": "prettier -c src/**/*.{ts,tsx}",
+    "format:fix": "prettier -w src/**/*.{ts,tsx}",
+    "types:check": "tsc --pretty --noEmit --incremental false"
   },
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.0",
