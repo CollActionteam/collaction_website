@@ -47,11 +47,3 @@ This repository contains the source code and assets required to build the [CollA
   ```
 
 > If you are using VSCode, you'll probably want to download the suggested extentions
-
-## Pushing Changes
-
-- Save your files
-- Select the files to be committed
-- Describe the changes in your commit message
-- Push your commits
-- Next.js will automatically build and publish the site for you
