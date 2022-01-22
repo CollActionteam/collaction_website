@@ -110,7 +110,7 @@ export default function ASMLPage({
                 below which deals are on offer. Note that for some restaurants
                 you're required to show the email from December 13.
               </p>
-              <div className="flex flex-wrap justify-center lg:justify-start mx-auto lg:max-w-4xl lg:w-208 mt-12 lg:mt-15">
+              <div className="flex flex-wrap justify-center mx-auto md:max-w-864 mt-12 lg:mt-15">
                 {deals.map(deal => (
                   <DealsCard key={deal.title} {...deal} />
                 ))}

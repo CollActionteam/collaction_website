@@ -32,7 +32,7 @@ export function DealsCard({
   }, []);
 
   return (
-    <div className="bg-secondary max-w-400 w-full rounded-3xl overflow-hidden relative mb-8 md:odd:mr-8">
+    <div className="bg-secondary max-w-400 w-full rounded-3xl overflow-hidden relative mb-8 md:mx-4">
       {/* IMAGE */}
       <div className="relative w-full aspect-w-16 aspect-h-9">
         <Image
