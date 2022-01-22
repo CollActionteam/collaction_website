@@ -1,8 +1,8 @@
+import { useRef } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { InferGetStaticPropsType } from 'next';
-import { FiExternalLink as FiExternalLinkIcon } from 'react-icons/fi';
 
 import { DealsCard } from 'src/components/DealsCard';
 import { getDealsData } from 'src/lib/getDeals';
@@ -18,6 +18,8 @@ import AppPreviewCard3 from 'public/app-preview-card-3.png';
 export default function ASMLPage({
   deals,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
+  const appLinksRef = useRef<HTMLDivElement>(null);
+
   return (
     <>
       <Head>
@@ -122,7 +124,7 @@ export default function ASMLPage({
 
           {/* SEE MORE DEALS */}
           <Link href="/asml/deals">
-            <a className="block bg-accent font-bold leading-none text-white text-center rounded-full p-3.5 mt-5 w-72 shadow sticky bottom-8 inset-x-0 mx-auto z-40">
+            <a className="block bg-accent font-bold leading-none text-button text-white text-center rounded-full p-3.5 mt-5 w-72 shadow sticky bottom-8 inset-x-0 mx-auto z-40">
               See All Deals
             </a>
           </Link>
@@ -143,7 +145,10 @@ export default function ASMLPage({
           </div>
 
           {/* APP LINKS */}
-          <div className="flex flex-wrap items-center justify-center mt-8 md:mt-10 mb-15 lg:mb-20 mx-auto">
+          <div
+            ref={appLinksRef}
+            className="flex flex-wrap items-center justify-center mt-8 md:mt-10 mb-15 lg:mb-20 mx-auto"
+          >
             <a
               href="https://apps.apple.com/app/id1597643827"
               className="inline-flex mb-5 mx-2 xs:mx-0 xs:mr-5"
@@ -220,21 +225,19 @@ export default function ASMLPage({
           </div>
         </div>
 
-        {/* PARTICIPATE BUTTON */}
-        <a
-          href="https://forms.office.com/r/haw1WhtRz1"
-          target="_blank"
-          rel="noreferrer"
-          className="block bg-accent font-bold leading-none text-white text-center rounded-full p-3.5 mb-8 w-72 shadow sticky bottom-8 inset-x-0 mx-auto z-40"
-          aria-label="Participate"
+        {/* DOWNLOAD THE APP BUTTON */}
+        <button
+          onClick={() =>
+            appLinksRef.current?.scrollIntoView({
+              behavior: 'smooth',
+              block: 'center',
+            })
+          }
+          className="block bg-accent font-bold leading-none text-button text-white text-center rounded-full p-3.5 mb-8 w-72 shadow sticky bottom-8 inset-x-0 mx-auto z-40"
           style={{ marginTop: `calc(-52px - 2rem)` }}
         >
-          <span className="align-middle">Participate</span>
-          <FiExternalLinkIcon
-            className="h-6 w-6 inline-block ml-4"
-            strokeWidth={2}
-          />
-        </a>
+          Download The App!
+        </button>
       </div>
     </>
   );
