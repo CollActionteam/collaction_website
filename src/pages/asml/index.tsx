@@ -9,6 +9,8 @@ import { getDealsData } from 'src/lib/getDeals';
 
 import ASMLBanner from 'public/veganuary-ASML-banner.png';
 import CollActionLogoWithText from 'public/black-logo-name.png';
+import BadgeApple from 'public/Badge-Apple.png';
+import BadgeGoogle from 'public/Badge-Google.png';
 import AppPreviewCard1 from 'public/app-preview-card-1.png';
 import AppPreviewCard2 from 'public/app-preview-card-2.png';
 import AppPreviewCard3 from 'public/app-preview-card-3.png';
@@ -132,13 +134,42 @@ export default function ASMLPage({
             <h2 className="text-secondary mb-8">
               The CollAction app launches soon
             </h2>
-            <p className="text-black-0 mb-12">
+            <p className="text-black-0">
               We’re working hard on getting the app in the App/Play Store. First
               the Android build goes live, after which Apple will shortly
               follow. We’ll let you know at the top of this page when they are
               live!
             </p>
           </div>
+
+          {/* APP LINKS */}
+          <div className="flex flex-wrap items-center justify-center mt-8 md:mt-10 mb-15 lg:mb-20 mx-auto">
+            <a
+              href="https://apps.apple.com/app/id1597643827"
+              className="inline-flex mb-5 mx-2 xs:mx-0 xs:mr-5"
+              aria-label="apple download badge"
+            >
+              <Image
+                src={BadgeApple}
+                alt="apple download badge"
+                width={143}
+                height={48}
+              />
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=org.collaction.collaction_app"
+              aria-label="google download badge"
+              className="inline-flex mb-5 mx-2 xs:mx-0"
+            >
+              <Image
+                src={BadgeGoogle}
+                alt="google download badge"
+                width={162}
+                height={48}
+              />
+            </a>
+          </div>
+
           <div className="flex flex-wrap justify-center lg:justify-start md:max-w-400 lg:max-w-4xl lg:w-208 mx-auto">
             {/* APP CARD */}
             <div className="bg-secondary text-black-400 max-w-400 w-full rounded-3xl px-10 lg:px-13 py-8 pb-0 mb-5 md:mb-8 lg:mr-8 overflow-hidden">
