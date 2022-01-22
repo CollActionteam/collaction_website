@@ -18,10 +18,6 @@ This repository contains the source code and assets required to build the [CollA
 
   `yarn`
 
-- Install the dependencies
-
-  `yarn`
-
 - Start the development server
 
   `yarn dev`

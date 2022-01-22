@@ -1,6 +1,6 @@
 ---
   publish: true
-  featured: false
+  featured: true
   title: Jungle Café
   image: /discounts/junglecafe.jpeg
   links: 

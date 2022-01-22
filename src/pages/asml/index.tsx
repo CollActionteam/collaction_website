@@ -112,7 +112,18 @@ export default function ASMLPage({
               <p className="max-w-600 mx-auto mb-0">
                 Besides us, restaurants would like to motivate you as well! See
                 below which deals are on offer. Note that for some restaurants
-                you're required to show the email from December 13.
+                you're required to show the password in{' '}
+                {
+                  <a
+                    className="text-collaction"
+                    href="https://my.asml.com/Newsroom/Pages/Sustainability/Join-our-Veganuary-journey.aspx"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    this MyASML article
+                  </a>
+                }
+                .
               </p>
               <div className="flex flex-wrap justify-center mx-auto md:max-w-864 mt-12 lg:mt-15">
                 {deals.map(deal => (

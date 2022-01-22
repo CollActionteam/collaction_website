@@ -1,6 +1,6 @@
 ---
   publish: true
-  featured: true
+  featured: false
   title: Dijk9
   image: /discounts/dijk9.jpg
   links: 
