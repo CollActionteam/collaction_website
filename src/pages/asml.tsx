@@ -1,8 +1,11 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { ArrowSquareOut } from 'phosphor-react';
+import Link from 'next/link';
+import { InferGetStaticPropsType } from 'next';
+import { FiExternalLink as FiExternalLinkIcon } from 'react-icons/fi';
 
-import Discounts from 'src/components/asml/Discounts';
+import { DealsCard } from 'src/components/DealsCard';
+import { getDealsData } from 'src/lib/getDeals';
 
 import ASMLBanner from 'public/veganuary-ASML-banner.png';
 import CollActionLogoWithText from 'public/black-logo-name.png';
@@ -10,7 +13,9 @@ import AppPreviewCard1 from 'public/app-preview-card-1.png';
 import AppPreviewCard2 from 'public/app-preview-card-2.png';
 import AppPreviewCard3 from 'public/app-preview-card-3.png';
 
-export default function ASMLPage() {
+export default function ASMLPage({
+  deals,
+}: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <>
       <Head>
@@ -96,7 +101,7 @@ export default function ASMLPage() {
               </p>
             </div>
 
-            <div className="mb-13">
+            <div className="mb-13 last:mb-0">
               <h4 className="max-w-600 mx-auto mb-8">Restaurant Deals</h4>
               {/* if we add another paragraph, use the commented line in both and remove the used one */}
               {/* <p className="max-w-500 mx-auto mb-6 last:mb-0"> */}
@@ -105,27 +110,23 @@ export default function ASMLPage() {
                 below which deals are on offer. Note that for some restaurants
                 you're required to show the email from December 13.
               </p>
-              <Discounts />
+              <div className="flex flex-wrap justify-center lg:justify-start mx-auto lg:max-w-4xl lg:w-208 mt-12 lg:mt-15">
+                {deals.map(deal => (
+                  <DealsCard key={deal.title} {...deal} />
+                ))}
+              </div>
             </div>
-
-            {/* <div className="max-w-600 mx-auto mb-0">
-              <h4 className="mb-8">Your Impact </h4>
-              <p className="mb-6 last:mb-0">
-                Depending on your commitment you receive a certain badge at the
-                end of the month. We'll calculate your individual impact, as
-                well as that of the whole group!
-              </p>
-              <p className="mb-6 last:mb-0">
-                Veganuary is a month where we can challenge ourselves. Let's try
-                it out together and help each other by sharing recipes, tips,
-                supplements, and more. Shifting to a more plant-based diet is
-                great for your health and the environment. Want to participate?
-                Click the participate button and fill out the form.
-              </p>
-            </div> */}
           </div>
+
+          {/* SEE MORE DEALS */}
+          <Link href="/asml/deals">
+            <a className="block bg-accent font-bold leading-none text-white text-center rounded-full p-3.5 mt-5 w-72 shadow sticky bottom-8 inset-x-0 mx-auto z-40">
+              See All Deals
+            </a>
+          </Link>
         </div>
 
+        {/* APP SECTION */}
         <div className="bg-black-400 px-5 md:px-8 pt-20 pb-24 md:pb-22 text-center">
           <div className="max-w-600 mx-auto">
             <h2 className="text-secondary mb-8">
@@ -187,6 +188,7 @@ export default function ASMLPage() {
             </div>
           </div>
         </div>
+
         {/* PARTICIPATE BUTTON */}
         <a
           href="https://forms.office.com/r/haw1WhtRz1"
@@ -197,9 +199,22 @@ export default function ASMLPage() {
           style={{ marginTop: `calc(-52px - 2rem)` }}
         >
           <span className="align-middle">Participate</span>
-          <ArrowSquareOut className="h-6 w-6 inline-block ml-4" weight="bold" />
+          <FiExternalLinkIcon
+            className="h-6 w-6 inline-block ml-4"
+            strokeWidth={2}
+          />
         </a>
       </div>
     </>
   );
 }
+
+export const getStaticProps = async () => {
+  const deals = getDealsData('featured');
+
+  return {
+    props: {
+      deals,
+    },
+  };
+};
