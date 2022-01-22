@@ -134,13 +134,12 @@ export default function ASMLPage({
         <div className="bg-black-400 px-5 md:px-8 pt-20 pb-24 md:pb-22 text-center">
           <div className="max-w-600 mx-auto">
             <h2 className="text-secondary mb-8">
-              The CollAction app launches soon
+              The CollAction app has launched!
             </h2>
             <p className="text-black-0">
-              We’re working hard on getting the app in the App/Play Store. First
-              the Android build goes live, after which Apple will shortly
-              follow. We’ll let you know at the top of this page when they are
-              live!
+              We’ve been working very hard and are happy to announce that our
+              app is live. We have more updates and improvements coming very
+              soon, so stay tuned.
             </p>
           </div>
 
