@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Cookie } from 'phosphor-react';
+import { FaCookieBite as FaCookieIcon } from 'react-icons/fa';
 import { makeCookieSelection } from './Analytics.utils';
 
 type Props = {
@@ -44,7 +44,7 @@ export default function CookiesBanner({ setShowBanner }: Props) {
           }}
         >
           <span className="align-middle">Accept</span>
-          <Cookie className="h-6 w-6 inline-block ml-4" weight="bold" />
+          <FaCookieIcon className="h-6 w-6 inline-block ml-4" strokeWidth={2} />
         </button>
       </div>
     </div>
