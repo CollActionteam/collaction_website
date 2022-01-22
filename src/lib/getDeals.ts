@@ -22,7 +22,7 @@ export function getDealsData(type: 'featured' | 'all' = 'all') {
         title: matterData.title,
         image: matterData.image,
         links: matterData.links,
-        content: matterContent.slice(1),
+        content: matterContent.slice(1, -1),
       };
     })
     .filter(deal => deal.publish)
