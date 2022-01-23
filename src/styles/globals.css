@@ -3,8 +3,12 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply h-full box-border;
+  }
+
   body {
-    @apply font-sans text-black-400;
+    @apply font-sans bg-black-0 text-black-400 relative min-h-full m-0 pb-940 md:pb-440;
   }
 
   h1,
