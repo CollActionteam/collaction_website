@@ -1,10 +1,18 @@
 /** @type {import('tailwindcss/tailwind-config').TailwindConfig} */
+
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: [
     './src/components/**/*.{js,ts,jsx,tsx}',
     './src/pages/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    screens: {
+      xs: '390px',
+      ...defaultTheme.screens,
+    },
     // only used in index page
     container: {
       padding: {
@@ -14,10 +22,8 @@ module.exports = {
         lg: '16rem',
       },
     },
+
     extend: {
-      screens: {
-        xs: '390px',
-      },
       colors: {
         primary: '#000000',
         secondary: '#F9F9F9',
