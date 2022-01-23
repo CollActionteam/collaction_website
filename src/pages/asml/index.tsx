@@ -190,7 +190,7 @@ export default function ASMLPage({
               <p className="text-black-200">
                 Join a CrowdAction you want to be part of.
               </p>
-              <div className="block -mb-14">
+              <div className="block -mb-9 xs:-mb-12">
                 <Image
                   src={AppPreviewCard1}
                   alt="app preview card 1"
@@ -218,7 +218,7 @@ export default function ASMLPage({
               </div>
             </div>
             <div className="bg-secondary text-black-400 max-w-400 w-full rounded-3xl px-10 lg:px-13 py-8 mb-5 md:mb-8 lg:mr-0 overflow-hidden lg:order-2">
-              <div className="block -mt-14">
+              <div className="block -mt-15 xs:-mt-16">
                 <Image
                   src={AppPreviewCard3}
                   alt="app preview card 3"
