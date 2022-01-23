@@ -1,3 +1,4 @@
+import PageSEO from 'src/components/PageSEO';
 import Team from '../components/home/Team';
 import Ticker from '../components/home/Ticker';
 import HelpOut from '../components/home/HelpOut';
@@ -27,15 +28,19 @@ export default function HomePage() {
   };
 
   return (
-    <div className="bg-white text-black-400">
-      <Ticker />
-      <WhatWeDo />
-      <Vision />
-      <Supporters />
-      <CurrentActicity />
-      <Team {...teams.new} />
-      <HelpOut />
-      <Team {...teams.old} />
-    </div>
+    <>
+      <PageSEO title="Act Now" />
+
+      <div className="bg-white text-black-400">
+        <Ticker />
+        <WhatWeDo />
+        <Vision />
+        <Supporters />
+        <CurrentActicity />
+        <Team {...teams.new} />
+        <HelpOut />
+        <Team {...teams.old} />
+      </div>
+    </>
   );
 }
