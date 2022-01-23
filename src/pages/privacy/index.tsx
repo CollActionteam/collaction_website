@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function PrivacyPage() {
   return (
@@ -13,7 +14,7 @@ export default function PrivacyPage() {
             Privacy and Cookie Policy
           </h1>
           <p className="text-black-400 text-center mb-8">
-            version dated December 30th, 2021
+            version dated January 23rd, 2022
           </p>
 
           <p className="mb-6">
@@ -258,12 +259,17 @@ export default function PrivacyPage() {
           </h5>
           <p className="mb-6 last:mb-0">
             If you wish to disable the use and placement of cookies, we advise
-            you to amend your internet browser settings. We do however note that
-            disabling or deleting certain cookies may mean that you can no
-            longer access or use certain features of our website or mobile
-            application or will reduce the overall functioning of our website
-            and/or mobile application. For more information on how to disable
-            the use of Google Analytics specifically, please see{' '}
+            you to amend your internet browser settings. You can manage your
+            CollAction.org cookies on our{' '}
+            <Link href="/privacy/manage">
+              <a className="text-collaction">Manage Cookies</a>
+            </Link>{' '}
+            page. We do however note that disabling or deleting certain cookies
+            may mean that you can no longer access or use certain features of
+            our website or mobile application or will reduce the overall
+            functioning of our website and/or mobile application. For more
+            information on how to disable the use of Google Analytics
+            specifically, please see{' '}
             {
               <a
                 className="text-collaction"
@@ -353,7 +359,7 @@ export default function PrivacyPage() {
             changes to our Policy, we will notify you accordingly by posting
             them to the website and to other places that we deem appropriate. We
             also encourage you to read our Policy regularly in order to stay
-            updated. This Policy was last updated on December 30th, 2021.
+            updated. This Policy was last updated on January 23rd, 2022.
           </p>
 
           <h4 className="text-black-300 mb-8">Contact Details</h4>
