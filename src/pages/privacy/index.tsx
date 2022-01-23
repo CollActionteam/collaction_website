@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-export default function Terms() {
+export default function PrivacyPage() {
   return (
     <>
       <Head>
