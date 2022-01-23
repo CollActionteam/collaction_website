@@ -13,7 +13,7 @@ const RSIN = '856193690';
 
 export default function Footer() {
   return (
-    <div className="bg-secondary text-black-400 py-24 px-5">
+    <footer className="bg-secondary text-black-400 absolute bottom-0 w-full h-940 md:h-440 py-24 px-5">
       <div className="flex flex-col md:flex-row md:justify-between w-full md:max-w-600 lg:w-208 lg:max-w-4xl mx-auto">
         <div>
           <Link href="/">
@@ -106,6 +106,6 @@ export default function Footer() {
           sizes="160px"
         />
       </a>
-    </div>
+    </footer>
   );
 }
