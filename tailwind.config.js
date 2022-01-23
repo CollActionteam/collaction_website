@@ -62,6 +62,10 @@ module.exports = {
         'title-1': ['28px', '34px'],
         'title-lg': ['40px', '41px'],
       },
+      height: {
+        440: '440px',
+        940: '940px',
+      },
       width: {
         208: '52rem',
       },
@@ -77,6 +81,10 @@ module.exports = {
         18: '4.5rem',
         22: '5.5rem',
         26: '6.5rem',
+      },
+      padding: {
+        440: '440px',
+        940: '940px',
       },
       borderRadius: {
         '3xl': '1.25rem',
