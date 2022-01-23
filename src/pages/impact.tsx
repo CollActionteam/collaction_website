@@ -1,11 +1,9 @@
-import Head from 'next/head';
+import PageSEO from 'src/components/PageSEO';
 
 export default function Impact() {
   return (
     <>
-      <Head>
-        <title>Impact</title>
-      </Head>
+      <PageSEO title="Impact" />
 
       <main className="bg-black-0 p-5 md:p-12">
         <div className="max-w-600 mx-auto">

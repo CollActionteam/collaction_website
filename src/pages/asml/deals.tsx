@@ -1,5 +1,5 @@
-import Head from 'next/head';
 import { InferGetStaticPropsType } from 'next';
+import PageSEO from 'src/components/PageSEO';
 import { DealsCard } from 'src/components/DealsCard';
 import { getDealsData } from 'src/lib/getDeals';
 
@@ -8,9 +8,7 @@ export default function DealsPage({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <>
-      <Head>
-        <title>ASML Deals | CollAction</title>
-      </Head>
+      <PageSEO title="ASML Deals" />
 
       <div className="bg-black-0 p-5 md:p-12">
         <div className="flex flex-wrap justify-center lg:justify-start mx-auto md:max-w-864">

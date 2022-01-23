@@ -1,12 +1,10 @@
-import Head from 'next/head';
 import Link from 'next/link';
+import PageSEO from 'src/components/PageSEO';
 
 export default function PrivacyPage() {
   return (
     <>
-      <Head>
-        <title>Privacy and Cookie Policy | CollAction</title>
-      </Head>
+      <PageSEO title="Privacy and Cookie Policy" />
 
       <main className="bg-black-0 p-5 md:p-12">
         <div className="max-w-600 mx-auto">

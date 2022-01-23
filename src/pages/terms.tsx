@@ -1,11 +1,9 @@
-import Head from 'next/head';
+import PageSEO from 'src/components/PageSEO';
 
 export default function Terms() {
   return (
     <>
-      <Head>
-        <title>Terms of Use | CollAction</title>
-      </Head>
+      <PageSEO title="Terms of Use" />
 
       <main className="bg-black-0 p-5 md:p-12">
         <div className="max-w-600 mx-auto">

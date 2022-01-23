@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import Head from 'next/head';
 import Link from 'next/link';
 import { FaCookieBite as FaCookieIcon } from 'react-icons/fa';
+
+import PageSEO from 'src/components/PageSEO';
 import {
   getCookieSelection,
   makeCookieSelection,
@@ -15,9 +16,7 @@ export default function ManagePrivacyPage() {
 
   return (
     <>
-      <Head>
-        <title>Manage Privacy | CollAction</title>
-      </Head>
+      <PageSEO title="Manage Privacy" />
 
       <main className="bg-black-0 p-5 md:p-12">
         <div className="max-w-600 mx-auto">

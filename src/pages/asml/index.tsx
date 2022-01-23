@@ -1,9 +1,9 @@
 import { useRef } from 'react';
-import Head from 'next/head';
+import { InferGetStaticPropsType } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { InferGetStaticPropsType } from 'next';
 
+import PageSEO from 'src/components/PageSEO';
 import { DealsCard } from 'src/components/DealsCard';
 import { getDealsData } from 'src/lib/getDeals';
 
@@ -22,9 +22,7 @@ export default function ASMLPage({
 
   return (
     <>
-      <Head>
-        <title>ASML | CollAction</title>
-      </Head>
+      <PageSEO title="ASML" />
 
       <div>
         <div className="bg-black-0 px-5 md:px-8 py-28 md:pb-18">

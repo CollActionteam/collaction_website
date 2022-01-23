@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import type { AppProps } from 'next/app';
-import Head from 'next/head';
 import { useRouter } from 'next/router';
+import { DefaultSeo } from 'next-seo';
 
+import SEO from '../../next-seo.config';
 import Footer from 'src/components/Footer';
 import NavBar from 'src/components/NavBar';
 import Analytics from 'src/components/Analytics';
@@ -27,10 +28,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <Head>
-        <title>CollAction</title>
-      </Head>
-
+      <DefaultSeo {...SEO} />
       <NavBar />
       <Component {...pageProps} />
       <Footer />
