@@ -8,7 +8,7 @@ import { DealsCard } from 'src/components/DealsCard';
 import { getDealsData } from 'src/lib/getDeals';
 
 import ASMLBanner from 'public/veganuary-ASML-banner.png';
-import CollActionLogoWithText from 'public/black-logo-name.png';
+import CollActionLogoWithText from 'public/logo-black-small.png';
 import BadgeApple from 'public/Badge-Apple.png';
 import BadgeGoogle from 'public/Badge-Google.png';
 import AppPreviewCard1 from 'public/app-preview-card-1.png';

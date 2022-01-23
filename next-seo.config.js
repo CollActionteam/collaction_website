@@ -11,7 +11,7 @@ module.exports = {
     site_name: 'CollAction',
     images: [
       {
-        url: 'https://www.collaction.org/Logo_green.png',
+        url: 'https://www.collaction.org/logo-green-large.png',
         alt: 'CollAction Logo',
         width: 640,
         height: 336,

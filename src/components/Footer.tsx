@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FiLinkedin, FiInstagram } from 'react-icons/fi';
 
-import CollActionLogoWithText from 'public/black-logo-name.png';
+import CollActionLogoWithText from 'public/logo-black-small.png';
 import PoweredByVercel from 'public/powered-by-vercel.svg';
 
 const phone = '+31640394005';

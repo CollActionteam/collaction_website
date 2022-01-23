@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import clsx from 'clsx';
 
-import CollActionLogoWithText from 'public/green-logo-name.png';
+import CollActionLogoWithText from 'public/logo-green-small.png';
 
 export default function NavBar() {
   const { pathname } = useRouter();
