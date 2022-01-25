@@ -13,6 +13,7 @@ module.exports = {
       {
         url: 'https://www.collaction.org/logo-green-large.png',
         alt: 'CollAction Logo',
+        type: 'image/png',
         width: 640,
         height: 336,
       },
