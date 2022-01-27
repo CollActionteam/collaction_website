@@ -3,9 +3,8 @@
  * @see https://github.com/garmeeh/next-seo#readme
  */
 module.exports = {
-  titleTemplate: `%s | CollAction`,
-  defaultTitle: `CollAction`,
-  description: `Do you want to make the world a better place? Do your actions feel like a drop in the ocean?`,
+  defaultTitle: `CollAction | Sustainable choices made easy`,
+  description: `Do you want to make the world a better place? Do your actions feel like a drop in the ocean? Join our CrowdActions and see how much impact we can make together.`,
   openGraph: {
     type: 'website',
     site_name: 'CollAction',

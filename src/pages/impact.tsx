@@ -3,7 +3,10 @@ import PageSEO from 'src/components/PageSEO';
 export default function Impact() {
   return (
     <>
-      <PageSEO title="Impact" />
+      <PageSEO
+        title="CollAction | Calculate your impact"
+        description="Join our CrowdActions to make more sustainable choices. Calculate your exact impact and see how you make a difference."
+      />
 
       <main className="bg-black-0 p-5 md:p-12">
         <div className="max-w-600 mx-auto">

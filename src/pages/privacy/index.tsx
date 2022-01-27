@@ -4,7 +4,10 @@ import PageSEO from 'src/components/PageSEO';
 export default function PrivacyPage() {
   return (
     <>
-      <PageSEO title="Privacy and Cookie Policy" />
+      <PageSEO
+        title="CollAction | Privacy policy"
+        description="This Policy applies to our website and mobile application. It does not apply to other companies or organizations that for example advertise our website."
+      />
 
       <main className="bg-black-0 p-5 md:p-12">
         <div className="max-w-600 mx-auto">

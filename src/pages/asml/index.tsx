@@ -22,7 +22,10 @@ export default function ASMLPage({
 
   return (
     <>
-      <PageSEO title="ASML" />
+      <PageSEO
+        title="CollAction meets ASML | Make an impact together"
+        description="ASML participates in Veganuary: an annual challenge that promotes veganism and sustainable food consumption. Read recipes, tips, supplements, and more."
+      />
 
       <div>
         <div className="bg-black-0 px-5 md:px-8 py-28 md:pb-18">

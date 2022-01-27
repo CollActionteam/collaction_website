@@ -29,7 +29,7 @@ export default function HomePage() {
 
   return (
     <>
-      <PageSEO title="Act Now" />
+      <PageSEO title="CollAction | Sustainable choices made easy" />
 
       <div className="bg-white text-black-400">
         <Ticker />

@@ -8,7 +8,10 @@ export default function DealsPage({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <>
-      <PageSEO title="ASML Deals" />
+      <PageSEO
+        title="CollAction meets ASML | Make an impact together"
+        description="ASML participates in Veganuary: an annual challenge that promotes veganism and sustainable food consumption. Browse through all restaurant deals."
+      />
 
       <div className="bg-black-0 p-5 md:p-12">
         <div className="flex flex-wrap justify-center lg:justify-start mx-auto md:max-w-864">

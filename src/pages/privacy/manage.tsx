@@ -16,7 +16,10 @@ export default function ManagePrivacyPage() {
 
   return (
     <>
-      <PageSEO title="Manage Privacy" />
+      <PageSEO
+        title="CollAction | Manage cookies"
+        description="Opt in or out of accepting cookies. View the privacy and cookie policy to learn more."
+      />
 
       <main className="bg-black-0 p-5 md:p-12">
         <div className="max-w-600 mx-auto">

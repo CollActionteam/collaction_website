@@ -3,7 +3,10 @@ import PageSEO from 'src/components/PageSEO';
 export default function Terms() {
   return (
     <>
-      <PageSEO title="Terms of Use" />
+      <PageSEO
+        title="CollAction | Terms and conditions"
+        description="These terms of use, as amended from time to time describe the terms under which use may be made of the website and the application."
+      />
 
       <main className="bg-black-0 p-5 md:p-12">
         <div className="max-w-600 mx-auto">

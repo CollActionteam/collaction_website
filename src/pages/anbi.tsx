@@ -3,7 +3,10 @@ import PageSEO from 'src/components/PageSEO';
 export default function Impact() {
   return (
     <>
-      <PageSEO title="ANBI" />
+      <PageSEO
+        title="CollAction | ANBI"
+        description="The goal of CollAction is to solve collective action problems. We do so by collaborating with like minded organisations to bring positive change. "
+      />
 
       <main className="bg-black-0 p-5 md:p-12">
         <div className="max-w-600 mx-auto">
