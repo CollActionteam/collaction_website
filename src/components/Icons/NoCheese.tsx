@@ -2,7 +2,13 @@ import React from 'react';
 
 export default function NoCheese() {
   return (
-    <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 35">
+    <svg
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      width="36"
+      height="35"
+      viewBox="0 0 36 35"
+    >
       <path
         d="m2.125 1.44922 31 30.99998"
         stroke="#2EB494"

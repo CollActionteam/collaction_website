@@ -2,7 +2,13 @@ import React from 'react';
 
 export default function NoDairy() {
   return (
-    <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 34">
+    <svg
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      width="35"
+      height="34"
+      viewBox="0 0 35 34"
+    >
       <path
         fillRule="evenodd"
         clipRule="evenodd"

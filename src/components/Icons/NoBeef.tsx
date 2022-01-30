@@ -11,8 +11,8 @@ export default function NoBeef() {
     <svg
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      width="64px"
-      height="64px"
+      width="34px"
+      height="34px"
       viewBox="0 0 34 34"
     >
       <path
