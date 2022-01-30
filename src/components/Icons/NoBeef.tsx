@@ -1,12 +1,6 @@
 import React from 'react';
 
-// type Props = {
-//   width: string;
-//   height: string;
-// }
-
 export default function NoBeef() {
-  // const {width,height} = props;
   return (
     <svg
       fill="none"
