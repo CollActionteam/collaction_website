@@ -1,8 +1,20 @@
 import React from 'react';
 
+// type Props = {
+//   width: string;
+//   height: string;
+// }
+
 export default function NoBeef() {
+  // const {width,height} = props;
   return (
-    <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34">
+    <svg
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      width="64px"
+      height="64px"
+      viewBox="0 0 34 34"
+    >
       <path
         d="M33.4024 31.7538c.3905.3906.3905 1.0237 0 1.4142-.3905.3906-1.0237.3906-1.4142 0l1.4142-1.4142ZM.988205 2.16804c-.390522-.39052-.390522-1.02369 0-1.414209.390525-.390525 1.023685-.390525 1.414215 0L.988205 2.16804ZM31.9882 33.168.988205 2.16804 2.40242.753831 33.4024 31.7538l-1.4142 1.4142Z"
         fill="#2EB494"
