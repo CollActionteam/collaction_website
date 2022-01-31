@@ -13,6 +13,7 @@ import * as Icons from 'src/components/Icons';
 
 import ASMLBanner from 'public/veganuary-ASML-banner.png';
 import CollActionLogoWithText from 'public/logo-black-small.png';
+import CollActionLogoWithTextWhite from 'public/logo-white-small.png';
 import BadgeApple from 'public/Badge-Apple.png';
 import BadgeGoogle from 'public/Badge-Google.png';
 import AppPreviewCard1 from 'public/app-preview-card-1.png';
@@ -70,9 +71,11 @@ export default function ASMLPage({
                 Congratulations ASML!
               </h1>
               <p className="mb-15 md:mb-18 lg:mb-24">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                sit amet ultrices risus. Phasellus augue eros, bibendum non
-                viverra ut, posuere vel risus.
+                Your effort paid off. Based on your individual commitments, we
+                calculated the impact of 135 participants in this year’s ASML
+                Veganuary challenge. Here are the numbers. Feel free to share
+                this and spread the word about your collective impact. Together,
+                you made waves!
               </p>
             </div>
 
@@ -84,7 +87,7 @@ export default function ASMLPage({
             </div>
 
             {/* YOUR INDIVIDUAL IMPACT */}
-            <div className="w-full max-w-400 md:max-w-500 text-center mx-auto">
+            {/* <div className="w-full max-w-400 md:max-w-500 text-center mx-auto">
               <h1 className="text-center mb-7 md:mb-10">
                 Your individual impact
               </h1>
@@ -93,14 +96,14 @@ export default function ASMLPage({
                 sit amet ultrices risus. Phasellus augue eros, bibendum non
                 viverra ut, posuere vel risus.
               </p>
-            </div>
+            </div> */}
 
             {/* ICON IMPACT CARDS */}
-            <div className="flex justify-center lg:justify-start flex-wrap mx-auto max-w-864 md:px-8 lg:p-0">
+            {/* <div className="flex justify-center lg:justify-start flex-wrap mx-auto max-w-864 md:px-8 lg:p-0">
               {iconCards.map((card, i) => (
                 <IconCard key={card.top} card={card} index={i} />
               ))}
-            </div>
+            </div> */}
 
             {/* <div className="max-w-600 mx-auto mb-13">
               <h4 className="mb-8">
@@ -334,13 +337,13 @@ const imgCards: ImageCard[] = [
     image: AnimalsImg,
     top: '',
     value: 1200,
-    bottom: 'animal lives saved',
+    bottom: 'animal lives',
   },
   {
     image: WaterImg,
     top: '',
-    value: 4000000,
-    bottom: 'liters of water saved',
+    value: 4,
+    bottom: 'million liters of water',
   },
 ];
 
@@ -390,7 +393,7 @@ function ImageCard({ card, index }: { card: ImageCard; index: number }) {
       </div>
       <div className="absolute text-center bottom-10 md:bottom-12">
         <Image
-          src={CollActionLogoWithText}
+          src={CollActionLogoWithTextWhite}
           alt="Collaction White Logo"
           width={96}
           height={24}
