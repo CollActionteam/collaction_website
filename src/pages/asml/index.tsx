@@ -1,19 +1,28 @@
 import { useRef } from 'react';
 import { InferGetStaticPropsType } from 'next';
+import clsx from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';
 
 import PageSEO from 'src/components/PageSEO';
+import { useInView } from 'react-intersection-observer';
+import { useCountUp } from 'use-count-up';
 import { DealsCard } from 'src/components/DealsCard';
 import { getDealsData } from 'src/lib/getDeals';
+import * as Icons from 'src/components/Icons';
 
 import ASMLBanner from 'public/veganuary-ASML-banner.png';
 import CollActionLogoWithText from 'public/logo-black-small.png';
+import CollActionLogoWithTextWhite from 'public/logo-white-small.png';
 import BadgeApple from 'public/Badge-Apple.png';
 import BadgeGoogle from 'public/Badge-Google.png';
 import AppPreviewCard1 from 'public/app-preview-card-1.png';
 import AppPreviewCard2 from 'public/app-preview-card-2.png';
 import AppPreviewCard3 from 'public/app-preview-card-3.png';
+import AirplaneImg from 'public/impact/airplane.jpeg';
+import AnimalsImg from 'public/impact/animals.jpeg';
+import CO2Img from 'public/impact/co2.jpeg';
+import WaterImg from 'public/impact/water.jpeg';
 
 export default function ASMLPage({
   deals,
@@ -59,7 +68,47 @@ export default function ASMLPage({
           </div>
 
           <div className="mt-12 md:mt-15 lg:mt-26">
-            <div className="max-w-600 mx-auto mb-13">
+            <div className="w-full max-w-400 md:max-w-500 text-center mx-auto">
+              {/* MAIN HEADING */}
+              <h1 className="text-center mb-7 md:mb-10 break-words">
+                Congratulations ASML!
+              </h1>
+              <p className="mb-15 md:mb-18 lg:mb-24">
+                Your effort paid off. Based on your individual commitments, we
+                calculated the impact of 135 participants in this year’s ASML
+                Veganuary challenge. Here are the numbers. Feel free to share
+                this and spread the word about your collective impact. Together,
+                you made waves!
+              </p>
+            </div>
+
+            {/* IMAGE CARDS */}
+            <div className="flex flex-wrap md:flex-row justify-center max-w-864 mx-auto mb-20 lg:mb-24">
+              {imgCards.map((card, i) => (
+                <ImageCard key={card.bottom} card={card} index={i} />
+              ))}
+            </div>
+
+            {/* YOUR INDIVIDUAL IMPACT */}
+            {/* <div className="w-full max-w-400 md:max-w-500 text-center mx-auto">
+              <h1 className="text-center mb-7 md:mb-10">
+                Your individual impact
+              </h1>
+              <p className="lg:mb-15">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                sit amet ultrices risus. Phasellus augue eros, bibendum non
+                viverra ut, posuere vel risus.
+              </p>
+            </div> */}
+
+            {/* ICON IMPACT CARDS */}
+            {/* <div className="flex justify-center lg:justify-start flex-wrap mx-auto max-w-864 md:px-8 lg:p-0">
+              {iconCards.map((card, i) => (
+                <IconCard key={card.top} card={card} index={i} />
+              ))}
+            </div> */}
+
+            {/* <div className="max-w-600 mx-auto mb-13">
               <h4 className="mb-8">
                 Hi, welcome to the ASML edition of Veganuary!
               </h4>
@@ -89,9 +138,9 @@ export default function ASMLPage({
                 great for your health and the environment. Want to participate?
                 Click the participate button and fill out the form.
               </p>
-            </div>
+            </div> */}
 
-            <div className="max-w-600 mx-auto mb-13">
+            {/* <div className="max-w-600 mx-auto mb-13">
               <h4 className="mb-8">Commitments</h4>
               <p className="mb-6 last:mb-0">
                 We'd love to optimize your personal impact. Eating vegan for a
@@ -104,7 +153,7 @@ export default function ASMLPage({
                 weekends off? We've got you covered with a '5/7 days as week'
                 option!
               </p>
-            </div>
+            </div> */}
 
             <div className="mb-13 last:mb-0">
               <h4 className="max-w-600 mx-auto mb-8">Restaurant Deals</h4>
@@ -263,3 +312,190 @@ export const getStaticProps = async () => {
     },
   };
 };
+
+// ===========
+// IMAGE CARDS
+// ===========
+type ImageCard = {
+  image: StaticImageData;
+  top: string;
+  value: number;
+  bottom: string;
+};
+
+const imgCards: ImageCard[] = [
+  {
+    image: CO2Img,
+    top: '',
+    value: 13,
+    bottom: 'tons of CO2e',
+  },
+  {
+    image: AirplaneImg,
+    top: 'the CO2 equivalent of',
+    value: 10,
+    bottom: 'Continental flights',
+  },
+  {
+    image: AnimalsImg,
+    top: '',
+    value: 1200,
+    bottom: 'animal lives',
+  },
+  {
+    image: WaterImg,
+    top: '',
+    value: 4,
+    bottom: 'million liters of water',
+  },
+];
+
+function ImageCard({ card, index }: { card: ImageCard; index: number }) {
+  // https://www.npmjs.com/package/react-intersection-observer
+  const [cardRef, inView] = useInView();
+
+  // https://www.npmjs.com/package/use-count-up
+  const { value } = useCountUp({
+    end: card.value,
+    start: card.value / 2,
+    duration: 2,
+    decimalPlaces: 0,
+    isCounting: inView,
+    thousandsSeparator: ',',
+  });
+
+  return (
+    <div
+      ref={cardRef}
+      className="relative flex justify-center items-center w-full max-w-350 md:max-w-400 h-full aspect-[0.7] rounded-3xl md:mx-4 mb-5 sm:mb-8"
+    >
+      <div className="block w-full h-full overflow-hidden rounded-3xl">
+        <Image
+          priority={index < 2}
+          src={card.image}
+          alt={card.bottom}
+          placeholder="blur"
+          layout="responsive"
+          sizes="(max-width: 767px) 350px, 400px"
+          className="rounded-3xl"
+        />
+      </div>
+      <div
+        className="absolute w-full h-full rounded-3xl"
+        style={{
+          background: `linear-gradient(180deg, rgba(0, 0, 0, 0) 35.3%, rgba(0, 0, 0, 0.38) 100%)`,
+        }}
+      />
+      <div className="absolute text-secondary text-center text-shadow">
+        {/* top text */}
+        {card.top && <div className="text-footnote">{card.top}</div>}
+        {/* large middle value/text */}
+        <div className="text-8xl font-bold mb-[10px]">{value}</div>
+        {/* bottom text */}
+        <div className="text-headline font-bold">{card.bottom}</div>
+      </div>
+      <div className="absolute text-center bottom-10 md:bottom-12">
+        <Image
+          src={CollActionLogoWithTextWhite}
+          alt="Collaction White Logo"
+          width={96}
+          height={24}
+        />
+      </div>
+    </div>
+  );
+}
+
+// ==========
+// ICON CARDS
+// ==========
+type IconCard = {
+  icon: JSX.Element;
+  top: string;
+  value: number;
+  bottom: string;
+};
+
+const iconCards: IconCard[] = [
+  {
+    icon: <Icons.Vegan />,
+    top: 'Vegan',
+    value: 64,
+    bottom: 'kgCO2e/mth',
+  },
+  {
+    icon: <Icons.NoBeef />,
+    top: 'No Beef',
+    value: 30,
+    bottom: 'kgCO2e/mth',
+  },
+  {
+    icon: <Icons.Vegetarian />,
+    top: 'Vegetarian',
+    value: 44,
+    bottom: 'kgCO2e/mth',
+  },
+  {
+    icon: <Icons.NoCheese />,
+    top: 'No Cheese',
+    value: 14,
+    bottom: 'kgCO2e/mth',
+  },
+  {
+    icon: <Icons.NoDairy />,
+    top: 'No Diary',
+    value: 17,
+    bottom: 'kgCO2e/mth',
+  },
+  {
+    icon: <Icons.Pescatarian />,
+    top: 'Pescatarian',
+    value: 39,
+    bottom: 'kgCO2e/mth',
+  },
+];
+
+function IconCard({ card, index }: { card: IconCard; index: number }) {
+  // https://www.npmjs.com/package/react-intersection-observer
+  const [cardRef, inView] = useInView();
+
+  // https://www.npmjs.com/package/use-count-up
+  const { value } = useCountUp({
+    end: card.value,
+    start: card.value / 3,
+    duration: 2,
+    decimalPlaces: 0,
+    isCounting: inView,
+    thousandsSeparator: ',',
+  });
+
+  return (
+    <div
+      ref={cardRef}
+      className={clsx(
+        'relative p-0 py-10 sm:px-8 md:p-10',
+        `${index === 0 ? 'before:hidden' : 'before:block'}`,
+        `${index === 1 ? 'lg:before:hidden' : ''}`,
+        'before:absolute before:top-0 before:inset-x-0 before:mx-auto before:content-[""] before:w-2/3 before:bg-black-100 before:h-[0.5px]',
+        'after:hidden',
+        `${index % 2 === 1 ? 'lg:after:block' : ''}`,
+        'after:absolute after:left-0 after:inset-y-0 after:my-auto after:content-[""] after:h-5/6 after:bg-black-100 after:w-[0.5px]'
+      )}
+    >
+      <div className="relative flex flex-col items-center w-80 xs:w-full xs:min-w-350 max-w-350 text-center">
+        {/* icon */}
+        <div className="flex justify-center w-16 h-16 p-4 bg-secondary rounded-full mb-1">
+          {card.icon}
+        </div>
+        {/* title/top text */}
+        <div className="text-black-200 mb-2">{card.top}</div>
+        {/* featured text */}
+        <span className="text-collaction text-featured font-bold mb-1">
+          {value}
+        </span>
+        {/* bottom text */}
+        <div className="text-black-200">{card.bottom}</div>
+      </div>
+    </div>
+  );
+}

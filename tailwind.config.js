@@ -61,12 +61,14 @@ module.exports = {
         sans: 'Rubik, sans-serif',
       },
       fontSize: {
+        footnote: ['13px', '18px'],
         button: ['15px', '20px'],
         body: ['17px', '26px'],
         headline: ['17px', '22px'],
         'title-2': ['22px', '28px'],
         'title-1': ['28px', '34px'],
         'title-lg': ['40px', '41px'],
+        featured: ['80px', '80px'],
       },
       height: {
         440: '440px',
@@ -75,7 +77,11 @@ module.exports = {
       width: {
         208: '52rem',
       },
+      minWidth: {
+        350: '350px',
+      },
       maxWidth: {
+        350: '350px',
         400: '400px',
         500: '500px',
         600: '600px',
