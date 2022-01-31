@@ -321,25 +321,25 @@ const imgCards: ImageCard[] = [
   {
     image: CO2Img,
     top: '',
-    value: 123,
+    value: 13,
     bottom: 'tons of CO2e',
   },
   {
     image: AirplaneImg,
     top: 'the CO2 equivalent of',
-    value: 123,
+    value: 10,
     bottom: 'Continental flights',
   },
   {
     image: AnimalsImg,
     top: '',
-    value: 123,
+    value: 1200,
     bottom: 'animal lives saved',
   },
   {
     image: WaterImg,
     top: '',
-    value: 123,
+    value: 4000000,
     bottom: 'liters of water saved',
   },
 ];
@@ -414,37 +414,37 @@ const iconCards: IconCard[] = [
   {
     icon: <Icons.Vegan />,
     top: 'Vegan',
-    value: 123,
+    value: 64,
     bottom: 'kgCO2e/mth',
   },
   {
     icon: <Icons.NoBeef />,
     top: 'No Beef',
-    value: 468,
+    value: 30,
     bottom: 'kgCO2e/mth',
   },
   {
     icon: <Icons.Vegetarian />,
     top: 'Vegetarian',
-    value: 48,
+    value: 44,
     bottom: 'kgCO2e/mth',
   },
   {
     icon: <Icons.NoCheese />,
     top: 'No Cheese',
-    value: 498,
+    value: 14,
     bottom: 'kgCO2e/mth',
   },
   {
     icon: <Icons.NoDairy />,
     top: 'No Diary',
-    value: 321,
+    value: 17,
     bottom: 'kgCO2e/mth',
   },
   {
     icon: <Icons.Pescatarian />,
     top: 'Pescatarian',
-    value: 54545,
+    value: 39,
     bottom: 'kgCO2e/mth',
   },
 ];
