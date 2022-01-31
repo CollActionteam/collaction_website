@@ -420,37 +420,37 @@ const iconCards: IconCard[] = [
   {
     icon: <Icons.Vegan />,
     top: 'Vegan',
-    value: 64,
+    value: 11,
     bottom: 'kgCO2e/mth',
   },
   {
     icon: <Icons.NoBeef />,
     top: 'No Beef',
-    value: 30,
+    value: 11,
     bottom: 'kgCO2e/mth',
   },
   {
     icon: <Icons.Vegetarian />,
     top: 'Vegetarian',
-    value: 44,
+    value: 11,
     bottom: 'kgCO2e/mth',
   },
   {
     icon: <Icons.NoCheese />,
     top: 'No Cheese',
-    value: 14,
+    value: 11,
     bottom: 'kgCO2e/mth',
   },
   {
     icon: <Icons.NoDairy />,
     top: 'No Diary',
-    value: 17,
+    value: 11,
     bottom: 'kgCO2e/mth',
   },
   {
     icon: <Icons.Pescatarian />,
     top: 'Pescatarian',
-    value: 39,
+    value: 11,
     bottom: 'kgCO2e/mth',
   },
 ];
