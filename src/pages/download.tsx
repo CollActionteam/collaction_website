@@ -1,12 +1,13 @@
 import { useEffect } from 'react';
-import { isIOS } from 'react-device-detect';
+import { isIOS, isIOS13, isMacOs } from 'react-device-detect';
 import PageSEO from 'src/components/PageSEO';
 
 export default function DownloadPage() {
   useEffect(() => {
-    const downloadUrl = isIOS
-      ? 'https://apps.apple.com/app/id1597643827'
-      : 'https://play.google.com/store/apps/details?id=org.collaction.collaction_app';
+    const downloadUrl =
+      isIOS || isIOS13 || isMacOs
+        ? 'https://apps.apple.com/app/id1597643827'
+        : 'https://play.google.com/store/apps/details?id=org.collaction.collaction_app';
     window.location.href = downloadUrl;
   }, []);
 
