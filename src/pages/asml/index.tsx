@@ -1,4 +1,3 @@
-import { useRef } from 'react';
 import { InferGetStaticPropsType } from 'next';
 import clsx from 'clsx';
 import Image from 'next/image';
@@ -27,8 +26,6 @@ import WaterImg from 'public/impact/water.jpeg';
 export default function ASMLPage({
   deals,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const appLinksRef = useRef<HTMLDivElement>(null);
-
   return (
     <>
       <PageSEO
@@ -205,10 +202,7 @@ export default function ASMLPage({
           </div>
 
           {/* APP LINKS */}
-          <div
-            ref={appLinksRef}
-            className="flex flex-wrap items-center justify-center mt-8 md:mt-10 mb-15 lg:mb-20 mx-auto"
-          >
+          <div className="flex flex-wrap items-center justify-center mt-8 md:mt-10 mb-15 lg:mb-20 mx-auto">
             <a
               href="https://apps.apple.com/app/id1597643827"
               className="inline-flex mb-5 mx-2 xs:mx-0 xs:mr-5"
@@ -286,18 +280,14 @@ export default function ASMLPage({
         </div>
 
         {/* DOWNLOAD THE APP BUTTON */}
-        <button
-          onClick={() =>
-            appLinksRef.current?.scrollIntoView({
-              behavior: 'smooth',
-              block: 'center',
-            })
-          }
-          className="block bg-accent font-bold leading-none text-button text-white text-center rounded-full p-3.5 mb-8 w-72 shadow sticky bottom-8 inset-x-0 mx-auto z-40"
-          style={{ marginTop: `calc(-52px - 2rem)` }}
-        >
-          Download The App!
-        </button>
+        <Link href="/download">
+          <a
+            className="block bg-accent font-bold leading-none text-button text-white text-center rounded-full p-3.5 mb-8 w-72 shadow sticky bottom-8 inset-x-0 mx-auto z-40"
+            style={{ marginTop: `calc(-52px - 2rem)` }}
+          >
+            Download The App!
+          </a>
+        </Link>
       </div>
     </>
   );
@@ -416,6 +406,7 @@ type IconCard = {
   bottom: string;
 };
 
+// eslint-disable-next-line unused-imports/no-unused-vars
 const iconCards: IconCard[] = [
   {
     icon: <Icons.Vegan />,
