@@ -32,7 +32,7 @@ export function DealsCard({
   }, []);
 
   return (
-    <div className="bg-secondary max-w-400 w-full rounded-1 overflow-hidden relative mb-8 md:mx-4">
+    <div className="bg-secondary max-w-400 w-full rounded-1 overflow-hidden relative mb-7 md:mx-5">
       {/* IMAGE */}
       <div className="relative w-full aspect-w-16 aspect-h-9">
         <Image
@@ -45,14 +45,14 @@ export function DealsCard({
         />
       </div>
       {/* ICONS */}
-      <div className="px-6 xs:px-8 sm:px-10 my-6 sm:my-8 h-10 flex">
+      <div className="px-6 xs:px-7 sm:px-8 my-6 sm:my-7 h-8 flex">
         {links.website && (
           <a
             href={links.website}
             target="_blank"
             rel="noreferrer"
             aria-label="Visit Vendor Site"
-            className="bg-primary-400 text-secondary p-2 mr-2 xs:mr-5 rounded-full"
+            className="bg-primary-400 text-secondary p-3 mr-3 xs:mr-5 rounded-full"
           >
             <GlobeSimpleIcon size={24} strokeWidth={2} />
           </a>
@@ -63,7 +63,7 @@ export function DealsCard({
             target="_blank"
             rel="noreferrer"
             aria-label="View Location on Map"
-            className="bg-primary-400 text-secondary p-2 mr-2 xs:mr-5 rounded-full"
+            className="bg-primary-400 text-secondary p-3 mr-3 xs:mr-5 rounded-full"
           >
             <MapPinIcon size={24} strokeWidth={2} />
           </a>
@@ -74,7 +74,7 @@ export function DealsCard({
             target="_blank"
             rel="noreferrer"
             aria-label="Phone Vendor"
-            className="bg-primary-400 text-secondary p-2 mr-2 xs:mr-5 rounded-full"
+            className="bg-primary-400 text-secondary p-3 mr-3 xs:mr-5 rounded-full"
           >
             <PhoneIcon size={24} strokeWidth={2} />
           </a>
@@ -88,15 +88,15 @@ export function DealsCard({
             links.order
               ? 'bg-collaction'
               : 'bg-primary-100 pointer-events-none',
-            'text-secondary text-button font-bold leading-none text-center rounded-full p-3 h-10 w-26 align-top'
+            'text-secondary text-button font-bold leading-none text-center rounded-full p-4 h-8 w-26 align-top'
           )}
         >
           {links.order ? 'Order' : 'In-store'}
         </a>
       </div>
       {/* TITLE & CONTENT */}
-      <div className="px-6 xs:px-8 sm:px-10">
-        <h4 className="text-primary-400 mb-5 sm:mb-8">{title}</h4>
+      <div className="px-6 xs:px-7 sm:px-8">
+        <h4 className="text-primary-400 mb-5 sm:mb-7">{title}</h4>
         <div
           ref={contentRef}
           className="text-primary-300 h-full max-h-32 line-clamp-5 whitespace-pre-line"
@@ -105,11 +105,11 @@ export function DealsCard({
         </div>
       </div>
       {/* MAXIMIZE CONTENT ICON */}
-      <div className="py-6 sm:py-8 pl-8 pr-5 sm:pl-10 sm:pr-8 text-right">
+      <div className="py-6 sm:py-7 pl-7 pr-5 sm:pl-8 sm:pr-7 text-right">
         {contentOverflow && (
           <button
             onClick={() => setShowContent(true)}
-            className="inline-block bg-primary-100 text-secondary p-2 rounded-full"
+            className="inline-block bg-primary-100 text-secondary p-3 rounded-full"
           >
             <PlusIcon size={24} strokeWidth={2} />
           </button>
@@ -130,17 +130,17 @@ export function DealsCard({
         >
           <div className="flex flex-col justify-between h-full">
             {/* TITLE & CONTENT */}
-            <div className="overflow-auto px-8 sm:px-10 pt-8 flex flex-col">
-              <h5 className="text-title-2 mb-6 sm:mb-8">{title}</h5>
+            <div className="overflow-auto px-7 sm:px-8 pt-7 flex flex-col">
+              <h5 className="text-title-3 mb-6 sm:mb-7">{title}</h5>
               <div className="overflow-y-scroll scrollbar-track-collaction-500 scrollbar-thumb-secondary whitespace-pre-line">
                 {content}
               </div>
             </div>
             {/* MINIMIZE CONTENT ICON */}
-            <div className="py-6 sm:py-8 pl-8 pr-5 sm:pl-10 sm:pr-8 text-right shrink-0">
+            <div className="py-6 sm:py-7 pl-7 pr-5 sm:pl-8 sm:pr-7 text-right shrink-0">
               <button
                 onClick={() => setShowContent(false)}
-                className="inline-block bg-secondary text-primary-100 p-2 rounded-full"
+                className="inline-block bg-secondary text-primary-100 p-3 rounded-full"
               >
                 <XIcon size={24} strokeWidth={2} />
               </button>

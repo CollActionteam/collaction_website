@@ -10,7 +10,7 @@ export default function HomePage() {
           <h1 className="text-primary-400 text-center mb-6">
             Privacy and Cookie Policy
           </h1>
-          <p className="text-primary-400 text-center mb-8">
+          <p className="text-primary-400 text-center mb-7 text-body-short-1 rounded-1">
             version dated January 23rd, 2022
           </p>
         </div>

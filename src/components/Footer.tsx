@@ -36,7 +36,7 @@ export default function Footer() {
               href="https://www.instagram.com/collaction_org/"
               target="_blank"
               rel="noreferrer"
-              className="bg-primary-400 text-secondary h-10 w-10 p-2 mr-5 rounded-full"
+              className="bg-primary-400 text-secondary h-8 w-8 p-3 mr-5 rounded-full"
               aria-label="Instagram"
             >
               <FiInstagram size="24" />
@@ -45,7 +45,7 @@ export default function Footer() {
               href="https://www.linkedin.com/company/stichting-collaction"
               target="_blank"
               rel="noreferrer"
-              className="bg-primary-400 text-secondary h-10 w-10 p-2 mr-5 rounded-full"
+              className="bg-primary-400 text-secondary h-8 w-8 p-3 mr-5 rounded-full"
               aria-label="LinkedIn"
             >
               <FiLinkedin size="24" />

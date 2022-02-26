@@ -24,17 +24,17 @@ export default function ManagePrivacyPage() {
       <main className="bg-primary-0 p-5 md:p-12">
         <div className="max-w-600 mx-auto">
           <h1 className="text-primary-400 text-center mb-6">Manage Cookies</h1>
-          <p className="text-primary-400 text-center mb-4">
+          <p className="text-primary-400 text-center mb-5">
             Currently, we notice that you've{' '}
             <u>{cookiesAccepted ? 'accepted' : 'declined'}</u> CollAction
             cookies.
           </p>
           {cookiesAccepted ? (
-            <p className="text-primary-400 text-center mb-8">
+            <p className="text-primary-400 text-center mb-7">
               You may revoke that acceptance below.
             </p>
           ) : (
-            <p className="text-primary-400 text-center mb-8">
+            <p className="text-primary-400 text-center mb-7">
               We value your privacy. We and our partners use trackers to measure
               the audience of our website and to provide you with offers and
               improve on our own operations.
@@ -42,7 +42,7 @@ export default function ManagePrivacyPage() {
           )}
           {cookiesAccepted ? (
             <button
-              className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 mb-8 w-72 shadow mx-auto"
+              className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 mb-7 w-72 shadow mx-auto"
               onClick={() => {
                 revokeAcceptedCookies();
                 setCookiesAcceptance(false);
@@ -50,13 +50,13 @@ export default function ManagePrivacyPage() {
             >
               <span className="align-middle">Revoke Cookies</span>
               <FaCookieIcon
-                className="h-6 w-6 inline-block ml-4"
+                className="h-6 w-6 inline-block ml-5"
                 strokeWidth={2}
               />
             </button>
           ) : (
             <button
-              className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 mb-8 w-72 shadow mx-auto"
+              className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 mb-7 w-72 shadow mx-auto"
               onClick={() => {
                 makeCookieSelection('1');
                 setCookiesAcceptance(true);
@@ -64,12 +64,12 @@ export default function ManagePrivacyPage() {
             >
               <span className="align-middle">Accept Cookies</span>
               <FaCookieIcon
-                className="h-6 w-6 inline-block ml-4"
+                className="h-6 w-6 inline-block ml-5"
                 strokeWidth={2}
               />
             </button>
           )}
-          <p className="text-primary-400 text-center w-72 mb-4 mx-auto">
+          <p className="text-primary-400 text-center w-72 mb-5 mx-auto">
             View our{' '}
             <Link href="/privacy">
               <a className="text-collaction">Privacy and Cookies Policy</a>
