@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .text-shadow {
-    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
-  }
-}
-
 @layer base {
   html {
     @apply h-full box-border;
@@ -52,5 +46,26 @@
   .overflow-x-scroll,
   .overflow-y-scroll {
     @apply scrollbar scrollbar-thin scrollbar-thumb-collaction scrollbar-track-primary-0 scrollbar-thumb-rounded-3xl;
+  }
+}
+
+@layer components {
+  .text-body-short-1 {
+    font-weight: 300;
+  }
+  .text-body-long-1 {
+    font-weight: 300;
+  }
+  .text-headline-s-1 {
+    font-weight: 600;
+  }
+  .text-headline-m-1 {
+    font-weight: 700;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
   }
 }

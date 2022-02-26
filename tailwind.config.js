@@ -59,6 +59,34 @@ module.exports = {
         'title-1': ['28px', '34px'],
         'title-lg': ['40px', '41px'],
         featured: ['80px', '80px'],
+        'body-short-1': [
+          '18px',
+          {
+            lineHeight: '22px',
+            letterSpacing: '0px',
+          },
+        ],
+        'body-long-1': [
+          '18px',
+          {
+            lineHeight: '24px',
+            letterSpacing: '0px',
+          },
+        ],
+        'headline-s-1': [
+          '18px',
+          {
+            lineHeight: '22px',
+            letterSpacing: '0px',
+          },
+        ],
+        'headline-m-1': [
+          '28px',
+          {
+            lineHeight: '34px',
+            letterSpacing: '0px',
+          },
+        ],
       },
       height: {
         440: '440px',
