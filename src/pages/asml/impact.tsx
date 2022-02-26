@@ -18,7 +18,7 @@ export default function ASMLImpactPage() {
     <>
       <PageSEO title="Your Impact | ASML" />
 
-      <div className="bg-black-0 p-5 pt-26 md:pt-32">
+      <div className="bg-primary-0 p-5 pt-26 md:pt-32">
         <div className="w-full max-w-400 md:max-w-500 text-center mx-auto">
           {/* MAIN HEADING */}
           <h1 className="text-center mb-7 md:mb-10 break-words">
@@ -222,10 +222,10 @@ function IconCard({ card, index }: { card: IconCard; index: number }) {
         'relative p-0 py-10 sm:px-8 md:p-10',
         `${index === 0 ? 'before:hidden' : 'before:block'}`,
         `${index === 1 ? 'lg:before:hidden' : ''}`,
-        'before:absolute before:top-0 before:inset-x-0 before:mx-auto before:content-[""] before:w-2/3 before:bg-black-100 before:h-[0.5px]',
+        'before:absolute before:top-0 before:inset-x-0 before:mx-auto before:content-[""] before:w-2/3 before:bg-primary-100 before:h-[0.5px]',
         'after:hidden',
         `${index % 2 === 1 ? 'lg:after:block' : ''}`,
-        'after:absolute after:left-0 after:inset-y-0 after:my-auto after:content-[""] after:h-5/6 after:bg-black-100 after:w-[0.5px]'
+        'after:absolute after:left-0 after:inset-y-0 after:my-auto after:content-[""] after:h-5/6 after:bg-primary-100 after:w-[0.5px]'
       )}
     >
       <div className="relative flex flex-col items-center w-80 xs:w-full xs:min-w-350 max-w-350 text-center">
@@ -234,13 +234,13 @@ function IconCard({ card, index }: { card: IconCard; index: number }) {
           {card.icon}
         </div>
         {/* title/top text */}
-        <div className="text-black-200 mb-2">{card.top}</div>
+        <div className="text-primary-200 mb-2">{card.top}</div>
         {/* featured text */}
         <span className="text-collaction text-featured font-bold mb-1">
           {value}
         </span>
         {/* bottom text */}
-        <div className="text-black-200">{card.bottom}</div>
+        <div className="text-primary-200">{card.bottom}</div>
       </div>
     </div>
   );

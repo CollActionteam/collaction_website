@@ -9,12 +9,12 @@ export default function PrivacyPage() {
         description="This Policy applies to our website and mobile application. It does not apply to other companies or organizations that for example advertise our website."
       />
 
-      <main className="bg-black-0 p-5 md:p-12">
+      <main className="bg-primary-0 p-5 md:p-12">
         <div className="max-w-600 mx-auto">
-          <h1 className="text-black-400 text-center mb-6">
+          <h1 className="text-primary-400 text-center mb-6">
             Privacy and Cookie Policy
           </h1>
-          <p className="text-black-400 text-center mb-8">
+          <p className="text-primary-400 text-center mb-8">
             version dated January 23rd, 2022
           </p>
 
@@ -43,7 +43,7 @@ export default function PrivacyPage() {
             networks and platforms. We also advise you to read their privacy and
             cookie policies carefully before using their websites.
           </p>
-          <h4 className="text-black-300 mb-8">
+          <h4 className="text-primary-300 mb-8">
             Why does CollAction collect and process my Personal Information?
           </h4>
           <p className="mb-6 last:mb-0">
@@ -80,7 +80,7 @@ export default function PrivacyPage() {
             </ul>
           </p>
 
-          <h4 className="text-black-300 mb-8">
+          <h4 className="text-primary-300 mb-8">
             What Personal Information do we collect?
           </h4>
           <p className="mb-6">
@@ -124,7 +124,7 @@ export default function PrivacyPage() {
             </ul>
           </p>
 
-          <h4 className="text-black-300 mb-8">
+          <h4 className="text-primary-300 mb-8">
             How long does CollAction store my Personal Information?
           </h4>
           <p className="mb-6 last:mb-0">
@@ -138,7 +138,7 @@ export default function PrivacyPage() {
             obligations.
           </p>
 
-          <h4 className="text-black-300 mb-8">
+          <h4 className="text-primary-300 mb-8">
             Does CollAction share my Personal Information with third parties?
           </h4>
 
@@ -211,7 +211,7 @@ export default function PrivacyPage() {
             Implementing Decision 2021/914/EU.
           </p>
 
-          <h4 className="text-black-300 mb-8">What are cookies?</h4>
+          <h4 className="text-primary-300 mb-8">What are cookies?</h4>
           <p className="mb-6">
             Cookies are text files placed on your device to collect standard
             Internet log information and visitor behaviour information.
@@ -285,7 +285,7 @@ export default function PrivacyPage() {
           </p>
 
           <p className="mb-6"></p>
-          <h4 className="text-black-300 mb-8">How to opt-out</h4>
+          <h4 className="text-primary-300 mb-8">How to opt-out</h4>
           <p className="mb-6">
             You may revoke any consent given to us with regard to the
             collection, processing and use of your Personal Information at any
@@ -310,7 +310,7 @@ export default function PrivacyPage() {
             with notifications (such as a notice of an update to our Policy).
           </p>
 
-          <h4 className="text-black-300 mb-8">
+          <h4 className="text-primary-300 mb-8">
             What other rights do you have?
           </h4>
           <p className="mb-6">
@@ -344,7 +344,7 @@ export default function PrivacyPage() {
             Information.
           </p>
 
-          <h4 className="text-black-300 mb-8">Security</h4>
+          <h4 className="text-primary-300 mb-8">Security</h4>
           <p className="mb-6 last:mb-0">
             CollAction is committed to protecting your Personal Information and
             will take all reasonable precautions to do so. Though we can never
@@ -353,7 +353,7 @@ export default function PrivacyPage() {
             safeguarding measures should be taken.
           </p>
 
-          <h4 className="text-black-300 mb-8">Changes to our Policy</h4>
+          <h4 className="text-primary-300 mb-8">Changes to our Policy</h4>
           <p className="mb-6 last:mb-0">
             We may need to amend or update our Policy from time to time. This
             will replace any previous Policy. Should we make any material
@@ -363,7 +363,7 @@ export default function PrivacyPage() {
             updated. This Policy was last updated on January 23rd, 2022.
           </p>
 
-          <h4 className="text-black-300 mb-8">Contact Details</h4>
+          <h4 className="text-primary-300 mb-8">Contact Details</h4>
           <p className="mb-6">
             Would you like to contact us? Please email us at{' '}
             {
@@ -390,7 +390,7 @@ export default function PrivacyPage() {
             any event within 30 days after receipt.
           </p>
 
-          <h4 className="text-black-300 mb-8">
+          <h4 className="text-primary-300 mb-8">
             How to contact the appropriate authority
           </h4>
           <p className="mb-6">

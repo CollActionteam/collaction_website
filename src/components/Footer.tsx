@@ -13,7 +13,7 @@ const RSIN = '856193690';
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary text-black-400 absolute bottom-0 w-full h-940 md:h-440 py-24 px-5">
+    <footer className="bg-secondary text-primary-400 absolute bottom-0 w-full h-940 md:h-440 py-24 px-5">
       <div className="flex flex-col md:flex-row md:justify-between w-full md:max-w-600 lg:w-208 lg:max-w-4xl mx-auto">
         <div>
           <Link href="/">
@@ -36,7 +36,7 @@ export default function Footer() {
               href="https://www.instagram.com/collaction_org/"
               target="_blank"
               rel="noreferrer"
-              className="bg-black-400 text-secondary h-10 w-10 p-2 mr-5 rounded-full"
+              className="bg-primary-400 text-secondary h-10 w-10 p-2 mr-5 rounded-full"
               aria-label="Instagram"
             >
               <FiInstagram size="24" />
@@ -45,7 +45,7 @@ export default function Footer() {
               href="https://www.linkedin.com/company/stichting-collaction"
               target="_blank"
               rel="noreferrer"
-              className="bg-black-400 text-secondary h-10 w-10 p-2 mr-5 rounded-full"
+              className="bg-primary-400 text-secondary h-10 w-10 p-2 mr-5 rounded-full"
               aria-label="LinkedIn"
             >
               <FiLinkedin size="24" />

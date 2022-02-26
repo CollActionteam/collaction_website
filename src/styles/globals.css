@@ -14,7 +14,7 @@
   }
 
   body {
-    @apply font-sans bg-black-0 text-black-400 relative min-h-full m-0 pb-940 md:pb-440;
+    @apply font-sans bg-primary-0 text-primary-400 relative min-h-full m-0 pb-940 md:pb-440;
   }
 
   h1,
@@ -51,6 +51,6 @@
   .overflow-y-auto,
   .overflow-x-scroll,
   .overflow-y-scroll {
-    @apply scrollbar scrollbar-thin scrollbar-thumb-accent scrollbar-track-black-0 scrollbar-thumb-rounded-3xl;
+    @apply scrollbar scrollbar-thin scrollbar-thumb-collaction scrollbar-track-primary-0 scrollbar-thumb-rounded-3xl;
   }
 }

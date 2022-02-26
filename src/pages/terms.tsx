@@ -8,10 +8,10 @@ export default function Terms() {
         description="These terms of use, as amended from time to time describe the terms under which use may be made of the website and the application."
       />
 
-      <main className="bg-black-0 p-5 md:p-12">
+      <main className="bg-primary-0 p-5 md:p-12">
         <div className="max-w-600 mx-auto">
-          <h1 className="text-black-400 text-center mb-6">Terms of Use</h1>
-          <p className="text-black-400 text-center mb-8">
+          <h1 className="text-primary-400 text-center mb-6">Terms of Use</h1>
+          <p className="text-primary-400 text-center mb-8">
             version dated December 30th, 2021
           </p>
 
@@ -25,7 +25,9 @@ export default function Terms() {
             <strong>"we"</strong> or <strong>"us"</strong>).
           </p>
 
-          <h4 className="text-black-300 mb-8">Applicability and amendments</h4>
+          <h4 className="text-primary-300 mb-8">
+            Applicability and amendments
+          </h4>
           <p className="mb-6 last:mb-0">
             By using the Platform, you (hereinafter also referred to as the{' '}
             <strong>"User"</strong>) agree to these Terms of Use, and these
@@ -39,7 +41,7 @@ export default function Terms() {
             rights therefrom.
           </p>
 
-          <h4 className="text-black-300 mb-8">Use of the Platform</h4>
+          <h4 className="text-primary-300 mb-8">Use of the Platform</h4>
           <p className="mb-6">
             The Platform is exclusively intended to give you as a user the
             opportunity to participate in one or more charity initiatives
@@ -122,7 +124,7 @@ export default function Terms() {
             recover any damages and/or costs from you.
           </p>
 
-          <h4 className="text-black-300 mb-8">
+          <h4 className="text-primary-300 mb-8">
             Information posted by third parties
           </h4>
           <p className="mb-6 last:mb-0">
@@ -137,7 +139,7 @@ export default function Terms() {
             liability towards you or any other third party.
           </p>
 
-          <h4 className="text-black-300 mb-8">
+          <h4 className="text-primary-300 mb-8">
             Links to other websites and/or applications
           </h4>
           <p className="mb-6 last:mb-0">
@@ -147,7 +149,7 @@ export default function Terms() {
             pages and/or applications.
           </p>
 
-          <h4 className="text-black-300 mb-8">Liability</h4>
+          <h4 className="text-primary-300 mb-8">Liability</h4>
           <p className="mb-6 last:mb-0">
             The use of the Platform is at your own risk. We cannot exclude and
             do not guarantee that the Platform does not or cannot have any
@@ -163,7 +165,9 @@ export default function Terms() {
             Platform.
           </p>
 
-          <h4 className="text-black-300 mb-8">Intellectual property rights</h4>
+          <h4 className="text-primary-300 mb-8">
+            Intellectual property rights
+          </h4>
           <p className="mb-6">
             Unless otherwise stated, all intellectual property rights and/or
             similar rights in or to the Platform belong exclusively to
@@ -187,7 +191,7 @@ export default function Terms() {
             any way, commercially or non-commercially.
           </p>
 
-          <h4 className="text-black-300 mb-8">Privacy and Cookie Policy</h4>
+          <h4 className="text-primary-300 mb-8">Privacy and Cookie Policy</h4>
           <p className="mb-6 last:mb-0">
             Please be referred to our{' '}
             {
@@ -203,7 +207,7 @@ export default function Terms() {
             , which also applies when using the Platform.
           </p>
 
-          <h4 className="text-black-300 mb-8">
+          <h4 className="text-primary-300 mb-8">
             Choice of law and other provisions
           </h4>
           <p className="mb-6">
@@ -223,7 +227,7 @@ export default function Terms() {
             Amsterdam will have exclusive jurisdiction to settle the dispute.
           </p>
 
-          <h4 className="text-black-300 mb-8">Contact Details</h4>
+          <h4 className="text-primary-300 mb-8">Contact Details</h4>
           <p className="mb-6">
             Would you like to contact us? Please email us at{' '}
             {

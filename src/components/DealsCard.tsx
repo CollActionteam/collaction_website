@@ -52,7 +52,7 @@ export function DealsCard({
             target="_blank"
             rel="noreferrer"
             aria-label="Visit Vendor Site"
-            className="bg-black-400 text-secondary p-2 mr-2 xs:mr-5 rounded-full"
+            className="bg-primary-400 text-secondary p-2 mr-2 xs:mr-5 rounded-full"
           >
             <GlobeSimpleIcon size={24} strokeWidth={2} />
           </a>
@@ -63,7 +63,7 @@ export function DealsCard({
             target="_blank"
             rel="noreferrer"
             aria-label="View Location on Map"
-            className="bg-black-400 text-secondary p-2 mr-2 xs:mr-5 rounded-full"
+            className="bg-primary-400 text-secondary p-2 mr-2 xs:mr-5 rounded-full"
           >
             <MapPinIcon size={24} strokeWidth={2} />
           </a>
@@ -74,7 +74,7 @@ export function DealsCard({
             target="_blank"
             rel="noreferrer"
             aria-label="Phone Vendor"
-            className="bg-black-400 text-secondary p-2 mr-2 xs:mr-5 rounded-full"
+            className="bg-primary-400 text-secondary p-2 mr-2 xs:mr-5 rounded-full"
           >
             <PhoneIcon size={24} strokeWidth={2} />
           </a>
@@ -85,7 +85,9 @@ export function DealsCard({
           rel="noreferrer"
           aria-label="Order From Vendor"
           className={clsx(
-            links.order ? 'bg-accent' : 'bg-black-100 pointer-events-none',
+            links.order
+              ? 'bg-collaction'
+              : 'bg-primary-100 pointer-events-none',
             'text-secondary text-button font-bold leading-none text-center rounded-full p-3 h-10 w-26 align-top'
           )}
         >
@@ -94,10 +96,10 @@ export function DealsCard({
       </div>
       {/* TITLE & CONTENT */}
       <div className="px-6 xs:px-8 sm:px-10">
-        <h4 className="text-black-400 mb-5 sm:mb-8">{title}</h4>
+        <h4 className="text-primary-400 mb-5 sm:mb-8">{title}</h4>
         <div
           ref={contentRef}
-          className="text-black-300 h-full max-h-32 line-clamp-5 whitespace-pre-line"
+          className="text-primary-300 h-full max-h-32 line-clamp-5 whitespace-pre-line"
         >
           {content}
         </div>
@@ -107,7 +109,7 @@ export function DealsCard({
         {contentOverflow && (
           <button
             onClick={() => setShowContent(true)}
-            className="inline-block bg-black-100 text-secondary p-2 rounded-full"
+            className="inline-block bg-primary-100 text-secondary p-2 rounded-full"
           >
             <PlusIcon size={24} strokeWidth={2} />
           </button>
@@ -118,7 +120,7 @@ export function DealsCard({
       {contentOverflow && (
         <div
           className={clsx(
-            'absolute top-0 left-0 w-full h-full bg-accent text-secondary rounded-3xl transition-opacity',
+            'absolute top-0 left-0 w-full h-full bg-collaction text-secondary rounded-3xl transition-opacity',
             showContent ? 'opacity-100' : 'opacity-0 pointer-events-none'
           )}
           style={{
@@ -130,7 +132,7 @@ export function DealsCard({
             {/* TITLE & CONTENT */}
             <div className="overflow-auto px-8 sm:px-10 pt-8 flex flex-col">
               <h5 className="text-title-2 mb-6 sm:mb-8">{title}</h5>
-              <div className="overflow-y-scroll scrollbar-track-accent-500 scrollbar-thumb-secondary whitespace-pre-line">
+              <div className="overflow-y-scroll scrollbar-track-collaction-500 scrollbar-thumb-secondary whitespace-pre-line">
                 {content}
               </div>
             </div>
@@ -138,7 +140,7 @@ export function DealsCard({
             <div className="py-6 sm:py-8 pl-8 pr-5 sm:pl-10 sm:pr-8 text-right shrink-0">
               <button
                 onClick={() => setShowContent(false)}
-                className="inline-block bg-secondary text-black-100 p-2 rounded-full"
+                className="inline-block bg-secondary text-primary-100 p-2 rounded-full"
               >
                 <XIcon size={24} strokeWidth={2} />
               </button>

@@ -34,9 +34,9 @@ export default function ASMLPage({
       />
 
       <div>
-        <div className="bg-black-0 px-5 md:px-8 py-28 md:pb-18">
+        <div className="bg-primary-0 px-5 md:px-8 py-28 md:pb-18">
           <div className="max-w-600 mx-auto mb-15 md:mb-18 lg:mb-22">
-            <h1 className="text-black-400 text-center mb-8">
+            <h1 className="text-primary-400 text-center mb-8">
               We connect people to solve collective action problems
             </h1>
 
@@ -182,19 +182,19 @@ export default function ASMLPage({
 
           {/* SEE MORE DEALS */}
           <Link href="/asml/deals">
-            <a className="block bg-accent font-bold leading-none text-button text-white text-center rounded-full p-3.5 mt-5 w-72 shadow sticky bottom-8 inset-x-0 mx-auto z-40">
+            <a className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 mt-5 w-72 shadow sticky bottom-8 inset-x-0 mx-auto z-40">
               See All Deals
             </a>
           </Link>
         </div>
 
         {/* APP SECTION */}
-        <div className="bg-black-400 px-5 md:px-8 pt-20 pb-24 md:pb-22 text-center">
+        <div className="bg-primary-400 px-5 md:px-8 pt-20 pb-24 md:pb-22 text-center">
           <div className="max-w-600 mx-auto">
             <h2 className="text-secondary mb-8">
               The CollAction app has launched!
             </h2>
-            <p className="text-black-0">
+            <p className="text-primary-0">
               We’ve been working very hard and are happy to announce that our
               app is live. We have more updates and improvements coming very
               soon, so stay tuned.
@@ -231,9 +231,9 @@ export default function ASMLPage({
 
           <div className="flex flex-wrap justify-center lg:justify-start md:max-w-400 lg:max-w-4xl lg:w-208 mx-auto">
             {/* APP CARD */}
-            <div className="bg-secondary text-black-400 max-w-400 w-full rounded-3xl px-10 lg:px-13 py-8 pb-0 mb-5 md:mb-8 lg:mr-8 overflow-hidden">
-              <h4 className="text-black-400 mb-5">Make a change today</h4>
-              <p className="text-black-200">
+            <div className="bg-secondary text-primary-400 max-w-400 w-full rounded-3xl px-10 lg:px-13 py-8 pb-0 mb-5 md:mb-8 lg:mr-8 overflow-hidden">
+              <h4 className="text-primary-400 mb-5">Make a change today</h4>
+              <p className="text-primary-200">
                 Join a CrowdAction you want to be part of.
               </p>
               <div className="block -mb-9 xs:-mb-12">
@@ -246,11 +246,11 @@ export default function ASMLPage({
                 />
               </div>
             </div>
-            <div className="bg-secondary text-black-400 max-w-400 w-full rounded-3xl px-10 lg:px-13 py-8 mb-5 md:mb-8 lg:mr-8 overflow-hidden lg:order-3">
-              <h4 className="text-black-400 mb-5">
+            <div className="bg-secondary text-primary-400 max-w-400 w-full rounded-3xl px-10 lg:px-13 py-8 mb-5 md:mb-8 lg:mr-8 overflow-hidden lg:order-3">
+              <h4 className="text-primary-400 mb-5">
                 Participate at your own pace
               </h4>
-              <p className="text-black-200 mb-4">
+              <p className="text-primary-200 mb-4">
                 Choose your commitments for the CrowdAction.
               </p>
               <div className="block">
@@ -263,7 +263,7 @@ export default function ASMLPage({
                 />
               </div>
             </div>
-            <div className="bg-secondary text-black-400 max-w-400 w-full rounded-3xl px-10 lg:px-13 py-8 mb-5 md:mb-8 lg:mr-0 overflow-hidden lg:order-2">
+            <div className="bg-secondary text-primary-400 max-w-400 w-full rounded-3xl px-10 lg:px-13 py-8 mb-5 md:mb-8 lg:mr-0 overflow-hidden lg:order-2">
               <div className="block -mt-15 xs:-mt-16">
                 <Image
                   src={AppPreviewCard3}
@@ -273,8 +273,8 @@ export default function ASMLPage({
                   placeholder="blur"
                 />
               </div>
-              <h4 className="text-black-400 mb-5">Join the wave</h4>
-              <p className="text-black-200">Make impact together.</p>
+              <h4 className="text-primary-400 mb-5">Join the wave</h4>
+              <p className="text-primary-200">Make impact together.</p>
             </div>
           </div>
         </div>
@@ -282,7 +282,7 @@ export default function ASMLPage({
         {/* DOWNLOAD THE APP BUTTON */}
         <Link href="/download">
           <a
-            className="block bg-accent font-bold leading-none text-button text-white text-center rounded-full p-3.5 mb-8 w-72 shadow sticky bottom-8 inset-x-0 mx-auto z-40"
+            className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 mb-8 w-72 shadow sticky bottom-8 inset-x-0 mx-auto z-40"
             style={{ marginTop: `calc(-52px - 2rem)` }}
           >
             Download The App!
@@ -467,10 +467,10 @@ function IconCard({ card, index }: { card: IconCard; index: number }) {
         'relative p-0 py-10 sm:px-8 md:p-10',
         `${index === 0 ? 'before:hidden' : 'before:block'}`,
         `${index === 1 ? 'lg:before:hidden' : ''}`,
-        'before:absolute before:top-0 before:inset-x-0 before:mx-auto before:content-[""] before:w-2/3 before:bg-black-100 before:h-[0.5px]',
+        'before:absolute before:top-0 before:inset-x-0 before:mx-auto before:content-[""] before:w-2/3 before:bg-primary-100 before:h-[0.5px]',
         'after:hidden',
         `${index % 2 === 1 ? 'lg:after:block' : ''}`,
-        'after:absolute after:left-0 after:inset-y-0 after:my-auto after:content-[""] after:h-5/6 after:bg-black-100 after:w-[0.5px]'
+        'after:absolute after:left-0 after:inset-y-0 after:my-auto after:content-[""] after:h-5/6 after:bg-primary-100 after:w-[0.5px]'
       )}
     >
       <div className="relative flex flex-col items-center w-80 xs:w-full xs:min-w-350 max-w-350 text-center">
@@ -479,13 +479,13 @@ function IconCard({ card, index }: { card: IconCard; index: number }) {
           {card.icon}
         </div>
         {/* title/top text */}
-        <div className="text-black-200 mb-2">{card.top}</div>
+        <div className="text-primary-200 mb-2">{card.top}</div>
         {/* featured text */}
         <span className="text-collaction text-featured font-bold mb-1">
           {value}
         </span>
         {/* bottom text */}
-        <div className="text-black-200">{card.bottom}</div>
+        <div className="text-primary-200">{card.bottom}</div>
       </div>
     </div>
   );

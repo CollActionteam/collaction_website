@@ -18,9 +18,9 @@ export default function DownloadPage() {
         description="Download the CollAction app to join others and make a real difference."
       />
 
-      <main className="bg-black-0 p-5 md:p-12">
+      <main className="bg-primary-0 p-5 md:p-12">
         <div className="max-w-600 mx-auto text-center ">
-          <h1 className="text-black-400 mb-6">CollAction App</h1>
+          <h1 className="text-primary-400 mb-6">CollAction App</h1>
 
           <p>Please wait. Redirecting now..</p>
         </div>
