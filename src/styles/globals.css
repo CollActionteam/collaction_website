@@ -45,7 +45,7 @@
   .overflow-y-auto,
   .overflow-x-scroll,
   .overflow-y-scroll {
-    @apply scrollbar scrollbar-thin scrollbar-thumb-collaction scrollbar-track-primary-0 scrollbar-thumb-rounded-3xl;
+    @apply scrollbar scrollbar-thin scrollbar-thumb-collaction scrollbar-track-primary-0 scrollbar-thumb-rounded-1;
   }
 }
 

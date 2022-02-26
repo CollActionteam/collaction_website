@@ -32,7 +32,7 @@ export function DealsCard({
   }, []);
 
   return (
-    <div className="bg-secondary max-w-400 w-full rounded-3xl overflow-hidden relative mb-8 md:mx-4">
+    <div className="bg-secondary max-w-400 w-full rounded-1 overflow-hidden relative mb-8 md:mx-4">
       {/* IMAGE */}
       <div className="relative w-full aspect-w-16 aspect-h-9">
         <Image
@@ -120,7 +120,7 @@ export function DealsCard({
       {contentOverflow && (
         <div
           className={clsx(
-            'absolute top-0 left-0 w-full h-full bg-collaction text-secondary rounded-3xl transition-opacity',
+            'absolute top-0 left-0 w-full h-full bg-collaction text-secondary rounded-1 transition-opacity',
             showContent ? 'opacity-100' : 'opacity-0 pointer-events-none'
           )}
           style={{

@@ -57,7 +57,7 @@ export default function ASMLPage({
               priority
               src={ASMLBanner}
               alt="asml veganuary banner"
-              className="rounded-3xl"
+              className="rounded-1"
               layout="responsive"
               sizes="(max-width: 768px) 90vw, 830px"
               placeholder="blur"
@@ -231,7 +231,7 @@ export default function ASMLPage({
 
           <div className="flex flex-wrap justify-center lg:justify-start md:max-w-400 lg:max-w-4xl lg:w-208 mx-auto">
             {/* APP CARD */}
-            <div className="bg-secondary text-primary-400 max-w-400 w-full rounded-3xl px-10 lg:px-13 py-8 pb-0 mb-5 md:mb-8 lg:mr-8 overflow-hidden">
+            <div className="bg-secondary text-primary-400 max-w-400 w-full rounded-1 px-10 lg:px-13 py-8 pb-0 mb-5 md:mb-8 lg:mr-8 overflow-hidden">
               <h4 className="text-primary-400 mb-5">Make a change today</h4>
               <p className="text-primary-200">
                 Join a CrowdAction you want to be part of.
@@ -246,7 +246,7 @@ export default function ASMLPage({
                 />
               </div>
             </div>
-            <div className="bg-secondary text-primary-400 max-w-400 w-full rounded-3xl px-10 lg:px-13 py-8 mb-5 md:mb-8 lg:mr-8 overflow-hidden lg:order-3">
+            <div className="bg-secondary text-primary-400 max-w-400 w-full rounded-1 px-10 lg:px-13 py-8 mb-5 md:mb-8 lg:mr-8 overflow-hidden lg:order-3">
               <h4 className="text-primary-400 mb-5">
                 Participate at your own pace
               </h4>
@@ -263,7 +263,7 @@ export default function ASMLPage({
                 />
               </div>
             </div>
-            <div className="bg-secondary text-primary-400 max-w-400 w-full rounded-3xl px-10 lg:px-13 py-8 mb-5 md:mb-8 lg:mr-0 overflow-hidden lg:order-2">
+            <div className="bg-secondary text-primary-400 max-w-400 w-full rounded-1 px-10 lg:px-13 py-8 mb-5 md:mb-8 lg:mr-0 overflow-hidden lg:order-2">
               <div className="block -mt-15 xs:-mt-16">
                 <Image
                   src={AppPreviewCard3}
@@ -357,9 +357,9 @@ function ImageCard({ card, index }: { card: ImageCard; index: number }) {
   return (
     <div
       ref={cardRef}
-      className="relative flex justify-center items-center w-full max-w-350 md:max-w-400 h-full aspect-[0.7] rounded-3xl md:mx-4 mb-5 sm:mb-8"
+      className="relative flex justify-center items-center w-full max-w-350 md:max-w-400 h-full aspect-[0.7] rounded-1 md:mx-4 mb-5 sm:mb-8"
     >
-      <div className="block w-full h-full overflow-hidden rounded-3xl">
+      <div className="block w-full h-full overflow-hidden rounded-1">
         <Image
           priority={index < 2}
           src={card.image}
@@ -367,11 +367,11 @@ function ImageCard({ card, index }: { card: ImageCard; index: number }) {
           placeholder="blur"
           layout="responsive"
           sizes="(max-width: 767px) 350px, 400px"
-          className="rounded-3xl"
+          className="rounded-1"
         />
       </div>
       <div
-        className="absolute w-full h-full rounded-3xl"
+        className="absolute w-full h-full rounded-1"
         style={{
           background: `linear-gradient(180deg, rgba(0, 0, 0, 0) 35.3%, rgba(0, 0, 0, 0.38) 100%)`,
         }}

@@ -113,9 +113,9 @@ function ImageCard({ card, index }: { card: ImageCard; index: number }) {
   return (
     <div
       ref={cardRef}
-      className="relative flex justify-center items-center w-full max-w-350 md:max-w-400 h-full aspect-[0.7] rounded-3xl md:mx-4 mb-5 sm:mb-8"
+      className="relative flex justify-center items-center w-full max-w-350 md:max-w-400 h-full aspect-[0.7] rounded-1 md:mx-4 mb-5 sm:mb-8"
     >
-      <div className="block w-full h-full overflow-hidden rounded-3xl">
+      <div className="block w-full h-full overflow-hidden rounded-1">
         <Image
           priority={index < 2}
           src={card.image}
@@ -123,11 +123,11 @@ function ImageCard({ card, index }: { card: ImageCard; index: number }) {
           placeholder="blur"
           layout="responsive"
           sizes="(max-width: 767px) 350px, 400px"
-          className="rounded-3xl"
+          className="rounded-1"
         />
       </div>
       <div
-        className="absolute w-full h-full rounded-3xl"
+        className="absolute w-full h-full rounded-1"
         style={{
           background: `linear-gradient(180deg, rgba(0, 0, 0, 0) 35.3%, rgba(0, 0, 0, 0.38) 100%)`,
         }}

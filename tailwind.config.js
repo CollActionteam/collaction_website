@@ -117,8 +117,7 @@ module.exports = {
         940: '940px',
       },
       borderRadius: {
-        '3xl': '1.25rem',
-        '4xl': '1.5rem',
+        1: '1.25rem',
       },
     },
   },
