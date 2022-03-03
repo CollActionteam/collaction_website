@@ -16,7 +16,7 @@ export default function NavBar() {
         pathname === '/asml' ? 'hidden' : 'block'
       )}
     >
-      <div className="flex items-center justify-between px-8">
+      <div className="flex items-center flex-wrap justify-center sm:justify-between px-8">
         <Link href="/">
           <a className="block w-32 leading-none" aria-label="Home Page">
             <Image
@@ -28,6 +28,20 @@ export default function NavBar() {
             />
           </a>
         </Link>
+        <div className="flex justify-between items-center">
+          <Link passHref href="/">
+            <span className="mx-3 cursor-pointer">Home</span>
+          </Link>
+          <Link passHref href="/">
+            <span className="mx-3 cursor-pointer">contact</span>
+          </Link>
+          <Link passHref href="/">
+            <span className="mx-3 cursor-pointer">Join</span>
+          </Link>
+          <Link passHref href="/">
+            <span className="mx-3 cursor-pointer">Donate</span>
+          </Link>
+        </div>
       </div>
     </header>
   );
