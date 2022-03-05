@@ -2,38 +2,38 @@ import React from 'react';
 
 export default function WhatWeDo() {
   return (
-    <section className="p-5 py-10 md:p-10 text-center bg-black-0">
+    <section className="p-5 py-10 md:p-10 text-center bg-primary-0">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-x-5 pb-10 container mx-auto">
         <div className="pb-10 md:pb-0">
-          <img
+          {/* <img
             className="block h-20 w-auto mx-auto my-4"
             src="/steps/proposal.svg"
             alt="Proposal"
             width={80}
             height={80}
-          />
+          /> */}
           <h2 className="text-collaction text-lg">Goal</h2>
           Choose or suggest a goal you would like to participate in
         </div>
         <div className="pb-10 md:pb-0">
-          <img
+          {/* <img
             className="block h-20 w-auto mx-auto my-4"
             src="/steps/crowd.svg"
             alt="Crowd"
             width={62}
             height={80}
-          />
+          /> */}
           <h2 className="text-collaction text-lg">Crowd</h2>
           See how your actions are magnified by the crowd that has equal goals
         </div>
         <div className="pb-10 md:pb-0">
-          <img
+          {/* <img
             className="block h-20 w-auto mx-auto my-4"
             src="/steps/act.svg"
             alt="Act"
             width={59}
             height={80}
-          />
+          /> */}
           <h2 className="text-collaction text-lg">Action</h2>
           Commit to the goal and make impact
         </div>

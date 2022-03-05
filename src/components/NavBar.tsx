@@ -16,7 +16,7 @@ export default function NavBar() {
         pathname === '/asml' ? 'hidden' : 'block'
       )}
     >
-      <div className="flex items-center flex-wrap justify-center sm:justify-between px-8">
+      <div className="flex items-center flex-wrap justify-center sm:justify-between px-7">
         <Link href="/">
           <a className="block w-32 leading-none" aria-label="Home Page">
             <Image

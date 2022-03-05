@@ -8,10 +8,10 @@ export default function Terms() {
         description="These terms of use, as amended from time to time describe the terms under which use may be made of the website and the application."
       />
 
-      <main className="bg-black-0 p-5 md:p-12">
+      <main className="bg-primary-0 p-5 md:p-12">
         <div className="max-w-600 mx-auto">
-          <h1 className="text-black-400 text-center mb-6">Terms of Use</h1>
-          <p className="text-black-400 text-center mb-8">
+          <h1 className="text-primary-400 text-center mb-6">Terms of Use</h1>
+          <p className="text-primary-400 text-center mb-7">
             version dated December 30th, 2021
           </p>
 
@@ -25,7 +25,9 @@ export default function Terms() {
             <strong>"we"</strong> or <strong>"us"</strong>).
           </p>
 
-          <h4 className="text-black-300 mb-8">Applicability and amendments</h4>
+          <h4 className="text-primary-300 mb-7">
+            Applicability and amendments
+          </h4>
           <p className="mb-6 last:mb-0">
             By using the Platform, you (hereinafter also referred to as the{' '}
             <strong>"User"</strong>) agree to these Terms of Use, and these
@@ -39,7 +41,7 @@ export default function Terms() {
             rights therefrom.
           </p>
 
-          <h4 className="text-black-300 mb-8">Use of the Platform</h4>
+          <h4 className="text-primary-300 mb-7">Use of the Platform</h4>
           <p className="mb-6">
             The Platform is exclusively intended to give you as a user the
             opportunity to participate in one or more charity initiatives
@@ -58,18 +60,18 @@ export default function Terms() {
             carefully. You are also required to follow instructions and
             regulations issued by CollAction. The foregoing includes (among
             other things) that you:
-            <ul style={{ listStyleType: 'decimal' }} className="pl-8">
-              <li className="mb-1">must fill in information truthfully;</li>
-              <li className="mb-1">
+            <ul style={{ listStyleType: 'decimal' }} className="pl-7">
+              <li className="mb-2">must fill in information truthfully;</li>
+              <li className="mb-2">
                 may not share misleading or offensive information;
               </li>
-              <li className="mb-1">
+              <li className="mb-2">
                 may not perform or permit any acts and/or conduct that violates
                 applicable laws or regulations, public morals, public order or
                 the rights of third parties (including the rights of
                 CollAction);
               </li>
-              <li className="mb-1">
+              <li className="mb-2">
                 insofar as you share (personal) data of third parties with us
                 (for example, names, telephone numbers and email addresses), you
                 guarantee that you are authorized to share this data with us in
@@ -78,34 +80,34 @@ export default function Terms() {
                 data for the purposes for which this data has been shared with
                 us;
               </li>
-              <li className="mb-1">
+              <li className="mb-2">
                 may not add to the Platform any texts, data or files that have
                 illegal or offensive content, for example, discriminatory,
                 racist, sexist or pornographic content, or (otherwise) infringe
                 on the private lives of third parties;
               </li>
-              <li className="mb-1">
+              <li className="mb-2">
                 must keep your own login data and the personal data of third
                 parties that may be visible to you confidential;
               </li>
-              <li className="mb-1">
+              <li className="mb-2">
                 may not spread viruses through the Platform, or otherwise
                 disrupt, prevent or damage (the operation of) the Platform;
               </li>
-              <li className="mb-1">
+              <li className="mb-2">
                 must respect and consider the good name and reputation of
                 CollAction;
               </li>
-              <li className="mb-1">
+              <li className="mb-2">
                 must install the application correctly and install updates to
                 the application. Using an older version of the application is at
                 your own risk;
               </li>
-              <li className="mb-1">
+              <li className="mb-2">
                 may not sell or rent (the software behind) the Platform to third
                 parties or otherwise make it available to third parties;
               </li>
-              <li className="mb-1">
+              <li className="mb-2">
                 may not de-compile, reverse engineer or modify the Platform
                 without CollAction's prior consent. You may also not remove or
                 allow to be removed or circumvent any technical measures
@@ -122,7 +124,7 @@ export default function Terms() {
             recover any damages and/or costs from you.
           </p>
 
-          <h4 className="text-black-300 mb-8">
+          <h4 className="text-primary-300 mb-7">
             Information posted by third parties
           </h4>
           <p className="mb-6 last:mb-0">
@@ -137,7 +139,7 @@ export default function Terms() {
             liability towards you or any other third party.
           </p>
 
-          <h4 className="text-black-300 mb-8">
+          <h4 className="text-primary-300 mb-7">
             Links to other websites and/or applications
           </h4>
           <p className="mb-6 last:mb-0">
@@ -147,7 +149,7 @@ export default function Terms() {
             pages and/or applications.
           </p>
 
-          <h4 className="text-black-300 mb-8">Liability</h4>
+          <h4 className="text-primary-300 mb-7">Liability</h4>
           <p className="mb-6 last:mb-0">
             The use of the Platform is at your own risk. We cannot exclude and
             do not guarantee that the Platform does not or cannot have any
@@ -163,7 +165,9 @@ export default function Terms() {
             Platform.
           </p>
 
-          <h4 className="text-black-300 mb-8">Intellectual property rights</h4>
+          <h4 className="text-primary-300 mb-7">
+            Intellectual property rights
+          </h4>
           <p className="mb-6">
             Unless otherwise stated, all intellectual property rights and/or
             similar rights in or to the Platform belong exclusively to
@@ -187,7 +191,7 @@ export default function Terms() {
             any way, commercially or non-commercially.
           </p>
 
-          <h4 className="text-black-300 mb-8">Privacy and Cookie Policy</h4>
+          <h4 className="text-primary-300 mb-7">Privacy and Cookie Policy</h4>
           <p className="mb-6 last:mb-0">
             Please be referred to our{' '}
             {
@@ -203,7 +207,7 @@ export default function Terms() {
             , which also applies when using the Platform.
           </p>
 
-          <h4 className="text-black-300 mb-8">
+          <h4 className="text-primary-300 mb-7">
             Choice of law and other provisions
           </h4>
           <p className="mb-6">
@@ -223,7 +227,7 @@ export default function Terms() {
             Amsterdam will have exclusive jurisdiction to settle the dispute.
           </p>
 
-          <h4 className="text-black-300 mb-8">Contact Details</h4>
+          <h4 className="text-primary-300 mb-7">Contact Details</h4>
           <p className="mb-6">
             Would you like to contact us? Please email us at{' '}
             {

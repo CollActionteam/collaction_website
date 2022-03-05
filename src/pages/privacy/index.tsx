@@ -9,12 +9,12 @@ export default function PrivacyPage() {
         description="This Policy applies to our website and mobile application. It does not apply to other companies or organizations that for example advertise our website."
       />
 
-      <main className="bg-black-0 p-5 md:p-12">
+      <main className="bg-primary-0 p-5 md:p-12">
         <div className="max-w-600 mx-auto">
-          <h1 className="text-black-400 text-center mb-6">
+          <h1 className="text-primary-400 text-center mb-6">
             Privacy and Cookie Policy
           </h1>
-          <p className="text-black-400 text-center mb-8">
+          <p className="text-primary-400 text-center mb-7">
             version dated January 23rd, 2022
           </p>
 
@@ -43,44 +43,44 @@ export default function PrivacyPage() {
             networks and platforms. We also advise you to read their privacy and
             cookie policies carefully before using their websites.
           </p>
-          <h4 className="text-black-300 mb-8">
+          <h4 className="text-primary-300 mb-7">
             Why does CollAction collect and process my Personal Information?
           </h4>
           <p className="mb-6 last:mb-0">
             We collect and process your Personal Information in order to:
-            <ul style={{ listStyleType: 'decimal' }} className="pl-8">
-              <li className="mb-1">
+            <ul style={{ listStyleType: 'decimal' }} className="pl-7">
+              <li className="mb-2">
                 create a CollAction account for you at your request;
               </li>
-              <li className="mb-1">
+              <li className="mb-2">
                 verify your identity (e.g., by way of sending a code to your
                 phone number)
               </li>
-              <li className="mb-1">
+              <li className="mb-2">
                 sign you up for initiatives/projects or enable you to start your
                 own initiative/project at your request;
               </li>
-              <li className="mb-1">
+              <li className="mb-2">
                 create community feeling by showing your initiative/project
                 commitments and participation to other users of the platform;
               </li>
-              <li className="mb-1">
+              <li className="mb-2">
                 contact you and update you on the progress of
                 initiatives/projects you have registered to or that may be of
                 interest to you;
               </li>
-              <li className="mb-1">
+              <li className="mb-2">
                 advertise and promote initiatives/projects, activities and other
                 services to you, for example by sending you newsletters if you
                 opted in to receive our newsletters; and
               </li>
-              <li className="mb-1">
+              <li className="mb-2">
                 further develop and improve our website and services.
               </li>
             </ul>
           </p>
 
-          <h4 className="text-black-300 mb-8">
+          <h4 className="text-primary-300 mb-7">
             What Personal Information do we collect?
           </h4>
           <p className="mb-6">
@@ -99,12 +99,12 @@ export default function PrivacyPage() {
           <p className="mb-6 last:mb-0">
             Our processing of your Personal Information is based on one or more
             of the following legal grounds:
-            <ul style={{ listStyleType: 'decimal' }} className="pl-8">
-              <li className="mb-1">
+            <ul style={{ listStyleType: 'decimal' }} className="pl-7">
+              <li className="mb-2">
                 you have consented to the processing of your Personal
                 Information (Article 6 (1) sub a GDPR);
               </li>
-              <li className="mb-1">
+              <li className="mb-2">
                 the processing of your Personal Information is necessary for the
                 performance of a contract between you and us or for taking any
                 pre-contractual steps upon your request (Article 6 (1) sub b
@@ -112,11 +112,11 @@ export default function PrivacyPage() {
                 not be able to execute the contract with you, i.e., provide you
                 certain services you requested;
               </li>
-              <li className="mb-1">
+              <li className="mb-2">
                 the processing is necessary for us to comply with a legal
                 obligation (Article 6 (1) sub c GDPR); and/or
               </li>
-              <li className="mb-1">
+              <li className="mb-2">
                 the processing is necessary for the purposes of our legitimate
                 interests (i.e., to improve our services, and to detect fraud)
                 (Article 6 (1) sub f GDPR).
@@ -124,7 +124,7 @@ export default function PrivacyPage() {
             </ul>
           </p>
 
-          <h4 className="text-black-300 mb-8">
+          <h4 className="text-primary-300 mb-7">
             How long does CollAction store my Personal Information?
           </h4>
           <p className="mb-6 last:mb-0">
@@ -138,7 +138,7 @@ export default function PrivacyPage() {
             obligations.
           </p>
 
-          <h4 className="text-black-300 mb-8">
+          <h4 className="text-primary-300 mb-7">
             Does CollAction share my Personal Information with third parties?
           </h4>
 
@@ -162,12 +162,12 @@ export default function PrivacyPage() {
             protection according to the European Commission. In that case,
             Personal Information will only be transferred under the following
             conditions:
-            <ul style={{ listStyleType: 'decimal' }} className="pl-8">
-              <li className="mb-1">
+            <ul style={{ listStyleType: 'decimal' }} className="pl-7">
+              <li className="mb-2">
                 you have consented to the proposed transfer of your Personal
                 Information (Article 6 (1) sub a GDPR);
               </li>
-              <li className="mb-1">
+              <li className="mb-2">
                 the transfer of your Personal Information is necessary for the
                 performance of a contract between you and us or for taking any
                 pre-contractual steps upon your request (Article 6 (1) sub b
@@ -175,11 +175,11 @@ export default function PrivacyPage() {
                 not be able to execute the contract with you, i.e., provide you
                 certain services you requested;
               </li>
-              <li className="mb-1">
+              <li className="mb-2">
                 the transfer is necessary for us to comply with a legal
                 obligation (Article 6 (1) sub c GDPR); and/or
               </li>
-              <li className="mb-1">
+              <li className="mb-2">
                 the transfer is necessary for the purposes of our legitimate
                 interests (i.e., to improve our services, and to detect fraud)
                 (Article 6 (1) sub f GDPR).
@@ -211,7 +211,7 @@ export default function PrivacyPage() {
             Implementing Decision 2021/914/EU.
           </p>
 
-          <h4 className="text-black-300 mb-8">What are cookies?</h4>
+          <h4 className="text-primary-300 mb-7">What are cookies?</h4>
           <p className="mb-6">
             Cookies are text files placed on your device to collect standard
             Internet log information and visitor behaviour information.
@@ -285,7 +285,7 @@ export default function PrivacyPage() {
           </p>
 
           <p className="mb-6"></p>
-          <h4 className="text-black-300 mb-8">How to opt-out</h4>
+          <h4 className="text-primary-300 mb-7">How to opt-out</h4>
           <p className="mb-6">
             You may revoke any consent given to us with regard to the
             collection, processing and use of your Personal Information at any
@@ -310,26 +310,26 @@ export default function PrivacyPage() {
             with notifications (such as a notice of an update to our Policy).
           </p>
 
-          <h4 className="text-black-300 mb-8">
+          <h4 className="text-primary-300 mb-7">
             What other rights do you have?
           </h4>
           <p className="mb-6">
             Subject to certain legal limitations, you can at all times submit a
             request to CollAction to do the following:
-            <ul style={{ listStyleType: 'decimal' }} className="pl-8">
-              <li className="mb-1">
+            <ul style={{ listStyleType: 'decimal' }} className="pl-7">
+              <li className="mb-2">
                 gain access to your Personal Information (the right to access);
               </li>
-              <li className="mb-1">
+              <li className="mb-2">
                 rectify or erase your Personal Information (the right to
                 rectification and the right to erasure);
               </li>
-              <li className="mb-1">
+              <li className="mb-2">
                 restrict processing of your Personal Information or object to
                 such processing (the right to restrict processing and the right
                 to object to processing); and
               </li>
-              <li className="mb-1">
+              <li className="mb-2">
                 transfer your Personal Information to another controller by
                 receiving this in a structured and standard format (the right to
                 data portability).
@@ -344,7 +344,7 @@ export default function PrivacyPage() {
             Information.
           </p>
 
-          <h4 className="text-black-300 mb-8">Security</h4>
+          <h4 className="text-primary-300 mb-7">Security</h4>
           <p className="mb-6 last:mb-0">
             CollAction is committed to protecting your Personal Information and
             will take all reasonable precautions to do so. Though we can never
@@ -353,7 +353,7 @@ export default function PrivacyPage() {
             safeguarding measures should be taken.
           </p>
 
-          <h4 className="text-black-300 mb-8">Changes to our Policy</h4>
+          <h4 className="text-primary-300 mb-7">Changes to our Policy</h4>
           <p className="mb-6 last:mb-0">
             We may need to amend or update our Policy from time to time. This
             will replace any previous Policy. Should we make any material
@@ -363,7 +363,7 @@ export default function PrivacyPage() {
             updated. This Policy was last updated on January 23rd, 2022.
           </p>
 
-          <h4 className="text-black-300 mb-8">Contact Details</h4>
+          <h4 className="text-primary-300 mb-7">Contact Details</h4>
           <p className="mb-6">
             Would you like to contact us? Please email us at{' '}
             {
@@ -390,7 +390,7 @@ export default function PrivacyPage() {
             any event within 30 days after receipt.
           </p>
 
-          <h4 className="text-black-300 mb-8">
+          <h4 className="text-primary-300 mb-7">
             How to contact the appropriate authority
           </h4>
           <p className="mb-6">

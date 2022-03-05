@@ -18,10 +18,10 @@ export default function ASMLImpactPage() {
     <>
       <PageSEO title="Your Impact | ASML" />
 
-      <div className="bg-black-0 p-5 pt-26 md:pt-32">
+      <div className="bg-primary-0 p-5 pt-26 md:pt-32">
         <div className="w-full max-w-400 md:max-w-500 text-center mx-auto">
           {/* MAIN HEADING */}
-          <h1 className="text-center mb-7 md:mb-10 break-words">
+          <h1 className="text-center mb-7 md:mb-8 break-words">
             Congratulations ASML!
           </h1>
           <p className="mb-15 md:mb-18 lg:mb-24">
@@ -32,7 +32,7 @@ export default function ASMLImpactPage() {
         </div>
 
         {/* IMAGE CARDS */}
-        <div className="flex flex-wrap md:flex-row justify-center max-w-864 mx-auto mb-20 lg:mb-24">
+        <div className="flex flex-wrap md:flex-row justify-center max-w-864 mx-auto mb-10 lg:mb-14">
           {imgCards.map((card, i) => (
             <ImageCard key={card.bottom} card={card} index={i} />
           ))}
@@ -40,7 +40,7 @@ export default function ASMLImpactPage() {
 
         {/* YOUR INDIVIDUAL IMPACT */}
         <div className="w-full max-w-400 md:max-w-500 text-center mx-auto">
-          <h1 className="text-center mb-7 md:mb-10">Your individual impact</h1>
+          <h1 className="text-center mb-7 md:mb-8">Your individual impact</h1>
           <p className="lg:mb-15">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit
             amet ultrices risus. Phasellus augue eros, bibendum non viverra ut,
@@ -49,7 +49,7 @@ export default function ASMLImpactPage() {
         </div>
 
         {/* ICON IMPACT CARDS */}
-        <div className="flex justify-center lg:justify-start flex-wrap mx-auto max-w-864 md:px-8 lg:p-0">
+        <div className="flex justify-center lg:justify-start flex-wrap mx-auto max-w-864 md:px-7 lg:p-0">
           {iconCards.map((card, i) => (
             <IconCard key={card.top} card={card} index={i} />
           ))}
@@ -113,9 +113,9 @@ function ImageCard({ card, index }: { card: ImageCard; index: number }) {
   return (
     <div
       ref={cardRef}
-      className="relative flex justify-center items-center w-full max-w-350 md:max-w-400 h-full aspect-[0.7] rounded-3xl md:mx-4 mb-5 sm:mb-8"
+      className="relative flex justify-center items-center w-full max-w-350 md:max-w-400 h-full aspect-[0.7] rounded-1 md:mx-5 mb-5 sm:mb-7"
     >
-      <div className="block w-full h-full overflow-hidden rounded-3xl">
+      <div className="block w-full h-full overflow-hidden rounded-1">
         <Image
           priority={index < 2}
           src={card.image}
@@ -123,11 +123,11 @@ function ImageCard({ card, index }: { card: ImageCard; index: number }) {
           placeholder="blur"
           layout="responsive"
           sizes="(max-width: 767px) 350px, 400px"
-          className="rounded-3xl"
+          className="rounded-1"
         />
       </div>
       <div
-        className="absolute w-full h-full rounded-3xl"
+        className="absolute w-full h-full rounded-1"
         style={{
           background: `linear-gradient(180deg, rgba(0, 0, 0, 0) 35.3%, rgba(0, 0, 0, 0.38) 100%)`,
         }}
@@ -140,7 +140,7 @@ function ImageCard({ card, index }: { card: ImageCard; index: number }) {
         {/* bottom text */}
         <div className="text-headline font-bold">{card.bottom}</div>
       </div>
-      <div className="absolute text-center bottom-10 md:bottom-12">
+      <div className="absolute text-center bottom-8 md:bottom-12">
         <Image
           src={CollActionLogoWithText}
           alt="Collaction White Logo"
@@ -219,28 +219,28 @@ function IconCard({ card, index }: { card: IconCard; index: number }) {
     <div
       ref={cardRef}
       className={clsx(
-        'relative p-0 py-10 sm:px-8 md:p-10',
+        'relative p-0 py-8 sm:px-7 md:p-8',
         `${index === 0 ? 'before:hidden' : 'before:block'}`,
         `${index === 1 ? 'lg:before:hidden' : ''}`,
-        'before:absolute before:top-0 before:inset-x-0 before:mx-auto before:content-[""] before:w-2/3 before:bg-black-100 before:h-[0.5px]',
+        'before:absolute before:top-0 before:inset-x-0 before:mx-auto before:content-[""] before:w-2/3 before:bg-primary-100 before:h-[0.5px]',
         'after:hidden',
         `${index % 2 === 1 ? 'lg:after:block' : ''}`,
-        'after:absolute after:left-0 after:inset-y-0 after:my-auto after:content-[""] after:h-5/6 after:bg-black-100 after:w-[0.5px]'
+        'after:absolute after:left-0 after:inset-y-0 after:my-auto after:content-[""] after:h-5/6 after:bg-primary-100 after:w-[0.5px]'
       )}
     >
       <div className="relative flex flex-col items-center w-80 xs:w-full xs:min-w-350 max-w-350 text-center">
         {/* icon */}
-        <div className="flex justify-center w-16 h-16 p-4 bg-secondary rounded-full mb-1">
+        <div className="flex justify-center w-16 h-16 p-5 bg-secondary rounded-full mb-2">
           {card.icon}
         </div>
         {/* title/top text */}
-        <div className="text-black-200 mb-2">{card.top}</div>
+        <div className="text-primary-200 mb-2">{card.top}</div>
         {/* featured text */}
-        <span className="text-collaction text-featured font-bold mb-1">
+        <span className="text-collaction text-featured font-bold mb-2">
           {value}
         </span>
         {/* bottom text */}
-        <div className="text-black-200">{card.bottom}</div>
+        <div className="text-primary-200">{card.bottom}</div>
       </div>
     </div>
   );
