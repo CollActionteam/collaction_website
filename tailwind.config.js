@@ -87,6 +87,13 @@ module.exports = {
             letterSpacing: '0px',
           },
         ],
+        'headline-lg-1': [
+          '40px',
+          {
+            lineHeight: '48px',
+            letterSpacing: '0px',
+          },
+        ],
       },
       height: {
         440: '440px',
