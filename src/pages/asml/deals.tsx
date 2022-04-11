@@ -13,7 +13,7 @@ export default function DealsPage({
         description="ASML participates in Veganuary: an annual challenge that promotes veganism and sustainable food consumption. Browse through all restaurant deals."
       />
 
-      <div className="bg-black-0 p-5 md:p-12">
+      <div className="bg-primary-0 p-5 md:p-12">
         <div className="flex flex-wrap justify-center lg:justify-start mx-auto md:max-w-864">
           {deals.map(deal => (
             <DealsCard key={deal.title} {...deal} />

@@ -2,10 +2,12 @@ import { InferGetStaticPropsType } from 'next';
 import clsx from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useCountUp } from 'use-count-up';
+import { useInView } from 'react-intersection-observer';
 
 import PageSEO from 'src/components/PageSEO';
-import { useInView } from 'react-intersection-observer';
-import { useCountUp } from 'use-count-up';
+import AppLinkApple from 'src/components/AppLinkApple';
+import AppLinkGoogle from 'src/components/AppLinkGoogle';
 import { DealsCard } from 'src/components/DealsCard';
 import { getDealsData } from 'src/lib/getDeals';
 import * as Icons from 'src/components/Icons';
@@ -13,8 +15,7 @@ import * as Icons from 'src/components/Icons';
 import ASMLBanner from 'public/veganuary-ASML-banner.png';
 import CollActionLogoWithText from 'public/logo-black-small.png';
 import CollActionLogoWithTextWhite from 'public/logo-white-small.png';
-import BadgeApple from 'public/Badge-Apple.png';
-import BadgeGoogle from 'public/Badge-Google.png';
+
 import AppPreviewCard1 from 'public/app-preview-card-1.png';
 import AppPreviewCard2 from 'public/app-preview-card-2.png';
 import AppPreviewCard3 from 'public/app-preview-card-3.png';
@@ -34,9 +35,9 @@ export default function ASMLPage({
       />
 
       <div>
-        <div className="bg-black-0 px-5 md:px-8 py-28 md:pb-18">
-          <div className="max-w-600 mx-auto mb-15 md:mb-18 lg:mb-22">
-            <h1 className="text-black-400 text-center mb-8">
+        <div className="bg-primary-0 px-5 md:px-7 py-28 md:pb-18">
+          <div className="max-w-600 mx-auto mb-15 md:mb-18 lg:mb-12">
+            <h1 className="text-primary-400 text-center mb-7">
               We connect people to solve collective action problems
             </h1>
 
@@ -57,7 +58,7 @@ export default function ASMLPage({
               priority
               src={ASMLBanner}
               alt="asml veganuary banner"
-              className="rounded-3xl"
+              className="rounded-1"
               layout="responsive"
               sizes="(max-width: 768px) 90vw, 830px"
               placeholder="blur"
@@ -67,7 +68,7 @@ export default function ASMLPage({
           <div className="mt-12 md:mt-15 lg:mt-26">
             <div className="w-full max-w-400 md:max-w-500 text-center mx-auto">
               {/* MAIN HEADING */}
-              <h1 className="text-center mb-7 md:mb-10 break-words">
+              <h1 className="text-center mb-7 md:mb-8 break-words">
                 Congratulations ASML!
               </h1>
               <p className="mb-15 md:mb-18 lg:mb-24">
@@ -80,7 +81,7 @@ export default function ASMLPage({
             </div>
 
             {/* IMAGE CARDS */}
-            <div className="flex flex-wrap md:flex-row justify-center max-w-864 mx-auto mb-20 lg:mb-24">
+            <div className="flex flex-wrap md:flex-row justify-center max-w-864 mx-auto mb-10 lg:mb-14">
               {imgCards.map((card, i) => (
                 <ImageCard key={card.bottom} card={card} index={i} />
               ))}
@@ -88,7 +89,7 @@ export default function ASMLPage({
 
             {/* YOUR INDIVIDUAL IMPACT */}
             {/* <div className="w-full max-w-400 md:max-w-500 text-center mx-auto">
-              <h1 className="text-center mb-7 md:mb-10">
+              <h1 className="text-center mb-7 md:mb-8">
                 Your individual impact
               </h1>
               <p className="lg:mb-15">
@@ -99,14 +100,14 @@ export default function ASMLPage({
             </div> */}
 
             {/* ICON IMPACT CARDS */}
-            {/* <div className="flex justify-center lg:justify-start flex-wrap mx-auto max-w-864 md:px-8 lg:p-0">
+            {/* <div className="flex justify-center lg:justify-start flex-wrap mx-auto max-w-864 md:px-7 lg:p-0">
               {iconCards.map((card, i) => (
                 <IconCard key={card.top} card={card} index={i} />
               ))}
             </div> */}
 
             {/* <div className="max-w-600 mx-auto mb-13">
-              <h4 className="mb-8">
+              <h4 className="mb-7">
                 Hi, welcome to the ASML edition of Veganuary!
               </h4>
               <p className="mb-6 last:mb-0">
@@ -114,15 +115,15 @@ export default function ASMLPage({
                 sustainable food consumption. Joining is easy, you will go
                 through the following steps:
               </p>
-              <ul style={{ listStyleType: 'decimal' }} className="pl-8">
-                <li className="mb-1">
+              <ul style={{ listStyleType: 'decimal' }} className="pl-7">
+                <li className="mb-2">
                   Choose if you want to participate 5 or 7 days a week
                 </li>
-                <li className="mb-1">Choose your commitments</li>
-                <li className="mb-1">
+                <li className="mb-2">Choose your commitments</li>
+                <li className="mb-2">
                   Stay tuned for extra activities and restaurant deals
                 </li>
-                <li className="mb-1">
+                <li className="mb-2">
                   See the impact of you and your colleagues after the dietary
                   change
                 </li>
@@ -138,7 +139,7 @@ export default function ASMLPage({
             </div> */}
 
             {/* <div className="max-w-600 mx-auto mb-13">
-              <h4 className="mb-8">Commitments</h4>
+              <h4 className="mb-7">Commitments</h4>
               <p className="mb-6 last:mb-0">
                 We'd love to optimize your personal impact. Eating vegan for a
                 full month can be a difficult task. To maximize the impact of
@@ -153,7 +154,7 @@ export default function ASMLPage({
             </div> */}
 
             <div className="mb-13 last:mb-0">
-              <h4 className="max-w-600 mx-auto mb-8">Restaurant Deals</h4>
+              <h4 className="max-w-600 mx-auto mb-7">Restaurant Deals</h4>
               {/* if we add another paragraph, use the commented line in both and remove the used one */}
               {/* <p className="max-w-500 mx-auto mb-6 last:mb-0"> */}
               <p className="max-w-600 mx-auto mb-0">
@@ -182,19 +183,19 @@ export default function ASMLPage({
 
           {/* SEE MORE DEALS */}
           <Link href="/asml/deals">
-            <a className="block bg-accent font-bold leading-none text-button text-white text-center rounded-full p-3.5 mt-5 w-72 shadow sticky bottom-8 inset-x-0 mx-auto z-40">
+            <a className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 mt-5 w-72 shadow sticky bottom-7 inset-x-0 mx-auto z-40">
               See All Deals
             </a>
           </Link>
         </div>
 
         {/* APP SECTION */}
-        <div className="bg-black-400 px-5 md:px-8 pt-20 pb-24 md:pb-22 text-center">
+        <div className="bg-primary-400 px-5 md:px-7 pt-20 pb-24 md:pb-22 text-center">
           <div className="max-w-600 mx-auto">
-            <h2 className="text-secondary mb-8">
+            <h2 className="text-secondary mb-7">
               The CollAction app has launched!
             </h2>
-            <p className="text-black-0">
+            <p className="text-primary-0">
               We’ve been working very hard and are happy to announce that our
               app is live. We have more updates and improvements coming very
               soon, so stay tuned.
@@ -202,41 +203,19 @@ export default function ASMLPage({
           </div>
 
           {/* APP LINKS */}
-          <div className="flex flex-wrap items-center justify-center mt-8 md:mt-10 mb-15 lg:mb-20 mx-auto">
-            <a
-              href="https://apps.apple.com/app/id1597643827"
-              className="inline-flex mb-5 mx-2 xs:mx-0 xs:mr-5"
-              aria-label="apple download badge"
-            >
-              <Image
-                src={BadgeApple}
-                alt="apple download badge"
-                width={143}
-                height={48}
-              />
-            </a>
-            <a
-              href="https://play.google.com/store/apps/details?id=org.collaction.collaction_app"
-              aria-label="google download badge"
-              className="inline-flex mb-5 mx-2 xs:mx-0"
-            >
-              <Image
-                src={BadgeGoogle}
-                alt="google download badge"
-                width={162}
-                height={48}
-              />
-            </a>
+          <div className="flex flex-wrap items-center justify-center mt-7 md:mt-8 mb-15 lg:mb-10 mx-auto">
+            <AppLinkApple className="inline-flex mb-5 mx-3 xs:mx-0 xs:mr-5" />
+            <AppLinkGoogle className="inline-flex mb-5 mx-3 xs:mx-0" />
           </div>
 
           <div className="flex flex-wrap justify-center lg:justify-start md:max-w-400 lg:max-w-4xl lg:w-208 mx-auto">
             {/* APP CARD */}
-            <div className="bg-secondary text-black-400 max-w-400 w-full rounded-3xl px-10 lg:px-13 py-8 pb-0 mb-5 md:mb-8 lg:mr-8 overflow-hidden">
-              <h4 className="text-black-400 mb-5">Make a change today</h4>
-              <p className="text-black-200">
+            <div className="bg-secondary text-primary-400 max-w-400 w-full rounded-1 px-8 lg:px-13 py-7 pb-0 mb-5 md:mb-7 lg:mr-7 overflow-hidden">
+              <h4 className="text-primary-400 mb-5">Make a change today</h4>
+              <p className="text-primary-200">
                 Join a CrowdAction you want to be part of.
               </p>
-              <div className="block -mb-9 xs:-mb-12">
+              <div className="block -mb-8 xs:-mb-12">
                 <Image
                   src={AppPreviewCard1}
                   alt="app preview card 1"
@@ -246,11 +225,11 @@ export default function ASMLPage({
                 />
               </div>
             </div>
-            <div className="bg-secondary text-black-400 max-w-400 w-full rounded-3xl px-10 lg:px-13 py-8 mb-5 md:mb-8 lg:mr-8 overflow-hidden lg:order-3">
-              <h4 className="text-black-400 mb-5">
+            <div className="bg-secondary text-primary-400 max-w-400 w-full rounded-1 px-8 lg:px-13 py-7 mb-5 md:mb-7 lg:mr-7 overflow-hidden lg:order-3">
+              <h4 className="text-primary-400 mb-5">
                 Participate at your own pace
               </h4>
-              <p className="text-black-200 mb-4">
+              <p className="text-primary-200 mb-5">
                 Choose your commitments for the CrowdAction.
               </p>
               <div className="block">
@@ -263,7 +242,7 @@ export default function ASMLPage({
                 />
               </div>
             </div>
-            <div className="bg-secondary text-black-400 max-w-400 w-full rounded-3xl px-10 lg:px-13 py-8 mb-5 md:mb-8 lg:mr-0 overflow-hidden lg:order-2">
+            <div className="bg-secondary text-primary-400 max-w-400 w-full rounded-1 px-8 lg:px-13 py-7 mb-5 md:mb-7 lg:mr-0 overflow-hidden lg:order-2">
               <div className="block -mt-15 xs:-mt-16">
                 <Image
                   src={AppPreviewCard3}
@@ -273,8 +252,8 @@ export default function ASMLPage({
                   placeholder="blur"
                 />
               </div>
-              <h4 className="text-black-400 mb-5">Join the wave</h4>
-              <p className="text-black-200">Make impact together.</p>
+              <h4 className="text-primary-400 mb-5">Join the wave</h4>
+              <p className="text-primary-200">Make impact together.</p>
             </div>
           </div>
         </div>
@@ -282,7 +261,7 @@ export default function ASMLPage({
         {/* DOWNLOAD THE APP BUTTON */}
         <Link href="/download">
           <a
-            className="block bg-accent font-bold leading-none text-button text-white text-center rounded-full p-3.5 mb-8 w-72 shadow sticky bottom-8 inset-x-0 mx-auto z-40"
+            className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 mb-7 w-72 shadow sticky bottom-7 inset-x-0 mx-auto z-40"
             style={{ marginTop: `calc(-52px - 2rem)` }}
           >
             Download The App!
@@ -357,9 +336,9 @@ function ImageCard({ card, index }: { card: ImageCard; index: number }) {
   return (
     <div
       ref={cardRef}
-      className="relative flex justify-center items-center w-full max-w-350 md:max-w-400 h-full aspect-[0.7] rounded-3xl md:mx-4 mb-5 sm:mb-8"
+      className="relative flex justify-center items-center w-full max-w-350 md:max-w-400 h-full aspect-[0.7] rounded-1 md:mx-5 mb-5 sm:mb-7"
     >
-      <div className="block w-full h-full overflow-hidden rounded-3xl">
+      <div className="block w-full h-full overflow-hidden rounded-1">
         <Image
           priority={index < 2}
           src={card.image}
@@ -367,11 +346,11 @@ function ImageCard({ card, index }: { card: ImageCard; index: number }) {
           placeholder="blur"
           layout="responsive"
           sizes="(max-width: 767px) 350px, 400px"
-          className="rounded-3xl"
+          className="rounded-1"
         />
       </div>
       <div
-        className="absolute w-full h-full rounded-3xl"
+        className="absolute w-full h-full rounded-1"
         style={{
           background: `linear-gradient(180deg, rgba(0, 0, 0, 0) 35.3%, rgba(0, 0, 0, 0.38) 100%)`,
         }}
@@ -384,7 +363,7 @@ function ImageCard({ card, index }: { card: ImageCard; index: number }) {
         {/* bottom text */}
         <div className="text-headline font-bold">{card.bottom}</div>
       </div>
-      <div className="absolute text-center bottom-10 md:bottom-12">
+      <div className="absolute text-center bottom-8 md:bottom-12">
         <Image
           src={CollActionLogoWithTextWhite}
           alt="Collaction White Logo"
@@ -464,28 +443,28 @@ function IconCard({ card, index }: { card: IconCard; index: number }) {
     <div
       ref={cardRef}
       className={clsx(
-        'relative p-0 py-10 sm:px-8 md:p-10',
+        'relative p-0 py-8 sm:px-7 md:p-8',
         `${index === 0 ? 'before:hidden' : 'before:block'}`,
         `${index === 1 ? 'lg:before:hidden' : ''}`,
-        'before:absolute before:top-0 before:inset-x-0 before:mx-auto before:content-[""] before:w-2/3 before:bg-black-100 before:h-[0.5px]',
+        'before:absolute before:top-0 before:inset-x-0 before:mx-auto before:content-[""] before:w-2/3 before:bg-primary-100 before:h-[0.5px]',
         'after:hidden',
         `${index % 2 === 1 ? 'lg:after:block' : ''}`,
-        'after:absolute after:left-0 after:inset-y-0 after:my-auto after:content-[""] after:h-5/6 after:bg-black-100 after:w-[0.5px]'
+        'after:absolute after:left-0 after:inset-y-0 after:my-auto after:content-[""] after:h-5/6 after:bg-primary-100 after:w-[0.5px]'
       )}
     >
       <div className="relative flex flex-col items-center w-80 xs:w-full xs:min-w-350 max-w-350 text-center">
         {/* icon */}
-        <div className="flex justify-center w-16 h-16 p-4 bg-secondary rounded-full mb-1">
+        <div className="flex justify-center w-16 h-16 p-5 bg-secondary rounded-full mb-2">
           {card.icon}
         </div>
         {/* title/top text */}
-        <div className="text-black-200 mb-2">{card.top}</div>
+        <div className="text-primary-200 mb-2">{card.top}</div>
         {/* featured text */}
-        <span className="text-collaction text-featured font-bold mb-1">
+        <span className="text-collaction text-featured font-bold mb-2">
           {value}
         </span>
         {/* bottom text */}
-        <div className="text-black-200">{card.bottom}</div>
+        <div className="text-primary-200">{card.bottom}</div>
       </div>
     </div>
   );

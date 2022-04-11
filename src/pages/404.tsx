@@ -6,9 +6,9 @@ export default function Custom404() {
     <>
       <PageSEO title="Page Not Found" />
 
-      <main className="bg-black-0 p-5 md:p-12">
+      <main className="bg-primary-0 p-5 md:p-12">
         <div className="max-w-600 mx-auto text-center">
-          <h1 className="text-black-400 mb-6">Page Not Found</h1>
+          <h1 className="text-primary-400 mb-6">Page Not Found</h1>
           <Image
             unoptimized
             src="/im-lost.gif"

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import clsx from 'clsx';
 
-import CollActionLogoWithText from 'public/logo-green-small.png';
+import CollActionLogoWithText from 'public/logo-black-small.png';
 
 export default function NavBar() {
   const { pathname } = useRouter();
@@ -12,11 +12,16 @@ export default function NavBar() {
   return (
     <header
       className={clsx(
-        'bg-secondary w-full py-4',
+        'bg-secondary w-full',
         pathname === '/asml' ? 'hidden' : 'block'
       )}
     >
-      <div className="flex items-center justify-between px-8">
+      <div
+        className={clsx(
+          'flex flex-col md:flex-row items-center flex-wrap justify-center md:justify-between mx-auto py-6',
+          'max-w-300 sm:max-w-400 md:max-w-600 lg:max-w-864'
+        )}
+      >
         <Link href="/">
           <a className="block w-32 leading-none" aria-label="Home Page">
             <Image
@@ -28,6 +33,20 @@ export default function NavBar() {
             />
           </a>
         </Link>
+        <div className="flex justify-between items-center mt-6 md:mt-0">
+          <Link href="/">
+            <a className="text-body-short-1 mx-4 md:mx-0 md:ml-6">Home</a>
+          </Link>
+          <Link href="/">
+            <a className="text-body-short-1 mx-4 md:mx-0 md:ml-6">Contact</a>
+          </Link>
+          <Link href="/">
+            <a className="text-body-short-1 mx-4 md:mx-0 md:ml-6">Join</a>
+          </Link>
+          <Link href="/">
+            <a className="text-body-short-1 mx-4 md:mx-0 md:ml-6">Donate</a>
+          </Link>
+        </div>
       </div>
     </header>
   );
