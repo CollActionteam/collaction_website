@@ -6,6 +6,23 @@ import clsx from 'clsx';
 
 import CollActionLogoWithText from 'public/logo-black-small.png';
 
+const StyledNavLink = ({ href, text }: { href: string; text: string }) => {
+  const { asPath } = useRouter();
+
+  return (
+    <Link href={href}>
+      <a
+        className={clsx(
+          'mx-4 md:mx-0 md:ml-6',
+          asPath === href ? 'text-headline-s-1' : 'text-body-short-1'
+        )}
+      >
+        {text}
+      </a>
+    </Link>
+  );
+};
+
 export default function NavBar() {
   const { pathname } = useRouter();
 
@@ -34,18 +51,10 @@ export default function NavBar() {
           </a>
         </Link>
         <div className="flex justify-between items-center mt-6 md:mt-0">
-          <Link href="/">
-            <a className="text-body-short-1 mx-4 md:mx-0 md:ml-6">Home</a>
-          </Link>
-          <Link href="/">
-            <a className="text-body-short-1 mx-4 md:mx-0 md:ml-6">Contact</a>
-          </Link>
-          <Link href="/">
-            <a className="text-body-short-1 mx-4 md:mx-0 md:ml-6">Join</a>
-          </Link>
-          <Link href="/">
-            <a className="text-body-short-1 mx-4 md:mx-0 md:ml-6">Donate</a>
-          </Link>
+          <StyledNavLink href="/" text="Home" />
+          <StyledNavLink href="/contact" text="Contact" />
+          <StyledNavLink href="/join" text="Join" />
+          <StyledNavLink href="/domate" text="Donate" />
         </div>
       </div>
     </header>
