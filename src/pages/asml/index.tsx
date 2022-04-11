@@ -2,10 +2,12 @@ import { InferGetStaticPropsType } from 'next';
 import clsx from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useCountUp } from 'use-count-up';
+import { useInView } from 'react-intersection-observer';
 
 import PageSEO from 'src/components/PageSEO';
-import { useInView } from 'react-intersection-observer';
-import { useCountUp } from 'use-count-up';
+import AppLinkApple from 'src/components/AppLinkApple';
+import AppLinkGoogle from 'src/components/AppLinkGoogle';
 import { DealsCard } from 'src/components/DealsCard';
 import { getDealsData } from 'src/lib/getDeals';
 import * as Icons from 'src/components/Icons';
@@ -13,8 +15,7 @@ import * as Icons from 'src/components/Icons';
 import ASMLBanner from 'public/veganuary-ASML-banner.png';
 import CollActionLogoWithText from 'public/logo-black-small.png';
 import CollActionLogoWithTextWhite from 'public/logo-white-small.png';
-import BadgeApple from 'public/Badge-Apple.png';
-import BadgeGoogle from 'public/Badge-Google.png';
+
 import AppPreviewCard1 from 'public/app-preview-card-1.png';
 import AppPreviewCard2 from 'public/app-preview-card-2.png';
 import AppPreviewCard3 from 'public/app-preview-card-3.png';
@@ -203,30 +204,8 @@ export default function ASMLPage({
 
           {/* APP LINKS */}
           <div className="flex flex-wrap items-center justify-center mt-7 md:mt-8 mb-15 lg:mb-10 mx-auto">
-            <a
-              href="https://apps.apple.com/app/id1597643827"
-              className="inline-flex mb-5 mx-3 xs:mx-0 xs:mr-5"
-              aria-label="apple download badge"
-            >
-              <Image
-                src={BadgeApple}
-                alt="apple download badge"
-                width={143}
-                height={48}
-              />
-            </a>
-            <a
-              href="https://play.google.com/store/apps/details?id=org.collaction.collaction_app"
-              aria-label="google download badge"
-              className="inline-flex mb-5 mx-3 xs:mx-0"
-            >
-              <Image
-                src={BadgeGoogle}
-                alt="google download badge"
-                width={162}
-                height={48}
-              />
-            </a>
+            <AppLinkApple className="inline-flex mb-5 mx-3 xs:mx-0 xs:mr-5" />
+            <AppLinkGoogle className="inline-flex mb-5 mx-3 xs:mx-0" />
           </div>
 
           <div className="flex flex-wrap justify-center lg:justify-start md:max-w-400 lg:max-w-4xl lg:w-208 mx-auto">
