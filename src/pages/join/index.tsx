@@ -97,13 +97,13 @@ export default function JoinPage() {
           title="Product Designer"
           description="Native application for iOS and android, web design, UI system"
           tags={['remote', 'voluntary']}
-          href="/product-designer"
+          href="/join/product-designer"
         />
         <JoinCard
           title="Web Developer"
           description="Native application for iOS and android, web design, UI system"
           tags={['remote', 'voluntary']}
-          href="/web-developer"
+          href="/join/web-developer"
         />
 
         <InfoCard
