@@ -5,6 +5,8 @@ export async function middleware(req, ev) {
     return NextResponse.redirect('/asml');
   } else if (pathname == '/impact') {
     return NextResponse.redirect('/asml');
+  } else if (pathname == '/redirect') {
+    return NextResponse.redirect('https://forms.gle/KY5HSQxW6LyRWqM89');
   }
   return NextResponse.next();
 }
