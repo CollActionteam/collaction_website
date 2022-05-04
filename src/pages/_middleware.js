@@ -6,7 +6,9 @@ export async function middleware(req, ev) {
   } else if (pathname == '/impact') {
     return NextResponse.redirect('/asml');
   } else if (pathname == '/link') {
-    return NextResponse.redirect('https://forms.gle/KY5HSQxW6LyRWqM89');
+    return NextResponse.redirect(
+      'https://docs.google.com/forms/d/e/1FAIpQLScNdSAzK2sNknCptNzuEy9S8OsRs2MKFQvtCElhPnepbG4jWQ/viewform?usp=sf_link'
+    );
   }
   return NextResponse.next();
 }
