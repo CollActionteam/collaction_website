@@ -9,6 +9,10 @@ export async function middleware(req, ev) {
     return NextResponse.redirect(
       'https://docs.google.com/forms/d/e/1FAIpQLScNdSAzK2sNknCptNzuEy9S8OsRs2MKFQvtCElhPnepbG4jWQ/viewform?usp=sf_link'
     );
+  } else if (pathname == '/link2') {
+    return NextResponse.redirect(
+      'https://docs.google.com/forms/d/e/1FAIpQLScNdSAzK2sNknCptNzuEy9S8OsRs2MKFQvtCElhPnepbG4jWQ/viewform?usp=sf_link'
+    );
   }
   return NextResponse.next();
 }
