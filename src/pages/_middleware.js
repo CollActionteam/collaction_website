@@ -7,7 +7,7 @@ export async function middleware(req, ev) {
     return NextResponse.redirect('/asml');
   } else if (pathname == '/link') {
     return NextResponse.redirect(
-      'https://docs.google.com/forms/d/e/1FAIpQLScNdSAzK2sNknCptNzuEy9S8OsRs2MKFQvtCElhPnepbG4jWQ/viewform?usp=sf_link'
+      'https://docs.google.com/forms/d/e/1FAIpQLSc1C-z_a9VkjJXWoSIQ9EmO5kV8qgF3nvuJH5YXKXcaTWQEJg/viewform?usp=sf_link'
     );
   } else if (pathname == '/link2') {
     return NextResponse.redirect(
