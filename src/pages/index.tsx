@@ -13,7 +13,7 @@ export default function HomePage() {
     <>
       <PageSEO title="CollAction | Sustainable choices made easy" />
 
-      <main className="bg-secondary p-5">
+      <main className="bg-secondary p-5 pt-10">
         {/* FIRST CONTAINER */}
         <InfoCard
           isSecondaryBg
