@@ -18,14 +18,14 @@ export default function WestlandIndexPage() {
         description="ASML participates in Veganuary: an annual challenge that promotes veganism and sustainable food consumption. Read recipes, tips, supplements, and more."
       />
 
-      <main className="bg-secondary p-5 pt-10 md:pt-11">
+      <main className="sp-5 pt-10 md:pt-11">
         <div className="text-center mx-auto max-w-350 sm:max-w-400 lg:max-w-500">
           <h1 className="text-headline-lg-1 text-secondary">
             Groen doen in Westland. Samen maken we de zomer groener!
           </h1>
         </div>
 
-        <div className="relative block w-full md:w-11/12 lg:w-208 mx-auto border-2">
+        <div className="relative block w-full md:w-11/12 lg:w-208 mx-auto">
           <Image
             priority
             src={ASMLBanner}
@@ -104,7 +104,7 @@ export default function WestlandIndexPage() {
       </main>
 
       {/* COLLACTION TEAM IMAGE */}
-      <section className="bg-secondary pb-11">
+      <section className="pb-11">
         <div
           className="relative text-center mx-auto xs:max-w-350 sm:max-w-400 lg:max-w-500 rounded-none xs:rounded-1"
           style={{ height: 450 }}

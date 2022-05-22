@@ -2,6 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FiLinkedin, FiInstagram } from 'react-icons/fi';
+import clsx from 'clsx';
+import { useRouter } from 'next/router';
 
 import CollActionLogoWithText from 'public/logo-black-small.png';
 import PoweredByVercel from 'public/powered-by-vercel.svg';
@@ -12,8 +14,15 @@ const KvK = '65628608';
 const RSIN = '856193690';
 
 export default function Footer() {
+  const { pathname } = useRouter();
+
   return (
-    <footer className="bg-secondary text-primary-400 absolute bottom-0 w-full h-940 md:h-440 py-12 px-5">
+    <footer
+      className={clsx(
+        'text-primary-400 absolute bottom-0 w-full h-940 md:h-440 py-12 px-5',
+        pathname !== '/westland' && 'bg-secondary'
+      )}
+    >
       <div className="flex flex-col md:flex-row md:justify-between w-full max-w-400 md:max-w-600 lg:w-208 lg:max-w-4xl mx-auto py-12 border-t border-primary-100">
         <div>
           <Link href="/">
