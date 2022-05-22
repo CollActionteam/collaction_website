@@ -9,7 +9,6 @@ import NavBar from 'src/components/NavBar';
 import Analytics from 'src/components/Analytics';
 import * as gtag from 'src/components/Analytics/gtag';
 import 'src/styles/globals.css';
-import 'src/styles/ticker.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
