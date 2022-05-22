@@ -94,18 +94,20 @@ export default function Footer() {
         </div>
       </div>
 
-      <a
-        href="https://vercel.com?utm_source=collaction&utm_campaign=oss"
-        aria-label="Powered By Vercel"
-        className="block w-40 md:mx-auto md:mt-5"
-      >
-        <Image
-          src={PoweredByVercel}
-          alt="Powered by Vercel"
-          layout="responsive"
-          sizes="160px"
-        />
-      </a>
+      <div className="w-full max-w-400 md:max-w-600 lg:w-208 lg:max-w-4xl mx-auto">
+        <a
+          href="https://vercel.com?utm_source=collaction&utm_campaign=oss"
+          aria-label="Powered By Vercel"
+          className="block w-40 md:mx-auto md:mt-5"
+        >
+          <Image
+            src={PoweredByVercel}
+            alt="Powered by Vercel"
+            layout="responsive"
+            sizes="160px"
+          />
+        </a>
+      </div>
     </footer>
   );
 }
