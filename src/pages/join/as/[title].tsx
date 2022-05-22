@@ -8,6 +8,7 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import { getJoinData } from 'src/lib/getJoin';
 
 export default function SingleJoinPage({ data }: { data: JoinDataType }) {
+  if (!data) return <></>;
   return (
     <>
       <PageSEO
