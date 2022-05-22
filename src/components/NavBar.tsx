@@ -54,7 +54,7 @@ export default function NavBar() {
           <StyledNavLink href="/" text="Home" />
           <StyledNavLink href="/contact" text="Contact" />
           <StyledNavLink href="/join" text="Join" />
-          <StyledNavLink href="/domate" text="Donate" />
+          <StyledNavLink href="/donate" text="Donate" />
         </div>
       </div>
     </header>
