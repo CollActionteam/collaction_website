@@ -16,7 +16,7 @@ export default function SingleJoinPage({ data }: { data: JoinDataType }) {
         description={`Passionate about what we do? Consider joining our team as a ${data.title}.`}
       />
 
-      <main className="bg-primary-0 p-5 md:p-12">
+      <main className="bg-secondary p-5 md:p-12">
         <div className="max-w-600 mx-auto">
           <h1 className="text-primary-400 mb-6">{data.title}</h1>
           <p className="text-primary-400 mb-7">{data.description}</p>
