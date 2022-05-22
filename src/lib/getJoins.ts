@@ -24,12 +24,12 @@ export function getJoinsData() {
         content: matterContent.slice(1, -1),
       };
     })
-    .filter(deal => deal.publish)
-    .map(deal => ({
-      title: deal.title,
-      description: deal.description,
-      tags: deal.tags,
-      content: deal.content,
+    .filter(join => join.publish)
+    .map(join => ({
+      title: join.title,
+      description: join.description,
+      tags: join.tags,
+      content: join.content,
     }));
 
   return allJoinsData;
