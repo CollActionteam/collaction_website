@@ -49,7 +49,7 @@ export default function NavBar() {
       {isInverted && (
         <div
           className="bg-collaction absolute top-0 left-0 w-full -z-10"
-          style={{ height: 600 }}
+          style={{ height: 650 }}
         />
       )}
       <div

@@ -18,9 +18,9 @@ export default function WestlandIndexPage() {
         description="ASML participates in Veganuary: an annual challenge that promotes veganism and sustainable food consumption. Read recipes, tips, supplements, and more."
       />
 
-      <main className="sp-5 pt-10 md:pt-11">
+      <main className="p-5 pt-10 md:pt-11">
         <div className="text-center mx-auto max-w-350 sm:max-w-400 lg:max-w-500">
-          <h1 className="text-headline-lg-1 text-secondary">
+          <h1 className="text-headline-lg-1 text-secondary mt-7 mb-11">
             Groen doen in Westland. Samen maken we de zomer groener!
           </h1>
         </div>
@@ -29,7 +29,7 @@ export default function WestlandIndexPage() {
           <Image
             priority
             src={ASMLBanner}
-            alt="asml veganuary banner"
+            alt="westland banner"
             className="rounded-1"
             layout="responsive"
             sizes="(max-width: 768px) 90vw, 830px"
@@ -37,7 +37,7 @@ export default function WestlandIndexPage() {
           />
         </div>
 
-        <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-500">
+        <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-500 mt-10 md:mt-11">
           <h4 className="text-primary-400 mb-7">Actie!</h4>
           <p className="mb-6">
             Jij bepaalt hoe je mee doet, door je eigen 'actie' te kiezen.
@@ -75,7 +75,7 @@ export default function WestlandIndexPage() {
         </div>
 
         {/* STAY CONNECTED */}
-        <div className="mb-10 sm:mb-9 md:mb-11">
+        <div className="mb-8 sm:mb-9 md:mb-10">
           <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-500 text-center">
             <h4 className="text-headline-m-1 text-primary-400 mb-7">
               Stay connected
@@ -90,7 +90,7 @@ export default function WestlandIndexPage() {
             href={whatsAppUrl}
             target="_blank"
             rel="noreferrer"
-            className="bg-primary-0 flex justify-between items-center mx-auto xs:max-w-350 sm:max-w-400 p-6 rounded-1"
+            className="bg-secondary flex justify-between items-center mx-auto xs:max-w-350 sm:max-w-400 p-6 rounded-1"
           >
             <div className="bg-collaction h-10 w-10 flex items-center justify-center rounded-full">
               <FaWhatsapp className="text-secondary h-6 w-6" />
