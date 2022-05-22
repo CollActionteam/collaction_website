@@ -3,39 +3,17 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import clsx from 'clsx';
+import { FiExternalLink } from 'react-icons/fi';
 
 import CollActionBlackLogoWithText from 'public/logo-black-small.png';
 import CollActionWhiteLogoWithText from 'public/logo-white-small.png';
 
-const StyledNavLink = ({
-  href,
-  text,
-  isInverted,
-}: {
-  href: string;
-  text: string;
-  isInverted: boolean;
-}) => {
-  const { asPath } = useRouter();
-
-  return (
-    <Link href={href}>
-      <a
-        className={clsx(
-          'mx-4 md:mx-0 md:ml-6',
-          asPath === href ? 'text-headline-s-1' : 'text-body-short-1',
-          isInverted ? 'text-secondary' : 'text-primary-300'
-        )}
-      >
-        {text}
-      </a>
-    </Link>
-  );
-};
+const contactEmail = 'contact@collaction.org';
 
 export default function NavBar() {
-  const { pathname } = useRouter();
+  const { pathname, asPath } = useRouter();
 
+  // if it's inverted we'll show white text and a green background
   const isInverted = ['/westland'].includes(pathname);
 
   return (
@@ -75,14 +53,39 @@ export default function NavBar() {
           </a>
         </Link>
         <div className="flex justify-between items-center mt-6 md:mt-0">
-          <StyledNavLink href="/" text="Home" isInverted={isInverted} />
-          <StyledNavLink
-            href="/contact"
-            text="Contact"
-            isInverted={isInverted}
-          />
-          <StyledNavLink href="/join" text="Join" isInverted={isInverted} />
-          <StyledNavLink href="/donate" text="Donate" isInverted={isInverted} />
+          <Link href="/">
+            <a
+              className={clsx(
+                'flex items-center mx-4 md:mx-0 md:ml-8',
+                asPath === '/' ? 'text-headline-s-1' : 'text-body-short-1',
+                isInverted ? 'text-secondary' : 'text-primary-300'
+              )}
+            >
+              Home
+            </a>
+          </Link>
+          <Link href="/join">
+            <a
+              className={clsx(
+                'flex items-center mx-4 md:mx-0 md:ml-8',
+                asPath === '/join' ? 'text-headline-s-1' : 'text-body-short-1',
+                isInverted ? 'text-secondary' : 'text-primary-300'
+              )}
+            >
+              Join
+            </a>
+          </Link>
+          <a
+            href={`mailto:${contactEmail}`}
+            className={clsx(
+              'flex items-center mx-4 md:mx-0 md:ml-8',
+              asPath === '/contact' ? 'text-headline-s-1' : 'text-body-short-1',
+              isInverted ? 'text-secondary' : 'text-primary-300'
+            )}
+          >
+            Contact
+            <FiExternalLink className="ml-3 text-sm" />
+          </a>
         </div>
       </div>
     </header>
