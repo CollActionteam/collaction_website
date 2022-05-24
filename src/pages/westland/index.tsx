@@ -6,6 +6,7 @@ import { FiExternalLink } from 'react-icons/fi';
 import CollActionTeamPic from 'public/actions/collaction-team-pic.png';
 import ASMLBanner from 'public/veganuary-ASML-banner.png';
 import PageSEO from 'src/components/PageSEO';
+import { WestlandCard } from 'src/components/WestlandCard';
 
 const whatsAppUrl = '#';
 const ikDoeMeeUrl = '#';
@@ -14,8 +15,8 @@ export default function WestlandIndexPage() {
   return (
     <>
       <PageSEO
-        title="CollAction meets ASML | Make an impact together"
-        description="ASML participates in Veganuary: an annual challenge that promotes veganism and sustainable food consumption. Read recipes, tips, supplements, and more."
+        title="CollAction meets Westland | Make an impact together"
+        // description=""
       />
 
       <main className="p-5 pt-10 md:pt-11">
@@ -61,7 +62,24 @@ export default function WestlandIndexPage() {
         </div>
 
         {/* CARDS */}
-        <div>CARDS</div>
+        <div className="flex flex-wrap justify-center mx-auto md:max-w-864 mt-12 lg:mt-15 mb-4 md:mb-8">
+          {[
+            {
+              title: 'The greenest garden',
+              image: '/cow.png',
+              content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis augue porttitor justo luctus placerat nec in nisi. In hac habitasse platea dictumst. Duis sit amet mi se...`,
+              submitPhotoUrl: '#',
+            },
+            {
+              title: 'The greenest garden',
+              image: '/cow.png',
+              content: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).`,
+              submitPhotoUrl: '#',
+            },
+          ].map(details => (
+            <WestlandCard key={details.title} {...details} />
+          ))}
+        </div>
 
         <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-500">
           <p className="mb-6">
@@ -131,7 +149,7 @@ export default function WestlandIndexPage() {
               The CollAction team
             </h4>
             <p className="text-body-short-1 text-secondary">
-              Help us on our mission to make doing good fun & easy{' '}
+              Help us on our mission to make doing good fun & easy
             </p>
           </div>
         </div>
