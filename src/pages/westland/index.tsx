@@ -1,12 +1,16 @@
 import React from 'react';
 import Image from 'next/image';
-import { FaWhatsapp } from 'react-icons/fa';
-import { FiExternalLink } from 'react-icons/fi';
 
 import CollActionTeamPic from 'public/actions/collaction-team-pic.png';
-import ASMLBanner from 'public/veganuary-ASML-banner.png';
+import WestlandBanner from 'public/WestlandGroenDoen.png';
 import PageSEO from 'src/components/PageSEO';
 import { WestlandCard } from 'src/components/WestlandCard';
+
+import { useCountUp } from 'use-count-up';
+import { useInView } from 'react-intersection-observer';
+import AirplaneImg from 'public/impact/airplane.jpeg';
+import CO2Img from 'public/impact/co2.jpeg';
+import CollActionLogoWithTextWhite from 'public/logo-white-small.png';
 
 const whatsAppUrl = '#';
 const ikDoeMeeUrl = '#';
@@ -22,14 +26,13 @@ export default function WestlandIndexPage() {
       <main className="p-5 pt-10 md:pt-11">
         <div className="text-center mx-auto max-w-350 sm:max-w-400 lg:max-w-500">
           <h1 className="text-headline-lg-1 text-secondary mt-7 mb-11">
-            Groen doen in Westland. Samen maken we de zomer groener!
+            Samen maken we de zomer groener!
           </h1>
         </div>
-
         <div className="relative block w-full md:w-11/12 lg:w-208 mx-auto">
           <Image
             priority
-            src={ASMLBanner}
+            src={WestlandBanner}
             alt="westland banner"
             className="rounded-1"
             layout="responsive"
@@ -37,27 +40,55 @@ export default function WestlandIndexPage() {
             placeholder="blur"
           />
         </div>
-
         <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-500 mt-10 md:mt-11">
-          <h4 className="text-primary-400 mb-7">Actie!</h4>
+          <h4 className="text-primary-400 mb-7">
+            Goed voor het milieu én je portemonnee
+          </h4>
           <p className="mb-6">
-            Jij bepaalt hoe je mee doet, door je eigen 'actie' te kiezen.
-            Gebaseerd op de opdrachten die je hebt gekozen, krijg je aan het
-            einde van de maand een badge.
+            Door mee te doen met de actie “energiebesparing in de zomer” bespaar
+            je gemakkelijk honderden euro’s op je (energie)jaarrekening. Het
+            leuke is dat je dit ook echt bij kan houden met je energiemeter.
           </p>
           <p className="mb-10">
-            Om je bij de les te houden, geven wij je tips om de acties zo goed
-            mogelijk uit te voeren.
+            Wij zorgen voor alle tips die je nodig hebt om een zo goed mogelijk
+            resultaat te krijgen. Samen zorgen we voor een groener Westland.
+            Duurzamer leven helpt met het creëren van een mooie toekomst voor
+            onszelf en alle generaties die volgen.
           </p>
+        </div>
+        <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-500">
+          <h4 className="text-primary-400 mb-7">Jouw huis, jouw regels</h4>
+          <p className="mb-9 md:mb-2">
+            Hoeveel aandacht je eraan besteedt bepaal je helemaal zelf! Hoe meer
+            opdrachten je uitvoert, hoe duurzamer/energiezuiniger jouw huis
+            wordt. Je focust je hier dan volledig op gedurende een periode van 1
+            of 2 maanden. Ben je benieuwd wat voor soort opdrachten je kunt
+            verwachten? Hier is een voorbeeld van een opdracht die je helpt
+            sluipverbruik van stand-by apparaten te verminderen:
+          </p>
+          <ul style={{ listStyleType: 'decimal' }} className="pl-7">
+            <li className="mb-2">
+              Bespaar jaarlijks per huishouden gemiddeld €280 door sluipverbruik
+              te elimineren
+            </li>
+            <li className="mb-8">
+              Voorkom samen de jaarlijkse uitstoot van 47.000 kg CO2 in Westland
+              door sluipverbruik
+            </li>
+          </ul>
+        </div>
+        {/* IMAGE CARDS */}
+        <div className="flex flex-wrap md:flex-row justify-center max-w-864 mx-auto mb-10 lg:mb-14">
+          {imgCards.map((card, i) => (
+            <ImageCard key={card.bottom} card={card} index={i} />
+          ))}
         </div>
 
         <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-500">
-          <h4 className="text-primary-400 mb-7">
-            Jouw acties, dus jij bepaalt.
-          </h4>
-          <p className="mb-9 md:mb-10">
-            Hoe je deel wil nemen, bepaal je zelf door aan te kruisen hoe je mee
-            wil doen.
+          <h4 className="text-primary-400 mb-7">Doe mee en win</h4>
+          <p className="mb-9 md:mb-2">
+            Naast onze "Ik doe mee" kun je op 2 manieren meer betrokken raken!
+            Op de volgende 2 kaarten beschrijven we hoe.
           </p>
         </div>
 
@@ -65,23 +96,24 @@ export default function WestlandIndexPage() {
         <div className="flex flex-wrap justify-center mx-auto md:max-w-864 mt-12 lg:mt-15 mb-4 md:mb-8">
           {[
             {
-              title: 'The greenest garden',
+              title: 'Groen groener groenst',
               image: '/cow.png',
-              content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis augue porttitor justo luctus placerat nec in nisi. In hac habitasse platea dictumst. Duis sit amet mi se...`,
-              submitPhotoUrl: '#',
+              content: `We delen prijzen uit voor …………………….. (nader te bepalen)! Stuur jouw …… in en maak kans op …………. De vijf beste inzendingen vallen in de prijzen. Daag jij je buren uit?`,
+              submitPhotoName: 'Deel je foto',
+              submitPhotoUrl: 'mailto:westland@collaction.org',
             },
             {
-              title: 'The greenest garden',
-              image: '/cow.png',
-              content: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).`,
+              title: 'Doe mee in onze Whatsapp-groep',
+              image: '/whatsapp.png',
+              content: `Doe mee in de Whatsapp-groep en deel via ons jouw tips en resultaten. In de groepsbeschrijving vertellen we je meer over hoe je kunt deelnemen!`,
+              submitPhotoName: 'Word onderdeel',
               submitPhotoUrl: '#',
             },
           ].map(details => (
             <WestlandCard key={details.title} {...details} />
           ))}
         </div>
-
-        <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-500">
+        {/* <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-500">
           <p className="mb-6">
             Elke 'actie' staat voor een bepaalde impact. Je ontvangt punten voor
             de grootte van de impact die je hebt gemaakt.
@@ -90,9 +122,8 @@ export default function WestlandIndexPage() {
             Laten we kijken hoeveel we deze zomer kunnen besparen. Op onze
             energierekening én voor het milieu.
           </p>
-        </div>
-
-        {/* STAY CONNECTED */}
+        </div> */}
+        {/* STAY CONNECTED
         <div className="mb-8 sm:mb-9 md:mb-10">
           <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-500 text-center">
             <h4 className="text-headline-m-1 text-primary-400 mb-7">
@@ -118,7 +149,7 @@ export default function WestlandIndexPage() {
             </span>
             <FiExternalLink className="text-primary-400 h-6 w-6" />
           </a>
-        </div>
+        </div> */}
       </main>
 
       {/* COLLACTION TEAM IMAGE */}
@@ -163,5 +194,86 @@ export default function WestlandIndexPage() {
         Ik doe mee
       </a>
     </>
+  );
+}
+
+// ===========
+// IMAGE CARDS
+// ===========
+type ImageCard = {
+  image: StaticImageData;
+  top: string;
+  value: number;
+  bottom: string;
+};
+
+const imgCards: ImageCard[] = [
+  {
+    image: CO2Img,
+    top: 'Bespaar jaarlijks',
+    value: 280,
+    bottom: 'Euro door sluipverbruik te verminderen',
+  },
+  {
+    image: AirplaneImg,
+    top: 'Gelijkwaardig aan',
+    value: 47,
+    bottom: 'Intercontinentale vluchten',
+  },
+];
+
+function ImageCard({ card, index }: { card: ImageCard; index: number }) {
+  // https://www.npmjs.com/package/react-intersection-observer
+  const [cardRef, inView] = useInView();
+
+  // https://www.npmjs.com/package/use-count-up
+  const { value } = useCountUp({
+    end: card.value,
+    start: card.value / 2,
+    duration: 2,
+    decimalPlaces: 0,
+    isCounting: inView,
+    thousandsSeparator: ',',
+  });
+
+  return (
+    <div
+      ref={cardRef}
+      className="relative flex justify-center items-center w-full max-w-350 md:max-w-400 h-full aspect-[0.7] rounded-1 md:mx-5 mb-5 sm:mb-7"
+    >
+      <div className="block w-full h-full overflow-hidden rounded-1">
+        <Image
+          priority={index < 2}
+          src={card.image}
+          alt={card.bottom}
+          placeholder="blur"
+          layout="responsive"
+          sizes="(max-width: 767px) 350px, 400px"
+          className="rounded-1"
+        />
+      </div>
+      <div
+        className="absolute w-full h-full rounded-1"
+        style={{
+          background: `linear-gradient(180deg, rgba(0, 0, 0, 0) 35.3%, rgba(0, 0, 0, 0.38) 100%)`,
+        }}
+      />
+      <div className="absolute text-secondary text-center text-shadow">
+        {/* top text */}
+        {card.top && <div className="text-footnote">{card.top}</div>}
+        {/* large middle value/text */}
+        <div className="text-8xl font-bold mb-[10px]">{value}</div>
+        {/* bottom text */}
+        <div className="text-headline font-bold">{card.bottom}</div>
+      </div>
+      <div className="absolute text-center bottom-8 md:bottom-12">
+        <Image
+          src={CollActionLogoWithTextWhite}
+          alt="Collaction White Logo"
+          width={96}
+          height={24}
+        />
+      </div>
+    </div>
   );
 }

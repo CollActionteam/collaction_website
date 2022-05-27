@@ -7,11 +7,13 @@ export function WestlandCard({
   title,
   image,
   content,
+  submitPhotoName,
   submitPhotoUrl,
 }: {
   title: string;
   image: string;
   content: string;
+  submitPhotoName: string;
   submitPhotoUrl: string;
 }) {
   const contentRef = useRef<HTMLDivElement>(null);
@@ -54,7 +56,8 @@ export function WestlandCard({
             'text-button font-bold leading-none text-center rounded-full p-4 align-top'
           )}
         >
-          Submit your photo
+          {/* Submit your photo */}
+          {submitPhotoName}
         </a>
       </div>
       {/* TITLE & CONTENT */}
