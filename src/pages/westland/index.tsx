@@ -46,7 +46,7 @@ export default function WestlandIndexPage() {
           </h4>
           <p className="mb-6">
             Door mee te doen met de actie energiebesparing in de zomer bespaar
-            je gemakkelijk honderden euro’s op je (energie)jaarrekening. Het
+            je gemakkelijk honderden euros op je (energie)jaarrekening. Het
             leuke is dat je dit ook echt bij kan houden met je energiemeter.
           </p>
           <p className="mb-10">
@@ -68,8 +68,8 @@ export default function WestlandIndexPage() {
           </p>
           <ul style={{ listStyleType: 'decimal' }} className="pl-7">
             <li className="mb-2">
-              Bespaar jaarlijks per huishouden gemiddeld €280 door sluipverbruik
-              te elimineren
+              Bespaar jaarlijks per huishouden gemiddeld EUR280 door
+              sluipverbruik te elimineren
             </li>
             <li className="mb-8">
               Voorkom samen de jaarlijkse uitstoot van 47.000 kg CO2 in Westland
