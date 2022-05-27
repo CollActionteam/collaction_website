@@ -1,6 +1,6 @@
 import { InferGetStaticPropsType } from 'next';
 import clsx from 'clsx';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { useCountUp } from 'use-count-up';
 import { useInView } from 'react-intersection-observer';

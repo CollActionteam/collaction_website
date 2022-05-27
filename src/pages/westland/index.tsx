@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 import CollActionTeamPic from 'public/actions/collaction-team-pic.png';
 import WestlandBanner from 'public/WestlandGroenDoen.png';
@@ -12,7 +12,7 @@ import AirplaneImg from 'public/impact/airplane.jpeg';
 import CO2Img from 'public/impact/co2.jpeg';
 import CollActionLogoWithTextWhite from 'public/logo-white-small.png';
 
-const whatsAppUrl = '#';
+// const whatsAppUrl = '#';
 const ikDoeMeeUrl = '#';
 
 export default function WestlandIndexPage() {

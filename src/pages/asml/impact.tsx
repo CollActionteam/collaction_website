@@ -1,6 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { useInView } from 'react-intersection-observer';
 import { useCountUp } from 'use-count-up';
 
