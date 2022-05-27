@@ -42,10 +42,10 @@ export default function WestlandIndexPage() {
         </div>
         <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-500 mt-10 md:mt-11">
           <h4 className="text-primary-400 mb-7">
-            Goed voor het milieu én je portemonnee
+            Goed voor het milieu en je portemonnee
           </h4>
           <p className="mb-6">
-            Door mee te doen met de actie “energiebesparing in de zomer” bespaar
+            Door mee te doen met de actie energiebesparing in de zomer bespaar
             je gemakkelijk honderden euro’s op je (energie)jaarrekening. Het
             leuke is dat je dit ook echt bij kan houden met je energiemeter.
           </p>
@@ -87,8 +87,8 @@ export default function WestlandIndexPage() {
         <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-500">
           <h4 className="text-primary-400 mb-7">Doe mee en win</h4>
           <p className="mb-9 md:mb-2">
-            Naast onze "Ik doe mee" kun je op 2 manieren meer betrokken raken!
-            Op de volgende 2 kaarten beschrijven we hoe.
+            Naast onze Ik doe mee kun je op 2 manieren meer betrokken raken! Op
+            de volgende 2 kaarten beschrijven we hoe.
           </p>
         </div>
 
