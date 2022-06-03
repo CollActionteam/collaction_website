@@ -1,5 +1,6 @@
 import React from 'react';
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
+import  { StaticImageData } from 'next/image'
 
 import CollActionTeamPic from 'public/actions/collaction-team-pic.png';
 import WestlandBanner from 'public/WestlandGroenDoen.png';
@@ -11,6 +12,7 @@ import { useInView } from 'react-intersection-observer';
 import AirplaneImg from 'public/impact/airplane.jpeg';
 import CO2Img from 'public/impact/co2.jpeg';
 import CollActionLogoWithTextWhite from 'public/logo-white-small.png';
+import Link from 'next/link';
 
 // const whatsAppUrl = '#';
 const ikDoeMeeUrl = '#';
@@ -186,13 +188,18 @@ export default function WestlandIndexPage() {
         </div>
       </section>
 
+      
+      
       <a
         className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 mb-0 w-72 shadow sticky bottom-7 inset-x-0 mx-auto z-40"
         style={{ marginTop: `calc(-3rem)` }}
-        href={ikDoeMeeUrl}
+        href={'https://jmrmn5bm9qv.typeform.com/to/YSWOyUq8'}
+        target="_blank"
       >
         Ik doe mee
       </a>
+      
+
     </>
   );
 }
