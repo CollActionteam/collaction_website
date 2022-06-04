@@ -1,14 +1,14 @@
 import React from 'react';
 import Image, { StaticImageData } from 'next/image';
 
-import CollActionTeamPic from 'public/actions/collaction-team-pic.png';
+import TomTomImg from 'public/actions/tomtom.png';
 import WestlandBanner from 'public/WestlandGroenDoen.png';
 import PageSEO from 'src/components/PageSEO';
 import { WestlandCard } from 'src/components/WestlandCard';
 
 import { useCountUp } from 'use-count-up';
 import { useInView } from 'react-intersection-observer';
-import AirplaneImg from 'public/impact/airplane.jpeg';
+import Sluipverbruik from 'public/actions/sluipverbruik.png';
 import CO2Img from 'public/impact/co2.jpeg';
 import CollActionLogoWithTextWhite from 'public/logo-white-small.png';
 
@@ -26,7 +26,7 @@ export default function WestlandIndexPage() {
       <main className="p-5 pt-10 md:pt-11">
         <div className="text-center mx-auto max-w-350 sm:max-w-400 lg:max-w-500">
           <h1 className="text-headline-lg-1 text-secondary mt-7 mb-11">
-            Samen maken we de zomer groener!
+            Groen doen in Westland
           </h1>
         </div>
         <div className="relative block w-full md:w-11/12 lg:w-208 mx-auto">
@@ -40,7 +40,18 @@ export default function WestlandIndexPage() {
             placeholder="blur"
           />
         </div>
+
         <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-500 mt-10 md:mt-11">
+          <h4 className="text-primary-400 mb-7">Doe mee</h4>
+          <p className="mb-6">
+            Schrijf je in via de “Ik doe mee” knop en geef op wat je wil doen om
+            energie te besparen deze zomer. Samen kunnen we Westland groener
+            maken. Kijk in onze WhatsApp groep voor tips en wie nog meer meedoen
+            aan deze actie. Wij rekenen uiteindelijk uit wat de impact is die
+            wij met z’n allen hebben behaald.
+          </p>
+        </div>
+        <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-500 mt-10 md:mt-10">
           <h4 className="text-primary-400 mb-7">
             Goed voor het milieu en je portemonnee
           </h4>
@@ -51,22 +62,21 @@ export default function WestlandIndexPage() {
           </p>
           <p className="mb-10">
             Wij zorgen voor alle tips die je nodig hebt om een zo goed mogelijk
-            resultaat te krijgen. Samen zorgen we voor een groener Westland.
-            Duurzamer leven helpt met het creëren van een mooie toekomst voor
-            onszelf en alle generaties die volgen.
+            resultaat te krijgen. Duurzamer leven helpt met het creëren van een
+            mooie toekomst voor onszelf en alle generaties die volgen.
           </p>
         </div>
-        <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-500">
+        <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-500 mt-10 md:mt-10">
           <h4 className="text-primary-400 mb-7">Jouw huis, jouw regels</h4>
           <p className="mb-9 md:mb-2">
             Hoeveel aandacht je eraan besteedt bepaal je helemaal zelf! Hoe meer
             opdrachten je uitvoert, hoe duurzamer/energiezuiniger jouw huis
             wordt. Je focust je hier dan volledig op gedurende een periode van 1
             of 2 maanden. Ben je benieuwd wat voor soort opdrachten je kunt
-            verwachten? Hier is een voorbeeld van een opdracht die je helpt
-            sluipverbruik van stand-by apparaten te verminderen:
+            verwachten? Een voorbeeld is het verminderen van je sluipverbruik.
+            Door er slim mee om te gaan kan je besparing al snel oplopen!
           </p>
-          <ul style={{ listStyleType: 'decimal' }} className="pl-7">
+          {/* <ul style={{ listStyleType: 'decimal' }} className="pl-7">
             <li className="mb-2">
               Bespaar jaarlijks per huishouden gemiddeld EUR280 door
               sluipverbruik te elimineren
@@ -75,10 +85,10 @@ export default function WestlandIndexPage() {
               Voorkom samen de jaarlijkse uitstoot van 47.000 kg CO2 in Westland
               door sluipverbruik
             </li>
-          </ul>
+          </ul> */}
         </div>
         {/* IMAGE CARDS */}
-        <div className="flex flex-wrap md:flex-row justify-center max-w-864 mx-auto mb-10 lg:mb-14">
+        <div className="flex flex-wrap md:flex-row justify-center max-w-864 mx-auto mb-10 lg:mb-14 md:mt-10">
           {imgCards.map((card, i) => (
             <ImageCard key={card.bottom} card={card} index={i} />
           ))}
@@ -97,8 +107,8 @@ export default function WestlandIndexPage() {
           {[
             {
               title: 'Groen groener groenst',
-              image: '/cow.png',
-              content: `We delen prijzen uit voor …………………….. (nader te bepalen)! Stuur jouw …… in en maak kans op …………. De vijf beste inzendingen vallen in de prijzen. Daag jij je buren uit?`,
+              image: '/garden.png',
+              content: `We delen prijzen uit voor in jouw tuin. Laat zien hoe groen jouw tuin is (geworden) door een foto naar ons te sturen en maak kans! De vijf beste inzendingen vallen in de prijzen. Daag jij je buren uit?`,
               submitPhotoName: 'Deel je foto',
               submitPhotoUrl: 'mailto:westland@collaction.org',
             },
@@ -160,7 +170,7 @@ export default function WestlandIndexPage() {
         >
           <div className="absolute h-full w-full rounded-none xs:rounded-1">
             <Image
-              src={CollActionTeamPic}
+              src={TomTomImg}
               alt="CollAction Team"
               layout="fill"
               objectFit="cover"
@@ -177,10 +187,10 @@ export default function WestlandIndexPage() {
 
           <div className="absolute bottom-0 left-0 right-0 mb-9 mx-auto text-center w-full px-5 xs:max-w-350 sm:max-w-400 lg:max-w-500">
             <h4 className="text-headline-lg-1 text-secondary mb-6">
-              The CollAction team
+              Wij luisteren naar jouw idee
             </h4>
             <p className="text-body-short-1 text-secondary">
-              Help us on our mission to make doing good fun & easy
+              Doe mee aan ons onderzoek en bepaal welke actie wij gaan doen
             </p>
           </div>
         </div>
@@ -209,16 +219,16 @@ type ImageCard = {
 
 const imgCards: ImageCard[] = [
   {
-    image: CO2Img,
+    image: Sluipverbruik,
     top: 'Bespaar jaarlijks',
     value: 280,
     bottom: 'Euro door sluipverbruik te verminderen',
   },
   {
-    image: AirplaneImg,
+    image: CO2Img,
     top: 'Gelijkwaardig aan',
-    value: 47,
-    bottom: 'Intercontinentale vluchten',
+    value: 47000,
+    bottom: 'kg CO2',
   },
 ];
 
