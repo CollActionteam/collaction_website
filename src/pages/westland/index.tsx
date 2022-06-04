@@ -11,9 +11,10 @@ import { useInView } from 'react-intersection-observer';
 import AirplaneImg from 'public/impact/airplane.jpeg';
 import CO2Img from 'public/impact/co2.jpeg';
 import CollActionLogoWithTextWhite from 'public/logo-white-small.png';
-
+import { PopupButton } from '@typeform/embed-react';
 // const whatsAppUrl = '#';
-const ikDoeMeeUrl = '#';
+// const ikDoeMeeUrl = '#';
+const formId = 'njdbt5';
 
 export default function WestlandIndexPage() {
   return (
@@ -189,9 +190,11 @@ export default function WestlandIndexPage() {
       <a
         className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 mb-0 w-72 shadow sticky bottom-7 inset-x-0 mx-auto z-40"
         style={{ marginTop: `calc(-3rem)` }}
-        href={ikDoeMeeUrl}
+        // href={ikDoeMeeUrl}
       >
-        Ik doe mee
+        <PopupButton id={formId} size={80}>
+          <button>Ik doe mee</button>
+        </PopupButton>
       </a>
     </>
   );
