@@ -19,6 +19,7 @@
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/line-clamp": "^0.3.0",
+    "@typeform/embed-react": "^1.16.0",
     "clsx": "^1.1.1",
     "cookies-next": "^2.0.3",
     "gray-matter": "^4.0.3",
