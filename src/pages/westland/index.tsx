@@ -3,7 +3,6 @@ import Image, { StaticImageData } from 'next/image';
 
 import TomTomImg from 'public/actions/tomtom.png';
 import WestlandBanner from 'public/WestlandGroenDoen.png';
-import WestlandBanner2 from 'public/westland.png';
 import PageSEO from 'src/components/PageSEO';
 import { WestlandCard } from 'src/components/WestlandCard';
 
@@ -30,7 +29,7 @@ export default function WestlandIndexPage() {
       <main className="p-5 pt-10 md:pt-11">
         <div className="text-center mx-auto max-w-350 sm:max-w-400 lg:max-w-500">
           <h1 className="text-headline-lg-1 text-secondary mt-7 mb-11">
-            Groen doen in Westland.
+            Groen doen in Westland
           </h1>
         </div>
         <div className="relative block w-full md:w-11/12 lg:w-208 mx-auto">
@@ -49,21 +48,20 @@ export default function WestlandIndexPage() {
           <h4 className="text-primary-400 mb-7">Doe mee</h4>
           <p className="mb-6">
             Schrijf je in via de “Ik doe mee” knop en geef op wat je wil doen om
-            energie te besparen deze zomer. Laat ons je meterstand weten zodat
-            wij kunnen kijken wat je bespaard hebt. Samen kunnen we Westland
-            groener maken! Kijk in onze WhatsApp groep voor tips en wie nog meer
-            meedoen aan deze actie. Wij rekenen uit wat de impact is die wij met
-            z’n allen hebben behaald en laten de resultaten hier zien.
+            energie te besparen deze zomer. Samen kunnen we Westland groener
+            maken. Kijk in onze WhatsApp groep voor tips en wie nog meer meedoen
+            aan deze actie. Wij rekenen uiteindelijk uit wat de impact is die
+            wij met z’n allen hebben behaald.
           </p>
         </div>
         <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-500 mt-10 md:mt-10">
           <h4 className="text-primary-400 mb-7">
-            Goed voor het milieu én je portemonnee
+            Goed voor het milieu en je portemonnee
           </h4>
           <p className="mb-6">
-            Door mee te doen met de besparingstips in deze actie kun je
-            honderden euro's op je (energie)jaarrekening besparen. Het leuke is
-            dat je dit ook echt bij kan houden met je energiemeter.
+            Door mee te doen met de actie energiebesparing in de zomer bespaar
+            je gemakkelijk honderden euros op je (energie)jaarrekening. Het
+            leuke is dat je dit ook echt bij kan houden met je energiemeter.
           </p>
           <p className="mb-10">
             Wij zorgen voor alle tips die je nodig hebt om een zo goed mogelijk
@@ -76,8 +74,8 @@ export default function WestlandIndexPage() {
           <p className="mb-9 md:mb-2">
             Hoeveel aandacht je eraan besteedt bepaal je helemaal zelf! Hoe meer
             opdrachten je uitvoert, hoe duurzamer/energiezuiniger jouw huis
-            wordt. Je focust je hier dan op gedurende een periode van 1 of 2
-            maanden. Ben je benieuwd wat voor soort opdrachten je kunt
+            wordt. Je focust je hier dan volledig op gedurende een periode van 1
+            of 2 maanden. Ben je benieuwd wat voor soort opdrachten je kunt
             verwachten? Een voorbeeld is het verminderen van je sluipverbruik.
             Door er slim mee om te gaan kan je besparing al snel oplopen!
           </p>
@@ -102,8 +100,8 @@ export default function WestlandIndexPage() {
         <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-500">
           <h4 className="text-primary-400 mb-7">Doe mee en win</h4>
           <p className="mb-9 md:mb-2">
-            Naast de "Ik doe mee" actie kun je op 2 manieren betrokken raken
-            door deze winacties!
+            Naast onze Ik doe mee kun je op 2 manieren meer betrokken raken! Op
+            de volgende 2 kaarten beschrijven we hoe.
           </p>
         </div>
 
@@ -113,7 +111,7 @@ export default function WestlandIndexPage() {
             {
               title: 'Groen groener groenst',
               image: '/garden.png',
-              content: `We delen prijzen uit voor in jouw tuin. Laat zien hoe groen jouw tuin is (geworden) door een foto naar ons te sturen en maak kans! De vijf leukste inzendingen vallen in de prijzen. Daag jij je buren uit?`,
+              content: `We delen prijzen uit voor in jouw tuin. Laat zien hoe groen jouw tuin is (geworden) door een foto naar ons te sturen en maak kans! De vijf beste inzendingen vallen in de prijzen. Daag jij je buren uit?`,
               submitPhotoName: 'Deel je foto',
               submitPhotoUrl: 'mailto:westland@collaction.org',
             },
@@ -122,8 +120,7 @@ export default function WestlandIndexPage() {
               image: '/whatsapp.png',
               content: `Doe mee in de Whatsapp-groep en deel via ons jouw tips en resultaten. In de groepsbeschrijving vertellen we je meer over hoe je kunt deelnemen!`,
               submitPhotoName: 'Word onderdeel',
-              submitPhotoUrl:
-                'https://chat.whatsapp.com/JqmtLofcRNPFwlglvCaaKf',
+              submitPhotoUrl: '#',
             },
           ].map(details => (
             <WestlandCard key={details.title} {...details} />
@@ -202,18 +199,6 @@ export default function WestlandIndexPage() {
         </div>
       </section>
 
-      <div className="relative block w-full md:w-11/12 lg:w-208 mx-auto">
-        <Image
-          priority
-          src={WestlandBanner2}
-          alt="westland banner"
-          className="rounded-1"
-          layout="responsive"
-          sizes="(max-width: 768px) 90vw, 830px"
-          placeholder="blur"
-        />
-      </div>
-
       <a
         className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 mb-0 w-72 shadow sticky bottom-7 inset-x-0 mx-auto z-40"
         style={{ marginTop: `calc(-3rem)` }}
@@ -243,7 +228,7 @@ const imgCards: ImageCard[] = [
     image: Sluipverbruik,
     top: 'Bespaar jaarlijks',
     value: 280,
-    bottom: 'euro door sluipverbruik te verminderen',
+    bottom: 'Euro door sluipverbruik te verminderen',
   },
   {
     image: CO2Img,
