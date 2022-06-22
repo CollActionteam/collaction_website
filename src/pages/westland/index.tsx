@@ -60,11 +60,11 @@ export default function WestlandIndexPage() {
         <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-500 mt-10 md:mt-11">
           <h4 className="text-primary-400 mb-7">Doe mee</h4>
           <p className="mb-6">
-            Samen werken we een maand aan jouw energieverbruik. Wij geven je
-            slimme, gemakkelijk inzetbare tips en jij voert ze uit. Doe precies
-            hoeveel je wilt doen; jouw huis, jouw regels. Je geeft je meterstand
-            voor en na die tijd door en wij berekenen voor je hoeveel je precies
-            hebt verbruikt. Deze maand:
+            Samen werken we een maand aan jouw energieverbruik. Wij geven je{' '}
+            <strong> slimme, gemakkelijk inzetbare tips</strong> en jij voert ze
+            uit. Doe precies hoeveel je wilt doen; jouw huis, jouw regels. Je
+            geeft je meterstand voor en na die tijd door en wij berekenen voor
+            je hoeveel je precies hebt verbruikt. Deze maand:
           </p>
           <ul style={{ listStyleType: 'disc' }} className="pl-7">
             <li className="mb-2">
