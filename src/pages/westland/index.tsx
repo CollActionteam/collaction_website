@@ -45,7 +45,7 @@ export default function WestlandIndexPage() {
           />
         </div>
 
-        <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-500 mt-10 md:mt-11">
+        {/* <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-500 mt-10 md:mt-11">
           <h4 className="text-primary-400 mb-7">Doe mee</h4>
           <p className="mb-6">
             Schrijf je in via de “Ik doe mee” knop en geef op wat je wil doen om
@@ -55,7 +55,45 @@ export default function WestlandIndexPage() {
             meedoen aan deze actie. Wij rekenen uit wat de impact is die wij met
             z’n allen hebben behaald en laten de resultaten hier zien.
           </p>
+        </div> */}
+
+        <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-500 mt-10 md:mt-11">
+          <h4 className="text-primary-400 mb-7">Doe mee</h4>
+          <p className="mb-6">
+            Samen werken we een maand aan jouw energieverbruik. Wij geven je
+            slimme, gemakkelijk inzetbare tips en jij voert ze uit. Doe precies
+            hoeveel je wilt doen; jouw huis, jouw regels. Je geeft je meterstand
+            voor en na die tijd door en wij berekenen voor je hoeveel je precies
+            hebt verbruikt. Deze maand:
+          </p>
+          <ul style={{ listStyleType: 'disc' }} className="pl-7">
+            <li className="mb-2">
+              Leer je honderden euro’s besparen op jaarbasis
+            </li>
+            <li className="mb-2">
+              Creëer je een milieubewuste routine in je huis
+            </li>
+            <li className="mb-6">
+              Werk je samen met je buren aan een groene toekomst voor Westland
+            </li>
+          </ul>
+          <p className="mb-6 last:mb-0">
+            Samen staan we sterk! Moedig je buren aan en schrijf je meteen in
+            via de "Ik doe mee" knop! Heb je nog vragen? Stel ze gerust via:{' '}
+            {
+              <a
+                className="text-collaction"
+                href="mailto:tom@collaction.org"
+                target="_blank"
+                rel="noreferrer"
+              >
+                tom@collaction.org
+              </a>
+            }
+            .
+          </p>
         </div>
+
         <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-500 mt-10 md:mt-10">
           <h4 className="text-primary-400 mb-7">
             Goed voor het milieu én je portemonnee
@@ -113,7 +151,7 @@ export default function WestlandIndexPage() {
             {
               title: 'Groen groener groenst',
               image: '/garden.png',
-              content: `We delen prijzen uit voor in jouw tuin. Laat zien hoe groen jouw tuin is (geworden) door een foto naar ons te sturen en maak kans! De vijf leukste inzendingen vallen in de prijzen. Daag jij je buren uit?`,
+              content: `We delen prijzen uit voor in jouw tuin. Laat zien hoe groen jouw tuin is (geworden) door een foto te mailen naar westland@collaction.org en maak kans! De vijf leukste inzendingen vallen in de prijzen. Daag jij je buren uit?`,
               submitPhotoName: 'Deel je foto',
               submitPhotoUrl: 'mailto:westland@collaction.org',
             },
@@ -196,7 +234,17 @@ export default function WestlandIndexPage() {
               Wij luisteren naar jouw idee
             </h4>
             <p className="text-body-short-1 text-secondary">
-              Doe mee aan ons onderzoek en bepaal welke actie wij gaan doen
+              Doe mee aan ons onderzoek en bepaal welke actie wij gaan doen{' '}
+              {
+                <a
+                  className="text-collaction"
+                  href="https://collaction.org/link2"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  (klik hier)
+                </a>
+              }
             </p>
           </div>
         </div>
