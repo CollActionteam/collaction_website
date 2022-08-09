@@ -73,8 +73,8 @@ export default function Footer() {
             </li>
             <li className="mb-5">NL20TRIO0391190008</li>
             <li className="mb-5 md:mb-0">
-              Hyacintenlaan 25 <br />
-              2015BA Haarlem
+              Uilenstede 26 <br />
+              1183AH Amstelveen
             </li>
           </ul>
         </div>

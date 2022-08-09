@@ -245,9 +245,9 @@ export default function Terms() {
           <p className="mb-6 last:mb-0">
             Stichting CollAction
             <br />
-            Hyacintenlaan 25
+            Uilenstede 26
             <br />
-            2015 BA Haarlem
+            1183AH Amstelveen
           </p>
         </div>
       </main>
