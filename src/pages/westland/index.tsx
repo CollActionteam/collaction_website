@@ -1,6 +1,10 @@
 import React from 'react';
 import Image, { StaticImageData } from 'next/image';
 
+import InfoCard from 'src/components/InfoCard';
+import AppLinkApple from 'src/components/AppLinkApple';
+import AppLinkGoogle from 'src/components/AppLinkGoogle';
+
 import TomTomImg from 'public/actions/tomtom.png';
 import WestlandBanner from 'public/WestlandGroenDoen.png';
 import WestlandBanner2 from 'public/westland.png';
@@ -249,6 +253,13 @@ export default function WestlandIndexPage() {
           </div>
         </div>
       </section>
+
+      <InfoCard isSecondaryBg title="Download de app" body="Doe met ons mee">
+        <div className="flex justify-center mb-6">
+          <AppLinkApple className="mr-4 sm:mr-5" />
+          <AppLinkGoogle />
+        </div>
+      </InfoCard>
 
       <div className="relative block w-full md:w-11/12 lg:w-208 mx-auto">
         <Image
