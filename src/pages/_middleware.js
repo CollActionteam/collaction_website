@@ -1,10 +1,12 @@
 import { NextResponse } from 'next/server';
-export async function middleware(req, ev) {
-  const { pathname } = req.nextUrl;
+
+export async function middleware(req) {
+  const { pathname, url } = req.nextUrl;
+  
   if (pathname == '/asml/impact') {
-    return NextResponse.redirect(new URL('/asml', request.url));
+    return NextResponse.redirect(new URL('/asml', url));
   } else if (pathname == '/impact') {
-    return NextResponse.redirect(new URL('/asml', request.url));
+    return NextResponse.redirect(new URL('/asml', url));
   } else if (pathname == '/link') {
     return NextResponse.redirect(
       'https://docs.google.com/forms/d/e/1FAIpQLSc1C-z_a9VkjJXWoSIQ9EmO5kV8qgF3nvuJH5YXKXcaTWQEJg/viewform?usp=sf_link'
