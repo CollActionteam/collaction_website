@@ -98,7 +98,7 @@ export default function WestlandIndexPage() {
         <InfoCard
           isSecondaryBg
           title="Download de app"
-          body="Maak samen impact"
+          body="Samen staan we sterk! Moedig je buren aan en download de app of schrijf je in via de 'Ik doe mee' knop"
         >
           <div className="flex justify-center mb-6">
             <AppLinkApple className="mr-4 sm:mr-5" />

@@ -22,7 +22,7 @@ export default function WestlandIndexPage() {
   return (
     <>
       <PageSEO
-        title="CollAction meets Westland | Make an impact together"
+        title="CollAction meets Uilenstede | The Big Uilenstede Clean Up"
         // description=""
       />
 
