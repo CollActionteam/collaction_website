@@ -2,7 +2,9 @@ import React from 'react';
 import Image, { StaticImageData } from 'next/image';
 
 import TomTomImg from 'public/actions/tomtom.png';
-import WestlandBanner2 from 'public/amstelveen.png';
+import Amstelveen from 'public/amstelveen.png';
+import Uilenstede_banner from 'public/uilenstede_banner.png';
+import Uilenstede_map from 'public/uilenstede_map.png';
 import PageSEO from 'src/components/PageSEO';
 
 import { useCountUp } from 'use-count-up';
@@ -11,7 +13,6 @@ import Sluipverbruik from 'public/actions/sluipverbruik.png';
 import CO2Img from 'public/impact/co2.jpeg';
 import CollActionLogoWithTextWhite from 'public/logo-white-small.png';
 
-import { PopupButton } from '@typeform/embed-react';
 const formId = 'nvzkdCMO';
 
 // const whatsAppUrl = '#';
@@ -28,20 +29,20 @@ export default function WestlandIndexPage() {
       <main className="p-5 pt-10 md:pt-11">
         <div className="text-center mx-auto max-w-350 sm:max-w-400 lg:max-w-500">
           <h1 className="text-primary-400 text-center mb-7">
-            The Big Clean Up
+            The Big Uilenstede Clean Up
           </h1>
         </div>
-        {/* <div className="relative block w-full md:w-11/12 lg:w-208 mx-auto">
+        <div className="relative block w-full md:w-11/12 lg:w-208 mx-auto">
           <Image
             priority
-            src={WestlandBanner}
+            src={Uilenstede_banner}
             alt="westland banner"
             className="rounded-1"
             layout="responsive"
             sizes="(max-width: 768px) 90vw, 830px"
             placeholder="blur"
           />
-        </div> */}
+        </div>
 
         {/* <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-500 mt-10 md:mt-11">
           <h4 className="text-primary-400 mb-7">Doe mee</h4>
@@ -93,12 +94,42 @@ export default function WestlandIndexPage() {
 
           <h4 className="text-primary-400 mb-7">Can I win anything?</h4>
           <p className="mb-6">
-            Yes! Prizes for the groups that collect the most points are listed
+            Yes! Prizes for the teams that collect the most points are listed
             below. You get these on top of the vouchers you already get for your
-            garbage! 100 vouchers AND 14 tickets for Thuisfront Festival at
-            September 23/24 (€238) 56 vouchers AND rent Uilenkatten speakers for
-            free (€50) 42 vouchers
+            garbage. NB: to be eligible for the vouchers, your team must have
+            collected at least the number of vouchers expressed in points.
           </p>
+
+          <ul style={{ listStyleType: 'decimal' }} className="pl-7">
+            <strong>
+              <li className="mb-2">
+                <strong>
+                  100 vouchers & 14 tickets for Thuisfront Festival & personal
+                  clinic at Sportcentrum VU
+                </strong>
+              </li>
+              <li className="mb-2">
+                <strong>
+                  42 vouchers & rent Uilenkatten speakers for free
+                </strong>
+              </li>
+              <li className="mb-6">
+                <strong> 14 vouchers</strong>
+              </li>
+            </strong>
+          </ul>
+        </div>
+
+        <div className="relative block w-full md:w-11/12 lg:w-208 mx-auto">
+          <Image
+            priority
+            src={Uilenstede_map}
+            alt="westland banner"
+            className="rounded-1"
+            layout="responsive"
+            sizes="(max-width: 768px) 90vw, 830px"
+            placeholder="blur"
+          />
         </div>
       </main>
 
@@ -127,10 +158,23 @@ export default function WestlandIndexPage() {
 
           <div className="absolute bottom-0 left-0 right-0 mb-9 mx-auto text-center w-full px-5 xs:max-w-350 sm:max-w-400 lg:max-w-500">
             <h4 className="text-headline-lg-1 text-secondary mb-6">
-              CollAction voor jouw project inzetten?
+              Want to use CollAction for your project?
             </h4>
             <p className="text-body-short-1 text-secondary">
-              Stuur ons een bericht met je voorstel
+              Do you have a collective action idea with which you'd like to make
+              collective impact? Do you think our platform can help your cause?
+              Send a message to{' '}
+              {
+                <a
+                  className="text-collaction"
+                  href="mailto:use@collaction.org"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  use@collaction.org
+                </a>
+              }{' '}
+              with your proposal
             </p>
           </div>
         </div>
@@ -139,7 +183,7 @@ export default function WestlandIndexPage() {
       <div className="relative block w-full md:w-11/12 lg:w-208 mx-auto">
         <Image
           priority
-          src={WestlandBanner2}
+          src={Amstelveen}
           alt="westland banner"
           className="rounded-1"
           layout="responsive"
@@ -147,7 +191,7 @@ export default function WestlandIndexPage() {
           placeholder="blur"
         />
       </div>
-
+      {/* 
       <a
         className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 mb-0 w-72 shadow sticky bottom-7 inset-x-0 mx-auto z-40"
         style={{ marginTop: `calc(-3rem)` }}
@@ -156,8 +200,8 @@ export default function WestlandIndexPage() {
         <PopupButton id={formId} size={80}>
           <button>Ik doe mee</button>
         </PopupButton>
-        {/* Ik doe mee */}
       </a>
+       */}
     </>
   );
 }
