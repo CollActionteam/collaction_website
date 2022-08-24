@@ -66,10 +66,10 @@ export default function Footer() {
           <h5 className="text-headline mb-5">Reach us</h5>
           <ul className="list-none">
             <li className="mb-5 md:mb-0">
-              <a href={`tel:${phone}`}>+316 40394005</a>
+              <a href={`tel:${phone}`}>+316 25351135</a>
             </li>
             <li className="mb-5 md:mb-0">
-              <a href={`mailto:${email}`}>contact@collaction.org</a>
+              <a href={`mailto:${email}`}>hello@collaction.org</a>
             </li>
             <li className="mb-5">NL20TRIO0391190008</li>
             <li className="mb-5 md:mb-0">

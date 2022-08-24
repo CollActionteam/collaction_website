@@ -6,7 +6,7 @@ import AppLinkApple from 'src/components/AppLinkApple';
 import AppLinkGoogle from 'src/components/AppLinkGoogle';
 
 import TomTomImg from 'public/actions/tomtom.png';
-import WestlandBanner from 'public/WestlandGroenDoen.png';
+import WestlandBanner from 'public/WestlandGroenDoen2.png';
 import WestlandBanner2 from 'public/westland.png';
 import PageSEO from 'src/components/PageSEO';
 import { WestlandCard } from 'src/components/WestlandCard';
@@ -64,24 +64,21 @@ export default function WestlandIndexPage() {
         <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-500 mt-10 md:mt-11">
           <h4 className="text-primary-400 mb-7">Doe mee</h4>
           <p className="mb-6">
-            Samen werken we een maand aan jouw energieverbruik. Wij geven je{' '}
-            <strong> slimme, gemakkelijk inzetbare tips</strong> en jij voert ze
-            uit. Doe precies hoeveel je wilt doen; jouw huis, jouw regels. Je
-            geeft je meterstand voor en na die tijd door en wij berekenen voor
-            je hoeveel je precies hebt verbruikt. Deze maand:
+            Samen werken we aan een groener Westland. Met verschillende acties
+            kun je het milieu besparen, en tegelijkertijd je portemonnee. In
+            deze eerste twee acties kun je
+            <strong> energie besparen in en rond je huis</strong> en kun je{' '}
+            <strong>
+              uitstoot verminderen door de fiets te nemen in plaats van de auto
+            </strong>
+            . Wij geven je <strong>slimme, gemakkelijk inzetbare tips </strong>
+            en jij voert ze, via onze app óf via onze website uit. Doe precies
+            hoeveel je wilt doen: jouw actie, jouw regels. Wij rekenen
+            uiteindelijk uit wat je hebt bespaard en laten dit zien op de
+            website.
           </p>
-          <ul style={{ listStyleType: 'disc' }} className="pl-7">
-            <li className="mb-2">
-              Leer je honderden euro’s besparen op jaarbasis
-            </li>
-            <li className="mb-2">
-              Creëer je een milieubewuste routine in je huis
-            </li>
-            <li className="mb-6">
-              Werk je samen met je buren aan een groene toekomst voor Westland
-            </li>
-          </ul>
-          <p className="mb-6 last:mb-0">
+
+          <p className="mb-6">
             Samen staan we sterk! Moedig je buren aan en schrijf je meteen in
             via de "Ik doe mee" knop! Heb je nog vragen? Stel ze gerust via:{' '}
             {
@@ -98,14 +95,25 @@ export default function WestlandIndexPage() {
           </p>
         </div>
 
+        <InfoCard
+          isSecondaryBg
+          title="Download de app"
+          body="Maak samen impact"
+        >
+          <div className="flex justify-center mb-6">
+            <AppLinkApple className="mr-4 sm:mr-5" />
+            <AppLinkGoogle />
+          </div>
+        </InfoCard>
+
         <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-500 mt-10 md:mt-10">
           <h4 className="text-primary-400 mb-7">
             Goed voor het milieu én je portemonnee
           </h4>
           <p className="mb-6">
             Door mee te doen met de besparingstips in deze actie kun je
-            honderden euro's op je (energie)jaarrekening besparen. Het leuke is
-            dat je dit ook echt bij kan houden met je energiemeter.
+            honderden euro's besparen. Het leuke is dat je dit ook echt bij kan
+            houden met je energiemeter en met je bespaarde kilometers.
           </p>
           <p className="mb-10">
             Wij zorgen voor alle tips die je nodig hebt om een zo goed mogelijk
@@ -114,14 +122,13 @@ export default function WestlandIndexPage() {
           </p>
         </div>
         <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-500 mt-10 md:mt-10">
-          <h4 className="text-primary-400 mb-7">Jouw huis, jouw regels</h4>
+          <h4 className="text-primary-400 mb-7">Jouw actie, jouw regels</h4>
           <p className="mb-9 md:mb-2">
             Hoeveel aandacht je eraan besteedt bepaal je helemaal zelf! Hoe meer
             opdrachten je uitvoert, hoe duurzamer/energiezuiniger jouw huis
             wordt. Je focust je hier dan op gedurende een periode van 1 of 2
             maanden. Ben je benieuwd wat voor soort opdrachten je kunt
-            verwachten? Een voorbeeld is het verminderen van je sluipverbruik.
-            Door er slim mee om te gaan kan je besparing al snel oplopen!
+            verwachten? Download de app en kijk welke actie je er kan uitvoeren.
           </p>
           {/* <ul style={{ listStyleType: 'decimal' }} className="pl-7">
             <li className="mb-2">
@@ -145,7 +152,8 @@ export default function WestlandIndexPage() {
           <h4 className="text-primary-400 mb-7">Doe mee en win</h4>
           <p className="mb-9 md:mb-2">
             Naast de "Ik doe mee" actie kun je op 2 manieren betrokken raken
-            door deze winacties!
+            door deze winacties! Win led-lampen of tuinverlichting op
+            zonne-energie!
           </p>
         </div>
 
@@ -253,13 +261,6 @@ export default function WestlandIndexPage() {
           </div>
         </div>
       </section>
-
-      <InfoCard isSecondaryBg title="Download de app" body="Doe met ons mee">
-        <div className="flex justify-center mb-6">
-          <AppLinkApple className="mr-4 sm:mr-5" />
-          <AppLinkGoogle />
-        </div>
-      </InfoCard>
 
       <div className="relative block w-full md:w-11/12 lg:w-208 mx-auto">
         <Image

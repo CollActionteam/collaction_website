@@ -28,8 +28,8 @@ export default function HomePage() {
 
         {/* SECOND CONTAINER */}
         <InfoCard
-          title="Choose a CrowdAction & make a change today"
-          body="We make doing good fun & easy"
+          title="Make a change today"
+          body="CollAction organizes monthly challenges to help you in creating more sustainable habits. We help you in reducing the waste you produce or in adopting a more sustainable diet."
           className="flex flex-col lg:flex-row lg:items-center"
         >
           <div className="lg:w-11/12 -mb-9">
@@ -39,8 +39,8 @@ export default function HomePage() {
 
         {/* THIRD CONTAINER */}
         <InfoCard
-          title="Participate at your own pace. Your challenge, your rules"
-          body="We make doing good fun & easy"
+          title="Your challenge, your rules"
+          body="Every contribution is a step in the right direction. You decide what level of commitment you feel comfortable with and you can track your progress in the CollAction app."
           className="flex flex-col lg:flex-row lg:items-center"
         >
           <div className="lg:w-full">
@@ -50,8 +50,8 @@ export default function HomePage() {
 
         {/* FOURTH CONTAINER */}
         <InfoCard
-          title="We channel many small individual actions towards the same cause"
-          body="We make doing good fun & easy"
+          title="See the impact we make together"
+          body="Alone we are a drop in the ocean – together we make waves. CollAction always shows you how much of an environmental impact all participants of a CrowdAction have made collectively."
           className="flex flex-col lg:flex-row lg:items-center"
         >
           <div className="lg:w-11/12 -mb-9">
@@ -60,10 +60,7 @@ export default function HomePage() {
         </InfoCard>
 
         {/* FIFTH CONTAINER */}
-        <InfoCard
-          isSecondaryBg
-          title="Our individual actions are a drop in the ocean. But together, we make waves!"
-        >
+        <InfoCard isSecondaryBg title="Download the app and join the wave!">
           <div className="flex justify-center mb-6">
             <AppLinkApple className="mr-4 sm:mr-5" />
             <AppLinkGoogle />
