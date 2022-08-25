@@ -5,7 +5,7 @@
   tags: ['voluntary', 'remote']
   location: Remote
   pay: Voluntary
-  contact: niklas@collaction.org
+  contact: join@collaction.org
   aboutYou: 
     - experience designing digital products (native apps and web)
     - strong aptitude for proportions and visual hierarchy
@@ -16,5 +16,4 @@
     - constantly trying to optimise the collaboration between design and the development team
     - not afraid to share your unfinished/premature work
     - you are a proactive person that likes to take initiative and is also comfortable with saying no
-
 ---

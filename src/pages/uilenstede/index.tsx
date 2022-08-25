@@ -27,8 +27,8 @@ export default function WestlandIndexPage() {
       />
 
       <main className="p-5 pt-10 md:pt-11">
-        <div className="text-center mx-auto max-w-350 sm:max-w-400 lg:max-w-500">
-          <h1 className="text-primary-400 text-center mb-7">
+        <div className="text-center mx-auto max-w-700 sm:max-w-400 lg:max-w-600">
+          <h1 className="text-collaction text-center mb-9">
             The Big Uilenstede Clean Up
           </h1>
         </div>
@@ -56,26 +56,30 @@ export default function WestlandIndexPage() {
           </p>
         </div> */}
 
-        <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-500 mt-10 md:mt-11">
-          <h4 className="text-primary-400 mb-7">What is the campaign?</h4>
+        <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-600 mt-10 md:mt-11">
+          <h4 className="text-collaction mb-2">Why should I participate?</h4>
           <p className="mb-6">
-            In September we’ll make the campus more enjoyable by doing a
-            start-of-the-year clean up! In the first 2 weeks, CollAction will
-            collect e-waste and bulk waste (grof afval) and you’ll get vouchers
-            in return! In the 2 weeks after, we will organize 2 events where
-            we’ll collect litter at Uilenstede to make our campus shine again!
+            <strong>
+              Get free drinks in return for a clean campus, eenheid and room!{' '}
+            </strong>
           </p>
 
-          <h4 className="text-primary-400 mb-7">
-            What kind of voucher will I get?
-          </h4>
+          <h4 className="text-collaction mb-2">What is the campaign?</h4>
           <p className="mb-6">
-            A voucher stands for one beer, soft drink or coffee at The Hangout
-            at Uilenstede, which can be redeemed anytime until October 31st
-            2022.
+            In September we’ll make the campus prettier by doing a
+            start-of-the-year clean up. In the first 2 weeks, you can hand in
+            your e-waste and bulk waste (grof afval) and you’ll get vouchers in
+            return. In the 2 weeks after, we’ll organize 2 litter collection
+            events to make our campus shine!
           </p>
 
-          <h4 className="text-primary-400 mb-7">How do I get vouchers?</h4>
+          <h5 className="text-collaction mb-2">What is a voucher?</h5>
+          <p className="mb-6">
+            A voucher stands for one beer, soft drink or coffee at Sportcentrum
+            VU, which can be redeemed anytime until October 31st 2022.
+          </p>
+
+          <h6 className="text-collaction mb-2">How do I get vouchers?</h6>
           <p className="mb-6">
             Together with your eenheid or another group formed by you, collect
             your e-waste and bulk waste and bring it to us. Each piece of
@@ -86,17 +90,19 @@ export default function WestlandIndexPage() {
             many points you get.
           </p>
 
-          <h4 className="text-primary-400 mb-7">Why should I participate?</h4>
+          <h4 className="text-collaction mb-2">
+            How many points do I get for my trash?
+          </h4>
           <p className="mb-6">
             Get free drinks in return for a clean campus, garden, eenheid and
             room!
           </p>
 
-          <h4 className="text-primary-400 mb-7">Can I win anything?</h4>
-          <p className="mb-6">
+          <h4 className="text-collaction mb-2">Can I win anything?</h4>
+          <p className="mb-2">
             Yes! Prizes for the teams that collect the most points are listed
             below. You get these on top of the vouchers you already get for your
-            garbage. NB: to be eligible for the vouchers, your team must have
+            garbage. To be eligible for the vouchers, your team must have
             collected at least the number of vouchers expressed in points.
           </p>
 
@@ -161,9 +167,8 @@ export default function WestlandIndexPage() {
               Want to use CollAction for your project?
             </h4>
             <p className="text-body-short-1 text-secondary">
-              Do you have a collective action idea with which you'd like to make
-              collective impact? Do you think our platform can help your cause?
-              Send a message to{' '}
+              Do you have a collective action idea? Can CollAction help? Send us
+              a message at{' '}
               {
                 <a
                   className="text-collaction"
@@ -173,8 +178,7 @@ export default function WestlandIndexPage() {
                 >
                   use@collaction.org
                 </a>
-              }{' '}
-              with your proposal
+              }
             </p>
           </div>
         </div>
