@@ -102,22 +102,14 @@ export default function WestlandIndexPage() {
           </p>
 
           <ul style={{ listStyleType: 'decimal' }} className="pl-7">
-            <strong>
-              <li className="mb-2">
-                <strong>
-                  100 vouchers & 14 tickets for Thuisfront Festival & personal
-                  clinic at Sportcentrum VU
-                </strong>
-              </li>
-              <li className="mb-2">
-                <strong>
-                  42 vouchers & rent Uilenkatten speakers for free
-                </strong>
-              </li>
-              <li className="mb-6">
-                <strong> 14 vouchers</strong>
-              </li>
-            </strong>
+            <li className="mb-2">
+              100 vouchers & 14 tickets for Thuisfront Festival & personal
+              clinic at Sportcentrum VU
+            </li>
+            <li className="mb-2">
+              42 vouchers & rent Uilenkatten speakers for free
+            </li>
+            <li className="mb-6">14 vouchers</li>
           </ul>
 
           <h4 className="text-collaction mb-4">When & Where</h4>
