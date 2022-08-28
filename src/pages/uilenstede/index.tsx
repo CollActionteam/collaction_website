@@ -164,7 +164,8 @@ export default function WestlandIndexPage() {
           fridge, freezer, television, monitor, microwave, oven
           <h6 className="text-body mt-4">3 points</h6>
           camera, playstation, iron, tosti device, printer, scanner,
-          motherboard, radio, cd player, mp3 player, stereo, answering machine
+          motherboard, radio, cd player, mp3 player, sound system, answering
+          machine
           <h6 className="text-body mt-4">1 point</h6>5 cables/earplugs,
           keyboard, mouse, kettle, powerbank, 10 batteries, 10 lamps, clock,
           torch, calculator
