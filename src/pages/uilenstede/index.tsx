@@ -2,7 +2,7 @@ import React from 'react';
 import Image, { StaticImageData } from 'next/image';
 
 import TomTomImg from 'public/actions/tomtom.png';
-import Amstelveen from 'public/uilenstede_collaboration.png';
+import Collaboration from 'public/uilenstede_collaboration.png';
 import Uilenstede_banner from 'public/uilenstede_banner.jpg';
 import Uilenstede_map from 'public/uilenstede_map.png';
 import PageSEO from 'src/components/PageSEO';
@@ -12,8 +12,6 @@ import { useInView } from 'react-intersection-observer';
 import Sluipverbruik from 'public/actions/sluipverbruik.png';
 import CO2Img from 'public/impact/co2.jpeg';
 import CollActionLogoWithTextWhite from 'public/logo-white-small.png';
-
-const formId = 'nvzkdCMO';
 
 // const whatsAppUrl = '#';
 // const ikDoeMeeUrl = '#';
@@ -221,7 +219,7 @@ export default function WestlandIndexPage() {
       <div className="relative block w-full md:w-11/12 lg:w-208 mb-12 mx-auto">
         <Image
           priority
-          src={Amstelveen}
+          src={Collaboration}
           alt="westland banner"
           className="rounded-1"
           layout="responsive"
