@@ -378,6 +378,32 @@ export default function UilenstedeIndexPage() {
           />
         </div>
       </section>
+<<<<<<< HEAD
+=======
+
+      <div className="relative block w-full md:w-11/12 lg:w-208 mb-12 mx-auto">
+        <Image
+          priority
+          src={Collaboration}
+          alt="westland banner"
+          className="rounded-1"
+          layout="responsive"
+          sizes="(max-width: 768px) 90vw, 830px"
+          placeholder="blur"
+        />
+      </div>
+      {/* 
+      <a
+        className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 mb-0 w-72 shadow sticky bottom-7 inset-x-0 mx-auto z-40"
+        style={{ marginTop: `calc(-3rem)` }}
+        // href={ikDoeMeeUrl}
+      >
+        <PopupButton id={formId} size={80}>
+          <button>Ik doe mee</button>
+        </PopupButton>
+      </a>
+       */}
+>>>>>>> 18afe72 (rename picture)
     </>
   );
 }
