@@ -20,7 +20,7 @@ export default function InfoCard({
       className={clsx(
         isSecondaryBg ? 'bg-collaction' : 'bg-primary-0',
         'p-6 mx-auto rounded-1 text-center',
-        'w-full md:w-3/4 max-w-350 sm:max-w-400 lg:max-w-864',
+        'w-full md:w-3/4 max-w-350 sm:max-w-400 lg:max-w-600',
         'mb-6',
         className
       )}

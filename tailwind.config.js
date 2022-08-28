@@ -55,7 +55,7 @@ module.exports = {
         button: ['15px', '20px'],
         body: ['17px', '26px'],
         headline: ['17px', '22px'],
-        'title-2': ['22px', '28px'],
+        'title-2': ['18px', '22px'],
         'title-1': ['28px', '34px'],
         'title-lg': ['40px', '41px'],
         featured: ['80px', '80px'],

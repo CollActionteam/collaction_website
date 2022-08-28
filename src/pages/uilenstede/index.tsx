@@ -2,8 +2,8 @@ import React from 'react';
 import Image, { StaticImageData } from 'next/image';
 
 import TomTomImg from 'public/actions/tomtom.png';
-import Amstelveen from 'public/amstelveen.png';
-import Uilenstede_banner from 'public/uilenstede_banner.png';
+import Amstelveen from 'public/uilenstede_collaboration.png';
+import Uilenstede_banner from 'public/uilenstede_banner.jpg';
 import Uilenstede_map from 'public/uilenstede_map.png';
 import PageSEO from 'src/components/PageSEO';
 
@@ -26,9 +26,9 @@ export default function WestlandIndexPage() {
         // description=""
       />
 
-      <main className="p-5 pt-10 md:pt-11">
+      <main className="p-5 md:pt-8">
         <div className="text-center mx-auto max-w-700 sm:max-w-400 lg:max-w-600">
-          <h1 className="text-collaction text-center mb-9">
+          <h1 className="text-collaction text-center mb-8">
             The Big Uilenstede Clean Up
           </h1>
         </div>
@@ -56,54 +56,49 @@ export default function WestlandIndexPage() {
           </p>
         </div> */}
 
-        <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-600 mt-10 md:mt-11">
-          <h4 className="text-collaction mb-2">Why should I participate?</h4>
+        <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-600 mt-10 md:mt-8">
+          <h4 className="text-collaction mb-2">Why participate?</h4>
           <p className="mb-6">
             <strong>
-              Get free drinks in return for a clean campus, eenheid and room!{' '}
-            </strong>
+              Free drinks in return for a clean room, eenheid and campus!
+            </strong>{' '}
+            So get your <i>eenheid </i> together, bring us your waste and enjoy
+            drinks @ Sportcentrum VU afterwards!
           </p>
 
-          <h4 className="text-collaction mb-2">What is the campaign?</h4>
+          <h4 className="text-collaction mb-2">What's the campaign?</h4>
           <p className="mb-6">
             In September we’ll make the campus prettier by doing a
-            start-of-the-year clean up. In the first 2 weeks, you can hand in
-            your e-waste and bulk waste (grof afval) and you’ll get vouchers in
-            return. In the 2 weeks after, we’ll organize 2 litter collection
-            events to make our campus shine!
+            start-of-the-year clean up. From September 13-16 you can hand in
+            your electronic and bulk waste <i>(grof afval)</i> at the red dot in
+            return for vouchers. On September 20 & 27 you can join us to collect
+            litter
+            <i> (zwerfafval)</i> around the campus to make it shine again!
           </p>
 
-          <h5 className="text-collaction mb-2">What is a voucher?</h5>
+          <h4 className="text-collaction mb-2">What's a voucher?</h4>
           <p className="mb-6">
-            A voucher stands for one beer, soft drink or coffee at Sportcentrum
-            VU, which can be redeemed anytime until October 31st 2022.
+            A voucher equals one beer, soft drink or coffee at Sportcentrum VU,
+            which can be redeemed anytime until October 31st 2022.
           </p>
 
-          <h6 className="text-collaction mb-2">How do I get vouchers?</h6>
+          <h4 className="text-collaction mb-2">How to get vouchers?</h4>
           <p className="mb-6">
             Together with your eenheid or another group formed by you, collect
             your e-waste and bulk waste and bring it to us. Each piece of
-            garbage stands for a number of points. For each 5 points you hand
-            in, you get 1 voucher! See the back of this paper for a conversion
-            list. NB: is your garbage not there? You can still get points for
-            it! Send us a Whatsapp or come to our stand and we’ll tell you how
-            many points you get.
+            garbage equals a number of points. For each 5 points you hand in,
+            you get 1 voucher! Check out the conversion list below to find out
+            how many vouchers you'll get. NB: is your garbage not there? You
+            could still get points for it! Send us a Whatsapp or come to our
+            stand and we'll tell if you're eligible.
           </p>
 
-          <h4 className="text-collaction mb-2">
-            How many points do I get for my trash?
-          </h4>
-          <p className="mb-6">
-            Get free drinks in return for a clean campus, garden, eenheid and
-            room!
-          </p>
-
-          <h4 className="text-collaction mb-2">Can I win anything?</h4>
+          <h4 className="text-collaction mb-2">Prizes</h4>
           <p className="mb-2">
-            Yes! Prizes for the teams that collect the most points are listed
-            below. You get these on top of the vouchers you already get for your
-            garbage. To be eligible for the vouchers, your team must have
-            collected at least the number of vouchers expressed in points.
+            For the teams that collect the most points, prizes are listed below.
+            You get these on top of the vouchers you already received. To be
+            eligible for the vouchers, your team must have collected at least
+            the number of vouchers expressed in points.
           </p>
 
           <ul style={{ listStyleType: 'decimal' }} className="pl-7">
@@ -124,9 +119,23 @@ export default function WestlandIndexPage() {
               </li>
             </strong>
           </ul>
+
+          <h4 className="text-collaction mb-4">When & Where</h4>
+          <h6 className="text-collaction mb-2">Electronic & Bulk waste</h6>
+          <p className="mb-4">
+            Come by with your electronic and bulk waste on{' '}
+            <strong>September 13, 14, 15 & 16 between 13:00 - 15:00 </strong> at
+            the red dot and collect your vouchers!
+          </p>
+          <h6 className="text-collaction mb-2">Litter</h6>
+          <p className="mb-8">
+            Join us to collect litter around the campus on{' '}
+            <strong>September 20 & 27 between 15:00 - 17:00 </strong> at the red
+            dot. Afterwards you get a drink & snacks from us @ Sportcentrum VU!
+          </p>
         </div>
 
-        <div className="relative block w-full md:w-11/12 lg:w-208 mx-auto">
+        <div className="relative block w-full md:w-11/12 lsm:max-w-600 lg:max-w-600 mx-auto">
           <Image
             priority
             src={Uilenstede_map}
@@ -137,12 +146,45 @@ export default function WestlandIndexPage() {
             placeholder="blur"
           />
         </div>
+
+        <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-600 mt-10 md:mt-8 mb-6">
+          <h4 className="text-collaction mb-4">Conversion list</h4>
+          <h6 className="text-collaction mb-2">Bulk waste</h6>
+          <p className="mb-4">
+            Most garbage that is too big for your waste bin, very heavy, or
+            both, is eligible as bulk waste. For example, couches, chairs, beds
+            & mattresses. Depending on the size and weight of your bulk waste
+            we'll determine the number of points you'll receive at the spot. So
+            get your <i>eenheid </i> together, bring us your old furniture from
+            the garden or common room, and enjoy drinks @ Sportcentrum VU
+            afterwards!
+          </p>
+          <h6 className="text-collaction mb-2">Electronic waste</h6>
+          <p className="mb-4">
+            Electronic waste encompasses all clean, empty devices that have a
+            plug or run on batteries. We've outlined below how many points you
+            get for your device. Is your device qualified as e-waste but not
+            listed below? Don't worry: just send us a Whatsapp message or come
+            by and we'll award you points. Note that batteries must be removed
+            in order to get points.
+          </p>
+          <h6 className="text-body">10 points</h6>
+          smartphone, laptop
+          <h6 className="text-body mt-4">5 points</h6>
+          fridge, freezer, television, monitor, microwave, oven
+          <h6 className="text-body mt-4">3 points</h6>
+          camera, playstation, iron, tosti device, printer, scanner,
+          motherboard, radio, cd player, mp3 player, stereo, answering machine
+          <h6 className="text-body mt-4">1 point</h6>5 cables/earplugs,
+          keyboard, mouse, kettle, powerbank, 10 batteries, 10 lamps, clock,
+          torch, calculator
+        </div>
       </main>
 
       {/* COLLACTION TEAM IMAGE */}
       <section className="pb-11">
         <div
-          className="relative text-center mx-auto xs:max-w-350 sm:max-w-400 lg:max-w-500 rounded-none xs:rounded-1"
+          className="relative text-center mx-auto xs:max-w-350 sm:max-w-400 lg:max-w-600 rounded-none xs:rounded-1"
           style={{ height: 450 }}
         >
           <div className="absolute h-full w-full rounded-none xs:rounded-1">
@@ -162,13 +204,13 @@ export default function WestlandIndexPage() {
             }}
           />
 
-          <div className="absolute bottom-0 left-0 right-0 mb-9 mx-auto text-center w-full px-5 xs:max-w-350 sm:max-w-400 lg:max-w-500">
+          <div className="absolute bottom-0 left-0 right-0 mb-9 mx-auto text-center w-full px-5 xs:max-w-350 sm:max-w-400 lg:max-w-600">
             <h4 className="text-headline-lg-1 text-secondary mb-6">
               Want to use CollAction for your project?
             </h4>
             <p className="text-body-short-1 text-secondary">
-              Do you have a collective action idea? Can CollAction help? Send us
-              a message at{' '}
+              Do you have an initiative for collective action and would you like
+              to reach a larger public? Send us a message at{' '}
               {
                 <a
                   className="text-collaction"
@@ -184,7 +226,7 @@ export default function WestlandIndexPage() {
         </div>
       </section>
 
-      <div className="relative block w-full md:w-11/12 lg:w-208 mx-auto">
+      <div className="relative block w-full md:w-11/12 lg:w-208 mb-12 mx-auto">
         <Image
           priority
           src={Amstelveen}
