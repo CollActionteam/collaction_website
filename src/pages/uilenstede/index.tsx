@@ -61,7 +61,7 @@ export default function WestlandIndexPage() {
               Free drinks in return for a clean room, eenheid and campus!
             </strong>{' '}
             So get your <i>eenheid </i> together, bring us your waste and enjoy
-            drinks @ Sportcentrum VU afterwards!
+            drinks @ Sportcentrum VU!
           </p>
 
           <h4 className="text-collaction mb-2">What's the campaign?</h4>
