@@ -27,7 +27,7 @@ export default function WestlandIndexPage() {
       <main className="p-5 md:pt-8">
         <div className="text-center mx-auto max-w-700 sm:max-w-400 lg:max-w-600">
           <h1 className="text-collaction text-center mb-8">
-            The Big Uilenstede Clean Up
+            The Big Uilenstede Cleanup
           </h1>
         </div>
         <div className="relative block w-full md:w-11/12 lg:w-208 mx-auto">
@@ -54,8 +54,9 @@ export default function WestlandIndexPage() {
           </p>
         </div> */}
 
-        <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-600 mt-10 md:mt-8">
-          <h4 className="text-collaction mb-2">Why participate?</h4>
+        <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-600 ">
+          Photographer: Isis Greven
+          <h4 className="text-collaction mt-8 mb-2">Why participate?</h4>
           <p className="mb-6">
             <strong>
               Free drinks in return for a clean room, eenheid and campus!
@@ -63,23 +64,20 @@ export default function WestlandIndexPage() {
             So get your <i>eenheid </i> together, bring us your waste and enjoy
             drinks @ Sportcentrum VU!
           </p>
-
           <h4 className="text-collaction mb-2">What's the campaign?</h4>
           <p className="mb-6">
             In September we’ll make the campus prettier by doing a
             start-of-the-year clean up. From September 13-16 you can hand in
             your electronic and bulk waste <i>(grof afval)</i> at the red dot in
-            return for vouchers. On September 20 & 27 you can join us to collect
-            litter
+            return for vouchers. On September 17, 20 & 27 you can join us to
+            collect litter
             <i> (zwerfafval)</i> around the campus to make it shine again!
           </p>
-
           <h4 className="text-collaction mb-2">What's a voucher?</h4>
           <p className="mb-6">
             A voucher equals one beer, soft drink or coffee at Sportcentrum VU,
             which can be redeemed anytime until October 31st 2022.
           </p>
-
           <h4 className="text-collaction mb-2">How to get vouchers?</h4>
           <p className="mb-6">
             Together with your eenheid or another group formed by you, collect
@@ -90,7 +88,15 @@ export default function WestlandIndexPage() {
             could still get points for it! Send us a Whatsapp or come to our
             stand and we'll tell if you're eligible.
           </p>
-
+          <h4 className="text-collaction mb-2">How can I help?</h4>
+          <p className="mb-6">
+            Want to help make our campus prettier? That’s possible! You can
+            already do so by sharing the word, posting on social media and
+            showing up at our stand. Would you like to do more? Want to meet
+            neighbours that also like to do a bit extra? Send us a Whatsapp
+            message and tell us why you’d like to be involved: power to the
+            crowd!
+          </p>
           <h4 className="text-collaction mb-2">Prizes</h4>
           <p className="mb-2">
             For the teams that collect the most points, prizes are listed below.
@@ -98,7 +104,6 @@ export default function WestlandIndexPage() {
             eligible for the vouchers, your team must have collected at least
             the number of vouchers expressed in points.
           </p>
-
           <ul style={{ listStyleType: 'decimal' }} className="pl-7">
             <li className="mb-2">
               100 vouchers & 14 tickets for Thuisfront Festival & personal
@@ -109,10 +114,9 @@ export default function WestlandIndexPage() {
             </li>
             <li className="mb-6">14 vouchers</li>
           </ul>
-
           <h4 className="text-collaction mb-4">When & Where</h4>
           <h6 className="text-collaction mb-2">Electronic & Bulk waste</h6>
-          <p className="mb-4">
+          <p className="mb-6">
             Come by with your electronic and bulk waste on{' '}
             <strong>September 13, 14, 15 & 16 between 13:00 - 15:00 </strong> at
             the red dot and collect your vouchers!
@@ -120,8 +124,24 @@ export default function WestlandIndexPage() {
           <h6 className="text-collaction mb-2">Litter</h6>
           <p className="mb-8">
             Join us to collect litter around the campus on{' '}
-            <strong>September 20 & 27 between 15:00 - 17:00 </strong> at the red
-            dot. Afterwards you get a drink & snacks from us @ Sportcentrum VU!
+            <strong>
+              {' '}
+              <ul style={{ listStyleType: 'disc' }} className="pl-7">
+                <li className="mb-2">September 17 between 10:30 - 12:00</li>
+                <li className="mb-2">
+                  September 20 & 27 between 15:00 - 17:00
+                </li>
+              </ul>
+            </strong>
+            <a
+              className="text-collaction"
+              href="https://goo.gl/maps/kNan2DxwBtWHhrWv7"
+              target="_blank"
+              rel="noreferrer"
+            >
+              at the red dot.
+            </a>{' '}
+            Afterwards you get a free drink & snacks @ Sportcentrum VU!
           </p>
         </div>
 
@@ -140,7 +160,7 @@ export default function WestlandIndexPage() {
         <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-600 mt-10 md:mt-8 mb-6">
           <h4 className="text-collaction mb-4">Conversion list</h4>
           <h6 className="text-collaction mb-2">Bulk waste</h6>
-          <p className="mb-4">
+          <p className="mb-6">
             Most garbage that is too big for your waste bin, very heavy, or
             both, is eligible as bulk waste. For example, couches, chairs, beds
             & mattresses. Depending on the size and weight of your bulk waste
@@ -158,22 +178,56 @@ export default function WestlandIndexPage() {
             by and we'll award you points. Note that batteries must be removed
             in order to get points.
           </p>
-          <h6 className="text-body">10 points</h6>
+          <h6 className="text-body mt-4">7 points</h6>
           smartphone, laptop
           <h6 className="text-body mt-4">5 points</h6>
           fridge, freezer, television, monitor, microwave, oven
           <h6 className="text-body mt-4">3 points</h6>
           camera, playstation, iron, tosti device, printer, scanner,
           motherboard, radio, cd player, mp3 player, sound system, answering
-          machine
+          machine, regular phone, electric toothbrush
           <h6 className="text-body mt-4">1 point</h6>5 cables/earplugs,
           keyboard, mouse, kettle, powerbank, 10 batteries, 10 lamps, clock,
-          torch, calculator
+          torch, calculator, fohn
         </div>
       </main>
 
       {/* COLLACTION TEAM IMAGE */}
       <section className="pb-11">
+        <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-600 mb-6">
+          <h4 className="text-collaction mb-4">Did you know</h4>
+          <ul style={{ listStyleType: 'disc' }} className="pl-7">
+            <li className="mb-2">
+              1kg of gold can be extracted from 50,000 mobile phones. There's 7
+              million old mobile phones lying around in Dutch drawers, which
+              amounts to 140kg of gold{' '}
+            </li>
+            <li className="mb-2">
+              Making one can from raw materials uses the same amount of energy
+              that it takes to recycle 20 cans. There's no limit to the amount
+              of times an aluminium can can be recycled{' '}
+            </li>
+            <li className="mb-2">
+              Dutch people throw away 120kgs of plastic every year{' '}
+            </li>
+            <li className="mb-2">
+              During 2020, more than 100 billion tonnes of raw materials were
+              extracted from the Earth. 70% of all 2020 greenhouse gas emissions
+              comes from extraction to end use of these materials.
+            </li>
+          </ul>
+          Would you like to add something to this list? Send us a message at{' '}
+          <a
+            className="text-collaction"
+            href="mailto:tom@collaction.org"
+            target="_blank"
+            rel="noreferrer"
+          >
+            tom@collaction.org
+          </a>
+          .
+        </div>
+
         <div
           className="relative text-center mx-auto xs:max-w-350 sm:max-w-400 lg:max-w-600 rounded-none xs:rounded-1"
           style={{ height: 450 }}
@@ -221,7 +275,7 @@ export default function WestlandIndexPage() {
         <Image
           priority
           src={Collaboration}
-          alt="westland banner"
+          alt="uilenstede banner"
           className="rounded-1"
           layout="responsive"
           sizes="(max-width: 768px) 90vw, 830px"
