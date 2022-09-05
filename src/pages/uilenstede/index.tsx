@@ -118,30 +118,57 @@ export default function WestlandIndexPage() {
           <h6 className="text-collaction mb-2">Electronic & Bulk waste</h6>
           <p className="mb-6">
             Come by with your electronic and bulk waste on{' '}
-            <strong>September 13, 14, 15 & 16 between 13:00 - 15:00 </strong> at
-            the red dot and collect your vouchers!
-          </p>
-          <h6 className="text-collaction mb-2">Litter</h6>
-          <p className="mb-8">
-            Join us to collect litter around the campus on{' '}
-            <strong>
-              {' '}
-              <ul style={{ listStyleType: 'disc' }} className="pl-7">
-                <li className="mb-2">September 17 between 10:30 - 12:00</li>
-                <li className="mb-2">
-                  September 20 & 27 between 15:00 - 17:00
-                </li>
-              </ul>
-            </strong>
+            <strong>September 13, 14, 15 & 16 between 13:00 - 15:00 </strong>
+            {'@ '}
             <a
               className="text-collaction"
               href="https://goo.gl/maps/kNan2DxwBtWHhrWv7"
               target="_blank"
               rel="noreferrer"
             >
-              at the red dot.
-            </a>{' '}
+              {' '}
+              the red dot{' '}
+            </a>
+            and collect your vouchers!
+          </p>
+          <h6 className="text-collaction mb-2">Litter</h6>
+          <p className="mb-4">
+            Join us to collect litter around the campus on{' '}
+            <strong>
+              {' '}
+              <ul style={{ listStyleType: 'disc' }} className="pl-7">
+                <li className="mb-2">
+                  September 17 between 10:30 - 12:30 @ Sportcentrum VU.*
+                </li>
+                <li className="mb-2">
+                  September 20 & 27 between 15:00 - 17:00 @
+                  <a
+                    className="text-collaction"
+                    href="https://goo.gl/maps/kNan2DxwBtWHhrWv7"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {' '}
+                    the red dot
+                  </a>
+                  {'. '}
+                </li>
+              </ul>
+            </strong>
             Afterwards you get a free drink & snacks @ Sportcentrum VU!
+          </p>
+          <p className="mb-8">
+            *September 17 is
+            <a
+              className="text-collaction"
+              href="https://www.nationalcleanupday.org/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {' '}
+              National CleanUp Day
+            </a>
+            , so <strong> GroenLinks Amstelveen</strong> joins
           </p>
         </div>
 
@@ -198,6 +225,9 @@ export default function WestlandIndexPage() {
           <h4 className="text-collaction mb-4">Did you know</h4>
           <ul style={{ listStyleType: 'disc' }} className="pl-7">
             <li className="mb-2">
+              Dutch people throw away 120kg of plastic every year{' '}
+            </li>
+            <li className="mb-2">
               1kg of gold can be extracted from 50,000 mobile phones. There's 7
               million old mobile phones lying around in Dutch drawers, which
               amounts to 140kg of gold{' '}
@@ -207,13 +237,11 @@ export default function WestlandIndexPage() {
               that it takes to recycle 20 cans. There's no limit to the amount
               of times an aluminium can can be recycled{' '}
             </li>
-            <li className="mb-2">
-              Dutch people throw away 120kgs of plastic every year{' '}
-            </li>
+
             <li className="mb-2">
               During 2020, more than 100 billion tonnes of raw materials were
               extracted from the Earth. 70% of all 2020 greenhouse gas emissions
-              comes from extraction to end use of these materials.
+              comes from extraction to end use of these materials
             </li>
           </ul>
           Would you like to add something to this list? Send us a message at{' '}
