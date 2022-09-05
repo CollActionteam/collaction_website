@@ -190,6 +190,19 @@ export default function UilenstedeIndexPage() {
             </a>
             .
           </p>
+          <p className="mb-8">
+            *September 17 is
+            <a
+              className="text-collaction"
+              href="https://www.nationalcleanupday.org/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {' '}
+              National CleanUp Day
+            </a>
+            , so <strong> GroenLinks Amstelveen</strong> joins
+          </p>
         </div>
 
         <div className="relative block w-full md:w-11/12 lsm:max-w-600 lg:max-w-600 mx-auto mt-6 mb-6">
