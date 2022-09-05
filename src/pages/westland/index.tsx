@@ -27,7 +27,7 @@ export default function WestlandIndexPage() {
   return (
     <>
       <PageSEO
-        title="CollAction meets Westland | Make an impact together"
+        title="CollAction meets Westland | Groen doen in Westland"
         // description=""
       />
 
