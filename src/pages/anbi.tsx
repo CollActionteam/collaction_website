@@ -41,10 +41,20 @@ export default function Impact() {
               collective action problems
             </a>
             . We do so by collaborating with like minded organisations to bring
-            positive change. The board of CollAction comprises of Ron van den
-            Akker, Spencer Heijnen, Tana Viviers and Tom Siebring. The board
-            members are volunteers and are not entitled to any financial
-            compensation.
+            positive change. The board of CollAction comprises of Tom Siebring
+            and Tana Viviers. The board members are volunteers and are not
+            entitled to any financial compensation. CollAction's financial
+            statement of 2021 can be found
+            <a
+              href="https://drive.google.com/file/d/1T1vyi1oP79NY_V0HuauL3DJnK8tVg3Zl/view?usp=sharing"
+              className="text-collaction"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {' '}
+              here
+            </a>
+            .
           </p>
         </div>
       </main>
