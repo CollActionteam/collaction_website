@@ -274,6 +274,16 @@ export default function WestlandIndexPage() {
               extracted from the Earth. 70% of all 2020 greenhouse gas emissions
               comes from extraction to end use of these materials
             </li>
+            <li className="mb-2">
+              <a
+                className="text-collaction"
+                href="https://ewasterace.nl/filmmateriaal"
+                target="_blank"
+                rel="noreferrer"
+              >
+                facts & videos by E-WASTE RACE (Dutch)
+              </a>
+            </li>
           </ul>
           Would you like to add something to this list? Send us a message at{' '}
           <a
