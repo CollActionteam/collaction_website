@@ -68,8 +68,8 @@ export default function WestlandIndexPage() {
           <p className="mb-6">
             In September we’ll make the campus prettier by doing a
             start-of-the-year clean up. From September 13-16 you can hand in
-            your electronic and bulk waste <i>(grof afval)</i> at the red dot in
-            return for vouchers. On September 17, 20 & 27 you can join us to
+            your electronic and bulk waste <i>(grof afval)</i> at the red circle
+            in return for vouchers. On September 17, 20 & 27 you can join us to
             collect litter
             <i> (zwerfafval)</i> around the campus to make it shine again!
           </p>
@@ -99,15 +99,15 @@ export default function WestlandIndexPage() {
           </p>
           <h4 className="text-collaction mb-2">Prizes</h4>
           <p className="mb-2">
-            For the teams that collect the most points, prizes are listed below.
-            You get these on top of the vouchers you already received. To be
-            eligible for the vouchers, your team must have collected at least
-            the number of vouchers expressed in points.
+            For the teams that collect the most points between 13-16 September,
+            prizes are listed below. You get these on top of the vouchers you
+            already received. To be eligible for the vouchers, your team must
+            have collected at least the number of vouchers expressed in points.
           </p>
           <ul style={{ listStyleType: 'decimal' }} className="pl-7">
             <li className="mb-2">
-              100 vouchers & 14 tickets for Thuisfront Festival & personal
-              clinic at Sportcentrum VU
+              <strong>100 vouchers & 14 tickets for Thuisfront Festival</strong>{' '}
+              & personal clinic at Sportcentrum VU
             </li>
             <li className="mb-2">
               42 vouchers & rent Uilenkatten speakers for free
@@ -127,35 +127,33 @@ export default function WestlandIndexPage() {
               rel="noreferrer"
             >
               {' '}
-              the red dot{' '}
+              the red circle{' '}
             </a>
             and collect your vouchers!
           </p>
           <h6 className="text-collaction mb-2">Litter</h6>
           <p className="mb-4">
             Join us to collect litter around the campus on{' '}
-            <strong>
-              {' '}
-              <ul style={{ listStyleType: 'disc' }} className="pl-7">
-                <li className="mb-2">
-                  September 17 between 10:30 - 12:30 @ Sportcentrum VU.*
-                </li>
-                <li className="mb-2">
-                  September 20 & 27 between 15:00 - 17:00 @
-                  <a
-                    className="text-collaction"
-                    href="https://goo.gl/maps/kNan2DxwBtWHhrWv7"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {' '}
-                    the red dot
-                  </a>
-                  {'. '}
-                </li>
-              </ul>
-            </strong>
-            Afterwards you get a free drink & snacks @ Sportcentrum VU!
+            <ul style={{ listStyleType: 'disc' }} className="pl-7">
+              <li className="mb-2">
+                <strong>September 17 between 10:30 - 12:30</strong> @
+                Sportcentrum VU.*
+              </li>
+              <li className="mb-2">
+                <strong>September 20 & 27 between 15:00 - 17:00 </strong>@
+                <a
+                  className="text-collaction"
+                  href="https://goo.gl/maps/kNan2DxwBtWHhrWv7"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {' '}
+                  the red circle
+                </a>
+                {'. '}
+              </li>
+            </ul>
+            Afterwards you get a free drink & snacks @ Sportcentrum VU.
           </p>
           <p className="mb-8">
             *September 17 is
@@ -168,7 +166,7 @@ export default function WestlandIndexPage() {
               {' '}
               National CleanUp Day
             </a>
-            , so <strong> GroenLinks Amstelveen</strong> joins
+            . <strong> GroenLinks Amstelveen</strong> joins us.
           </p>
         </div>
 
@@ -225,17 +223,50 @@ export default function WestlandIndexPage() {
           <h4 className="text-collaction mb-4">Did you know</h4>
           <ul style={{ listStyleType: 'disc' }} className="pl-7">
             <li className="mb-2">
+              You get free (30 liter) PMD bags at DUWO to collect your plastic
+              separately{' '}
+            </li>
+            <li className="mb-2">
+              Every municipality has its own waste policy. For example,
+              Amstelveen collects plastic seperately from general waste (
+              <i>voorsortering</i>), whereas Amsterdam puts everything on one
+              big pile (<i>nasortering</i>)
+            </li>
+            <li className="mb-2">
+              There are 4 worm hotels at Uilenstede that collect bio waste. If
+              you want to sign up for one, send us a message
+            </li>
+            <li className="mb-2">
+              Paper can be recycled and reused 7 times, aluminium cans
+              indefinitely
+            </li>
+            <li className="mb-2">
+              Making one can from raw materials uses the same amount of energy
+              that it takes to recycle 20 cans{' '}
+            </li>
+            <li className="mb-2">
+              As of 2023, there will be <i>statiegeld</i> charged on aluminium
+              cans in the Netherlands, 20 years after Germany introduced it as
+              the first EU country{' '}
+            </li>
+            <li className="mb-2">
+              Pizza boxes from the pizzeria should be placed in general waste
+              due to the oil in the paper. Pizza boxes from the supermarket are
+              suited for recycling
+            </li>
+            <li className="mb-2">
               Dutch people throw away 120kg of plastic every year{' '}
+            </li>
+            <li className="mb-2">
+              It costs €130 in the Netherlands to burn 1000kg of waste
+            </li>
+            <li className="mb-2">
+              Paper got 5x more expensive during the corona pandemic
             </li>
             <li className="mb-2">
               1kg of gold can be extracted from 50,000 mobile phones. There's 7
               million old mobile phones lying around in Dutch drawers, which
               amounts to 140kg of gold{' '}
-            </li>
-            <li className="mb-2">
-              Making one can from raw materials uses the same amount of energy
-              that it takes to recycle 20 cans. There's no limit to the amount
-              of times an aluminium can can be recycled{' '}
             </li>
 
             <li className="mb-2">
