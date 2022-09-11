@@ -7,6 +7,10 @@ import Uilenstede_banner from 'public/uilenstede_banner.jpg';
 import Uilenstede_map from 'public/uilenstede_map.png';
 import PageSEO from 'src/components/PageSEO';
 
+import InfoCard from 'src/components/InfoCard';
+import AppLinkApple from 'src/components/AppLinkApple';
+import AppLinkGoogle from 'src/components/AppLinkGoogle';
+
 import { useCountUp } from 'use-count-up';
 import { useInView } from 'react-intersection-observer';
 import Sluipverbruik from 'public/actions/sluipverbruik.png';
@@ -59,7 +63,7 @@ export default function WestlandIndexPage() {
           <h4 className="text-collaction mt-8 mb-2">Why participate?</h4>
           <p className="mb-6">
             <strong>
-              Free drinks in return for a clean room, eenheid and campus!
+              Free drinks in return for your old phone, oven and more!
             </strong>{' '}
             So get your <i>eenheid </i> together, bring us your waste and enjoy
             drinks @ Sportcentrum VU!
@@ -75,27 +79,33 @@ export default function WestlandIndexPage() {
           </p>
           <h4 className="text-collaction mb-2">What's a voucher?</h4>
           <p className="mb-6">
-            A voucher equals one beer, soft drink or coffee at Sportcentrum VU,
-            which can be redeemed anytime until October 31st 2022.
+            A voucher equals one beer, soft drink (canned) or coffee at
+            Sportcentrum VU, which can be redeemed anytime until October 31st
+            2022.
           </p>
           <h4 className="text-collaction mb-2">How to get vouchers?</h4>
-          <p className="mb-6">
+          <p className="mb-2">
             Together with your eenheid or another group formed by you, collect
             your e-waste and bulk waste and bring it to us. Each piece of
-            garbage equals a number of points. For each 5 points you hand in,
+            garbage equals a number of points. For each 5 points* you hand in,
             you get 1 voucher! Check out the conversion list below to find out
-            how many vouchers you'll get. NB: is your garbage not there? You
-            could still get points for it! Send us a Whatsapp or come to our
-            stand and we'll tell if you're eligible.
+            how many vouchers you'll get. Is your garbage not there? You can
+            still get points for it! Send us a Whatsapp or come to our stand and
+            we'll tell if you're eligible.
+          </p>
+          <p className="mb-6">
+            * There's a limited number of vouchers. Depending on availability
+            the 5 points could increase after the first day. Tip: to ensure you
+            get 1 voucher per 5 points, bring your waste on September 13.
           </p>
           <h4 className="text-collaction mb-2">How can I help?</h4>
           <p className="mb-6">
             Want to help make our campus prettier? That’s possible! You can
             already do so by sharing the word, posting on social media and
             showing up at our stand. Would you like to do more? Want to meet
-            neighbours that also like to do a bit extra? Send us a Whatsapp
-            message and tell us why you’d like to be involved: power to the
-            crowd!
+            neighbours that also like to do a bit extra? Send a WhatsApp message
+            to +31625351135 and tell us why you’d like to be involved: Power to
+            the Crowd!
           </p>
           <h4 className="text-collaction mb-2">Prizes</h4>
           <p className="mb-2">
@@ -133,10 +143,12 @@ export default function WestlandIndexPage() {
           </p>
           <h6 className="text-collaction mb-2">Litter</h6>
           <p className="mb-4">
-            Join us to collect litter around the campus on{' '}
+            Join us to collect litter around the campus. Afterwards you get a
+            free drink & snacks @ Sportcentrum VU. To reserve a litter pick-up
+            stick, please enroll in our app!{' '}
             <ul style={{ listStyleType: 'disc' }} className="pl-7">
               <li className="mb-2">
-                <strong>September 17 between 10:30 - 12:30</strong> @
+                <strong>September 17 between 10:30 - 11:30</strong> @
                 Sportcentrum VU.*
               </li>
               <li className="mb-2">
@@ -153,7 +165,6 @@ export default function WestlandIndexPage() {
                 {'. '}
               </li>
             </ul>
-            Afterwards you get a free drink & snacks @ Sportcentrum VU.
           </p>
           <p className="mb-8">
             *September 17 is
@@ -168,9 +179,23 @@ export default function WestlandIndexPage() {
             </a>
             . <strong> GroenLinks Amstelveen</strong> joins us.
           </p>
+          <h4 className="text-collaction mb-4 mt-6">Contact us</h4>
+          <p className="mb-6">
+            Would you like to contact us, e.g. when you cannot find us? Send a
+            WhatsApp message to +31625351135 or an email to{' '}
+            <a
+              className="text-collaction"
+              href="mailto:tom@collaction.org"
+              target="_blank"
+              rel="noreferrer"
+            >
+              tom@collaction.org
+            </a>
+            .
+          </p>
         </div>
 
-        <div className="relative block w-full md:w-11/12 lsm:max-w-600 lg:max-w-600 mx-auto">
+        <div className="relative block w-full md:w-11/12 lsm:max-w-600 lg:max-w-600 mx-auto mt-6 mb-6">
           <Image
             priority
             src={Uilenstede_map}
@@ -181,6 +206,17 @@ export default function WestlandIndexPage() {
             placeholder="blur"
           />
         </div>
+
+        <InfoCard
+          isSecondaryBg
+          title="Download the app"
+          body="Reserve a litter pick-up stick and join us!"
+        >
+          <div className="flex justify-center mb-6">
+            <AppLinkApple className="mr-4 sm:mr-5" />
+            <AppLinkGoogle />
+          </div>
+        </InfoCard>
 
         <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-600 mt-10 md:mt-8 mb-6">
           <h4 className="text-collaction mb-4">Conversion list</h4>
@@ -204,16 +240,21 @@ export default function WestlandIndexPage() {
             in order to get points.
           </p>
           <h6 className="text-body mt-4">7 points</h6>
-          smartphone, laptop
+          smartphone, laptop, washing machine
           <h6 className="text-body mt-4">5 points</h6>
           fridge, freezer, television, monitor, microwave, oven
           <h6 className="text-body mt-4">3 points</h6>
           camera, playstation, iron, tosti device, printer, scanner,
           motherboard, radio, cd player, mp3 player, sound system, answering
           machine, regular phone, electric toothbrush
-          <h6 className="text-body mt-4">1 point</h6>5 cables/earplugs,
-          keyboard, mouse, kettle, powerbank, 10 batteries, 10 lamps, clock,
-          torch, calculator, fohn
+          <i>
+            <h6 className="text-body mt-4">2 points (special)</h6>
+            together with your team mates, share on your socials. The 2 points
+            can be redeemed once per team.
+          </i>
+          <h6 className="text-body mt-4">1 point</h6>5 cables/earplugs/lamps,
+          keyboard, mouse, kettle, powerbank, 10 batteries, clock, torch,
+          calculator, hair dryer
         </div>
       </main>
 
@@ -223,8 +264,27 @@ export default function WestlandIndexPage() {
           <h4 className="text-collaction mb-4">Did you know</h4>
           <ul style={{ listStyleType: 'disc' }} className="pl-7">
             <li className="mb-2">
+              <strong>
+                Separating waste is valuable! All unrecycled waste is either
+                burned or ends up in nature/landfills.
+              </strong>{' '}
+              By separating waste, you help mother nature and your
+              municipality's waste department to transform it into valuable
+              resources again!
+            </li>
+            <li className="mb-2">
               You get free (30 liter) PMD bags at DUWO to collect your plastic
               separately{' '}
+            </li>
+            <li className="mb-2">
+              A big problem of recycled plastic is the smell originating from
+              organic material. Therefore, clean your plastic a bit before you
+              put it in your PMD bag and be careful not to put food in it.
+              Furthermore, don't put kit/aerosols/paint cans in PMD, as these
+              might explode in the machines
+            </li>
+            <li className="mb-2">
+              Dutch people throw away 120kg of plastic every year{' '}
             </li>
             <li className="mb-2">
               Every municipality has its own waste policy. For example,
@@ -245,20 +305,18 @@ export default function WestlandIndexPage() {
               that it takes to recycle 20 cans{' '}
             </li>
             <li className="mb-2">
-              As of 2023, there will be <i>statiegeld</i> charged on aluminium
-              cans in the Netherlands, 20 years after Germany introduced it as
-              the first EU country{' '}
-            </li>
-            <li className="mb-2">
               Pizza boxes from the pizzeria should be placed in general waste
               due to the oil in the paper. Pizza boxes from the supermarket are
               suited for recycling
             </li>
             <li className="mb-2">
-              Dutch people throw away 120kg of plastic every year{' '}
+              As of 2023, there will be <i>statiegeld</i> charged on aluminium
+              cans in the Netherlands, 20 years after Germany introduced it as
+              the first EU country{' '}
             </li>
+
             <li className="mb-2">
-              It costs €130 in the Netherlands to burn 1000kg of waste
+              It costs €130 (including taxes!) in NL to burn 1000kg of waste
             </li>
             <li className="mb-2">
               Paper got 5x more expensive during the corona pandemic
@@ -277,11 +335,22 @@ export default function WestlandIndexPage() {
             <li className="mb-2">
               <a
                 className="text-collaction"
+                href="https://www.knapzak.nl/en/5/5-myths-about-separating-waste.aspx"
+                target="_blank"
+                rel="noreferrer"
+              >
+                5 myths about separating waste by knapzak
+              </a>
+            </li>
+
+            <li className="mb-2">
+              <a
+                className="text-collaction"
                 href="https://ewasterace.nl/filmmateriaal"
                 target="_blank"
                 rel="noreferrer"
               >
-                facts & videos by E-WASTE RACE (Dutch)
+                facts & videos by e-waste race (Dutch)
               </a>
             </li>
           </ul>
