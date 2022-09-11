@@ -203,6 +203,20 @@ export default function UilenstedeIndexPage() {
             </a>
             . <strong> GroenLinks Amstelveen</strong> joins us.
           </p>
+          <h4 className="text-collaction mb-4 mt-6">Contact us</h4>
+          <p className="mb-6">
+            Would you like to contact us, e.g. when you cannot find us? Send a
+            WhatsApp message to +31625351135 or an email to{' '}
+            <a
+              className="text-collaction"
+              href="mailto:tom@collaction.org"
+              target="_blank"
+              rel="noreferrer"
+            >
+              tom@collaction.org
+            </a>
+            .
+          </p>
         </div>
 
         <div className="relative block w-full md:w-11/12 lsm:max-w-600 lg:max-w-600 mx-auto mt-6 mb-6">
