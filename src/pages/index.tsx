@@ -8,6 +8,8 @@ import Card1Img from 'public/home/home-card-1.png';
 import Card2Img from 'public/home/home-card-2.png';
 import Card3Img from 'public/home/home-card-3.png';
 
+import TomTomImg from 'public/actions/tomtom.png';
+
 export default function HomePage() {
   return (
     <>
@@ -66,6 +68,48 @@ export default function HomePage() {
             <AppLinkGoogle />
           </div>
         </InfoCard>
+
+        <div
+          className="relative text-center mx-auto xs:max-w-350 sm:max-w-400 lg:max-w-600 rounded-none xs:rounded-1"
+          style={{ height: 450 }}
+        >
+          <div className="absolute h-full w-full rounded-none xs:rounded-1">
+            <Image
+              src={TomTomImg}
+              alt="CollAction Team"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-none xs:rounded-1"
+            />
+          </div>
+          <div
+            className="absolute h-full w-full rounded-none xs:rounded-1"
+            style={{
+              background:
+                'linear-gradient(180deg, rgba(255, 255, 255, 0) 22.92%, rgba(0, 0, 0, 0.6) 75%)',
+            }}
+          />
+
+          <div className="absolute bottom-0 left-0 right-0 mb-9 mx-auto text-center w-full px-5 xs:max-w-350 sm:max-w-400 lg:max-w-600">
+            <h4 className="text-headline-lg-1 text-secondary mb-6">
+              Want to use CollAction for your project?
+            </h4>
+            <p className="text-body-short-1 text-secondary">
+              Do you have an initiative for collective action and would you like
+              to reach a larger public? Send us a message at{' '}
+              {
+                <a
+                  className="text-collaction"
+                  href="mailto:use@collaction.org"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  use@collaction.org
+                </a>
+              }
+            </p>
+          </div>
+        </div>
       </main>
     </>
   );
