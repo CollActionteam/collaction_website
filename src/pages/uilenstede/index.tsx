@@ -72,7 +72,7 @@ export default function WestlandIndexPage() {
           </p>
           <h4 className="text-collaction mb-2">What's a voucher?</h4>
           <p className="mb-6">
-            A voucher equals one beer, soft drink (canned) or coffee at
+            A voucher equals one beer, (canned) soft drink or coffee at
             Sportcentrum VU, which can be redeemed anytime until October 31st
             2022.
           </p>
@@ -362,7 +362,7 @@ export default function WestlandIndexPage() {
           <h4 className="text-collaction mb-4">In collaboration with</h4>
         </div>
 
-        <div className="relative block w-full md:w-11/12 lg:w-208 mb-12 mx-auto">
+        <div className="relative block w-full md:w-11/12 lsm:max-w-600 lg:max-w-600 mx-auto mt-6 mb-6">
           <Image
             priority
             src={Collaboration}
