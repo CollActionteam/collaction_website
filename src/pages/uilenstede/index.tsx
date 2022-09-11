@@ -66,8 +66,8 @@ export default function WestlandIndexPage() {
             In September we’ll make the campus prettier by doing a
             start-of-the-year clean up. From September 13-16 you can hand in
             your electronic and bulk waste <i>(grof afval)</i> at the red circle
-            in return for vouchers. On September 17, 20 & 27 you can join us to
-            collect litter
+            below in return for vouchers. On September 17, 20 & 27 you can join
+            us to collect litter
             <i> (zwerfafval)</i> around the campus to make it shine again!
           </p>
           <h4 className="text-collaction mb-2">What's a voucher?</h4>
@@ -130,7 +130,7 @@ export default function WestlandIndexPage() {
               rel="noreferrer"
             >
               {' '}
-              the red circle{' '}
+              the red circle below{' '}
             </a>
             and collect your vouchers!
           </p>
@@ -153,7 +153,7 @@ export default function WestlandIndexPage() {
                   rel="noreferrer"
                 >
                   {' '}
-                  the red circle
+                  the red circle below
                 </a>
                 {'. '}
               </li>
