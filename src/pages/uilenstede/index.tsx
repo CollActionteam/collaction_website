@@ -121,7 +121,7 @@ export default function WestlandIndexPage() {
           <h6 className="text-collaction mb-2">Electronic & Bulk waste</h6>
           <p className="mb-6">
             Come by with your electronic and bulk waste on{' '}
-            <strong>September 13, 14, 15 & 16 </strong> between 13:00 - 15:00
+            <strong>September 13, 14, 15 & 16* </strong> between 13:00 - 15:00
             {' @ '}
             <a
               className="text-collaction"
@@ -141,8 +141,8 @@ export default function WestlandIndexPage() {
             stick, enroll in our app:{' '}
             <ul style={{ listStyleType: 'disc' }} className="pl-7">
               <li className="mb-2">
-                <strong>September 17</strong> between 10:30 - 11:30 @
-                Sportcentrum VU.*
+                <strong>September 17**</strong> between 10:30 - 11:30 @
+                Sportcentrum VU.
               </li>
               <li className="mb-2">
                 <strong>September 20 & 27 </strong> between 15:00 - 17:00 @
@@ -160,7 +160,11 @@ export default function WestlandIndexPage() {
             </ul>
           </p>
           <p className="mb-8">
-            *September 17 is
+            *On September 16 the 4th Worm Hotel of Uilenstede will be opened at
+            16:00.
+          </p>
+          <p className="mb-8">
+            **September 17 is
             <a
               className="text-collaction"
               href="https://www.nationalcleanupday.org/"
@@ -170,7 +174,7 @@ export default function WestlandIndexPage() {
               {' '}
               National CleanUp Day
             </a>
-            . <strong> GroenLinks Amstelveen</strong> joins us.
+            , so <strong> GroenLinks Amstelveen</strong> joins!
           </p>
           <h4 className="text-collaction mb-4 mt-6">Contact us</h4>
           <p className="mb-6">
