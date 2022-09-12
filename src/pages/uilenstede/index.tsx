@@ -201,7 +201,7 @@ export default function UilenstedeIndexPage() {
               {' '}
               National CleanUp Day
             </a>
-            . <strong> GroenLinks Amstelveen</strong> joins us.
+            , so <strong> GroenLinks Amstelveen</strong> joins!
           </p>
           <h4 className="text-collaction mb-4 mt-6">Contact us</h4>
           <p className="mb-6">
