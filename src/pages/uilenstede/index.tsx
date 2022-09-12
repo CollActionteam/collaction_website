@@ -261,12 +261,12 @@ export default function WestlandIndexPage() {
           <ul style={{ listStyleType: 'disc' }} className="pl-7">
             <li className="mb-2">
               <strong>
-                Separating waste is valuable! All unrecycled waste is either
-                burned or ends up in nature/landfills.
+                We can create valuable resources from your separated waste!
               </strong>{' '}
-              By separating waste, you help mother nature and your
-              municipality's waste department to transform it into valuable
-              resources again!
+              Separate your waste to prevent it from being burned or ending up
+              in landfills. Help nature by enabling the municipality to recycle
+              what you don't use anymore. Your tidy house can equal a happy
+              planet!
             </li>
             <li className="mb-2">
               You get free (30 liter) PMD bags at DUWO to collect your plastic
