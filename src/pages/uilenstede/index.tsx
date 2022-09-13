@@ -249,8 +249,8 @@ export default function WestlandIndexPage() {
             together with your team mates, share on your socials. The 2 points
             can be redeemed once per team.
           </i>
-          <h6 className="text-body mt-4">1 point</h6>5 cables/earplugs/lamps,
-          keyboard, mouse, kettle, powerbank, 10 batteries, clock, torch,
+          <h6 className="text-body mt-4">1 point</h6>2 cables/earplugs/lamps,
+          keyboard, mouse, kettle, powerbank, 5 batteries, clock, torch,
           calculator, hair dryer
         </div>
       </main>
