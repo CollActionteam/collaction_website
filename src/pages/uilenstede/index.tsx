@@ -256,7 +256,7 @@ export default function WestlandIndexPage() {
             can be redeemed once per team.
           </i>
           <h6 className="text-body mt-4">5 points</h6>
-          fridge, freezer, television, monitor, microwave, oven
+          fridge, freezer, television, monitor, microwave, oven, vacuum cleaner
           <h6 className="text-body mt-4">3 points</h6>
           camera, playstation, iron, tosti device, printer, scanner,
           motherboard, radio, cd player, mp3 player, sound system, answering
