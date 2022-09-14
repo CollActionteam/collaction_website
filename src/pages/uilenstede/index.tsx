@@ -62,7 +62,7 @@ export default function WestlandIndexPage() {
               <li className="mb-2">Johannes - 36 points</li>
               <li className="mb-2">Studio51 - 35 points</li>
               <li className="mb-2">MFK - 20 points</li>
-              <li className="mb-2">Eendheid & De Groene Duivels - 10 points</li>
+              <li className="mb-2">Eendheid - 17 points</li>
             </strong>
           </ul>
           <h4 className="text-collaction mt-6 mb-2">Why participate?</h4>
@@ -250,20 +250,20 @@ export default function WestlandIndexPage() {
           </p>
           <h6 className="text-body mt-4">7 points</h6>
           smartphone, laptop, washing machine
+          <i>
+            <h6 className="text-body mt-4">5 points (special)</h6>
+            together with your team mates, share on your socials. The 5 points
+            can be redeemed once per team.
+          </i>
           <h6 className="text-body mt-4">5 points</h6>
           fridge, freezer, television, monitor, microwave, oven
           <h6 className="text-body mt-4">3 points</h6>
           camera, playstation, iron, tosti device, printer, scanner,
           motherboard, radio, cd player, mp3 player, sound system, answering
           machine, regular phone, electric toothbrush
-          <i>
-            <h6 className="text-body mt-4">2 points (special)</h6>
-            together with your team mates, share on your socials. The 2 points
-            can be redeemed once per team.
-          </i>
           <h6 className="text-body mt-4">1 point</h6>2 cables/earplugs/lamps,
           keyboard, mouse, kettle, powerbank, 5 batteries, clock, torch,
-          calculator, hair dryer
+          calculator, hair dryer, weegschaal
         </div>
       </main>
 
