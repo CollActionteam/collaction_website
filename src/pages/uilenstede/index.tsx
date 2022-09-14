@@ -53,7 +53,19 @@ export default function WestlandIndexPage() {
 
         <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-600 ">
           Photographer: Isis Greven
-          <h4 className="text-collaction mt-8 mb-2">Why participate?</h4>
+          <h4 className="text-collaction mb-2 mt-8">
+            Ranking after September 13
+          </h4>
+          <ul style={{ listStyleType: 'decimal' }} className="pl-7">
+            <strong>
+              <li className="mb-2">ZAGEN! - 65 points</li>
+              <li className="mb-2">Johannes - 36 points</li>
+              <li className="mb-2">Studio51 - 35 points</li>
+              <li className="mb-2">MFK - 20 points</li>
+              <li className="mb-2">Eendheid & De Groene Duivels - 10 points</li>
+            </strong>
+          </ul>
+          <h4 className="text-collaction mt-6 mb-2">Why participate?</h4>
           <p className="mb-6">
             <strong>
               Free drinks in return for your old phone, oven and more!
