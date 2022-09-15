@@ -58,11 +58,11 @@ export default function WestlandIndexPage() {
           </h4>
           <ul style={{ listStyleType: 'decimal' }} className="pl-7">
             <strong>
+              <li className="mb-2">Eendheid - 146 points</li>
               <li className="mb-2">MFK - 91 points</li>
               <li className="mb-2">ZAGEN! - 65 points</li>
               <li className="mb-2">Johannes - 36 points</li>
               <li className="mb-2">Studio51 - 35 points</li>
-              <li className="mb-2">Eendheid - 34 points</li>
             </strong>
           </ul>
           <h4 className="text-collaction mt-6 mb-2">Why participate?</h4>
