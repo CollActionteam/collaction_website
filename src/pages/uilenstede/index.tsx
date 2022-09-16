@@ -53,9 +53,7 @@ export default function WestlandIndexPage() {
 
         <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-600 ">
           Photographer: Isis Greven
-          <h4 className="text-collaction mb-2 mt-8">
-            Ranking after September 14
-          </h4>
+          <h4 className="text-collaction mb-2 mt-8">Ranking</h4>
           <ul style={{ listStyleType: 'decimal' }} className="pl-7">
             <strong>
               <li className="mb-2">Eendheid - 249 points</li>
