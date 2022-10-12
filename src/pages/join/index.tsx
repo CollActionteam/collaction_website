@@ -91,7 +91,6 @@ export default function JoinListPage({ data }: { data: JoinDataType[] }) {
           </div>
         ))}
 
-
         <div className="text-center mx-auto max-w-350 sm:max-w-400 lg:max-w-500 mb-9 md:mb-1 py-10 ">
           <h1 className="text-headline-m-1 md:text-headline-lg-1 mb-6 ">
             Our team
@@ -102,10 +101,9 @@ export default function JoinListPage({ data }: { data: JoinDataType[] }) {
           </p>
         </div>
 
-        <div className="pb-10">  
+        <div className="pb-10">
           <Team name={''} title={''} full_name={''} />
         </div>
-      
 
         <InfoCard
           isSecondaryBg
