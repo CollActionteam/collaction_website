@@ -11,7 +11,7 @@ export default function PrivacyPage() {
 
       <main className="bg-primary-0 p-5 md:p-12">
         <div className="max-w-600 mx-auto">
-          <h1 className="text-primary-400 text-center mb-6">
+          <h1 className="text-collaction text-center mb-6">
             Privacy and Cookie Policy
           </h1>
           <p className="text-primary-400 text-center mb-7">
@@ -43,9 +43,10 @@ export default function PrivacyPage() {
             networks and platforms. We also advise you to read their privacy and
             cookie policies carefully before using their websites.
           </p>
-          <h4 className="text-primary-300 mb-7">
+
+          <h6 className="text-collaction mb-2">
             Why does CollAction collect and process my Personal Information?
-          </h4>
+          </h6>
           <p className="mb-6 last:mb-0">
             We collect and process your Personal Information in order to:
             <ul style={{ listStyleType: 'decimal' }} className="pl-7">
@@ -80,9 +81,9 @@ export default function PrivacyPage() {
             </ul>
           </p>
 
-          <h4 className="text-primary-300 mb-7">
+          <h6 className="text-collaction mb-2">
             What Personal Information do we collect?
-          </h4>
+          </h6>
           <p className="mb-6">
             In order to do the above, we collect and process Personal
             Information, comprising of your name, gender, date of birth,
@@ -124,9 +125,9 @@ export default function PrivacyPage() {
             </ul>
           </p>
 
-          <h4 className="text-primary-300 mb-7">
+          <h6 className="text-collaction mb-2">
             How long does CollAction store my Personal Information?
-          </h4>
+          </h6>
           <p className="mb-6 last:mb-0">
             CollAction does not store your Personal Information longer than
             necessary for the purposes for which the Personal Information was
@@ -138,9 +139,9 @@ export default function PrivacyPage() {
             obligations.
           </p>
 
-          <h4 className="text-primary-300 mb-7">
+          <h6 className="text-collaction mb-2">
             Does CollAction share my Personal Information with third parties?
-          </h4>
+          </h6>
 
           <p className="mb-6">
             CollAction is a non-profit organization dedicated to making the
@@ -211,24 +212,24 @@ export default function PrivacyPage() {
             Implementing Decision 2021/914/EU.
           </p>
 
-          <h4 className="text-primary-300 mb-7">What are cookies?</h4>
+          <h6 className="text-collaction mb-2">What are cookies?</h6>
           <p className="mb-6">
             Cookies are text files placed on your device to collect standard
             Internet log information and visitor behaviour information.
             CollAction uses the following types of cookies:
           </p>
 
-          <h5 className="text-body font-normal">
+          <h6 className="text-body font-normal">
             <em>Strictly necessary/ functional cookies</em>
-          </h5>
+          </h6>
           <p className="mb-6">
             These are cookies that are necessary for the (basic) operation of
             our website, for example to keep you logged in.
           </p>
 
-          <h5 className="text-body font-normal">
+          <h6 className="text-body font-normal">
             <em>Analytics cookies</em>
-          </h5>
+          </h6>
           <p className="mb-6">
             CollAction makes use of third-party analytics services that use
             cookies, such as Google Analytics and Google Tag Manager. These are
@@ -240,9 +241,9 @@ export default function PrivacyPage() {
             anonymized before information is shared with Google.
           </p>
 
-          <h5 className="text-body font-normal">
+          <h6 className="text-body font-normal">
             <em>Social media buttons</em>
-          </h5>
+          </h6>
           <p className="mb-6">
             We have placed ‘social media buttons’ on our website an mobile
             application which allow you to connect to various social media
@@ -255,9 +256,9 @@ export default function PrivacyPage() {
             treat your Personal Information.
           </p>
 
-          <h5 className="text-body font-normal">
+          <h6 className="text-body font-normal">
             <em>Disabling cookies</em>
-          </h5>
+          </h6>
           <p className="mb-6 last:mb-0">
             If you wish to disable the use and placement of cookies, we advise
             you to amend your internet browser settings. You can manage your
@@ -285,7 +286,7 @@ export default function PrivacyPage() {
           </p>
 
           <p className="mb-6"></p>
-          <h4 className="text-primary-300 mb-7">How to opt-out</h4>
+          <h6 className="text-collaction mb-2">How to opt-out</h6>
           <p className="mb-6">
             You may revoke any consent given to us with regard to the
             collection, processing and use of your Personal Information at any
@@ -310,9 +311,9 @@ export default function PrivacyPage() {
             with notifications (such as a notice of an update to our Policy).
           </p>
 
-          <h4 className="text-primary-300 mb-7">
+          <h6 className="text-collaction mb-2">
             What other rights do you have?
-          </h4>
+          </h6>
           <p className="mb-6">
             Subject to certain legal limitations, you can at all times submit a
             request to CollAction to do the following:
@@ -344,7 +345,7 @@ export default function PrivacyPage() {
             Information.
           </p>
 
-          <h4 className="text-primary-300 mb-7">Security</h4>
+          <h6 className="text-collaction mb-2">Security</h6>
           <p className="mb-6 last:mb-0">
             CollAction is committed to protecting your Personal Information and
             will take all reasonable precautions to do so. Though we can never
@@ -353,7 +354,7 @@ export default function PrivacyPage() {
             safeguarding measures should be taken.
           </p>
 
-          <h4 className="text-primary-300 mb-7">Changes to our Policy</h4>
+          <h6 className="text-collaction mb-2">Changes to our Policy</h6>
           <p className="mb-6 last:mb-0">
             We may need to amend or update our Policy from time to time. This
             will replace any previous Policy. Should we make any material
@@ -363,7 +364,7 @@ export default function PrivacyPage() {
             updated. This Policy was last updated on January 23rd, 2022.
           </p>
 
-          <h4 className="text-primary-300 mb-7">Contact Details</h4>
+          <h6 className="text-collaction mb-2">Contact Details</h6>
           <p className="mb-6">
             Would you like to contact us? Please email us at{' '}
             {
@@ -390,9 +391,9 @@ export default function PrivacyPage() {
             any event within 30 days after receipt.
           </p>
 
-          <h4 className="text-primary-300 mb-7">
+          <h6 className="text-collaction mb-2">
             How to contact the appropriate authority
-          </h4>
+          </h6>
           <p className="mb-6">
             Should you wish to report a complaint or if you feel that CollAction
             has not addressed your concern in a satisfactory manner, you may
@@ -412,14 +413,8 @@ export default function PrivacyPage() {
               </a>
             }
             <br />
-            Address:
-            <br />
-            <br />
-            (only by appointment)
-            <br />
-            Bezuidenhoutseweg 30
-            <br />
-            2594 AV Den Haag
+            Address: Bezuidenhoutseweg 30, 2594 AV, Den Haag (only by
+            appointment)
           </p>
         </div>
       </main>

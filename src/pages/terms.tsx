@@ -25,9 +25,7 @@ export default function Terms() {
             <strong>"we"</strong> or <strong>"us"</strong>).
           </p>
 
-          <h4 className="text-primary-300 mb-7">
-            Applicability and amendments
-          </h4>
+          <h6 className="text-collaction mb-2">Applicability and amendments</h6>
           <p className="mb-6 last:mb-0">
             By using the Platform, you (hereinafter also referred to as the{' '}
             <strong>"User"</strong>) agree to these Terms of Use, and these
@@ -41,7 +39,7 @@ export default function Terms() {
             rights therefrom.
           </p>
 
-          <h4 className="text-primary-300 mb-7">Use of the Platform</h4>
+          <h6 className="text-collaction mb-2">Use of the Platform</h6>
           <p className="mb-6">
             The Platform is exclusively intended to give you as a user the
             opportunity to participate in one or more charity initiatives
@@ -116,7 +114,7 @@ export default function Terms() {
             </ul>
           </p>
 
-          <p className="mb-6 last:mb-0">
+          <p className="mb-6 last:mb-2">
             In the event of (suspected) use of the Platform in violation of
             these Terms of Use, we may take any action we deem necessary and
             appropriate, including (but not limited to) denying access to the
@@ -124,9 +122,9 @@ export default function Terms() {
             recover any damages and/or costs from you.
           </p>
 
-          <h4 className="text-primary-300 mb-7">
+          <h6 className="text-collaction mb-2">
             Information posted by third parties
-          </h4>
+          </h6>
           <p className="mb-6 last:mb-0">
             It is possible for third parties to post texts, data and/or files on
             the Platform. While we strive to only have content on our Platform
@@ -139,9 +137,9 @@ export default function Terms() {
             liability towards you or any other third party.
           </p>
 
-          <h4 className="text-primary-300 mb-7">
+          <h6 className="text-collaction mb-2">
             Links to other websites and/or applications
-          </h4>
+          </h6>
           <p className="mb-6 last:mb-0">
             It is possible that the Platform refers to external internet pages
             and/or applications, or vice versa. CollAction is not responsible or
@@ -149,7 +147,7 @@ export default function Terms() {
             pages and/or applications.
           </p>
 
-          <h4 className="text-primary-300 mb-7">Liability</h4>
+          <h6 className="text-collaction mb-2">Liability</h6>
           <p className="mb-6 last:mb-0">
             The use of the Platform is at your own risk. We cannot exclude and
             do not guarantee that the Platform does not or cannot have any
@@ -165,9 +163,7 @@ export default function Terms() {
             Platform.
           </p>
 
-          <h4 className="text-primary-300 mb-7">
-            Intellectual property rights
-          </h4>
+          <h6 className="text-collaction mb-2">Intellectual property rights</h6>
           <p className="mb-6">
             Unless otherwise stated, all intellectual property rights and/or
             similar rights in or to the Platform belong exclusively to
@@ -191,7 +187,7 @@ export default function Terms() {
             any way, commercially or non-commercially.
           </p>
 
-          <h4 className="text-primary-300 mb-7">Privacy and Cookie Policy</h4>
+          <h6 className="text-collaction mb-2">Privacy and Cookie Policy</h6>
           <p className="mb-6 last:mb-0">
             Please be referred to our{' '}
             {
@@ -207,9 +203,9 @@ export default function Terms() {
             , which also applies when using the Platform.
           </p>
 
-          <h4 className="text-primary-300 mb-7">
+          <h6 className="text-collaction mb-2">
             Choice of law and other provisions
-          </h4>
+          </h6>
           <p className="mb-6">
             If these Terms of Use are or become partially invalid, you (and
             CollAction) will continue to be bound by the remaining, applicable
@@ -227,7 +223,7 @@ export default function Terms() {
             Amsterdam will have exclusive jurisdiction to settle the dispute.
           </p>
 
-          <h4 className="text-primary-300 mb-7">Contact Details</h4>
+          <h6 className="text-collaction mb-2">Contact Details</h6>
           <p className="mb-6">
             Would you like to contact us? Please email us at{' '}
             {
