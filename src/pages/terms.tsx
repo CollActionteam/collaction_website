@@ -10,7 +10,7 @@ export default function Terms() {
 
       <main className="bg-primary-0 p-5 md:p-12">
         <div className="max-w-600 mx-auto">
-          <h1 className="text-primary-400 text-center mb-6">Terms of Use</h1>
+          <h1 className="text-collaction text-center mb-6"></h1>Terms of Use</h1>
           <p className="text-primary-400 text-center mb-7">
             version dated December 30th, 2021
           </p>

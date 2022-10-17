@@ -10,7 +10,7 @@ export default function Impact() {
 
       <main className="bg-primary-0 p-5 md:p-12">
         <div className="max-w-600 mx-auto">
-          <h1 className="text-primary-400 text-center mb-6">ANBI</h1>
+          <h1 className="text-collaction text-center mb-6">ANBI</h1>
 
           <p className="mb-6 last:mb-0">
             Stichting CollAction is recognised by the Dutch tax authorities as
