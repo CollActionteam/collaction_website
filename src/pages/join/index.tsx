@@ -8,6 +8,7 @@ import {
 
 import PageSEO from 'src/components/PageSEO';
 import InfoCard from 'src/components/InfoCard';
+import Team from 'src/components/Team';
 import AppLinkApple from 'src/components/AppLinkApple';
 import AppLinkGoogle from 'src/components/AppLinkGoogle';
 import { getJoinsData } from 'src/lib/getJoins';
@@ -40,7 +41,7 @@ export default function JoinListPage({ data }: { data: JoinDataType[] }) {
       />
 
       <main className="bg-secondary p-5 pt-10 md:pt-11">
-        <div className="text-center mx-auto max-w-350 sm:max-w-400 lg:max-w-500 mb-9 md:mb-10">
+        <div className="text-center mx-auto max-w-350 sm:max-w-400 lg:max-w-500 mb-9 md:mb-10 ">
           <h1 className="text-headline-m-1 md:text-headline-lg-1 mb-6">
             Become part of the CollAction Team
           </h1>
@@ -89,6 +90,20 @@ export default function JoinListPage({ data }: { data: JoinDataType[] }) {
             </div>
           </div>
         ))}
+
+        <div className="text-center mx-auto max-w-350 sm:max-w-400 lg:max-w-500 mb-9 md:mb-1 py-10 ">
+          <h1 className="text-headline-m-1 md:text-headline-lg-1 mb-6 ">
+            Our team
+          </h1>
+          <p className="text-body-short-1 text-primary-200">
+            CollAction is a truly international team. We collaborate with
+            amazing volunteers from all over the world.
+          </p>
+        </div>
+
+        <div className="pb-10">
+          <Team name={''} title={''} full_name={''} />
+        </div>
 
         <InfoCard
           isSecondaryBg
