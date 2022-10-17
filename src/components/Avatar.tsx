@@ -20,7 +20,7 @@ export default function Avatar(props: AvatarProps) {
             height="80px"
           />
         </div>
-        <p className="pt-2 font-bold">{props.alt}</p>
+        <p className="pt-2">{props.alt}</p>
       </a>
     </div>
   );
