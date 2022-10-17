@@ -30,11 +30,8 @@ export default function Teams(props: TeamProps) {
         src={prefix + member.photo}
         alt={member.full_name}
         linkedin_github={member.linkedin_github}
-<<<<<<< HEAD
         role={member.role}
         country={member.country}
-=======
->>>>>>> 95b00cc (Fix: update style and content for profile)
       />
     );
   });
@@ -77,16 +74,9 @@ export default function Teams(props: TeamProps) {
         </h1>
         {props.description && <p>{props.description}</p>}
       </div>
-<<<<<<< HEAD
 
       <div className="lg:w-[744px] p-0 gap-x-auto mx-auto w-auto p-auto container grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center">
         {team_members}
-=======
-      <div className="container mx-auto">
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center gap-px-auto mx-auto max-w-auto">
-          {team_members}
-        </div>
->>>>>>> 95b00cc (Fix: update style and content for profile)
       </div>
     </section>
   );
