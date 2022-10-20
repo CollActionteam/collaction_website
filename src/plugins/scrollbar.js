@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 /* eslint-disable @typescript-eslint/no-var-requires */
+=======
+>>>>>>> 0da7891 (Fix: Run Prettier and update Profile)
 const plugin = require('tailwindcss/plugin');
 
 module.exports = plugin(function ({ addUtilities, matchUtilities, theme }) {
