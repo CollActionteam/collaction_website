@@ -21,12 +21,14 @@ export default function Avatar(props: AvatarProps) {
           />
         </div>
       </a>
-      <p className="md:w-auto sm:w-fit lg:w-fit pt-2 text-lg font-bold text-center leading-5">{props.alt}</p>
-      
-        <div className="">
+      <p className="md:w-auto sm:w-fit lg:w-fit pt-2 text-lg font-bold text-center leading-5">
+        {props.alt}
+      </p>
+
+      <div className="">
         <p className="pt-3 text-sm text-center leading-5">Developer</p>
         <p className="pt-2  text-sm text-center leading-5">NL</p>
-        </div>
+      </div>
     </div>
   );
 }
