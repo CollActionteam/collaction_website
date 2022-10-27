@@ -44,6 +44,14 @@ export default function DonatePage() {
           </p>
         </div>
 
+        <div className="mx-auto max-w-864">Donation component goes here</div>
+
+        <div className="mx-auto max-w-864 my-11">
+          <h3 className="text-center text-title-1">
+            Frequently asked questions
+          </h3>
+        </div>
+
         <InfoCard
           isSecondaryBg
           title="Our individual actions are a drop in the ocean. But together, we make waves!"
