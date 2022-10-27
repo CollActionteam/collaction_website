@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import clsx from 'clsx';
 
 import PageSEO from 'src/components/PageSEO';
 import InfoCard from 'src/components/InfoCard';
@@ -17,14 +16,7 @@ export default function DonatePage() {
       />
 
       <main className="bg-secondary p-5 pt-10 md:pt-11">
-        <div
-          className={clsx(
-            'relative',
-            'mx-auto rounded-1 overflow-hidden',
-            'md:w-3/4 max-w-350 sm:max-w-400 lg:max-w-864',
-            'mb-12'
-          )}
-        >
+        <div className="mx-auto lg:max-w-864 rounded-1 overflow-hidden">
           <Image
             src={donateImg}
             alt="collaction team members standing"
