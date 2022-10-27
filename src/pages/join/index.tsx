@@ -102,7 +102,7 @@ export default function JoinListPage({ data }: { data: JoinDataType[] }) {
         </div>
 
         <div className="pb-10">
-          <Team  name={''} title={''} full_name={''} />
+          <Team name={''} title={''} full_name={''} />
         </div>
 
         <InfoCard

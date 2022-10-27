@@ -18,7 +18,6 @@ export default function Avatar(props: AvatarProps) {
             alt={props.alt}
             width="90px"
             height="90px"
-            
           />
         </div>
       </a>
