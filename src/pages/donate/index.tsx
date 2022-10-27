@@ -44,12 +44,13 @@ export default function DonatePage() {
           </p>
         </div>
 
-        <div className="mx-auto max-w-864">Donation component goes here</div>
+        <div className="mx-auto max-w-864">Donation component go here</div>
 
         <div className="mx-auto max-w-864 my-11">
           <h3 className="text-center text-title-1">
             Frequently asked questions
           </h3>
+          FAQ components go here
         </div>
 
         <InfoCard
