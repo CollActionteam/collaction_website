@@ -30,19 +30,15 @@ export default function DonatePage() {
           </div>
         </div>
 
-        <div
-          className={clsx(
-            'relative',
-            'mx-auto md:w-3/4 max-w-350 sm:max-w-400 lg:max-w-864',
-            'mb-12'
-          )}
-        >
-          <h3>Headline</h3>
-          <p>
+        <div className="mx-auto max-w-600 my-11">
+          <h3 className="mb-7">Headline</h3>
+          <p className="mb-7">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur.
           </p>
