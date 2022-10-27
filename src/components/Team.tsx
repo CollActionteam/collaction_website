@@ -70,8 +70,8 @@ export default function Teams(props: TeamProps) {
         </h1>
         {props.description && <p>{props.description}</p>}
       </div>
-      <div className="container mx-auto">
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center gap-px-auto mx-auto max-w-auto">
+      <div className="container mx-auto p-6 mx-auto mb-6 w-auto lg:max-w-864">
+        <div className=" lg:max-w-864 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center gap-px-auto mx-auto  ">
           {team_members}
         </div>
       </div>

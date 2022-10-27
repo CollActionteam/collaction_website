@@ -9,23 +9,24 @@ interface AvatarProps {
 
 export default function Avatar(props: AvatarProps) {
   return (
-    <div className="w-20 h-fit flex-col text-center flex flex-col justify-center items-center pb-5">
+    <div className="min-w-186 h-fit flex-col text-center justify-center items-center pb-5">
       <a href={props.linkedin_github}>
-        <div className="h-20 overflow-hidden">
+        <div className="min-w-186 overflow-hidden">
           <Image
             src={props.src}
             className="rounded-full"
             alt={props.alt}
             width="90px"
             height="90px"
+            
           />
         </div>
       </a>
-      <p className="md:w-auto sm:w-fit lg:w-fit pt-2 text-lg font-bold text-center leading-5">
+      <p className="w-46 pt-2 text-lg font-bold text-center leading-5">
         {props.alt}
       </p>
 
-      <div className="">
+      <div>
         <p className="pt-3 text-sm text-center leading-5">Developer</p>
         <p className="pt-2  text-sm text-center leading-5">NL</p>
       </div>
