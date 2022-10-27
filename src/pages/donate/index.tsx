@@ -16,6 +16,9 @@ export default function DonatePage() {
       />
 
       <main className="bg-secondary p-5 pt-10 md:pt-11">
+        {/* try adding gradient and setting the z-index
+        for this div and using align-item to set the headline
+        and the byline before attempting to use css-grid */}
         <div className="mx-auto lg:max-w-864 rounded-1 overflow-hidden">
           <Image
             src={donateImg}
@@ -44,6 +47,7 @@ export default function DonatePage() {
           </p>
         </div>
 
+        {/* use flexbox with flex direction row for this layout  */}
         <div className="mx-auto max-w-864">Donation component go here</div>
 
         <div className="mx-auto max-w-864 my-11">
