@@ -5,23 +5,33 @@ interface AvatarProps {
   src: string;
   alt: string;
   linkedin_github?: string;
+  role?: string;
+  country?: string;
 }
 
 export default function Avatar(props: AvatarProps) {
   return (
-    <div className="w-20 hflex flex-col text-center pb-5">
+    <div className="w-20 h-fit flex-col text-center flex flex-col justify-center items-center pb-5">
       <a href={props.linkedin_github}>
         <div className="h-20 overflow-hidden">
           <Image
             src={props.src}
             className="rounded-full"
             alt={props.alt}
-            width="80px"
-            height="80px"
+            role={props.alt}
+            width="90px"
+            height="90px"
           />
         </div>
-        <p className="pt-2">{props.alt}</p>
       </a>
+      <p className="md:w-auto sm:w-fit lg:w-fit pt-2 text-lg font-bold text-center leading-5">
+        {props.alt}
+      </p>
+
+      <div className="">
+        <p className="pt-3 text-sm text-center leading-5">{props.role}</p>
+        <p className="pt-2  text-sm text-center leading-5">{props.country}</p>
+      </div>
     </div>
   );
 }
