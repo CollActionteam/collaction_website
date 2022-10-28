@@ -19,15 +19,18 @@ export default function DonatePage() {
         {/* try adding gradient and setting the z-index
         for this div and using align-item to set the headline
         and the byline before attempting to use css-grid */}
-        <div className="mx-auto lg:max-w-864 rounded-1 overflow-hidden">
+        <div className="mx-auto lg:max-w-864 rounded-1 overflow-hidden relative">
           <Image
             src={donateImg}
             alt="collaction team members standing"
             layout="responsive"
+            className="absolute"
           />
-          <div className="absolute bottom-22">
-            <h3 className="mb-6 text-secondary">Become a supporter</h3>
-            <p className="text-secondary">
+          <div className="absolute bottom-22 left-48 max-w-600 text-center">
+            <h3 className="mb-6 text-secondary text-title-lg">
+              Become a supporter
+            </h3>
+            <p className="text-secondary text-xl">
               Help us on our mission to make doing good fun & easy
             </p>
           </div>
