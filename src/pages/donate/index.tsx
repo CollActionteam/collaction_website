@@ -15,18 +15,16 @@ export default function DonatePage() {
         description="Help us on our mission to make doing good fun and easy"
       />
 
-      <main className="bg-secondary p-5 pt-10 md:pt-11">
-        {/* try adding gradient and setting the z-index
-        for this div and using align-item to set the headline
-        and the byline before attempting to use css-grid */}
-        <div className="mx-auto lg:max-w-864 rounded-1 overflow-hidden relative">
+      <main className="bg-secondary md:pt-8 lg:pt-10 py-0 sm:px-32">
+        <div className="mx-auto w-full sm:max-w-[400px] lg:max-w-[744px] min-h-[520px] sm:rounded-1 overflow-hidden relative">
           <Image
             src={donateImg}
             alt="collaction team members standing"
-            layout="responsive"
-            className="absolute"
+            layout="fill"
+            objectFit="cover"
           />
-          <div className="absolute bottom-22 left-48 max-w-600 text-center">
+          <div className="absolute bottom-0 top-0 w-full hero-linear-gradient "></div>
+          <div className="absolute bottom-14 lg:bottom-18 w-full text-center px-6">
             <h3 className="mb-6 text-secondary text-title-lg">
               Become a supporter
             </h3>
@@ -36,39 +34,46 @@ export default function DonatePage() {
           </div>
         </div>
 
-        <div className="mx-auto max-w-600 my-11">
-          <h3 className="mb-7 text-title-2">Headline</h3>
-          <p className="mb-7 text-body-short-1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <p className="mb-7 text-body-short-1">
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
-          </p>
+        <div className="pt-10 lg:pt-[80px]">
+          <div className="mx-auto sm:max-w-[400px] lg:max-w-[520px] px-6 sm:px-0">
+            <h3 className="mb-7 text-3xl">Headline</h3>
+            <p className="mb-7 text-body-short-1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p className="text-body-short-1">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </p>
+          </div>
         </div>
 
-        {/* use flexbox with flex direction row for this layout  */}
-        <div className="mx-auto max-w-864">Donation component go here</div>
+        <div className="px-6 sm:px-0 py-10 lg:py-[80px]">
+          <div className="mx-auto sm:max-w-[400px] lg:max-w-[744px] bg-primary-0 rounded-1 p-6">
+            <div className="mx-auto">Donation component go here</div>
+          </div>
+        </div>
 
-        <div className="mx-auto max-w-864 my-11">
-          <h3 className="text-center text-title-1">
+        <div className="mx-auto sm:max-w-[400px] lg:max-w-[744px]">
+          <h3 className="lg:text-center text-4xl px-6 sm:px-0 pb-8 lg:pb-9">
             Frequently asked questions
           </h3>
           FAQ components go here
         </div>
 
-        <InfoCard
-          isSecondaryBg
-          title="Our individual actions are a drop in the ocean. But together, we make waves!"
-        >
-          <div className="flex justify-center mb-6">
-            <AppLinkApple className="mr-4 sm:mr-5" />
-            <AppLinkGoogle />
-          </div>
-        </InfoCard>
+        <div className="pt-7 lg:pt-9 px-6 sm:px-0">
+          <InfoCard
+            isSecondaryBg
+            title="Our individual actions are a drop in the ocean. But together, we make waves!"
+          >
+            <div className="flex justify-center mb-6">
+              <AppLinkApple className="mr-4 sm:mr-5" />
+              <AppLinkGoogle />
+            </div>
+          </InfoCard>
+        </div>
       </main>
     </>
   );
