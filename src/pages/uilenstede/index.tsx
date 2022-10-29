@@ -209,7 +209,7 @@ export default function UilenstedeIndexPage() {
           title="Download the app"
           body="Reserve a litter pick-up stick and join us!"
         >
-          <div className="flex justify-center mb-6">
+          <div className="flex justify-center">
             <AppLinkApple className="mr-4 sm:mr-5" />
             <AppLinkGoogle />
           </div>

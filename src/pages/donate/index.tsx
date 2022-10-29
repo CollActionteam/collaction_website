@@ -68,7 +68,7 @@ export default function DonatePage() {
             isSecondaryBg
             title="Our individual actions are a drop in the ocean. But together, we make waves!"
           >
-            <div className="flex justify-center mb-6">
+            <div className="flex justify-center">
               <AppLinkApple className="mr-4 sm:mr-5" />
               <AppLinkGoogle />
             </div>

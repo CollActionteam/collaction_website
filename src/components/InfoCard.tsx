@@ -35,7 +35,7 @@ export default function InfoCard({
           className={clsx(
             'text-headline-m-1',
             isSecondaryBg ? 'text-secondary' : 'text-primary-400',
-            body != null ? 'mb-6' : ''
+            body ? 'mb-6' : 'mb-9'
           )}
         >
           {title}
