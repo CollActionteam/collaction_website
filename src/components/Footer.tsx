@@ -16,10 +16,11 @@ const RSIN = '856193690';
 export default function Footer() {
   const { pathname } = useRouter();
 
+  // text-primary-400 absolute bottom-0 w-full h-940 md:h-440 py-12 px-5
   return (
     <footer
       className={clsx(
-        'text-primary-400 absolute bottom-0 w-full h-940 md:h-440 py-12 px-5',
+        'text-primary-400 w-full h-940 md:h-440 py-12 px-5',
         pathname !== '/westland' && 'bg-secondary'
       )}
     >
