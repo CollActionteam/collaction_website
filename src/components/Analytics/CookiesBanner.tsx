@@ -7,9 +7,6 @@ type Props = {
   setShowBanner: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-// Original
-// sticky top-0 inset-x-0 bg-secondary py-5 px-12 z-50
-//sticky absolute bottom-0 
 export default function CookiesBanner({ setShowBanner }: Props) {
   return (
     <div className="sticky absolute bottom-0 bg-collaction-100 py-5 px-12 z-50">
