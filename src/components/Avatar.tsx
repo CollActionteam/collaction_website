@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { CircleFlag } from 'react-circle-flags'
-
+import { CircleFlag } from 'react-circle-flags';
 
 interface AvatarProps {
   src: string;
@@ -27,15 +26,14 @@ export default function Avatar(props: AvatarProps) {
           />
           <span className="bottom-[-11px] right-[-2px] absolute">
             <CircleFlag
-            countryCode= {props.country}
-            className="rounded-full"
-            width="36px"
-            
-          />
+              countryCode={props.country}
+              className="rounded-full"
+              width="36px"
+            />
           </span>
-          
         </div>
       </a>
+
       <p className="w-[186px] pt-5 text-lg font-bold text-center leading-5">
         {props.alt}
       </p>
@@ -46,7 +44,3 @@ export default function Avatar(props: AvatarProps) {
     </div>
   );
 }
-function toLowercase() {
-  throw new Error('Function not implemented.');
-}
-

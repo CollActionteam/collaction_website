@@ -20,7 +20,6 @@
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/line-clamp": "^0.3.0",
     "@typeform/embed-react": "^1.16.0",
-    "circle-flags": "github:HatScripts/circle-flags",
     "clsx": "^1.2.1",
     "cookies-next": "^2.0.3",
     "gray-matter": "^4.0.3",
@@ -32,10 +31,6 @@
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
     "react-intersection-observer": "^8.33.1",
-    "react-round-flags": "^1.0.5",
-    "react-world-flags": "^1.5.1",
-    "round-flag-icons-cc": "^1.4.1",
-    "round-flags": "github:Tarkeasy/round-flags",
     "tailwindcss": "^3.0.13",
     "use-count-up": "^3.0.1"
   },
