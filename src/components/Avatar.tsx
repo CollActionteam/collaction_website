@@ -26,6 +26,7 @@ export default function Avatar(props: AvatarProps) {
           />
           <span className="bottom-[-11px] right-[-2px] absolute">
             <CircleFlag
+              // eslint-disable-next-line @typescript-eslint/ban-ts-comment
               // @ts-ignore
               countryCode={props.country}
               className="rounded-full"
