@@ -10,7 +10,6 @@ interface AvatarProps {
   country?: string;
 }
 
-
 /* flex itemcenter*/
 export default function Avatar(props: AvatarProps) {
   return (
