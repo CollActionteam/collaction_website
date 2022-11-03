@@ -5,6 +5,7 @@ import InfoCard from 'src/components/InfoCard';
 import AppLinkApple from 'src/components/AppLinkApple';
 import AppLinkGoogle from 'src/components/AppLinkGoogle';
 import Button from 'src/components/Button';
+import DonateCard from 'src/components/DonateCard';
 
 import donateImg from 'public/donate-page-photo.jpg';
 
@@ -62,7 +63,7 @@ export default function DonatePage() {
 
         <div className="px-6 sm:px-0 pb-10 lg:pb-[80px]">
           <div className="mx-auto sm:max-w-[400px] lg:max-w-[744px] bg-primary-0 rounded-1 p-6">
-            <div className="mx-auto">Donation component go here</div>
+            <DonateCard headline="Recurring donation" donation="monthly" />
           </div>
         </div>
 
