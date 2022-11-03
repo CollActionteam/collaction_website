@@ -26,6 +26,7 @@ export default function Avatar(props: AvatarProps) {
           />
           <span className="bottom-[-11px] right-[-2px] absolute">
             <CircleFlag
+              // @ts-ignore
               countryCode={props.country}
               className="rounded-full"
               width="36px"
