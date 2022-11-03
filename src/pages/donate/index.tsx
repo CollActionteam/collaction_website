@@ -52,7 +52,7 @@ export default function DonatePage() {
         </div>
 
         {/* donation toggler element */}
-        <div className="flex justify-between gap-4 mt-10 mb-6 mx-auto w-[350px] h-[47px]">
+        <div className="flex gap-4 mt-10 mb-6 mx-auto max-w-[350px] h-[47px] px-5">
           <Button
             text="Recurring donation"
             style="bg-primary-500 text-primary-0"
