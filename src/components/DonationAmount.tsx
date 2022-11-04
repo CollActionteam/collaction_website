@@ -10,7 +10,7 @@ export default function DonationAmount({ amount }: DonationAmountProps) {
 
   return (
     <div
-      className={`w-[153.5px] h-[48px] flex items-center 
+      className={`w-[144px] lg:w-[153.5px] h-[48px] flex items-center 
     justify-center rounded-[10px] ${active}`}
     >
       {amount}
