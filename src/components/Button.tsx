@@ -7,7 +7,10 @@ interface ButtonProps {
 
 export default function Button({ text, style }: ButtonProps) {
   return (
-    <button className={`rounded-lg py-4 px-3 text-sm shadow-xl ${style}`}>
+    <button
+      className={`flex justify-center items-center box-border font-[500] 
+      text-sm leading-[22px] h-[48px] shadow-xl ${style}`}
+    >
       {text}
     </button>
   );
