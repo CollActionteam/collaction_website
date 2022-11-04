@@ -53,12 +53,15 @@ export default function DonatePage() {
         </div>
 
         {/* donation toggler element */}
-        <div className="flex gap-4 mt-10 mb-6 mx-auto max-w-[350px] h-[47px] px-5">
+        <div className="flex gap-4 mt-10 mb-6 mx-auto max-w-350 h-[47px] px-5">
           <Button
             text="Recurring donation"
-            style="bg-primary-500 text-primary-0"
+            style="bg-primary-400 text-secondary w-[169px] rounded-[10px]"
           />
-          <Button text="One-time donation" style="bg-primary-0" />
+          <Button
+            text="One-time donation"
+            style="bg-secondary text-primary-300 w-[169px] rounded-[10px]"
+          />
         </div>
 
         <div className="px-6 sm:px-0 pb-10 lg:pb-[80px]">
