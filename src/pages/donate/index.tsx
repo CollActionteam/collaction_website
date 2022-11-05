@@ -71,14 +71,14 @@ export default function DonatePage() {
           </div>
         </div>
 
-        <div className="mx-auto max-w-350 sm:max-w-[400px] lg:max-w-[744px]">
+        <div className="mx-auto max-w-350 sm:max-w-400 lg:max-w-[744px]">
           <h3
             className="mx-auto lg:text-center headline-lg-1 pb-8 lg:pb-9
           font-bold text-primary-400"
           >
             Frequently asked questions
           </h3>
-          <div className="mx-auto flex max-w-350 h-[72px]">
+          <div className="mx-auto flex max-w-350 sm:max-w-400 lg:max-w-[744px] h-[72px]">
             <Faq />
           </div>
         </div>
