@@ -70,8 +70,11 @@ export default function DonatePage() {
           </div>
         </div>
 
-        <div className="mx-auto sm:max-w-[400px] lg:max-w-[744px]">
-          <h3 className="lg:text-center text-4xl px-6 sm:px-0 pb-8 lg:pb-9">
+        <div className="mx-auto max-w-[350] sm:max-w-[400px] lg:max-w-[744px]">
+          <h3
+            className="lg:text-center headline-lg-1 px-6 sm:px-0 pb-8 lg:pb-9
+          font-bold text-primary-400"
+          >
             Frequently asked questions
           </h3>
           FAQ components go here
