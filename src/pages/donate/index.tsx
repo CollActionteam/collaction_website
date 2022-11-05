@@ -6,6 +6,7 @@ import AppLinkApple from 'src/components/AppLinkApple';
 import AppLinkGoogle from 'src/components/AppLinkGoogle';
 import Button from 'src/components/Button';
 import DonateCard from 'src/components/DonateCard';
+import Faq from 'src/components/Faq';
 
 import donateImg from 'public/donate-page-photo.jpg';
 
@@ -70,14 +71,16 @@ export default function DonatePage() {
           </div>
         </div>
 
-        <div className="mx-auto max-w-[350] sm:max-w-[400px] lg:max-w-[744px]">
+        <div className="mx-auto max-w-350 sm:max-w-[400px] lg:max-w-[744px]">
           <h3
-            className="lg:text-center headline-lg-1 px-6 sm:px-0 pb-8 lg:pb-9
+            className="mx-auto lg:text-center headline-lg-1 pb-8 lg:pb-9
           font-bold text-primary-400"
           >
             Frequently asked questions
           </h3>
-          FAQ components go here
+          <div className="mx-auto flex max-w-350 h-[72px]">
+            <Faq />
+          </div>
         </div>
 
         <div className="pt-7 lg:pt-9 px-6 sm:px-0">
