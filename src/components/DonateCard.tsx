@@ -54,14 +54,16 @@ export default function DonateCard({ headline, donation }: DonateCardProps) {
             Don't have a credit card? No problem. Simply select SEPA Direct
             Debit in the next step.
           </p>
-          <div className="w-[302px]">
+          <div className="w-[302px] flex flex-col items-start gap-2.5">
             <Button
               text="Continue"
               style="bg-primary-400 w-[302px] lg:w-[319px] text-secondary rounded-[999px]"
             />
             <p className="text-primary-200 text-sm leading-[22px] w-[302px] lg:w-[319px] h-[22px]">
               By donating you agree with our{' '}
-              <span className="text-collaction-500">Privacy Policy</span>
+              <span className="text-collaction-500 text-sm leading-[22px]">
+                Privacy Policy
+              </span>
             </p>
           </div>
         </div>
