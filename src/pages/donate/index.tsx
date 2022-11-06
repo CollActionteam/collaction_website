@@ -6,7 +6,7 @@ import AppLinkApple from 'src/components/AppLinkApple';
 import AppLinkGoogle from 'src/components/AppLinkGoogle';
 import Button from 'src/components/Button';
 import DonateCard from 'src/components/DonateCard';
-import Faq from 'src/components/Faq';
+import Faq, { faq } from 'src/components/Faq';
 
 import donateImg from 'public/donate-page-photo.jpg';
 
@@ -78,8 +78,10 @@ export default function DonatePage() {
           >
             Frequently asked questions
           </h3>
-          <div className="mx-auto flex max-w-350 sm:max-w-400 lg:max-w-[744px] h-[72px]">
-            <Faq />
+          <div className="mx-auto flex flex-col max-w-350 sm:max-w-400 lg:max-w-[744px] gap-y-4">
+            {faq.map(({ id, question, answer }) => (
+              <Faq key={id} question={question} answer={answer} />
+            ))}
           </div>
         </div>
 
