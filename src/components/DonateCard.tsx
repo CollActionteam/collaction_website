@@ -33,7 +33,7 @@ export default function DonateCard({ headline, donation }: DonateCardProps) {
           </h3>
           <p
             className="text-body-long-1 text-primary-200 w-[302px] h-[34px] 
-          lg:w-[242px] lg:h-[48px] font-light"
+          sm:w-[352px] lg:w-[242px] lg:h-[48px] font-light"
           >
             I will support collAction with a {donation} donation
           </p>
