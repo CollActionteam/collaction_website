@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { useState } from 'react';
 
 import PageSEO from 'src/components/PageSEO';
 import InfoCard from 'src/components/InfoCard';
@@ -11,6 +12,19 @@ import Faq, { faq } from 'src/components/Faq';
 import donateImg from 'public/donate-page-photo.jpg';
 
 export default function DonatePage() {
+  const [donateCardHeadline, setDonateCardHeadline] =
+    useState('Recurring donation');
+
+  // get the textcontent of the button click
+  const donateToggleHandler = (event: React.MouseEvent<HTMLButtonElement>) => {
+    const buttonText = event.currentTarget.textContent;
+    buttonText && setDonateCardHeadline(buttonText);
+  };
+
+  // set single or monthly donation
+  const donationText =
+    donateCardHeadline !== 'Recurring donation' ? 'single' : 'monthly';
+
   return (
     <>
       <PageSEO
@@ -58,16 +72,18 @@ export default function DonatePage() {
           <Button
             text="Recurring donation"
             style="bg-primary-400 text-secondary w-[169px] rounded-[10px]"
+            clickHandler={donateToggleHandler}
           />
           <Button
             text="One-time donation"
             style="bg-secondary text-primary-300 w-[169px] rounded-[10px]"
+            clickHandler={donateToggleHandler}
           />
         </div>
 
         <div className="px-6 sm:px-0 pb-10 lg:pb-[80px]">
           <div className="mx-auto sm:max-w-[400px] lg:max-w-[744px] bg-primary-0 rounded-1 p-6">
-            <DonateCard headline="Recurring donation" donation="monthly" />
+            <DonateCard headline={donateCardHeadline} donation={donationText} />
           </div>
         </div>
 
