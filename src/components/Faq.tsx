@@ -10,7 +10,7 @@ export default function Faq({ question, answer }: FaqProps) {
   const [isPressed, setIsPressed] = useState(false);
 
   // toggle FAQ accordion
-  const toggleFaq = () => {
+  const toggleFaqHandler = () => {
     setIsPressed(!isPressed);
   };
 
@@ -35,7 +35,7 @@ export default function Faq({ question, answer }: FaqProps) {
         <Plus
           className={`w-[24px] h-[24px] ${rotate} 
           transition transform duration-300 ease-in-out`}
-          onClick={toggleFaq}
+          onClick={toggleFaqHandler}
         />
       </div>
       <div
