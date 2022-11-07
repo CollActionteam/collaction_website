@@ -19,7 +19,7 @@ export default function Footer() {
   return (
     <footer
       className={clsx(
-        'text-primary-400 absolute bottom-0 w-full h-940 md:h-440 py-12 px-5',
+        'text-primary-400 w-full h-940 md:h-440 py-12 px-5',
         pathname !== '/westland' && 'bg-secondary'
       )}
     >
