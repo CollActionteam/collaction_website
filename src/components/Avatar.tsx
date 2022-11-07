@@ -21,8 +21,8 @@ export default function Avatar(props: AvatarProps) {
             className="rounded-full"
             alt={props.alt}
             role={props.alt}
-            width="90px"
-            height="90px"
+            width="90"
+            height="90"
           />
           <span className="bottom-[-11px] right-[-2px] absolute">
             <CircleFlag

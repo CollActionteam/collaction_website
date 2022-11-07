@@ -15,10 +15,8 @@ export default function CookiesBanner({ setShowBanner }: Props) {
         We value your privacy. We and our partners use trackers to measure the
         audience of our website and to provide you with offers and improve on
         our own operations.{' '}
-        <Link href="/privacy">
-          <a className="underline">
-            More info on cookies and providers we use.
-          </a>
+        <Link href="/privacy" className="underline">
+          More info on cookies and providers we use.
         </Link>
       </p>
 

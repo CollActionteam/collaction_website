@@ -79,13 +79,11 @@ export default function JoinListPage({ data }: { data: JoinDataType[] }) {
             <div className="w-full flex justify-end">
               <Link
                 href={`/join/as/${title.split(' ').join('-').toLowerCase()}`}
+                passHref
+                className="bg-collaction h-8 w-8 -mr-4 -mb-4 p-4 rounded-full text-secondary"
+                aria-label={`Visit ${title} posting`}
               >
-                <a
-                  className="bg-collaction h-8 w-8 -mr-4 -mb-4 p-4 rounded-full text-secondary"
-                  aria-label={`Visit ${title} posting`}
-                >
-                  <ArrowRightIcon />
-                </a>
+                <ArrowRightIcon />
               </Link>
             </div>
           </div>

@@ -4,6 +4,7 @@ import InfoCard from 'src/components/InfoCard';
 import AppLinkApple from 'src/components/AppLinkApple';
 import AppLinkGoogle from 'src/components/AppLinkGoogle';
 
+import HeroImg from 'public/placeholder-hero-bg-sm.png';
 import Card1Img from 'public/home/home-card-1.png';
 import Card2Img from 'public/home/home-card-2.png';
 import Card3Img from 'public/home/home-card-3.png';
@@ -15,7 +16,23 @@ export default function HomePage() {
     <>
       <PageSEO title="CollAction | Sustainable choices made easy" />
 
-      <main className="bg-secondary p-5 pt-10">
+      <main className="bg-secondary">
+        {/* Hero */}
+        <div className="min-h-[520px] w-full relative mb-8">
+          <Image
+            src={HeroImg}
+            alt="hero image"
+            fill
+            style={{ objectFit: 'cover' }}
+          />
+          <div className="w-full absolute bottom-8 px-6">
+            <h1 className="text-white text-4xl">
+              This is for component and layout headings.
+            </h1>
+            <p className="text-white pt-5">This is for body headings.</p>
+          </div>
+        </div>
+
         {/* FIRST CONTAINER */}
         <InfoCard
           isSecondaryBg
