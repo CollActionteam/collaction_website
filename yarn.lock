@@ -38,10 +38,10 @@
   dependencies:
     "regenerator-runtime" "^0.13.4"
 
-"@corex/deepmerge@^2.6.148":
-  "integrity" "sha512-6QMz0/2h5C3ua51iAnXMPWFbb1QOU1UvSM4bKBw5mzdT+WtLgjbETBBIQZ+Sh9WvEcGwlAt/DEdRpIC3XlDBMA=="
-  "resolved" "https://registry.npmjs.org/@corex/deepmerge/-/deepmerge-2.6.148.tgz"
-  "version" "2.6.148"
+"@corex/deepmerge@^4.0.29":
+  "integrity" "sha512-q/yVUnqckA8Do+EvAfpy7RLdumnBy9ZsducMUtZTvpdbJC7azEf1hGtnYYxm0QfphYxjwggv6XtH64prvS1W+A=="
+  "resolved" "https://registry.npmjs.org/@corex/deepmerge/-/deepmerge-4.0.29.tgz"
+  "version" "4.0.29"
 
 "@eslint/eslintrc@^1.0.5":
   "integrity" "sha512-BLxsnmK3KyPunz5wmCCpqy0YelEoxxGmH73Is+Z74oOTMtExcjkr3dDR6quwrjh1YspA8DH9gnX1o069KiS9AQ=="
@@ -72,22 +72,22 @@
   "resolved" "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz"
   "version" "1.2.1"
 
-"@next/bundle-analyzer@^12.0.8":
-  "integrity" "sha512-tTgxwxs/YZuNlLC0pWdt8ShSlH+lF5CXEc7T/+cA+FyEk6TOKWObSzmMQMNf65okIg0Meu7+CviZBAnRlgpz9Q=="
-  "resolved" "https://registry.npmjs.org/@next/bundle-analyzer/-/bundle-analyzer-12.3.2.tgz"
-  "version" "12.3.2"
+"@next/bundle-analyzer@^13.0.2":
+  "integrity" "sha512-8GZ1kTnMEUEZwiLG1IEjNy6jhjwOdGUNmJ5aEy/EaG6ptXnJQ4eMeuwkxOq9sXtX7EMFl+xj4dv9A4pa3QG+Nw=="
+  "resolved" "https://registry.npmjs.org/@next/bundle-analyzer/-/bundle-analyzer-13.0.2.tgz"
+  "version" "13.0.2"
   dependencies:
     "webpack-bundle-analyzer" "4.3.0"
 
-"@next/env@13.0.2":
+"@next/env@*", "@next/env@13.0.2":
   "integrity" "sha512-Qb6WPuRriGIQ19qd6NBxpcrFOfj8ziN7l9eZUfwff5gl4zLXluqtuZPddYZM/oWjN53ZYcuRXzL+oowKyJeYtA=="
   "resolved" "https://registry.npmjs.org/@next/env/-/env-13.0.2.tgz"
   "version" "13.0.2"
 
-"@next/eslint-plugin-next@12.3.2":
-  "integrity" "sha512-Jx0BIS9STamGSbA+vgTxPAi1mRcq4DoH/5kPMs0PFLFi542mmIKUUtYWB61bI+G6KPMTqejYmO3zi+SF6tzGYg=="
-  "resolved" "https://registry.npmjs.org/@next/eslint-plugin-next/-/eslint-plugin-next-12.3.2.tgz"
-  "version" "12.3.2"
+"@next/eslint-plugin-next@13.0.2":
+  "integrity" "sha512-W+fIIIaFU7Kct7Okx91C7XDRGolv/w2RUenX2yZFeeNVcuVzDIKUcNmckrYbYcwrNQUSXmtwrs3g8xwast0YtA=="
+  "resolved" "https://registry.npmjs.org/@next/eslint-plugin-next/-/eslint-plugin-next-13.0.2.tgz"
+  "version" "13.0.2"
   dependencies:
     "glob" "7.1.7"
 
@@ -941,12 +941,12 @@
   "resolved" "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz"
   "version" "4.0.0"
 
-"eslint-config-next@^12.0.8":
-  "integrity" "sha512-ir8t3wRNexUMSKsMNh7J1EWwiBAr2dd015UAiCFvQ/01MRBPmFof1C6PFh/RqlupwamSZlv6j8gfaV1RxHuRoQ=="
-  "resolved" "https://registry.npmjs.org/eslint-config-next/-/eslint-config-next-12.3.2.tgz"
-  "version" "12.3.2"
+"eslint-config-next@^13.0.2":
+  "integrity" "sha512-SrrHp+zBDYLjOFZdM5b9aW/pliK687Xxfa+qpDuL08Z04ReHhmz3L+maXaAqgrEVZHQximP7nh0El4yNDJW+CA=="
+  "resolved" "https://registry.npmjs.org/eslint-config-next/-/eslint-config-next-13.0.2.tgz"
+  "version" "13.0.2"
   dependencies:
-    "@next/eslint-plugin-next" "12.3.2"
+    "@next/eslint-plugin-next" "13.0.2"
     "@rushstack/eslint-patch" "^1.1.3"
     "@typescript-eslint/parser" "^5.21.0"
     "eslint-import-resolver-node" "^0.3.6"
@@ -1820,7 +1820,7 @@
   dependencies:
     "brace-expansion" "^1.1.7"
 
-"minimist@^1.1.1", "minimist@^1.2.0", "minimist@^1.2.5", "minimist@^1.2.6":
+"minimist@^1.1.1", "minimist@^1.2.0", "minimist@^1.2.6":
   "integrity" "sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q=="
   "resolved" "https://registry.npmjs.org/minimist/-/minimist-1.2.6.tgz"
   "version" "1.2.6"
@@ -1855,13 +1855,13 @@
   "resolved" "https://registry.npmjs.org/next-seo/-/next-seo-4.29.0.tgz"
   "version" "4.29.0"
 
-"next-sitemap@^1.9.12":
-  "integrity" "sha512-kHXf4ZNAGLJyK16HbjzE5X9JlKwXtxW+9J4dh3oT7LSbU/+3bN+VqWjNw/776Otbanf7EJsvl51oQ78qQW5XBQ=="
-  "resolved" "https://registry.npmjs.org/next-sitemap/-/next-sitemap-1.9.12.tgz"
-  "version" "1.9.12"
+"next-sitemap@^3.1.30":
+  "integrity" "sha512-mZqq9xWrTp/tgUM7+Oz/qxT6x2vnJhwQ3AGke2GjypRbUo44QaTb+4Cp1uX9GwXBaiuuuXDoWyS5VxJP3pJljw=="
+  "resolved" "https://registry.npmjs.org/next-sitemap/-/next-sitemap-3.1.30.tgz"
+  "version" "3.1.30"
   dependencies:
-    "@corex/deepmerge" "^2.6.148"
-    "minimist" "^1.2.5"
+    "@corex/deepmerge" "^4.0.29"
+    "minimist" "^1.2.6"
 
 "next@*", "next@^13.0.2", "next@^8.1.1-canary.54 || >=9.0.0":
   "integrity" "sha512-uQ5z5e4D9mOe8+upy6bQdYYjo/kk1v3jMW87kTy2TgAyAsEO+CkwRnMgyZ4JoHEnhPZLHwh7dk0XymRNLe1gFw=="

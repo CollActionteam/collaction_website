@@ -13,7 +13,7 @@ interface AvatarProps {
 /* flex itemcenter*/
 export default function Avatar(props: AvatarProps) {
   return (
-    <div className="w-[186px] h-[196px] flex flex-col text-center flex justify-center items-center pb-5">
+    <div className="w-[186px] h-[196px] flex-col text-center flex justify-center items-center pb-5">
       <a href={props.linkedin_github}>
         <div className="h-20 relative">
           <Image

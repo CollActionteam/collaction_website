@@ -4,12 +4,14 @@ import InfoCard from 'src/components/InfoCard';
 import AppLinkApple from 'src/components/AppLinkApple';
 import AppLinkGoogle from 'src/components/AppLinkGoogle';
 
+import DownloadImg from 'public/download_app.png';
 import HeroImg from 'public/placeholder-hero-bg-sm.png';
 import Card1Img from 'public/home/home-card-1.png';
 import Card2Img from 'public/home/home-card-2.png';
 import Card3Img from 'public/home/home-card-3.png';
 
 import TomTomImg from 'public/actions/tomtom.png';
+import CollActionExplanation, { Step } from 'src/components/CollActionExplanation';
 
 export default function HomePage() {
   return (
@@ -18,14 +20,14 @@ export default function HomePage() {
 
       <main className="bg-secondary">
         {/* Hero */}
-        <div className="min-h-[520px] w-full relative mb-8">
+        <div className="min-h-[520px] md:min-h-[90vh] w-full relative">
           <Image
             src={HeroImg}
             alt="hero image"
             fill
             style={{ objectFit: 'cover' }}
           />
-          <div className="w-full absolute bottom-8 px-6">
+          <div className="w-full absolute bottom-8 md:bottom-20 px-6 md:px-20">
             <h1 className="text-white text-4xl">
               This is for component and layout headings.
             </h1>
@@ -33,17 +35,60 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* FIRST CONTAINER */}
-        <InfoCard
-          isSecondaryBg
-          title="We connect people to solve collective action problems"
-          body="We make doing good fun & easy."
-        >
-          <div className="flex justify-center mb-6">
-            <AppLinkApple className="mr-4 sm:mr-5" />
-            <AppLinkGoogle />
+        {/* Goal, Crowd, Action */}
+        <div className="bg-white py-8">
+
+        <div className="flex flex-wrap justify-center mx-auto max-w-7xl">
+          <CollActionExplanation 
+            step={Step.GOAL}
+            description="Choose or suggest a goal you would like to participate in" 
+            />
+          <CollActionExplanation 
+            step={Step.CROWD}
+            description="Choose or suggest a goal you would like to participate in" 
+            />
+          <CollActionExplanation 
+            step={Step.ACTION}
+            description="Choose or suggest a goal you would like to participate in" 
+            />
           </div>
-        </InfoCard>
+        </div>
+
+        {/* Download App Section */}
+        <div className="lg:hidden py-8">
+          <InfoCard
+            isSecondaryBg
+            title="We connect people to solve collective action problems"
+            body="We make doing good fun & easy."
+            >
+            <div className="flex justify-center mb-6">
+              <AppLinkApple className="mr-4 sm:mr-5" />
+              <AppLinkGoogle />
+            </div>
+          </InfoCard>
+        </div>
+
+        <div className="hidden py-4 lg:grid grid-cols-2 max-w-5xl mx-auto">
+          <div className="col-span-1 w-[512px] h-[512px] mx-auto">
+            <Image 
+              src={DownloadImg}
+              alt="Download App"
+            />
+          </div>
+          <div className="col-span-1 w-[512px] h-[512px] relative mx-auto">
+            <InfoCard
+              className="absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%]"
+              isSecondaryBg
+              title="We connect people to solve collective action problems"
+              body="We make doing good fun & easy."
+              >
+              <div className="flex justify-center mb-6">
+                <AppLinkApple className="mr-4 sm:mr-5" />
+                <AppLinkGoogle />
+              </div>
+            </InfoCard>
+          </div>
+        </div>
 
         {/* SECOND CONTAINER */}
         <InfoCard

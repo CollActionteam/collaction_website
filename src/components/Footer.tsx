@@ -25,7 +25,11 @@ export default function Footer() {
     >
       <div className="flex flex-col md:flex-row md:justify-between w-full max-w-400 md:max-w-600 lg:w-208 lg:max-w-4xl mx-auto py-12 border-t border-primary-100">
         <div>
-          <Link href="/" className="block w-40 relative leading-none mb-5">
+          <Link
+            href="/"
+            passHref
+            className="block w-40 relative leading-none mb-5"
+          >
             <Image
               src={CollActionLogoWithText}
               alt="black CollAction logo with text"
