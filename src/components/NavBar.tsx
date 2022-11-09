@@ -161,8 +161,6 @@ export default function NavBar() {
             )}
           >
             Contact
-            {/* FIXME: Not in the current design */}
-            {/* <FiExternalLink className="ml-3 text-sm" /> */}
           </a>
           <p className="hidden lg:block"> | </p>
           <div className="h-7 w-7 flex space-x-4 mx-4 md:mx-0 md:ml-8">
