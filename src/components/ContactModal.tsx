@@ -5,11 +5,15 @@ type Props = {
 };
 
 export default function ContactModal({ setShowContactModal }: Props) {
-  const form = useRef(null);
+  const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = async (e: { preventDefault: () => void } | undefined) => {
     e?.preventDefault();
 
+    if (form.current == null) {
+      alert('Kindly fill all the details');
+      return;
+    }
     await emailjs
       .sendForm(
         'service_9xuad1b',
