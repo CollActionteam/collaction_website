@@ -1,37 +1,34 @@
-import React , { useRef } from 'react';
-import emailjs from "@emailjs/browser";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 type Props = {
   setShowContactModal: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 export default function ContactModal({ setShowContactModal }: Props) {
-const form = useRef(null);
+  const form = useRef(null);
 
-const sendEmail = async (e: { preventDefault: () => void; } | undefined) => {
-  
-  e?.preventDefault();
-  
-  await emailjs
-    .sendForm(
-      "service_9xuad1b",
-      "template_48sm4b9",
-       form.current,
-      "gzAnGNLWJxhMbPdcY"
-    )
-    .then(
-      () => {
-        alert("Your email has been sent");
-      },
-      () => {
-        alert("There was an error sending your email");
-      }   
-    );
-    setShowContactModal(false)
-};
+  const sendEmail = async (e: { preventDefault: () => void } | undefined) => {
+    e?.preventDefault();
+
+    await emailjs
+      .sendForm(
+        'service_9xuad1b',
+        'template_48sm4b9',
+        form.current,
+        'gzAnGNLWJxhMbPdcY'
+      )
+      .then(
+        () => {
+          alert('Your email has been sent');
+        },
+        () => {
+          alert('There was an error sending your email');
+        }
+      );
+    setShowContactModal(false);
+  };
   return (
-    <div
-      className=" top-0 left-0 w-full h-full outline-none overflow-x-hidden overflow-y-auto fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center z-50"
-    >
+    <div className=" top-0 left-0 w-full h-full outline-none overflow-x-hidden overflow-y-auto fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center z-50">
       <div className="bg-white mx-auto flex items-center flex-col px-2 py-8 text-center w-96">
         <button
           className="text-primary-400 text-lg font-light place-self-end mr-8"
@@ -39,7 +36,12 @@ const sendEmail = async (e: { preventDefault: () => void; } | undefined) => {
         >
           X
         </button>
-        <form className="p-2 rounded leading-loose" ref={form} id="#contact-us" onSubmit={sendEmail}>
+        <form
+          className="p-2 rounded leading-loose"
+          ref={form}
+          id="#contact-us"
+          onSubmit={sendEmail}
+        >
           <p className="text-primary-400 text-2xl font-bold mt-6">
             Get in touch with us
           </p>
@@ -69,10 +71,13 @@ const sendEmail = async (e: { preventDefault: () => void; } | undefined) => {
             className="required rounded-md bg-primary-0 mt-6 p-4 text-black font-light border"
             placeholder="Your message to us"
           ></textarea>
-        <button className="w-80 h-9 mt-4 items-center bg-primary-0 hover:bg-collaction-300 text-primary-300
-        font-semibold hover:text-black py-2 px-4 rounded-full" >Send</button>
+          <button
+            className="w-80 h-9 mt-4 items-center bg-primary-0 hover:bg-collaction-300 text-primary-300
+        font-semibold hover:text-black py-2 px-4 rounded-full"
+          >
+            Send
+          </button>
         </form>
-        
       </div>
     </div>
   );
