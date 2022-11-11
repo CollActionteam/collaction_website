@@ -11,14 +11,22 @@ import Faq, { faq } from 'src/components/Faq';
 
 import donateImg from 'public/donate-page-photo.jpg';
 
+import { toggleBtnState } from 'src/helpers/toggleButtonState';
+
 export default function DonatePage() {
   const [donateCardHeadline, setDonateCardHeadline] =
     useState('Recurring donation');
 
+  // button state
+  const activeButtonStyle = ['bg-primary-400', 'text-secondary'];
+  const inactiveButtonStyle = ['bg-secondary', 'text-primary-300'];
+
   // get the textcontent of the button click
   const donateToggleHandler = (event: React.MouseEvent<HTMLButtonElement>) => {
-    const buttonText = event.currentTarget.textContent;
-    buttonText && setDonateCardHeadline(buttonText);
+    const { currentTarget: activeButton } = event;
+    const activeButtonText = activeButton.textContent;
+    activeButtonText && setDonateCardHeadline(activeButtonText);
+    toggleBtnState(activeButton, activeButtonStyle, inactiveButtonStyle);
   };
 
   // set single or monthly donation
@@ -71,12 +79,12 @@ export default function DonatePage() {
         <div className="flex gap-4 mt-10 mb-6 mx-auto max-w-350 h-[47px] px-5">
           <Button
             text="Recurring donation"
-            style="bg-primary-400 text-secondary w-[169px] rounded-[10px]"
+            style="w-[169px] rounded-[10px] bg-primary-400 text-secondary"
             clickHandler={donateToggleHandler}
           />
           <Button
             text="One-time donation"
-            style="bg-secondary text-primary-300 w-[169px] rounded-[10px]"
+            style="w-[169px] rounded-[10px] bg-secondary text-primary-300"
             clickHandler={donateToggleHandler}
           />
         </div>
