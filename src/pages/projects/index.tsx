@@ -11,6 +11,7 @@ import { InferGetStaticPropsType } from 'next';
 import { ProjectCard } from 'src/components/ProjectCard';
 import { getProjectsData } from 'src/lib/getProjects';
 import Link from 'next/link';
+import PageHero from 'src/components/PageHero';
 
 export default function ProjectListPage({
   projects,
@@ -26,18 +27,11 @@ export default function ProjectListPage({
 
       <main className="bg-secondary">
         {/* HERO SETION */}
-        <div className="min-h-[520px] md:min-h-[70vh] w-full relative">
-          <Image
-            src={HeroImg}
-            alt="hero image"
-            fill
-            style={{ objectFit: 'cover' }}
-          />
-          <div className="w-full absolute bottom-8 md:bottom-20 px-6 md:px-20">
-            <h1 className="text-white text-7xl">{t('projects:hero.title')}</h1>
-            <p className="text-white pt-5">{t('projects:hero.description')}</p>
-          </div>
-        </div>
+        <PageHero 
+          image={HeroImg}
+          title={t('projects:hero.title')}
+          description={t('projects:hero.description')}
+        />
 
         {/* BUSINESS/EDUCATION/GOVERNANCE SECTION */}
         <div className="text-left mx-auto max-w-350 sm:max-w-400 lg:max-w-500 pt-10 pb-6 ">
