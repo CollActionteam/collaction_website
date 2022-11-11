@@ -9,7 +9,7 @@ type Props = {
 
 export default function CookiesBanner({ setShowBanner }: Props) {
   return (
-    <div className="sticky absolute bottom-0 bg-collaction-100 py-5 px-12 z-50">
+    <div className="sticky absolute bottom-0 bg-collaction-100 py-5 px-12 z-40">
       {/* TEXT */}
       <p className="max-w-600 mx-auto text-primary-300 text-center mb-5 ">
         We value your privacy. We and our partners use trackers to measure the
