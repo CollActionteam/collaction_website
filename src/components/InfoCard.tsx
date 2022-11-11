@@ -5,7 +5,7 @@ type InfoCardTypes = {
   hasBg?: boolean;
   leftAlign?: boolean;
   title: string;
-  body?: string;
+  body?: string | JSX.Element;
   children?: React.ReactNode;
   className?: string;
 };

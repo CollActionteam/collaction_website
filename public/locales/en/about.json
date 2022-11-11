@@ -1,0 +1,16 @@
+{
+  "hero": {
+    "title": "About us",
+    "description": "Sustainability is at the heart of everything we do. We are committed to reducing our environmental impact and to creating a more sustainable future for everyone and our planet."
+  },
+  "solveProblems": {
+    "title": "Solve Collective action problems",
+    "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint."
+  },
+  "memberQuote": {
+    "name": "Ruben Horn",
+    "quote": "Some pragmatic quote from Ruben",
+    "title": "M.Sc. Computer Science",
+    "location": "Amsterdam, Noord Holland"
+  }
+}

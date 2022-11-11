@@ -25,7 +25,7 @@ export default function TwoColumnSection(props: TwoColumnSectionProps) {
       <div
         className={`${
           props.mobile ? 'hidden lg:grid' : 'grid'
-        } py-4 grid-cols-1 lg:grid-cols-2 lg:max-w-5xl mx-auto grid-flow-col`}
+        } grid-cols-1 lg:grid-cols-2 lg:max-w-5xl mx-auto grid-flow-col`}
       >
         <div
           className={`${

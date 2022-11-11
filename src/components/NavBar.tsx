@@ -47,7 +47,7 @@ export default function NavBar() {
         <div
           className={clsx(
             'flex flex-col md:flex-row flex-wrap px-6 lg:px-0 md:items-center justify-center md:justify-between mx-auto py-4',
-            'max-w-300 md:max-w-600 lg:max-w-864',
+            'md:max-w-[700px] lg:max-w-864',
             'z-20'
           )}
         >
@@ -123,6 +123,18 @@ export default function NavBar() {
                 )}
               >
                 Home
+              </Link>
+              <Link
+                href="/about-us"
+                className={clsx(
+                  'flex items-center mx-4 md:mx-0 md:ml-8',
+                  router.asPath === '/about-us'
+                    ? 'text-headline-s-1'
+                    : 'text-body-short-1',
+                  isInverted ? 'text-secondary' : 'text-primary-300'
+                )}
+              >
+                About
               </Link>
               <Link
                 href="/join"
