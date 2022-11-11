@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
@@ -6,20 +6,27 @@ import clsx from 'clsx';
 
 import CollActionBlackLogoWithText from 'public/logo-black-small.png';
 import CollActionWhiteLogoWithText from 'public/logo-white-small.png';
+import { CircleFlag } from 'react-circle-flags';
 
 const contactEmail = 'contact@collaction.org';
 
 export default function NavBar() {
-  const { pathname, asPath } = useRouter();
+  const router = useRouter();
+  const [navbar, setNavbar] = useState(false);
+
+  const onToggleLanguageClick = (newLocale: string) => {
+    const { pathname, asPath, query } = router;
+    router.push({ pathname, query }, asPath, { locale: newLocale });
+  };
 
   // if it's inverted we'll show white text and a green background
-  const isInverted = ['/westland'].includes(pathname);
+  const isInverted = ['/westland'].includes(router.pathname);
 
   return (
     <header
       className={clsx(
         'relative w-full',
-        pathname === '/asml' ? 'hidden' : 'block',
+        router.pathname === '/asml' ? 'hidden' : 'block',
         isInverted ? 'bg-collaction' : 'bg-secondary'
       )}
     >
@@ -101,7 +108,9 @@ export default function NavBar() {
               href="/"
               className={clsx(
                 'flex items-center mx-4 md:mx-0 md:ml-8',
-                asPath === '/' ? 'text-headline-s-1' : 'text-body-short-1',
+                router.asPath === '/'
+                  ? 'text-headline-s-1'
+                  : 'text-body-short-1',
                 isInverted ? 'text-secondary' : 'text-primary-300'
               )}
             >
@@ -111,7 +120,9 @@ export default function NavBar() {
               href="/join"
               className={clsx(
                 'flex items-center mx-4 md:mx-0 md:ml-8',
-                asPath === '/join' ? 'text-headline-s-1' : 'text-body-short-1',
+                router.asPath === '/join'
+                  ? 'text-headline-s-1'
+                  : 'text-body-short-1',
                 isInverted ? 'text-secondary' : 'text-primary-300'
               )}
             >
@@ -121,7 +132,7 @@ export default function NavBar() {
               href={`mailto:${contactEmail}`}
               className={clsx(
                 'flex items-center mx-4 md:mx-0 md:ml-8',
-                asPath === '/contact'
+                router.asPath === '/contact'
                   ? 'text-headline-s-1'
                   : 'text-body-short-1',
                 isInverted ? 'text-secondary' : 'text-primary-300'
@@ -131,8 +142,24 @@ export default function NavBar() {
             </a>
             <p className="hidden lg:block"> | </p>
             <div className="h-7 w-7 flex space-x-4 mx-4 md:mx-0 md:ml-8">
-              <CircleFlag countryCode="uk" />
-              <CircleFlag countryCode="nl" />
+              <CircleFlag
+                className={router.locale != 'en' ? 'hover:cursor-pointer' : ''}
+                countryCode="uk"
+                onClick={
+                  router.locale != 'en'
+                    ? () => onToggleLanguageClick('en')
+                    : undefined
+                }
+              />
+              <CircleFlag
+                className={router.locale != 'nl' ? 'hover:cursor-pointer' : ''}
+                countryCode="nl"
+                onClick={
+                  router.locale != 'nl'
+                    ? () => onToggleLanguageClick('nl')
+                    : undefined
+                }
+              />
             </div>
           </div>
         </div>
