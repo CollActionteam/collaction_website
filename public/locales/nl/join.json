@@ -1,14 +1,14 @@
 {
   "hero": {
-    "title": "Hero",
-    "description": "Hero description"
+    "title": "Ons Team",
+    "description": ""
   },
   "joinSection": {
-    "title": "Become part of the CollAction Team",
-    "description": "Help us on our mission to make doing good fun & easy"
+    "title": "Word onderdeel van het CollAction team",
+    "description": "Help mee om goed doen leuk en gemakkelijk te maken"
   },
   "ourTeamSection": {
-    "title": "Our team",
-    "description": "CollAction is a truly international team. We collaborate with amazing volunteers from all over the world."
+    "title": "Ons Team",
+    "description": "CollAction is een echte internationale organisatie. We werken samen met een team van geweldige vrijwilligers van over de hele wereld."
   }
 }

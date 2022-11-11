@@ -2,15 +2,15 @@
   "collActionExplanation": {
     "goal": {
       "title": "Goal",
-      "description": "Choose or suggest a goal you would like to participate in"
+      "description": "Choose an activity you want to take part in"
     },
     "crowd": {
       "title": "Crowd",
-      "description": "Choose or suggest a goal you would like to participate in"
+      "description": "See how your actions are amplified by the crowd"
     },
     "action": {
       "title": "Action",
-      "description": "Choose or suggest a goal you would like to participate in"
+      "description": "Commit to the goal and make impact"
     }
   },
   "downloadApp": {
