@@ -71,8 +71,8 @@ export default function ManagePrivacyPage() {
           )}
           <p className="text-primary-400 text-center w-72 mb-5 mx-auto">
             View our{' '}
-            <Link href="/privacy">
-              <a className="text-collaction">Privacy and Cookies Policy</a>
+            <Link href="/privacy" className="text-collaction">
+              Privacy and Cookies Policy
             </Link>{' '}
             to learn more.
           </p>

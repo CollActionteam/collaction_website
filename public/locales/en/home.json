@@ -1,0 +1,22 @@
+{
+  "hero": {
+    "title": "We make doing good fun and easy",
+    "description": ""
+  },
+  "crowdActionSection": {
+    "title": "Choose a CrowdAction and make a change today",
+    "description": "Let's eat vegan for a month!"
+  },
+  "commitmentOptionsSection": {
+    "title": "Your CrowdAction, your rules",
+    "description": "You decide your pace by choosing your level of commitment"
+  },
+  "impactSection": {
+    "title": "See how your actions make impact",
+    "description": "Together with the crowd, your actions can make a massive impact"
+  },
+  "useCollActionSection": {
+    "title": "Want to use CollAction for your project?",
+    "description": "Do you have an initiative for collective action and would you like to reach a large public? Send us a message at use@collaction.org"
+  }
+}

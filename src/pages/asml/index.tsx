@@ -182,10 +182,11 @@ export default function ASMLPage({
           </div>
 
           {/* SEE MORE DEALS */}
-          <Link href="/asml/deals">
-            <a className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 mt-5 w-72 shadow sticky bottom-7 inset-x-0 mx-auto z-40">
-              See All Deals
-            </a>
+          <Link
+            href="/asml/deals"
+            className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 mt-5 w-72 shadow sticky bottom-7 inset-x-0 mx-auto z-40"
+          >
+            See All Deals
           </Link>
         </div>
 
@@ -259,13 +260,12 @@ export default function ASMLPage({
         </div>
 
         {/* DOWNLOAD THE APP BUTTON */}
-        <Link href="/download">
-          <a
-            className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 mb-7 w-72 shadow sticky bottom-7 inset-x-0 mx-auto z-40"
-            style={{ marginTop: `calc(-52px - 2rem)` }}
-          >
-            Download The App!
-          </a>
+        <Link
+          href="/download"
+          className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 mb-7 w-72 shadow sticky bottom-7 inset-x-0 mx-auto z-40"
+          style={{ marginTop: `calc(-52px - 2rem)` }}
+        >
+          Download The App!
         </Link>
       </div>
     </>

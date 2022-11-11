@@ -263,8 +263,8 @@ export default function PrivacyPage() {
             If you wish to disable the use and placement of cookies, we advise
             you to amend your internet browser settings. You can manage your
             CollAction.org cookies on our{' '}
-            <Link href="/privacy/manage">
-              <a className="text-collaction">Manage Cookies</a>
+            <Link href="/privacy/manage" className="text-collaction">
+              Manage Cookies
             </Link>{' '}
             page. We do however note that disabling or deleting certain cookies
             may mean that you can no longer access or use certain features of

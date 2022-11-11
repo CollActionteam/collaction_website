@@ -9,6 +9,7 @@ import NavBar from 'src/components/NavBar';
 import Analytics from 'src/components/Analytics';
 import * as gtag from 'src/components/Analytics/gtag';
 import 'src/styles/globals.css';
+import { appWithTranslation } from 'next-i18next';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -36,4 +37,4 @@ function MyApp({ Component, pageProps }: AppProps) {
   );
 }
 
-export default MyApp;
+export default appWithTranslation(MyApp);

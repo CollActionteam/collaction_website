@@ -1,0 +1,20 @@
+{
+  "collActionExplanation": {
+    "goal": {
+      "title": "Doel",
+      "description": "Kies een actie waarin je wilt meedoen"
+    },
+    "crowd": {
+      "title": "Massa",
+      "description": "Zie hoe jouw acties worden versterkt door de groep"
+    },
+    "action": {
+      "title": "Actie",
+      "description": "Zet je doel vast en maak impact"
+    }
+  },
+  "downloadApp": {
+    "title": "Wij verbinden mensen om collectieve-actieproblemen op te lossen",
+    "description": "Wij maken goed doen leuk en gemakkelijk."
+  }
+}

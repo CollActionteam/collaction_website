@@ -2,14 +2,18 @@ import clsx from 'clsx';
 
 type InfoCardTypes = {
   isSecondaryBg?: boolean;
+  hasBg?: boolean;
+  leftAlign?: boolean;
   title: string;
   body?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   className?: string;
 };
 
 export default function InfoCard({
   isSecondaryBg,
+  hasBg = true,
+  leftAlign = false,
   title,
   body,
   children,
@@ -18,10 +22,11 @@ export default function InfoCard({
   return (
     <div
       className={clsx(
-        isSecondaryBg ? 'bg-collaction' : 'bg-primary-0',
-        'p-6 mx-auto rounded-1 text-center',
+        hasBg ? (isSecondaryBg ? 'bg-collaction' : 'bg-primary-0') : '',
+        'p-6 mx-auto rounded-1',
         'w-full md:w-3/4 max-w-350 sm:max-w-400 lg:max-w-600',
         'mb-6',
+        leftAlign ? 'text-left' : 'text-center',
         className
       )}
     >

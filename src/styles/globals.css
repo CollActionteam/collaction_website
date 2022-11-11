@@ -8,7 +8,7 @@
   }
 
   body {
-    @apply font-sans bg-primary-0 text-primary-400 relative min-h-full m-0 pb-940 md:pb-440;
+    @apply font-sans bg-primary-0 text-primary-400 relative min-h-full m-0;
   }
 
   h1,
