@@ -57,12 +57,62 @@ export default function NavBar() {
               className="block w-32 leading-none"
               aria-label="Home Page"
             >
-              <Image
-                priority
-                src={
-                  isInverted
-                    ? CollActionWhiteLogoWithText
-                    : CollActionBlackLogoWithText
+              Home
+            </Link>
+            <Link
+              href="/join"
+              className={clsx(
+                'flex items-center mx-4 md:mx-0 md:ml-8',
+                router.asPath === '/join'
+                  ? 'text-headline-s-1'
+                  : 'text-body-short-1',
+                isInverted ? 'text-secondary' : 'text-primary-300'
+              )}
+            >
+              Join
+            </Link>
+            <Link
+              href="/projects"
+              className={clsx(
+                'flex items-center mx-4 md:mx-0 md:ml-8',
+                router.asPath === '/projects'
+                  ? 'text-headline-s-1'
+                  : 'text-body-short-1',
+                isInverted ? 'text-secondary' : 'text-primary-300'
+              )}
+            >
+              Projects
+            </Link>
+            <a
+              href={`mailto:${contactEmail}`}
+              className={clsx(
+                'flex items-center mx-4 md:mx-0 md:ml-8',
+                router.asPath === '/contact'
+                  ? 'text-headline-s-1'
+                  : 'text-body-short-1',
+                isInverted ? 'text-secondary' : 'text-primary-300'
+              )}
+            >
+              Contact
+            </a>
+            <p className="hidden lg:block"> | </p>
+            <div className="h-7 w-7 flex space-x-4 mx-4 md:mx-0 md:ml-8">
+              <CircleFlag
+                className={router.locale != 'en' ? 'hover:cursor-pointer' : ''}
+                countryCode="uk"
+                onClick={
+                  router.locale != 'en'
+                    ? () => onToggleLanguageClick('en')
+                    : undefined
+                }
+              />
+              <CircleFlag
+                className={router.locale != 'nl' ? 'hover:cursor-pointer' : ''}
+                countryCode="nl"
+                onClick={
+                  router.locale != 'nl'
+                    ? () => onToggleLanguageClick('nl')
+                    : undefined
                 }
                 alt="CollAction logo"
                 className="block w-32 leading-none"

@@ -62,7 +62,7 @@ export default function JoinListPage(
             style={{ objectFit: 'cover' }}
           />
           <div className="w-full absolute bottom-8 md:bottom-20 px-6 md:px-20">
-            <h1 className="text-white text-4xl">{t('join:hero.title')}</h1>
+            <h1 className="text-white text-7xl">{t('join:hero.title')}</h1>
             <p className="text-white pt-5">{t('join:hero.description')}</p>
           </div>
         </div>

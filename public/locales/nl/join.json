@@ -1,6 +1,6 @@
 {
   "hero": {
-    "title": "Ons Team",
+    "title": "Het Team",
     "description": ""
   },
   "joinSection": {
@@ -8,7 +8,7 @@
     "description": "Help mee om goed doen leuk en gemakkelijk te maken"
   },
   "ourTeamSection": {
-    "title": "Ons Team",
+    "title": "Het Team",
     "description": "CollAction is een echte internationale organisatie. We werken samen met een team van geweldige vrijwilligers van over de hele wereld."
   }
 }

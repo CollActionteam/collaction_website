@@ -13,7 +13,7 @@ import AppLinkGoogle from 'src/components/AppLinkGoogle';
 // const whatsAppUrl = '#';
 // const ikDoeMeeUrl = '#';
 
-export default function WestlandIndexPage() {
+export default function UilenstedeIndexPage() {
   return (
     <>
       <PageSEO
