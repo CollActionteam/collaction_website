@@ -37,43 +37,44 @@ export default function NavBar() {
           'z-20'
         )}
       >
-        <Link href="/">
-          <a className="block w-32 leading-none" aria-label="Home Page">
-            <Image
-              priority
-              src={
-                isInverted
-                  ? CollActionWhiteLogoWithText
-                  : CollActionBlackLogoWithText
-              }
-              alt="CollAction logo"
-              className="block w-32 leading-none"
-              sizes="128px"
-            />
-          </a>
+        <Link
+          href="/"
+          passHref
+          className="block w-32 leading-none"
+          aria-label="Home Page"
+        >
+          <Image
+            priority
+            src={
+              isInverted
+                ? CollActionWhiteLogoWithText
+                : CollActionBlackLogoWithText
+            }
+            alt="CollAction logo"
+            className="block w-32 leading-none"
+            sizes="128px"
+          />
         </Link>
         <div className="flex justify-between items-center mt-6 md:mt-0">
-          <Link href="/">
-            <a
-              className={clsx(
-                'flex items-center mx-4 md:mx-0 md:ml-8',
-                asPath === '/' ? 'text-headline-s-1' : 'text-body-short-1',
-                isInverted ? 'text-secondary' : 'text-primary-300'
-              )}
-            >
-              Home
-            </a>
+          <Link
+            href="/"
+            className={clsx(
+              'flex items-center mx-4 md:mx-0 md:ml-8',
+              asPath === '/' ? 'text-headline-s-1' : 'text-body-short-1',
+              isInverted ? 'text-secondary' : 'text-primary-300'
+            )}
+          >
+            Home
           </Link>
-          <Link href="/join">
-            <a
-              className={clsx(
-                'flex items-center mx-4 md:mx-0 md:ml-8',
-                asPath === '/join' ? 'text-headline-s-1' : 'text-body-short-1',
-                isInverted ? 'text-secondary' : 'text-primary-300'
-              )}
-            >
-              Join
-            </a>
+          <Link
+            href="/join"
+            className={clsx(
+              'flex items-center mx-4 md:mx-0 md:ml-8',
+              asPath === '/join' ? 'text-headline-s-1' : 'text-body-short-1',
+              isInverted ? 'text-secondary' : 'text-primary-300'
+            )}
+          >
+            Join
           </Link>
           <a
             href={`mailto:${contactEmail}`}

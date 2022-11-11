@@ -25,16 +25,18 @@ export default function Footer() {
     >
       <div className="flex flex-col md:flex-row md:justify-between w-full max-w-400 md:max-w-600 lg:w-208 lg:max-w-4xl mx-auto py-12 border-t border-primary-100">
         <div>
-          <Link href="/">
-            <a className="block w-40 relative leading-none mb-5">
-              <Image
-                src={CollActionLogoWithText}
-                alt="black CollAction logo with text"
-                layout="responsive"
-                placeholder="blur"
-                sizes="160px"
-              />
-            </a>
+          <Link
+            href="/"
+            passHref
+            className="block w-40 relative leading-none mb-5"
+          >
+            <Image
+              src={CollActionLogoWithText}
+              alt="black CollAction logo with text"
+              layout="responsive"
+              placeholder="blur"
+              sizes="160px"
+            />
           </Link>
           <p className="mb-5">
             © 2022 Copyright <br />
@@ -83,19 +85,13 @@ export default function Footer() {
           <h5 className="text-headline mb-5">Legal</h5>
           <ul className="list-none">
             <li className="mb-5 md:mb-0">
-              <Link href="/privacy">
-                <a>Privacy policy</a>
-              </Link>
+              <Link href="/privacy">Privacy policy</Link>
             </li>
             <li className="mb-5 md:mb-0">
-              <Link href="/terms">
-                <a>Terms of use</a>
-              </Link>
+              <Link href="/terms">Terms of use</Link>
             </li>
             <li className="mb-5">
-              <Link href="/anbi">
-                <a>ANBI</a>
-              </Link>
+              <Link href="/anbi">ANBI</Link>
             </li>
             <li className="mb-5 md:mb-0">KvK: {KvK}</li>
             <li className="mb-5 md:mb-0">RSIN: {RSIN}</li>

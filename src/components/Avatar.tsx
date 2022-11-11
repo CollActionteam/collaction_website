@@ -13,7 +13,7 @@ interface AvatarProps {
 /* flex itemcenter*/
 export default function Avatar(props: AvatarProps) {
   return (
-    <div className="w-[186px] h-[196px] flex flex-col text-center flex justify-center items-center pb-5">
+    <div className="w-[186px] h-[196px] flex-col text-center flex justify-center items-center pb-5">
       <a href={props.linkedin_github}>
         <div className="h-20 relative">
           <Image
@@ -21,8 +21,8 @@ export default function Avatar(props: AvatarProps) {
             className="rounded-full"
             alt={props.alt}
             role={props.alt}
-            width="90px"
-            height="90px"
+            width="90"
+            height="90"
           />
           <span className="bottom-[-11px] right-[-2px] absolute">
             <CircleFlag

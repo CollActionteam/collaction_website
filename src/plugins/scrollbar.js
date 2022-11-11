@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const plugin = require('tailwindcss/plugin');
 
 module.exports = plugin(function ({ addUtilities, matchUtilities, theme }) {
@@ -35,6 +36,7 @@ module.exports = plugin(function ({ addUtilities, matchUtilities, theme }) {
       'scrollbar-color': 'var(--scrollbar-thumb) var(--scrollbar-track)',
       '&::-webkit-scrollbar': {
         width: 'var(--scrollbar-width)',
+        height: 'var(--scrollbar-width)',
       },
     },
     '.scrollbar-thin': {
