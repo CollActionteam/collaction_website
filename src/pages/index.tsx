@@ -41,7 +41,7 @@ export default function HomePage(
 
       <main className="bg-secondary">
         {/* HERO SETION */}
-        <PageHero 
+        <PageHero
           image={HeroImg}
           title={t('home:hero.title')}
           description={t('home:hero.description')}
