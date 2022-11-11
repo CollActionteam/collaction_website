@@ -47,6 +47,10 @@ export default function Faq({ question, answer }: FaqProps) {
       <div
         className={`w-full flex items-center mt-6 pt-6 border-t-[0.5px] 
       border-solid border-primary-100 ${hidden}`}
+        onClick={toggleFaqHandler}
+        role="button"
+        tabIndex={0}
+        onKeyPress={toggleFaqHandler}
       >
         <p
           className="w-[326px] sm:w-[376px] lg:w-[720px] font-light 
