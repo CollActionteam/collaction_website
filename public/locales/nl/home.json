@@ -1,22 +1,22 @@
 {
   "hero": {
-    "title": "Hero Title",
-    "subtitle": "Hero body"
+    "title": "Wij maken goed doen leuk en gemakkelijk",
+    "subtitle": ""
   },
   "crowdActionSection": {
-    "title": "Choose a CrowdAction & make a change today",
-    "description": "We make doing good fun & easy."
+    "title": "Kies een CrowdAction en maak vandaag nog het verschil",
+    "description": "Laten we een maand veganist zijn!"
   },
   "commitmentOptionsSection": {
-    "title": "Participate at your own pace. Your challenge, your rules",
-    "description": "CollAction organizes monthly challenges to help you in creating more sustainable habits. We help you in reducing the waste you produce or in adopting a more sustainable diet."
+    "title": "Jouw CrowdAction, jouw regels",
+    "description": "Jij bepaalt zelf op welk niveau je meedoet"
   },
   "impactSection": {
-    "title": "See the impact we make together",
-    "description": "Alone we are a drop in the ocean – together we make waves. CollAction always shows you how much of an environmental impact all participants of a CrowdAction have made collectively."
+    "title": "Zie hoe je acties impact maken",
+    "description": "Dankzij de groep wordt de impact van jouw actie versterkt"
   },
   "useCollActionSection": {
-    "title": "Want to use CollAction for your project?",
-    "description": "Do you have an initiative for collective action and would you like to reach a larger public? Send us a message at use@collaction.org"
+    "title": "Wilt u CollAction gebruiken voor uw project?",
+    "description": "Heeft u een initiatief voor collectieve actie en wilt u een groot publiek bereiken? Stuur een mail naar join@collaction.org"
   }
 }

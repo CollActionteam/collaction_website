@@ -1,20 +1,20 @@
 {
   "collActionExplanation": {
     "goal": {
-      "title": "Goal",
-      "description": "Choose or suggest a goal you would like to participate in"
+      "title": "Doel",
+      "description": "Kies een actie waarin je wilt meedoen"
     },
     "crowd": {
-      "title": "Crowd",
-      "description": "Choose or suggest a goal you would like to participate in"
+      "title": "Massa",
+      "description": "Zie hoe jouw acties worden versterkt door de groep"
     },
     "action": {
-      "title": "Action",
-      "description": "Choose or suggest a goal you would like to participate in"
+      "title": "Actie",
+      "description": "Zet je doel vast en maak impact"
     }
   },
   "downloadApp": {
-    "title": "We connect people to solve collective action problems",
-    "description": "We make doing good fun & easy."
+    "title": "Wij verbinden mensen om collectieve-actieproblemen op te lossen",
+    "description": "Wij maken goed doen leuk en gemakkelijk."
   }
 }
