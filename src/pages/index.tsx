@@ -8,7 +8,7 @@ import CrowdActionGraphic from 'public/crowdaction_graphic.png';
 import CommitmentOptionsGraphic from 'public/commitment_options_graphic.png';
 import AchievementGraphic from 'public/achievement_graphic.png';
 import DownloadImg from 'public/download_app.png';
-import HeroImg from 'public/placeholder-hero-bg-sm.png';
+import HeroImg from 'public/uilenstede_banner.png';
 
 import TomTomImg from 'public/actions/tomtom.png';
 import CollActionExplanation, {
@@ -48,8 +48,8 @@ export default function HomePage(
             style={{ objectFit: 'cover' }}
           />
           <div className="w-full absolute bottom-8 md:bottom-20 px-6 md:px-20">
-            <h1 className="text-white text-4xl">{t('home:hero.title')}</h1>
-            <p className="text-white pt-5">{t('home:hero.description')}</p>
+            <h1 className="text-collaction text-7xl">{t('home:hero.title')}</h1>
+            <p className="text-collaction pt-5">{t('home:hero.description')}</p>
           </div>
         </div>
 
@@ -72,7 +72,7 @@ export default function HomePage(
               step={Step.CROWD}
               title={
                 <div className="text-2xl font-bold">
-                  <span>Step 1: </span>
+                  <span>Step 2: </span>
                   <span className="text-collaction">
                     {t('common:collActionExplanation.crowd.title')}
                   </span>
@@ -84,7 +84,7 @@ export default function HomePage(
               step={Step.ACTION}
               title={
                 <div className="text-2xl font-bold">
-                  <span>Step 1: </span>
+                  <span>Step 3: </span>
                   <span className="text-collaction">
                     {t('common:collActionExplanation.action.title')}
                   </span>
