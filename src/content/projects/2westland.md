@@ -1,7 +1,7 @@
 ---
   publish: true
   featured: true
-  title: Westland
+  title: Act sustainably in Westland 
   image: /WestlandGroenDoen2.png
   links: 
     website: /westland
@@ -10,4 +10,4 @@
     order: null
 ---
 
-Samen werken we aan een groener Westland. Met verschillende acties kun je het milieu besparen, en tegelijkertijd je portemonnee. In deze eerste drie acties kun je energie besparen in en rond je huis, kun je uitstoot verminderen door de fiets te nemen in plaats van de auto en kun je zorgen dat je huis goed geïsoleerd is nu het kouder wordt. Wij geven je slimme, gemakkelijk inzetbare tips en jij voert ze, via onze app óf via onze website uit. Doe precies hoeveel je wilt doen: jouw actie, jouw regels. Wij rekenen uiteindelijk uit wat je hebt bespaard en laten dit zien op de website.
+In cooperation with the municipality of Westland, we make it fun and easy for residents to live sustainably. Participants choose their bike instead of their car, isolate their house and save lots of energy. We have positive impact by making it fun and easy!

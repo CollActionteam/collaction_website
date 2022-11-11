@@ -1,7 +1,7 @@
 ---
   publish: true
-  featured: true
-  title: ASML
+  featured: false
+  title: Veganuary challenge
   image: /veganuary-ASML-banner.png
   links: 
     website: /asml
@@ -10,4 +10,4 @@
     order: null
 ---
 
-Your effort paid off. Based on your individual commitments, we calculated the impact of 135 participants in this year’s ASML Veganuary challenge. Here are the numbers. Feel free to share this and spread the word about your collective impact. Together, you made waves!
+CollAction motivates employees at ASML to participate in the Veganuary Challenge. It involves 135 participants eating more sustainably for a month. It pays off, as a whopping 13 tons of CO2 is saved!

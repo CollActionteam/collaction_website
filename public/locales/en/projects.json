@@ -3,6 +3,10 @@
     "title": "Our Projects",
     "description": ""
   },
+  "begSection": {
+    "title": "Our Products",
+    "description": "CollAction organises 3 types of CrowdActions: CollAction for Business, Education and Governance. Each situation has a unique target audience, social structure and communication channels, so we tailor our CrowdActions accordingly."
+  },
   "projectSection": {
     "title": "Take action for a better world",
     "description": "We work together to achieve your collective action goals"
