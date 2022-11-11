@@ -46,7 +46,7 @@ export default function NavBar() {
         )}
         <div
           className={clsx(
-            'flex flex-col md:flex-row flex-wrap px-6 lg:px-0 md:items-center justify-center md:justify-between mx-auto py-6',
+            'flex flex-col md:flex-row flex-wrap px-6 lg:px-0 md:items-center justify-center md:justify-between mx-auto py-4',
             'max-w-300 md:max-w-600 lg:max-w-864',
             'z-20'
           )}

@@ -47,8 +47,11 @@ export default function HomePage(
             fill
             style={{ objectFit: 'cover' }}
           />
+          <div className="absolute bottom-0 min-h-[420px] md:min-h-[50vh] w-full bg-gradient-to-t from-black via-black opacity-50"></div>
           <div className="w-full absolute bottom-8 md:bottom-20 px-6 md:px-20">
-            <h1 className="text-collaction text-7xl">{t('home:hero.title')}</h1>
+            <h1 className="text-collaction text-5xl md:text-6xl lg:text-7xl">
+              {t('home:hero.title')}
+            </h1>
             <p className="text-collaction pt-5">{t('home:hero.description')}</p>
           </div>
         </div>
@@ -90,7 +93,7 @@ export default function HomePage(
                   </span>
                 </div>
               }
-              description={t('common:collActionExplanation.goal.action')}
+              description={t('common:collActionExplanation.action.description')}
             />
           </div>
         </div>
