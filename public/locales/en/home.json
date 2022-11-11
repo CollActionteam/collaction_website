@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "Hero Title",
-    "subtitle": "Hero body"
+    "description": "Hero body"
   },
   "crowdActionSection": {
     "title": "Choose a CrowdAction & make a change today",
