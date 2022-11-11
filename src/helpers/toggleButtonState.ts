@@ -1,3 +1,4 @@
+// this internal function adds the active class to element
 function toggleActive(
   element: HTMLButtonElement,
   activeStyles: string[],
@@ -7,6 +8,7 @@ function toggleActive(
   element.classList.remove(...inactiveStyles);
 }
 
+// this internal function adds the inactive class to element
 function toggleInactive(
   element: HTMLButtonElement,
   activeStyles: string[],
@@ -16,6 +18,7 @@ function toggleInactive(
   element.classList.add(...inactiveStyles);
 }
 
+// this exported function toggles active and inactive btn state
 export function toggleBtnState(
   element: HTMLButtonElement,
   activeStyles: string[],
