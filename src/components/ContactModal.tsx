@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import { IoClose } from 'react-icons/io5';
+import { toast } from 'react-toastify';
+
 type Props = {
   setShowContactModal: React.Dispatch<React.SetStateAction<boolean>>;
 };
@@ -7,29 +9,33 @@ type Props = {
 export default function ContactModal({ setShowContactModal }: Props) {
   const form = useRef<HTMLFormElement>(null);
 
-  const sendEmail = async (e: { preventDefault: () => void } | undefined) => {
-    e?.preventDefault();
+  const sendEmail = async (event: any) => {
+    event?.preventDefault();
+
+    const axios = (await import('axios')).default;
 
     if (form.current == null) {
-      alert('Kindly fill all the details');
+      toast.warn('Kindly fill in all the details');
       return;
     }
-    await emailjs
-      .sendForm(
-        'service_9xuad1b',
-        'template_48sm4b9',
-        form.current,
-        'gzAnGNLWJxhMbPdcY'
-      )
-      .then(
-        () => {
-          alert('Your email has been sent');
-        },
-        () => {
-          alert('There was an error sending your email');
+
+    axios
+      .post('https://api.collaction.org/v1/contact', {
+        title: "[Contact] New submission from CollAction's website",
+        email: event.target.email.value,
+        body: event.target.message.value,
+      })
+      .then(res => {
+        if (res.data.id) {
+          toast.success('Your message has been sent successfully');
+          setShowContactModal(false);
+        } else {
+          toast.error('Something went wrong, please try again later');
         }
-      );
-    setShowContactModal(false);
+      })
+      .catch(() => {
+        toast.error('Something went wrong, please try again later');
+      });
   };
   return (
     <div className=" top-0 left-0 w-full h-full outline-none overflow-x-hidden overflow-y-auto fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center z-50">
@@ -38,7 +44,7 @@ export default function ContactModal({ setShowContactModal }: Props) {
           className="text-primary-400 text-lg font-light place-self-end mr-8"
           onClick={() => setShowContactModal(false)}
         >
-          X
+          <IoClose className="w-7 h-7" />
         </button>
         <form
           className="p-2 rounded leading-loose"

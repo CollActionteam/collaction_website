@@ -4,10 +4,12 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import clsx from 'clsx';
 import ContactModal from './ContactModal';
+import 'react-toastify/dist/ReactToastify.css';
 
 import CollActionBlackLogoWithText from 'public/logo-black-small.png';
 import CollActionWhiteLogoWithText from 'public/logo-white-small.png';
 import { CircleFlag } from 'react-circle-flags';
+import { ToastContainer } from 'react-toastify';
 
 export default function NavBar() {
   const router = useRouter();
@@ -24,6 +26,11 @@ export default function NavBar() {
 
   return (
     <div>
+      <ToastContainer
+        position="bottom-right"
+        autoClose={2500}
+        closeOnClick={true}
+      />
       <header
         className={clsx(
           'relative w-full',
