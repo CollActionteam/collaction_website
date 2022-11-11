@@ -1,0 +1,22 @@
+{
+  "hero": {
+    "title": "Hero Title",
+    "subtitle": "Hero body"
+  },
+  "crowdActionSection": {
+    "title": "Choose a CrowdAction & make a change today",
+    "description": "We make doing good fun & easy."
+  },
+  "commitmentOptionsSection": {
+    "title": "Participate at your own pace. Your challenge, your rules",
+    "description": "CollAction organizes monthly challenges to help you in creating more sustainable habits. We help you in reducing the waste you produce or in adopting a more sustainable diet."
+  },
+  "impactSection": {
+    "title": "See the impact we make together",
+    "description": "Alone we are a drop in the ocean – together we make waves. CollAction always shows you how much of an environmental impact all participants of a CrowdAction have made collectively."
+  },
+  "useCollActionSection": {
+    "title": "Want to use CollAction for your project?",
+    "description": "Do you have an initiative for collective action and would you like to reach a larger public? Send us a message at use@collaction.org"
+  }
+}

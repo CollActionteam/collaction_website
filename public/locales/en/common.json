@@ -1,0 +1,20 @@
+{
+  "collActionExplanation": {
+    "goal": {
+      "title": "Goal",
+      "description": "Choose or suggest a goal you would like to participate in"
+    },
+    "crowd": {
+      "title": "Crowd",
+      "description": "Choose or suggest a goal you would like to participate in"
+    },
+    "action": {
+      "title": "Action",
+      "description": "Choose or suggest a goal you would like to participate in"
+    }
+  },
+  "downloadApp": {
+    "title": "We connect people to solve collective action problems",
+    "description": "We make doing good fun & easy."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "hero": {
+    "title": "Hero",
+    "description": "Hero description"
+  },
+  "joinSection": {
+    "title": "Become part of the CollAction Team",
+    "description": "Help us on our mission to make doing good fun & easy"
+  },
+  "ourTeamSection": {
+    "title": "Our team",
+    "description": "CollAction is a truly international team. We collaborate with amazing volunteers from all over the world."
+  }
+}

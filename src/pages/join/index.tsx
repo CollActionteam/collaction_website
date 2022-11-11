@@ -5,6 +5,9 @@ import {
   FiDollarSign as DollarSignIcon,
   FiArrowRight as ArrowRightIcon,
 } from 'react-icons/fi';
+import Image from 'next/image';
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import PageSEO from 'src/components/PageSEO';
 import InfoCard from 'src/components/InfoCard';
@@ -12,7 +15,12 @@ import Team from 'src/components/Team';
 import AppLinkApple from 'src/components/AppLinkApple';
 import AppLinkGoogle from 'src/components/AppLinkGoogle';
 import { getJoinsData } from 'src/lib/getJoins';
-import { JoinDataType, JoinTagTokenType } from 'src/types/joins';
+import { JoinTagTokenType } from 'src/types/joins';
+import TwoColumnSection from 'src/components/TwoColumnSection';
+
+import DownloadImg from 'public/download_app.png';
+import HeroImg from 'public/placeholder-hero-bg-sm.png';
+import { InferGetStaticPropsType } from 'next';
 
 type JoinTagsMapType = {
   [K in JoinTagTokenType]: {
@@ -32,7 +40,11 @@ const joinTagsMap: JoinTagsMapType = {
   },
 };
 
-export default function JoinListPage({ data }: { data: JoinDataType[] }) {
+export default function JoinListPage(
+  props: InferGetStaticPropsType<typeof getStaticProps>
+) {
+  const { t } = useTranslation();
+
   return (
     <>
       <PageSEO
@@ -40,17 +52,46 @@ export default function JoinListPage({ data }: { data: JoinDataType[] }) {
         description="Want to join our team in making the world a better place? Check out our current openings."
       />
 
-      <main className="bg-secondary p-5 pt-10 md:pt-11">
-        <div className="text-center mx-auto max-w-350 sm:max-w-400 lg:max-w-500 mb-9 md:mb-10">
+      <main className="bg-secondary">
+        {/* HERO SETION */}
+        <div className="min-h-[520px] md:min-h-[70vh] w-full relative">
+          <Image
+            src={HeroImg}
+            alt="hero image"
+            fill
+            style={{ objectFit: 'cover' }}
+          />
+          <div className="w-full absolute bottom-8 md:bottom-20 px-6 md:px-20">
+            <h1 className="text-white text-4xl">{t('join:hero.title')}</h1>
+            <p className="text-white pt-5">{t('join:hero.description')}</p>
+          </div>
+        </div>
+
+        {/* OUR TEAM SECTION */}
+        <div className="text-center mx-auto max-w-350 sm:max-w-400 lg:max-w-500 pt-10 pb-6 ">
           <h1 className="text-headline-m-1 md:text-headline-lg-1 mb-6">
-            Become part of the CollAction Team
+            {t('join:ourTeamSection.title')}
           </h1>
           <p className="text-body-short-1 text-primary-200">
-            Help us on our mission to make doing good fun & easy
+            {t('join:ourTeamSection.description')}
           </p>
         </div>
 
-        {data.map(({ title, description, tags }) => (
+        <div className="pb-10">
+          <Team name={''} title={''} full_name={''} />
+        </div>
+
+        {/* JOIN SECTION */}
+        <div className="text-center mx-auto max-w-350 sm:max-w-400 lg:max-w-500 md:mb-10">
+          <h1 className="text-headline-m-1 md:text-headline-lg-1 mb-6">
+            {t('join:joinSection.title')}
+          </h1>
+          <p className="text-body-short-1 text-primary-200 pb-8">
+            {t('join:joinSection.description')}
+          </p>
+        </div>
+
+        {props.data.map(({ title, description, tags }) => (
           <div
             key={`${title} card`}
             className={clsx(
@@ -89,40 +130,39 @@ export default function JoinListPage({ data }: { data: JoinDataType[] }) {
           </div>
         ))}
 
-        <div className="text-center mx-auto max-w-350 sm:max-w-400 lg:max-w-500 mb-9 md:mb-1 py-10 ">
-          <h1 className="text-headline-m-1 md:text-headline-lg-1 mb-6 ">
-            Our team
-          </h1>
-          <p className="text-body-short-1 text-primary-200">
-            CollAction is a truly international team. We collaborate with
-            amazing volunteers from all over the world.
-          </p>
-        </div>
-
-        <div className="pb-10">
-          <Team name={''} title={''} full_name={''} />
-        </div>
-
-        <InfoCard
-          isSecondaryBg
-          title="Our individual actions are a drop in the ocean. But together, we make waves!"
-        >
-          <div className="flex justify-center mb-6">
-            <AppLinkApple className="mr-4 sm:mr-5" />
-            <AppLinkGoogle />
-          </div>
-        </InfoCard>
+        {/* DOWNLOAD APP SETION */}
+        <TwoColumnSection
+          isReverseOrder={false}
+          first={
+            <Image src={DownloadImg} alt="Download App" className="mx-auto" />
+          }
+          second={
+            <InfoCard
+              className="absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%]"
+              isSecondaryBg
+              title={t('common:downloadApp.title')}
+              body={t('common:downloadApp.description')}
+            >
+              <div className="flex justify-center mb-6">
+                <AppLinkApple className="mr-4 sm:mr-5" />
+                <AppLinkGoogle />
+              </div>
+            </InfoCard>
+          }
+        />
       </main>
     </>
   );
 }
 
-export const getStaticProps = async () => {
+export const getStaticProps = async ({ locale }: { locale: string }) => {
   const data = getJoinsData();
 
   return {
     props: {
       data,
+      locale,
+      ...(await serverSideTranslations(locale, ['common', 'join'])),
     },
   };
 };

@@ -12,6 +12,7 @@ export enum Step {
 
 export interface ExplanationProps {
   step: Step;
+  title: JSX.Element;
   description: string;
 }
 
@@ -30,10 +31,8 @@ export default function CollActionExplanation(props: ExplanationProps) {
 
   return (
     <div className="px-7 text-center align-middle max-w-[325px] max-h[325px] py-4">
-      <span className="font-bold text-2xl">
-        Step {props.step + 1}:{' '}
-        <span className="text-collaction">{STEP_TO_EXPL[props.step]}</span>
-      </span>
+      {props.title}
+
       <Image
         src={STEP_TO_IMG[props.step]}
         alt={STEP_TO_EXPL[props.step]}
