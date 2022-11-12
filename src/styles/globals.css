@@ -81,4 +81,10 @@
   .active-donation {
     @apply bg-collaction-500 text-secondary font-semibold;
   }
+  .active-btn {
+    @apply bg-primary-400 text-secondary;
+  }
+  .inactive-btn {
+    @apply bg-secondary text-primary-300;
+  }
 }
