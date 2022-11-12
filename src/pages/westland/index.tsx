@@ -280,7 +280,7 @@ export default function WestlandIndexPage() {
         // href={ikDoeMeeUrl}
       >
         <PopupButton id={formId} size={80}>
-          <button>Ik doe mee</button>
+          Ik doe mee
         </PopupButton>
         {/* Ik doe mee */}
       </a>

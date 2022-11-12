@@ -19,6 +19,7 @@ import TwoColumnSection from 'src/components/TwoColumnSection';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { InferGetStaticPropsType } from 'next';
+import PageHero from 'src/components/PageHero';
 
 export async function getStaticProps({ locale }: { locale: string }) {
   return {
@@ -40,21 +41,12 @@ export default function HomePage(
 
       <main className="bg-secondary">
         {/* HERO SETION */}
-        <div className="min-h-[520px] md:min-h-[70vh] w-full relative">
-          <Image
-            src={HeroImg}
-            alt="hero image"
-            fill
-            style={{ objectFit: 'cover' }}
-          />
-          <div className="absolute bottom-0 min-h-[420px] md:min-h-[50vh] w-full bg-gradient-to-t from-black via-black opacity-50"></div>
-          <div className="w-full absolute bottom-8 md:bottom-20 px-6 md:px-20">
-            <h1 className="text-collaction text-5xl md:text-6xl lg:text-7xl">
-              {t('home:hero.title')}
-            </h1>
-            <p className="text-collaction pt-5">{t('home:hero.description')}</p>
-          </div>
-        </div>
+        <PageHero
+          image={HeroImg}
+          title={t('home:hero.title')}
+          description={t('home:hero.description')}
+          textColor="collaction"
+        />
 
         {/* CROWDACTION EXPLANATION SECTION */}
         <div className="bg-white py-8">

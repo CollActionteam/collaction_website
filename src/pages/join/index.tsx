@@ -21,6 +21,7 @@ import TwoColumnSection from 'src/components/TwoColumnSection';
 import DownloadImg from 'public/download_app.png';
 import HeroImg from 'public/collaction_team.png';
 import { InferGetStaticPropsType } from 'next';
+import PageHero from 'src/components/PageHero';
 
 type JoinTagsMapType = {
   [K in JoinTagTokenType]: {
@@ -54,18 +55,11 @@ export default function JoinListPage(
 
       <main className="bg-secondary">
         {/* HERO SETION */}
-        <div className="min-h-[520px] md:min-h-[70vh] w-full relative">
-          <Image
-            src={HeroImg}
-            alt="hero image"
-            fill
-            style={{ objectFit: 'cover' }}
-          />
-          <div className="w-full absolute bottom-8 md:bottom-20 px-6 md:px-20">
-            <h1 className="text-white text-4xl">{t('join:hero.title')}</h1>
-            <p className="text-white pt-5">{t('join:hero.description')}</p>
-          </div>
-        </div>
+        <PageHero
+          image={HeroImg}
+          title={t('join:hero.title')}
+          description={t('join:hero.description')}
+        />
 
         {/* OUR TEAM SECTION */}
         <div className="text-center mx-auto max-w-350 sm:max-w-400 lg:max-w-500 pt-10 pb-6 ">
