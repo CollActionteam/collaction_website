@@ -17,16 +17,12 @@ export default function DonatePage() {
   const [donateCardHeadline, setDonateCardHeadline] =
     useState('Recurring donation');
 
-  // button state
-  const activeButtonStyle = ['bg-primary-400', 'text-secondary'];
-  const inactiveButtonStyle = ['bg-secondary', 'text-primary-300'];
-
   // get the textcontent of the button click
   const donateToggleHandler = (event: React.MouseEvent<HTMLButtonElement>) => {
     const { currentTarget: activeButton } = event;
     const activeButtonText = activeButton.textContent;
     activeButtonText && setDonateCardHeadline(activeButtonText);
-    toggleBtnState(activeButton, activeButtonStyle, inactiveButtonStyle);
+    toggleBtnState(activeButton);
   };
 
   // set single or monthly donation
@@ -79,12 +75,12 @@ export default function DonatePage() {
         <div className="flex gap-4 mt-10 mb-6 mx-auto max-w-350 h-[47px] px-5">
           <Button
             text="Recurring donation"
-            style="w-[169px] rounded-[10px] bg-primary-400 text-secondary"
+            style="w-[169px] rounded-[10px] active-btn"
             clickHandler={donateToggleHandler}
           />
           <Button
             text="One-time donation"
-            style="w-[169px] rounded-[10px] bg-secondary text-primary-300"
+            style="w-[169px] rounded-[10px] inactive-btn"
             clickHandler={donateToggleHandler}
           />
         </div>
