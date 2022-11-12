@@ -78,4 +78,7 @@
       rgba(0, 0, 0, 0.6) 71.35%
     );
   }
+  .active-donation {
+    @apply bg-collaction-500 text-secondary font-semibold;
+  }
 }
