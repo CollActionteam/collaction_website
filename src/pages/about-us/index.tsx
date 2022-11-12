@@ -4,6 +4,7 @@ import PageSEO from 'src/components/PageSEO';
 
 import HeroImg from 'public/uilenstede_banner.png';
 import SolveCollectiveActionProblemsImg from 'public/solve_collective_action_problems.png';
+import CollActionGraphic from 'public/collaction_graphic.png';
 import RubenAboutImg from 'public/ruben_about.png';
 import RubenAboutWideImg from 'public/ruben_wide.png';
 
@@ -33,7 +34,7 @@ export default function AboutUsPage({
 
       <main className="bg-secondary">
         {/* HERO SETION */}
-        <PageHero 
+        <PageHero
           image={HeroImg}
           title={t('about:hero.title')}
           description={t('about:hero.description')}
@@ -41,9 +42,10 @@ export default function AboutUsPage({
 
         <TwoColumnSection
           first={
-            <Image 
-            className="mx-auto absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%]"
-              src={SolveCollectiveActionProblemsImg} alt={''}
+            <Image
+              className="mx-auto absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%]"
+              src={SolveCollectiveActionProblemsImg}
+              alt={''}
             />
           }
           second={
@@ -60,42 +62,42 @@ export default function AboutUsPage({
         <TwoColumnSection
           isWhiteBg={true}
           mobile={
-            <>
+            <div>
               <div className="relative hidden sm:block">
-                <Image 
+                <Image
                   className="w-full h-full"
-                  src={RubenAboutWideImg} 
+                  src={RubenAboutWideImg}
                   alt={''}
                 />
                 <div className="absolute bottom-6 left-6 z-50 text-white text-md">
-                  <h3 className='text-headline-m-1 mb-6'>
+                  <h3 className="text-headline-m-1 mb-6">
                     {t('about:memberQuote.name')}
                   </h3>
-                  <blockquote className='mb-4 text-xl max-w-350'>
+                  <blockquote className="mb-4 text-xl max-w-350">
                     “{t('about:memberQuote.quote')}„
                   </blockquote>
                   <span>{t('about:memberQuote.title')}</span>
-                  <span className="block italic">{t('about:memberQuote.location')}</span>
-                </div> 
-              </div>
-              <div className="sm:hidden relative">
-                <Image 
-                  className="w-full h-full"
-                  src={RubenAboutImg} 
-                  alt={''}
-                />
-                <div className="absolute bottom-6 left-6 z-50 text-white text-md">
-                  <h3 className='text-headline-m-1 mb-6'>
-                    {t('about:memberQuote.name')}
-                  </h3>
-                  <blockquote className='mb-4 text-xl max-w-350'>
-                    “{t('about:memberQuote.quote')}„
-                  </blockquote>
-                  <span>{t('about:memberQuote.title')}</span>
-                  <span className="block italic">{t('about:memberQuote.location')}</span>
+                  <span className="block italic">
+                    {t('about:memberQuote.location')}
+                  </span>
                 </div>
               </div>
-            </>
+              <div className="sm:hidden relative">
+                <Image className="w-full h-full" src={RubenAboutImg} alt={''} />
+                <div className="absolute bottom-6 left-6 z-50 text-white text-md">
+                  <h3 className="text-headline-m-1 mb-6">
+                    {t('about:memberQuote.name')}
+                  </h3>
+                  <blockquote className="mb-4 text-xl max-w-350">
+                    “{t('about:memberQuote.quote')}„
+                  </blockquote>
+                  <span>{t('about:memberQuote.title')}</span>
+                  <span className="block italic">
+                    {t('about:memberQuote.location')}
+                  </span>
+                </div>
+              </div>
+            </div>
           }
           first={
             <InfoCard
@@ -105,41 +107,83 @@ export default function AboutUsPage({
               title={t('about:memberQuote.name')}
               body={
                 <div>
-                  <blockquote className='mb-4 text-2xl'>
+                  <blockquote className="mb-4 text-2xl">
                     “{t('about:memberQuote.quote')}„
                   </blockquote>
                   <span>{t('about:memberQuote.title')}</span>
-                  <span className="block italic">{t('about:memberQuote.location')}</span>
+                  <span className="block italic">
+                    {t('about:memberQuote.location')}
+                  </span>
                 </div>
               }
             />
           }
           second={
-            <Image 
-            className="w-full h-full"
-              src={RubenAboutImg} 
-              alt={''}
-            />
+            <div className=" py-8 px-8">
+              <Image
+                className="w-full h-full rounded-1"
+                src={RubenAboutImg}
+                alt={''}
+              />
+            </div>
           }
         />
 
-        <div className="mb-13 last:mb-0">
-          <div className="flex flex-wrap justify-center mx-auto md:max-w-864 mt-12 lg:mt-15">
+        <InfoCard
+          className="pt-10"
+          title="Our projects"
+          body="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint."
+          hasBg={false}
+        />
+
+        <div className="mb-0 last:mb-0">
+          <div className="flex flex-wrap justify-center mx-auto md:max-w-864">
             {projects.map(project => (
-              <ProjectCard key={project.title} {...project} />
+              <ProjectCard key={project.title} {...project} whiteBg={true} />
             ))}
           </div>
         </div>
 
         {/* SEE MORE DEALS */}
-        <Link
-          href="/projects/all"
-          className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 mt-5 w-72 shadow bottom-7 inset-x-0 mx-auto z-40"
-        >
-          See All Projects
-        </Link>
+        <div className="py-8">
+          <Link
+            href="/projects/all"
+            className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 w-72 shadow-lg inset-x-0 mx-auto z-40"
+          >
+            See All Projects
+          </Link>
+        </div>
 
-        <h4 className="max-w-600 mx-auto mb-7">Contact form should be here</h4>
+        <TwoColumnSection
+          isReverseOrder={true}
+          isWhiteBg={true}
+          mobile={
+            <div className="bg-white pt-6">
+              <Image
+                className="mx-auto py-4"
+                src={CollActionGraphic}
+                alt={''}
+                width={80}
+              />
+              <InfoCard hasBg={false} title={t('about:collAction.title')} />
+            </div>
+          }
+          first={
+            <Image
+              className="mx-auto absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%]"
+              src={CollActionGraphic}
+              alt={''}
+            />
+          }
+          second={
+            <InfoCard
+              className="absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%]"
+              hasBg={false}
+              leftAlign={true}
+              title={t('about:collAction.title')}
+            />
+          }
+        />
       </main>
     </>
   );

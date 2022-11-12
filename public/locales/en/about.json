@@ -12,5 +12,8 @@
     "quote": "Some pragmatic quote from Ruben",
     "title": "M.Sc. Computer Science",
     "location": "Amsterdam, Noord Holland"
+  },
+  "collAction": {
+    "title": "We connect people to solve collective action problems"
   }
 }

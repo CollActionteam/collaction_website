@@ -10,4 +10,5 @@ export type ProjectsType = {
     order?: string;
   };
   content: string;
+  whiteBg?: boolean;
 };
