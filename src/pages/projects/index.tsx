@@ -27,7 +27,7 @@ export default function ProjectListPage({
 
       <main className="bg-secondary">
         {/* HERO SETION */}
-        <PageHero 
+        <PageHero
           image={HeroImg}
           title={t('projects:hero.title')}
           description={t('projects:hero.description')}

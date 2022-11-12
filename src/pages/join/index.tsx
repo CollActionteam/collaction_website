@@ -55,7 +55,7 @@ export default function JoinListPage(
 
       <main className="bg-secondary">
         {/* HERO SETION */}
-        <PageHero 
+        <PageHero
           image={HeroImg}
           title={t('join:hero.title')}
           description={t('join:hero.description')}
