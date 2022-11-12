@@ -15,6 +15,7 @@ export function ProjectCard({
   image,
   links,
   content,
+  whiteBg,
 }: Omit<ProjectsType, 'publish' | 'featured'>) {
   const contentRef = useRef<HTMLDivElement>(null);
 
@@ -38,82 +39,83 @@ export function ProjectCard({
         <Image
           src={image}
           alt={title}
-          // placeholder="blur"
           layout="fill"
           objectFit="cover"
           sizes="min-width(450px) 90vw, 400px"
         />
       </div>
-      {/* ICONS */}
-      <div className="px-6 xs:px-7 sm:px-8 my-6 sm:my-7 h-8 flex">
-        {links.website && (
-          <a
-            href={links.website}
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Visit Vendor Site"
-            className="bg-primary-400 text-secondary p-3 mr-3 xs:mr-5 rounded-full"
-          >
-            <GlobeSimpleIcon size={24} strokeWidth={2} />
-          </a>
-        )}
-        {links.location && (
-          <a
-            href={links.location}
-            target="_blank"
-            rel="noreferrer"
-            aria-label="View Location on Map"
-            className="bg-primary-400 text-secondary p-3 mr-3 xs:mr-5 rounded-full"
-          >
-            <MapPinIcon size={24} strokeWidth={2} />
-          </a>
-        )}
-        {links.phone && (
-          <a
-            href={'tel:+' + links.phone}
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Phone Vendor"
-            className="bg-primary-400 text-secondary p-3 mr-3 xs:mr-5 rounded-full"
-          >
-            <PhoneIcon size={24} strokeWidth={2} />
-          </a>
-        )}
-        <a
-          href={links.order}
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Order From Vendor"
-          className={clsx(
-            links.order
-              ? 'bg-collaction'
-              : 'bg-primary-100 pointer-events-none',
-            'text-secondary text-button font-bold leading-none text-center rounded-full p-4 h-8 w-26 align-top'
+      <div className={whiteBg ? 'bg-white' : ''}>
+        {/* ICONS */}
+        <div className="px-6 xs:px-7 sm:px-8 py-6 flex">
+          {links.website && (
+            <a
+              href={links.website}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Visit Vendor Site"
+              className="bg-primary-400 text-secondary p-3 mr-3 xs:mr-5 rounded-full"
+            >
+              <GlobeSimpleIcon size={24} strokeWidth={2} />
+            </a>
           )}
-        >
-          {links.order ? 'Order' : 'In-store'}
-        </a>
-      </div>
-      {/* TITLE & CONTENT */}
-      <div className="px-6 xs:px-7 sm:px-8">
-        <h4 className="text-primary-400 mb-5 sm:mb-7">{title}</h4>
-        <div
-          ref={contentRef}
-          className="text-primary-300 h-full max-h-32 line-clamp-5 whitespace-pre-line"
-        >
-          {content}
-        </div>
-      </div>
-      {/* MAXIMIZE CONTENT ICON */}
-      <div className="py-6 sm:py-7 pl-7 pr-5 sm:pl-8 sm:pr-7 text-right">
-        {contentOverflow && (
-          <button
-            onClick={() => setShowContent(true)}
-            className="inline-block bg-primary-100 text-secondary p-3 rounded-full"
+          {links.location && (
+            <a
+              href={links.location}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="View Location on Map"
+              className="bg-primary-400 text-secondary p-3 mr-3 xs:mr-5 rounded-full"
+            >
+              <MapPinIcon size={24} strokeWidth={2} />
+            </a>
+          )}
+          {links.phone && (
+            <a
+              href={'tel:+' + links.phone}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Phone Vendor"
+              className="bg-primary-400 text-secondary p-3 mr-3 xs:mr-5 rounded-full"
+            >
+              <PhoneIcon size={24} strokeWidth={2} />
+            </a>
+          )}
+          <a
+            href={links.order}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Order From Vendor"
+            className={clsx(
+              links.order
+                ? 'bg-collaction'
+                : 'bg-primary-100 pointer-events-none',
+              'text-secondary text-button font-bold leading-none text-center rounded-full p-4 h-8 w-26 align-top'
+            )}
           >
-            <PlusIcon size={24} strokeWidth={2} />
-          </button>
-        )}
+            {links.order ? 'Order' : 'In-store'}
+          </a>
+        </div>
+        {/* TITLE & CONTENT */}
+        <div className="px-6 xs:px-7 sm:px-8">
+          <h4 className="text-primary-400 mb-5 sm:mb-7">{title}</h4>
+          <div
+            ref={contentRef}
+            className="text-primary-300 h-full max-h-32 line-clamp-5 whitespace-pre-line"
+          >
+            {content}
+          </div>
+        </div>
+        {/* MAXIMIZE CONTENT ICON */}
+        <div className="py-6 sm:py-7 pl-7 pr-5 sm:pl-8 sm:pr-7 text-right">
+          {contentOverflow && (
+            <button
+              onClick={() => setShowContent(true)}
+              className="inline-block bg-primary-100 text-secondary p-3 rounded-full"
+            >
+              <PlusIcon size={24} strokeWidth={2} />
+            </button>
+          )}
+        </div>
       </div>
 
       {/* OPENED CARD */}
