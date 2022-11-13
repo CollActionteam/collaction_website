@@ -26,16 +26,25 @@ export default function DonationAmount({
     handleDonation(activeAmount.value);
   };
 
+<<<<<<< HEAD
   // change handler function for the user donation input
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { value: currentAmount } = event.currentTarget;
     // might be a good idea to debounce this
     handleDonation(currentAmount);
+=======
+  // keypress handler function
+  const handleKeyPress = (event: React.KeyboardEvent<HTMLDivElement>) => {
+    // destructure the event target from the Event object
+    const { currentTarget: activeAmount } = event;
+    toggleActiveState(activeAmount);
+>>>>>>> ce2c12f (fix: Fix active donation bug)
   };
 
   const defaultActiveDonation = amount === '€10.00' ? 'active-donation' : '';
 
   return (
+<<<<<<< HEAD
     <input
       type="text"
       ref={inputRef}
@@ -44,6 +53,11 @@ export default function DonationAmount({
       onChange={handleChange}
       className={`w-[144px] lg:w-[153.5px] h-[48px] flex rounded-[10px] text-center 
       bg-secondary focus:outline-none cursor-pointer ${defaultActiveDonation}`}
+=======
+    <div
+      className={`w-[144px] lg:w-[153.5px] h-[48px] flex items-center 
+    justify-center rounded-[10px] bg-secondary ${defaultActiveDonation}`}
+>>>>>>> ce2c12f (fix: Fix active donation bug)
       onClick={handleClick}
       readOnly={isReadOnly}
     />
