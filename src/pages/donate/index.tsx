@@ -7,11 +7,12 @@ import AppLinkApple from 'src/components/AppLinkApple';
 import AppLinkGoogle from 'src/components/AppLinkGoogle';
 import Button from 'src/components/Button';
 import DonateCard from 'src/components/DonateCard';
-import Faq, { faq } from 'src/components/Faq';
+import Faq from 'src/components/Faq';
 
 import donateImg from 'public/donate-page-photo.jpg';
 
 import { toggleBtnState } from 'src/helpers/toggleButtonState';
+import { faq } from 'src/helpers/faq';
 
 export default function DonatePage() {
   const [donateCardHeadline, setDonateCardHeadline] =
