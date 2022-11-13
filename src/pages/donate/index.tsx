@@ -8,11 +8,10 @@ import AppLinkGoogle from 'src/components/AppLinkGoogle';
 import Button from 'src/components/Button';
 import DonateCard from 'src/components/DonateCard';
 import Faq from 'src/components/Faq';
+import { faq } from 'src/helpers/faq';
+import { toggleBtnState } from 'src/helpers/toggleButtonState';
 
 import donateImg from 'public/donate-page-photo.jpg';
-
-import { toggleBtnState } from 'src/helpers/toggleButtonState';
-import { faq } from 'src/helpers/faq';
 
 const contactEmail = 'contact@collaction.org';
 
