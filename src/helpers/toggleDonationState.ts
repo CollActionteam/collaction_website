@@ -1,4 +1,4 @@
-export function toggleActiveState(element: HTMLDivElement): void {
+export function toggleActiveState(element: HTMLInputElement): void {
   // get the parent element of the clicked element
   const parentElement = element.parentElement as HTMLDivElement;
 
@@ -8,7 +8,8 @@ export function toggleActiveState(element: HTMLDivElement): void {
   // loop through children, add active class to active element
   //remove active class from other element that has active class
   for (const child of children) {
-    if (child.textContent === element.textContent) {
+    const childValue = child.getAttribute('value');
+    if (childValue === element.value) {
       child.classList.add('active-donation');
       continue;
     } else {

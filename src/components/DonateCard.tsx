@@ -18,6 +18,10 @@ const donations = [
 ];
 
 export default function DonateCard({ headline, donation }: DonateCardProps) {
+  const handleDonationSubmit = (amount: string) => {
+    //  do something with amount here
+  };
+
   return (
     <>
       <div
@@ -47,7 +51,11 @@ export default function DonateCard({ headline, donation }: DonateCardProps) {
           justify-center gap-3"
           >
             {donations.map(donation => (
-              <DonationAmount key={donation} amount={donation} />
+              <DonationAmount
+                key={donation}
+                amount={donation}
+                handleSubmit={handleDonationSubmit}
+              />
             ))}
           </div>
           <p className="w-[302px] lg:w-[319px] h-[44px] text-sm leading-[22px] text-primary-200">
