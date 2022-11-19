@@ -3,14 +3,13 @@ import { toggleActiveState } from 'src/helpers/toggleDonationState';
 
 interface DonationAmountProps {
   amount: string;
-  handleSubmit: (amount: string) => void;
+  handleDonation: React.Dispatch<React.SetStateAction<string>>;
 }
 
 export default function DonationAmount({
   amount,
-  handleSubmit,
+  handleDonation,
 }: DonationAmountProps) {
-  const [donateAmount, setDonateAmount] = useState(amount);
   // change input state to receive user input
   const [isReadOnly, setIsReadOnly] = useState(true);
 
@@ -19,25 +18,23 @@ export default function DonationAmount({
     // destructure the active element from Event object
     const { currentTarget: activeAmount } = event;
     toggleActiveState(activeAmount);
-    handleSubmit(donateAmount);
     if (activeAmount.value === 'Other...') setIsReadOnly(false);
+    handleDonation(activeAmount.value);
   };
 
   // change handler function for the user donation input
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { value: currentAmount } = event.currentTarget;
     // might be a good idea to debounce this
-    setDonateAmount(currentAmount);
-    handleSubmit(currentAmount);
+    handleDonation(currentAmount);
   };
 
-  const defaultActiveDonation =
-    donateAmount === '€10.00' ? 'active-donation' : '';
+  const defaultActiveDonation = amount === '€10.00' ? 'active-donation' : '';
 
   return (
     <input
       type="text"
-      defaultValue={donateAmount}
+      defaultValue={amount}
       onChange={handleChange}
       className={`w-[144px] lg:w-[153.5px] h-[48px] flex rounded-[10px] text-center 
       bg-secondary focus:outline-none cursor-pointer ${defaultActiveDonation}`}

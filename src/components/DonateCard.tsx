@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Button from 'src/components/Button';
 import DonationAmount from 'src/components/DonationAmount';
@@ -18,8 +18,12 @@ const donations = [
 ];
 
 export default function DonateCard({ headline, donation }: DonateCardProps) {
-  const handleDonationSubmit = (amount: string) => {
-    //  do something with amount here
+  const [donationAmount, setDonationAmount] = useState('');
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    //  do something with the submitted form here
+    console.log(donationAmount);
   };
 
   return (
@@ -42,9 +46,10 @@ export default function DonateCard({ headline, donation }: DonateCardProps) {
             I will support collAction with a {donation} donation
           </p>
         </div>
-        <div
+        <form
           className="max-w-350 h-[168px] lg:w-[319px] lg:h-[354px] flex flex-col 
         items-center justify-between gap-y-8"
+          onSubmit={handleSubmit}
         >
           <div
             className="w-[300px} lg:w-[319px] h-[168px] flex flex-wrap items-center 
@@ -54,7 +59,7 @@ export default function DonateCard({ headline, donation }: DonateCardProps) {
               <DonationAmount
                 key={donation}
                 amount={donation}
-                handleSubmit={handleDonationSubmit}
+                handleDonation={setDonationAmount}
               />
             ))}
           </div>
@@ -74,7 +79,7 @@ export default function DonateCard({ headline, donation }: DonateCardProps) {
               </span>
             </p>
           </div>
-        </div>
+        </form>
       </div>
     </>
   );
