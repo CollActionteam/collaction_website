@@ -22,8 +22,7 @@ export default function DonateCard({ headline, donation }: DonateCardProps) {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    //  do something with the submitted form here
-    console.log(donationAmount);
+    //  do something with here donationAmount
   };
 
   return (
