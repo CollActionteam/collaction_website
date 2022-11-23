@@ -45,7 +45,6 @@ export default function JoinListPage(
   props: InferGetStaticPropsType<typeof getStaticProps>
 ) {
   const { t } = useTranslation();
-
   return (
     <>
       <PageSEO
@@ -87,7 +86,7 @@ export default function JoinListPage(
         </div>
 
         <div className="flex flex-wrap justify-center p-0 gap-x-4 mx-8">
-        {props.data.map(({ title, description, tags }) => (
+        {props.data.map(({ title, description, tags }: { title: string; description:string ; tags:Array<JoinTagTokenType>}) => (
           <div
             key={`${title} card`}
             className={clsx(
