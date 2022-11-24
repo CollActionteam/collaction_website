@@ -14,6 +14,8 @@ import donateImg from 'public/donate-page-photo.jpg';
 import { toggleBtnState } from 'src/helpers/toggleButtonState';
 import { faq } from 'src/helpers/faq';
 
+const contactEmail = 'contact@collaction.org';
+
 export default function DonatePage() {
   const [donateCardHeadline, setDonateCardHeadline] =
     useState('Recurring donation');
@@ -58,16 +60,29 @@ export default function DonatePage() {
 
         <div className="pt-10 lg:pt-[80px]">
           <div className="mx-auto sm:max-w-[400px] lg:max-w-[520px] px-6 sm:px-0">
-            <h3 className="mb-7 text-3xl">Headline</h3>
-            <p className="mb-7 text-body-short-1">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <h3 className="mb-7 text-3xl">Become a donor</h3>
+            <p className="mb-7 text-body-short-1 text-justify">
+              Our donors allow us to keep on solving collective action problems.
+              They allow us to reach a bigger audience and run our app in the
+              cloud. In short: they allow us to keep trying to make the world a
+              better place. In return, if you become a donor you get full
+              insight into all our expenses so you know what we do with your
+              donation.
+            </p>
+            <p className="mb-7 text-body-short-1 text-justify">
+              For generous donors we organise a yearly vegan dinner together
+              with other donors and the CollAction team. Additionally, these
+              donors receive a special upcycled CollAction bag made from
+              recycled chips bags!
             </p>
             <p className="text-body-short-1">
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
+              For questions about donating please{' '}
+              <a
+                href={`mailto:${contactEmail}`}
+                className="text-headline-s-1 text-primary-300"
+              >
+                contact us.
+              </a>
             </p>
           </div>
         </div>
