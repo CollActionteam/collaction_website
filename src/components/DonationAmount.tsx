@@ -35,6 +35,7 @@ export default function DonationAmount({
     handleDonation(currentAmount);
   };
 
+  // set the initial active donation amount
   const defaultActiveDonation = amount === '€10.00' ? 'active-donation' : '';
 
   return (
