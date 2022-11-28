@@ -18,7 +18,6 @@ import Link from 'next/link';
 import PageHero from 'src/components/PageHero';
 import TwoColumnSection from 'src/components/TwoColumnSection';
 import InfoCard from 'src/components/InfoCard';
-import { useState } from 'react';
 
 export default function AboutUsPage({
   projects,

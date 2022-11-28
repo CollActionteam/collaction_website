@@ -71,4 +71,20 @@
   .text-shadow {
     text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
   }
+  .hero-linear-gradient {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 22.92%,
+      rgba(0, 0, 0, 0.6) 71.35%
+    );
+  }
+  .active-donation {
+    @apply bg-collaction-500 text-secondary font-semibold;
+  }
+  .active-btn {
+    @apply bg-primary-400 text-secondary;
+  }
+  .inactive-btn {
+    @apply bg-secondary text-primary-300;
+  }
 }
