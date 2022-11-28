@@ -8,16 +8,18 @@ import AppLinkGoogle from 'src/components/AppLinkGoogle';
 import Button from 'src/components/Button';
 import DonateCard from 'src/components/DonateCard';
 import Faq from 'src/components/Faq';
+import ContactModal from 'src/components/ContactModal';
 import { faq } from 'src/helpers/faq';
 import { toggleBtnState } from 'src/helpers/toggleButtonState';
 
 import donateImg from 'public/donate-page-photo.jpg';
 
-const contactEmail = 'contact@collaction.org';
-
 export default function DonatePage() {
+  // state to set donation headline
   const [donateCardHeadline, setDonateCardHeadline] =
     useState('Recurring donation');
+
+  const [showContactModal, setShowContactModal] = useState(false);
 
   // get the textcontent of the button click
   const donateToggleHandler = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -76,12 +78,12 @@ export default function DonatePage() {
             </p>
             <p className="text-body-short-1">
               For questions about donating please{' '}
-              <a
-                href={`mailto:${contactEmail}`}
-                className="text-headline-s-1 text-primary-300"
+              <button
+                onClick={() => setShowContactModal(true)}
+                className="inline-block"
               >
-                contact us.
-              </a>
+                contact us
+              </button>
             </p>
           </div>
         </div>
@@ -132,6 +134,9 @@ export default function DonatePage() {
           </InfoCard>
         </div>
       </main>
+      {showContactModal && (
+        <ContactModal setShowContactModal={setShowContactModal} />
+      )}
     </>
   );
 }
