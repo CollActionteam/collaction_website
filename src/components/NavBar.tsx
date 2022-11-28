@@ -160,6 +160,18 @@ export default function NavBar() {
               >
                 Projects
               </Link>
+              <Link
+                href="/donate"
+                className={clsx(
+                  'flex items-center mx-4 md:mx-0 md:ml-8',
+                  router.asPath === '/donate'
+                    ? 'text-headline-s-1'
+                    : 'text-body-short-1',
+                  isInverted ? 'text-secondary' : 'text-primary-300'
+                )}
+              >
+                Donate
+              </Link>
               <button
                 onClick={() => setShowContactModal(true)}
                 className={clsx(
