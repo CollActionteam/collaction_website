@@ -100,7 +100,7 @@ export default function WestlandIndexPage() {
           title="Download de app"
           body="Samen staan we sterk! Moedig je buren aan en download de app of schrijf je in via de 'Ik doe mee' knop"
         >
-          <div className="flex justify-center mb-6">
+          <div className="flex justify-center">
             <AppLinkApple className="mr-4 sm:mr-5" />
             <AppLinkGoogle />
           </div>
