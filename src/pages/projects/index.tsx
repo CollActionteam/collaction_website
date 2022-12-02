@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 import PageSEO from 'src/components/PageSEO';
 
 import HeroImg from 'public/uilenstede_banner.png';
@@ -8,11 +6,15 @@ import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { InferGetStaticPropsType } from 'next';
 
-import { ProjectCard } from 'src/components/ProjectCard';
 import { getProjectsData } from 'src/lib/getProjects';
-import Link from 'next/link';
 import PageHero from 'src/components/PageHero';
+import Image from 'next/image';
+import CollActionLogoWithText from 'public/crowdaction_graphic.png';
 
+// Images to use
+// /Users/margaretmwaura/Projects/website/public/placeholder-hero-bg.png
+// /Users/margaretmwaura/Projects/website/public/crowdaction_graphic.png
+// /Users/margaretmwaura/Projects/website/public/placeholder-hero-bg-sm.png
 export default function ProjectListPage({
   projects,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
@@ -25,6 +27,10 @@ export default function ProjectListPage({
         description="View a selection of projects that CollAction organised. "
       />
 
+      {/* TODO: 
+       1. Centering of the image
+       2. The width of the portions as we change dimensions */}
+
       <main className="bg-secondary">
         {/* HERO SETION */}
         <PageHero
@@ -33,47 +39,32 @@ export default function ProjectListPage({
           description={t('projects:hero.description')}
         />
 
-        {/* BUSINESS/EDUCATION/GOVERNANCE SECTION */}
-        <div className="text-left mx-auto max-w-350 sm:max-w-400 lg:max-w-500 pt-10 pb-6 ">
-          <h1 className="text-headline-m-1 md:text-headline-lg-1 mb-6">
-            {t('projects:begSection.title')}
-          </h1>
-          <p className="text-body-short-1 text-primary-200">
-            {t('projects:begSection.description')}
-          </p>
-        </div>
-
-        <h4 className="max-w-600 mx-auto mb-7">
-          BUSINESS/EDUCATION/GOVERNANCE SECTION
-        </h4>
-
-        {/* LIST PROJECTS SECTION */}
-        <div className="text-left mx-auto max-w-350 sm:max-w-400 lg:max-w-500 pt-10 pb-6 ">
-          <h1 className="text-headline-m-1 md:text-headline-lg-1 mb-6">
-            {t('projects:projectSection.title')}
-          </h1>
-          <p className="text-body-short-1 text-primary-200">
-            {t('projects:projectSection.description')}
-          </p>
-        </div>
-
-        <div className="mb-13 last:mb-0">
-          <div className="flex flex-wrap justify-center mx-auto md:max-w-864 mt-12 lg:mt-15">
-            {projects.map(project => (
-              <ProjectCard key={project.title} {...project} />
-            ))}
+        <div className="h-1/2 md:h-auto m-0 w-full">
+          <div className="flex flex-row flex-wrap ml-6 mr-6 mt-10 md:m-0 bg-primary-0 rounded-lg md:rounded-none md:bg-white">
+            <div className="basis-full md:basis-1/2 flex flex-col p-8">
+              <div className="m-0 md:m-auto p-0 md:pl-44 md:pr-44 ">
+                <p className="font-bold text-lg text-center md:text-left">
+                  Crowdactions
+                </p>
+                <p className="mt-4 text-primary-200 text-center md:text-left">
+                  CrowdActions are the basis of our endeavor. It is the common
+                  goal of each CrowdAction that unites people of similar
+                  convictions
+                </p>
+              </div>
+            </div>
+            <div className="basis-full md:basis-1/2 flex ">
+              <Image
+                src={CollActionLogoWithText}
+                alt="black CollAction logo with text"
+                // layout="responsive"
+                // placeholder="blur"
+                width="400"
+                height="400"
+              />
+            </div>
           </div>
         </div>
-
-        {/* SEE MORE DEALS */}
-        <Link
-          href="/projects/all"
-          className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 mt-5 w-72 shadow bottom-7 inset-x-0 mx-auto z-40"
-        >
-          See All Projects
-        </Link>
-
-        <h4 className="max-w-600 mx-auto mb-7">Contact form should be here</h4>
       </main>
     </>
   );
