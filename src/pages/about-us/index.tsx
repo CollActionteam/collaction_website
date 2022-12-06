@@ -5,8 +5,9 @@ import PageSEO from 'src/components/PageSEO';
 import HeroImg from 'public/uilenstede_banner.png';
 import SolveCollectiveActionProblemsImg from 'public/solve_collective_action_problems.png';
 import CollActionGraphic from 'public/collaction_graphic.png';
-import RubenAboutImg from 'public/ruben_about.png';
-import RubenAboutWideImg from 'public/ruben_wide.png';
+import RubenAboutImgXl from 'public/ruben-xl.png';
+import RubenAboutImgLg from 'public/ruben-lg.png';
+import RubenAboutImgSm from 'public/ruben-sm.png';
 
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -58,75 +59,43 @@ export default function AboutUsPage({
           }
         />
 
-        <TwoColumnSection
-          isWhiteBg={true}
-          mobile={
-            <div>
-              <div className="relative hidden sm:block">
-                <Image
-                  className="w-full h-full"
-                  src={RubenAboutWideImg}
-                  alt={''}
-                />
-                <div className="absolute bottom-6 left-6 z-50 text-white text-md">
-                  <h3 className="text-headline-m-1 mb-6">
-                    {t('about:memberQuote.name')}
-                  </h3>
-                  <blockquote className="mb-4 text-xl max-w-350">
-                    “{t('about:memberQuote.quote')}„
-                  </blockquote>
-                  <span>{t('about:memberQuote.title')}</span>
-                  <span className="block italic">
-                    {t('about:memberQuote.location')}
-                  </span>
-                </div>
-              </div>
-              <div className="sm:hidden relative">
-                <Image className="w-full h-full" src={RubenAboutImg} alt={''} />
-                <div className="absolute bottom-6 left-6 z-50 text-white text-md">
-                  <h3 className="text-headline-m-1 mb-6">
-                    {t('about:memberQuote.name')}
-                  </h3>
-                  <blockquote className="mb-4 text-xl max-w-350">
-                    “{t('about:memberQuote.quote')}„
-                  </blockquote>
-                  <span>{t('about:memberQuote.title')}</span>
-                  <span className="block italic">
-                    {t('about:memberQuote.location')}
-                  </span>
-                </div>
-              </div>
-            </div>
-          }
-          first={
-            <InfoCard
-              className="absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%]"
-              hasBg={false}
-              leftAlign={true}
-              title={t('about:memberQuote.name')}
-              body={
-                <div>
-                  <blockquote className="mb-4 text-2xl">
-                    “{t('about:memberQuote.quote')}„
-                  </blockquote>
-                  <span>{t('about:memberQuote.title')}</span>
-                  <span className="block italic">
-                    {t('about:memberQuote.location')}
-                  </span>
-                </div>
-              }
-            />
-          }
-          second={
-            <div className=" py-8 px-8">
-              <Image
-                className="w-full h-full rounded-1"
-                src={RubenAboutImg}
-                alt={''}
-              />
-            </div>
-          }
-        />
+        <div className="h-[24.375rem] sm:h-[34.375rem] relative">
+          <Image
+            className="hidden xl:block"
+            src={RubenAboutImgXl}
+            style={{ objectFit: 'cover', objectPosition: 'center' }}
+            alt={''}
+            fill
+          />
+          <Image
+            className="hidden sm:block xl:hidden"
+            src={RubenAboutImgLg}
+            style={{ objectFit: 'cover', objectPosition: 'center' }}
+            alt={''}
+            fill
+          />
+          <Image
+            className="sm:hidden"
+            src={RubenAboutImgSm}
+            style={{ objectFit: 'cover', objectPosition: 'center' }}
+            alt={''}
+            fill
+          />
+          <div className="absolute bottom-6 left-[1.25rem] sm:bottom-[3.75rem] sm:left-[3.5rem] xl:left-[10.75rem] z-50 text-white text-md">
+            <h3 className="text-headline-m-1 mb-6">
+              {t('about:memberQuote.name')}
+            </h3>
+            <blockquote className="mb-4 text-xl max-w-350">
+              “{t('about:memberQuote.quote')}„
+            </blockquote>
+            <span className="text-body-short-1 font-semibold pt-3">
+              {t('about:memberQuote.title')}
+            </span>
+            <span className="block text-footnote font-semibold pt-1">
+              {t('about:memberQuote.location')}
+            </span>
+          </div>
+        </div>
 
         <InfoCard
           className="pt-10"
