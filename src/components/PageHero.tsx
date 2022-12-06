@@ -22,8 +22,8 @@ export default function PageHero({
       <Image
         src={image}
         alt={alt ?? title ?? 'Page hero image'}
+        style={{ objectFit: 'cover', objectPosition: 'center' }}
         fill
-        style={{ objectFit: 'cover' }}
       />
       {overlay && (
         <div className="absolute bottom-0 min-h-[420px] md:min-h-[50vh] w-full bg-gradient-to-t from-black via-black opacity-50" />
