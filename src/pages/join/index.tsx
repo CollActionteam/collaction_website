@@ -45,7 +45,6 @@ export default function JoinListPage(
   props: InferGetStaticPropsType<typeof getStaticProps>
 ) {
   const { t } = useTranslation();
-
   return (
     <>
       <PageSEO
@@ -62,11 +61,11 @@ export default function JoinListPage(
         />
 
         {/* OUR TEAM SECTION */}
-        <div className="text-center mx-auto max-w-350 sm:max-w-400 lg:max-w-500 pt-10 pb-6 ">
+        <div className="text-center mx-auto max-w-350 md:max-w-400 lg:max-w-500 pt-10 pb-6 ">
           <h1 className="text-headline-m-1 md:text-headline-lg-1 mb-6">
             {t('join:ourTeamSection.title')}
           </h1>
-          <p className="text-body-short-1 text-primary-200">
+          <p className="text-body-short-1 text-primary-200 px-0 md:px-6 lg:px-20 px-auto">
             {t('join:ourTeamSection.description')}
           </p>
         </div>
@@ -78,51 +77,66 @@ export default function JoinListPage(
         {/* JOIN SECTION */}
         <div className="text-center mx-auto max-w-350 sm:max-w-400 lg:max-w-500 md:mb-10">
           <h1 className="text-headline-m-1 md:text-headline-lg-1 mb-6">
-            {t('join:joinSection.title')}
+            {t('join:joinSection.black_title')}
+            <span className="before:content-['_'] text-collaction">
+              {t('join:joinSection.green_title')}
+            </span>
           </h1>
           <p className="text-body-short-1 text-primary-200 pb-8">
             {t('join:joinSection.description')}
           </p>
         </div>
 
-        {props.data.map(({ title, description, tags }) => (
-          <div
-            key={`${title} card`}
-            className={clsx(
-              'bg-primary-0 p-6 mx-auto mb-6 rounded-1',
-              'w-full md:w-3/4 max-w-350 sm:max-w-400 lg:max-w-864'
-            )}
-          >
-            <h3 className="text-headline-m-1 my-6">{title}</h3>
-            <p className="text-body-short-1 text-primary-200 mb-6">
-              {description}
-            </p>
-            <div className="flex flex-wrap mb-4">
-              {tags.map(tag => {
-                const currentTag = joinTagsMap[tag];
-                return (
-                  <div
-                    key={title + currentTag.text}
-                    className="flex items-center bg-secondary text-primary-400 rounded-1 py-3 px-4 mb-4 mr-4"
-                  >
-                    {currentTag.icon}
-                    <span className="ml-4">{currentTag.text}</span>
-                  </div>
-                );
-              })}
-            </div>
-            <div className="w-full flex justify-end">
-              <Link
-                href={`/join/as/${title.split(' ').join('-').toLowerCase()}`}
-                passHref
-                className="bg-collaction h-8 w-8 -mr-4 -mb-4 p-4 rounded-full text-secondary"
-                aria-label={`Visit ${title} posting`}
+        <div className="flex flex-wrap justify-center p-0 gap-x-4 mx-8">
+          {props.data.map(
+            ({
+              title,
+              description,
+              tags,
+            }: {
+              title: string;
+              description: string;
+              tags: Array<JoinTagTokenType>;
+            }) => (
+              <div
+                key={`${title} card`}
+                className={clsx('bg-primary-0 p-6 mb-6 rounded-1', 'md:w-1/3')}
               >
-                <ArrowRightIcon />
-              </Link>
-            </div>
-          </div>
-        ))}
+                <h3 className="text-headline-m-1 my-6">{title}</h3>
+                <p className="text-body-short-1 text-primary-200 mb-6">
+                  {description}
+                </p>
+                <div className="flex flex-wrap mb-4">
+                  {tags.map(tag => {
+                    const currentTag = joinTagsMap[tag];
+                    return (
+                      <div
+                        key={title + currentTag.text}
+                        className="flex items-center bg-secondary text-primary-400 rounded-1 py-3 px-4 mb-4 mr-4"
+                      >
+                        {currentTag.icon}
+                        <span className="ml-4">{currentTag.text}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+                <div className="w-full flex justify-end">
+                  <Link
+                    href={`/join/as/${title
+                      .split(' ')
+                      .join('-')
+                      .toLowerCase()}`}
+                    passHref
+                    className="bg-collaction h-8 w-8 -mr-4 -mb-4 p-4 rounded-full text-secondary"
+                    aria-label={`Visit ${title} posting`}
+                  >
+                    <ArrowRightIcon />
+                  </Link>
+                </div>
+              </div>
+            )
+          )}
+        </div>
 
         {/* DOWNLOAD APP SETION */}
         <TwoColumnSection
