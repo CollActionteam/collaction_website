@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PageSEO from 'src/components/PageSEO';
 
 import HeroImg from 'public/placeholder-hero-bg.png';
+import actions from 'public/cow.png';
 // /Users/margaretmwaura/Projects/website/public/crowdaction_graphic.png';
 
 import { useTranslation } from 'next-i18next';
@@ -12,7 +13,7 @@ import { getProjectsData } from 'src/lib/getProjects';
 import PageHero from 'src/components/PageHero';
 import Image from 'next/image';
 import CollActionLogoWithText from 'public/crowdaction_graphic.png';
-import {MdOutlineKeyboardArrowUp} from 'react-icons/md'
+import { MdOutlineKeyboardArrowUp } from 'react-icons/md';
 
 export default function ProjectListPage({
   projects,
@@ -66,7 +67,6 @@ export default function ProjectListPage({
             </div>
           </div>
         </div>
-
         <div className="h-auto w-full">
           <div className="mx-5 md:mx-5 lg:mx-0">
             <div
@@ -147,9 +147,145 @@ export default function ProjectListPage({
                   </select>
                 </div>
               </div>
+              <div className="flex justify-end block md:hidden lg:hidden ">
+                <button className="font-semibold rounded-full bg-primary-0 pl-6 pr-6 pt-2 pb-2 mt-4">
+                  Reset
+                </button>
+              </div>
             </div>
           </div>
         </div>
+        <div
+          className="mx-auto h-auto
+          grid grid-cols-1 md:grid-cols-3 lg:grid-col-3
+          max-w-400 md:max-w-750 lg:max-w-924
+          mt-6 md:mt-8 lg:mt-8 gap-x-4 md:gap-x-3 lg:gap-x-4 gap-y-8"
+        >
+          {/* TODO:
+          - Fix the image size based on the image I will be given */}
+          <div className="bg-white rounded-t-lg overflow-hidden">
+            <Image src={actions} alt="black CollAction logo with text" />
+            <div className="flex pl-4 md:pl-3 lg:pl-4 space-x-1 mt-4">
+              <button
+                className="font-light rounded-full 
+                   bg-collaction-400 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4
+                    text-white text-sm"
+              >
+                Now Open
+              </button>
+              <button
+                className="font-light rounded-full 
+                border-2 border-primary-0 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4 text-black text-sm"
+              >
+                Sustainability
+              </button>
+              <button
+                className="font-light rounded-full 
+                border-2 border-primary-0 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4
+                text-black text-sm"
+              >
+                Food
+              </button>
+            </div>
+            <div className="pl-4 md:pl-3 lg:pl-4 mt-4">
+              <p className="font-semibold text-lg">Veganuary</p>
+              <p className="mt-4 text-primary-300">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus quis augue porttitor...
+              </p>
+            </div>
+            <div className="py-4 flex justify-center">
+              <button
+                className="font-light rounded-full w-5/6
+                   border-2 border-collaction-400 py-2 px-4 text-black text-sm"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+          <div className="bg-white rounded-t-lg overflow-hidden">
+            <Image src={actions} alt="black CollAction logo with text" />
+            <div className="flex pl-4 md:pl-3 lg:pl-4 space-x-1 mt-4">
+              <button
+                className="font-light rounded-full 
+                   bg-collaction-400 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4
+                    text-white text-sm"
+              >
+                Now Open
+              </button>
+              <button
+                className="font-light rounded-full 
+                border-2 border-primary-0 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4 text-black text-sm"
+              >
+                Sustainability
+              </button>
+              <button
+                className="font-light rounded-full 
+                border-2 border-primary-0 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4
+                text-black text-sm"
+              >
+                Food
+              </button>
+            </div>
+            <div className="pl-4 md:pl-3 lg:pl-4 mt-4">
+              <p className="font-semibold text-lg">Veganuary</p>
+              <p className="mt-4 text-primary-300">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus quis augue porttitor...
+              </p>
+            </div>
+            <div className="py-4 flex justify-center">
+              <button
+                className="font-light rounded-full w-5/6
+                   border-2 border-collaction-400 py-2 px-4 text-black text-sm"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+          <div className="bg-white rounded-t-lg overflow-hidden">
+            <Image src={actions} alt="black CollAction logo with text" />
+            <div className="flex pl-4 md:pl-3 lg:pl-4 space-x-1 mt-4">
+              <button
+                className="font-light rounded-full 
+                   bg-collaction-400 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4
+                    text-white text-sm"
+              >
+                Now Open
+              </button>
+              <button
+                className="font-light rounded-full 
+                border-2 border-primary-0 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4 text-black text-sm"
+              >
+                Sustainability
+              </button>
+              <button
+                className="font-light rounded-full 
+                border-2 border-primary-0 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4
+                text-black text-sm"
+              >
+                Food
+              </button>
+            </div>
+            <div className="pl-4 md:pl-3 lg:pl-4 mt-4">
+              <p className="font-semibold text-lg">Veganuary</p>
+              <p className="mt-4 text-primary-300">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus quis augue porttitor...
+              </p>
+            </div>
+            <div className="py-4 flex justify-center">
+              <button
+                className="font-light rounded-full w-5/6
+                   border-2 border-collaction-400 py-2 px-4 text-black text-sm"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+        {/* </div>
+        </div> */}
       </main>
     </>
   );
