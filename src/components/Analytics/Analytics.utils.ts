@@ -1,10 +1,5 @@
 // FOR REFERENCE - https://developers.google.com/analytics/devguides/collection/analyticsjs/user-opt-out
-import {
-  setCookies,
-  checkCookies,
-  getCookie,
-  removeCookies,
-} from 'cookies-next';
+import { setCookies, hasCookie, getCookie, removeCookies } from 'cookies-next';
 import type { OptionsType } from 'cookies-next/lib/types';
 
 // 0:reject    1:accept
@@ -24,7 +19,7 @@ export function makeCookieSelection(selection: SelectionType) {
 
 // checks if the user has made their cookie selection
 export function checkCookieSelection() {
-  return checkCookies(cookieAcceptanceName);
+  return hasCookie(cookieAcceptanceName);
 }
 
 // returns the user's cookie selection
