@@ -34,11 +34,7 @@ export default function AboutUsPage({
 
       <main className="bg-secondary">
         {/* HERO SETION */}
-        <PageHero
-          image={HeroImg}
-          title={t('about:hero.title')}
-          description={t('about:hero.description')}
-        />
+        <PageHero image={HeroImg} title={t('about:hero.title')} />
 
         <TwoColumnSection
           first={
