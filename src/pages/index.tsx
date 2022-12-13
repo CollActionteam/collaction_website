@@ -214,9 +214,8 @@ export default function HomePage(
             <Image
               src={TomTomImg}
               alt="CollAction Team"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-none xs:rounded-1"
+              fill={true}
+              className="rounded-none xs:rounded-1 object-cover"
             />
           </div>
           <div

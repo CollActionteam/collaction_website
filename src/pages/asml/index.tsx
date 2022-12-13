@@ -46,7 +46,6 @@ export default function ASMLPage({
                 priority
                 src={CollActionLogoWithText}
                 alt="black CollAction logo with text"
-                layout="responsive"
                 placeholder="blur"
                 sizes="128px"
               />
@@ -59,7 +58,6 @@ export default function ASMLPage({
               src={ASMLBanner}
               alt="asml veganuary banner"
               className="rounded-1"
-              layout="responsive"
               sizes="(max-width: 768px) 90vw, 830px"
               placeholder="blur"
             />
@@ -220,7 +218,6 @@ export default function ASMLPage({
                 <Image
                   src={AppPreviewCard1}
                   alt="app preview card 1"
-                  layout="responsive"
                   sizes="(min-width: 769px) 275px, 300px"
                   placeholder="blur"
                 />
@@ -237,7 +234,6 @@ export default function ASMLPage({
                 <Image
                   src={AppPreviewCard2}
                   alt="app preview card 2"
-                  layout="responsive"
                   sizes="275px"
                   placeholder="blur"
                 />
@@ -248,7 +244,6 @@ export default function ASMLPage({
                 <Image
                   src={AppPreviewCard3}
                   alt="app preview card 3"
-                  layout="responsive"
                   sizes="275px"
                   placeholder="blur"
                 />
@@ -344,7 +339,6 @@ function ImageCard({ card, index }: { card: ImageCard; index: number }) {
           src={card.image}
           alt={card.bottom}
           placeholder="blur"
-          layout="responsive"
           sizes="(max-width: 767px) 350px, 400px"
           className="rounded-1"
         />
