@@ -121,7 +121,6 @@ function ImageCard({ card, index }: { card: ImageCard; index: number }) {
           src={card.image}
           alt={card.bottom}
           placeholder="blur"
-          layout="responsive"
           sizes="(max-width: 767px) 350px, 400px"
           className="rounded-1"
         />

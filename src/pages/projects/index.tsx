@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 import PageSEO from 'src/components/PageSEO';
 
 import HeroImg from 'public/uilenstede_banner.png';

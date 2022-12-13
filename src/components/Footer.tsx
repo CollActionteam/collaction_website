@@ -33,7 +33,6 @@ export default function Footer() {
             <Image
               src={CollActionLogoWithText}
               alt="black CollAction logo with text"
-              layout="responsive"
               placeholder="blur"
               sizes="160px"
             />
@@ -105,12 +104,7 @@ export default function Footer() {
           aria-label="Powered By Vercel"
           className="block w-40 md:mx-auto md:mt-5"
         >
-          <Image
-            src={PoweredByVercel}
-            alt="Powered by Vercel"
-            layout="responsive"
-            sizes="160px"
-          />
+          <Image src={PoweredByVercel} alt="Powered by Vercel" sizes="160px" />
         </a>
       </div>
     </footer>
