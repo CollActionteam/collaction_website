@@ -3,13 +3,11 @@ import PageSEO from 'src/components/PageSEO';
 
 import HeroImg from 'public/placeholder-hero-bg.png';
 import actions from 'public/cow.png';
-// /Users/margaretmwaura/Projects/website/public/crowdaction_graphic.png';
 
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { InferGetStaticPropsType } from 'next';
 
-import { getProjectsData } from 'src/lib/getProjects';
 import PageHero from 'src/components/PageHero';
 import Image from 'next/image';
 import CollActionLogoWithText from 'public/crowdaction_graphic.png';
@@ -26,6 +24,8 @@ export default function ProjectListPage({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const { t } = useTranslation();
   const [status, setStatus] = useState('Status');
+
+  console.log(projects.items);
 
   function logValue() {
     console.log(status);
@@ -199,7 +199,104 @@ export default function ProjectListPage({
         >
           {/* TODO:
           - Fix the image size based on the image I will be given */}
+          {projects.items.map(
+            ({
+              title,
+              description,
+              id,
+            }: {
+              title: string;
+              description: string;
+              id: string;
+            }) => (
+              <div
+                className="bg-white rounded-t-lg overflow-hidden"
+                key={`${id} card`}
+              >
+                <Image src={actions} alt="black CollAction logo with text" />
+                <div className="flex pl-4 md:pl-3 lg:pl-4 space-x-1 mt-4">
+                  <button
+                    className="font-light rounded-full 
+                   bg-collaction-400 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4
+                    text-white text-sm"
+                  >
+                    Now Open
+                  </button>
+                  <button
+                    className="font-light rounded-full 
+                border-2 border-primary-0 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4 text-black text-sm"
+                  >
+                    Sustainability
+                  </button>
+                  <button
+                    className="font-light rounded-full 
+                border-2 border-primary-0 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4
+                text-black text-sm"
+                  >
+                    Food
+                  </button>
+                </div>
+                <div className="pl-4 md:pl-3 lg:pl-4 mt-4">
+                  <p className="font-semibold text-lg">{title}</p>
+                  <p className="mt-4 text-primary-300">
+                    {description.length > 150
+                      ? `${description.substring(0, 150)}...`
+                      : description}
+                  </p>
+                </div>
+                <div className="py-4 flex justify-center">
+                  <button
+                    className="font-light rounded-full w-5/6
+                   border-2 border-collaction-400 py-2 px-4 text-black text-sm"
+                  >
+                    Read More
+                  </button>
+                </div>
+              </div>
+            )
+          )}
           <div className="bg-white rounded-t-lg overflow-hidden">
+            <Image src={actions} alt="black CollAction logo with text" />
+            <div className="flex pl-4 md:pl-3 lg:pl-4 space-x-1 mt-4">
+              <button
+                className="font-light rounded-full 
+                   bg-collaction-400 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4
+                    text-white text-sm"
+              >
+                Now Open
+              </button>
+              <button
+                className="font-light rounded-full 
+                border-2 border-primary-0 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4 text-black text-sm"
+              >
+                Sustainability
+              </button>
+              <button
+                className="font-light rounded-full 
+                border-2 border-primary-0 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4
+                text-black text-sm"
+              >
+                Food
+              </button>
+            </div>
+            <div className="pl-4 md:pl-3 lg:pl-4 mt-4">
+              <p className="font-semibold text-lg">Veganuary</p>
+              <p className="mt-4 text-primary-300">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus quis augue porttitor...
+              </p>
+            </div>
+            <div className="py-4 flex justify-center">
+              <button
+                className="font-light rounded-full w-5/6
+                   border-2 border-collaction-400 py-2 px-4 text-black text-sm"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+
+          {/* <div className="bg-white rounded-t-lg overflow-hidden">
             <Image src={actions} alt="black CollAction logo with text" />
             <div className="flex pl-4 md:pl-3 lg:pl-4 space-x-1 mt-4">
               <button
@@ -279,46 +376,7 @@ export default function ProjectListPage({
               </button>
             </div>
           </div>
-          <div className="bg-white rounded-t-lg overflow-hidden">
-            <Image src={actions} alt="black CollAction logo with text" />
-            <div className="flex pl-4 md:pl-3 lg:pl-4 space-x-1 mt-4">
-              <button
-                className="font-light rounded-full 
-                   bg-collaction-400 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4
-                    text-white text-sm"
-              >
-                Now Open
-              </button>
-              <button
-                className="font-light rounded-full 
-                border-2 border-primary-0 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4 text-black text-sm"
-              >
-                Sustainability
-              </button>
-              <button
-                className="font-light rounded-full 
-                border-2 border-primary-0 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4
-                text-black text-sm"
-              >
-                Food
-              </button>
-            </div>
-            <div className="pl-4 md:pl-3 lg:pl-4 mt-4">
-              <p className="font-semibold text-lg">Veganuary</p>
-              <p className="mt-4 text-primary-300">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus quis augue porttitor...
-              </p>
-            </div>
-            <div className="py-4 flex justify-center">
-              <button
-                className="font-light rounded-full w-5/6
-                   border-2 border-collaction-400 py-2 px-4 text-black text-sm"
-              >
-                Read More
-              </button>
-            </div>
-          </div>
+         */}
         </div>
         <div className="w-full bg-secondary md:bg-white lg:bg-white py-0 md:py-10 lg:py-10 mx-auto">
           <div className="mx-5 md:mx-5 lg:mx-0">
@@ -398,7 +456,13 @@ export default function ProjectListPage({
 }
 
 export async function getStaticProps({ locale }: { locale: string }) {
-  const projects = getProjectsData('featured');
+  const projects = await fetch('https://devapi.collaction.org/v1/crowdactions')
+    .then(response => response.json())
+    .then(data => {
+      return data;
+    });
+
+  console.log(projects);
 
   return {
     props: {
