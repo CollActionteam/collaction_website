@@ -33,7 +33,6 @@ export default function UilenstedeIndexPage() {
             src={Uilenstede_banner}
             alt="westland banner"
             className="rounded-1"
-            layout="responsive"
             sizes="(max-width: 768px) 90vw, 830px"
             placeholder="blur"
           />
@@ -225,7 +224,6 @@ export default function UilenstedeIndexPage() {
             src={Uilenstede_map}
             alt="westland banner"
             className="rounded-1"
-            layout="responsive"
             sizes="(max-width: 768px) 90vw, 830px"
             placeholder="blur"
           />
@@ -399,7 +397,6 @@ export default function UilenstedeIndexPage() {
             src={Collaboration}
             alt="uilenstede banner"
             className="rounded-1"
-            layout="responsive"
             sizes="(max-width: 768px) 90vw, 830px"
             placeholder="blur"
           />
