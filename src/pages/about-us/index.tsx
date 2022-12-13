@@ -78,14 +78,11 @@ export default function AboutUsPage({
             fill
           />
           <div className="absolute bottom-6 left-[1.25rem] sm:bottom-[3.75rem] sm:left-[3.5rem] xl:left-[10.75rem] z-50 text-white text-md">
-            <h3 className="text-headline-m-1 mb-6">
-              {t('about:memberQuote.name')}
-            </h3>
-            <blockquote className="mb-4 text-xl max-w-350">
+            <blockquote className="text-headline-m-1 mb-4 max-w-350">
               “{t('about:memberQuote.quote')}„
             </blockquote>
-            <span className="text-body-short-1 font-semibold pt-3">
-              {t('about:memberQuote.title')}
+            <span className="font-light">
+              {t('about:memberQuote.firstName')}, {t('about:memberQuote.title')}
             </span>
           </div>
         </div>

@@ -8,8 +8,9 @@
     "description": "After successful projects in Eindhoven, Amstelveen and Westland, we are currently preparing upcoming CrowdActions in Amstelveen and Emmen. On top of that, we are finalising the release of the newest version of our app which includes many new features to make it more fun & easy! Lastly, we are spreading the word about CollAction on various platforms and as always, we're expanding our team of developers and ambassadors!"
   },
   "memberQuote": {
-    "name": "Ruben Horn",
-    "quote": "'I'm not making a difference anyway' is not an acceptable excuse anymore, tiny steps are steps as well!",
+    "firstName": "Ruben",
+    "lastName": "Horn",
+    "quote": "I'm not making a difference anyway' is not an acceptable excuse anymore, tiny steps are steps as well!",
     "title": "Developer"
   },
   "collAction": {
