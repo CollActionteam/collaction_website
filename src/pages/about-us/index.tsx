@@ -49,8 +49,8 @@ export default function AboutUsPage({
               className="absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%]"
               hasBg={false}
               leftAlign={true}
-              title={t('about:solveProblems.title')}
-              body={t('about:solveProblems.description')}
+              title={t('about:whatWeDo.title')}
+              body={t('about:whatWeDo.description')}
             />
           }
         />
@@ -86,9 +86,6 @@ export default function AboutUsPage({
             </blockquote>
             <span className="text-body-short-1 font-semibold pt-3">
               {t('about:memberQuote.title')}
-            </span>
-            <span className="block text-footnote font-semibold pt-1">
-              {t('about:memberQuote.location')}
             </span>
           </div>
         </div>

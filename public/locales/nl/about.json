@@ -1,0 +1,18 @@
+{
+  "hero": {
+    "title": "Over ons",
+    "description": ""
+  },
+  "whatWeDo": {
+    "title": "Waar zijn we momenteel mee bezig?",
+    "description": "Na succesvolle projecten in Eindhoven, Amstelveen en Westland, zijn we momenteel CrowdActions aan het voorbereiden in wederom Amstelveen en Emmen. Daarnaast wordt er hard gewerkt aan de nieuwe versies van onze app om het nog leuker en gemakkelijker te maken. Als laatste maken we onszelf bekend op verschillende platforms en zoals altijd is ons team van ontwikkelaars en ambassadeurs in constante uitbreiding!"
+  },
+  "memberQuote": {
+    "name": "Ruben Horn",
+    "quote": "'Ik maak toch geen verschil' is geen acceptabel excuus meer: kleine stapjes zijn ook stapjes!",
+    "title": "Ontwikkelaar"
+  },
+  "collAction": {
+    "title": "We connect people to solve collective action problems"
+  }
+}
