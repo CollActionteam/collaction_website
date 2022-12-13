@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import PageSEO from 'src/components/PageSEO';
 
 import HeroImg from 'public/placeholder-hero-bg.png';
@@ -14,6 +14,12 @@ import PageHero from 'src/components/PageHero';
 import Image from 'next/image';
 import CollActionLogoWithText from 'public/crowdaction_graphic.png';
 import { MdOutlineKeyboardArrowUp } from 'react-icons/md';
+import TwoColumnSection from 'src/components/TwoColumnSection';
+import InfoCard from 'src/components/InfoCard';
+import AppLinkApple from 'src/components/AppLinkApple';
+import AppLinkGoogle from 'src/components/AppLinkGoogle';
+import DownloadImg from 'public/download_app.png';
+import { toast } from 'react-toastify';
 
 export default function ProjectListPage({
   projects,
@@ -24,6 +30,36 @@ export default function ProjectListPage({
   function logValue() {
     console.log(status);
   }
+
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = async (event: any) => {
+    event?.preventDefault();
+
+    const axios = (await import('axios')).default;
+
+    if (form.current == null) {
+      toast.warn('Kindly fill in all the details');
+      return;
+    }
+
+    axios
+      .post('https://api.collaction.org/v1/contact', {
+        title: "[Contact] New submission from CollAction's website",
+        email: event.target.email.value,
+        body: event.target.message.value,
+      })
+      .then(res => {
+        if (res.data.id) {
+          toast.success('Your message has been sent successfully');
+        } else {
+          toast.error('Something went wrong, please try again later');
+        }
+      })
+      .catch(() => {
+        toast.error('Something went wrong, please try again later');
+      });
+  };
   return (
     <>
       <PageSEO
@@ -159,7 +195,7 @@ export default function ProjectListPage({
           className="mx-auto h-auto
           grid grid-cols-1 md:grid-cols-3 lg:grid-col-3
           max-w-400 md:max-w-750 lg:max-w-924
-          mt-6 md:mt-8 lg:mt-8 gap-x-4 md:gap-x-3 lg:gap-x-4 gap-y-8"
+          mt-6 md:mt-8 lg:mt-8 gap-x-4 md:gap-x-3 lg:gap-x-4 gap-y-8 mb-28"
         >
           {/* TODO:
           - Fix the image size based on the image I will be given */}
@@ -284,8 +320,78 @@ export default function ProjectListPage({
             </div>
           </div>
         </div>
-        {/* </div>
-        </div> */}
+        <div className="w-full bg-secondary md:bg-white lg:bg-white py-0 md:py-10 lg:py-10 mx-auto">
+          <div className="mx-5 md:mx-5 lg:mx-0">
+            <div
+              className="h-auto
+          mx-auto max-w-400 md:max-w-750 lg:max-w-924
+          mt-16 md:mt-0 lg:mt-0 flex flex-wrap justify-center"
+            >
+              <div className="w-full md:w-1/2 lg:w-1/2 flex items-center justify-center">
+                <div className="mx-auto max-w-320 ">
+                  <p className="font-bold text-3xl text-center leading-8">
+                    Have an Idea for a project
+                  </p>
+                  <br />
+                  <p className="text-center text-lg leading-6">
+                    Let us know your idea and will get in touch!
+                  </p>
+                </div>
+              </div>
+              <div className="w-full md:w-1/2 lg:w-1/2 flex flex-wrap justify-center">
+                <form
+                  className="p-2 rounded w-80 md:w-80 lg:w-96"
+                  ref={form}
+                  onSubmit={sendEmail}
+                >
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    className="required rounded-full bg-primary-0 w-80 md:w-80 lg:w-96  h-9 mt-6 p-4 text-black font-light"
+                    placeholder="Your email address"
+                  ></input>
+                  <p className="text-primary-400 text-sm pl-4">
+                    We will send our response to your email address
+                  </p>
+                  <textarea
+                    name="message"
+                    rows={6}
+                    cols={30}
+                    required
+                    className="required rounded-md bg-primary-0 mt-6 p-4 text-black font-light border w-80 md:w-80 lg:w-96"
+                    placeholder="Your message to us"
+                  ></textarea>
+                  <button
+                    className="w-80 md:w-80 lg:w-96 h-9 mt-4 items-center bg-primary-0 hover:bg-collaction-300 text-primary-300
+          font-semibold hover:text-black py-2 px-4 rounded-full"
+                  >
+                    Send
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <TwoColumnSection
+          isReverseOrder={false}
+          first={
+            <Image src={DownloadImg} alt="Download App" className="mx-auto" />
+          }
+          second={
+            <InfoCard
+              className="absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%]"
+              isSecondaryBg
+              title={t('common:downloadApp.title')}
+              body={t('common:downloadApp.description')}
+            >
+              <div className="flex justify-center mb-6">
+                <AppLinkApple className="mr-4 sm:mr-5" />
+                <AppLinkGoogle />
+              </div>
+            </InfoCard>
+          }
+        />
       </main>
     </>
   );
