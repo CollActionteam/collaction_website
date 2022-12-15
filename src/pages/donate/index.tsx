@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { useState } from 'react';
 
 import PageSEO from 'src/components/PageSEO';
@@ -9,10 +8,11 @@ import Button from 'src/components/Button';
 import DonateCard from 'src/components/DonateCard';
 import Faq from 'src/components/Faq';
 import ContactModal from 'src/components/ContactModal';
-import { faq } from 'src/helpers/faq';
+import { faqData } from 'src/helpers/faqData';
 import { toggleBtnState } from 'src/helpers/toggleButtonState';
 
-import donateImg from 'public/donate-page-photo.jpg';
+import HeroImg from 'public/collaction_team.png';
+import PageHero from 'src/components/PageHero';
 
 export default function DonatePage() {
   // state to set donation headline
@@ -40,29 +40,18 @@ export default function DonatePage() {
         description="Help us on our mission to make doing good fun and easy"
       />
 
-      <main className="bg-secondary md:pt-8 lg:pt-10 py-0 sm:px-32">
-        <div className="mx-auto w-full sm:max-w-[400px] lg:max-w-[744px] min-h-[520px] sm:rounded-1 overflow-hidden relative">
-          <Image
-            src={donateImg}
-            alt="collaction team members standing"
-            fill={true}
-            className="object-cover"
-          />
-          <div className="absolute bottom-0 top-0 w-full hero-linear-gradient "></div>
-          <div className="absolute bottom-14 lg:bottom-18 w-full text-center px-6">
-            <h3 className="mb-6 text-secondary text-title-lg">
-              Become a supporter
-            </h3>
-            <p className="text-secondary text-xl">
-              Help us on our mission to make doing good fun & easy
-            </p>
-          </div>
-        </div>
+      <main className="bg-secondary">
+        <PageHero
+          image={HeroImg}
+          title="Become a supporter"
+          description="Help us on our mission to make doing good fun & easy"
+          alt="CollAction team members standing"
+        />
 
         <div className="pt-10 lg:pt-[80px]">
           <div className="mx-auto sm:max-w-[400px] lg:max-w-[520px] px-6 sm:px-0">
             <h3 className="mb-7 text-3xl">Become a donor</h3>
-            <p className="mb-7 text-body-short-1 text-justify">
+            <p className="mb-7 text-body-short-1">
               Our donors allow us to keep on solving collective action problems.
               They allow us to reach a bigger audience and run our app in the
               cloud. In short: they allow us to keep trying to make the world a
@@ -70,7 +59,7 @@ export default function DonatePage() {
               insight into all our expenses so you know what we do with your
               donation.
             </p>
-            <p className="mb-7 text-body-short-1 text-justify">
+            <p className="mb-7 text-body-short-1">
               For generous donors we organise a yearly vegan dinner together
               with other donors and the CollAction team. Additionally, these
               donors receive a special upcycled CollAction bag made from
@@ -82,7 +71,7 @@ export default function DonatePage() {
                 onClick={() => setShowContactModal(true)}
                 className="inline-block"
               >
-                contact us
+                contact us.
               </button>
             </p>
           </div>
@@ -91,15 +80,17 @@ export default function DonatePage() {
         {/* donation toggler element */}
         <div className="flex gap-4 mt-10 mb-6 mx-auto max-w-350 h-[47px] px-5">
           <Button
-            text="Recurring donation"
             style="w-[169px] rounded-[10px] active-btn"
-            clickHandler={donateToggleHandler}
-          />
+            onClick={donateToggleHandler}
+          >
+            Recurring donation
+          </Button>
           <Button
-            text="One-time donation"
             style="w-[169px] rounded-[10px] inactive-btn"
-            clickHandler={donateToggleHandler}
-          />
+            onClick={donateToggleHandler}
+          >
+            One-time donation
+          </Button>
         </div>
 
         <div className="px-6 sm:px-0 pb-10 lg:pb-[80px]">
@@ -108,15 +99,15 @@ export default function DonatePage() {
           </div>
         </div>
 
-        <div className="mx-auto max-w-350 sm:max-w-400 lg:max-w-[744px]">
+        <div className="w-full bg-primary-0 py-14">
           <h3
             className="mx-auto lg:text-center headline-lg-1 pb-8 lg:pb-9
           font-bold text-primary-400"
           >
-            Frequently asked questions
+            Frequently Asked Questions
           </h3>
           <div className="mx-auto flex flex-col max-w-350 sm:max-w-400 lg:max-w-[744px] gap-y-4">
-            {faq.map(({ id, question, answer }) => (
+            {faqData.map(({ id, question, answer }) => (
               <Faq key={id} question={question} answer={answer} />
             ))}
           </div>

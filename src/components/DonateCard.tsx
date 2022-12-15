@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 import Button from 'src/components/Button';
@@ -42,7 +43,7 @@ export default function DonateCard({ headline, donation }: DonateCardProps) {
             className="text-body-long-1 text-primary-200 w-[302px] h-[34px] 
           sm:w-[352px] lg:w-[242px] lg:h-[48px] font-light"
           >
-            I will support collAction with a {donation} donation
+            I will support CollAction with a {donation} donation
           </p>
         </div>
         <form
@@ -67,14 +68,13 @@ export default function DonateCard({ headline, donation }: DonateCardProps) {
             Debit in the next step.
           </p>
           <div className="w-[302px] flex flex-col items-start gap-2.5">
-            <Button
-              text="Continue"
-              style="bg-primary-400 w-[302px] lg:w-[319px] text-secondary rounded-[999px]"
-            />
+            <Button style="bg-primary-400 w-[302px] lg:w-[319px] text-secondary rounded-[999px]">
+              Continue
+            </Button>
             <p className="text-primary-200 text-sm leading-[22px] w-[302px] lg:w-[319px] h-[22px]">
               By donating you agree with our{' '}
               <span className="text-collaction-500 text-sm leading-[22px]">
-                Privacy Policy
+                <Link href="/privacy">Privacy policy</Link>
               </span>
             </p>
           </div>
