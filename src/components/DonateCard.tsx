@@ -68,7 +68,7 @@ export default function DonateCard({ headline, donation }: DonateCardProps) {
             Debit in the next step.
           </p>
           <div className="w-[302px] flex flex-col items-start gap-2.5">
-            <Button style="bg-primary-400 w-[302px] lg:w-[319px] text-secondary rounded-[999px]">
+            <Button customStyle="bg-primary-400 w-[302px] lg:w-[319px] text-secondary rounded-[999px]">
               Continue
             </Button>
             <p className="text-primary-200 text-sm leading-[22px] w-[302px] lg:w-[319px] h-[22px]">

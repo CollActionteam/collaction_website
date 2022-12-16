@@ -23,7 +23,7 @@ export default function Faq({ question, answer }: FaqProps) {
   return (
     <div
       className="flex flex-col items-center h-full gap-2.5
-  py-6 px-3 bg-secondary rounded-[10px] justify-between max-w-350 sm:max-w-400 lg:max-w-[744px]"
+  py-6 px-3 bg-secondary rounded-[10px] justify-between max-w-350 md:max-w-400 lg:max-w-[744px]"
     >
       <div
         className="flex items-center w-full"

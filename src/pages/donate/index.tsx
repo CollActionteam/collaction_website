@@ -80,13 +80,13 @@ export default function DonatePage() {
         {/* donation toggler element */}
         <div className="flex gap-4 mt-10 mb-6 mx-auto max-w-350 h-[47px] px-5">
           <Button
-            style="w-[169px] rounded-[10px] active-btn"
+            customStyle="w-[169px] rounded-[10px] active-btn"
             onClick={donateToggleHandler}
           >
             Recurring donation
           </Button>
           <Button
-            style="w-[169px] rounded-[10px] inactive-btn"
+            customStyle="w-[169px] rounded-[10px] inactive-btn"
             onClick={donateToggleHandler}
           >
             One-time donation
@@ -99,9 +99,9 @@ export default function DonatePage() {
           </div>
         </div>
 
-        <div className="w-full bg-primary-0 py-14">
+        <div className="w-full px-6 bg-primary-0 py-14">
           <h3
-            className="mx-auto lg:text-center headline-lg-1 pb-8 lg:pb-9
+            className="mx-auto max-w-350 md:max-w-400 lg:max-w-[744px] lg:text-center lg:headline-lg-1 pb-8 lg:pb-9
           font-bold text-primary-400"
           >
             Frequently Asked Questions
