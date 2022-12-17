@@ -15,5 +15,17 @@
   },
   "collAction": {
     "title": "We connect people to solve collective action problems"
+  },
+  "history": {
+    "title": "History",
+    "description": "Collaction was founded in 2016 by Ron van den Akker and Spencer Heijnen. After great successes with fashion-related CrowdActions, their team decided to focus solely on SlowFashion in 2020. Since we still strongly believe that there's room for CollAction in this world, we formed a new team in 2021 that is rapidly expanding and ready to take on the challenges of today."
+  },
+  "missionVision": {
+    "title": "Make doing good fun and easy!",
+    "description": "Solve all collective action problems in the world."
+  },
+  "usp": {
+    "title": "What makes us different",
+    "description": "This is a paragraph about our USPs"
   }
 }

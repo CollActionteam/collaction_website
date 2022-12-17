@@ -15,5 +15,17 @@
   },
   "collAction": {
     "title": "We connect people to solve collective action problems"
+  },
+  "history": {
+    "title": "Geschiedenis",
+    "description": "CollAction is opgericht in 2016 door Ron van den Akker en Spencer Heijnen. Na grote successen met mode-gerelateerde CrowdActions besloot hun team in 2020 zich uitsluitend te focussen op slow fashion. Aangezien wij sterk van mening zijn dat er nog steeds ruimte is voor CollAction in deze wereld, hebben wij in 2021 een nieuw, snel groeiend team gevormd die gereed is om de problemen van vandaag aan te pakken. "
+  },
+  "missionVision": {
+    "title": "Goed doen leuk en gemakkelijk maken",
+    "description": "Het oplossen van alle collectieve-actieproblemen in de wereld"
+  },
+  "usp": {
+    "title": "What makes us different",
+    "description": "This is a paragraph about our USPs"
   }
 }
