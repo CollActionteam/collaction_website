@@ -1,0 +1,12 @@
+{
+  "reachout": {
+    "title": "Heb een idee voor een project",
+    "description": "Laat ons je idee weten en we nemen contact met je op!"
+    },
+    "form": {
+      "email": "Jouw e-mailadres",
+      "emaildescription": "We sturen onze reactie naar uw e-mailadres",
+      "message": "Uw bericht aan ons",
+      "send": "Versturen"
+    }
+}

@@ -10,5 +10,18 @@
   "projectSection": {
     "title": "Onderneem actie voor een betere wereld",
     "description": "We werken samen om onze collectieve-actiedoelen te bereiken"
+  },
+  "crowdaction":{
+    "title": "Crowdacties",
+    "description": "CrowdActions vormen de basis van ons streven. Het is het gemeenschappelijke doel van elke CrowdAction om mensen met dezelfde overtuigingen te verenigen"
+  },
+  "explore":{
+    "title": "Verken CrowdActions",
+    "description":"Hier kun je al onze aankomende, lopende en eerdere crowdactions ontdekken"
+  },
+  "change":{
+    "status":"Toestand",
+    "filters":"Filters",
+    "reset":"Resetten"
   }
 }

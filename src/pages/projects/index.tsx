@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import PageSEO from 'src/components/PageSEO';
 
 import HeroImg from 'public/placeholder-hero-bg.png';
@@ -18,18 +18,26 @@ import AppLinkApple from 'src/components/AppLinkApple';
 import AppLinkGoogle from 'src/components/AppLinkGoogle';
 import DownloadImg from 'public/download_app.png';
 import { toast } from 'react-toastify';
+import Pagination from 'src/components/Pagination';
 
 export default function ProjectListPage({
   projects,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const { t } = useTranslation();
   const [status, setStatus] = useState('Status');
+  const [currentPage, setCurrentPage] = useState(1);
 
-  console.log(projects.items);
-
-  function logValue() {
-    console.log(status);
-  }
+  // To use this after changing the current page,
+  // challenge is on how to update the props
+  useEffect(() => {
+    fetch(
+      `https://devapi.collaction.org/v1/crowdactions?page=${currentPage}&pageSize=3`
+    )
+      .then(response => response.json())
+      .then(data => {
+        return data;
+      });
+  });
 
   const form = useRef<HTMLFormElement>(null);
 
@@ -81,12 +89,10 @@ export default function ProjectListPage({
                 {/* px-auto */}
                 <div className="max-w-320 sm:max-w-320 lg:max-w-320">
                   <p className="font-bold text-lg mb-4 text-center md:text-left">
-                    Crowdactions
+                    {t('projects:crowdaction.title')}
                   </p>
                   <p className="text-primary-200 text-center md:text-left">
-                    CrowdActions are the basis of our endeavor. It is the common
-                    goal of each CrowdAction that unites people of similar
-                    convictions
+                    {t('projects:crowdaction.description')}
                   </p>
                 </div>
               </div>
@@ -112,11 +118,10 @@ export default function ProjectListPage({
             >
               <div className="max-w-320 sm:max-w-320 lg:max-w-320 pt-10 pb-6">
                 <p className="font-bold text-lg mb-4 text-center md:text-left">
-                  Explore CrowdActions
+                  {t('projects:explore.title')}
                 </p>
                 <p className="text-primary-200 text-center md:text-left">
-                  Here you can explore all of our upcoming, on-going and
-                  previous crowdactions
+                  {t('projects:explore.description')}
                 </p>
               </div>
             </div>
@@ -130,9 +135,9 @@ export default function ProjectListPage({
           mt-4 md:mt-4 lg:mt-4 p-6"
             >
               <div className="flex justify-between">
-                <p className="font-semibold">Filters</p>
+                <p className="font-semibold">{t('projects:change.filters')}</p>
                 <button className="font-semibold rounded-full bg-primary-0 pl-6 pr-6 pt-2 pb-2 hidden md:block lg:block">
-                  Reset
+                  {t('projects:change.reset')}
                 </button>
                 <MdOutlineKeyboardArrowUp className="w-7 h-7 block md:hidden font-light" />
               </div>
@@ -146,7 +151,9 @@ export default function ProjectListPage({
                     className="bg-primary-0 py-2 px-4 w-full md:w-42 lg:w-42 
                     rounded-full font-light focus:outline-none"
                   >
-                    <option value="Status">Status</option>
+                    <option value="Status">
+                      {t('projects:change.status')}
+                    </option>
                     <option value="b">b</option>
                     <option value="c">c</option>
                     <option value="d">d</option>
@@ -161,7 +168,9 @@ export default function ProjectListPage({
                     className="bg-primary-0 py-2 px-4 w-full md:w-42 lg:w-42 
                     rounded-full font-light focus:outline-none"
                   >
-                    <option value="Status">Status</option>
+                    <option value="Status">
+                      {t('projects:change.status')}
+                    </option>
                     <option value="b">b</option>
                     <option value="c">c</option>
                     <option value="d">d</option>
@@ -176,7 +185,9 @@ export default function ProjectListPage({
                     className="bg-primary-0 py-2 px-4 w-full md:w-42 lg:w-42 
                     rounded-full font-light focus:outline-none"
                   >
-                    <option value="Status">Status</option>
+                    <option value="Status">
+                      {t('projects:change.status')}
+                    </option>
                     <option value="b">b</option>
                     <option value="c">c</option>
                     <option value="d">d</option>
@@ -185,7 +196,7 @@ export default function ProjectListPage({
               </div>
               <div className="flex justify-end block md:hidden lg:hidden ">
                 <button className="font-semibold rounded-full bg-primary-0 pl-6 pr-6 pt-2 pb-2 mt-4">
-                  Reset
+                  {t('projects:change.reset')}
                 </button>
               </div>
             </div>
@@ -195,10 +206,8 @@ export default function ProjectListPage({
           className="mx-auto h-auto
           grid grid-cols-1 md:grid-cols-3 lg:grid-col-3
           max-w-400 md:max-w-750 lg:max-w-924
-          mt-6 md:mt-8 lg:mt-8 gap-x-4 md:gap-x-3 lg:gap-x-4 gap-y-8 mb-28"
+          mt-6 md:mt-8 lg:mt-8 gap-x-4 md:gap-x-3 lg:gap-x-4 gap-y-8 "
         >
-          {/* TODO:
-          - Fix the image size based on the image I will be given */}
           {projects.items.map(
             ({
               title,
@@ -255,128 +264,14 @@ export default function ProjectListPage({
               </div>
             )
           )}
-          <div className="bg-white rounded-t-lg overflow-hidden">
-            <Image src={actions} alt="black CollAction logo with text" />
-            <div className="flex pl-4 md:pl-3 lg:pl-4 space-x-1 mt-4">
-              <button
-                className="font-light rounded-full 
-                   bg-collaction-400 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4
-                    text-white text-sm"
-              >
-                Now Open
-              </button>
-              <button
-                className="font-light rounded-full 
-                border-2 border-primary-0 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4 text-black text-sm"
-              >
-                Sustainability
-              </button>
-              <button
-                className="font-light rounded-full 
-                border-2 border-primary-0 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4
-                text-black text-sm"
-              >
-                Food
-              </button>
-            </div>
-            <div className="pl-4 md:pl-3 lg:pl-4 mt-4">
-              <p className="font-semibold text-lg">Veganuary</p>
-              <p className="mt-4 text-primary-300">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus quis augue porttitor...
-              </p>
-            </div>
-            <div className="py-4 flex justify-center">
-              <button
-                className="font-light rounded-full w-5/6
-                   border-2 border-collaction-400 py-2 px-4 text-black text-sm"
-              >
-                Read More
-              </button>
-            </div>
-          </div>
-
-          {/* <div className="bg-white rounded-t-lg overflow-hidden">
-            <Image src={actions} alt="black CollAction logo with text" />
-            <div className="flex pl-4 md:pl-3 lg:pl-4 space-x-1 mt-4">
-              <button
-                className="font-light rounded-full 
-                   bg-collaction-400 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4
-                    text-white text-sm"
-              >
-                Now Open
-              </button>
-              <button
-                className="font-light rounded-full 
-                border-2 border-primary-0 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4 text-black text-sm"
-              >
-                Sustainability
-              </button>
-              <button
-                className="font-light rounded-full 
-                border-2 border-primary-0 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4
-                text-black text-sm"
-              >
-                Food
-              </button>
-            </div>
-            <div className="pl-4 md:pl-3 lg:pl-4 mt-4">
-              <p className="font-semibold text-lg">Veganuary</p>
-              <p className="mt-4 text-primary-300">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus quis augue porttitor...
-              </p>
-            </div>
-            <div className="py-4 flex justify-center">
-              <button
-                className="font-light rounded-full w-5/6
-                   border-2 border-collaction-400 py-2 px-4 text-black text-sm"
-              >
-                Read More
-              </button>
-            </div>
-          </div>
-          <div className="bg-white rounded-t-lg overflow-hidden">
-            <Image src={actions} alt="black CollAction logo with text" />
-            <div className="flex pl-4 md:pl-3 lg:pl-4 space-x-1 mt-4">
-              <button
-                className="font-light rounded-full 
-                   bg-collaction-400 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4
-                    text-white text-sm"
-              >
-                Now Open
-              </button>
-              <button
-                className="font-light rounded-full 
-                border-2 border-primary-0 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4 text-black text-sm"
-              >
-                Sustainability
-              </button>
-              <button
-                className="font-light rounded-full 
-                border-2 border-primary-0 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4
-                text-black text-sm"
-              >
-                Food
-              </button>
-            </div>
-            <div className="pl-4 md:pl-3 lg:pl-4 mt-4">
-              <p className="font-semibold text-lg">Veganuary</p>
-              <p className="mt-4 text-primary-300">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus quis augue porttitor...
-              </p>
-            </div>
-            <div className="py-4 flex justify-center">
-              <button
-                className="font-light rounded-full w-5/6
-                   border-2 border-collaction-400 py-2 px-4 text-black text-sm"
-              >
-                Read More
-              </button>
-            </div>
-          </div>
-         */}
+        </div>
+        <div className="mx-auto max-w-400 md:max-w-750 lg:max-w-924 flex justify-center mb-24">
+          <Pagination
+            currentPage={currentPage}
+            total={projects.items.length}
+            limit={3}
+            onPageChange={(page: number) => setCurrentPage(page)}
+          />
         </div>
         <div className="w-full bg-secondary md:bg-white lg:bg-white py-0 md:py-10 lg:py-10 mx-auto">
           <div className="mx-5 md:mx-5 lg:mx-0">
@@ -388,11 +283,11 @@ export default function ProjectListPage({
               <div className="w-full md:w-1/2 lg:w-1/2 flex items-center justify-center">
                 <div className="mx-auto max-w-320 ">
                   <p className="font-bold text-3xl text-center leading-8">
-                    Have an Idea for a project
+                  {t('contact:reachout.title')}
                   </p>
                   <br />
                   <p className="text-center text-lg leading-6">
-                    Let us know your idea and will get in touch!
+                  {t('contact:reachout.description')}
                   </p>
                 </div>
               </div>
@@ -407,10 +302,10 @@ export default function ProjectListPage({
                     name="email"
                     required
                     className="required rounded-full bg-primary-0 w-80 md:w-80 lg:w-96  h-9 mt-6 p-4 text-black font-light"
-                    placeholder="Your email address"
+                    placeholder={t('contact:form.email')}
                   ></input>
                   <p className="text-primary-400 text-sm pl-4">
-                    We will send our response to your email address
+                  {t('contact:form.emaildescription')}
                   </p>
                   <textarea
                     name="message"
@@ -418,13 +313,13 @@ export default function ProjectListPage({
                     cols={30}
                     required
                     className="required rounded-md bg-primary-0 mt-6 p-4 text-black font-light border w-80 md:w-80 lg:w-96"
-                    placeholder="Your message to us"
+                    placeholder={t('contact:form.emaildescription')}
                   ></textarea>
                   <button
                     className="w-80 md:w-80 lg:w-96 h-9 mt-4 items-center bg-primary-0 hover:bg-collaction-300 text-primary-300
           font-semibold hover:text-black py-2 px-4 rounded-full"
                   >
-                    Send
+                    {t('contact:form.send')}
                   </button>
                 </form>
               </div>
@@ -456,19 +351,19 @@ export default function ProjectListPage({
 }
 
 export async function getStaticProps({ locale }: { locale: string }) {
-  const projects = await fetch('https://devapi.collaction.org/v1/crowdactions')
+  const projects = await fetch(
+    'https://devapi.collaction.org/v1/crowdactions?page=1&pageSize=3'
+  )
     .then(response => response.json())
     .then(data => {
       return data;
     });
 
-  console.log(projects);
-
   return {
     props: {
       projects,
       locale,
-      ...(await serverSideTranslations(locale, ['common', 'projects'])),
+      ...(await serverSideTranslations(locale, ['common', 'projects', 'contact'])),
     },
   };
 }
