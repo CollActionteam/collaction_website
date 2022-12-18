@@ -39,8 +39,8 @@ export function ProjectCard({
         <Image
           src={image}
           alt={title}
-          layout="fill"
-          objectFit="cover"
+          fill={true}
+          className="object-cover"
           sizes="min-width(450px) 90vw, 400px"
         />
       </div>

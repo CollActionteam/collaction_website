@@ -283,11 +283,11 @@ export default function ProjectListPage({
               <div className="w-full md:w-1/2 lg:w-1/2 flex items-center justify-center">
                 <div className="mx-auto max-w-320 ">
                   <p className="font-bold text-3xl text-center leading-8">
-                  {t('contact:reachout.title')}
+                    {t('contact:reachout.title')}
                   </p>
                   <br />
                   <p className="text-center text-lg leading-6">
-                  {t('contact:reachout.description')}
+                    {t('contact:reachout.description')}
                   </p>
                 </div>
               </div>
@@ -305,7 +305,7 @@ export default function ProjectListPage({
                     placeholder={t('contact:form.email')}
                   ></input>
                   <p className="text-primary-400 text-sm pl-4">
-                  {t('contact:form.emaildescription')}
+                    {t('contact:form.emaildescription')}
                   </p>
                   <textarea
                     name="message"
@@ -363,7 +363,11 @@ export async function getStaticProps({ locale }: { locale: string }) {
     props: {
       projects,
       locale,
-      ...(await serverSideTranslations(locale, ['common', 'projects', 'contact'])),
+      ...(await serverSideTranslations(locale, [
+        'common',
+        'projects',
+        'contact',
+      ])),
     },
   };
 }

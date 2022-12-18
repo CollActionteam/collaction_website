@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import { DefaultSeo } from 'next-seo';
 

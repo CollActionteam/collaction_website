@@ -45,8 +45,8 @@ export default function DonatePage() {
           <Image
             src={donateImg}
             alt="collaction team members standing"
-            layout="fill"
-            objectFit="cover"
+            fill={true}
+            className="object-cover"
           />
           <div className="absolute bottom-0 top-0 w-full hero-linear-gradient "></div>
           <div className="absolute bottom-14 lg:bottom-18 w-full text-center px-6">
