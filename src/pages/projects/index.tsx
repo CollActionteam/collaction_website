@@ -20,6 +20,8 @@ import DownloadImg from 'public/download_app.png';
 import { toast } from 'react-toastify';
 import Pagination from 'src/components/Pagination';
 
+import ContentBlock from 'src/components/ContentBlock';
+
 export default function ProjectListPage({
   projects,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
@@ -77,7 +79,28 @@ export default function ProjectListPage({
 
       <main className="bg-secondary">
         {/* HERO SETION */}
-        <PageHero image={HeroImg} />
+        <PageHero
+          image={HeroImg}
+          title={t('projects:hero.title')}
+          description={t('projects:hero.description')}
+          // textColor="collaction"
+        />
+
+        {/* begSection  */}
+        <ContentBlock
+          className="pt-10"
+          title={t('projects:begSection.title')}
+          body={t('projects:begSection.description')}
+          // hasBg={false}
+        />
+
+        {/* CrowdActionFor  */}
+        <ContentBlock
+          title={t('projects:projectSection.title')}
+          body={t('projects:projectSection.description')}
+          // hasBg={false}
+        />
+
         <div className="h-auto w-full mx-auto bg-secondary md:bg-white">
           <div className="mx-5 md:mx-5 lg:mx-0 bg-primary-0 md:bg-white rounded-lg md:rounded-none">
             <div

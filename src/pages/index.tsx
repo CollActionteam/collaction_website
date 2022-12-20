@@ -45,7 +45,7 @@ export default function HomePage(
           image={HeroImg}
           title={t('home:hero.title')}
           description={t('home:hero.description')}
-          textColor="collaction"
+          // textColor="collaction"
         />
 
         {/* CROWDACTION EXPLANATION SECTION */}

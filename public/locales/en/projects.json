@@ -4,24 +4,24 @@
     "description": ""
   },
   "begSection": {
-    "title": "Our Products",
+    "title": "CollAction for Business, Education and Governance",
     "description": "CollAction organises 3 types of CrowdActions: CollAction for Business, Education and Governance. Each situation has a unique target audience, social structure and communication channels, so we tailor our CrowdActions accordingly."
   },
   "projectSection": {
     "title": "Take action for a better world",
     "description": "We work together to achieve your collective action goals"
   },
-  "crowdaction":{
-    "title": "Crowdactions",
-    "description" : "CrowdActions are the basis of our endeavor. It is the common goal of each CrowdAction that unites people of similar convictions"
+  "crowdaction": {
+    "title": "CrowdActions",
+    "description": "CrowdActions are the basis of our endeavor. It is the common goal of each CrowdAction that unites people of similar convictions"
   },
-  "explore":{
+  "explore": {
     "title": "Explore CrowdActions",
-    "description" : "Here you can explore all of our upcoming, on-going and previous crowdactions"
+    "description": "Here you can explore all of our upcoming, on-going and previous crowdactions"
   },
-  "change":{
-    "status":"Status",
-    "filters":"Filters",
+  "change": {
+    "status": "Status",
+    "filters": "Filters",
     "reset": "Reset"
   }
 }
