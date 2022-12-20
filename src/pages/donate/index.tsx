@@ -97,7 +97,7 @@ export default function DonatePage(
             customStyle="w-[169px] rounded-[10px] active-btn"
             onClick={donateToggleHandler}
           >
-            {t('donate:formElements.recurring')}
+            {recurring}
           </Button>
           <Button
             customStyle="w-[169px] rounded-[10px] inactive-btn"
@@ -110,7 +110,7 @@ export default function DonatePage(
         <div className="px-6 sm:px-0 pb-10 lg:pb-[80px]">
           <div className="mx-auto sm:max-w-[400px] lg:max-w-[744px] bg-primary-0 rounded-1 p-6">
             <DonateCard
-              headline={donateCardHeadline}
+              headline={recurring}
               donation={donationText}
               creditCardText={t('donate:formElements.creditCard')}
               continueBtnText={t('donate:formElements.continue')}

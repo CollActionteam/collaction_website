@@ -53,7 +53,7 @@ export default function DonateCard({
           </h3>
           <p
             className="text-body-long-1 text-primary-200 w-[302px] h-[34px] 
-          sm:w-[352px] lg:w-[242px] lg:h-[48px] font-light lg:text-left"
+          sm:w-[352px] lg:w-[242px] lg:h-[48px] font-light"
           >
             {donation}
           </p>

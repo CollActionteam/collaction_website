@@ -12,7 +12,10 @@ function toggleInactive(element: HTMLButtonElement): void {
 
 // this exported function toggles active and inactive btn state
 export function toggleBtnState(element: HTMLButtonElement): void {
-  if (element.textContent === 'Recurring donation') {
+  if (
+    element.textContent === 'Recurring donation' ||
+    element.textContent === 'Herhalende donatie'
+  ) {
     toggleActive(element);
     toggleInactive(element.nextElementSibling as HTMLButtonElement);
   } else {
