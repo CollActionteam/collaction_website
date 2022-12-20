@@ -58,17 +58,9 @@ export default function AboutUsPage({
           }
         /> */}
 
-        {/* WhatWeDo  */}
-        <ContentBlock
-          className="pt-10"
-          title={t('about:whatWeDo.title')}
-          body={t('about:whatWeDo.description')}
-          // hasBg={false}
-        />
-
         {/* Mission Vision  */}
         <ContentBlock
-          // className="pt-10"
+          className="pt-10"
           title={t('about:missionVision.title')}
           body={t('about:missionVision.description')}
           // hasBg={false}
@@ -79,6 +71,14 @@ export default function AboutUsPage({
           // className="pt-10"
           title={t('about:history.title')}
           body={t('about:history.description')}
+          // hasBg={false}
+        />
+
+        {/* WhatWeDo  */}
+        <ContentBlock
+          // className="pt-10"
+          title={t('about:whatWeDo.title')}
+          body={t('about:whatWeDo.description')}
           // hasBg={false}
         />
 

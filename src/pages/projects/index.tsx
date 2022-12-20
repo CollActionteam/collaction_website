@@ -83,17 +83,22 @@ export default function ProjectListPage({
           image={HeroImg}
           title={t('projects:hero.title')}
           description={t('projects:hero.description')}
-          // textColor="collaction"
         />
 
-        {/* begSection  */}
+        {/* howweworkSection  */}
         <ContentBlock
           className="pt-10"
+          title={t('projects:howwework.title')}
+          body={t('projects:howwework.description')}
+          // hasBg={false}
+        />
+        {/* begSection  */}
+        <ContentBlock
+          // className="pt-10"
           title={t('projects:begSection.title')}
           body={t('projects:begSection.description')}
           // hasBg={false}
         />
-
         {/* CrowdActionFor  */}
         <ContentBlock
           title={t('projects:projectSection.title')}
@@ -367,6 +372,35 @@ export default function ProjectListPage({
               </div>
             </InfoCard>
           }
+        />
+
+        {/* crowdresearchSection  */}
+        <ContentBlock
+          // className="pt-10"
+          title={t('projects:crowdresearch.title')}
+          body={t('projects:crowdresearch.description')}
+          // hasBg={false}
+        />
+        {/* crowdscalingSection  */}
+        <ContentBlock
+          // className="pt-10"
+          title={t('projects:crowdscaling.title')}
+          body={t('projects:crowdscaling.description')}
+          // hasBg={false}
+        />
+        {/* crowdactionSection  */}
+        <ContentBlock
+          // className="pt-10"
+          title={t('projects:crowdaction.title')}
+          body={t('projects:crowdaction.description')}
+          // hasBg={false}
+        />
+        {/* crowdimpactSection  */}
+        <ContentBlock
+          // className="pt-10"
+          title={t('projects:crowdimpact.title')}
+          body={t('projects:crowdimpact.description')}
+          // hasBg={false}
         />
       </main>
     </>

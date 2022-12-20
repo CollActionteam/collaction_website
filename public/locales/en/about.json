@@ -3,22 +3,22 @@
     "title": "About us",
     "description": ""
   },
-  "whatWeDo": {
-    "title": "What we do",
-    "description": "After successful projects in Eindhoven, Amstelveen and Westland, we are currently preparing upcoming CrowdActions in Amstelveen and Emmen. On top of that, we are finalising the release of the newest version of our app which includes many new features to make it more fun & easy! Lastly, we are spreading the word about CollAction on various platforms and as always, we're expanding our team of developers and ambassadors!"
-  },
   "missionVision": {
     "title": "Make doing good fun and easy!",
-    "description": "Our mission is to make doing good fun and easy. Our vision is to solve all collective action problems in the world. We believe in a positive approach, one where ..."
+    "description": "Our vision is to solve all collective action problems in the world, such as climate change. To do so, we believe in a positive, bottom-up approach. CollAction is the platform that connects people to make positive impact together - Power to the Crowd! We do so by making it simple and enjoyable for users to take part in our CrowdActions. We believe this is the only way to reach a public that crosses cities, countries and continents. Therefore, our mission is to make doing good fun and easy! Want to know how we do this exactly? Take a look at our Projects page."
   },
   "history": {
     "title": "History",
-    "description": "Collaction was founded in 2016 by Ron van den Akker and Spencer Heijnen. After great successes with fashion-related CrowdActions, their team decided to focus solely on SlowFashion in 2020. Since we still strongly believe that there's room for CollAction in this world, we formed a new team in 2021 that is rapidly expanding and ready to take on the challenges of today."
+    "description": "CollAction was founded in 2016 by Ron van den Akker and Spencer Heijnen. After great successes with fashion-related CrowdActions, their team decided to focus solely on SlowFashion in 2020. Since we still strongly believe that there's room for CollAction in this world, we formed a new team in 2021 that is rapidly expanding and ready to take on the challenges of today."
+  },
+  "whatWeDo": {
+    "title": "What we currently do",
+    "description": "After multiple successful projects, we're preparing for upcoming, bigger projects in February and April. On top of that, we are finalising the release of the newest version of our app, including many new features to make doing good more fun and easy! Lastly, we are spreading the word about CollAction on various platforms, and as always, we're expanding our team of engineers and ambassadors!"
   },
   "memberQuote": {
     "firstName": "Ruben",
     "lastName": "Horn",
-    "quote": "The saying 'I'm not making a difference anyway' is not an acceptable excuse anymore. Tiny steps are steps as well!",
+    "quote": "The saying 'I don't make a difference anyway' is not an acceptable excuse anymore. Tiny steps are also steps!",
     "title": "Senior Engineer"
   },
   "usp": {

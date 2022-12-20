@@ -5,4 +5,4 @@
   icon: /usp-international-icon.png
 ---
 
-In cooperation with Gemeente Amstelveen, we organized a big cleanup on student campus Uilenstede. All over the campus litter was cleaned up. We made it possible to easily hand in electronic and bulk waste in exchange for exciting prizes and rewards. This way, we made doing good fun and easy!
+CollAction is an open source project. This allows us to have an amazing team with developers from all over the world that improve the platform anytime, anywhere.
