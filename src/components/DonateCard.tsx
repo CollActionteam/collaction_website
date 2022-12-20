@@ -3,35 +3,35 @@ import React, { useState } from 'react';
 
 import Button from 'src/components/Button';
 import DonationAmount from 'src/components/DonationAmount';
+import checkout from 'src/helpers/stripeCheckout';
+
+export interface Product {
+  label: string;
+  id: string;
+  mode: 'payment' | 'subscription';
+}
 
 interface DonateCardProps {
   headline: string;
   donation: string;
+  products: Product[];
   creditCardText: string;
   continueBtnText: string;
   agreement: string;
   policy: string;
 }
 
-const donations = [
-  '€5.00',
-  '€10.00',
-  '€20.00',
-  '€50.00',
-  '€100.00',
-  'Other...',
-];
-
 export default function DonateCard({
   headline,
   donation,
+  products,
   creditCardText,
   continueBtnText,
   agreement,
   policy,
 }: DonateCardProps) {
   // donation amount state variable
-  const [donationAmount, setDonationAmount] = useState('');
+  const [product, setProduct] = useState(products[0]);
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -67,11 +67,12 @@ export default function DonateCard({
             className="w-[300px} lg:w-[319px] h-[168px] flex flex-wrap items-center 
           justify-center gap-3"
           >
-            {donations.map(donation => (
+            {products.map(prod => (
               <DonationAmount
-                key={donation}
-                amount={donation}
-                handleDonation={setDonationAmount}
+                key={prod.id}
+                product={prod}
+                isSelected={product.id == prod.id}
+                handleDonation={setProduct}
               />
             ))}
           </div>
@@ -79,7 +80,10 @@ export default function DonateCard({
             {creditCardText}
           </p>
           <div className="w-[302px] flex flex-col items-start gap-2.5">
-            <Button customStyle="bg-primary-400 w-[302px] lg:w-[319px] text-secondary rounded-[999px]">
+            <Button
+              customStyle="bg-primary-400 w-[302px] lg:w-[319px] text-secondary rounded-[999px]"
+              onClick={() => checkout(product.id, product.mode)}
+            >
               {continueBtnText}
             </Button>
             <p className="text-primary-200 text-sm leading-[22px] w-[302px] lg:w-[319px] h-[22px]">
