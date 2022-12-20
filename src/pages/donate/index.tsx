@@ -8,16 +8,37 @@ import Button from 'src/components/Button';
 import DonateCard from 'src/components/DonateCard';
 import Faq from 'src/components/Faq';
 import ContactModal from 'src/components/ContactModal';
-import { faqData } from 'src/helpers/faqData';
+import { v4 } from 'uuid';
 import { toggleBtnState } from 'src/helpers/toggleButtonState';
 
 import HeroImg from 'public/collaction_team.png';
 import PageHero from 'src/components/PageHero';
 
-export default function DonatePage() {
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { InferGetStaticPropsType } from 'next';
+
+export default function DonatePage(
+  _props: InferGetStaticPropsType<typeof getStaticProps>
+) {
+  // translation
+  const { t } = useTranslation();
+
+  // pull out array of FAQ from translation json
+  const faqArray: { question: string; answer: string }[] = t(
+    'donate:faq.items',
+    {
+      returnObjects: true,
+    }
+  );
+
+  // translated donation text
+  const singleDonation = t('donate:form.single');
+  const monthlyDonation = t('donate:form.monthly');
+  const recurring = t('donate:formElements.recurring');
+
   // state to set donation headline
-  const [donateCardHeadline, setDonateCardHeadline] =
-    useState('Recurring donation');
+  const [donateCardHeadline, setDonateCardHeadline] = useState(recurring);
 
   const [showContactModal, setShowContactModal] = useState(false);
 
@@ -31,47 +52,40 @@ export default function DonatePage() {
 
   // set single or monthly donation
   const donationText =
-    donateCardHeadline !== 'Recurring donation' ? 'single' : 'monthly';
+    donateCardHeadline !== recurring ? singleDonation : monthlyDonation;
 
   return (
     <>
       <PageSEO
-        title="CollAction | Become a supporter"
+        title="CollAction | Donate to support our mission"
         description="Help us on our mission to make doing good fun and easy"
       />
 
       <main className="bg-secondary">
         <PageHero
           image={HeroImg}
-          title="Become a supporter"
-          description="Help us on our mission to make doing good fun & easy"
+          title={t('donate:hero.title')}
           alt="CollAction team members standing"
         />
 
         <div className="pt-10 lg:pt-[80px]">
           <div className="mx-auto sm:max-w-[400px] lg:max-w-[520px] px-6 sm:px-0">
-            <h3 className="mb-7 text-3xl">Become a donor</h3>
+            <h3 className="mb-7 text-3xl">
+              {t('donate:donateTextSection.title')}
+            </h3>
             <p className="mb-7 text-body-short-1">
-              Our donors allow us to keep on solving collective action problems.
-              They allow us to reach a bigger audience and run our app in the
-              cloud. In short: they allow us to keep trying to make the world a
-              better place. In return, if you become a donor you get full
-              insight into all our expenses so you know what we do with your
-              donation.
+              {t('donate:donateTextSection.paragraphOne')}
             </p>
             <p className="mb-7 text-body-short-1">
-              For generous donors we organise a yearly vegan dinner together
-              with other donors and the CollAction team. Additionally, these
-              donors receive a special upcycled CollAction bag made from
-              recycled chips bags!
+              {t('donate:donateTextSection.paragraphTwo')}
             </p>
             <p className="text-body-short-1">
-              For questions about donating please{' '}
+              {t('donate:donateTextSection.contact')}{' '}
               <button
                 onClick={() => setShowContactModal(true)}
                 className="inline-block"
               >
-                contact us.
+                {t('donate:donateTextSection.link')}.
               </button>
             </p>
           </div>
@@ -83,19 +97,26 @@ export default function DonatePage() {
             customStyle="w-[169px] rounded-[10px] active-btn"
             onClick={donateToggleHandler}
           >
-            Recurring donation
+            {t('donate:formElements.recurring')}
           </Button>
           <Button
             customStyle="w-[169px] rounded-[10px] inactive-btn"
             onClick={donateToggleHandler}
           >
-            One-time donation
+            {t('donate:formElements.oneTime')}
           </Button>
         </div>
 
         <div className="px-6 sm:px-0 pb-10 lg:pb-[80px]">
           <div className="mx-auto sm:max-w-[400px] lg:max-w-[744px] bg-primary-0 rounded-1 p-6">
-            <DonateCard headline={donateCardHeadline} donation={donationText} />
+            <DonateCard
+              headline={donateCardHeadline}
+              donation={donationText}
+              creditCardText={t('donate:formElements.creditCard')}
+              continueBtnText={t('donate:formElements.continue')}
+              agreement={t('donate:formElements.agreement')}
+              policy={t('donate:formElements.policy')}
+            />
           </div>
         </div>
 
@@ -104,11 +125,11 @@ export default function DonatePage() {
             className="mx-auto max-w-350 md:max-w-400 lg:max-w-[744px] lg:text-center lg:headline-lg-1 pb-8 lg:pb-9
           font-bold text-primary-400"
           >
-            Frequently Asked Questions
+            {t('donate:faq.title')}
           </h3>
           <div className="mx-auto flex flex-col max-w-350 sm:max-w-400 lg:max-w-[744px] gap-y-4">
-            {faqData.map(({ id, question, answer }) => (
-              <Faq key={id} question={question} answer={answer} />
+            {faqArray.map(({ question, answer }) => (
+              <Faq key={v4()} question={question} answer={answer} />
             ))}
           </div>
         </div>
@@ -116,9 +137,10 @@ export default function DonatePage() {
         <div className="pt-7 lg:pt-9 px-6 sm:px-0">
           <InfoCard
             isSecondaryBg
-            title="Our individual actions are a drop in the ocean. But together, we make waves!"
+            title={t('common:downloadApp.title')}
+            body={t('common:downloadApp.description')}
           >
-            <div className="flex justify-center">
+            <div className="flex justify-center mb-6">
               <AppLinkApple className="mr-4 sm:mr-5" />
               <AppLinkGoogle />
             </div>
@@ -130,4 +152,13 @@ export default function DonatePage() {
       )}
     </>
   );
+}
+
+export async function getStaticProps({ locale }: { locale: string }) {
+  return {
+    props: {
+      locale,
+      ...(await serverSideTranslations(locale, ['common', 'donate'])),
+    },
+  };
 }
