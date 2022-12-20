@@ -1,0 +1,12 @@
+{
+  "reachout": {
+  "title": "Have an Idea for a project",
+  "description": "Let us know your idea and will get in touch!"
+  },
+  "form": {
+    "email": "Your email address",
+    "emaildescription": "We will send our response to your email address",
+    "message": "Your message to us",
+    "send": "Send"
+    }
+}
