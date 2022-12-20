@@ -21,6 +21,7 @@ import Link from 'next/link';
 import PageHero from 'src/components/PageHero';
 import TwoColumnSection from 'src/components/TwoColumnSection';
 import InfoCard from 'src/components/InfoCard';
+import ContentBlock from 'src/components/ContentBlock';
 
 export default function AboutUsPage({
   projects,
@@ -101,27 +102,27 @@ export default function AboutUsPage({
         </div>
 
         {/* Mission Vision  */}
-        <InfoCard
-          className="pt-10"
+        <ContentBlock
+          // className="pt-10"
           title={t('about:missionVision.title')}
           body={t('about:missionVision.description')}
-          hasBg={false}
+          // hasBg={false}
         />
 
         {/* History  */}
-        <InfoCard
-          className="pt-10"
+        <ContentBlock
+          // className="pt-10"
           title={t('about:history.title')}
           body={t('about:history.description')}
-          hasBg={false}
+          // hasBg={false}
         />
 
         {/* Our Projects  */}
-        <InfoCard
-          className="pt-10"
+        <ContentBlock
+          // className="pt-10"
           title="Our projects"
           body="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint."
-          hasBg={false}
+          // hasBg={false}
         />
 
         <div className="mb-0 last:mb-0">
