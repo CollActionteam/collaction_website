@@ -14,7 +14,9 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { InferGetStaticPropsType } from 'next';
 
 import { ProjectCard } from 'src/components/ProjectCard';
+import { UspCard } from 'src/components/UspCard';
 import { getProjectsData } from 'src/lib/getProjects';
+import { getUspsData } from 'src/lib/getUsps';
 import Link from 'next/link';
 import PageHero from 'src/components/PageHero';
 import TwoColumnSection from 'src/components/TwoColumnSection';
@@ -22,6 +24,7 @@ import InfoCard from 'src/components/InfoCard';
 
 export default function AboutUsPage({
   projects,
+  usps,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const { t } = useTranslation();
 
@@ -34,11 +37,7 @@ export default function AboutUsPage({
 
       <main className="bg-secondary">
         {/* HERO SETION */}
-        <PageHero
-          image={HeroImg}
-          title={t('about:hero.title')}
-          description={t('about:hero.description')}
-        />
+        <PageHero image={HeroImg} title={t('about:hero.title')} />
 
         <TwoColumnSection
           first={
@@ -53,8 +52,8 @@ export default function AboutUsPage({
               className="absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%]"
               hasBg={false}
               leftAlign={true}
-              title={t('about:solveProblems.title')}
-              body={t('about:solveProblems.description')}
+              title={t('about:whatWeDo.title')}
+              body={t('about:whatWeDo.description')}
             />
           }
         />
@@ -82,21 +81,42 @@ export default function AboutUsPage({
             fill
           />
           <div className="absolute bottom-6 left-[1.25rem] sm:bottom-[3.75rem] sm:left-[3.5rem] xl:left-[10.75rem] z-50 text-white text-md">
-            <h3 className="text-headline-m-1 mb-6">
-              {t('about:memberQuote.name')}
-            </h3>
-            <blockquote className="mb-4 text-xl max-w-350">
+            <blockquote className="text-headline-m-1 mb-4 max-w-350">
               “{t('about:memberQuote.quote')}„
             </blockquote>
-            <span className="text-body-short-1 font-semibold pt-3">
-              {t('about:memberQuote.title')}
-            </span>
-            <span className="block text-footnote font-semibold pt-1">
-              {t('about:memberQuote.location')}
+            <span className="font-light">
+              {t('about:memberQuote.firstName')}, {t('about:memberQuote.title')}
             </span>
           </div>
         </div>
 
+        {/* View the Whole Team Button*/}
+        <div className="py-8">
+          <Link
+            href="/join"
+            className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 w-72 shadow-lg inset-x-0 mx-auto z-40"
+          >
+            View the whole team
+          </Link>
+        </div>
+
+        {/* Mission Vision  */}
+        <InfoCard
+          className="pt-10"
+          title={t('about:missionVision.title')}
+          body={t('about:missionVision.description')}
+          hasBg={false}
+        />
+
+        {/* History  */}
+        <InfoCard
+          className="pt-10"
+          title={t('about:history.title')}
+          body={t('about:history.description')}
+          hasBg={false}
+        />
+
+        {/* Our Projects  */}
         <InfoCard
           className="pt-10"
           title="Our projects"
@@ -121,7 +141,21 @@ export default function AboutUsPage({
             See All Projects
           </Link>
         </div>
+        {/* USP  */}
+        <InfoCard
+          className="pt-10"
+          title={t('about:usp.title')}
+          body={t('about:usp.description')}
+          hasBg={false}
+        />
 
+        <div className="mb-0 last:mb-0">
+          <div className="flex flex-wrap justify-center mx-auto md:max-w-864">
+            {usps.map(usp => (
+              <UspCard key={usp.title} {...usp} />
+            ))}
+          </div>
+        </div>
         <TwoColumnSection
           isReverseOrder={true}
           isWhiteBg={true}
@@ -159,10 +193,12 @@ export default function AboutUsPage({
 
 export async function getStaticProps({ locale }: { locale: string }) {
   const projects = getProjectsData('featured');
+  const usps = getUspsData('featured');
 
   return {
     props: {
       projects,
+      usps,
       locale,
       ...(await serverSideTranslations(locale, ['common', 'about'])),
     },

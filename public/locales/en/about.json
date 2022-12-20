@@ -1,19 +1,31 @@
 {
   "hero": {
     "title": "About us",
-    "description": "Sustainability is at the heart of everything we do. We are committed to reducing our environmental impact and to creating a more sustainable future for everyone and our planet."
+    "description": ""
   },
-  "solveProblems": {
-    "title": "Solve Collective action problems",
-    "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint."
+  "whatWeDo": {
+    "title": "What are we currently doing?",
+    "description": "After successful projects in Eindhoven, Amstelveen and Westland, we are currently preparing upcoming CrowdActions in Amstelveen and Emmen. On top of that, we are finalising the release of the newest version of our app which includes many new features to make it more fun & easy! Lastly, we are spreading the word about CollAction on various platforms and as always, we're expanding our team of developers and ambassadors!"
   },
   "memberQuote": {
-    "name": "Ruben Horn",
-    "quote": "Some pragmatic quote from Ruben",
-    "title": "M.Sc. Computer Science",
-    "location": "Amsterdam, Noord Holland"
+    "firstName": "Ruben",
+    "lastName": "Horn",
+    "quote": "I'm not making a difference anyway' is not an acceptable excuse anymore, tiny steps are steps as well!",
+    "title": "Developer"
   },
   "collAction": {
     "title": "We connect people to solve collective action problems"
+  },
+  "history": {
+    "title": "History",
+    "description": "Collaction was founded in 2016 by Ron van den Akker and Spencer Heijnen. After great successes with fashion-related CrowdActions, their team decided to focus solely on SlowFashion in 2020. Since we still strongly believe that there's room for CollAction in this world, we formed a new team in 2021 that is rapidly expanding and ready to take on the challenges of today."
+  },
+  "missionVision": {
+    "title": "Make doing good fun and easy!",
+    "description": "Solve all collective action problems in the world."
+  },
+  "usp": {
+    "title": "What makes us different",
+    "description": "This is a paragraph about our USPs"
   }
 }
