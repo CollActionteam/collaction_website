@@ -185,7 +185,7 @@ export default function DonatePage(
         <div className="px-6 sm:px-0 pb-10 lg:pb-[80px]">
           <div className="mx-auto sm:max-w-[400px] lg:max-w-[744px] bg-primary-0 rounded-1 p-6">
             <DonateCard
-              headline={recurring}
+              headline={donateCardHeadline}
               donation={donationText}
               products={isRecurring ? recurringProducts : oneTimeProducts}
               creditCardText={t('donate:formElements.creditCard')}
