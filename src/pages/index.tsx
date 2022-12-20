@@ -55,8 +55,8 @@ export default function HomePage(
               step={Step.GOAL}
               title={
                 <div className="text-2xl font-bold">
-                  <span>Step 1: </span>
-                  <span className="text-collaction">
+                  {/* <span>Step 1: </span> */}
+                  <span className="text-primary-400">
                     {t('common:collActionExplanation.goal.title')}
                   </span>
                 </div>
@@ -67,8 +67,8 @@ export default function HomePage(
               step={Step.CROWD}
               title={
                 <div className="text-2xl font-bold">
-                  <span>Step 2: </span>
-                  <span className="text-collaction">
+                  {/* <span>Step 2: </span> */}
+                  <span className="text-primary-400">
                     {t('common:collActionExplanation.crowd.title')}
                   </span>
                 </div>
@@ -79,8 +79,8 @@ export default function HomePage(
               step={Step.ACTION}
               title={
                 <div className="text-2xl font-bold">
-                  <span>Step 3: </span>
-                  <span className="text-collaction">
+                  {/* <span>Step 3: </span> */}
+                  <span className="text-primary-400">
                     {t('common:collActionExplanation.action.title')}
                   </span>
                 </div>

@@ -4,28 +4,28 @@
     "description": ""
   },
   "whatWeDo": {
-    "title": "What are we currently doing?",
+    "title": "What we do",
     "description": "After successful projects in Eindhoven, Amstelveen and Westland, we are currently preparing upcoming CrowdActions in Amstelveen and Emmen. On top of that, we are finalising the release of the newest version of our app which includes many new features to make it more fun & easy! Lastly, we are spreading the word about CollAction on various platforms and as always, we're expanding our team of developers and ambassadors!"
   },
-  "memberQuote": {
-    "firstName": "Ruben",
-    "lastName": "Horn",
-    "quote": "I'm not making a difference anyway' is not an acceptable excuse anymore, tiny steps are steps as well!",
-    "title": "Developer"
-  },
-  "collAction": {
-    "title": "We connect people to solve collective action problems"
+  "missionVision": {
+    "title": "Make doing good fun and easy!",
+    "description": "Our mission is to make doing good fun and easy. Our vision is to solve all collective action problems in the world. We believe in a positive approach, one where ..."
   },
   "history": {
     "title": "History",
     "description": "Collaction was founded in 2016 by Ron van den Akker and Spencer Heijnen. After great successes with fashion-related CrowdActions, their team decided to focus solely on SlowFashion in 2020. Since we still strongly believe that there's room for CollAction in this world, we formed a new team in 2021 that is rapidly expanding and ready to take on the challenges of today."
   },
-  "missionVision": {
-    "title": "Make doing good fun and easy!",
-    "description": "Solve all collective action problems in the world."
+  "memberQuote": {
+    "firstName": "Ruben",
+    "lastName": "Horn",
+    "quote": "The saying 'I'm not making a difference anyway' is not an acceptable excuse anymore. Tiny steps are steps as well!",
+    "title": "Senior Engineer"
   },
   "usp": {
-    "title": "What makes us different",
+    "title": "What makes us unique",
     "description": "This is a paragraph about our USPs"
+  },
+  "collAction": {
+    "title": "We connect people to solve collective action problems"
   }
 }

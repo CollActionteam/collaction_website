@@ -3,7 +3,6 @@ import Image from 'next/image';
 import PageSEO from 'src/components/PageSEO';
 
 import HeroImg from 'public/uilenstede_banner.png';
-import SolveCollectiveActionProblemsImg from 'public/solve_collective_action_problems.png';
 import CollActionGraphic from 'public/collaction_graphic.png';
 import RubenAboutImgXl from 'public/ruben-xl.png';
 import RubenAboutImgLg from 'public/ruben-lg.png';
@@ -40,7 +39,7 @@ export default function AboutUsPage({
         {/* HERO SETION */}
         <PageHero image={HeroImg} title={t('about:hero.title')} />
 
-        <TwoColumnSection
+        {/* <TwoColumnSection
           first={
             <Image
               className="mx-auto absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%]"
@@ -57,6 +56,30 @@ export default function AboutUsPage({
               body={t('about:whatWeDo.description')}
             />
           }
+        /> */}
+
+        {/* WhatWeDo  */}
+        <ContentBlock
+          className="pt-10"
+          title={t('about:whatWeDo.title')}
+          body={t('about:whatWeDo.description')}
+          // hasBg={false}
+        />
+
+        {/* Mission Vision  */}
+        <ContentBlock
+          // className="pt-10"
+          title={t('about:missionVision.title')}
+          body={t('about:missionVision.description')}
+          // hasBg={false}
+        />
+
+        {/* History  */}
+        <ContentBlock
+          // className="pt-10"
+          title={t('about:history.title')}
+          body={t('about:history.description')}
+          // hasBg={false}
         />
 
         <div className="h-[24.375rem] sm:h-[34.375rem] relative">
@@ -92,7 +115,7 @@ export default function AboutUsPage({
         </div>
 
         {/* View the Whole Team Button*/}
-        <div className="py-8">
+        <div className="py-32">
           <Link
             href="/join"
             className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 w-72 shadow-lg inset-x-0 mx-auto z-40"
@@ -101,21 +124,21 @@ export default function AboutUsPage({
           </Link>
         </div>
 
-        {/* Mission Vision  */}
-        <ContentBlock
+        {/* USP  */}
+        <InfoCard
           // className="pt-10"
-          title={t('about:missionVision.title')}
-          body={t('about:missionVision.description')}
-          // hasBg={false}
+          title={t('about:usp.title')}
+          body={t('about:usp.description')}
+          hasBg={false}
         />
 
-        {/* History  */}
-        <ContentBlock
-          // className="pt-10"
-          title={t('about:history.title')}
-          body={t('about:history.description')}
-          // hasBg={false}
-        />
+        <div className="mb-0 last:mb-0">
+          <div className="flex flex-wrap justify-center mx-auto md:max-w-864">
+            {usps.map(usp => (
+              <UspCard key={usp.title} {...usp} />
+            ))}
+          </div>
+        </div>
 
         {/* Our Projects  */}
         <ContentBlock
@@ -142,21 +165,7 @@ export default function AboutUsPage({
             See All Projects
           </Link>
         </div>
-        {/* USP  */}
-        <InfoCard
-          className="pt-10"
-          title={t('about:usp.title')}
-          body={t('about:usp.description')}
-          hasBg={false}
-        />
 
-        <div className="mb-0 last:mb-0">
-          <div className="flex flex-wrap justify-center mx-auto md:max-w-864">
-            {usps.map(usp => (
-              <UspCard key={usp.title} {...usp} />
-            ))}
-          </div>
-        </div>
         <TwoColumnSection
           isReverseOrder={true}
           isWhiteBg={true}
