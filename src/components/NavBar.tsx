@@ -158,7 +158,7 @@ export default function NavBar() {
                   isInverted ? 'text-secondary' : 'text-primary-300'
                 )}
               >
-                Projects
+                CrowdActions
               </Link>
               <Link
                 href="/donate"

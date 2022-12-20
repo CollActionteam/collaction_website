@@ -1,12 +1,10 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import PageSEO from 'src/components/PageSEO';
 
 import HeroImg from 'public/placeholder-hero-bg.png';
-import actions from 'public/cow.png';
 
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { InferGetStaticPropsType } from 'next';
 
 import PageHero from 'src/components/PageHero';
 import Image from 'next/image';
@@ -19,27 +17,21 @@ import AppLinkGoogle from 'src/components/AppLinkGoogle';
 import DownloadImg from 'public/download_app.png';
 import { toast } from 'react-toastify';
 import Pagination from 'src/components/Pagination';
-
+import { useRouter } from 'next/router';
 import ContentBlock from 'src/components/ContentBlock';
+import CrowdActionCard, { CrowdAction } from 'src/components/CrowdActionCard';
 
-export default function ProjectListPage({
-  projects,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
+export default function ProjectListPage({ projects, pagination }: any) {
+  const router = useRouter();
+
+  let { page } = router.query;
+
+  if (page == null) {
+    page = '1';
+  }
+
   const { t } = useTranslation();
   const [status, setStatus] = useState('Status');
-  const [currentPage, setCurrentPage] = useState(1);
-
-  // To use this after changing the current page,
-  // challenge is on how to update the props
-  useEffect(() => {
-    fetch(
-      `https://devapi.collaction.org/v1/crowdactions?page=${currentPage}&pageSize=3`
-    )
-      .then(response => response.json())
-      .then(data => {
-        return data;
-      });
-  });
 
   const form = useRef<HTMLFormElement>(null);
 
@@ -59,7 +51,7 @@ export default function ProjectListPage({
         email: event.target.email.value,
         body: event.target.message.value,
       })
-      .then(res => {
+      .then((res: any) => {
         if (res.data.id) {
           toast.success('Your message has been sent successfully');
         } else {
@@ -222,7 +214,7 @@ export default function ProjectListPage({
                   </select>
                 </div>
               </div>
-              <div className="flex justify-end block md:hidden lg:hidden ">
+              <div className="justify-end block md:hidden lg:hidden ">
                 <button className="font-semibold rounded-full bg-primary-0 pl-6 pr-6 pt-2 pb-2 mt-4">
                   {t('projects:change.reset')}
                 </button>
@@ -231,74 +223,41 @@ export default function ProjectListPage({
           </div>
         </div>
         <div
-          className="mx-auto h-auto
-          grid grid-cols-1 md:grid-cols-3 lg:grid-col-3
+          className={`mx-auto w-full h-auto justify-items-center grid 
+          ${
+            projects.length == 1
+              ? 'grid-cols-1'
+              : projects.length == 2
+              ? 'grid-cols-1 md:grid-cols-2'
+              : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
+          }
           max-w-400 md:max-w-750 lg:max-w-924
-          mt-6 md:mt-8 lg:mt-8 gap-x-4 md:gap-x-3 lg:gap-x-4 gap-y-8 "
+          mt-6 md:mt-8 lg:mt-8 gap-x-4 md:gap-x-3 lg:gap-x-4 gap-y-8`}
         >
-          {projects.items.map(
-            ({
-              title,
-              description,
-              id,
-            }: {
-              title: string;
-              description: string;
-              id: string;
-            }) => (
-              <div
-                className="bg-white rounded-t-lg overflow-hidden"
-                key={`${id} card`}
-              >
-                <Image src={actions} alt="black CollAction logo with text" />
-                <div className="flex pl-4 md:pl-3 lg:pl-4 space-x-1 mt-4">
-                  <button
-                    className="font-light rounded-full 
-                   bg-collaction-400 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4
-                    text-white text-sm"
-                  >
-                    Now Open
-                  </button>
-                  <button
-                    className="font-light rounded-full 
-                border-2 border-primary-0 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4 text-black text-sm"
-                  >
-                    Sustainability
-                  </button>
-                  <button
-                    className="font-light rounded-full 
-                border-2 border-primary-0 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4
-                text-black text-sm"
-                  >
-                    Food
-                  </button>
-                </div>
-                <div className="pl-4 md:pl-3 lg:pl-4 mt-4">
-                  <p className="font-semibold text-lg">{title}</p>
-                  <p className="mt-4 text-primary-300">
-                    {description.length > 150
-                      ? `${description.substring(0, 150)}...`
-                      : description}
-                  </p>
-                </div>
-                <div className="py-4 flex justify-center">
-                  <button
-                    className="font-light rounded-full w-5/6
-                   border-2 border-collaction-400 py-2 px-4 text-black text-sm"
-                  >
-                    Read More
-                  </button>
-                </div>
-              </div>
-            )
-          )}
+          {projects?.map((crowdAction: CrowdAction) => (
+            <CrowdActionCard
+              key={crowdAction.id}
+              id={crowdAction.id}
+              title={crowdAction.title}
+              type={crowdAction.type}
+              description={crowdAction.description}
+              category={crowdAction.category}
+              subcategory={crowdAction.subcategory}
+              location={crowdAction.location}
+              images={crowdAction.images}
+              participantCount={crowdAction.participantCount}
+              commitmentOptions={crowdAction.commitmentOptions}
+            ></CrowdActionCard>
+          ))}
         </div>
         <div className="mx-auto max-w-400 md:max-w-750 lg:max-w-924 flex justify-center mb-24">
           <Pagination
-            currentPage={currentPage}
-            total={projects.items.length}
+            currentPage={page}
+            total={pagination?.totalPages}
             limit={3}
-            onPageChange={(page: number) => setCurrentPage(page)}
+            onPageChange={(page: number) =>
+              router.push({ query: { page } }, undefined, { scroll: false })
+            }
           />
         </div>
         <div className="w-full bg-secondary md:bg-white lg:bg-white py-0 md:py-10 lg:py-10 mx-auto">
@@ -407,9 +366,11 @@ export default function ProjectListPage({
   );
 }
 
-export async function getStaticProps({ locale }: { locale: string }) {
-  const projects = await fetch(
-    'https://devapi.collaction.org/v1/crowdactions?page=1&pageSize=3'
+export async function getServerSideProps({ query, locale }: any) {
+  const page: string = query.page;
+
+  const { items, pageInfo } = await fetch(
+    `https://api.collaction.org/v1/crowdactions?page=${page}&pageSize=3`
   )
     .then(response => response.json())
     .then(data => {
@@ -418,7 +379,8 @@ export async function getStaticProps({ locale }: { locale: string }) {
 
   return {
     props: {
-      projects,
+      projects: items,
+      pagination: pageInfo,
       locale,
       ...(await serverSideTranslations(locale, [
         'common',

@@ -21,22 +21,25 @@ const PaginationItem = ({
   onPageChange,
 }: paginationItemType) => {
   return (
-    <button onClick={() => onPageChange(page)} className="">
-      <span className="text-collaction-400 p-5">{page}</span>
+    <button
+      className={`p-5 border-collaction ${
+        currentPage == page ? 'border-t-4' : 'border-t-2'
+      }`}
+      onClick={() => onPageChange(page)}
+    >
+      <span
+        className={`text-sm ${currentPage == page ? 'font-bold' : 'font-thin'}`}
+      >
+        {page}
+      </span>
     </button>
   );
 };
 
-const Pagination = ({
-  currentPage,
-  total,
-  limit,
-  onPageChange,
-}: PaginationType) => {
-  const pagesCount = Math.ceil(total / limit);
-  const pages = range(1, pagesCount);
+const Pagination = ({ currentPage, total, onPageChange }: PaginationType) => {
+  const pages = range(1, total);
   return (
-    <div className="flex">
+    <div className="flex py-8">
       {pages.map(page => (
         <PaginationItem
           page={page}
