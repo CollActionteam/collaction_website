@@ -242,8 +242,8 @@ export default function HomePage(
               className="absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%]"
               hasBg={false}
               leftAlign={true}
-              title={t('home:participantSection.title')}
-              body={t('home:participantSection.description')}
+              title={t('home:socialSection.title')}
+              body={t('home:socialSection.description')}
             />
           }
         />

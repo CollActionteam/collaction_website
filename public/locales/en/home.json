@@ -16,15 +16,11 @@
     "description": "Thanks to the crowd, your individual actions are amplified. After the CrowdAction you can see the collective impact that was made!"
   },
   "socialSection": {
-    "title": "See who else from your friends, family, neighbours or colleagues is also taking part",
-    "description": "On the app you can see who else is taking part in a CrowdAction. Team up with friends and family and help each other to reach the end!"
+    "title": "Find out who else is taking part in a CrowdAction",
+    "description": "Team up with friends, family, neighbours and colleagues to help each other in staying committed until the end of the CrowdAction!"
   },
   "useCollActionSection": {
     "title": "Want to use CollAction for your project?",
-    "description": "Do you have a sustainable initiative and would you like to reach a large audiene? Contact us"
-  },
-  "participantSection": {
-    "title": "Headline about CollAction as social app",
-    "description": "Description about CollAction as social app"
+    "description": "Do you have a sustainable initiative and would you like to reach a large crowd? Contact us"
   }
 }
