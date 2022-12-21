@@ -110,7 +110,7 @@ export default function ProjectListPage({ projects, pagination }: any) {
                   <p className="font-bold text-lg mb-4 text-center md:text-left">
                     {t('projects:crowdaction.title')}
                   </p>
-                  <p className="text-primary-200 text-center md:text-left">
+                  <p className="text-primary-300 text-center md:text-left">
                     {t('projects:crowdaction.description')}
                   </p>
                 </div>
@@ -139,7 +139,7 @@ export default function ProjectListPage({ projects, pagination }: any) {
                 <p className="font-bold text-lg mb-4 text-center md:text-left">
                   {t('projects:explore.title')}
                 </p>
-                <p className="text-primary-200 text-center md:text-left">
+                <p className="text-primary-300 text-center md:text-left">
                   {t('projects:explore.description')}
                 </p>
               </div>
@@ -247,6 +247,8 @@ export default function ProjectListPage({ projects, pagination }: any) {
               images={crowdAction.images}
               participantCount={crowdAction.participantCount}
               commitmentOptions={crowdAction.commitmentOptions}
+              status={crowdAction.status}
+              joinStatus={crowdAction.joinStatus}
             ></CrowdActionCard>
           ))}
         </div>

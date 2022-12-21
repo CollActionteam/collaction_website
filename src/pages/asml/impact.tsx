@@ -233,13 +233,13 @@ function IconCard({ card, index }: { card: IconCard; index: number }) {
           {card.icon}
         </div>
         {/* title/top text */}
-        <div className="text-primary-200 mb-2">{card.top}</div>
+        <div className="text-primary-300 mb-2">{card.top}</div>
         {/* featured text */}
         <span className="text-collaction text-featured font-bold mb-2">
           {value}
         </span>
         {/* bottom text */}
-        <div className="text-primary-200">{card.bottom}</div>
+        <div className="text-primary-300">{card.bottom}</div>
       </div>
     </div>
   );

@@ -45,7 +45,7 @@ export default function ContentBlock({
           <p
             className={clsx(
               'text-body-long-1 mb-3',
-              isSecondaryBg ? 'text-secondary' : 'text-primary-200',
+              isSecondaryBg ? 'text-secondary' : 'text-primary-300',
               body ? 'block' : 'none'
             )}
           >

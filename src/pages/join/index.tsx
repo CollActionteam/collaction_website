@@ -65,7 +65,7 @@ export default function JoinListPage(
           <h1 className="text-headline-m-1 md:text-headline-lg-1 mb-6">
             {t('join:ourTeamSection.title')}
           </h1>
-          <p className="text-body-short-1 text-primary-200 px-0 md:px-6 lg:px-20 px-auto">
+          <p className="text-body-short-1 text-primary-300 px-0 md:px-6 lg:px-20 px-auto">
             {t('join:ourTeamSection.description')}
           </p>
         </div>
@@ -82,7 +82,7 @@ export default function JoinListPage(
               {t('join:joinSection.green_title')}
             </span>
           </h1>
-          <p className="text-body-short-1 text-primary-200 pb-8">
+          <p className="text-body-short-1 text-primary-300 pb-8">
             {t('join:joinSection.description')}
           </p>
         </div>
@@ -103,7 +103,7 @@ export default function JoinListPage(
                 className={clsx('bg-primary-0 p-6 mb-6 rounded-1', 'md:w-1/3')}
               >
                 <h3 className="text-headline-m-1 my-6">{title}</h3>
-                <p className="text-body-short-1 text-primary-200 mb-6">
+                <p className="text-body-short-1 text-primary-300 mb-6">
                   {description}
                 </p>
                 <div className="flex flex-wrap mb-4">

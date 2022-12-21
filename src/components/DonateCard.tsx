@@ -52,7 +52,7 @@ export default function DonateCard({
             {headline}
           </h3>
           <p
-            className="text-body-long-1 text-primary-200 w-[302px] h-[34px] 
+            className="text-body-long-1 text-primary-300 w-[302px] h-[34px] 
           sm:w-[352px] lg:w-[242px] lg:h-[48px] font-light lg:text-left"
           >
             {donation}
@@ -76,7 +76,7 @@ export default function DonateCard({
               />
             ))}
           </div>
-          <p className="w-[302px] lg:w-[319px] h-[44px] text-sm leading-[22px] text-primary-200">
+          <p className="w-[302px] lg:w-[319px] h-[44px] text-sm leading-[22px] text-primary-300">
             {creditCardText}
           </p>
           <div className="w-[302px] flex flex-col items-start gap-2.5">
@@ -86,7 +86,7 @@ export default function DonateCard({
             >
               {continueBtnText}
             </Button>
-            <p className="text-primary-200 text-sm leading-[22px] w-[302px] lg:w-[319px] h-[22px]">
+            <p className="text-primary-300 text-sm leading-[22px] w-[302px] lg:w-[319px] h-[22px]">
               {agreement}{' '}
               <span className="text-collaction-500 text-sm leading-[22px]">
                 <Link href="/privacy">{policy}</Link>
