@@ -42,7 +42,7 @@ export default function CollActionExplanation(props: ExplanationProps) {
         height={150}
       />
 
-      <p className={clsx('text-body-long-1 mb-3', 'text-primary-200')}>
+      <p className={clsx('text-body-long-1 mb-3', 'text-primary-300')}>
         {props.description}
       </p>
     </div>

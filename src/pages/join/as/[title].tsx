@@ -19,7 +19,7 @@ export default function SingleJoinPage({ data }: { data: JoinDataType }) {
       <main className="bg-secondary p-5 md:p-12">
         <div className="max-w-600 mx-auto">
           <h1 className="text-primary-400 mb-6">{data.title}</h1>
-          <p className="text-primary-400 mb-7">{data.description}</p>
+          <p className="text-primary-300 mb-7">{data.description}</p>
 
           <h4 className="text-primary-400 mb-4">General</h4>
           <ul style={{ listStyleType: 'disc' }} className="pl-7 mb-7">
