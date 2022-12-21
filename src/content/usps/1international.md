@@ -5,4 +5,4 @@
   icon: /usp-international-icon.png
 ---
 
-CollAction is an open source project. This allows us to have an amazing team with developers from all over the world that improve the platform anytime, anywhere.
+Engineers from all over the world help improve the CollAction platform. The team is grows larger every month, meaning we get increasingly more capacity to improve functionality, reliability, scalability and more. Many initiatives similar to CollAction do not have the engineering capacity to keep growing the platform. We do.

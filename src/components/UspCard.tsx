@@ -29,7 +29,7 @@ export function UspCard({
         {/* TITLE & CONTENT */}
         <div className="px-6 xs:px-7 sm:px-8 mb-6 sm:mb-7">
           <h4 className="text-primary-400 mb-5 sm:mb-7">{title}</h4>
-          <div className="text-primary-300 h-full max-h-32 line-clamp-5 whitespace-pre-line">
+          <div className="text-primary-200 h-full whitespace-pre-line">
             {content}
           </div>
         </div>

@@ -76,7 +76,7 @@ export default function AboutUsPage({
 
         {/* WhatWeDo  */}
         <ContentBlock
-          // className="pt-10"
+          className="pb-10"
           title={t('about:whatWeDo.title')}
           body={t('about:whatWeDo.description')}
           // hasBg={false}
@@ -105,7 +105,7 @@ export default function AboutUsPage({
             fill
           />
           <div className="absolute bottom-6 left-[1.25rem] sm:bottom-[3.75rem] sm:left-[3.5rem] xl:left-[10.75rem] z-50 text-white text-md">
-            <blockquote className="text-headline-m-1 mb-4 max-w-350">
+            <blockquote className="text-headline-m-1 mb-0 max-w-350">
               “{t('about:memberQuote.quote')}„
             </blockquote>
             <span className="font-light">
@@ -115,25 +115,26 @@ export default function AboutUsPage({
         </div>
 
         {/* View the Whole Team Button*/}
-        <div className="py-32">
+        <div className="pt-24 pb-10">
           <Link
             href="/team"
-            className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 w-72 shadow-lg inset-x-0 mx-auto z-40"
+            className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 w-80 shadow-lg inset-x-0 mx-auto z-40"
           >
-            View the whole team
+            {t('about:wholeteam.title')}
           </Link>
         </div>
 
         {/* USP  */}
-        <InfoCard
-          // className="pt-10"
+        <ContentBlock
+          className="pb-8"
           title={t('about:usp.title')}
           body={t('about:usp.description')}
-          hasBg={false}
+          // hasBg={false}
         />
 
         <div className="mb-0 last:mb-0">
-          <div className="flex flex-wrap justify-center mx-auto md:max-w-864">
+          {/* <div className="flex flex-wrap justify-center mx-auto md:max-w-864"> */}
+          <div className="flex flex-wrap justify-center mx-auto md:max-w-1064">
             {usps.map(usp => (
               <UspCard key={usp.title} {...usp} />
             ))}

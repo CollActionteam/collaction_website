@@ -32,7 +32,7 @@ export default function TwoColumnSection(props: TwoColumnSectionProps) {
             props.isReverseOrder
               ? 'hidden lg:col-start-2 lg:block'
               : 'hidden lg:col-start-1 lg:block'
-          } col-span-1 w-full lg:w-[512px] h-[512px] mx-auto relative ${
+          } col-span-1 w-full lg:w-[512px] h-[440px] mx-auto relative ${
             props.isWhiteBg ? 'bg-white' : 'bg-secondary'
           }`}
         >
@@ -41,7 +41,7 @@ export default function TwoColumnSection(props: TwoColumnSectionProps) {
         <div
           className={`${
             props.isReverseOrder ? 'col-start-1' : 'col-start-1 lg:col-start-2'
-          } col-span-1 w-full lg:w-[512px] h-[512px] mx-auto relative ${
+          } col-span-1 w-full lg:w-[512px] h-[440px] mx-auto relative ${
             props.isWhiteBg ? 'bg-white' : 'bg-secondary'
           }`}
         >

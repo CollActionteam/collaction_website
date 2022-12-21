@@ -19,6 +19,7 @@ import Pagination from 'src/components/Pagination';
 import { useRouter } from 'next/router';
 import ContentBlock from 'src/components/ContentBlock';
 import CrowdActionCard, { CrowdAction } from 'src/components/CrowdActionCard';
+import Quote from 'src/components/Quote';
 
 export default function ProjectListPage({ projects, pagination }: any) {
   const router = useRouter();
@@ -94,6 +95,16 @@ export default function ProjectListPage({ projects, pagination }: any) {
         <ContentBlock
           title={t('projects:projectSection.title')}
           body={t('projects:projectSection.description')}
+          // hasBg={false}
+        />
+
+        {/* Quote Tom */}
+        <Quote
+          // className="pt-10 pb-6"
+          isSecondaryBg={true}
+          quote={t('projects:tom.quote')}
+          name={t('projects:tom.name')}
+          position={t('projects:tom.position')}
           // hasBg={false}
         />
 
@@ -344,34 +355,73 @@ export default function ProjectListPage({ projects, pagination }: any) {
           }
         />
 
+        {/* 4PHASES */}
+        <TwoColumnSection
+          isReverseOrder={false}
+          isWhiteBg={false}
+          first={
+            <ContentBlock
+              title={t('projects:crowdresearch.title')}
+              body={t('projects:crowdresearch.description')}
+              className="flex flex-col lg:flex-row lg:items-center mt-8"
+            />
+          }
+          second={
+            <ContentBlock
+              title={t('projects:crowdscaling.title')}
+              body={t('projects:crowdscaling.description')}
+              className="flex flex-col lg:flex-row lg:items-center mt-8"
+            />
+          }
+        />
+
+        <TwoColumnSection
+          isReverseOrder={false}
+          isWhiteBg={false}
+          first={
+            <ContentBlock
+              title={t('projects:crowdaction.title')}
+              body={t('projects:crowdaction.description')}
+              className="flex flex-col lg:flex-row lg:items-center"
+            />
+          }
+          second={
+            <ContentBlock
+              title={t('projects:crowdimpact.title')}
+              body={t('projects:crowdimpact.description')}
+              className="flex flex-col lg:flex-row lg:items-center"
+            />
+          }
+        />
+
         {/* crowdresearchSection  */}
-        <ContentBlock
+        {/* <ContentBlock
           // className="pt-10"
           title={t('projects:crowdresearch.title')}
           body={t('projects:crowdresearch.description')}
           // hasBg={false}
-        />
+        /> */}
         {/* crowdscalingSection  */}
-        <ContentBlock
+        {/* <ContentBlock
           // className="pt-10"
           title={t('projects:crowdscaling.title')}
           body={t('projects:crowdscaling.description')}
           // hasBg={false}
-        />
+        /> */}
         {/* crowdactionSection  */}
-        <ContentBlock
+        {/* <ContentBlock
           // className="pt-10"
           title={t('projects:crowdaction.title')}
           body={t('projects:crowdaction.description')}
           // hasBg={false}
-        />
+        /> */}
         {/* crowdimpactSection  */}
-        <ContentBlock
+        {/* <ContentBlock
           // className="pt-10"
           title={t('projects:crowdimpact.title')}
           body={t('projects:crowdimpact.description')}
           // hasBg={false}
-        />
+        /> */}
       </main>
     </>
   );

@@ -22,5 +22,10 @@
   "participantSection": {
     "title": "Headline about CollAction as social app",
     "description": "Description about CollAction as social app"
+  },
+  "sjoerd": {
+    "quote": "Headline about CollAction as social app",
+    "name": "Description about CollAction as social app",
+    "position": "Description about CollAction as social app"
   }
 }

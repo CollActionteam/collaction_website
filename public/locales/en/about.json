@@ -4,7 +4,7 @@
     "description": ""
   },
   "missionVision": {
-    "title": "Make doing good fun and easy!",
+    "title": "Make doing good fun and easy",
     "description": "Our vision is to solve all collective action problems in the world, such as climate change. We believe in a positive, bottom-up approach. We do so by making it simple and enjoyable for users to take part in CrowdActions, sustainable (monthly) challenges. Therefore, CollAction connects people to make positive impact together - Power to the Crowd!  We believe this is the only way to reach a crowd that crosses cities, countries and continents. Therefore, our mission is to make doing good fun and easy! Want to know how we do this exactly? Take a look at our Projects page."
   },
   "history": {
@@ -21,9 +21,12 @@
     "quote": "The saying 'I don't make a difference anyway' is not an acceptable excuse anymore. Tiny steps are also steps!",
     "title": "Senior Engineer"
   },
+  "wholeteam": {
+    "title": "View the whole Team"
+  },
   "usp": {
-    "title": "What makes us unique",
-    "description": "This is a paragraph about our USPs"
+    "title": "What makes CollAction unique",
+    "description": "CollAction is growing rapidly because many people believe in and support our purpose. We distinguish ourselves from similar platforms by having a technology-first approach. By far most volunteers are engineers that build the digital infrastructure of the CollAction platform. This results in the following unique selling points:"
   },
   "collAction": {
     "title": "We connect people to solve collective action problems"

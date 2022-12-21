@@ -22,6 +22,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { InferGetStaticPropsType } from 'next';
 import PageHero from 'src/components/PageHero';
 import ContentBlock from 'src/components/ContentBlock';
+import Quote from 'src/components/Quote';
 
 export async function getStaticProps({ locale }: { locale: string }) {
   return {
@@ -92,9 +93,20 @@ export default function HomePage(
           </div>
         </div>
 
+        {/* Quote Sjoerd */}
+        <Quote
+          // className="pt-10 pb-6"
+          isSecondaryBg={true}
+          quote={t('home:sjoerd.quote')}
+          name={t('home:sjoerd.name')}
+          position={t('home:sjoerd.position')}
+          // hasBg={false}
+        />
+
         {/* Mission Vision  */}
         <ContentBlock
-          className="pt-10 pb-6"
+          className="pt-10 pb-10"
+          isSecondaryBg={true}
           title={t('about:missionVision.title')}
           body={t('about:missionVision.description')}
           // hasBg={false}
@@ -215,10 +227,10 @@ export default function HomePage(
           }
         />
 
-        {/* Participation Section */}
+        {/* SOCIAL SECTION */}
         <TwoColumnSection
           isReverseOrder={false}
-          isWhiteBg={true}
+          isWhiteBg={false}
           mobile={
             <InfoCard
               title={t('home:participantSection.title')}

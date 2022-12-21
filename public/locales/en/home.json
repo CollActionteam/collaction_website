@@ -22,5 +22,10 @@
   "useCollActionSection": {
     "title": "Want to use CollAction for your project?",
     "description": "Do you have a sustainable initiative and would you like to reach a large crowd? Contact us"
+  },
+  "sjoerd": {
+    "quote": "\"CollAction uses creative and innovative approaches to solve collective action problems on a global scale. Both literature and empirical studies show this is very hard to tackle. CollAction's approach of making it fun & easy on a hyperlocal scale is very unique, much needed and promising for the future!\"",
+    "name": "Sjoerd Kluiving",
+    "position": "Associate Professor at Vrije Universiteit Amsterdam"
   }
 }

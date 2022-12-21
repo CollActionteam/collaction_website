@@ -11,7 +11,7 @@ type ContentBlockTypes = {
 };
 
 export default function ContentBlock({
-  isSecondaryBg,
+  isSecondaryBg = true,
   // hasBg = true,
   leftAlign = true,
   title,
@@ -22,7 +22,7 @@ export default function ContentBlock({
   return (
     <div
       className={clsx(
-        // hasBg ? (isSecondaryBg ? 'bg-collaction' : 'bg-primary-0') : '',
+        isSecondaryBg ? 'bg-secondary' : 'bg-white',
         'mx-auto',
         'w-full max-w-536 sm:max-w-600 md:max-w-600 lg:max-w-600',
         'py-5 px-5',
@@ -34,7 +34,7 @@ export default function ContentBlock({
         <h3
           className={clsx(
             'text-headline-m-1',
-            isSecondaryBg ? 'text-secondary' : 'text-primary-400',
+            'text-primary-400',
             // body ? 'mb-6' : 'mb-9'
             body ? 'mb-3' : 'mb-6'
           )}

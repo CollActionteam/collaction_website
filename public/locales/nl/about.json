@@ -4,7 +4,7 @@
     "description": ""
   },
   "missionVision": {
-    "title": "Wij maken goed doen leuk en gemakkelijk",
+    "title": "Goed doen leuk en gemakkelijk maken",
     "description": "Het oplossen van alle collectieve-actieproblemen in de wereld"
   },
   "history": {
@@ -20,6 +20,9 @@
     "lastName": "Horn",
     "quote": "De uitspraak 'ik maak toch geen verschil' is geen acceptabel excuus meer. Kleine stappen zijn ook stappen!",
     "title": "Senior Engineer"
+  },
+  "wholeteam": {
+    "title": "Bekijk het hele Team"
   },
   "usp": {
     "title": "Wat maakt CollAction uniek",
