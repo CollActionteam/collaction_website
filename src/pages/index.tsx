@@ -106,7 +106,7 @@ export default function HomePage(
         {/* Mission Vision  */}
         <ContentBlock
           className="pt-10 pb-10"
-          isSecondaryBg={true}
+          isSecondaryBg={false}
           title={t('about:missionVision.title')}
           body={t('about:missionVision.description')}
           // hasBg={false}
@@ -116,7 +116,12 @@ export default function HomePage(
         <TwoColumnSection
           isReverseOrder={false}
           first={
-            <Image src={DownloadImg} alt="Download App" className="mx-auto" />
+            <Image
+              src={DownloadImg}
+              alt="Download App"
+              className="mx-auto"
+              width={450}
+            />
           }
           second={
             <InfoCard
@@ -246,7 +251,8 @@ export default function HomePage(
             <Image
               src={ParticipantsGraphic}
               alt="Participants"
-              className="absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%] h-[90%] w-[70%]"
+              height={450}
+              className="absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%]"
             />
           }
           second={

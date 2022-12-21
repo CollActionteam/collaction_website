@@ -19,6 +19,10 @@
     "title": "Find out who else is taking part in a CrowdAction",
     "description": "Team up with friends, family, neighbours and colleagues to help each other in staying committed until the end of the CrowdAction!"
   },
+  "participantSection": {
+    "title": "Headline about CollAction as social app",
+    "description": "Description about CollAction as social app"
+  },
   "useCollActionSection": {
     "title": "Want to use CollAction for your project?",
     "description": "Do you have a sustainable initiative and would you like to reach a large crowd? Contact us"

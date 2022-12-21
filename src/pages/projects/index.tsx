@@ -157,6 +157,7 @@ export default function ProjectListPage({ projects, pagination }: any) {
             </div>
           </div>
         </div>
+
         {/* <div className="h-auto w-full">
           <div className="mx-5">
             <div
@@ -282,6 +283,7 @@ export default function ProjectListPage({ projects, pagination }: any) {
             }}
           />
         </div>
+
         <div className="w-full bg-secondary md:bg-white lg:bg-white py-0 md:py-10 lg:py-10 mx-auto">
           <div className="mx-5 md:mx-5 lg:mx-0">
             <div
@@ -291,7 +293,7 @@ export default function ProjectListPage({ projects, pagination }: any) {
             >
               <div className="w-full md:w-1/2 lg:w-1/2 flex items-center justify-center">
                 <div className="mx-auto max-w-320 ">
-                  <p className="font-bold text-3xl text-center leading-8">
+                  <p className="font-bold text-3xl text-primary-400 text-center leading-8">
                     {t('contact:reachout.title')}
                   </p>
                   <br />
@@ -335,10 +337,16 @@ export default function ProjectListPage({ projects, pagination }: any) {
             </div>
           </div>
         </div>
+
         <TwoColumnSection
           isReverseOrder={false}
           first={
-            <Image src={DownloadImg} alt="Download App" className="mx-auto" />
+            <Image
+              src={DownloadImg}
+              alt="Download App"
+              className="mx-auto"
+              width={450}
+            />
           }
           second={
             <InfoCard
@@ -359,6 +367,20 @@ export default function ProjectListPage({ projects, pagination }: any) {
         <TwoColumnSection
           isReverseOrder={false}
           isWhiteBg={false}
+          mobile={
+            <div>
+              <ContentBlock
+                title={t('projects:crowdresearch.title')}
+                body={t('projects:crowdresearch.description')}
+                className="flex flex-col lg:flex-row lg:items-center mt-8"
+              />
+              <ContentBlock
+                title={t('projects:crowdscaling.title')}
+                body={t('projects:crowdscaling.description')}
+                className="flex flex-col lg:flex-row lg:items-center mt-8"
+              />
+            </div>
+          }
           first={
             <ContentBlock
               title={t('projects:crowdresearch.title')}
@@ -378,6 +400,20 @@ export default function ProjectListPage({ projects, pagination }: any) {
         <TwoColumnSection
           isReverseOrder={false}
           isWhiteBg={false}
+          mobile={
+            <div>
+              <ContentBlock
+                title={t('projects:crowdaction.title')}
+                body={t('projects:crowdaction.description')}
+                className="flex flex-col lg:flex-row lg:items-center"
+              />
+              <ContentBlock
+                title={t('projects:crowdimpact.title')}
+                body={t('projects:crowdimpact.description')}
+                className="flex flex-col lg:flex-row lg:items-center"
+              />
+            </div>
+          }
           first={
             <ContentBlock
               title={t('projects:crowdaction.title')}

@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import clsx from 'clsx';
 import {
   FiMapPin as MapPinIcon,
   FiDollarSign as DollarSignIcon,
@@ -106,9 +105,11 @@ export default function JoinListPage(
             }) => (
               <div
                 key={`${title} card`}
-                className={clsx('bg-primary-0 p-6 mb-6 rounded-1', 'md:w-1/3')}
+                className={'bg-primary-0 p-6 mb-6 rounded-1 relative md:w-1/3'}
               >
-                <h3 className="text-headline-m-1">{title}</h3>
+                <h3 className="text-headline-m-1 text-primary-400 mb-2">
+                  {title}
+                </h3>
                 <p className="text-body-short-1 text-primary-300 mb-6">
                   {description}
                 </p>
@@ -126,14 +127,14 @@ export default function JoinListPage(
                     );
                   })}
                 </div>
-                <div className="w-full flex justify-end">
+                <div className="absolute flex bottom-0 right-0">
                   <Link
                     href={`/team/as/${title
                       .split(' ')
                       .join('-')
                       .toLowerCase()}`}
                     passHref
-                    className="bg-collaction h-8 w-8 -mr-4 -mb-4 p-4 rounded-full text-secondary"
+                    className="bg-collaction h-8 w-8 p-4 mb-6 mr-6 rounded-full text-secondary"
                     aria-label={`Visit ${title} posting`}
                   >
                     <ArrowRightIcon />
@@ -148,7 +149,12 @@ export default function JoinListPage(
         <TwoColumnSection
           isReverseOrder={false}
           first={
-            <Image src={DownloadImg} alt="Download App" className="mx-auto" />
+            <Image
+              src={DownloadImg}
+              alt="Download App"
+              className="mx-auto"
+              width={450}
+            />
           }
           second={
             <InfoCard

@@ -42,7 +42,7 @@ export default function Quote({
           <strong>{name}</strong>
         </p>
 
-        <p className={clsx('text-body-long-1 mb-10', 'text-primary-200')}>
+        <p className={clsx('text-body-long-1 mb-10', 'text-primary-300')}>
           {position}
         </p>
       </div>

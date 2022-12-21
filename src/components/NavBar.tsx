@@ -152,7 +152,7 @@ export default function NavBar() {
                 href="/projects"
                 className={clsx(
                   'flex items-center mx-4 md:mx-0 md:ml-8',
-                  router.asPath === '/projects'
+                  router.asPath.includes('/projects')
                     ? 'text-headline-s-1'
                     : 'text-body-short-1',
                   isInverted ? 'text-secondary' : 'text-primary-300'
