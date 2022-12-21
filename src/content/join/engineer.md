@@ -1,7 +1,7 @@
 ---
   publish: true
-  title: (Senior) Engineer
-  description: You're an experiened developer or engineer that excels at personal projects and/or studies. You've successfully built multiple applications from start to end and know how to get things done. You have professional experience, but you want more besides your regular job. You want to broaden your scope, learn new things or work in an international environment. Together with a team of like minded individuals, you'll be building the digital infrastructure of CollAction.
+  title: Engineer
+  description: You're an experiened (senior) developer or engineer that excels at personal projects and/or studies. You've successfully built multiple applications from start to end and know how to get things done. You have professional experience, but you want more besides your regular job. You want to broaden your scope, learn new things or work in an international environment. Together with a team of like minded individuals, you'll be building the digital infrastructure of CollAction.
   tags: ['voluntary', 'remote']
   location: Remote
   pay: Voluntary
