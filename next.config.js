@@ -8,4 +8,12 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 module.exports = withBundleAnalyzer({
   reactStrictMode: true,
   i18n,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: 'static.collaction.org',
+      },
+    ],
+  },
 });

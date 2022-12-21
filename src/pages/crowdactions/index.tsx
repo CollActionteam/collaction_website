@@ -1,17 +1,14 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 import PageSEO from 'src/components/PageSEO';
 
 import HeroImg from 'public/placeholder-hero-bg.png';
-import actions from 'public/cow.png';
 
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { InferGetStaticPropsType } from 'next';
 
 import PageHero from 'src/components/PageHero';
 import Image from 'next/image';
 import CollActionLogoWithText from 'public/crowdaction_graphic.png';
-import { MdOutlineKeyboardArrowUp } from 'react-icons/md';
 import TwoColumnSection from 'src/components/TwoColumnSection';
 import InfoCard from 'src/components/InfoCard';
 import AppLinkApple from 'src/components/AppLinkApple';
@@ -19,27 +16,21 @@ import AppLinkGoogle from 'src/components/AppLinkGoogle';
 import DownloadImg from 'public/download_app.png';
 import { toast } from 'react-toastify';
 import Pagination from 'src/components/Pagination';
-
+import { useRouter } from 'next/router';
 import ContentBlock from 'src/components/ContentBlock';
+import CrowdActionCard, { CrowdAction } from 'src/components/CrowdActionCard';
 
-export default function ProjectListPage({
-  projects,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
+export default function ProjectListPage({ projects, pagination }: any) {
+  const router = useRouter();
+
+  let { page } = router.query;
+
+  if (page == null) {
+    page = '1';
+  }
+
   const { t } = useTranslation();
-  const [status, setStatus] = useState('Status');
-  const [currentPage, setCurrentPage] = useState(1);
-
-  // To use this after changing the current page,
-  // challenge is on how to update the props
-  useEffect(() => {
-    fetch(
-      `https://devapi.collaction.org/v1/crowdactions?page=${currentPage}&pageSize=3`
-    )
-      .then(response => response.json())
-      .then(data => {
-        return data;
-      });
-  });
+  // const [status, setStatus] = useState('Status');
 
   const form = useRef<HTMLFormElement>(null);
 
@@ -59,7 +50,7 @@ export default function ProjectListPage({
         email: event.target.email.value,
         body: event.target.message.value,
       })
-      .then(res => {
+      .then((res: any) => {
         if (res.data.id) {
           toast.success('Your message has been sent successfully');
         } else {
@@ -81,28 +72,28 @@ export default function ProjectListPage({
         {/* HERO SETION */}
         <PageHero
           image={HeroImg}
-          title={t('projects:hero.title')}
-          description={t('projects:hero.description')}
+          title={t('crowdactions:hero.title')}
+          description={t('crowdactions:hero.description')}
         />
 
         {/* howweworkSection  */}
         <ContentBlock
           className="pt-10"
-          title={t('projects:howwework.title')}
-          body={t('projects:howwework.description')}
+          title={t('crowdactions:howwework.title')}
+          body={t('crowdactions:howwework.description')}
           // hasBg={false}
         />
         {/* begSection  */}
         <ContentBlock
           // className="pt-10"
-          title={t('projects:begSection.title')}
-          body={t('projects:begSection.description')}
+          title={t('crowdactions:begSection.title')}
+          body={t('crowdactions:begSection.description')}
           // hasBg={false}
         />
         {/* CrowdActionFor  */}
         <ContentBlock
-          title={t('projects:projectSection.title')}
-          body={t('projects:projectSection.description')}
+          title={t('crowdactions:projectSection.title')}
+          body={t('crowdactions:projectSection.description')}
           // hasBg={false}
         />
 
@@ -117,10 +108,10 @@ export default function ProjectListPage({
                 {/* px-auto */}
                 <div className="max-w-320 sm:max-w-320 lg:max-w-320">
                   <p className="font-bold text-lg mb-4 text-center md:text-left">
-                    {t('projects:crowdaction.title')}
+                    {t('crowdactions:crowdaction.title')}
                   </p>
                   <p className="text-primary-200 text-center md:text-left">
-                    {t('projects:crowdaction.description')}
+                    {t('crowdactions:crowdaction.description')}
                   </p>
                 </div>
               </div>
@@ -137,7 +128,7 @@ export default function ProjectListPage({
             </div>
           </div>
         </div>
-        <div className="h-auto w-full">
+        <div className="h-auto w-full" id="crowdActions">
           <div className="mx-5 md:mx-5 lg:mx-0">
             <div
               className="h-auto
@@ -146,16 +137,16 @@ export default function ProjectListPage({
             >
               <div className="max-w-320 sm:max-w-320 lg:max-w-320 pt-10 pb-6">
                 <p className="font-bold text-lg mb-4 text-center md:text-left">
-                  {t('projects:explore.title')}
+                  {t('crowdactions:explore.title')}
                 </p>
                 <p className="text-primary-200 text-center md:text-left">
-                  {t('projects:explore.description')}
+                  {t('crowdactions:explore.description')}
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div className="h-auto w-full">
+        {/* <div className="h-auto w-full">
           <div className="mx-5">
             <div
               className="h-auto bg-white rounded-lg
@@ -163,9 +154,11 @@ export default function ProjectListPage({
           mt-4 md:mt-4 lg:mt-4 p-6"
             >
               <div className="flex justify-between">
-                <p className="font-semibold">{t('projects:change.filters')}</p>
+                <p className="font-semibold">
+                  {t('crowdactions:change.filters')}
+                </p>
                 <button className="font-semibold rounded-full bg-primary-0 pl-6 pr-6 pt-2 pb-2 hidden md:block lg:block">
-                  {t('projects:change.reset')}
+                  {t('crowdactions:change.reset')}
                 </button>
                 <MdOutlineKeyboardArrowUp className="w-7 h-7 block md:hidden font-light" />
               </div>
@@ -180,7 +173,7 @@ export default function ProjectListPage({
                     rounded-full font-light focus:outline-none"
                   >
                     <option value="Status">
-                      {t('projects:change.status')}
+                      {t('crowdactions:change.status')}
                     </option>
                     <option value="b">b</option>
                     <option value="c">c</option>
@@ -197,7 +190,7 @@ export default function ProjectListPage({
                     rounded-full font-light focus:outline-none"
                   >
                     <option value="Status">
-                      {t('projects:change.status')}
+                      {t('crowdactions:change.status')}
                     </option>
                     <option value="b">b</option>
                     <option value="c">c</option>
@@ -214,7 +207,7 @@ export default function ProjectListPage({
                     rounded-full font-light focus:outline-none"
                   >
                     <option value="Status">
-                      {t('projects:change.status')}
+                      {t('crowdactions:change.status')}
                     </option>
                     <option value="b">b</option>
                     <option value="c">c</option>
@@ -222,83 +215,58 @@ export default function ProjectListPage({
                   </select>
                 </div>
               </div>
-              <div className="flex justify-end block md:hidden lg:hidden ">
+              <div className="justify-end block md:hidden lg:hidden ">
                 <button className="font-semibold rounded-full bg-primary-0 pl-6 pr-6 pt-2 pb-2 mt-4">
-                  {t('projects:change.reset')}
+                  {t('crowdactions:change.reset')}
                 </button>
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div
-          className="mx-auto h-auto
-          grid grid-cols-1 md:grid-cols-3 lg:grid-col-3
-          max-w-400 md:max-w-750 lg:max-w-924
-          mt-6 md:mt-8 lg:mt-8 gap-x-4 md:gap-x-3 lg:gap-x-4 gap-y-8 "
+          className={`mx-auto w-full h-auto justify-items-center grid 
+          ${
+            projects.length == 1
+              ? 'grid-cols-1 max-w-400 md:max-w-750 lg:max-w-924'
+              : projects.length == 2
+              ? 'grid-cols-1 md:grid-cols-2 max-w-400 md:max-w-750'
+              : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-400 md:max-w-750 lg:max-w-924'
+          }
+          mt-6 md:mt-8 lg:mt-8 lg:gap-x-4 gap-y-8`}
         >
-          {projects.items.map(
-            ({
-              title,
-              description,
-              id,
-            }: {
-              title: string;
-              description: string;
-              id: string;
-            }) => (
-              <div
-                className="bg-white rounded-t-lg overflow-hidden"
-                key={`${id} card`}
-              >
-                <Image src={actions} alt="black CollAction logo with text" />
-                <div className="flex pl-4 md:pl-3 lg:pl-4 space-x-1 mt-4">
-                  <button
-                    className="font-light rounded-full 
-                   bg-collaction-400 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4
-                    text-white text-sm"
-                  >
-                    Now Open
-                  </button>
-                  <button
-                    className="font-light rounded-full 
-                border-2 border-primary-0 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4 text-black text-sm"
-                  >
-                    Sustainability
-                  </button>
-                  <button
-                    className="font-light rounded-full 
-                border-2 border-primary-0 py-2 px-4 md:py-1 md:px-2 lg:py-2 lg:px-4
-                text-black text-sm"
-                  >
-                    Food
-                  </button>
-                </div>
-                <div className="pl-4 md:pl-3 lg:pl-4 mt-4">
-                  <p className="font-semibold text-lg">{title}</p>
-                  <p className="mt-4 text-primary-300">
-                    {description.length > 150
-                      ? `${description.substring(0, 150)}...`
-                      : description}
-                  </p>
-                </div>
-                <div className="py-4 flex justify-center">
-                  <button
-                    className="font-light rounded-full w-5/6
-                   border-2 border-collaction-400 py-2 px-4 text-black text-sm"
-                  >
-                    Read More
-                  </button>
-                </div>
-              </div>
-            )
-          )}
+          {projects?.map((crowdAction: CrowdAction) => (
+            <CrowdActionCard
+              key={crowdAction.id}
+              id={crowdAction.id}
+              title={crowdAction.title}
+              type={crowdAction.type}
+              description={crowdAction.description}
+              category={crowdAction.category}
+              subcategory={crowdAction.subcategory}
+              location={crowdAction.location}
+              images={crowdAction.images}
+              participantCount={crowdAction.participantCount}
+              commitmentOptions={crowdAction.commitmentOptions}
+            ></CrowdActionCard>
+          ))}
         </div>
         <div className="mx-auto max-w-400 md:max-w-750 lg:max-w-924 flex justify-center mb-24">
           <Pagination
-            currentPage={currentPage}
-            total={projects.items.length}
+            currentPage={page}
+            total={pagination?.totalPages}
             limit={3}
-            onPageChange={(page: number) => setCurrentPage(page)}
+            onPageChange={async (page: number) => {
+              const element = document.getElementById('crowdActions');
+              element?.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+                inline: 'nearest',
+              });
+
+              await router.push({ query: { page } }, undefined, {
+                scroll: false,
+              });
+            }}
           />
         </div>
         <div className="w-full bg-secondary md:bg-white lg:bg-white py-0 md:py-10 lg:py-10 mx-auto">
@@ -377,29 +345,29 @@ export default function ProjectListPage({
         {/* crowdresearchSection  */}
         <ContentBlock
           // className="pt-10"
-          title={t('projects:crowdresearch.title')}
-          body={t('projects:crowdresearch.description')}
+          title={t('crowdactions:crowdresearch.title')}
+          body={t('crowdactions:crowdresearch.description')}
           // hasBg={false}
         />
         {/* crowdscalingSection  */}
         <ContentBlock
           // className="pt-10"
-          title={t('projects:crowdscaling.title')}
-          body={t('projects:crowdscaling.description')}
+          title={t('crowdactions:crowdscaling.title')}
+          body={t('crowdactions:crowdscaling.description')}
           // hasBg={false}
         />
         {/* crowdactionSection  */}
         <ContentBlock
           // className="pt-10"
-          title={t('projects:crowdaction.title')}
-          body={t('projects:crowdaction.description')}
+          title={t('crowdactions:crowdaction.title')}
+          body={t('crowdactions:crowdaction.description')}
           // hasBg={false}
         />
         {/* crowdimpactSection  */}
         <ContentBlock
           // className="pt-10"
-          title={t('projects:crowdimpact.title')}
-          body={t('projects:crowdimpact.description')}
+          title={t('crowdactions:crowdimpact.title')}
+          body={t('crowdactions:crowdimpact.description')}
           // hasBg={false}
         />
       </main>
@@ -407,9 +375,11 @@ export default function ProjectListPage({
   );
 }
 
-export async function getStaticProps({ locale }: { locale: string }) {
-  const projects = await fetch(
-    'https://devapi.collaction.org/v1/crowdactions?page=1&pageSize=3'
+export async function getServerSideProps({ query, locale }: any) {
+  const page: string = query.page;
+
+  const { items, pageInfo } = await fetch(
+    `https://api.collaction.org/v1/crowdactions?page=${page}&pageSize=3`
   )
     .then(response => response.json())
     .then(data => {
@@ -418,11 +388,12 @@ export async function getStaticProps({ locale }: { locale: string }) {
 
   return {
     props: {
-      projects,
+      projects: items,
+      pagination: pageInfo,
       locale,
       ...(await serverSideTranslations(locale, [
         'common',
-        'projects',
+        'crowdactions',
         'contact',
       ])),
     },
