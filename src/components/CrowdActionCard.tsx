@@ -28,7 +28,7 @@ const staticUrl = process.env.NEXT_PUBLIC_STATIC_URL;
 export default function CrowdActionCard({ ...crowdAction }: CrowdAction) {
   return (
     <div
-      className="bg-white rounded-xl overflow-hidden w-[300px] drop-shadow-lg"
+      className="bg-white rounded-xl overflow-hidden w-[300px] h-[492px] drop-shadow-lg relative"
       key={`${crowdAction.id} card`}
     >
       <Image
@@ -49,15 +49,15 @@ export default function CrowdActionCard({ ...crowdAction }: CrowdAction) {
           {crowdAction.subcategory.toUpperCase()}
         </button>
       </div>
-      <div className="mt-4 px-5">
+      <div className="mt-4 px-5 pb-5">
         <p className="font-bold text-xl">{crowdAction.title}</p>
         <p className="mt-4 text-primary-300 text-sm leading-6">
-          {crowdAction.description.length > 150
-            ? `${crowdAction.description.substring(0, 150)}...`
+          {crowdAction.description.length > 175
+            ? `${crowdAction.description.substring(0, 175)}...`
             : crowdAction.description}
         </p>
       </div>
-      <div className="py-5 px-5 flex justify-center">
+      <div className="py-5 px-5 flex justify-center absolute bottom-0 left-0 right-0">
         <button className="font-bold text-collaction rounded-full w-full border-2 border-collaction-400 py-3 px-4 text-[12px]">
           Read More
         </button>

@@ -11,7 +11,7 @@ module.exports = withBundleAnalyzer({
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
+        protocol: 'http',
         hostname: 'static.collaction.org',
       },
     ],

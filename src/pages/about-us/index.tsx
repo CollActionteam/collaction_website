@@ -159,7 +159,7 @@ export default function AboutUsPage({
         {/* SEE MORE DEALS */}
         <div className="py-8">
           <Link
-            href="/projects/all"
+            href="/crowdactions/all"
             className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 w-72 shadow-lg inset-x-0 mx-auto z-40"
           >
             See All Projects
