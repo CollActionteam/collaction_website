@@ -5,7 +5,7 @@ import InfoCard from 'src/components/InfoCard';
 import AppLinkApple from 'src/components/AppLinkApple';
 import AppLinkGoogle from 'src/components/AppLinkGoogle';
 import Button from 'src/components/Button';
-import DonateCard from 'src/components/DonateCard';
+import DonateCard, { Product } from 'src/components/DonateCard';
 import Faq from 'src/components/Faq';
 import ContactModal from 'src/components/ContactModal';
 import { v4 } from 'uuid';
@@ -18,11 +18,79 @@ import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { InferGetStaticPropsType } from 'next';
 
+const recurringProducts: Product[] = [
+  {
+    id: 'price_1MHDJILB1v8VEQRKcQ0Qv3i1',
+    label: '€5.00',
+    mode: 'subscription',
+  },
+  {
+    id: 'price_1MHDJILB1v8VEQRK9reFOvYc',
+    label: '€10.00',
+    mode: 'subscription',
+  },
+  {
+    id: 'price_1MHDJILB1v8VEQRKWhjQnq7E',
+    label: '€20.00',
+    mode: 'subscription',
+  },
+  {
+    id: 'price_1MHDJILB1v8VEQRKVann4pCn',
+    label: '€50.00',
+    mode: 'subscription',
+  },
+  {
+    id: 'price_1MHDJILB1v8VEQRKBPEvN5Jg',
+    label: '€100.00',
+    mode: 'subscription',
+  },
+  {
+    id: 'price_1MHDJILB1v8VEQRK3v73fJ3p',
+    label: '€250.00',
+    mode: 'subscription',
+  },
+];
+
+const oneTimeProducts: Product[] = [
+  {
+    id: 'price_1MHDJILB1v8VEQRKl9maNuF1',
+    label: '€5.00',
+    mode: 'payment',
+  },
+  {
+    id: 'price_1MHDJILB1v8VEQRKfbdL5pPr',
+    label: '€10.00',
+    mode: 'payment',
+  },
+  {
+    id: 'price_1MHDJILB1v8VEQRKEFs0Jme0',
+    label: '€20.00',
+    mode: 'payment',
+  },
+  {
+    id: 'price_1MHDJILB1v8VEQRKnDNTa1Tr',
+    label: '€50.00',
+    mode: 'payment',
+  },
+  {
+    id: 'price_1MHDJILB1v8VEQRKuPT3xjNP',
+    label: '€100.00',
+    mode: 'payment',
+  },
+  {
+    id: 'price_1MHDJILB1v8VEQRKDItOSCPW',
+    label: 'Other...',
+    mode: 'payment',
+  },
+];
+
 export default function DonatePage(
   _props: InferGetStaticPropsType<typeof getStaticProps>
 ) {
   // translation
   const { t } = useTranslation();
+
+  const [isRecurring, setIsRecurring] = useState(true);
 
   // pull out array of FAQ from translation json
   const faqArray: { question: string; answer: string }[] = t(
@@ -45,6 +113,13 @@ export default function DonatePage(
   // get the textcontent of the button click
   const donateToggleHandler = (event: React.MouseEvent<HTMLButtonElement>) => {
     const { currentTarget: activeButton } = event;
+
+    if (activeButton.textContent === 'Recurring donation') {
+      setIsRecurring(true);
+    } else {
+      setIsRecurring(false);
+    }
+
     const activeButtonText = activeButton.textContent;
     activeButtonText && setDonateCardHeadline(activeButtonText);
     toggleBtnState(activeButton);
@@ -110,8 +185,9 @@ export default function DonatePage(
         <div className="px-6 sm:px-0 pb-10 lg:pb-[80px]">
           <div className="mx-auto sm:max-w-[400px] lg:max-w-[744px] bg-primary-0 rounded-1 p-6">
             <DonateCard
-              headline={recurring}
+              headline={donateCardHeadline}
               donation={donationText}
+              products={isRecurring ? recurringProducts : oneTimeProducts}
               creditCardText={t('donate:formElements.creditCard')}
               continueBtnText={t('donate:formElements.continue')}
               agreement={t('donate:formElements.agreement')}

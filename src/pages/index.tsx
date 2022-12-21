@@ -15,6 +15,7 @@ import CollActionExplanation, {
   Step,
 } from 'src/components/CollActionExplanation';
 import TwoColumnSection from 'src/components/TwoColumnSection';
+import ParticipantsGraphic from 'public/participants_graphic.png';
 
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -149,7 +150,7 @@ export default function HomePage(
             <InfoCard
               title={t('home:commitmentOptionsSection.title')}
               body={t('home:commitmentOptionsSection.description')}
-              className="mx-auto"
+              className="mx-auto mt-8"
             >
               <Image src={CommitmentOptionsGraphic} alt="Crowdaction Card" />
             </InfoCard>
@@ -178,9 +179,9 @@ export default function HomePage(
           isWhiteBg={true}
           mobile={
             <InfoCard
-              title="See the impact we make together"
-              body="Alone we are a drop in the ocean – together we make waves. CollAction always shows you how much of an environmental impact all participants of a CrowdAction have made collectively."
-              className="flex flex-col lg:flex-row lg:items-center"
+              title={t('home:impactSection.title')}
+              body={t('home:impactSection.description')}
+              className="flex flex-col lg:flex-row lg:items-center mt-8"
             >
               <div className="lg:w-11/12 -mb-9">
                 <Image src={AchievementGraphic} alt="Impact Card" />
@@ -201,6 +202,39 @@ export default function HomePage(
               leftAlign={true}
               title={t('home:impactSection.title')}
               body={t('home:impactSection.description')}
+            />
+          }
+        />
+
+        {/* Participation Section */}
+        <TwoColumnSection
+          isReverseOrder={false}
+          isWhiteBg={true}
+          mobile={
+            <InfoCard
+              title={t('home:participantSection.title')}
+              body={t('home:participantSection.description')}
+              className="flex flex-col lg:flex-row lg:items-center mt-8"
+            >
+              <div className="lg:w-11/12 -mb-9">
+                <Image src={ParticipantsGraphic} alt="Participants Card" />
+              </div>
+            </InfoCard>
+          }
+          first={
+            <Image
+              src={ParticipantsGraphic}
+              alt="Participants"
+              className="absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%] h-[90%] w-[70%]"
+            />
+          }
+          second={
+            <InfoCard
+              className="absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%]"
+              hasBg={false}
+              leftAlign={true}
+              title={t('home:participantSection.title')}
+              body={t('home:participantSection.description')}
             />
           }
         />

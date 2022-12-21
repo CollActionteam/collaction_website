@@ -1,13 +1,16 @@
 import React, { useState, useRef } from 'react';
 import { toggleActiveState } from 'src/helpers/toggleDonationState';
+import { Product } from './DonateCard';
 
 interface DonationAmountProps {
-  amount: string;
-  handleDonation: React.Dispatch<React.SetStateAction<string>>;
+  product: Product;
+  isSelected: boolean;
+  handleDonation: React.Dispatch<React.SetStateAction<Product>>;
 }
 
 export default function DonationAmount({
-  amount,
+  product,
+  isSelected,
   handleDonation,
 }: DonationAmountProps) {
   // change input state to receive user input
@@ -25,28 +28,24 @@ export default function DonationAmount({
       setIsReadOnly(false);
       if (inputRef.current) inputRef.current.value = '';
     }
-    handleDonation(activeAmount.value);
+    handleDonation(product);
   };
 
-  // change handler function for the user donation input
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const { value: currentAmount } = event.currentTarget;
-    // might be a good idea to debounce this
-    handleDonation(currentAmount);
+  const handleChange = () => {
+    handleDonation(product);
   };
-
-  // set the initial active donation amount
-  const defaultActiveDonation = amount === '€10.00' ? 'active-donation' : '';
 
   return (
     <input
       type="text"
       ref={inputRef}
-      id={amount}
-      defaultValue={amount}
+      id={product.id}
+      defaultValue={product.label}
       onChange={handleChange}
       className={`w-[144px] lg:w-[153.5px] h-[48px] flex rounded-[10px] text-center 
-      bg-secondary focus:outline-none cursor-pointer ${defaultActiveDonation}`}
+      bg-secondary focus:outline-none cursor-pointer ${
+        isSelected ? 'active-donation' : ''
+      }`}
       onClick={handleClick}
       readOnly={isReadOnly}
     />
