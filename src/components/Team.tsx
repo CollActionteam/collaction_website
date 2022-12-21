@@ -54,7 +54,14 @@ export default function Teams(props: TeamProps) {
   }
 
   return (
-    <section className={clsx('px-5', 'py-1', props.background || '')}>
+    <section
+      className={clsx(
+        'px-5',
+        'py-1',
+        'text-primary-400',
+        props.background || ''
+      )}
+    >
       <div
         className={clsx(
           // 'pb-10',
@@ -75,7 +82,7 @@ export default function Teams(props: TeamProps) {
         {props.description && <p>{props.description}</p>}
       </div>
 
-      <div className="lg:w-[744px] p-0 gap-x-auto mx-auto w-auto p-auto container grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center">
+      <div className="lg:w-[800px] p-0 gap-x-auto mx-auto w-auto p-auto container grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 justify-items-center">
         {team_members}
       </div>
     </section>
