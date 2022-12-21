@@ -3,13 +3,12 @@
     "title": "Het Team",
     "description": ""
   },
-  "joinSection": {
-    "black_title": "sluit je aan bij de",
-    "green_title": "team",
-    "description": "Help mee om goed doen leuk en gemakkelijk te maken"
-  },
   "ourTeamSection": {
     "title": "Het Team",
     "description": "CollAction is een echte internationale organisatie. We werken samen met een team van geweldige vrijwilligers van over de hele wereld."
+  },
+  "joinTeamSection": {
+    "title": "Sluit je aan bij het Team",
+    "description": "Ben jij gedreven, onafhankelijk, proactief en gemotiveerd om deel te worden van CollAction? Stuur ons je CV en motivatiebrief en we komen bij je terug."
   }
 }

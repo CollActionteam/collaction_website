@@ -117,7 +117,7 @@ export default function AboutUsPage({
         {/* View the Whole Team Button*/}
         <div className="py-32">
           <Link
-            href="/join"
+            href="/team"
             className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 w-72 shadow-lg inset-x-0 mx-auto z-40"
           >
             View the whole team

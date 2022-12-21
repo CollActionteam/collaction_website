@@ -125,10 +125,10 @@ export default function NavBar() {
                 Home
               </Link>
               <Link
-                href="/about-us"
+                href="/about"
                 className={clsx(
                   'flex items-center mx-4 md:mx-0 md:ml-8',
-                  router.asPath === '/about-us'
+                  router.asPath === '/about'
                     ? 'text-headline-s-1'
                     : 'text-body-short-1',
                   isInverted ? 'text-secondary' : 'text-primary-300'
@@ -137,16 +137,16 @@ export default function NavBar() {
                 About
               </Link>
               <Link
-                href="/join"
+                href="/team"
                 className={clsx(
                   'flex items-center mx-4 md:mx-0 md:ml-8',
-                  router.asPath === '/join'
+                  router.asPath === '/team'
                     ? 'text-headline-s-1'
                     : 'text-body-short-1',
                   isInverted ? 'text-secondary' : 'text-primary-300'
                 )}
               >
-                Join
+                Team
               </Link>
               <Link
                 href="/projects"

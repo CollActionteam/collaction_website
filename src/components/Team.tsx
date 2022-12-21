@@ -57,8 +57,8 @@ export default function Teams(props: TeamProps) {
     <section className={clsx('px-5', 'py-1', props.background || '')}>
       <div
         className={clsx(
-          'pb-10',
-          'pb-12' && props.name === 'old',
+          // 'pb-10',
+          // 'pb-12' && props.name === 'old',
           'text-center'
         )}
       >

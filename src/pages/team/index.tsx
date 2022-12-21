@@ -22,6 +22,7 @@ import DownloadImg from 'public/download_app.png';
 import HeroImg from 'public/collaction_team.png';
 import { InferGetStaticPropsType } from 'next';
 import PageHero from 'src/components/PageHero';
+import ContentBlock from 'src/components/ContentBlock';
 
 type JoinTagsMapType = {
   [K in JoinTagTokenType]: {
@@ -56,38 +57,43 @@ export default function JoinListPage(
         {/* HERO SETION */}
         <PageHero
           image={HeroImg}
-          title={t('join:hero.title')}
-          description={t('join:hero.description')}
+          title={t('team:hero.title')}
+          description={t('team:hero.description')}
         />
 
         {/* OUR TEAM SECTION */}
-        <div className="text-center mx-auto max-w-350 md:max-w-400 lg:max-w-500 pt-10 pb-6 ">
-          <h1 className="text-headline-m-1 md:text-headline-lg-1 mb-6">
-            {t('join:ourTeamSection.title')}
-          </h1>
-          <p className="text-body-short-1 text-primary-300 px-0 md:px-6 lg:px-20 px-auto">
-            {t('join:ourTeamSection.description')}
-          </p>
-        </div>
+        <ContentBlock
+          className="pt-10"
+          title={t('team:ourTeamSection.title')}
+          body={t('team:ourTeamSection.description')}
+          // hasBg={false}
+        />
 
-        <div className="pb-10">
+        <div className="pb-0">
           <Team name={''} title={''} full_name={''} />
         </div>
 
         {/* JOIN SECTION */}
-        <div className="text-center mx-auto max-w-350 sm:max-w-400 lg:max-w-500 md:mb-10">
+        <ContentBlock
+          // className="pt-10"
+          title={t('team:joinTeamSection.title')}
+          body={t('team:joinTeamSection.description')}
+          // hasBg={false}
+        />
+
+        {/* <div className="text-center mx-auto max-w-350 sm:max-w-400 lg:max-w-500 md:mb-10">
           <h1 className="text-headline-m-1 md:text-headline-lg-1 mb-6">
-            {t('join:joinSection.black_title')}
+            {t('team:teamSection.black_title')}
             <span className="before:content-['_'] text-collaction">
-              {t('join:joinSection.green_title')}
+              {t('team:teamSection.green_title')}
             </span>
           </h1>
-          <p className="text-body-short-1 text-primary-300 pb-8">
-            {t('join:joinSection.description')}
+          <p className="text-body-short-1 text-primary-200 pb-8">
+            {t('team:teamSection.description')}
           </p>
-        </div>
+        </div> */}
 
-        <div className="flex flex-wrap justify-center p-0 gap-x-4 mx-8">
+        <div className="flex flex-wrap justify-center p-0 gap-x-4 mx-8 pt-10">
           {props.data.map(
             ({
               title,
@@ -122,7 +128,7 @@ export default function JoinListPage(
                 </div>
                 <div className="w-full flex justify-end">
                   <Link
-                    href={`/join/as/${title
+                    href={`/team/as/${title
                       .split(' ')
                       .join('-')
                       .toLowerCase()}`}
@@ -170,7 +176,7 @@ export const getStaticProps = async ({ locale }: { locale: string }) => {
     props: {
       data,
       locale,
-      ...(await serverSideTranslations(locale, ['common', 'join'])),
+      ...(await serverSideTranslations(locale, ['common', 'team'])),
     },
   };
 };

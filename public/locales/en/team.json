@@ -1,0 +1,14 @@
+{
+  "hero": {
+    "title": "The Team",
+    "description": ""
+  },
+  "ourTeamSection": {
+    "title": "CollAction is a truly international Team",
+    "description": "We collaborate with volunteers from all over the world, spanning 5 continents and more than 15 countries. Our native app, website and content management system are open source, such that everyone can benefit from it. Below you see the engineers building our digital infrastructure and the ambassadors bringing it into practice!"
+  },
+  "joinTeamSection": {
+    "title": "Join the Team",
+    "description": "Are you dedicated, independent, proactive and eager to join us? Send us your resumé and motivation letter and we'll get in touch."
+  }
+}
