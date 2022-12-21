@@ -75,20 +75,8 @@ export default function Teams(props: TeamProps) {
         {props.description && <p>{props.description}</p>}
       </div>
 
-      <div className="flex lg:w-[744px] p-0 gap-x-auto mx-auto w-auto p-auto">
-        <div className="flex flex-wrap justify-center items-center">
-          {team_members.map(function (object, i) {
-            return (
-              <div
-                className=" flex justify-center items-center w-1/2 md:w-1/3 lg:w-1/4"
-                key={i}
-              >
-                {' '}
-                {object}{' '}
-              </div>
-            );
-          })}
-        </div>
+      <div className="lg:w-[744px] p-0 gap-x-auto mx-auto w-auto p-auto container grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center">
+        {team_members}
       </div>
     </section>
   );
