@@ -149,16 +149,16 @@ export default function NavBar() {
                 Join
               </Link>
               <Link
-                href="/crowdactions"
+                href="/projects"
                 className={clsx(
                   'flex items-center mx-4 md:mx-0 md:ml-8',
-                  router.asPath === '/crowdactions'
+                  router.asPath === '/projects'
                     ? 'text-headline-s-1'
                     : 'text-body-short-1',
                   isInverted ? 'text-secondary' : 'text-primary-300'
                 )}
               >
-                CrowdActions
+                Projects
               </Link>
               <Link
                 href="/donate"
