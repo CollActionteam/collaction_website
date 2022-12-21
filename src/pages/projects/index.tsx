@@ -72,28 +72,28 @@ export default function ProjectListPage({ projects, pagination }: any) {
         {/* HERO SETION */}
         <PageHero
           image={HeroImg}
-          title={t('crowdactions:hero.title')}
-          description={t('crowdactions:hero.description')}
+          title={t('projects:hero.title')}
+          description={t('projects:hero.description')}
         />
 
         {/* howweworkSection  */}
         <ContentBlock
           className="pt-10"
-          title={t('crowdactions:howwework.title')}
-          body={t('crowdactions:howwework.description')}
+          title={t('projects:howwework.title')}
+          body={t('projects:howwework.description')}
           // hasBg={false}
         />
         {/* begSection  */}
         <ContentBlock
           // className="pt-10"
-          title={t('crowdactions:begSection.title')}
-          body={t('crowdactions:begSection.description')}
+          title={t('projects:begSection.title')}
+          body={t('projects:begSection.description')}
           // hasBg={false}
         />
         {/* CrowdActionFor  */}
         <ContentBlock
-          title={t('crowdactions:projectSection.title')}
-          body={t('crowdactions:projectSection.description')}
+          title={t('projects:projectSection.title')}
+          body={t('projects:projectSection.description')}
           // hasBg={false}
         />
 
@@ -108,10 +108,10 @@ export default function ProjectListPage({ projects, pagination }: any) {
                 {/* px-auto */}
                 <div className="max-w-320 sm:max-w-320 lg:max-w-320">
                   <p className="font-bold text-lg mb-4 text-center md:text-left">
-                    {t('crowdactions:crowdaction.title')}
+                    {t('projects:crowdaction.title')}
                   </p>
                   <p className="text-primary-200 text-center md:text-left">
-                    {t('crowdactions:crowdaction.description')}
+                    {t('projects:crowdaction.description')}
                   </p>
                 </div>
               </div>
@@ -137,10 +137,10 @@ export default function ProjectListPage({ projects, pagination }: any) {
             >
               <div className="max-w-320 sm:max-w-320 lg:max-w-320 pt-10 pb-6">
                 <p className="font-bold text-lg mb-4 text-center md:text-left">
-                  {t('crowdactions:explore.title')}
+                  {t('projects:explore.title')}
                 </p>
                 <p className="text-primary-200 text-center md:text-left">
-                  {t('crowdactions:explore.description')}
+                  {t('projects:explore.description')}
                 </p>
               </div>
             </div>
@@ -155,10 +155,10 @@ export default function ProjectListPage({ projects, pagination }: any) {
             >
               <div className="flex justify-between">
                 <p className="font-semibold">
-                  {t('crowdactions:change.filters')}
+                  {t('projects:change.filters')}
                 </p>
                 <button className="font-semibold rounded-full bg-primary-0 pl-6 pr-6 pt-2 pb-2 hidden md:block lg:block">
-                  {t('crowdactions:change.reset')}
+                  {t('projects:change.reset')}
                 </button>
                 <MdOutlineKeyboardArrowUp className="w-7 h-7 block md:hidden font-light" />
               </div>
@@ -173,7 +173,7 @@ export default function ProjectListPage({ projects, pagination }: any) {
                     rounded-full font-light focus:outline-none"
                   >
                     <option value="Status">
-                      {t('crowdactions:change.status')}
+                      {t('projects:change.status')}
                     </option>
                     <option value="b">b</option>
                     <option value="c">c</option>
@@ -190,7 +190,7 @@ export default function ProjectListPage({ projects, pagination }: any) {
                     rounded-full font-light focus:outline-none"
                   >
                     <option value="Status">
-                      {t('crowdactions:change.status')}
+                      {t('projects:change.status')}
                     </option>
                     <option value="b">b</option>
                     <option value="c">c</option>
@@ -207,7 +207,7 @@ export default function ProjectListPage({ projects, pagination }: any) {
                     rounded-full font-light focus:outline-none"
                   >
                     <option value="Status">
-                      {t('crowdactions:change.status')}
+                      {t('projects:change.status')}
                     </option>
                     <option value="b">b</option>
                     <option value="c">c</option>
@@ -217,7 +217,7 @@ export default function ProjectListPage({ projects, pagination }: any) {
               </div>
               <div className="justify-end block md:hidden lg:hidden ">
                 <button className="font-semibold rounded-full bg-primary-0 pl-6 pr-6 pt-2 pb-2 mt-4">
-                  {t('crowdactions:change.reset')}
+                  {t('projects:change.reset')}
                 </button>
               </div>
             </div>
@@ -345,29 +345,29 @@ export default function ProjectListPage({ projects, pagination }: any) {
         {/* crowdresearchSection  */}
         <ContentBlock
           // className="pt-10"
-          title={t('crowdactions:crowdresearch.title')}
-          body={t('crowdactions:crowdresearch.description')}
+          title={t('projects:crowdresearch.title')}
+          body={t('projects:crowdresearch.description')}
           // hasBg={false}
         />
         {/* crowdscalingSection  */}
         <ContentBlock
           // className="pt-10"
-          title={t('crowdactions:crowdscaling.title')}
-          body={t('crowdactions:crowdscaling.description')}
+          title={t('projects:crowdscaling.title')}
+          body={t('projects:crowdscaling.description')}
           // hasBg={false}
         />
         {/* crowdactionSection  */}
         <ContentBlock
           // className="pt-10"
-          title={t('crowdactions:crowdaction.title')}
-          body={t('crowdactions:crowdaction.description')}
+          title={t('projects:crowdaction.title')}
+          body={t('projects:crowdaction.description')}
           // hasBg={false}
         />
         {/* crowdimpactSection  */}
         <ContentBlock
           // className="pt-10"
-          title={t('crowdactions:crowdimpact.title')}
-          body={t('crowdactions:crowdimpact.description')}
+          title={t('projects:crowdimpact.title')}
+          body={t('projects:crowdimpact.description')}
           // hasBg={false}
         />
       </main>
@@ -393,7 +393,7 @@ export async function getServerSideProps({ query, locale }: any) {
       locale,
       ...(await serverSideTranslations(locale, [
         'common',
-        'crowdactions',
+        'projects',
         'contact',
       ])),
     },
