@@ -253,7 +253,7 @@
       "full_name": "You?",
       "photo": "default.png",
       "linkedin_github": "mailto:tom@collaction.org",
-      "role": "",
+      "role": "*",
       "country": ""
     }
   ]

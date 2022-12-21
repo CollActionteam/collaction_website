@@ -108,7 +108,7 @@ export default function JoinListPage(
                 key={`${title} card`}
                 className={clsx('bg-primary-0 p-6 mb-6 rounded-1', 'md:w-1/3')}
               >
-                <h3 className="text-headline-m-1 my-6">{title}</h3>
+                <h3 className="text-headline-m-1">{title}</h3>
                 <p className="text-body-short-1 text-primary-300 mb-6">
                   {description}
                 </p>
