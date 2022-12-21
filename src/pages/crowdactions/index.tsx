@@ -128,7 +128,7 @@ export default function ProjectListPage({ projects, pagination }: any) {
             </div>
           </div>
         </div>
-        <div className="h-auto w-full">
+        <div className="h-auto w-full" id="crowdActions">
           <div className="mx-5 md:mx-5 lg:mx-0">
             <div
               className="h-auto
@@ -255,9 +255,18 @@ export default function ProjectListPage({ projects, pagination }: any) {
             currentPage={page}
             total={pagination?.totalPages}
             limit={3}
-            onPageChange={(page: number) =>
-              router.push({ query: { page } }, undefined, { scroll: false })
-            }
+            onPageChange={async (page: number) => {
+              const element = document.getElementById('crowdActions');
+              element?.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+                inline: 'nearest',
+              });
+
+              await router.push({ query: { page } }, undefined, {
+                scroll: false,
+              });
+            }}
           />
         </div>
         <div className="w-full bg-secondary md:bg-white lg:bg-white py-0 md:py-10 lg:py-10 mx-auto">
