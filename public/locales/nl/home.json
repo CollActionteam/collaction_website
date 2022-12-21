@@ -18,5 +18,9 @@
   "useCollActionSection": {
     "title": "Wilt u CollAction gebruiken voor uw project?",
     "description": "Heeft u een duurzaam initiatief en wilt u een groot publiek bereiken? Neem contact op"
+  },
+  "participantSection": {
+    "title": "Headline about CollAction as social app",
+    "description": "Description about CollAction as social app"
   }
 }
