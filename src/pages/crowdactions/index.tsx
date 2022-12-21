@@ -9,7 +9,6 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import PageHero from 'src/components/PageHero';
 import Image from 'next/image';
 import CollActionLogoWithText from 'public/crowdaction_graphic.png';
-import { MdOutlineKeyboardArrowUp } from 'react-icons/md';
 import TwoColumnSection from 'src/components/TwoColumnSection';
 import InfoCard from 'src/components/InfoCard';
 import AppLinkApple from 'src/components/AppLinkApple';
@@ -147,7 +146,7 @@ export default function ProjectListPage({ projects, pagination }: any) {
             </div>
           </div>
         </div>
-        <div className="h-auto w-full">
+        {/* <div className="h-auto w-full">
           <div className="mx-5">
             <div
               className="h-auto bg-white rounded-lg
@@ -223,17 +222,16 @@ export default function ProjectListPage({ projects, pagination }: any) {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div
           className={`mx-auto w-full h-auto justify-items-center grid 
           ${
             projects.length == 1
-              ? 'grid-cols-1'
+              ? 'grid-cols-1 max-w-400 md:max-w-750 lg:max-w-924'
               : projects.length == 2
-              ? 'grid-cols-1 md:grid-cols-2'
-              : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
+              ? 'grid-cols-1 md:grid-cols-2 max-w-400 md:max-w-750'
+              : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-400 md:max-w-750 lg:max-w-924'
           }
-          max-w-400 md:max-w-750 lg:max-w-924
           mt-6 md:mt-8 lg:mt-8 lg:gap-x-4 gap-y-8`}
         >
           {projects?.map((crowdAction: CrowdAction) => (
