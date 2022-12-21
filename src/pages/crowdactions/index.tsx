@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef } from 'react';
 import PageSEO from 'src/components/PageSEO';
 
 import HeroImg from 'public/placeholder-hero-bg.png';
@@ -30,7 +30,7 @@ export default function ProjectListPage({ projects, pagination }: any) {
   }
 
   const { t } = useTranslation();
-  const [status, setStatus] = useState('Status');
+  // const [status, setStatus] = useState('Status');
 
   const form = useRef<HTMLFormElement>(null);
 
