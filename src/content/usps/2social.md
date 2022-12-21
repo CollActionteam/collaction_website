@@ -5,4 +5,4 @@
   icon: /usp-social-icon.png
 ---
 
-In cooperation with the municipality of Westland, we make it fun and easy for residents to live sustainably. Participants choose their bike instead of their car, isolate their house and save lots of energy. We have positive impact by making it fun and easy!
+CollAction is a social app. See how you and your friends are making progress and challenge each other to do good for the world!

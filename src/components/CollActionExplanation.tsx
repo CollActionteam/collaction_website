@@ -4,6 +4,8 @@ import GoalImg from 'public/home/goal.png';
 import CrowdImg from 'public/home/crowd.png';
 import ActionImg from 'public/home/action.png';
 
+import clsx from 'clsx';
+
 export enum Step {
   GOAL = 0,
   CROWD = 1,
@@ -39,7 +41,10 @@ export default function CollActionExplanation(props: ExplanationProps) {
         className="mx-auto py-6"
         height={150}
       />
-      <p>{props.description}</p>
+
+      <p className={clsx('text-body-long-1 mb-3', 'text-primary-200')}>
+        {props.description}
+      </p>
     </div>
   );
 }

@@ -21,12 +21,13 @@ import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { InferGetStaticPropsType } from 'next';
 import PageHero from 'src/components/PageHero';
+import ContentBlock from 'src/components/ContentBlock';
 
 export async function getStaticProps({ locale }: { locale: string }) {
   return {
     props: {
       locale,
-      ...(await serverSideTranslations(locale, ['common', 'home'])),
+      ...(await serverSideTranslations(locale, ['common', 'home', 'about'])),
     },
   };
 }
@@ -46,7 +47,7 @@ export default function HomePage(
           image={HeroImg}
           title={t('home:hero.title')}
           description={t('home:hero.description')}
-          textColor="collaction"
+          // textColor="collaction"
         />
 
         {/* CROWDACTION EXPLANATION SECTION */}
@@ -56,8 +57,8 @@ export default function HomePage(
               step={Step.GOAL}
               title={
                 <div className="text-2xl font-bold">
-                  <span>Step 1: </span>
-                  <span className="text-collaction">
+                  {/* <span>Step 1: </span> */}
+                  <span className="text-primary-400">
                     {t('common:collActionExplanation.goal.title')}
                   </span>
                 </div>
@@ -68,8 +69,8 @@ export default function HomePage(
               step={Step.CROWD}
               title={
                 <div className="text-2xl font-bold">
-                  <span>Step 2: </span>
-                  <span className="text-collaction">
+                  {/* <span>Step 2: </span> */}
+                  <span className="text-primary-400">
                     {t('common:collActionExplanation.crowd.title')}
                   </span>
                 </div>
@@ -80,8 +81,8 @@ export default function HomePage(
               step={Step.ACTION}
               title={
                 <div className="text-2xl font-bold">
-                  <span>Step 3: </span>
-                  <span className="text-collaction">
+                  {/* <span>Step 3: </span> */}
+                  <span className="text-primary-400">
                     {t('common:collActionExplanation.action.title')}
                   </span>
                 </div>
@@ -90,6 +91,14 @@ export default function HomePage(
             />
           </div>
         </div>
+
+        {/* Mission Vision  */}
+        <ContentBlock
+          className="pt-10 pb-6"
+          title={t('about:missionVision.title')}
+          body={t('about:missionVision.description')}
+          // hasBg={false}
+        />
 
         {/* DOWNLOAD APP SETION */}
         <TwoColumnSection
@@ -233,8 +242,8 @@ export default function HomePage(
               className="absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%]"
               hasBg={false}
               leftAlign={true}
-              title={t('home:participantSection.title')}
-              body={t('home:participantSection.description')}
+              title={t('home:socialSection.title')}
+              body={t('home:socialSection.description')}
             />
           }
         />

@@ -20,6 +20,8 @@ import DownloadImg from 'public/download_app.png';
 import { toast } from 'react-toastify';
 import Pagination from 'src/components/Pagination';
 
+import ContentBlock from 'src/components/ContentBlock';
+
 export default function ProjectListPage({
   projects,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
@@ -77,7 +79,33 @@ export default function ProjectListPage({
 
       <main className="bg-secondary">
         {/* HERO SETION */}
-        <PageHero image={HeroImg} />
+        <PageHero
+          image={HeroImg}
+          title={t('projects:hero.title')}
+          description={t('projects:hero.description')}
+        />
+
+        {/* howweworkSection  */}
+        <ContentBlock
+          className="pt-10"
+          title={t('projects:howwework.title')}
+          body={t('projects:howwework.description')}
+          // hasBg={false}
+        />
+        {/* begSection  */}
+        <ContentBlock
+          // className="pt-10"
+          title={t('projects:begSection.title')}
+          body={t('projects:begSection.description')}
+          // hasBg={false}
+        />
+        {/* CrowdActionFor  */}
+        <ContentBlock
+          title={t('projects:projectSection.title')}
+          body={t('projects:projectSection.description')}
+          // hasBg={false}
+        />
+
         <div className="h-auto w-full mx-auto bg-secondary md:bg-white">
           <div className="mx-5 md:mx-5 lg:mx-0 bg-primary-0 md:bg-white rounded-lg md:rounded-none">
             <div
@@ -344,6 +372,35 @@ export default function ProjectListPage({
               </div>
             </InfoCard>
           }
+        />
+
+        {/* crowdresearchSection  */}
+        <ContentBlock
+          // className="pt-10"
+          title={t('projects:crowdresearch.title')}
+          body={t('projects:crowdresearch.description')}
+          // hasBg={false}
+        />
+        {/* crowdscalingSection  */}
+        <ContentBlock
+          // className="pt-10"
+          title={t('projects:crowdscaling.title')}
+          body={t('projects:crowdscaling.description')}
+          // hasBg={false}
+        />
+        {/* crowdactionSection  */}
+        <ContentBlock
+          // className="pt-10"
+          title={t('projects:crowdaction.title')}
+          body={t('projects:crowdaction.description')}
+          // hasBg={false}
+        />
+        {/* crowdimpactSection  */}
+        <ContentBlock
+          // className="pt-10"
+          title={t('projects:crowdimpact.title')}
+          body={t('projects:crowdimpact.description')}
+          // hasBg={false}
         />
       </main>
     </>

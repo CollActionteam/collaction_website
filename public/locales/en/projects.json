@@ -3,25 +3,41 @@
     "title": "Our Projects",
     "description": ""
   },
+  "howwework": {
+    "title": "How we work",
+    "description": "Organising Collective Action is difficult, especially at scale. Literature, such as books from Olson and Ostrom, treats collective action solely at a hyperlocal scale. The goal of CollAction is to eventually organise Collective Action at global scale. However, network effects tell us that doing so succesfully becomes increasingly more difficult with size. Therefore, we currently focus solely on projects at hyperlocal or local scale. Furthermore, we've developed a four phase procedure that we use to execute a project. Interested? We've provided a full description at the bottom of this page."
+  },
   "begSection": {
-    "title": "Our Products",
-    "description": "CollAction organises 3 types of CrowdActions: CollAction for Business, Education and Governance. Each situation has a unique target audience, social structure and communication channels, so we tailor our CrowdActions accordingly."
+    "title": "CollAction for Business, Education and Governance",
+    "description": "CollAction has three approaches to projects: CollAction for Business, Education and Governance. Each approach has a unique target audience, social structure, communication channels and more. Therefore each type of organisation has a tailored approach."
   },
   "projectSection": {
-    "title": "Take action for a better world",
+    "title": "Take Action for a better world",
     "description": "We work together to achieve your collective action goals"
   },
-  "crowdaction":{
-    "title": "Crowdactions",
-    "description" : "CrowdActions are the basis of our endeavor. It is the common goal of each CrowdAction that unites people of similar convictions"
-  },
-  "explore":{
+  "explore": {
     "title": "Explore CrowdActions",
-    "description" : "Here you can explore all of our upcoming, on-going and previous crowdactions"
+    "description": "Here you can explore all of our upcoming, on-going and previous crowdactions"
   },
-  "change":{
-    "status":"Status",
-    "filters":"Filters",
+  "crowdresearch": {
+    "title": "CrowdResearch",
+    "description": "At the start of a project it is crucial to better understand the crowd, i.e. the target audience. We try to answer questions such as: how does the crowd spend most of its time? What is the social structure? Do there exist any hierarchies? Which communication channels are most popular? After getting a better understanding, we answer questions such as: which goals are realistic? How can we ensure everyone can take part? How can we maximise impact?"
+  },
+  "crowdscaling": {
+    "title": "CrowdScaling",
+    "description": "Now that we have a clearer picture regarding the approach of the project, the next task is to bring it under the attention of the crowd. Together we’ll contact newspapers, companies and any other organisation that likes to promote the CrowdAction. Furthermore, experience shows that in many cases organisations want to do more than simply spread the word - they want to become a partner of the project! This way, everyone can take part in their own way to achieve the shared goal."
+  },
+  "crowdaction": {
+    "title": "CrowdAction",
+    "description": "This is usually a period of one month, where the crowd is united behind the shared goal defined during the CrowdResearch phase. Because it’s only one month instead of something permanent, we can convince a much larger audience to take part. Thanks to our app, website and extra activities we make this month fun and easy for everyone."
+  },
+  "crowdimpact": {
+    "title": "CrowdImpact",
+    "description": "The underlying goal of acting together is to make impact. Therefore, after the CrowdAction we measure the impact made. During the CrowdAction phase we hope to show that it can be fun and easy to adopt more sustainable habits. Most impact is made when these habits survive for a long time."
+  },
+  "change": {
+    "status": "Status",
+    "filters": "Filters",
     "reset": "Reset"
   }
 }
