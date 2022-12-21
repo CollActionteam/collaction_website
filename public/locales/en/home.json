@@ -5,15 +5,19 @@
   },
   "crowdActionSection": {
     "title": "Choose a CrowdAction and make a change today",
-    "description": "Let's eat vegan for a month!"
+    "description": "On our app you can search for CrowdActions that spark your interest. Whether it's food, energy or transport: we can make our habits more sustainable at all fronts. Therefore, take a look and decide how you want to make impact!"
   },
   "commitmentOptionsSection": {
     "title": "Your CrowdAction, your rules",
-    "description": "You decide your pace by choosing your level of commitment"
+    "description": "Have you decided which CrowdAction you'd like to take part in? The app shows which options you can choose from to take part in the CrowdAction, which we call commitments. You decide your pace by choosing your level of commitment."
   },
   "impactSection": {
     "title": "See how your actions make impact",
-    "description": "Together with the crowd, your actions can make a massive impact"
+    "description": "Thanks to the crowd, your individual actions are amplified. After the CrowdAction you can see the collective impact that was made!"
+  },
+  "socialSection": {
+    "title": "See who else from your friends, family, neighbours or colleagues is also taking part",
+    "description": "On the app you can see who else is taking part in a CrowdAction. Team up with friends and family and help each other to reach the end!"
   },
   "useCollActionSection": {
     "title": "Want to use CollAction for your project?",

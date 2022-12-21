@@ -20,12 +20,13 @@ import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { InferGetStaticPropsType } from 'next';
 import PageHero from 'src/components/PageHero';
+import ContentBlock from 'src/components/ContentBlock';
 
 export async function getStaticProps({ locale }: { locale: string }) {
   return {
     props: {
       locale,
-      ...(await serverSideTranslations(locale, ['common', 'home'])),
+      ...(await serverSideTranslations(locale, ['common', 'home', 'about'])),
     },
   };
 }
@@ -89,6 +90,14 @@ export default function HomePage(
             />
           </div>
         </div>
+
+        {/* Mission Vision  */}
+        <ContentBlock
+          className="pt-10 pb-6"
+          title={t('about:missionVision.title')}
+          body={t('about:missionVision.description')}
+          // hasBg={false}
+        />
 
         {/* DOWNLOAD APP SETION */}
         <TwoColumnSection
