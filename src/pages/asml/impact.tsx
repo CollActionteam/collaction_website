@@ -121,7 +121,6 @@ function ImageCard({ card, index }: { card: ImageCard; index: number }) {
           src={card.image}
           alt={card.bottom}
           placeholder="blur"
-          layout="responsive"
           sizes="(max-width: 767px) 350px, 400px"
           className="rounded-1"
         />
@@ -234,13 +233,13 @@ function IconCard({ card, index }: { card: IconCard; index: number }) {
           {card.icon}
         </div>
         {/* title/top text */}
-        <div className="text-primary-200 mb-2">{card.top}</div>
+        <div className="text-primary-300 mb-2">{card.top}</div>
         {/* featured text */}
         <span className="text-collaction text-featured font-bold mb-2">
           {value}
         </span>
         {/* bottom text */}
-        <div className="text-primary-200">{card.bottom}</div>
+        <div className="text-primary-300">{card.bottom}</div>
       </div>
     </div>
   );

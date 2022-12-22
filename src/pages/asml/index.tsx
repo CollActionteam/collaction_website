@@ -46,7 +46,6 @@ export default function ASMLPage({
                 priority
                 src={CollActionLogoWithText}
                 alt="black CollAction logo with text"
-                layout="responsive"
                 placeholder="blur"
                 sizes="128px"
               />
@@ -59,7 +58,6 @@ export default function ASMLPage({
               src={ASMLBanner}
               alt="asml veganuary banner"
               className="rounded-1"
-              layout="responsive"
               sizes="(max-width: 768px) 90vw, 830px"
               placeholder="blur"
             />
@@ -213,14 +211,13 @@ export default function ASMLPage({
             {/* APP CARD */}
             <div className="bg-secondary text-primary-400 max-w-400 w-full rounded-1 px-8 lg:px-13 py-7 pb-0 mb-5 md:mb-7 lg:mr-7 overflow-hidden">
               <h4 className="text-primary-400 mb-5">Make a change today</h4>
-              <p className="text-primary-200">
+              <p className="text-primary-300">
                 Join a CrowdAction you want to be part of.
               </p>
               <div className="block -mb-8 xs:-mb-12">
                 <Image
                   src={AppPreviewCard1}
                   alt="app preview card 1"
-                  layout="responsive"
                   sizes="(min-width: 769px) 275px, 300px"
                   placeholder="blur"
                 />
@@ -230,14 +227,13 @@ export default function ASMLPage({
               <h4 className="text-primary-400 mb-5">
                 Participate at your own pace
               </h4>
-              <p className="text-primary-200 mb-5">
+              <p className="text-primary-300 mb-5">
                 Choose your commitments for the CrowdAction.
               </p>
               <div className="block">
                 <Image
                   src={AppPreviewCard2}
                   alt="app preview card 2"
-                  layout="responsive"
                   sizes="275px"
                   placeholder="blur"
                 />
@@ -248,13 +244,12 @@ export default function ASMLPage({
                 <Image
                   src={AppPreviewCard3}
                   alt="app preview card 3"
-                  layout="responsive"
                   sizes="275px"
                   placeholder="blur"
                 />
               </div>
               <h4 className="text-primary-400 mb-5">Join the wave</h4>
-              <p className="text-primary-200">Make impact together.</p>
+              <p className="text-primary-300">Make impact together.</p>
             </div>
           </div>
         </div>
@@ -344,7 +339,6 @@ function ImageCard({ card, index }: { card: ImageCard; index: number }) {
           src={card.image}
           alt={card.bottom}
           placeholder="blur"
-          layout="responsive"
           sizes="(max-width: 767px) 350px, 400px"
           className="rounded-1"
         />
@@ -458,13 +452,13 @@ function IconCard({ card, index }: { card: IconCard; index: number }) {
           {card.icon}
         </div>
         {/* title/top text */}
-        <div className="text-primary-200 mb-2">{card.top}</div>
+        <div className="text-primary-300 mb-2">{card.top}</div>
         {/* featured text */}
         <span className="text-collaction text-featured font-bold mb-2">
           {value}
         </span>
         {/* bottom text */}
-        <div className="text-primary-200">{card.bottom}</div>
+        <div className="text-primary-300">{card.bottom}</div>
       </div>
     </div>
   );

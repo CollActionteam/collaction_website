@@ -15,16 +15,23 @@ import CollActionExplanation, {
   Step,
 } from 'src/components/CollActionExplanation';
 import TwoColumnSection from 'src/components/TwoColumnSection';
+import ParticipantsGraphic from 'public/participants_graphic.png';
 
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { InferGetStaticPropsType } from 'next';
+import PageHero from 'src/components/PageHero';
+import ContentBlock from 'src/components/ContentBlock';
+import Quote from 'src/components/Quote';
+
+import Faq from 'src/components/Faq';
+import { v4 } from 'uuid';
 
 export async function getStaticProps({ locale }: { locale: string }) {
   return {
     props: {
       locale,
-      ...(await serverSideTranslations(locale, ['common', 'home'])),
+      ...(await serverSideTranslations(locale, ['common', 'home', 'donate'])),
     },
   };
 }
@@ -34,27 +41,26 @@ export default function HomePage(
 ) {
   const { t } = useTranslation();
 
+  // pull out array of FAQ from translation json
+  const faqArray: { question: string; answer: string }[] = t(
+    'donate:faq.items',
+    {
+      returnObjects: true,
+    }
+  );
+
   return (
     <>
       <PageSEO title="CollAction | Sustainable choices made easy" />
 
       <main className="bg-secondary">
         {/* HERO SETION */}
-        <div className="min-h-[520px] md:min-h-[70vh] w-full relative">
-          <Image
-            src={HeroImg}
-            alt="hero image"
-            fill
-            style={{ objectFit: 'cover' }}
-          />
-          <div className="absolute bottom-0 min-h-[420px] md:min-h-[50vh] w-full bg-gradient-to-t from-black via-black opacity-50"></div>
-          <div className="w-full absolute bottom-8 md:bottom-20 px-6 md:px-20">
-            <h1 className="text-collaction text-5xl md:text-6xl lg:text-7xl">
-              {t('home:hero.title')}
-            </h1>
-            <p className="text-collaction pt-5">{t('home:hero.description')}</p>
-          </div>
-        </div>
+        <PageHero
+          image={HeroImg}
+          title={t('home:hero.title')}
+          description={t('home:hero.description')}
+          // textColor="collaction"
+        />
 
         {/* CROWDACTION EXPLANATION SECTION */}
         <div className="bg-white py-8">
@@ -63,8 +69,8 @@ export default function HomePage(
               step={Step.GOAL}
               title={
                 <div className="text-2xl font-bold">
-                  <span>Step 1: </span>
-                  <span className="text-collaction">
+                  {/* <span>Step 1: </span> */}
+                  <span className="text-primary-400">
                     {t('common:collActionExplanation.goal.title')}
                   </span>
                 </div>
@@ -75,8 +81,8 @@ export default function HomePage(
               step={Step.CROWD}
               title={
                 <div className="text-2xl font-bold">
-                  <span>Step 2: </span>
-                  <span className="text-collaction">
+                  {/* <span>Step 2: </span> */}
+                  <span className="text-primary-400">
                     {t('common:collActionExplanation.crowd.title')}
                   </span>
                 </div>
@@ -87,8 +93,8 @@ export default function HomePage(
               step={Step.ACTION}
               title={
                 <div className="text-2xl font-bold">
-                  <span>Step 3: </span>
-                  <span className="text-collaction">
+                  {/* <span>Step 3: </span> */}
+                  <span className="text-primary-400">
                     {t('common:collActionExplanation.action.title')}
                   </span>
                 </div>
@@ -98,11 +104,35 @@ export default function HomePage(
           </div>
         </div>
 
+        {/* Quote Sjoerd */}
+        <Quote
+          // className="pt-10 pb-6"
+          isSecondaryBg={true}
+          quote={t('home:sjoerd.quote')}
+          name={t('home:sjoerd.name')}
+          position={t('home:sjoerd.position')}
+          // hasBg={false}
+        />
+
+        {/* Mission Vision  */}
+        <ContentBlock
+          className="pt-10 pb-10"
+          isSecondaryBg={false}
+          title={t('home:missionVision.title')}
+          body={t('home:missionVision.description')}
+          // hasBg={false}
+        />
+
         {/* DOWNLOAD APP SETION */}
         <TwoColumnSection
           isReverseOrder={false}
           first={
-            <Image src={DownloadImg} alt="Download App" className="mx-auto" />
+            <Image
+              src={DownloadImg}
+              alt="Download App"
+              className="mx-auto"
+              width={450}
+            />
           }
           second={
             <InfoCard
@@ -136,7 +166,7 @@ export default function HomePage(
             <Image
               src={CrowdActionGraphic}
               alt="CrowdAction"
-              className="absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%]"
+              className="absolute top-[50%] left-[50%] transform translate-y-[-40%] translate-x-[-50%]"
             />
           }
           second={
@@ -157,7 +187,7 @@ export default function HomePage(
             <InfoCard
               title={t('home:commitmentOptionsSection.title')}
               body={t('home:commitmentOptionsSection.description')}
-              className="mx-auto"
+              className="mx-auto mt-8"
             >
               <Image src={CommitmentOptionsGraphic} alt="Crowdaction Card" />
             </InfoCard>
@@ -180,15 +210,49 @@ export default function HomePage(
           }
         />
 
-        {/* IMPACT SECTION */}
+        {/* SOCIAL SECTION */}
         <TwoColumnSection
           isReverseOrder={true}
           isWhiteBg={true}
           mobile={
             <InfoCard
-              title="See the impact we make together"
-              body="Alone we are a drop in the ocean – together we make waves. CollAction always shows you how much of an environmental impact all participants of a CrowdAction have made collectively."
-              className="flex flex-col lg:flex-row lg:items-center"
+              title={t('home:socialSection.title')}
+              body={t('home:socialSection.description')}
+              className="flex flex-col lg:flex-row lg:items-center mt-8"
+            >
+              <div className="lg:w-11/12 -mb-9">
+                <Image src={ParticipantsGraphic} alt="Participants Card" />
+              </div>
+            </InfoCard>
+          }
+          first={
+            <Image
+              src={ParticipantsGraphic}
+              alt="Participants"
+              height={400}
+              className="absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%]"
+            />
+          }
+          second={
+            <InfoCard
+              className="absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%]"
+              hasBg={false}
+              leftAlign={true}
+              title={t('home:socialSection.title')}
+              body={t('home:socialSection.description')}
+            />
+          }
+        />
+
+        {/* IMPACT SECTION */}
+        <TwoColumnSection
+          isReverseOrder={false}
+          isWhiteBg={false}
+          mobile={
+            <InfoCard
+              title={t('home:impactSection.title')}
+              body={t('home:impactSection.description')}
+              className="flex flex-col lg:flex-row lg:items-center mt-8"
             >
               <div className="lg:w-11/12 -mb-9">
                 <Image src={AchievementGraphic} alt="Impact Card" />
@@ -198,8 +262,9 @@ export default function HomePage(
           first={
             <Image
               src={AchievementGraphic}
+              // height={300}
               alt="Achievement"
-              className="absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%] h-[90%] w-[70%]"
+              className="absolute top-[50%] left-[50%] transform translate-y-[-40%] translate-x-[-50%] h-[100%] w-[70%]"
             />
           }
           second={
@@ -213,6 +278,21 @@ export default function HomePage(
           }
         />
 
+        {/* FAQ */}
+        <div className="w-full px-6 bg-primary-0 py-14">
+          <h3
+            className="mx-auto max-w-350 md:max-w-400 lg:max-w-[744px] lg:text-center lg:headline-lg-1 pb-8 lg:pb-9
+          font-bold text-primary-400"
+          >
+            {t('donate:faq.title')}
+          </h3>
+          <div className="mx-auto flex flex-col max-w-350 sm:max-w-400 lg:max-w-[744px] gap-y-4">
+            {faqArray.map(({ question, answer }) => (
+              <Faq key={v4()} question={question} answer={answer} />
+            ))}
+          </div>
+        </div>
+
         {/* USE COLLACTION SECTION */}
         <div
           className="pt-16 relative text-center mx-auto xs:max-w-350 sm:max-w-400 lg:max-w-600 rounded-none xs:rounded-1"
@@ -222,9 +302,8 @@ export default function HomePage(
             <Image
               src={TomTomImg}
               alt="CollAction Team"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-none xs:rounded-1"
+              fill={true}
+              className="rounded-none xs:rounded-1 object-cover"
             />
           </div>
           <div

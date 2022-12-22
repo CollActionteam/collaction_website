@@ -3,20 +3,33 @@
     "title": "Wij maken goed doen leuk en gemakkelijk",
     "subtitle": ""
   },
+  "missionVision": {
+    "title": "Missie & Visie",
+    "description": "Onze visie is om alle collectieve-actieproblemen in de wereld, zoals klimaatverandering, op te lossen. Wij geloven in een positieve, bottom-up benadering. Dit doen we door het simpel en aantrekkelijk te maken voor gebruikers om deel te nemen in CrowdActions: duurzame (maandelijkse) acties. Zo verbindt CollAction mensen om een positieve gezamenlijke impact te maken - Power to the Crowd! Wij geloven dat dit de enige manier is om een menigte te bereiken die steden, landen en continenten overstijgt. Daarom is onze missie om goed doen leuk en makkelijk te maken! Wil je weten hoe we dit precies doen? Neem een kijkje op onze Projects-pagina."
+  },
+  "sjoerd": {
+    "quote": "\"CollAction gebruikt creatieve en innovatieve methodes om collectieve-actieproblemen op internationale schaal op te lossen. Zowel literatuur als empirische studies laten zien dat dit een zeer ingewikkeld probleem is. CollAction's benadering van het leuk en gemakkelijk maken op hyperlokale schaal is uniek, hard nodig en veelbelovend voor de toekomst!\"",
+    "name": "Sjoerd Kluiving",
+    "position": "Associate Professor op Vrije Universiteit Amsterdam"
+  },
   "crowdActionSection": {
     "title": "Kies een CrowdAction en maak vandaag nog het verschil",
-    "description": "Laten we een maand veganist zijn!"
+    "description": "Op onze app kun je zoeken naar CrowdActions die je interesseren. Of het nou voedsel, energie of transport is: we kunnen onze gewoonten duurzamer maken op alle fronten. Neem daarom een kijkje en kies hoe jij impact wilt maken!"
   },
   "commitmentOptionsSection": {
     "title": "Jouw CrowdAction, jouw regels",
-    "description": "Jij bepaalt zelf op welk niveau je meedoet"
+    "description": "Heb je gekozen aan welke CrowdAction je wilt deelnemen? De app laat zien welke opties er precies zijn om deel te nemen, wat we commitments noemen. Jij kiest je tempo door zelf te bepalen aan welke commitments jij je wilt houden."
+  },
+  "socialSection": {
+    "title": "Bekijk wie nog meer meedoen in de CrowdAction",
+    "description": "Vorm een team samen met vrienden, familie, buren en collega's om elkaar gemotiveerd te houden tot het einde van de CrowdAction!"
   },
   "impactSection": {
     "title": "Zie hoe je acties impact maken",
-    "description": "Dankzij de groep wordt de impact van jouw actie versterkt"
+    "description": "Dankzij de massa worden jouw individuele acties vergroot. Na de CrowdAction kun je de collectieve impact op ons platform bekijken!"
   },
   "useCollActionSection": {
-    "title": "Wilt u CollAction gebruiken voor uw project?",
-    "description": "Heeft u een initiatief voor collectieve actie en wilt u een groot publiek bereiken? Stuur een mail naar join@collaction.org"
+    "title": "Geïnteresseerd?",
+    "description": "Heb je een duurzaam initiatief en wil je een groot publiek bereiken? Neem contact op!"
   }
 }

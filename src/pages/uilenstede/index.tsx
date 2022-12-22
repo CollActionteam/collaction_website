@@ -13,7 +13,7 @@ import AppLinkGoogle from 'src/components/AppLinkGoogle';
 // const whatsAppUrl = '#';
 // const ikDoeMeeUrl = '#';
 
-export default function WestlandIndexPage() {
+export default function UilenstedeIndexPage() {
   return (
     <>
       <PageSEO
@@ -33,7 +33,6 @@ export default function WestlandIndexPage() {
             src={Uilenstede_banner}
             alt="westland banner"
             className="rounded-1"
-            layout="responsive"
             sizes="(max-width: 768px) 90vw, 830px"
             placeholder="blur"
           />
@@ -190,6 +189,33 @@ export default function WestlandIndexPage() {
             </a>
             .
           </p>
+          <p className="mb-8">
+            *September 17 is
+            <a
+              className="text-collaction"
+              href="https://www.nationalcleanupday.org/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {' '}
+              National CleanUp Day
+            </a>
+            , so <strong> GroenLinks Amstelveen</strong> joins!
+          </p>
+          <h4 className="text-collaction mb-4 mt-6">Contact us</h4>
+          <p className="mb-6">
+            Would you like to contact us, e.g. when you cannot find us? Send a
+            WhatsApp message to +31625351135 or an email to{' '}
+            <a
+              className="text-collaction"
+              href="mailto:tom@collaction.org"
+              target="_blank"
+              rel="noreferrer"
+            >
+              tom@collaction.org
+            </a>
+            .
+          </p>
         </div>
 
         <div className="relative block w-full md:w-11/12 lsm:max-w-600 lg:max-w-600 mx-auto mt-6 mb-6">
@@ -198,7 +224,6 @@ export default function WestlandIndexPage() {
             src={Uilenstede_map}
             alt="westland banner"
             className="rounded-1"
-            layout="responsive"
             sizes="(max-width: 768px) 90vw, 830px"
             placeholder="blur"
           />
@@ -209,7 +234,7 @@ export default function WestlandIndexPage() {
           title="Download the app"
           body="Reserve a litter pick-up stick and join us!"
         >
-          <div className="flex justify-center mb-6">
+          <div className="flex justify-center">
             <AppLinkApple className="mr-4 sm:mr-5" />
             <AppLinkGoogle />
           </div>
@@ -372,7 +397,6 @@ export default function WestlandIndexPage() {
             src={Collaboration}
             alt="uilenstede banner"
             className="rounded-1"
-            layout="responsive"
             sizes="(max-width: 768px) 90vw, 830px"
             placeholder="blur"
           />

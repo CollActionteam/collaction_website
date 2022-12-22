@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import { DefaultSeo } from 'next-seo';
 
@@ -11,7 +10,7 @@ import * as gtag from 'src/components/Analytics/gtag';
 import 'src/styles/globals.css';
 import { appWithTranslation } from 'next-i18next';
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp(appProps: any) {
   const router = useRouter();
 
   useEffect(() => {
@@ -30,7 +29,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <DefaultSeo {...SEO} />
       <NavBar />
-      <Component {...pageProps} />
+      <appProps.Component {...appProps.pageProps} />
       <Footer />
       <Analytics />
     </>

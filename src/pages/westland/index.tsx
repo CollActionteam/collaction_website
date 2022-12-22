@@ -44,7 +44,6 @@ export default function WestlandIndexPage() {
             src={WestlandBanner}
             alt="westland banner"
             className="rounded-1"
-            layout="responsive"
             sizes="(max-width: 768px) 90vw, 830px"
             placeholder="blur"
           />
@@ -262,9 +261,8 @@ export default function WestlandIndexPage() {
             <Image
               src={TomTomImg}
               alt="CollAction Team"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-none xs:rounded-1"
+              fill={true}
+              className="rounded-none xs:rounded-1 object-cover"
             />
           </div>
           <div
@@ -312,7 +310,6 @@ export default function WestlandIndexPage() {
           src={WestlandBanner2}
           alt="westland banner"
           className="rounded-1"
-          layout="responsive"
           sizes="(max-width: 768px) 90vw, 830px"
           placeholder="blur"
         />
@@ -324,7 +321,7 @@ export default function WestlandIndexPage() {
         // href={ikDoeMeeUrl}
       >
         <PopupButton id={formId} size={80}>
-          <button>Ik doe mee</button>
+          Ik doe mee
         </PopupButton>
         {/* Ik doe mee */}
       </a>
@@ -382,7 +379,6 @@ function ImageCard({ card, index }: { card: ImageCard; index: number }) {
           src={card.image}
           alt={card.bottom}
           placeholder="blur"
-          layout="responsive"
           sizes="(max-width: 767px) 350px, 400px"
           className="rounded-1"
         />

@@ -1,0 +1,48 @@
+{
+  "hero": {
+    "title": "Our Projects",
+    "description": ""
+  },
+  "howwework": {
+    "title": "How we work",
+    "description": "Organising Collective Action is difficult, especially at scale. Literature, such as books from Olson and Ostrom, mostly discusses collective action at a hyperlocal scale. The goal of CollAction is to eventually organise Collective Action at global scale. However, network effects tell us that doing so succesfully becomes increasingly more difficult with size. Therefore, we currently focus solely on projects at hyperlocal or local scale. Furthermore, we've developed a four phase procedure that we use to execute a project. Interested? We've provided a full description at the bottom of this page."
+  },
+  "begSection": {
+    "title": "Our three project types",
+    "description": "CollAction runs three types of projects: CollAction for Business, Education and Governance. CollAction for Business targets employees and employers that want to motivate colleagues to do something fun and make positive impact at the same time. CollAction for Education is meant for schools, ranging from elemantary schools to Universities. CollAction for Governance mainly targets municipalities, where we try to help reach citizens. Each project type has its own target audience, social structure, communication channels and more. Therefore, each type of project receives a tailored approach."
+  },
+  "tom": {
+    "quote": "\"CollAction helped us greatly to set up Veganuary internally by arranging a cooking workshop, promotions from vegan restaurants, and tracking our impact. We had a fun and impactful collaborative challenge!\"",
+    "name": "Tom Tacken",
+    "position": "Board member of Green ASML"
+  },
+  "projectSection": {
+    "title": "Your project on our platform?",
+    "description": "For each project, we create dedicated CrowdActions in the app and a project webpage. On the app it's possible to enroll as a participant in the CrowdAction. On the webpage users can find all relevant information about the project, such as events, discounts and more. Besides making the project more fun and easy, our digital platform allows the project to be scalable to any size."
+  },
+  "crowdresearch": {
+    "title": "1 - CrowdResearch",
+    "description": "At the start of a project it is crucial to better understand the crowd, i.e. the target audience. We try to answer questions such as: how does the crowd spend most of its time? What is the social structure? Do there exist any hierarchies? Which communication channels are most popular? After getting a better understanding, we answer questions such as: which goals are realistic? How can we ensure everyone can take part? How can we maximise impact?"
+  },
+  "crowdscaling": {
+    "title": "2 - CrowdScaling",
+    "description": "Now that we have a clearer picture regarding the approach of the project, the next task is to bring it under the attention of the crowd. Together we’ll contact newspapers, companies and any other organisation that likes to promote the CrowdAction. Furthermore, experience shows that in many cases organisations want to do more than simply spread the word - they want to become a partner of the project! This way, everyone can take part in their own way to achieve the shared goal."
+  },
+  "crowdaction": {
+    "title": "3 - CrowdAction",
+    "description": "This is usually a period of one month, where the crowd is united behind the shared goal defined during the CrowdResearch phase. Because it’s only one month instead of something permanent, we can convince a much larger audience to take part. Thanks to our app, website and extra activities we make this month fun and easy for everyone."
+  },
+  "crowdimpact": {
+    "title": "4 - CrowdImpact",
+    "description": "The underlying goal of acting together is to make impact. Therefore, after the CrowdAction we measure the impact made. During the CrowdAction phase we hope to show that it can be fun and easy to adopt more sustainable habits. Most impact is made when these habits survive for a long time."
+  },
+  "explore": {
+    "title": "Explore CrowdActions",
+    "description": "Check out all our upcoming, ongoing and previous CrowdActions here."
+  },
+  "change": {
+    "status": "Status",
+    "filters": "Filters",
+    "reset": "Reset"
+  }
+}

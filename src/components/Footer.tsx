@@ -33,7 +33,6 @@ export default function Footer() {
             <Image
               src={CollActionLogoWithText}
               alt="black CollAction logo with text"
-              layout="responsive"
               placeholder="blur"
               sizes="160px"
             />
@@ -68,7 +67,7 @@ export default function Footer() {
           <h5 className="text-headline mb-5">Reach us</h5>
           <ul className="list-none">
             <li className="mb-5 md:mb-0">
-              <a href={`tel:${phone}`}>+316 25351135</a>
+              <a href={`tel:${phone}`}>{phone}</a>
             </li>
             <li className="mb-5 md:mb-0">
               <a href={`mailto:${email}`}>hello@collaction.org</a>
@@ -105,12 +104,7 @@ export default function Footer() {
           aria-label="Powered By Vercel"
           className="block w-40 md:mx-auto md:mt-5"
         >
-          <Image
-            src={PoweredByVercel}
-            alt="Powered by Vercel"
-            layout="responsive"
-            sizes="160px"
-          />
+          <Image src={PoweredByVercel} alt="Powered by Vercel" sizes="160px" />
         </a>
       </div>
     </footer>
