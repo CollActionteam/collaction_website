@@ -8,8 +8,8 @@
     "description": "Organising Collective Action is difficult, especially at scale. Literature, such as books from Olson and Ostrom, mostly discusses collective action at a hyperlocal scale. The goal of CollAction is to eventually organise Collective Action at global scale. However, network effects tell us that doing so succesfully becomes increasingly more difficult with size. Therefore, we currently focus solely on projects at hyperlocal or local scale. Furthermore, we've developed a four phase procedure that we use to execute a project. Interested? We've provided a full description at the bottom of this page."
   },
   "begSection": {
-    "title": "Our three approaches",
-    "description": "CollAction has three approaches to projects: CollAction for Business, Education and Governance. CollAction for Business targets employees and employers that want to motivate colleagues to do something fun and make positive impact at the same time. CollAction for Education is meant for schools, ranging from elemantary schools to Universities. CollAction for governance mainly targets municipalities, where we try to help reach citizens. Each approach has its own target audience, social structure, communication channels and more. Therefore each type of organisation has a tailored approach."
+    "title": "Our three project types",
+    "description": "CollAction runs three types of projects: CollAction for Business, Education and Governance. CollAction for Business targets employees and employers that want to motivate colleagues to do something fun and make positive impact at the same time. CollAction for Education is meant for schools, ranging from elemantary schools to Universities. CollAction for Governance mainly targets municipalities, where we try to help reach citizens. Each project type has its own target audience, social structure, communication channels and more. Therefore, each type of project receives a tailored approach."
   },
   "tom": {
     "quote": "\"CollAction helped us greatly to set up Veganuary internally by arranging a cooking workshop, promotions from vegan restaurants, and tracking our impact. We had a fun and impactful collaborative challenge!\"",
@@ -38,7 +38,7 @@
   },
   "explore": {
     "title": "Explore CrowdActions",
-    "description": "Check out all our upcoming, ongoing and previous CrowdActions from our app here."
+    "description": "Check out all our upcoming, ongoing and previous CrowdActions here."
   },
   "change": {
     "status": "Status",
