@@ -5,10 +5,26 @@
   },
   "ourTeamSection": {
     "title": "Het Team",
-    "description": "CollAction is een echte internationale organisatie. We werken samen met een team van geweldige vrijwilligers van over de hele wereld."
+    "description": "CollAction is een zeer internationale organisatie. We werken samen met een team van geweldige vrijwilligers van over de hele wereld."
   },
   "joinTeamSection": {
     "title": "Sluit je aan bij het Team",
     "description": "Ben jij gedreven, onafhankelijk, proactief en gemotiveerd om deel te worden van CollAction? Stuur ons je CV en motivatiebrief en we komen bij je terug."
+  },
+  "vacancy1": {
+    "title": "Ontwikkelaar",
+    "description": "Je bent een ervaren (senior) ontwikkelaar die excelleert in studie of persoonlijke projecten. Je hebt meerdere succesvolle applicaties gebouwd van begin tot eind en weet hoe je dingen gedaan krijgt. Je hebt professionele ervaring, maar je wil meer doen naast je normale baan. Je wil je horizon verbreden, nieuwe dingen leren of in een internationale omgeving werken. Samen met een team van gelijkgestemden maak je de digitale infrastructuur van CollAction nog beter."
+  },
+  "vacancy2": {
+    "title": "Hoofd Marketing",
+    "description": "Je bent een ervaren marketeer, vanuit je studie of persoonlijke projecten, die weet hoe campagnes op te zetten, content te schrijven en effectief social media in te zetten. Je bent ondernemend, vol met initiatief en hebt gevoel voor het snijvlak tussen sociaal ondernemerschap en de groene gemeenschap. Je kunt een marketing plan van begin tot eind opzetten en uitvoeren."
+  },
+  "vacancy3": {
+    "title": "Product Ontwerper",
+    "description": "Je geeft het merk CollAction vorm door het verbeteren van de UX/UI van onze native applicatie, website en meer. Je hoeft nog geen designer te zijn. Wat belangrijk is, is dat je bereid bent de ins en outs van productontwerp te leren en dat je geïnteresseerd bent in het bouwen van aantrekkelijke, on-brand digitale ervaringen."
+  },
+  "vacancy4": {
+    "title": "Project Manager",
+    "description": "Je bent het centrum van een project. Je kunt een project van begin tot eind vormgeven, opschalen en uitvoeren. Je communiceert met alle relevante partijen, zoals de klant, kranten en lokale organisaties. Je vindt manieren om dingen te doen die in het begin onmogelijk leken. Je neemt verantwoordelijkheid en doet alles binnen je macht om het project een succes te maken."
   }
 }

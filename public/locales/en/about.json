@@ -24,9 +24,21 @@
     "title": "What makes CollAction unique",
     "description": "CollAction is growing rapidly because many people believe in and support our purpose. We distinguish ourselves from similar platforms by having a technology-first approach. By far most volunteers are engineers that build the digital infrastructure of the CollAction platform. This results in the following unique selling points:"
   },
+  "usp1": {
+    "title": "International",
+    "description": "Engineers from all over the world help to improve the CollAction platform. The team grows larger every month, meaning we get increasingly more capacity to improve functionality, reliability, scalability and more. Many initiatives similar to CollAction do not have the engineering capacity to keep growing the platform. We do."
+  },
+  "usp2": {
+    "title": "Social",
+    "description": "CollAction is a social app. Namely, to make our CrowdActions fun, we strongly believe in the social component. On our app it's possible to see who of your friends are taking part in a CrowdAction, which commitments they picked, chat about topics of interest and much more. This is not straightforward to build, but thanks to the impressive skillset of our engineers we are able to do this!"
+  },
+  "usp3": {
+    "title": "Tailor-Made",
+    "description": "Collective Action is very difficult. Therefore, we help clients from start to end with all steps necessary to run a successful CrowdAction. We have gained a lot of experience from previous projects, which helps to estimate what might work and what doesn't. The result is a tailor-made project based on the wishes of both crowd and client."
+  },
   "projects": {
     "title": "Our projects",
-    "description": "Interested in the projects we do? Click the button below to see a complete overview!"
+    "description": "With our projects we target a specific area or organisation to make collective impact. Interested in our approach or the projects we did? Click on the button below for a complete overview!"
   },
   "collAction": {
     "title": "We connect people to solve collective action problems"

@@ -1,11 +1,11 @@
 {
   "hero": {
-    "title": "Doneer om onze missie te ondersteunen",
+    "title": "Doneer en steun onze missie",
     "description": ""
   },
   "donateTextSection": {
     "title": "Word donateur",
-    "paragraphOne": "Onze donateurs zorgen ervoor dat wij door kunnen gaan met het oplossen van collectieve-actieproblemen. Dankzij hen kunnen we een grotere doelgroep bereiken en onze app in de cloud draaien. Kortom: Het stelt ons in staat om door te gaan met proberen om de wereld een betere plek maken.",
+    "paragraphOne": "Onze donateurs zorgen ervoor dat wij door kunnen gaan met collectieve-actieproblemen oplossen. Dankzij hen kunnen we een grotere doelgroep bereiken en onze app in de cloud draaien. Kortom: het stelt ons in staat om door te gaan met positieve impact maken. In ruil krijg je na een donatie volledig inzicht in onze uitgaven zodat je weet waar je geld aan wordt besteed. Voor genereuze donateurs organiseren wij een jaarlijks veganistisch diner samen met het CollAction-team. Daarnaast krijgen deze donateurs een speciale geupcyclede CollAction-tas, gemaakt van chipszakken.",
     "paragraphTwo": "In ruil krijg je na een donatie volledig inzicht in al onze uitgaven zodat je weet waar je geld aan wordt besteed. Voor genereuze donateurs organiseren wij een jaarlijks veganistisch diner samen met het CollAction-team. Daarnaast krijgen deze donateurs een speciale upcycled CollAction tas, gemaakt van chipszakken.",
     "contact": "Voor vragen over doneren",
     "link": "contacteer ons"
@@ -15,10 +15,10 @@
     "single": "Ik wil CollAction steunen met een eenmalige donatie"
   },
   "formElements": {
-    "recurring": "Herhalende donatie",
+    "recurring": "Terugkerende donatie",
     "oneTime": "Eenmalige donatie",
     "continue": "Verder",
-    "creditCard": "Heeft u geen credit card? Geen probleem. Selecteer SEPA Direct Debit in de volgende stap.",
+    "creditCard": "Heb je geen credit card? Geen probleem. Selecteer 'SEPA Direct Debit' in de volgende stap.",
     "agreement": "Door te doneren gaat u akkoord met onze",
     "policy": "Privacyvoorwaarden"
   },
@@ -31,11 +31,11 @@
       },
       {
         "question": "Wat kan CollAction doen voor mijn organisatie?",
-        "answer": "CollAction ontwerpt per klant op maat gemaakte Acties en voert ze vervolgens uit. Geef ons een SDG-gerelateerd thema en een doelstelling en wij stellen een CrowdAction er omheen voor. Samen met u zetten we vervolgens de puntjes op de i om de succeskans te vergroten. Geïnteresseerd? Vul het contactformulier in en wij komen bij u terug."
+        "answer": "CollAction ontwerpt per klant op maat gemaakte Acties en voert ze vervolgens uit. Geef ons een SDG-gerelateerd thema en een doelstelling en wij stellen een CrowdAction er omheen voor. Samen met u zetten we vervolgens de puntjes op de i om de succeskans te maximaliseren. Geïnteresseerd? Vul het contactformulier in en wij komen bij u terug."
       },
       {
-        "question": "Is CollAction gratis?",
-        "answer": "Ja! CollAction is 100% gratis voor gebruikers nu en in de toekomst. CollAction haalt haar inkomsten uit CrowdFunding en door CrowdActions te draaien voor bedrijven, onderwijsinstellingen en overheidsorganisaties."
+        "question": "Is de CollAction-app gratis te downloaden?",
+        "answer": "Ja! De CollAction-app is 100% gratis voor gebruikers nu en in de toekomst. CollAction haalt haar inkomsten uit donaties en door CrowdActions te draaien voor bedrijven, onderwijsinstellingen en overheidsorganisaties."
       }
     ]
   }

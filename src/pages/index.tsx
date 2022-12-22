@@ -210,10 +210,44 @@ export default function HomePage(
           }
         />
 
-        {/* IMPACT SECTION */}
+        {/* SOCIAL SECTION */}
         <TwoColumnSection
           isReverseOrder={true}
           isWhiteBg={true}
+          mobile={
+            <InfoCard
+              title={t('home:socialSection.title')}
+              body={t('home:socialSection.description')}
+              className="flex flex-col lg:flex-row lg:items-center mt-8"
+            >
+              <div className="lg:w-11/12 -mb-9">
+                <Image src={ParticipantsGraphic} alt="Participants Card" />
+              </div>
+            </InfoCard>
+          }
+          first={
+            <Image
+              src={ParticipantsGraphic}
+              alt="Participants"
+              height={400}
+              className="absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%]"
+            />
+          }
+          second={
+            <InfoCard
+              className="absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%]"
+              hasBg={false}
+              leftAlign={true}
+              title={t('home:socialSection.title')}
+              body={t('home:socialSection.description')}
+            />
+          }
+        />
+
+        {/* IMPACT SECTION */}
+        <TwoColumnSection
+          isReverseOrder={false}
+          isWhiteBg={false}
           mobile={
             <InfoCard
               title={t('home:impactSection.title')}
@@ -240,40 +274,6 @@ export default function HomePage(
               leftAlign={true}
               title={t('home:impactSection.title')}
               body={t('home:impactSection.description')}
-            />
-          }
-        />
-
-        {/* SOCIAL SECTION */}
-        <TwoColumnSection
-          isReverseOrder={false}
-          isWhiteBg={false}
-          mobile={
-            <InfoCard
-              title={t('home:participantSection.title')}
-              body={t('home:participantSection.description')}
-              className="flex flex-col lg:flex-row lg:items-center mt-8"
-            >
-              <div className="lg:w-11/12 -mb-9">
-                <Image src={ParticipantsGraphic} alt="Participants Card" />
-              </div>
-            </InfoCard>
-          }
-          first={
-            <Image
-              src={ParticipantsGraphic}
-              alt="Participants"
-              height={400}
-              className="absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%]"
-            />
-          }
-          second={
-            <InfoCard
-              className="absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%]"
-              hasBg={false}
-              leftAlign={true}
-              title={t('home:socialSection.title')}
-              body={t('home:socialSection.description')}
             />
           }
         />

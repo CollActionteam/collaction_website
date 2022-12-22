@@ -1,7 +1,7 @@
 ---
   publish: true
   title: Product Designer
-  description: Shaping the CollAction brand by improving UX/UI of native application, web and more. You need not be a designer (yet). What matters is that you are willing to learn the ins and outs of product design and that you are interested in building beautiful, on-brand digital experiences.
+  description: You're shaping the CollAction brand by improving the UX/UI of our native application, web and more. You need not be a designer (yet). What matters is that you are willing to learn the ins and outs of product design and that you are interested in building beautiful, on-brand digital experiences.
 
   tags: ['voluntary', 'remote']
   location: Remote

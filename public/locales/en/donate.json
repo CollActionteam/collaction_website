@@ -1,11 +1,11 @@
 {
   "hero": {
-    "title": "Donate to support our mission",
+    "title": "Donate and support our mission",
     "description": ""
   },
   "donateTextSection": {
     "title": "Become a donor",
-    "paragraphOne": "Our donors allow us to keep on solving collective action problems. They allow us to reach a bigger audience and run our app in the cloud. In short: they allow us to keep trying to make positve impact. In return, if you become a donor you get full insight into all our expenses so you know what we do with your donation. For generous donors we organise a yearly vegan dinner together with other donors and the CollAction team. Additionally, these donors receive a special upcycled CollAction bag made from recycled chips bags!",
+    "paragraphOne": "Our donors allow us to keep on solving collective action problems. They allow us to reach a bigger audience and run our app in the cloud. In short: they allow us to keep making positive impact. In return, if you become a donor you get full insight into our expenses so you know what we do with your donation. For generous donors we organise a yearly vegan dinner together with other donors and the CollAction team. Additionally, these donors receive a special upcycled CollAction bag made from recycled chips bags!",
     "paragraphTwo": "For generous donors we organise a yearly vegan dinner together with other donors and the CollAction team. Additionally, these donors receive a special upcycled CollAction bag made from recycled chips bags!",
     "contact": "For questions about donating please",
     "link": "contact us"
@@ -31,7 +31,7 @@
       },
       {
         "question": "What can CollAction do for my organisation?",
-        "answer": "CollAction designs and executes tailor made Actions for each client. Give us an SDG related theme and a goal and we'll suggest a CrowdAction around it. Together with you we can fine tune the set up to make it work well. Interested? Fill in the contact form and we'll get back to you."
+        "answer": "CollAction designs and executes tailor-made Actions for each client. Give us an SDG-related theme and a goal and we'll suggest a CrowdAction around it. Together with you we can fine tune the set up to maximize the probability of success. Interested? Fill in the contact form and we'll get back to you."
       },
       {
         "question": "Is CollAction free to download?",

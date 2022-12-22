@@ -10,5 +10,21 @@
   "joinTeamSection": {
     "title": "Join the Team",
     "description": "Are you dedicated, independent, proactive and eager to join us? Send us your resumé and motivation letter and we'll get in touch."
+  },
+  "vacancy1": {
+    "title": "Engineer",
+    "description": "You're an experiened (senior) developer or engineer that excels at personal projects and/or studies. You've successfully built multiple applications from start to end and know how to get things done. You have professional experience, but you want more besides your regular job. You want to broaden your scope, learn new things or work in an international environment. Together with a team of like minded individuals, you'll be building the digital infrastructure of CollAction."
+  },
+  "vacancy2": {
+    "title": "Head of Marketing",
+    "description": "You're an experienced marketeer, either from studies or personal projects, that knows how to set up campaigns, write content and use social media effectively. You're entrepreneurial, full of initiative and have a feeling for the intersection between social entrepreneurship and the green community. You can set up a marketing plan from start to end and execute it."
+  },
+  "vacancy3": {
+    "title": "Product Designer",
+    "description": "You're shaping the CollAction brand by improving the UX/UI of our native application, web and more. You need not be a designer (yet). What matters is that you are willing to learn the ins and outs of product design and that you are interested in building beautiful, on-brand digital experiences."
+  },
+  "vacancy4": {
+    "title": "Project Manager",
+    "description": "You are the core of a project. You can shape, scale and carry a project from start to end. You communicate with all relevant parties, such as the client, newspapers and local organisations. You find ways to do things that seem impossible at the start. You take responsibility and will do everything in your power to make the project a success."
   }
 }
