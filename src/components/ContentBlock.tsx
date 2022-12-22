@@ -4,7 +4,7 @@ type ContentBlockTypes = {
   isSecondaryBg?: boolean;
   // hasBg?: boolean;
   leftAlign?: boolean;
-  title: string;
+  title?: string;
   body?: string | JSX.Element;
   children?: React.ReactNode;
   className?: string;

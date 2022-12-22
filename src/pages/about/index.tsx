@@ -12,7 +12,6 @@ import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { InferGetStaticPropsType } from 'next';
 
-import { ProjectCard } from 'src/components/ProjectCard';
 import { UspCard } from 'src/components/UspCard';
 import { getProjectsData } from 'src/lib/getProjects';
 import { getUspsData } from 'src/lib/getUsps';
@@ -59,27 +58,46 @@ export default function AboutUsPage({
         /> */}
 
         {/* Mission Vision  */}
-        <ContentBlock
+        {/* <ContentBlock
           className="pt-10"
           title={t('about:missionVision.title')}
           body={t('about:missionVision.description')}
           // hasBg={false}
-        />
+        /> */}
 
-        {/* History  */}
-        <ContentBlock
-          // className="pt-10"
-          title={t('about:history.title')}
-          body={t('about:history.description')}
-          // hasBg={false}
-        />
-
-        {/* WhatWeDo  */}
-        <ContentBlock
-          className="pb-10"
-          title={t('about:whatWeDo.title')}
-          body={t('about:whatWeDo.description')}
-          // hasBg={false}
+        <TwoColumnSection
+          isReverseOrder={false}
+          isWhiteBg={false}
+          mobile={
+            <div>
+              {/* History  */}
+              <ContentBlock
+                title={t('about:history.title')}
+                body={t('about:history.description')}
+                className="w-5/6 flex flex-col lg:flex-row lg:items-center mt-10"
+              />
+              {/* WhatWeDo  */}
+              <ContentBlock
+                title={t('about:whatWeDo.title')}
+                body={t('about:whatWeDo.description')}
+                className="w-5/6 flex flex-col lg:flex-row lg:items-center mt-10"
+              />
+            </div>
+          }
+          first={
+            <ContentBlock
+              title={t('about:history.title')}
+              body={t('about:history.description')}
+              className="w-5/6 flex flex-col lg:flex-row lg:items-center mt-10"
+            />
+          }
+          second={
+            <ContentBlock
+              title={t('about:whatWeDo.title')}
+              body={t('about:whatWeDo.description')}
+              className="w-5/6 flex flex-col lg:flex-row lg:items-center mt-10"
+            />
+          }
         />
 
         <div className="h-[24.375rem] sm:h-[34.375rem] relative">
@@ -126,10 +144,11 @@ export default function AboutUsPage({
 
         {/* USP  */}
         <ContentBlock
-          className="pb-8"
+          className="pb-16"
           title={t('about:usp.title')}
           body={t('about:usp.description')}
           // hasBg={false}
+          leftAlign={false}
         />
 
         <div className="mb-0 last:mb-0">
@@ -143,24 +162,25 @@ export default function AboutUsPage({
 
         {/* Our Projects  */}
         <ContentBlock
-          // className="pt-10"
-          title="Our projects"
-          body="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint."
+          className="pt-10"
+          title={t('about:projects.title')}
+          body={t('about:projects.description')}
           // hasBg={false}
+          leftAlign={false}
         />
 
-        <div className="mb-0 last:mb-0">
+        {/* <div className="mb-0 last:mb-0">
           <div className="flex flex-wrap justify-center mx-auto md:max-w-864">
             {projects.map(project => (
               <ProjectCard key={project.title} {...project} whiteBg={true} />
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* SEE MORE DEALS */}
         <div className="py-8">
           <Link
-            href="/projects/all"
+            href="/projects"
             className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 w-72 shadow-lg inset-x-0 mx-auto z-40"
           >
             See All Projects

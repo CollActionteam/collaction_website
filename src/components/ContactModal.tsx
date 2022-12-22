@@ -53,16 +53,15 @@ export default function ContactModal({ setShowContactModal }: Props) {
           onSubmit={sendEmail}
         >
           <p className="text-primary-400 text-2xl font-bold mt-6">
-            Get in touch with us
+            Do you have a question?
+          </p>
+          <p className="text-black text-lg mt-6 font-light">Get in touch!</p>
+          {/* <p className="text-black text-lg mt-6 font-light">
+            Please fill in your details below and we'll get back to you.
           </p>
           <p className="text-black text-lg mt-6 font-light">
-            Have feedback? Want to collaborate?
-          </p>
-          <p className="text-black text-lg mt-6 font-light">
-            Send a message to us and will get back
-            <br />
-            to you <span className="text-primary-300 font-bold">ASAP</span>
-          </p>
+            Tell us your details and we'll get back to you.
+          </p> */}
           <input
             type="email"
             name="email"
@@ -71,7 +70,7 @@ export default function ContactModal({ setShowContactModal }: Props) {
             placeholder="Your email address"
           ></input>
           <p className="text-primary-400 text-sm">
-            We will send our response to your email address
+            We'll send our response to this email address
           </p>
           <textarea
             name="message"

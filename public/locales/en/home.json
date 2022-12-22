@@ -3,6 +3,10 @@
     "title": "We make doing good fun and easy",
     "description": ""
   },
+  "missionVision": {
+    "title": "Mission & Vision",
+    "description": "Our vision is to solve all collective action problems in the world, such as climate change. We believe in a positive, bottom-up approach. We do so by making it simple and enjoyable for users to take part in CrowdActions, sustainable (monthly) challenges. Therefore, CollAction connects people to make positive impact together - Power to the Crowd!  We believe this is the only way to reach a crowd that crosses cities, countries and continents. Therefore, our mission is to make doing good fun and easy! Want to know how we do this exactly? Take a look at our Projects page."
+  },
   "crowdActionSection": {
     "title": "Choose a CrowdAction and make a change today",
     "description": "On our app you can search for CrowdActions that spark your interest. Whether it's food, energy or transport: we can make our habits more sustainable at all fronts. Therefore, take a look and decide how you want to make impact!"
@@ -24,7 +28,7 @@
     "description": "Description about CollAction as social app"
   },
   "useCollActionSection": {
-    "title": "Want to use CollAction for your project?",
+    "title": "Interested?",
     "description": "Do you have a sustainable initiative and would you like to reach a large crowd? Contact us"
   },
   "sjoerd": {

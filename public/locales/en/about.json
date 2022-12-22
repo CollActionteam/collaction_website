@@ -3,10 +3,6 @@
     "title": "About us",
     "description": ""
   },
-  "missionVision": {
-    "title": "Make doing good fun and easy",
-    "description": "Our vision is to solve all collective action problems in the world, such as climate change. We believe in a positive, bottom-up approach. We do so by making it simple and enjoyable for users to take part in CrowdActions, sustainable (monthly) challenges. Therefore, CollAction connects people to make positive impact together - Power to the Crowd!  We believe this is the only way to reach a crowd that crosses cities, countries and continents. Therefore, our mission is to make doing good fun and easy! Want to know how we do this exactly? Take a look at our Projects page."
-  },
   "history": {
     "title": "History",
     "description": "CollAction was founded in 2016 by Ron van den Akker and Spencer Heijnen. After great successes with fashion-related CrowdActions, their team decided to focus solely on SlowFashion in 2020. Since we still strongly believe that there's room for CollAction in this world, we formed a new team in 2021 that is rapidly expanding and ready to take on the challenges of today."
@@ -27,6 +23,10 @@
   "usp": {
     "title": "What makes CollAction unique",
     "description": "CollAction is growing rapidly because many people believe in and support our purpose. We distinguish ourselves from similar platforms by having a technology-first approach. By far most volunteers are engineers that build the digital infrastructure of the CollAction platform. This results in the following unique selling points:"
+  },
+  "projects": {
+    "title": "Our projects",
+    "description": "Interested in the projects we do? Click the button below to see a complete overview!"
   },
   "collAction": {
     "title": "We connect people to solve collective action problems"

@@ -62,7 +62,7 @@ export default function JoinListPage(
 
         {/* OUR TEAM SECTION */}
         <ContentBlock
-          className="pt-10"
+          className="pt-10 pb-8"
           title={t('team:ourTeamSection.title')}
           body={t('team:ourTeamSection.description')}
           // hasBg={false}
