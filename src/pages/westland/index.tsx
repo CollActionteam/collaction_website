@@ -124,7 +124,6 @@ export default function WestlandIndexPage() {
           />
         </div>
 
-
         <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-500 mt-10 md:mt-10">
           <h4 className="text-primary-400 mb-2">
             Goed voor het milieu én je portemonnee
