@@ -3,21 +3,42 @@
     "title": "Onze projecten",
     "description": ""
   },
+  "howwework": {
+    "title": "Hoe we te werk gaan",
+    "description": "Het organiseren van Collectieve Actie is moeilijk, zeker op grote schaal. Literatuur, zoals boeken van Olson en Ostrom, beschrijft Collectieve Actie alleen op hyperlokale schaal. Het doel van CollAction is om Collectieve Actie te organiseren op globale schaal. Netwerkeffecten zorgen er echter voor dat de complexiteit snel toeneemt naarmate de schaal groter wordt. Zodoende focussen we ons nu uitsluitend op hyperlokale en lokale projecten. Hiervoor hebben we een procedure van vier fasen ontwikkeld, die we gebruiken om een project uit te voeren. Geïnteresseerd? Hieronder lichten we onze aanpak per fase toe."
+  },
   "begSection": {
-    "title": "CollAction voor Bedrijven, Scholen en Gemeenten",
-    "description": "CollAction organiseert 3 types CrowdActions: CollAction voor Bedrijven, Educatie en Gemeenten. Elke situatie heeft een unieke doelgroep, sociale structuur en communicatiekanalen, dus hierop stemmen we onze CrowdActions af."
+    "title": "Onze drie projecttypen",
+    "description": "CollAction organiseert 3 typen projecten: CollAction voor Bedrijven, Educatie en Overheid. CollAction voor Bedrijven richt zich op werknemers en werkgevers die collega's willen motiveren om iets leuks te doen en tegelijkertijd positieve impact te maken. CollAction voor Educatie is bedoeld voor scholen, variërend van basisscholen tot universiteiten. CollAction voor Overheid richt zich op gemeenten, waarbij we proberen te helpen bij het in beweging brengen van bewoners. Elke projecttype heeft een unieke doelgroep, sociale structuur, communicatiekanalen en meer. Vandaar dat elk projecttype een op maat gemaakte aanpak krijgt."
+  },
+  "tom": {
+    "quote": "\"CollAction heeft ons enorm geholpen met het intern opzetten van Veganuary. CollAction heeft een kookworkshop georganiseerd, promoties bij veganistische restaurants geregeld en onze impact gemeten. We hebben een leuke en impactvolle gezamenlijke actie gehad!\"",
+    "name": "Tom Tacken",
+    "position": "Bestuurslid van Green ASML"
   },
   "projectSection": {
-    "title": "Onderneem actie voor een betere wereld",
-    "description": "We werken samen om onze collectieve-actiedoelen te bereiken"
+    "title": "Jouw project op ons platform?",
+    "description": "Voor elk project creëeren we specifieke CrowdActions in onze app en maken we een project-webpagina. Op de app kun je je aanmelden als deelnemer. Op de webpagina kunnen gebruikers alle relevante informatie vinden over het project, zoals evenementen, kortingsacties en meer. Naast het leuker en gemakkelijker maken, zorgt ons digitale platform ervoor dat een project tot elke schaal vergroot kan worden."
+  },
+  "crowdresearch": {
+    "title": "1 - CrowdResearch",
+    "description": "Aan het begin van een project is het cruciaal om de relevante menigte beter te begrijpen. We proberen vragen te beantwoorden als: hoe spendeert de menigte haar tijd? Wat is de sociale structuur? Zijn er hiërarchieën aanwezig? Welke communicatiekanalen zijn het populairst? Na een beter beeld te hebben gekregen, beantwoorden we vragen als: Welke doelen zijn realistisch? Hoe verzekeren we dat iedereen mee kan doen? Hoe maximaliseren we impact?"
+  },
+  "crowdscaling": {
+    "title": "2 - CrowdScaling",
+    "description": "Nu we een beter beeld hebben over de aanpak van het project, is de volgende stap om onder de aandacht te komen van de menigte. Samen contacten we kranten, bedrijven en andere organisaties die de CrowdAction willen promoten. Vaak zien we dat organisaties verder willen gaan dan alleen het woord verspreiden: ze willen partner worden van het project! Hierdoor kan iedereen deelnemen op zijn of haar eigen manier om zo het gezamenlijke doel te behartigen."
   },
   "crowdaction": {
-    "title": "CrowdActions",
-    "description": "CrowdActions vormen de basis van ons streven. Het is het gemeenschappelijke doel van elke CrowdAction om mensen met dezelfde overtuigingen te verenigen"
+    "title": "3 - CrowdAction",
+    "description": "Dit is normaal gesproken een periode van een maand, waarin de menigte verenigd wordt achter het gezamenlijke doel dat tijdens de CrowdResearch-fase is vastgesteld. Omdat het maar één maand is in plaats van permanent, halen we veel meer mensen over om mee te doen. Dankzij de app, website en extra activiteiten maken we deze maand gemakkelijk en leuk voor iedereen."
+  },
+  "crowdimpact": {
+    "title": "4 - CrowdImpact",
+    "description": "Het onderliggende doel van gezamenlijk actie ondernemen is positieve impact te maken. Daarom meten we na de CrowdAction de collectieve impact die gemaakt is. Tijdens de CrowdAction-fase hopen we te laten zien dat het leuk en gemakkelijk kan zijn om duurzamere gewoonten aan te leren. De meeste impact wordt vervolgens gemaakt als deze gewoonten voor een lange tijd blijven bestaan."
   },
   "explore": {
     "title": "Ontdek CrowdActions",
-    "description": "Hier kun je al onze aankomende, lopende en eerdere crowdactions ontdekken"
+    "description": "Bekijk al onze komende, lopende en afgelopen CrowdActions hier."
   },
   "change": {
     "status": "Status",

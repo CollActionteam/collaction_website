@@ -17,6 +17,7 @@ import PageHero from 'src/components/PageHero';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { InferGetStaticPropsType } from 'next';
+import ContentBlock from 'src/components/ContentBlock';
 
 const recurringProducts: Product[] = [
   {
@@ -143,7 +144,16 @@ export default function DonatePage(
           alt="CollAction team members standing"
         />
 
-        <div className="pt-10 lg:pt-[80px]">
+        {/* Donation text  */}
+        <ContentBlock
+          className="pt-10"
+          isSecondaryBg={true}
+          title={t('donate:donateTextSection.title')}
+          body={t('donate:donateTextSection.paragraphOne')}
+          // hasBg={false}
+        />
+
+        {/* <div className="pt-10 lg:pt-[80px]">
           <div className="mx-auto sm:max-w-[400px] lg:max-w-[520px] px-6 sm:px-0">
             <h3 className="mb-7 text-3xl">
               {t('donate:donateTextSection.title')}
@@ -164,7 +174,7 @@ export default function DonatePage(
               </button>
             </p>
           </div>
-        </div>
+        </div> */}
 
         {/* donation toggler element */}
         <div className="flex gap-4 mt-10 mb-6 mx-auto max-w-350 h-[47px] px-5">
@@ -182,6 +192,7 @@ export default function DonatePage(
           </Button>
         </div>
 
+        {/* donation card */}
         <div className="px-6 sm:px-0 pb-10 lg:pb-[80px]">
           <div className="mx-auto sm:max-w-[400px] lg:max-w-[744px] bg-primary-0 rounded-1 p-6">
             <DonateCard
@@ -196,6 +207,7 @@ export default function DonatePage(
           </div>
         </div>
 
+        {/* FAQ */}
         <div className="w-full px-6 bg-primary-0 py-14">
           <h3
             className="mx-auto max-w-350 md:max-w-400 lg:max-w-[744px] lg:text-center lg:headline-lg-1 pb-8 lg:pb-9
@@ -210,6 +222,7 @@ export default function DonatePage(
           </div>
         </div>
 
+        {/* Download App */}
         <div className="pt-7 lg:pt-9 px-6 sm:px-0">
           <InfoCard
             isSecondaryBg

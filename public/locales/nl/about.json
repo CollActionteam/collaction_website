@@ -3,29 +3,44 @@
     "title": "Over ons",
     "description": ""
   },
-  "missionVision": {
-    "title": "Wij maken goed doen leuk en gemakkelijk",
-    "description": "Het oplossen van alle collectieve-actieproblemen in de wereld"
-  },
   "history": {
     "title": "Geschiedenis",
-    "description": "CollAction is opgericht in 2016 door Ron van den Akker en Spencer Heijnen. Na grote successen met mode-gerelateerde CrowdActions besloot hun team in 2020 zich uitsluitend te focussen op slow fashion. Aangezien wij sterk van mening zijn dat er nog steeds ruimte is voor CollAction in deze wereld, hebben wij in 2021 een nieuw, snel groeiend team gevormd die gereed is om de problemen van vandaag aan te pakken."
+    "description": "CollAction is opgericht in 2016 door Ron van den Akker en Spencer Heijnen. Na grote successen met mode-gerelateerde CrowdActions besloot hun team in 2020 zich uitsluitend te focussen op SlowFashion. Aangezien wij sterk van mening zijn dat er nog steeds ruimte is voor CollAction in deze wereld, hebben wij in 2021 een nieuw team gevormd dat snel groeit en gereed staat voor de problemen van vandaag."
   },
   "whatWeDo": {
     "title": "Wat we momenteel doen",
-    "description": "Na succesvolle projecten in Eindhoven, Amstelveen en Westland, zijn we momenteel CrowdActions aan het voorbereiden voor februari en april. Daarnaast wordt er hard gewerkt aan de nieuwe versies van onze app om het nog leuker en gemakkelijker te maken. Als laatste maken we onszelf bekend op verschillende platforms en zoals altijd is ons team van ontwikkelaars en ambassadeurs in constante uitbreiding!"
+    "description": "Na meerdere succesvolle projecten zijn we nu aan het voorbereiden voor grotere projecten in februari en april. Daarnaast wordt er hard gewerkt aan de nieuwste versie van onze app, met daarin allerlei nieuwe functionaliteiten, om het nog leuker en gemakkelijker te maken! Als laatste maken we ons bekender op verschillende platformen en zoals altijd is ons team van ontwikkelaars en ambassadeurs in constante uitbreiding!"
   },
   "memberQuote": {
     "firstName": "Ruben",
     "lastName": "Horn",
     "quote": "De uitspraak 'ik maak toch geen verschil' is geen acceptabel excuus meer. Kleine stappen zijn ook stappen!",
-    "title": "Senior Engineer"
+    "title": "Senior Ontwikkelaar"
+  },
+  "wholeteam": {
+    "title": "Bekijk het hele Team"
   },
   "usp": {
     "title": "Wat maakt CollAction uniek",
-    "description": "This is a paragraph about our USPs"
+    "description": "CollAction groeit snel, omdat veel mensen in onze missie geloven en deze ondersteunen. We onderscheiden onszelf van vergelijkbare platformen door de grote rol die technologie speelt binnen onze organisatie. Veruit de meeste vrijwilligers zijn ontwikkelaars die de digitale infrastructuur van het CollAction-platform uitbouwen. Dit resulteert in de volgende onderscheidende eigenschappen:"
+  },
+  "usp1": {
+    "title": "Internationaal",
+    "description": "Ontwikkelaars van over de hele wereld helpen het CollAction-platform te verbeteren. Het team groeit voortdurend, waardoor we steeds meer capaciteit hebben om functionaliteit, betrouwbaarheid, schaalbaarheid en meer te verbeteren. Veel vergelijkbare initiatieven hebben geen capaciteit om hun platform blijvend te ontwikkelen. Wij wel."
+  },
+  "usp2": {
+    "title": "Sociaal",
+    "description": "CollAction is een sociale app. Wij geloven sterk dat, om onze CrowdActions leuk te maken, een sociale component essentieel is. Op onze app is het daarom mogelijk om te zien wie van je vrienden deelnemen aan een CrowdAction, welke commitments zij gekozen hebben, te chatten over wat je interesseert en nog veel meer. Dit is niet gemakkelijk om te bouwen, maar dankzij de indrukwekkende capaciteiten van onze ontwikkelaars kunnen we dit doen!"
+  },
+  "usp3": {
+    "title": "Op maat gemaakt",
+    "description": "Collectieve Actie is bijzonder moeilijk. Daarom helpen we klanten van begin tot eind met alle benodigde stappen om een succesvolle CrowdAction te draaien. We hebben veel ervaring opgedaan bij eerdere projecten, wat ons helpt in te schatten wat kan werken en wat niet. Het resultaat is een op maat gemaakt project gebaseerd op de wensen van zowel de massa als klant."
+  },
+  "projects": {
+    "title": "Onze projecten",
+    "description": "Met projecten richten we ons op een specifieke locatie of organisatie om collectieve impact te maken. Geïnteresseerd in onze aanpak of de projecten die we gedaan hebben? Klik op de knop hieronder voor een volledige overzicht!"
   },
   "collAction": {
-    "title": "We connect people to solve collective action problems"
+    "title": "Wij verbinden mensen om collectieve-actieproblemen op te lossen"
   }
 }

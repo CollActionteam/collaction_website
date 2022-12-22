@@ -1,11 +1,27 @@
 {
   "members": [
     {
+      "name": "Alex",
+      "full_name": "Alex",
+      "photo": "alexjin_grey.png",
+      "linkedin_github": "https://www.linkedin.com/in/alexjin28",
+      "role": "Engineer",
+      "country": "bg"
+    },
+    {
+      "name": "Andre",
+      "full_name": "Andre",
+      "photo": "andrehui_bw_square.jpg",
+      "linkedin_github": "https://linkedin.com/in/andre-tm-hui",
+      "role": "Engineer",
+      "country": "ca"
+    },
+    {
       "name": "Chigozie",
       "full_name": "Chigozie",
       "photo": "Chigozie_bw.jpeg",
       "linkedin_github": "https://www.linkedin.com/in/chigozie-nwokoye-335891163",
-      "role": "Dev",
+      "role": "Engineer",
       "country": "ng"
     },
     {
@@ -21,7 +37,7 @@
       "full_name": "Derrick",
       "photo": "derrick_bw.jpeg",
       "linkedin_github": "https://www.linkedin.com/in/derrick-williamson/",
-      "role": "Dev",
+      "role": "Engineer",
       "country": "us"
     },
     {
@@ -31,6 +47,22 @@
       "linkedin_github": "https://www.linkedin.com/in/diego-romero-lovo-3926a6ab/",
       "role": "Lead CMS",
       "country": "pe"
+    },
+    {
+      "name": "Francisco",
+      "full_name": "Francisco",
+      "photo": "Francisco_square_bw.jpeg",
+      "linkedin_github": "https://www.linkedin.com/in/francisco-barbosa-824566153/",
+      "role": "Engineer",
+      "country": "pt"
+    },
+    {
+      "name": "Fredrick",
+      "full_name": "Fredrick",
+      "photo": "fredrick_square_bw.jpeg",
+      "linkedin_github": "https://github.com/fredabisai",
+      "role": "Engineer",
+      "country": "tz"
     },
     {
       "name": "Gilles",
@@ -45,7 +77,7 @@
       "full_name": "Gnoulelem",
       "photo": "gnoulelem_bw.jpeg",
       "linkedin_github": "https://www.linkedin.com/in/gnoulelem-sibabi-b30857213/?originalSubdomain=tg",
-      "role": "Dev",
+      "role": "Engineer",
       "country": "tg"
     },
     {
@@ -55,6 +87,30 @@
       "linkedin_github": "https://linkedin.com/in/obella-isaac-3bb759aa",
       "role": "Lead App",
       "country": "ug"
+    },
+    {
+      "name": "Jose",
+      "full_name": "Jose",
+      "photo": "josebanega_square_bw.jpeg",
+      "linkedin_github": "https://www.linkedin.com/in/jose-banega/",
+      "role": "Engineer",
+      "country": "de"
+    },
+    {
+      "name": "Joshua",
+      "full_name": "Joshua",
+      "photo": "joshua_bw_square.jpeg",
+      "linkedin_github": "https://www.linkedin.com/in/software-joshua-burleson/",
+      "role": "Backend Architect",
+      "country": "us"
+    },
+    {
+      "name": "Jsxclan",
+      "full_name": "Jsxclan",
+      "photo": "jsxclan_bw_square.jpeg",
+      "linkedin_github": "https://github.com/jsxclan",
+      "role": "Engineer",
+      "country": "ng"
     },
     {
       "name": "Karlijn",
@@ -85,7 +141,7 @@
       "full_name": "Matthias",
       "photo": "default.png",
       "linkedin_github": "https://www.linkedin.com/in/matthias-cheng-b9813a241/",
-      "role": "Dev",
+      "role": "Intern",
       "country": "ca"
     },
     {
@@ -95,6 +151,14 @@
       "linkedin_github": "https://www.linkedin.com/in/michaelslattery96/",
       "role": "Lead Backend",
       "country": "jp"
+    },
+    {
+      "name": "Mudiaga",
+      "full_name": "Mudiaga",
+      "photo": "mudiaga_bw_square.jpg",
+      "linkedin_github": "https://www.linkedin.com/in/mudiaga-moody-uwojeya/",
+      "role": "Engineer",
+      "country": "ng"
     },
     {
       "name": "Niklas",
@@ -109,15 +173,31 @@
       "full_name": "Rachit",
       "photo": "default.png",
       "linkedin_github": "",
-      "role": "Dev",
+      "role": "Intern",
       "country": "in"
+    },
+    {
+      "name": "Raqeeb",
+      "full_name": "Hamza",
+      "photo": "RaqeebHamzaBW.jpg",
+      "linkedin_github": "https://www.linkedin.com/in/raqeebhamza/",
+      "role": "Engineer",
+      "country": "pk"
+    },
+    {
+      "name": "Roel",
+      "full_name": "Roel",
+      "photo": "default.png",
+      "linkedin_github": "https://github.com/User623-crypto",
+      "role": "Engineer",
+      "country": "al"
     },
     {
       "name": "Ruben",
       "full_name": "Ruben",
       "photo": "RubenHorn_bw.jpg",
       "linkedin_github": "https://linkedin.com/in/ruben-horn-7153431b5",
-      "role": "Senior Dev",
+      "role": "Senior Engineer",
       "country": "nl"
     },
     {
@@ -125,7 +205,7 @@
       "full_name": "Saksham",
       "photo": "SakshamGupta_bw.jpeg",
       "linkedin_github": "https://linkedin.com/in/sudo-saksham/",
-      "role": "Dev",
+      "role": "Engineer",
       "country": "in"
     },
     {
@@ -137,6 +217,14 @@
       "country": "nl"
     },
     {
+      "name": "Tobby",
+      "full_name": "Tobby",
+      "photo": "tobby_bw_square.jpeg",
+      "linkedin_github": "https://www.linkedin.com/in/oluwatobi-omorubore/",
+      "role": "Engineer",
+      "country": "ng"
+    },
+    {
       "name": "Tom",
       "full_name": "Tom",
       "photo": "TomSiebring_bw.jpg",
@@ -145,7 +233,7 @@
       "country": "nl"
     },
     {
-      "name": "Tomt",
+      "name": "Tom",
       "full_name": "Tom",
       "photo": "TomTetteroo_bw.jpg",
       "linkedin_github": "https://linkedin.com/in/tom-tetteroo-11a77219a",
@@ -157,7 +245,7 @@
       "full_name": "Yash",
       "photo": "YashTiwari_bw.jpeg",
       "linkedin_github": "https://linkedin.com/in/yasht01/",
-      "role": "Dev",
+      "role": "Engineer",
       "country": "in"
     },
     {
@@ -165,7 +253,7 @@
       "full_name": "You?",
       "photo": "default.png",
       "linkedin_github": "mailto:tom@collaction.org",
-      "role": "",
+      "role": "*",
       "country": ""
     }
   ]

@@ -22,12 +22,16 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { InferGetStaticPropsType } from 'next';
 import PageHero from 'src/components/PageHero';
 import ContentBlock from 'src/components/ContentBlock';
+import Quote from 'src/components/Quote';
+
+import Faq from 'src/components/Faq';
+import { v4 } from 'uuid';
 
 export async function getStaticProps({ locale }: { locale: string }) {
   return {
     props: {
       locale,
-      ...(await serverSideTranslations(locale, ['common', 'home', 'about'])),
+      ...(await serverSideTranslations(locale, ['common', 'home', 'donate'])),
     },
   };
 }
@@ -36,6 +40,14 @@ export default function HomePage(
   _props: InferGetStaticPropsType<typeof getStaticProps>
 ) {
   const { t } = useTranslation();
+
+  // pull out array of FAQ from translation json
+  const faqArray: { question: string; answer: string }[] = t(
+    'donate:faq.items',
+    {
+      returnObjects: true,
+    }
+  );
 
   return (
     <>
@@ -92,11 +104,22 @@ export default function HomePage(
           </div>
         </div>
 
+        {/* Quote Sjoerd */}
+        <Quote
+          // className="pt-10 pb-6"
+          isSecondaryBg={true}
+          quote={t('home:sjoerd.quote')}
+          name={t('home:sjoerd.name')}
+          position={t('home:sjoerd.position')}
+          // hasBg={false}
+        />
+
         {/* Mission Vision  */}
         <ContentBlock
-          className="pt-10 pb-6"
-          title={t('about:missionVision.title')}
-          body={t('about:missionVision.description')}
+          className="pt-10 pb-10"
+          isSecondaryBg={false}
+          title={t('home:missionVision.title')}
+          body={t('home:missionVision.description')}
           // hasBg={false}
         />
 
@@ -104,7 +127,12 @@ export default function HomePage(
         <TwoColumnSection
           isReverseOrder={false}
           first={
-            <Image src={DownloadImg} alt="Download App" className="mx-auto" />
+            <Image
+              src={DownloadImg}
+              alt="Download App"
+              className="mx-auto"
+              width={450}
+            />
           }
           second={
             <InfoCard
@@ -138,7 +166,7 @@ export default function HomePage(
             <Image
               src={CrowdActionGraphic}
               alt="CrowdAction"
-              className="absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%]"
+              className="absolute top-[50%] left-[50%] transform translate-y-[-40%] translate-x-[-50%]"
             />
           }
           second={
@@ -182,10 +210,44 @@ export default function HomePage(
           }
         />
 
-        {/* IMPACT SECTION */}
+        {/* SOCIAL SECTION */}
         <TwoColumnSection
           isReverseOrder={true}
           isWhiteBg={true}
+          mobile={
+            <InfoCard
+              title={t('home:socialSection.title')}
+              body={t('home:socialSection.description')}
+              className="flex flex-col lg:flex-row lg:items-center mt-8"
+            >
+              <div className="lg:w-11/12 -mb-9">
+                <Image src={ParticipantsGraphic} alt="Participants Card" />
+              </div>
+            </InfoCard>
+          }
+          first={
+            <Image
+              src={ParticipantsGraphic}
+              alt="Participants"
+              height={400}
+              className="absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%]"
+            />
+          }
+          second={
+            <InfoCard
+              className="absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%]"
+              hasBg={false}
+              leftAlign={true}
+              title={t('home:socialSection.title')}
+              body={t('home:socialSection.description')}
+            />
+          }
+        />
+
+        {/* IMPACT SECTION */}
+        <TwoColumnSection
+          isReverseOrder={false}
+          isWhiteBg={false}
           mobile={
             <InfoCard
               title={t('home:impactSection.title')}
@@ -200,8 +262,9 @@ export default function HomePage(
           first={
             <Image
               src={AchievementGraphic}
+              // height={300}
               alt="Achievement"
-              className="absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%] h-[90%] w-[70%]"
+              className="absolute top-[50%] left-[50%] transform translate-y-[-40%] translate-x-[-50%] h-[100%] w-[70%]"
             />
           }
           second={
@@ -215,38 +278,20 @@ export default function HomePage(
           }
         />
 
-        {/* Participation Section */}
-        <TwoColumnSection
-          isReverseOrder={false}
-          isWhiteBg={true}
-          mobile={
-            <InfoCard
-              title={t('home:participantSection.title')}
-              body={t('home:participantSection.description')}
-              className="flex flex-col lg:flex-row lg:items-center mt-8"
-            >
-              <div className="lg:w-11/12 -mb-9">
-                <Image src={ParticipantsGraphic} alt="Participants Card" />
-              </div>
-            </InfoCard>
-          }
-          first={
-            <Image
-              src={ParticipantsGraphic}
-              alt="Participants"
-              className="absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%] h-[90%] w-[70%]"
-            />
-          }
-          second={
-            <InfoCard
-              className="absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%]"
-              hasBg={false}
-              leftAlign={true}
-              title={t('home:socialSection.title')}
-              body={t('home:socialSection.description')}
-            />
-          }
-        />
+        {/* FAQ */}
+        <div className="w-full px-6 bg-primary-0 py-14">
+          <h3
+            className="mx-auto max-w-350 md:max-w-400 lg:max-w-[744px] lg:text-center lg:headline-lg-1 pb-8 lg:pb-9
+          font-bold text-primary-400"
+          >
+            {t('donate:faq.title')}
+          </h3>
+          <div className="mx-auto flex flex-col max-w-350 sm:max-w-400 lg:max-w-[744px] gap-y-4">
+            {faqArray.map(({ question, answer }) => (
+              <Faq key={v4()} question={question} answer={answer} />
+            ))}
+          </div>
+        </div>
 
         {/* USE COLLACTION SECTION */}
         <div

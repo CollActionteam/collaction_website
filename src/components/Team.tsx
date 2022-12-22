@@ -54,11 +54,18 @@ export default function Teams(props: TeamProps) {
   }
 
   return (
-    <section className={clsx('px-5', 'py-1', props.background || '')}>
+    <section
+      className={clsx(
+        'px-5',
+        'py-1',
+        'text-primary-400',
+        props.background || ''
+      )}
+    >
       <div
         className={clsx(
-          'pb-10',
-          'pb-12' && props.name === 'old',
+          // 'pb-10',
+          // 'pb-12' && props.name === 'old',
           'text-center'
         )}
       >
@@ -75,20 +82,8 @@ export default function Teams(props: TeamProps) {
         {props.description && <p>{props.description}</p>}
       </div>
 
-      <div className="flex lg:w-[744px] p-0 gap-x-auto mx-auto w-auto p-auto">
-        <div className="flex flex-wrap justify-center items-center">
-          {team_members.map(function (object, i) {
-            return (
-              <div
-                className=" flex justify-center items-center w-1/2 md:w-1/3 lg:w-1/4"
-                key={i}
-              >
-                {' '}
-                {object}{' '}
-              </div>
-            );
-          })}
-        </div>
+      <div className="lg:w-[800px] p-0 gap-x-auto mx-auto w-auto p-auto container grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 justify-items-center">
+        {team_members}
       </div>
     </section>
   );

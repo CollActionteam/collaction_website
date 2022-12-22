@@ -45,21 +45,19 @@ export default function SingleJoinPage({ data }: { data: JoinDataType }) {
 
           <h4 className="text-primary-400 mb-7">About us</h4>
           <p className="mb-6">
-            We connect people to solve collective action problems. We aspire to
-            make doing good fun & easy.
-          </p>
-          <p className="mb-6">
-            CollAction is an Amsterdam-based non-profit Public Benefit
-            Organisation. Our team has grown from 3 to 21 international
-            volunteers since July 2021 and we are currently building a native
-            app to solve collective action problems. Our focus is on
-            sustainability-related issues.
+            The dev team has grown to ~30 engineers and is spread all across the
+            globe. We meet every Tuesday at 7pm Amsterdam time, but you're free
+            to decide if you'd like to be there or not. Most of our ambassadors
+            are located in the Netherlands, in particular Amsterdam. connect
+            people to solve collective action problems. We aspire to make doing
+            good fun & easy.
           </p>
           <p className="mb-9">
             Our organisational goal is to be a self-sustaining non-profit that
-            functions independently from donations. Through a paid version of
-            our product for companies and municipalities, we aspire to
-            financially compensate everyone on the team in the future.
+            functions independently from donations. We hope to achieve this
+            through a paid version of our product in the future. As soon as we
+            have fixed this, we'll start compensating team members for their
+            efforts!
           </p>
 
           <h4 className="text-primary-400 mb-7">Commitment</h4>
@@ -67,15 +65,11 @@ export default function SingleJoinPage({ data }: { data: JoinDataType }) {
             CollAction is a non-profit organisation and is currently run by
             volunteers only. We are not able to provide a salary at this point,
             therefore: your commitment to CollAction is exactly what you want it
-            to be. You are not expected to deliver something that does not fit
+            to be. We understand that family, work, etc. are more important. We
+            understand that first things go first, so we don't try to force each
+            other to do something. We simply try to keep each other updates on
+            how things are going, so we know what to expect from each other.
             your schedule.
-          </p>
-          <p className="mb-10">
-            We love proactive people that take initiative, however: this works
-            best if you are honest about what can realistically be done, given
-            your individual schedule. There is no shame in saying no to certain
-            tasks or in reaching out to someone on the team to help out if you
-            don’t have the means to finish a task you committed to.
           </p>
         </div>
 

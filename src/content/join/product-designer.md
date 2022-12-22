@@ -1,19 +1,25 @@
 ---
   publish: true
   title: Product Designer
-  description: Native application for iOS and android, web design, UI system
+  description: You're shaping the CollAction brand by improving the UX/UI of our native application, web and more. You need not be a designer (yet). What matters is that you are willing to learn the ins and outs of product design and that you are interested in building beautiful, on-brand digital experiences.
+
   tags: ['voluntary', 'remote']
   location: Remote
   pay: Voluntary
   contact: join@collaction.org
   aboutYou: 
-    - experience designing digital products (native apps and web)
-    - strong aptitude for proportions and visual hierarchy
-    - you work with scalability in mind (maintaining UI system, tokens, …)
+    - proven track record of excellence
+    - dedicated, independent with a strong willingness to learn
+    - intrinsically motivated with a proactive attitude
+    - 5+ hours / week to work on CollAction
+    - you are or think like an engineer and work with scalability and reproducibility in mind
+    - you know your way around in Figma
     - looking for best practices/references is a core part of your design process
-    - comfortable explaining your design decisions
-    - comfortable with giving and receiving constructive design feedback
-    - constantly trying to optimise the collaboration between design and the development team
+    - you try to consistently optimise the collaboration between design and the engineering team
     - not afraid to share your unfinished/premature work
-    - you are a proactive person that likes to take initiative and is also comfortable with saying no
+    - (PLUS) you have experience designing native digital products and collaborating with engineers
+    - (PLUS) you know the fundamentals of HTML, CSS and Javascript
+    - (PLUS) you have experience building design systems with tokenised styles
+
+
 ---
