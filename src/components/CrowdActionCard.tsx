@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import Link from 'next/link';
+import CrowdActionChipList from './CrowdActionChipList';
 
 export interface CrowdAction {
   id: string;
@@ -13,6 +15,7 @@ export interface CrowdAction {
   commitmentOptions: any[];
   status: string;
   joinStatus: string;
+  slug: string;
 }
 
 export interface CrowdActionImages {
@@ -40,17 +43,16 @@ export default function CrowdActionCard({ ...crowdAction }: CrowdAction) {
         height={180}
         className="max-w-[300px] max-h-[180px] h-[180px] w-[300px]"
       />
-      <div className="flex space-x-2 mt-4 px-5">
-        {GetPrimaryChip(crowdAction.status, crowdAction.joinStatus)}
-        <button className="font-semibold text-[10px] rounded-full border-2 border-primary-0 py-1 px-4 text-black">
-          {crowdAction.category.toUpperCase()}
-        </button>
-        <button className="font-semibold text-[10px] rounded-full border-2 border-primary-0 py-1 px-2 text-black">
-          {crowdAction.subcategory.toUpperCase()}
-        </button>
-      </div>
+      <CrowdActionChipList
+        status={crowdAction.status}
+        joinStatus={crowdAction.joinStatus}
+        category={crowdAction.category}
+        subcategory={crowdAction.subcategory}
+      ></CrowdActionChipList>
       <div className="mt-4 px-5 pb-5">
-        <p className="font-bold text-xl">{crowdAction.title}</p>
+        <p className="font-bold text-xl text-primary-400">
+          {crowdAction.title}
+        </p>
         <p className="mt-4 text-primary-300 text-sm leading-6">
           {crowdAction.description.length > 175
             ? `${crowdAction.description.substring(0, 175)}...`
@@ -58,24 +60,13 @@ export default function CrowdActionCard({ ...crowdAction }: CrowdAction) {
         </p>
       </div>
       <div className="py-5 px-5 flex justify-center absolute bottom-0 left-0 right-0">
-        <button className="font-bold text-collaction rounded-full w-full border-2 border-collaction-400 py-3 px-4 text-[12px]">
+        <Link
+          href={`/projects/${crowdAction.slug}`}
+          className="font-bold text-collaction rounded-full w-full border-2 border-collaction-400 py-[6px] px-4 text-[12px] text-center"
+        >
           Read More
-        </button>
+        </Link>
       </div>
     </div>
-  );
-}
-
-function GetPrimaryChip(status: string, joinStatus: string): JSX.Element {
-  return (
-    <button className="font-semibold text-[10px] rounded-full bg-collaction-400 py-1 px-4 text-white">
-      {joinStatus == 'OPEN'
-        ? 'Now open'
-        : status == 'STARTED'
-        ? 'Currently running'
-        : status == 'WAITING'
-        ? 'Starting soon'
-        : 'Finished'}
-    </button>
   );
 }
