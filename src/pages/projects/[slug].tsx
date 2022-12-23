@@ -3,13 +3,13 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Image from 'next/image';
 import AppLinkApple from 'src/components/AppLinkApple';
 import AppLinkGoogle from 'src/components/AppLinkGoogle';
-import { GetPrimaryChip } from 'src/components/CrowdActionCard';
 import InfoCard from 'src/components/InfoCard';
 import PageSEO from 'src/components/PageSEO';
 import TwoColumnSection from 'src/components/TwoColumnSection';
 
 import DownloadImg from 'public/download_app.png';
 import AvatarCircle from 'src/components/AvatarCircle';
+import CrowdActionChipList from 'src/components/CrowdActionChipList';
 
 const staticUrl = process.env.NEXT_PUBLIC_STATIC_URL;
 
@@ -40,16 +40,14 @@ export default function CrowdActionPage({ crowdAction, topParticipants }: any) {
         ></Image>
       </div>
 
-      <div className="relative w-full py-8 lg:py-10">
-        <div className="flex space-x-2 mt-4 px-5 justify-center">
-          {GetPrimaryChip(crowdAction.status, crowdAction.joinStatus)}
-          <div className="font-semibold text-[10px] rounded-full border bg-white border-primary-100  px-4 text-black">
-            {crowdAction.category.toUpperCase()}
-          </div>
-          <div className="font-semibold text-[10px] rounded-full border bg-white border-primary-100  px-4 text-black">
-            {crowdAction.subcategory.toUpperCase()}
-          </div>
-        </div>
+      <div className="relative w-full py-8 lg:py-10 flex justify-center">
+        <CrowdActionChipList
+          status={crowdAction.status}
+          joinStatus={crowdAction.joinStatus}
+          category={crowdAction.category}
+          subcategory={crowdAction.subcategory}
+          onWhite={false}
+        ></CrowdActionChipList>
       </div>
 
       <div className="flex mb-5 -space-x-4 justify-center pb-5">
