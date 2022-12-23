@@ -402,6 +402,7 @@ export default function ProjectListPage({ projects, pagination }: any) {
               commitmentOptions={crowdAction.commitmentOptions}
               status={crowdAction.status}
               joinStatus={crowdAction.joinStatus}
+              slug={crowdAction.slug}
             ></CrowdActionCard>
           ))}
         </div>
