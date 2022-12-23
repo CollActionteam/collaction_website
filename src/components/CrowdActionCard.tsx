@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export interface CrowdAction {
   id: string;
@@ -13,6 +14,7 @@ export interface CrowdAction {
   commitmentOptions: any[];
   status: string;
   joinStatus: string;
+  slug: string;
 }
 
 export interface CrowdActionImages {
@@ -45,7 +47,7 @@ export default function CrowdActionCard({ ...crowdAction }: CrowdAction) {
         <button className="font-semibold text-[10px] rounded-full border-2 border-primary-0 py-1 px-4 text-black">
           {crowdAction.category.toUpperCase()}
         </button>
-        <button className="font-semibold text-[10px] rounded-full border-2 border-primary-0 py-1 px-2 text-black">
+        <button className="font-semibold text-[10px] rounded-full border-2 border-primary-0 py-1 px-4 text-black">
           {crowdAction.subcategory.toUpperCase()}
         </button>
       </div>
@@ -58,17 +60,23 @@ export default function CrowdActionCard({ ...crowdAction }: CrowdAction) {
         </p>
       </div>
       <div className="py-5 px-5 flex justify-center absolute bottom-0 left-0 right-0">
-        <button className="font-bold text-collaction rounded-full w-full border-2 border-collaction-400 py-3 px-4 text-[12px]">
+        <Link
+          href={`/projects/${crowdAction.slug}`}
+          className="font-bold text-collaction rounded-full w-full border-2 border-collaction-400 py-3 px-4 text-[12px] text-center"
+        >
           Read More
-        </button>
+        </Link>
       </div>
     </div>
   );
 }
 
-function GetPrimaryChip(status: string, joinStatus: string): JSX.Element {
+export function GetPrimaryChip(
+  status: string,
+  joinStatus: string
+): JSX.Element {
   return (
-    <button className="font-semibold text-[10px] rounded-full bg-collaction-400 py-1 px-4 text-white">
+    <div className="font-semibold text-[10px] rounded-full border-1 border-collaction bg-collaction-400 px-4 text-white">
       {joinStatus == 'OPEN'
         ? 'Now open'
         : status == 'STARTED'
@@ -76,6 +84,6 @@ function GetPrimaryChip(status: string, joinStatus: string): JSX.Element {
         : status == 'WAITING'
         ? 'Starting soon'
         : 'Finished'}
-    </button>
+    </div>
   );
 }
