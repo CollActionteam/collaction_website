@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import Collaboration from 'public/uilenstede_collaboration.png';
-import Uilenstede_banner from 'public/uilenstede_banner.png';
+import Uilenstede_banner from 'public/uilenstede_banner.jpg';
 import Uilenstede_map from 'public/uilenstede_map.png';
 import PageSEO from 'src/components/PageSEO';
 

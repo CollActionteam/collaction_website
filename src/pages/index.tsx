@@ -4,18 +4,18 @@ import InfoCard from 'src/components/InfoCard';
 import AppLinkApple from 'src/components/AppLinkApple';
 import AppLinkGoogle from 'src/components/AppLinkGoogle';
 
-import CrowdActionGraphic from 'public/crowdaction_graphic.png';
+import CrowdActionGraphic from 'public/crowdaction_graphic.jpg';
 import CommitmentOptionsGraphic from 'public/commitment_options_graphic.png';
-import AchievementGraphic from 'public/achievement_graphic.png';
+import ParticipantsGraphic from 'public/participants_graphic.png';
+import AchievementGraphic from 'public/achievement_graphic.jpg';
 import DownloadImg from 'public/download_app.png';
-import HeroImg from 'public/uilenstede_banner.png';
+import HeroImg from 'public/uilenstede_banner.jpg';
 
 import TomTomImg from 'public/actions/tomtom.png';
 import CollActionExplanation, {
   Step,
 } from 'src/components/CollActionExplanation';
 import TwoColumnSection from 'src/components/TwoColumnSection';
-import ParticipantsGraphic from 'public/participants_graphic.png';
 
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';

@@ -18,7 +18,7 @@ import { JoinTagTokenType } from 'src/types/joins';
 import TwoColumnSection from 'src/components/TwoColumnSection';
 
 import DownloadImg from 'public/download_app.png';
-import HeroImg from 'public/collaction_team.png';
+import HeroImg from 'public/collaction_team.jpg';
 import { InferGetStaticPropsType } from 'next';
 import PageHero from 'src/components/PageHero';
 import ContentBlock from 'src/components/ContentBlock';
