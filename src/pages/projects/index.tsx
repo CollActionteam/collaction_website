@@ -144,7 +144,7 @@ export default function ProjectListPage({ projects, pagination }: any) {
                 src={CollActionLogoWithText}
                 alt="Participants"
                 height={450}
-                className="absolute top-[50%] left-[50%] transform translate-y-[-45%] translate-x-[-50%]"
+                className="relative left-[50%] transform  translate-y-[10%] translate-x-[-50%]"
               />
             </div>
           }
