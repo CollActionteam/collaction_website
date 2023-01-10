@@ -1,14 +1,14 @@
 import React, { useRef } from 'react';
 import PageSEO from 'src/components/PageSEO';
 
-import HeroImg from 'public/education_february.jpg';
+import HeroImg from 'public/education_february.jpeg';
 
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import PageHero from 'src/components/PageHero';
 import Image from 'next/image';
-import CollActionLogoWithText from 'public/crowdaction_graphic.png';
+import CollActionLogoWithText from 'public/crowdaction_graphic.jpg';
 import TwoColumnSection from 'src/components/TwoColumnSection';
 import InfoCard from 'src/components/InfoCard';
 import AppLinkApple from 'src/components/AppLinkApple';
@@ -144,7 +144,7 @@ export default function ProjectListPage({ projects, pagination }: any) {
                 src={CollActionLogoWithText}
                 alt="Participants"
                 height={450}
-                className="absolute top-[50%] left-[50%] transform translate-y-[-45%] translate-x-[-50%]"
+                className="relative left-[50%] transform  translate-y-[10%] translate-x-[-50%]"
               />
             </div>
           }

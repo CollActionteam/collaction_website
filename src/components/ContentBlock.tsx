@@ -2,26 +2,30 @@ import clsx from 'clsx';
 
 type ContentBlockTypes = {
   isSecondaryBg?: boolean;
-  // hasBg?: boolean;
+  hasBg?: boolean;
   leftAlign?: boolean;
   title?: string;
   body?: string | JSX.Element;
   children?: React.ReactNode;
   className?: string;
+  greenHeader?: boolean;
 };
 
 export default function ContentBlock({
   isSecondaryBg = true,
-  // hasBg = true,
+  hasBg = true,
   leftAlign = true,
   title,
   body,
   children,
   className,
+  greenHeader = false,
 }: ContentBlockTypes) {
   return (
     <div
-      className={clsx('w-full', isSecondaryBg ? 'bg-secondary' : 'bg-white')}
+      className={clsx(
+        hasBg ? (isSecondaryBg ? 'bg-secondary' : 'bg-primary-0') : ''
+      )}
     >
       <div
         className={clsx(
@@ -36,7 +40,7 @@ export default function ContentBlock({
           <h3
             className={clsx(
               'text-headline-m-1',
-              'text-primary-400',
+              greenHeader ? 'text-collaction' : 'text-primary-400',
               // body ? 'mb-6' : 'mb-9'
               body ? 'mb-3' : 'mb-6'
             )}

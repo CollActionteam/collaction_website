@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import PageSEO from 'src/components/PageSEO';
 
-import HeroImg from 'public/uilenstede_banner.png';
+import HeroImg from 'public/uilenstede_banner.jpg';
 import CollActionGraphic from 'public/collaction_graphic.png';
 import RubenAboutImgXl from 'public/ruben-xl.png';
 import RubenAboutImgLg from 'public/ruben-lg.png';
