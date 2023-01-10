@@ -10,9 +10,6 @@ import InfoCard from 'src/components/InfoCard';
 import AppLinkApple from 'src/components/AppLinkApple';
 import AppLinkGoogle from 'src/components/AppLinkGoogle';
 
-// const whatsAppUrl = '#';
-// const ikDoeMeeUrl = '#';
-
 export default function UilenstedeIndexPage() {
   return (
     <>
@@ -21,10 +18,11 @@ export default function UilenstedeIndexPage() {
         // description=""
       />
 
-      <main className="p-5 md:pt-8">
+      <main className="mt-8">
         <div className="text-center mx-auto max-w-700 sm:max-w-400 lg:max-w-600">
           <h1 className="text-collaction text-center mb-8">Steun je School</h1>
         </div>
+
         <div className="relative block w-full md:w-11/12 lg:w-208 mx-auto">
           <Image
             priority
@@ -48,11 +46,73 @@ export default function UilenstedeIndexPage() {
           </p>
         </div> */}
 
+        {/* WHY SECTION */}
+        {/* <ContentBlock
+          className="pt-8 pb-8"
+          title="testtest"
+          greenHeader={true}
+          hasBg={false}
+          body="
+          We zijn op De Brug in contact gekomen met CollAction, een duurzaamheidsbeweging geleid 
+          door jonge enthousiaste mensen. Zij werken hieraan op vrijwillige basis en proberen 
+          in contact te komen met (jonge) mensen/kinderen/organisaties en dan is een school 
+          hiervoor een geschikte plek. Het hoogste doel van de actie is bewustwording creëren bij 
+          de kinderen en in de gezinnen en over te gaan tot acties in het belang van het klimaat; 
+          samen hopelijk de wereld een beetje mooier en beter maken. Op De Brug gaan we hier de 
+          maand februari actief mee aan de slag: Steun je school en bespaar energie! De kinderen 
+          zullen een doelenkaart krijgen waar ze thuis en op school mee aan de slag kunnen gaan, 
+          wordt vervolgd.
+
+          Vanochtend hebben we dit besproken met de leerlingenraad en de kinderen zijn al enthousiast! 
+          Het plan is nog lang niet klaar, maar wat we wel weten willen we heel graag met jullie delen 
+          en dat is het volgende:
+          De opening is op 1 februari en hiervoor willen we samen een sjaal breien/haken/vingerhaken of 
+          welk creatief idee ook, en deze stukjes aan elkaar verbinden en om de school knopen. 
+          De sjaal geeft de school warmte en vormt de verbinding tussen iedereen, kinderen en omgeving. 
+          Alle verschillende stukjes staan tevens symbool dat iedereen anders is en dat we samen weer 
+          het grote geheel vormen. Daarvoor hebben we elkaar nodig en zijn we in verbinding.
+
+          Met de vakantie voor de deur hopen we dat jullie thuis alvast beginnen met breien/haken/vingerhaken, 
+          hoe meer mensen meedoen, hoe langer de sjaal uiteindelijk wordt! Ook opa's/oma's/broers/zussen/buren, 
+          iedereen mag meedoen. De kinderen kunnen de stukjes na de vakantie meenemen naar school en deze 
+          stukjes gaan we aan elkaar verbinden. Foto's kunnen via de mail worden gedeeld en daar 
+          kunnen we weer een mooie collage van in school hangen. Ook willen we in januari schoolbreed een 
+          talentenmiddag organiseren waarin handwerken centraal staat. Nadere informatie hierover volgt in 
+          de eerste week na de vakantie evenals een oproep voor getalenteerde workshopbegeleiders😊.
+          "
+        /> */}
+
         <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-600 ">
-          <h4 className="text-collaction mt-6 mb-2">Waarom meedoen?</h4>
+          <h3 className="text-collaction mt-6 mb-2">Waarom meedoen?</h3>
+
+          <h3 className="text-collaction mt-6 mb-2">Wat houdt de actie in?</h3>
+
+          <h3 className="text-collaction mt-6 mb-6">Hoe meedoen?</h3>
+          {/*           
           <p className="mb-6">
+            <h4 className="text-collaction mb-2">Prizes</h4>
+            <p className="mb-2">
+              For the teams that collect the most points between 13-16
+              September, prizes are listed below. You get these on top of the
+              vouchers you already received. To be eligible for the vouchers,
+              your team must have collected at least the number of vouchers
+              expressed in points.
+            </p>
+            <ul style={{ listStyleType: 'decimal' }} className="pl-7">
+              <li className="mb-2">
+                <strong>
+                  100 vouchers & 14 tickets for Thuisfront Festival
+                </strong>{' '}
+                & personal clinic at Sportcentrum VU
+              </li>
+              <li className="mb-2">
+                42 vouchers & rent Uilenkatten speakers for free
+              </li>
+              <li className="mb-6">14 vouchers</li>
+            </ul>
+
             <strong>... invulling</strong>
-          </p>
+          </p> */}
           {/* <h4 className="text-collaction mb-2">What's the campaign?</h4>
           <p className="mb-6">
             In September we’ll make the campus prettier by doing a
