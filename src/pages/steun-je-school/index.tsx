@@ -332,8 +332,8 @@ export default function UilenstedeIndexPage() {
 
         <InfoCard
           isSecondaryBg
-          title="Download the app"
-          body="Reserve a litter pick-up stick and join us!"
+          title="Download de app"
+          body="Schrijf je in en steun je school!"
         >
           <div className="flex justify-center">
             <AppLinkApple className="mr-4 sm:mr-5" />
