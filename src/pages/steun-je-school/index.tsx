@@ -3,6 +3,8 @@ import Image from 'next/image';
 
 // import Collaboration from 'public/uilenstede_collaboration.png';
 import SteunSchool_banner from 'public/education_february.jpeg';
+import Sjs1 from 'public/sjs1.jpg';
+import Sjs2 from 'public/sjs2.jpg';
 // import Uilenstede_map from 'public/uilenstede_map.png';
 import PageSEO from 'src/components/PageSEO';
 
@@ -136,6 +138,54 @@ export default function UilenstedeIndexPage() {
               <strong>Organisatie:</strong> als organisatie
             </li> */}
           </ul>
+
+          <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-600 mb-6">
+            <h4 className="text-collaction mb-4">Actiefoto's</h4>
+          </div>
+
+          <div className="relative block w-full md:w-11/12 lsm:max-w-600 lg:max-w-600 mx-auto mt-6 mb-6">
+            <Image
+              priority
+              src={Sjs1}
+              alt="uilenstede banner"
+              className="rounded-1"
+              sizes="(max-width: 768px) 90vw, 830px"
+              placeholder="blur"
+            />
+          </div>
+
+          <div className="relative block w-full md:w-11/12 lsm:max-w-600 lg:max-w-600 mx-auto mt-6 mb-6">
+            <Image
+              priority
+              src={Sjs2}
+              alt="uilenstede banner"
+              className="rounded-1"
+              sizes="(max-width: 768px) 90vw, 830px"
+              placeholder="blur"
+            />
+          </div>
+
+          {/* DOWNLOAD APP SETION
+          <TwoColumnSection
+            isReverseOrder={false}
+            first={
+              <Image
+                src={Sjs1}
+                alt="Download App"
+                className="mx-auto"
+                width={450}
+              />
+            }
+            second={
+              <Image
+                src={Sjs1}
+                alt="Download App"
+                className="mx-auto"
+                width={450}
+              />
+            }
+          /> */}
+
           {/*           
           <p className="mb-6">
             <h4 className="text-collaction mb-2">Prizes</h4>
