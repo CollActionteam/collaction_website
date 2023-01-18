@@ -12,6 +12,8 @@ This repository contains the source code and assets required to build the [CollA
 
   `git clone https://github.com/CollActionteam/website.git`
 
+- copy-paste file `.env.example`, rename it to `.env.local` and fill the secrets if needed
+
 - Navigate to the website folder in your terminal
 
 - Install the dependencies
