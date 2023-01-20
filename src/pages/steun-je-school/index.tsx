@@ -16,7 +16,7 @@ export default function UilenstedeIndexPage() {
   return (
     <>
       <PageSEO
-        title="CollAction meets Uilenstede | The Big Uilenstede Clean Up"
+        title="CollAction op School | Steun je School"
         // description=""
       />
 
@@ -29,7 +29,7 @@ export default function UilenstedeIndexPage() {
           <Image
             priority
             src={SteunSchool_banner}
-            alt="westland banner"
+            alt="SteunSchool banner"
             className="rounded-1"
             sizes="(max-width: 768px) 90vw, 830px"
             placeholder="blur"

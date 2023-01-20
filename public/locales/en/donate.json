@@ -26,8 +26,8 @@
     "title": "Frequently Asked Questions",
     "items": [
       {
-        "question": "What does CollAction do with my money?",
-        "answer": "Our expenses are mostly cloud expenses, volunteer support and marketing. Transparency is very important to us, so within due time it'll be possible to see all our individual expenses on the website!"
+        "question": "What does CollAction do with donations and project revenue?",
+        "answer": "Our expenses are mostly cloud costs, volunteer support and marketing. Transparency is very important to us, so within due time it'll be possible to see all our individual expenses on the website!"
       },
       {
         "question": "What can CollAction do for my organisation?",
@@ -35,7 +35,7 @@
       },
       {
         "question": "Is CollAction free to download?",
-        "answer": "Yes! CollAction is 100% free to download for all users now and in the future. CollAction gets income from donations and by doing projects for Business, Education and Governance."
+        "answer": "Yes! CollAction is 100% free to download for all users now and in the future. CollAction gets income from donations and by doing projects for Business, Education and Governance. For more info on this, check out our projects page."
       }
     ]
   }

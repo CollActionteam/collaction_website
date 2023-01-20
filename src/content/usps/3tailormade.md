@@ -1,7 +1,7 @@
 ---
   publish: true
   featured: true
-  title: Tailer-Made
+  title: Tailor-Made
   icon: /usp-usp3-icon.png
 ---
 

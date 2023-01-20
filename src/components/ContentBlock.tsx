@@ -12,7 +12,7 @@ type ContentBlockTypes = {
 };
 
 export default function ContentBlock({
-  isSecondaryBg = true,
+  isSecondaryBg = false,
   hasBg = true,
   leftAlign = true,
   title,
@@ -24,7 +24,7 @@ export default function ContentBlock({
   return (
     <div
       className={clsx(
-        hasBg ? (isSecondaryBg ? 'bg-secondary' : 'bg-primary-0') : ''
+        hasBg ? (isSecondaryBg ? 'bg-secondary' : 'bg-primary-0') : 'bg-white'
       )}
     >
       <div

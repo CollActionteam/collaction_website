@@ -8,7 +8,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import PageHero from 'src/components/PageHero';
 import Image from 'next/image';
-import CollActionLogoWithText from 'public/crowdaction_graphic.jpg';
+import CollActionLogoWithText from 'public/crowdaction_graphic.png';
 import TwoColumnSection from 'src/components/TwoColumnSection';
 import InfoCard from 'src/components/InfoCard';
 import AppLinkApple from 'src/components/AppLinkApple';
@@ -78,21 +78,22 @@ export default function ProjectListPage({ projects, pagination }: any) {
         />
 
         <TwoColumnSection
+          className=""
           isReverseOrder={false}
-          isWhiteBg={false}
+          isSecondaryBg={false}
           mobile={
             <div>
               {/* howweworkSection  */}
               <ContentBlock
                 title={t('projects:howwework.title')}
                 body={t('projects:howwework.description')}
-                className="w-5/6 flex flex-col lg:flex-row lg:items-center mt-10 mb-20"
+                className="w-5/6 flex flex-col lg:flex-row lg:items-center"
               />
               {/* begSection  */}
               <ContentBlock
                 title={t('projects:begSection.title')}
                 body={t('projects:begSection.description')}
-                className="w-5/6 flex flex-col lg:flex-row lg:items-center mt-10 mb-20"
+                className="w-5/6 flex flex-col lg:flex-row lg:items-center"
               />
             </div>
           }
@@ -100,14 +101,14 @@ export default function ProjectListPage({ projects, pagination }: any) {
             <ContentBlock
               title={t('projects:howwework.title')}
               body={t('projects:howwework.description')}
-              className="w-5/6 flex flex-col lg:flex-row lg:items-center mt-10 mb-20"
+              className="w-5/6 flex flex-col lg:flex-row lg:items-center mt-7"
             />
           }
           second={
             <ContentBlock
               title={t('projects:begSection.title')}
               body={t('projects:begSection.description')}
-              className="w-5/6 flex flex-col lg:flex-row lg:items-center mt-10 mb-20"
+              className="w-5/6 flex flex-col lg:flex-row lg:items-center mt-7"
             />
           }
         />
@@ -121,7 +122,7 @@ export default function ProjectListPage({ projects, pagination }: any) {
 
         {/* Quote Tom */}
         <Quote
-          className="pt-16"
+          className="pt-8"
           isSecondaryBg={true}
           quote={t('projects:tom.quote')}
           name={t('projects:tom.name')}
@@ -129,9 +130,10 @@ export default function ProjectListPage({ projects, pagination }: any) {
           // hasBg={false}
         />
 
+        {/* Project on our Platform? */}
         <TwoColumnSection
           isReverseOrder={false}
-          isWhiteBg={true}
+          isSecondaryBg={false}
           mobile={
             <div>
               <ContentBlock
@@ -200,20 +202,20 @@ export default function ProjectListPage({ projects, pagination }: any) {
         {/* 4PHASES */}
         <TwoColumnSection
           isReverseOrder={false}
-          isWhiteBg={false}
+          isSecondaryBg={true}
           mobile={
             <div>
               <ContentBlock
                 title={t('projects:crowdresearch.title')}
                 body={t('projects:crowdresearch.description')}
                 isSecondaryBg={true}
-                className="w-5/6 flex flex-col lg:flex-row lg:items-center mt-18"
+                className="w-5/6 flex flex-col lg:flex-row lg:items-center mt-8"
               />
               <ContentBlock
                 title={t('projects:crowdscaling.title')}
                 body={t('projects:crowdscaling.description')}
                 isSecondaryBg={true}
-                className="w-5/6 flex flex-col lg:flex-row lg:items-center mt-18"
+                className="w-5/6 flex flex-col lg:flex-row lg:items-center mt-4 mb-8"
               />
             </div>
           }
@@ -222,7 +224,7 @@ export default function ProjectListPage({ projects, pagination }: any) {
               title={t('projects:crowdresearch.title')}
               body={t('projects:crowdresearch.description')}
               isSecondaryBg={true}
-              className="w-5/6 flex flex-col lg:flex-row lg:items-center mt-18"
+              className="w-5/6 flex flex-col lg:flex-row lg:items-center mt-10"
             />
           }
           second={
@@ -230,27 +232,42 @@ export default function ProjectListPage({ projects, pagination }: any) {
               title={t('projects:crowdscaling.title')}
               body={t('projects:crowdscaling.description')}
               isSecondaryBg={true}
-              className="w-5/6 flex flex-col lg:flex-row lg:items-center mt-18"
+              className="w-5/6 flex flex-col lg:flex-row lg:items-center mt-10"
             />
           }
         />
 
         <TwoColumnSection
+          className=""
           isReverseOrder={false}
-          isWhiteBg={true}
+          isSecondaryBg={false}
           mobile={
             <div>
+              {/* first ContentBlock is fill as e.g. mt-8 didn't work to create fill above CrowdAction part on mobile */}
+              <ContentBlock
+                title=""
+                body=""
+                isSecondaryBg={false}
+                className=""
+              />
               <ContentBlock
                 title={t('projects:crowdaction.title')}
                 body={t('projects:crowdaction.description')}
-                className="w-4/5 flex flex-col lg:flex-row lg:items-center mt-18"
+                className="w-4/5 flex flex-col lg:flex-row lg:items-center"
                 isSecondaryBg={false}
               />
               <ContentBlock
                 title={t('projects:crowdimpact.title')}
                 body={t('projects:crowdimpact.description')}
-                className="w-4/5 flex flex-col lg:flex-row lg:items-center mt-18"
+                className="w-4/5 flex flex-col lg:flex-row lg:items-center mt-4"
                 isSecondaryBg={false}
+              />
+              {/* last ContentBlock is fill as e.g. mb-8 didn't work to create fill below CrowdImpact part on mobile */}
+              <ContentBlock
+                title=""
+                body=""
+                isSecondaryBg={false}
+                className=""
               />
             </div>
           }
@@ -258,7 +275,7 @@ export default function ProjectListPage({ projects, pagination }: any) {
             <ContentBlock
               title={t('projects:crowdaction.title')}
               body={t('projects:crowdaction.description')}
-              className="w-4/5 flex flex-col lg:flex-row lg:items-center mt-18"
+              className="w-4/5 flex flex-col lg:flex-row lg:items-center mt-11"
               isSecondaryBg={false}
             />
           }
@@ -266,7 +283,7 @@ export default function ProjectListPage({ projects, pagination }: any) {
             <ContentBlock
               title={t('projects:crowdimpact.title')}
               body={t('projects:crowdimpact.description')}
-              className="w-4/5 flex flex-col lg:flex-row lg:items-center mt-18"
+              className="w-4/5 flex flex-col lg:flex-row lg:items-center mt-11"
               isSecondaryBg={false}
             />
           }
@@ -406,7 +423,7 @@ export default function ProjectListPage({ projects, pagination }: any) {
             ></CrowdActionCard>
           ))}
         </div>
-        <div className="mx-auto max-w-400 md:max-w-750 lg:max-w-924 flex justify-center mb-24">
+        <div className="mx-auto max-w-400 md:max-w-750 lg:max-w-924 flex justify-center">
           <Pagination
             currentPage={page}
             total={pagination?.totalPages}
@@ -426,7 +443,33 @@ export default function ProjectListPage({ projects, pagination }: any) {
           />
         </div>
 
-        <div className="w-full bg-secondary md:bg-white lg:bg-white py-0 md:py-10 lg:py-10 mx-auto">
+        <TwoColumnSection
+          className=""
+          isReverseOrder={false}
+          first={
+            <Image
+              src={DownloadImg}
+              alt="Download App"
+              className="mx-auto mt-4"
+              width={450}
+            />
+          }
+          second={
+            <InfoCard
+              className="absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%]"
+              isSecondaryBg
+              title={t('common:downloadApp.title')}
+              body={t('common:downloadApp.description')}
+            >
+              <div className="flex justify-center mb-6">
+                <AppLinkApple className="mr-4 sm:mr-5" />
+                <AppLinkGoogle />
+              </div>
+            </InfoCard>
+          }
+        />
+
+        <div className="w-full bg-secondary md:bg-secondary lg:bg-secondary py-0 md:py-10 lg:py-10 mx-auto">
           <div className="mx-5 md:mx-5 lg:mx-0">
             <div
               className="h-auto
@@ -479,31 +522,6 @@ export default function ProjectListPage({ projects, pagination }: any) {
             </div>
           </div>
         </div>
-
-        <TwoColumnSection
-          isReverseOrder={false}
-          first={
-            <Image
-              src={DownloadImg}
-              alt="Download App"
-              className="mx-auto"
-              width={450}
-            />
-          }
-          second={
-            <InfoCard
-              className="absolute top-[50%] left-[50%] transform translate-y-[-50%] translate-x-[-50%]"
-              isSecondaryBg
-              title={t('common:downloadApp.title')}
-              body={t('common:downloadApp.description')}
-            >
-              <div className="flex justify-center mb-6">
-                <AppLinkApple className="mr-4 sm:mr-5" />
-                <AppLinkGoogle />
-              </div>
-            </InfoCard>
-          }
-        />
 
         {/* crowdresearchSection  */}
         {/* <ContentBlock

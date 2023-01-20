@@ -52,7 +52,7 @@ export default function JoinListPage(
         description="Want to join our team in making the world a better place? Check out our current openings."
       />
 
-      <main className="bg-secondary">
+      <main className="">
         {/* HERO SETION */}
         <PageHero
           image={HeroImg}
@@ -74,9 +74,10 @@ export default function JoinListPage(
 
         {/* JOIN SECTION */}
         <ContentBlock
-          // className="pt-10"
+          className="pt-10"
           title={t('team:joinTeamSection.title')}
           body={t('team:joinTeamSection.description')}
+          isSecondaryBg={true}
           // hasBg={false}
         />
 
@@ -92,7 +93,7 @@ export default function JoinListPage(
           </p>
         </div> */}
 
-        <div className="flex flex-wrap justify-center p-0 gap-x-4 mx-8 pt-10">
+        <div className="bg-secondary flex flex-wrap justify-center p-0 gap-x-4 mx-8 pt-10 pb-8">
           {props.data.map(
             ({
               title,
@@ -147,12 +148,13 @@ export default function JoinListPage(
 
         {/* DOWNLOAD APP SETION */}
         <TwoColumnSection
+          className=""
           isReverseOrder={false}
           first={
             <Image
               src={DownloadImg}
               alt="Download App"
-              className="mx-auto"
+              className="mx-auto mt-4"
               width={450}
             />
           }

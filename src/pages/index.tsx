@@ -4,10 +4,10 @@ import InfoCard from 'src/components/InfoCard';
 import AppLinkApple from 'src/components/AppLinkApple';
 import AppLinkGoogle from 'src/components/AppLinkGoogle';
 
-import CrowdActionGraphic from 'public/crowdaction_graphic.jpg';
+import CrowdActionGraphic from 'public/crowdaction_graphic.png';
 import CommitmentOptionsGraphic from 'public/commitment_options_graphic.png';
 import ParticipantsGraphic from 'public/participants_graphic.png';
-import AchievementGraphic from 'public/achievement_graphic.jpg';
+import AchievementGraphic from 'public/achievement_graphic.png';
 import DownloadImg from 'public/download_app.png';
 import HeroImg from 'public/uilenstede_banner.jpg';
 
@@ -53,7 +53,7 @@ export default function HomePage(
     <>
       <PageSEO title="CollAction | Sustainable choices made easy" />
 
-      <main className="bg-secondary">
+      <main className="">
         {/* HERO SETION */}
         <PageHero
           image={HeroImg}
@@ -63,7 +63,7 @@ export default function HomePage(
         />
 
         {/* CROWDACTION EXPLANATION SECTION */}
-        <div className="bg-white py-8">
+        <div className="bg-primary-0 py-8">
           <div className="flex flex-wrap justify-center mx-auto max-w-7xl">
             <CollActionExplanation
               step={Step.GOAL}
@@ -111,7 +111,7 @@ export default function HomePage(
           quote={t('home:sjoerd.quote')}
           name={t('home:sjoerd.name')}
           position={t('home:sjoerd.position')}
-          // hasBg={false}
+          hasBg={true}
         />
 
         {/* Mission Vision  */}
@@ -120,11 +120,13 @@ export default function HomePage(
           isSecondaryBg={false}
           title={t('home:missionVision.title')}
           body={t('home:missionVision.description')}
-          // hasBg={false}
+          hasBg={true}
         />
 
         {/* DOWNLOAD APP SETION */}
         <TwoColumnSection
+          className="pt-8 pb-6"
+          isSecondaryBg={true}
           isReverseOrder={false}
           first={
             <Image
@@ -151,8 +153,9 @@ export default function HomePage(
 
         {/* CROWDACTION SECTION */}
         <TwoColumnSection
+          className="pt-8 pb-8"
           isReverseOrder={true}
-          isWhiteBg={true}
+          isSecondaryBg={false}
           mobile={
             <InfoCard
               title={t('home:crowdActionSection.title')}
@@ -182,7 +185,9 @@ export default function HomePage(
 
         {/* COMMITMENTOPTIONS SECTION */}
         <TwoColumnSection
-          isWhiteBg={false}
+          // className="mt-8, mb-8"
+          className=""
+          isSecondaryBg={true}
           mobile={
             <InfoCard
               title={t('home:commitmentOptionsSection.title')}
@@ -212,8 +217,9 @@ export default function HomePage(
 
         {/* SOCIAL SECTION */}
         <TwoColumnSection
+          className="pt-8"
           isReverseOrder={true}
-          isWhiteBg={true}
+          isSecondaryBg={false}
           mobile={
             <InfoCard
               title={t('home:socialSection.title')}
@@ -246,8 +252,9 @@ export default function HomePage(
 
         {/* IMPACT SECTION */}
         <TwoColumnSection
+          className="pt-2 pb-10"
           isReverseOrder={false}
-          isWhiteBg={false}
+          isSecondaryBg={true}
           mobile={
             <InfoCard
               title={t('home:impactSection.title')}
@@ -294,36 +301,37 @@ export default function HomePage(
         </div>
 
         {/* USE COLLACTION SECTION */}
-        <div
-          className="pt-16 relative text-center mx-auto xs:max-w-350 sm:max-w-400 lg:max-w-600 rounded-none xs:rounded-1"
-          style={{ height: 450 }}
-        >
-          <div className="absolute h-full w-full rounded-none xs:rounded-1">
-            <Image
-              src={TomTomImg}
-              alt="CollAction Team"
-              fill={true}
-              className="rounded-none xs:rounded-1 object-cover"
-            />
-          </div>
+        <div className="bg-secondary pb-11">
           <div
-            className="absolute h-full w-full rounded-none xs:rounded-1"
-            style={{
-              background:
-                'linear-gradient(180deg, rgba(255, 255, 255, 0) 22.92%, rgba(0, 0, 0, 0.6) 75%)',
-            }}
-          />
+            className="pt-16 relative text-center mx-auto xs:max-w-350 sm:max-w-400 lg:max-w-600 rounded-none xs:rounded-1"
+            style={{ height: 450 }}
+          >
+            <div className="absolute h-full w-full rounded-none xs:rounded-1">
+              <Image
+                src={TomTomImg}
+                alt="CollAction Team"
+                fill={true}
+                className="rounded-none xs:rounded-1 object-cover"
+              />
+            </div>
+            <div
+              className="absolute h-full w-full rounded-none xs:rounded-1"
+              style={{
+                background:
+                  'linear-gradient(180deg, rgba(255, 255, 255, 0) 22.92%, rgba(0, 0, 0, 0.6) 75%)',
+              }}
+            />
 
-          <div className="absolute bottom-0 left-0 right-0 mb-9 mx-auto text-center w-full px-5 xs:max-w-350 sm:max-w-400 lg:max-w-600">
-            <h4 className="text-headline-lg-1 text-secondary mb-6">
-              {t('home:useCollActionSection.title')}
-            </h4>
-            <p className="text-body-short-1 text-secondary">
-              {t('home:useCollActionSection.description')}
-            </p>
+            <div className="absolute bottom-0 left-0 right-0 mb-9 mx-auto text-center w-full px-5 xs:max-w-350 sm:max-w-400 lg:max-w-600">
+              <h4 className="text-headline-lg-1 text-secondary mb-6">
+                {t('home:useCollActionSection.title')}
+              </h4>
+              <p className="text-body-short-1 text-secondary">
+                {t('home:useCollActionSection.description')}
+              </p>
+            </div>
           </div>
         </div>
-        <div className="pb-24"></div>
       </main>
     </>
   );
