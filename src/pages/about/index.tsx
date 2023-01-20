@@ -22,7 +22,6 @@ import InfoCard from 'src/components/InfoCard';
 import ContentBlock from 'src/components/ContentBlock';
 
 export default function AboutUsPage({
-  projects,
   usps,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const { t } = useTranslation();
@@ -67,7 +66,7 @@ export default function AboutUsPage({
 
         <TwoColumnSection
           isReverseOrder={false}
-          isWhiteBg={false}
+          isSecondaryBg={false}
           mobile={
             <div>
               {/* History  */}
@@ -80,7 +79,7 @@ export default function AboutUsPage({
               <ContentBlock
                 title={t('about:whatWeDo.title')}
                 body={t('about:whatWeDo.description')}
-                className="w-5/6 flex flex-col lg:flex-row lg:items-center mt-10"
+                className="w-5/6 flex flex-col lg:flex-row lg:items-center mt-11"
               />
             </div>
           }
@@ -88,14 +87,14 @@ export default function AboutUsPage({
             <ContentBlock
               title={t('about:history.title')}
               body={t('about:history.description')}
-              className="w-5/6 flex flex-col lg:flex-row lg:items-center mt-10"
+              className="w-5/6 flex flex-col lg:flex-row lg:items-center mt-11"
             />
           }
           second={
             <ContentBlock
               title={t('about:whatWeDo.title')}
               body={t('about:whatWeDo.description')}
-              className="w-5/6 flex flex-col lg:flex-row lg:items-center mt-10"
+              className="w-5/6 flex flex-col lg:flex-row lg:items-center mt-11"
             />
           }
         />
@@ -124,7 +123,7 @@ export default function AboutUsPage({
           />
           <div className="absolute bottom-6 left-[1.25rem] sm:bottom-[3.75rem] sm:left-[3.5rem] xl:left-[10.75rem] z-50 text-white text-md">
             <blockquote className="text-headline-m-1 mb-0 max-w-350">
-              “{t('about:memberQuote.quote')}„
+              {t('about:memberQuote.quote')}
             </blockquote>
             <span className="font-light">
               {t('about:memberQuote.firstName')}, {t('about:memberQuote.title')}
@@ -133,7 +132,7 @@ export default function AboutUsPage({
         </div>
 
         {/* View the Whole Team Button*/}
-        <div className="pt-24 pb-10">
+        <div className="pt-24 pb-11 bg-primary-0">
           <Link
             href="/team"
             className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 w-80 shadow-lg inset-x-0 mx-auto z-40"
@@ -144,14 +143,14 @@ export default function AboutUsPage({
 
         {/* USP  */}
         <ContentBlock
-          className="pb-16"
+          className="pt-10 pb-10"
           title={t('about:usp.title')}
           body={t('about:usp.description')}
-          // hasBg={false}
+          isSecondaryBg={true}
           leftAlign={false}
         />
 
-        <div className="mb-0 last:mb-0">
+        <div className="mb-8 last:mb-8">
           {/* <div className="flex flex-wrap justify-center mx-auto md:max-w-864"> */}
           <div className="flex flex-wrap justify-center mx-auto md:max-w-1064">
             {usps.map(usp => (
@@ -177,8 +176,8 @@ export default function AboutUsPage({
           </div>
         </div> */}
 
-        {/* SEE MORE DEALS */}
-        <div className="py-8">
+        {/* SEE MORE PROJECTS */}
+        <div className="pt-6 pb-10 bg-primary-0">
           <Link
             href="/projects"
             className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 w-72 shadow-lg inset-x-0 mx-auto z-40"
@@ -189,11 +188,11 @@ export default function AboutUsPage({
 
         <TwoColumnSection
           isReverseOrder={true}
-          isWhiteBg={true}
+          isSecondaryBg={true}
           mobile={
-            <div className="bg-white pt-6">
+            <div className="pt-6 pb-0">
               <Image
-                className="mx-auto py-4"
+                className="mx-auto"
                 src={CollActionGraphic}
                 alt={''}
                 width={80}

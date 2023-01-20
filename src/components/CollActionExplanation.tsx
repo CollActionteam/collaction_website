@@ -32,7 +32,7 @@ export default function CollActionExplanation(props: ExplanationProps) {
   };
 
   return (
-    <div className="px-7 text-center align-middle max-w-[325px] max-h[325px] py-4">
+    <div className="bg-primary-0 px-7 text-center align-middle max-w-[325px] max-h[325px] py-4">
       {props.title}
 
       <Image
