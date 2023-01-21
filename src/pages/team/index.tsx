@@ -93,59 +93,62 @@ export default function JoinListPage(
           </p>
         </div> */}
 
-        <div className="bg-secondary flex flex-wrap justify-center p-0 gap-x-4 mx-8 pt-10 pb-8">
-          {props.data.map(
-            ({
-              title,
-              description,
-              tags,
-            }: {
-              title: string;
-              description: string;
-              tags: Array<JoinTagTokenType>;
-            }) => (
-              <div
-                key={`${title} card`}
-                className={'bg-primary-0 p-6 mb-6 rounded-1 relative md:w-1/3'}
-              >
-                <h3 className="text-headline-m-1 text-primary-400 mb-2">
-                  {title}
-                </h3>
-                <p className="text-body-short-1 text-primary-300 mb-6">
-                  {description}
-                </p>
-                <div className="flex flex-wrap mb-4">
-                  {tags.map(tag => {
-                    const currentTag = joinTagsMap[tag];
-                    return (
-                      <div
-                        key={title + currentTag.text}
-                        className="flex items-center bg-secondary text-primary-400 rounded-1 py-3 px-4 mb-4 mr-4"
-                      >
-                        {currentTag.icon}
-                        <span className="ml-4">{currentTag.text}</span>
-                      </div>
-                    );
-                  })}
+        <div className="bg-secondary">
+          <div className="flex flex-wrap justify-center p-0 gap-x-4 mx-8 pt-10 pb-8">
+            {props.data.map(
+              ({
+                title,
+                description,
+                tags,
+              }: {
+                title: string;
+                description: string;
+                tags: Array<JoinTagTokenType>;
+              }) => (
+                <div
+                  key={`${title} card`}
+                  className={
+                    'bg-primary-0 p-6 mb-6 rounded-1 relative md:w-1/3'
+                  }
+                >
+                  <h3 className="text-headline-m-1 text-primary-400 mb-2">
+                    {title}
+                  </h3>
+                  <p className="text-body-short-1 text-primary-300 mb-6">
+                    {description}
+                  </p>
+                  <div className="flex flex-wrap mb-4">
+                    {tags.map(tag => {
+                      const currentTag = joinTagsMap[tag];
+                      return (
+                        <div
+                          key={title + currentTag.text}
+                          className="flex items-center bg-secondary text-primary-400 rounded-1 py-3 px-4 mb-4 mr-4"
+                        >
+                          {currentTag.icon}
+                          <span className="ml-4">{currentTag.text}</span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                  <div className="absolute flex bottom-0 right-0">
+                    <Link
+                      href={`/team/as/${title
+                        .split(' ')
+                        .join('-')
+                        .toLowerCase()}`}
+                      passHref
+                      className="bg-collaction h-8 w-8 p-4 mb-6 mr-6 rounded-full text-secondary"
+                      aria-label={`Visit ${title} posting`}
+                    >
+                      <ArrowRightIcon />
+                    </Link>
+                  </div>
                 </div>
-                <div className="absolute flex bottom-0 right-0">
-                  <Link
-                    href={`/team/as/${title
-                      .split(' ')
-                      .join('-')
-                      .toLowerCase()}`}
-                    passHref
-                    className="bg-collaction h-8 w-8 p-4 mb-6 mr-6 rounded-full text-secondary"
-                    aria-label={`Visit ${title} posting`}
-                  >
-                    <ArrowRightIcon />
-                  </Link>
-                </div>
-              </div>
-            )
-          )}
+              )
+            )}
+          </div>
         </div>
-
         {/* DOWNLOAD APP SETION */}
         <TwoColumnSection
           className=""
