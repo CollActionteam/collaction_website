@@ -83,7 +83,7 @@ export default function UilenstedeIndexPage() {
               opties:
             </p>
 
-            <ul style={{ listStyleType: 'disc' }} className="pl-7 mb-6">
+            <ul style={{ listStyleType: 'disc' }} className="pl-7 mb-2">
               <li className="mb-2">
                 <strong>School:</strong> als school kunt u zich opgeven voor de
                 actie door te mailen naar school@collaction.org.
@@ -106,8 +106,8 @@ export default function UilenstedeIndexPage() {
         </section>
 
         <section>
-          <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-600 mb-6">
-            <h4 className="text-collaction mb-4">Actiefoto's</h4>
+          <div className="mx-auto w-full max-w-536 sm:max-w-600 md:max-w-600 lg:max-w-600 px-5">
+            <h4 className="text-collaction mt-2 mb-6">Actiefoto's</h4>
           </div>
           <div className="pb-10 w-full md:w-11/12 lg:w-208 mx-auto">
             <ImageMasonry
