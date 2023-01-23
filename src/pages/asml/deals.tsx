@@ -14,7 +14,7 @@ export default function DealsPage({
       />
 
       <div className="bg-primary-0 p-5 md:p-12">
-        <div className="flex flex-wrap justify-center lg:justify-start mx-auto md:max-w-864">
+        <div className="flex flex-wrap justify-center mx-auto w-full">
           {deals.map(deal => (
             <DealsCard key={deal.title} {...deal} />
           ))}
