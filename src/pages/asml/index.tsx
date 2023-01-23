@@ -79,7 +79,7 @@ export default function ASMLPage({
             </div>
 
             {/* IMAGE CARDS */}
-            <div className="flex flex-wrap md:flex-row justify-center max-w-864 mx-auto mb-10 lg:mb-14">
+            <div className="flex flex-wrap md:flex-row justify-center w-full mx-auto mb-10 lg:mb-14">
               {imgCards.map((card, i) => (
                 <ImageCard key={card.bottom} card={card} index={i} />
               ))}
@@ -171,7 +171,7 @@ export default function ASMLPage({
                 }
                 .
               </p>
-              <div className="flex flex-wrap justify-center mx-auto md:max-w-864 mt-12 lg:mt-15">
+              <div className="flex flex-wrap justify-center mx-auto w-full mt-12 lg:mt-15">
                 {deals.map(deal => (
                   <DealsCard key={deal.title} {...deal} />
                 ))}
