@@ -8,16 +8,20 @@ import AppLinkGoogle from 'src/components/AppLinkGoogle';
 import ImageMasonry from 'src/components/ImageMasonry';
 
 import SteunSchool_banner from 'public/education_february.jpeg';
-import img6 from 'public/sjs/Sjs6.jpg';
-import img7 from 'public/sjs/Sjs7.jpg';
-import img8 from 'public/sjs/Sjs8.jpg';
-import img9 from 'public/sjs/Sjs9.jpg';
-import img10 from 'public/sjs/Sjs10.jpg';
-import img11 from 'public/sjs/Sjs11.jpg';
-import img12 from 'public/sjs/Sjs12.jpg';
-import img13 from 'public/sjs/Sjs13.jpg';
-import img14 from 'public/sjs/Sjs14.jpeg';
-import img15 from 'public/sjs/Sjs15.jpeg';
+import img1 from 'public/sjs/sjs1.jpg';
+import img2 from 'public/sjs/sjs2.jpg';
+import img3 from 'public/sjs/sjs3.jpg';
+import img4 from 'public/sjs/sjs4.jpg';
+import img5 from 'public/sjs/sjs5.jpg';
+import img6 from 'public/sjs/sjs6.jpg';
+import img8 from 'public/sjs/sjs8.jpg';
+import img9 from 'public/sjs/sjs9.jpg';
+import img10 from 'public/sjs/sjs10.jpg';
+import img11 from 'public/sjs/sjs11.jpg';
+import img12 from 'public/sjs/sjs12.jpg';
+import img13 from 'public/sjs/sjs13.jpg';
+import img14 from 'public/sjs/sjs14.jpeg';
+import img15 from 'public/sjs/sjs15.jpeg';
 
 export default function UilenstedeIndexPage() {
   return (
@@ -109,11 +113,16 @@ export default function UilenstedeIndexPage() {
               columnsCountBreakPoints={{ 320: 1, 640: 2, 960: 3, 1280: 4 }}
               gutter="10px"
               images={[
+                img1,
+                img2,
+                img3,
+                img4,
+                img5,
                 img6,
                 img8,
                 img11,
                 img9,
-                img7,
+
                 img10,
                 img12,
                 img13,
