@@ -7,7 +7,8 @@ import AppLinkApple from 'src/components/AppLinkApple';
 import AppLinkGoogle from 'src/components/AppLinkGoogle';
 import ImageMasonry from 'src/components/ImageMasonry';
 
-import SteunSchool_banner from 'public/education_february.jpeg';
+import SteunSchool_banner from 'public/sjs_banner_3imgs.jpg';
+
 import img1 from 'public/sjs/sjs1.jpg';
 import img2 from 'public/sjs/sjs2.jpg';
 import img3 from 'public/sjs/sjs3.jpg';
