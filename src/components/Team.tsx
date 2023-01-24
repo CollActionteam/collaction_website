@@ -54,14 +54,7 @@ export default function Teams(props: TeamProps) {
   }
 
   return (
-    <section
-      className={clsx(
-        'px-5',
-        'py-1',
-        'text-primary-400',
-        props.background || ''
-      )}
-    >
+    <section className={clsx(props.background || '')}>
       <div
         className={clsx(
           // 'pb-10',
