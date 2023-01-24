@@ -38,7 +38,7 @@ export default function Footer() {
             />
           </Link>
           <p className="mb-5">
-            © 2022 Copyright <br />
+            © 2023 Copyright <br />
             All Rights Reserved.
           </p>
           <div className="flex mb-5 md:mb-0">
