@@ -1,0 +1,10 @@
+{
+  "navbar": {
+    "home": "Thuis",
+    "about": "Wat betreft",
+    "team": "Team",
+    "projects": "Projecten",
+    "donate": "Doneer",
+    "contact": "Contact"
+  }
+}
