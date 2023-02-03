@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="112" height="20">
+<svg xmlns="http://www.w3.org/2000/svg" width="75" height="20">
     <linearGradient id="b" x2="0" y2="100%">
         <stop offset="0" stop-color="#bbb" stop-opacity=".1" />
         <stop offset="1" stop-opacity=".1" />
@@ -8,13 +8,13 @@
         <rect width="75" height="20" rx="3" fill="#fff" />
     </mask>
     <g mask="url(#a)">
-        <path fill="#555" d="M0 0h112v20H0z" />
+        <path fill="#555" d="M0 0h75v20H0z" />
     </g>
     <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
         <text x="46" y="15" fill="#010101" fill-opacity=".3">Website</text>
         <text x="46" y="14">Website</text>
     </g>
-    <svg viewBox="126.5 -7 60 60">
+    <svg viewBox="76.5 -7 60 60">
         <svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 0 1691.36 1943.97"
             preserveAspectRatio="xMidYMid meet">
             <g>
@@ -32,7 +32,7 @@
         </svg>
     </svg>
     <g>
-        <svg viewBox="128 -5 60 60">
+        <svg viewBox="78 -5 60 60">
             <svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 0 1691.36 1943.97"
                 preserveAspectRatio="xMidYMid meet">
                 <g>
