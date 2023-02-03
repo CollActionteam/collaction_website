@@ -7,6 +7,7 @@ import { useRouter } from 'next/router';
 
 import CollActionLogoWithText from 'public/logo-black-small.png';
 import PoweredByVercel from 'public/powered-by-vercel.svg';
+import { useTranslation } from 'next-i18next';
 
 const phone = '+31640394005';
 const email = 'contact@collaction.org';
@@ -15,6 +16,8 @@ const RSIN = '856193690';
 
 export default function Footer() {
   const { pathname } = useRouter();
+
+  const { t } = useTranslation();
 
   return (
     <footer
@@ -38,8 +41,8 @@ export default function Footer() {
             />
           </Link>
           <p className="mb-5">
-            © 2022 Copyright <br />
-            All Rights Reserved.
+            © 2022 {t('app:footer.copyright')} <br />
+            {t('app:footer.rights')}.
           </p>
           <div className="flex mb-5 md:mb-0">
             <a
@@ -64,7 +67,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h5 className="text-headline mb-5">Reach us</h5>
+          <h5 className="text-headline mb-5">{t('app:footer.reach')}.</h5>
           <ul className="list-none">
             <li className="mb-5 md:mb-0">
               <a href={`tel:${phone}`}>{phone}</a>
@@ -81,13 +84,13 @@ export default function Footer() {
         </div>
 
         <div>
-          <h5 className="text-headline mb-5">Legal</h5>
+          <h5 className="text-headline mb-5">{t('app:footer.legal')}</h5>
           <ul className="list-none">
             <li className="mb-5 md:mb-0">
-              <Link href="/privacy">Privacy policy</Link>
+              <Link href="/privacy">{t('app:footer.privacy')}</Link>
             </li>
             <li className="mb-5 md:mb-0">
-              <Link href="/terms">Terms of use</Link>
+              <Link href="/terms">{t('app:footer.terms')}</Link>
             </li>
             <li className="mb-5">
               <Link href="/anbi">ANBI</Link>

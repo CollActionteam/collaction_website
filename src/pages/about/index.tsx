@@ -230,7 +230,7 @@ export async function getStaticProps({ locale }: { locale: string }) {
       projects,
       usps,
       locale,
-      ...(await serverSideTranslations(locale, ['common', 'about'])),
+      ...(await serverSideTranslations(locale, ['common', 'about', 'app'])),
     },
   };
 }

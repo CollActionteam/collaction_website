@@ -247,7 +247,7 @@ export async function getStaticProps({ locale }: { locale: string }) {
   return {
     props: {
       locale,
-      ...(await serverSideTranslations(locale, ['common', 'donate'])),
+      ...(await serverSideTranslations(locale, ['common', 'donate', 'app'])),
     },
   };
 }
