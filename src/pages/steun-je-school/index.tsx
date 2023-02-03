@@ -82,7 +82,6 @@ export default function UilenstedeIndexPage() {
               Afhankelijk van uw situatie kiest u 1 of meerdere van de volgende
               opties:
             </p>
-
             <ul style={{ listStyleType: 'disc' }} className="pl-7 mb-2">
               <li className="mb-2">
                 <strong>School:</strong> als school kunt u zich opgeven voor de
@@ -102,12 +101,32 @@ export default function UilenstedeIndexPage() {
                 wijze? Neem dan contact op met school@collaction.org.
               </li>
             </ul>
+            <h4 className="text-collaction mt-6 mb-2">
+              Wat kan er op de doelenkaart?
+            </h4>
+            <p className="mb-2">
+              Hieronder een aantal tips over doelen die je op je doelenkaart
+              kunt zetten:
+            </p>
+            <ul style={{ listStyleType: 'disc' }} className="pl-7">
+              <li className="mb-2">Licht uit als je een ruimte verlaat</li>
+              <li className="mb-2">Afval scheiden in de juiste bakken</li>
+              <li className="mb-2">
+                Bidons en bekers gebruiken in plaats van pakjes drinken
+              </li>
+              <li className="mb-2">Één doekje per keer na het handen wassen</li>
+              <li className="mb-2">Deuren sluiten</li>
+            </ul>
           </div>
         </section>
 
         <section>
           <div className="mx-auto w-full max-w-536 sm:max-w-600 md:max-w-600 lg:max-w-600 px-5">
-            <h4 className="text-collaction mt-2 mb-6">Actiefoto's</h4>
+            <h4 className="text-collaction mt-2 mb-2">Actiefoto's</h4>
+            <p className="mb-6">
+              Jouw actiefoto's hier ook tussen? Stuur ze naar
+              school@collaction.org!
+            </p>
           </div>
           <div className="pb-10 w-full md:w-11/12 lg:w-208 mx-auto">
             <ImageMasonry

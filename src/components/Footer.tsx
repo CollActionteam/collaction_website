@@ -41,7 +41,7 @@ export default function Footer() {
             />
           </Link>
           <p className="mb-5">
-            © 2022 {t('app:footer.copyright')} <br />
+            © 2023 {t('app:footer.copyright')} <br />
             {t('app:footer.rights')}.
           </p>
           <div className="flex mb-5 md:mb-0">
