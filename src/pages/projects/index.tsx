@@ -20,6 +20,7 @@ import { useRouter } from 'next/router';
 import ContentBlock from 'src/components/ContentBlock';
 import CrowdActionCard, { CrowdAction } from 'src/components/CrowdActionCard';
 import Quote from 'src/components/Quote';
+import collactionTranslations from 'src/helpers/collactionTranslations';
 
 export default function ProjectListPage({ projects, pagination }: any) {
   const router = useRouter();
@@ -577,6 +578,15 @@ export async function getServerSideProps({ query, locale }: any) {
         'projects',
         'contact',
       ])),
+    },
+  };
+}
+
+export async function getStaticProps({ locale }: { locale: string }) {
+  return {
+    props: {
+      locale,
+      ...(await collactionTranslations(locale)),
     },
   };
 }

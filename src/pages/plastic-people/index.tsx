@@ -7,6 +7,7 @@ import AppLinkApple from 'src/components/AppLinkApple';
 import AppLinkGoogle from 'src/components/AppLinkGoogle';
 
 import Greenlands2023 from 'public/Greenlands2023.png';
+import collactionTranslations from 'src/helpers/collactionTranslations';
 
 // import img1 from 'public/sjs/sjs1.jpg';
 // import img2 from 'public/sjs/sjs2.jpg';
@@ -76,4 +77,13 @@ export default function UilenstedeIndexPage() {
       </main>
     </>
   );
+}
+
+export async function getStaticProps({ locale }: { locale: string }) {
+  return {
+    props: {
+      locale,
+      ...(await collactionTranslations(locale)),
+    },
+  };
 }
