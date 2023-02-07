@@ -1,5 +1,4 @@
 import { useTranslation } from 'next-i18next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Image from 'next/image';
 import AppLinkApple from 'src/components/AppLinkApple';
 import AppLinkGoogle from 'src/components/AppLinkGoogle';
@@ -125,20 +124,11 @@ export async function getServerSideProps({ query, locale }: any) {
       crowdAction,
       topParticipants,
       locale,
-      ...(await serverSideTranslations(locale, [
+      ...(await collactionTranslations(locale, [
         'common',
         'crowdaction',
         'contact',
       ])),
-    },
-  };
-}
-
-export async function getStaticProps({ locale }: { locale: string }) {
-  return {
-    props: {
-      locale,
-      ...(await collactionTranslations(locale)),
     },
   };
 }

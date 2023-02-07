@@ -4,7 +4,6 @@ import PageSEO from 'src/components/PageSEO';
 import HeroImg from 'public/education_february.jpeg';
 
 import { useTranslation } from 'next-i18next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import PageHero from 'src/components/PageHero';
 import Image from 'next/image';
@@ -573,20 +572,11 @@ export async function getServerSideProps({ query, locale }: any) {
       projects: items,
       pagination: pageInfo,
       locale,
-      ...(await serverSideTranslations(locale, [
+      ...(await collactionTranslations(locale, [
         'common',
         'projects',
         'contact',
       ])),
-    },
-  };
-}
-
-export async function getStaticProps({ locale }: { locale: string }) {
-  return {
-    props: {
-      locale,
-      ...(await collactionTranslations(locale)),
     },
   };
 }
