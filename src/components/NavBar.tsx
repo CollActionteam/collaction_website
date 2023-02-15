@@ -112,18 +112,6 @@ export default function NavBar() {
             }`}
           >
             <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              {/* <Link
-                href="/"
-                className={clsx(
-                  'flex items-center mx-4 md:mx-0 md:ml-8',
-                  router.asPath === '/'
-                    ? 'text-headline-s-1'
-                    : 'text-body-short-1',
-                  isInverted ? 'text-secondary' : 'text-primary-300'
-                )}
-              >
-                Home
-              </Link> */}
               <Link
                 href="/"
                 legacyBehavior
