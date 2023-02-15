@@ -112,7 +112,7 @@ export default function NavBar() {
             }`}
           >
             <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <Link
+              {/* <Link
                 href="/"
                 className={clsx(
                   'flex items-center mx-4 md:mx-0 md:ml-8',
@@ -123,9 +123,23 @@ export default function NavBar() {
                 )}
               >
                 Home
+              </Link> */}
+              <Link
+                href="/"
+                legacyBehavior
+                className={clsx(
+                  'flex items-center mx-4 md:mx-0 md:ml-8',
+                  router.asPath === '/'
+                    ? 'text-headline-s-1'
+                    : 'text-body-short-1',
+                  isInverted ? 'text-secondary' : 'text-primary-300'
+                )}>
+               <a onClick={() => { setNavbar(false)}} onKeyPress={() => setNavbar(false)}
+                  role = "button" tabIndex={0}>Home</a>
               </Link>
               <Link
                 href="/about"
+                legacyBehavior
                 className={clsx(
                   'flex items-center mx-4 md:mx-0 md:ml-8',
                   router.asPath === '/about'
@@ -134,10 +148,12 @@ export default function NavBar() {
                   isInverted ? 'text-secondary' : 'text-primary-300'
                 )}
               >
-                About
+                <a onClick={() => { setNavbar(false)}} onKeyPress={() => setNavbar(false)}
+                  role = "button" tabIndex={0}>About</a>
               </Link>
               <Link
                 href="/team"
+                legacyBehavior
                 className={clsx(
                   'flex items-center mx-4 md:mx-0 md:ml-8',
                   router.asPath === '/team'
@@ -146,10 +162,12 @@ export default function NavBar() {
                   isInverted ? 'text-secondary' : 'text-primary-300'
                 )}
               >
-                Team
+                <a onClick={() => { setNavbar(false)}} onKeyPress={() => setNavbar(false)}
+                  role = "button" tabIndex={0}>Team</a>
               </Link>
               <Link
                 href="/projects"
+                legacyBehavior
                 className={clsx(
                   'flex items-center mx-4 md:mx-0 md:ml-8',
                   router.asPath.includes('/projects')
@@ -158,10 +176,12 @@ export default function NavBar() {
                   isInverted ? 'text-secondary' : 'text-primary-300'
                 )}
               >
-                Projects
+                <a onClick={() => { setNavbar(false)}} onKeyPress={() => setNavbar(false)}
+                  role = "button" tabIndex={0}>Projects</a>
               </Link>
               <Link
                 href="/donate"
+                legacyBehavior
                 className={clsx(
                   'flex items-center mx-4 md:mx-0 md:ml-8',
                   router.asPath === '/donate'
@@ -170,7 +190,8 @@ export default function NavBar() {
                   isInverted ? 'text-secondary' : 'text-primary-300'
                 )}
               >
-                Donate
+                <a onClick={() => { setNavbar(false)}} onKeyPress={() => setNavbar(false)}
+                  role = "button" tabIndex={0}>Donate</a>
               </Link>
               <button
                 onClick={() => setShowContactModal(true)}

@@ -27,7 +27,7 @@ export default function Quote({
         <div>
           <h3
             className={clsx(
-              'text-headline-m-1 mt-10 mb-10',
+              'text-headline-s-1 md:text-headline-m-1 mt-10 mb-10',
               'text-primary-400 mx-auto w-4/5'
               // body ? 'mb-6' : 'mb-9'
               // body ? 'mb-3' : 'mb-6'
@@ -35,11 +35,11 @@ export default function Quote({
           >
             {quote}
           </h3>
-          <p className={clsx('text-body-long-1 mb-3', 'text-primary-400')}>
+          <p className={clsx('text-button md:text-body-long-1 mb-3', 'text-primary-400')}>
             <strong>{name}</strong>
           </p>
 
-          <p className={clsx('text-body-long-1 mb-10', 'text-primary-300')}>
+          <p className={clsx('text-button md:text-body-long-1 mb-10', 'text-primary-300')}>
             {position}
           </p>
         </div>
