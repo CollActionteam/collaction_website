@@ -9,7 +9,6 @@ import RubenAboutImgLg from 'public/ruben-lg.png';
 import RubenAboutImgSm from 'public/ruben-sm.png';
 
 import { useTranslation } from 'next-i18next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { InferGetStaticPropsType } from 'next';
 
 import { UspCard } from 'src/components/UspCard';
@@ -20,6 +19,7 @@ import PageHero from 'src/components/PageHero';
 import TwoColumnSection from 'src/components/TwoColumnSection';
 import InfoCard from 'src/components/InfoCard';
 import ContentBlock from 'src/components/ContentBlock';
+import collactionTranslations from 'src/helpers/collactionTranslations';
 
 export default function AboutUsPage({
   usps,
@@ -230,7 +230,7 @@ export async function getStaticProps({ locale }: { locale: string }) {
       projects,
       usps,
       locale,
-      ...(await serverSideTranslations(locale, ['common', 'about'])),
+      ...(await collactionTranslations(locale, ['about'])),
     },
   };
 }

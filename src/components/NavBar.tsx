@@ -10,6 +10,7 @@ import CollActionBlackLogoWithText from 'public/logo-black-small.png';
 import CollActionWhiteLogoWithText from 'public/logo-white-small.png';
 import { CircleFlag } from 'react-circle-flags';
 import { ToastContainer } from 'react-toastify';
+import { useTranslation } from 'next-i18next';
 
 export default function NavBar() {
   const router = useRouter();
@@ -23,6 +24,8 @@ export default function NavBar() {
   // if it's inverted we'll show white text and a green background
   const isInverted = ['/westland'].includes(router.pathname);
   const [showContactModal, setShowContactModal] = useState(false);
+
+  const { t } = useTranslation();
 
   return (
     <div>
@@ -122,7 +125,7 @@ export default function NavBar() {
                   isInverted ? 'text-secondary' : 'text-primary-300'
                 )}
               >
-                Home
+                {t('app:navbar.home')}
               </Link>
               <Link
                 href="/about"
@@ -134,7 +137,7 @@ export default function NavBar() {
                   isInverted ? 'text-secondary' : 'text-primary-300'
                 )}
               >
-                About
+                {t('app:navbar.about')}
               </Link>
               <Link
                 href="/team"
@@ -146,7 +149,7 @@ export default function NavBar() {
                   isInverted ? 'text-secondary' : 'text-primary-300'
                 )}
               >
-                Team
+                {t('app:navbar.team')}
               </Link>
               <Link
                 href="/projects"
@@ -158,7 +161,7 @@ export default function NavBar() {
                   isInverted ? 'text-secondary' : 'text-primary-300'
                 )}
               >
-                Projects
+                {t('app:navbar.projects')}
               </Link>
               <Link
                 href="/donate"
@@ -170,7 +173,7 @@ export default function NavBar() {
                   isInverted ? 'text-secondary' : 'text-primary-300'
                 )}
               >
-                Donate
+                {t('app:navbar.donate')}
               </Link>
               <button
                 onClick={() => setShowContactModal(true)}
@@ -182,7 +185,7 @@ export default function NavBar() {
                   isInverted ? 'text-secondary' : 'text-primary-300'
                 )}
               >
-                Contact
+                {t('app:navbar.contact')}
               </button>
               <p className="hidden lg:block"> | </p>
               <div className="h-7 w-7 flex space-x-4 mx-4 md:mx-0 md:ml-8">

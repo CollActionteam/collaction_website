@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import PageSEO from 'src/components/PageSEO';
+import collactionTranslations from 'src/helpers/collactionTranslations';
 
 export default function PrivacyPage() {
   return (
@@ -420,4 +421,13 @@ export default function PrivacyPage() {
       </main>
     </>
   );
+}
+
+export async function getStaticProps({ locale }: { locale: string }) {
+  return {
+    props: {
+      locale,
+      ...(await collactionTranslations(locale)),
+    },
+  };
 }

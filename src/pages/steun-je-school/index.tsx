@@ -23,6 +23,7 @@ import img12 from 'public/sjs/sjs12.jpg';
 import img13 from 'public/sjs/sjs13.jpg';
 import img14 from 'public/sjs/sjs14.jpeg';
 import img15 from 'public/sjs/sjs15.jpeg';
+import collactionTranslations from 'src/helpers/collactionTranslations';
 
 export default function UilenstedeIndexPage() {
   return (
@@ -168,4 +169,13 @@ export default function UilenstedeIndexPage() {
       </main>
     </>
   );
+}
+
+export async function getStaticProps({ locale }: { locale: string }) {
+  return {
+    props: {
+      locale,
+      ...(await collactionTranslations(locale)),
+    },
+  };
 }

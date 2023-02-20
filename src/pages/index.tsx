@@ -18,7 +18,6 @@ import CollActionExplanation, {
 import TwoColumnSection from 'src/components/TwoColumnSection';
 
 import { useTranslation } from 'next-i18next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { InferGetStaticPropsType } from 'next';
 import PageHero from 'src/components/PageHero';
 import ContentBlock from 'src/components/ContentBlock';
@@ -26,12 +25,13 @@ import Quote from 'src/components/Quote';
 
 import Faq from 'src/components/Faq';
 import { v4 } from 'uuid';
+import collactionTranslations from 'src/helpers/collactionTranslations';
 
 export async function getStaticProps({ locale }: { locale: string }) {
   return {
     props: {
       locale,
-      ...(await serverSideTranslations(locale, ['common', 'home', 'donate'])),
+      ...(await collactionTranslations(locale, ['home', 'donate'])),
     },
   };
 }
