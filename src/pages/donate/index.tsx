@@ -15,9 +15,9 @@ import HeroImg from 'public/collaction_team.png';
 import PageHero from 'src/components/PageHero';
 
 import { useTranslation } from 'next-i18next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { InferGetStaticPropsType } from 'next';
 import ContentBlock from 'src/components/ContentBlock';
+import collactionTranslations from 'src/helpers/collactionTranslations';
 
 const recurringProducts: Product[] = [
   {
@@ -247,7 +247,7 @@ export async function getStaticProps({ locale }: { locale: string }) {
   return {
     props: {
       locale,
-      ...(await serverSideTranslations(locale, ['common', 'donate'])),
+      ...(await collactionTranslations(locale, ['donate'])),
     },
   };
 }

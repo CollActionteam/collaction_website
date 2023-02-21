@@ -9,6 +9,7 @@ import PageSEO from 'src/components/PageSEO';
 import InfoCard from 'src/components/InfoCard';
 import AppLinkApple from 'src/components/AppLinkApple';
 import AppLinkGoogle from 'src/components/AppLinkGoogle';
+import collactionTranslations from 'src/helpers/collactionTranslations';
 
 // const whatsAppUrl = '#';
 // const ikDoeMeeUrl = '#';
@@ -404,4 +405,13 @@ export default function UilenstedeIndexPage() {
       </section>
     </>
   );
+}
+
+export async function getStaticProps({ locale }: { locale: string }) {
+  return {
+    props: {
+      locale,
+      ...(await collactionTranslations(locale)),
+    },
+  };
 }

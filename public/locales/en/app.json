@@ -1,0 +1,18 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "team": "Team",
+    "projects": "Projects",
+    "donate": "Donate",
+    "contact": "Contact"
+  },
+  "footer": {
+    "copyright": "Copyright",
+    "rights": "All Rights Reserved",
+    "reach": "Reach us",
+    "legal": "General",
+    "privacy": "Privacy policy",
+    "terms": "Terms of use"
+  }
+}

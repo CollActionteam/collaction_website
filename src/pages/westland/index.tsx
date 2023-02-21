@@ -19,6 +19,7 @@ import CO2Img from 'public/impact/co2.jpeg';
 import CollActionLogoWithTextWhite from 'public/logo-white-small.png';
 
 import { PopupButton } from '@typeform/embed-react';
+import collactionTranslations from 'src/helpers/collactionTranslations';
 const formId = 'nvzkdCMO';
 
 // const whatsAppUrl = '#';
@@ -407,4 +408,13 @@ function ImageCard({ card, index }: { card: ImageCard; index: number }) {
       </div>
     </div>
   );
+}
+
+export async function getStaticProps({ locale }: { locale: string }) {
+  return {
+    props: {
+      locale,
+      ...(await collactionTranslations(locale)),
+    },
+  };
 }

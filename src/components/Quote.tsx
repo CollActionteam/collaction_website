@@ -35,11 +35,21 @@ export default function Quote({
           >
             {quote}
           </h3>
-          <p className={clsx('text-button md:text-body-long-1 mb-3', 'text-primary-400')}>
+          <p
+            className={clsx(
+              'text-button md:text-body-long-1 mb-3',
+              'text-primary-400'
+            )}
+          >
             <strong>{name}</strong>
           </p>
 
-          <p className={clsx('text-button md:text-body-long-1 mb-10', 'text-primary-300')}>
+          <p
+            className={clsx(
+              'text-button md:text-body-long-1 mb-10',
+              'text-primary-300'
+            )}
+          >
             {position}
           </p>
         </div>

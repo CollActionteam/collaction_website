@@ -1,5 +1,4 @@
 import { useTranslation } from 'next-i18next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Image from 'next/image';
 import AppLinkApple from 'src/components/AppLinkApple';
 import AppLinkGoogle from 'src/components/AppLinkGoogle';
@@ -10,6 +9,7 @@ import TwoColumnSection from 'src/components/TwoColumnSection';
 import DownloadImg from 'public/download_app.png';
 import AvatarCircle from 'src/components/AvatarCircle';
 import CrowdActionChipList from 'src/components/CrowdActionChipList';
+import collactionTranslations from 'src/helpers/collactionTranslations';
 
 const staticUrl = process.env.NEXT_PUBLIC_STATIC_URL;
 
@@ -124,7 +124,7 @@ export async function getServerSideProps({ query, locale }: any) {
       crowdAction,
       topParticipants,
       locale,
-      ...(await serverSideTranslations(locale, [
+      ...(await collactionTranslations(locale, [
         'common',
         'crowdaction',
         'contact',
