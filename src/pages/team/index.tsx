@@ -6,7 +6,6 @@ import {
 } from 'react-icons/fi';
 import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import PageSEO from 'src/components/PageSEO';
 import InfoCard from 'src/components/InfoCard';
@@ -22,6 +21,7 @@ import HeroImg from 'public/collaction_team.jpg';
 import { InferGetStaticPropsType } from 'next';
 import PageHero from 'src/components/PageHero';
 import ContentBlock from 'src/components/ContentBlock';
+import collactionTranslations from 'src/helpers/collactionTranslations';
 
 type JoinTagsMapType = {
   [K in JoinTagTokenType]: {
@@ -187,7 +187,7 @@ export const getStaticProps = async ({ locale }: { locale: string }) => {
     props: {
       data,
       locale,
-      ...(await serverSideTranslations(locale, ['common', 'team'])),
+      ...(await collactionTranslations(locale, ['team'])),
     },
   };
 };

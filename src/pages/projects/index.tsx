@@ -4,7 +4,6 @@ import PageSEO from 'src/components/PageSEO';
 import HeroImg from 'public/education_february.jpeg';
 
 import { useTranslation } from 'next-i18next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import PageHero from 'src/components/PageHero';
 import Image from 'next/image';
@@ -20,6 +19,7 @@ import { useRouter } from 'next/router';
 import ContentBlock from 'src/components/ContentBlock';
 import CrowdActionCard, { CrowdAction } from 'src/components/CrowdActionCard';
 import Quote from 'src/components/Quote';
+import collactionTranslations from 'src/helpers/collactionTranslations';
 
 export default function ProjectListPage({ projects, pagination }: any) {
   const router = useRouter();
@@ -572,7 +572,7 @@ export async function getServerSideProps({ query, locale }: any) {
       projects: items,
       pagination: pageInfo,
       locale,
-      ...(await serverSideTranslations(locale, [
+      ...(await collactionTranslations(locale, [
         'common',
         'projects',
         'contact',

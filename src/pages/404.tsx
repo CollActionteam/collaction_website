@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import PageSEO from 'src/components/PageSEO';
+import collactionTranslations from 'src/helpers/collactionTranslations';
 
 export default function Custom404() {
   return (
@@ -21,4 +22,13 @@ export default function Custom404() {
       </main>
     </>
   );
+}
+
+export async function getStaticProps({ locale }: { locale: string }) {
+  return {
+    props: {
+      locale,
+      ...(await collactionTranslations(locale)),
+    },
+  };
 }

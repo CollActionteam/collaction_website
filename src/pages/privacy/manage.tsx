@@ -8,6 +8,7 @@ import {
   makeCookieSelection,
   revokeAcceptedCookies,
 } from 'src/components/Analytics/Analytics.utils';
+import collactionTranslations from 'src/helpers/collactionTranslations';
 
 export default function ManagePrivacyPage() {
   const [cookiesAccepted, setCookiesAcceptance] = useState(
@@ -80,4 +81,13 @@ export default function ManagePrivacyPage() {
       </main>
     </>
   );
+}
+
+export async function getStaticProps({ locale }: { locale: string }) {
+  return {
+    props: {
+      locale,
+      ...(await collactionTranslations(locale)),
+    },
+  };
 }

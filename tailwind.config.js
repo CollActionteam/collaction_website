@@ -36,12 +36,12 @@ module.exports = {
           DEFAULT: '#000000',
         },
         collaction: {
-          100: '#D2F3EB',
-          200: '#A5E8D8',
-          300: '#92E3D0',
-          400: '#4AD1B1',
-          500: '#2EB494',
-          DEFAULT: '#2EB494',
+          100: '#D2F3EB', // NEEDS TO BE UPDATED
+          200: '#A5E8D8', // NEEDS TO BE UPDATED
+          300: '#92E3D0', // NEEDS TO BE UPDATED
+          400: '#4AD1B1', // NEEDS TO BE UPDATED
+          500: '#2EB494', // NEEDS TO BE UPDATED
+          DEFAULT: '#22bd6f',
         },
       },
       boxShadow: {
