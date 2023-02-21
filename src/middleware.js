@@ -11,6 +11,8 @@ export async function middleware(req) {
     return NextResponse.redirect(new URL('/uilenstede', req.url));
   } else if (pathname == '/link2') {
     return NextResponse.redirect(new URL('/uilenstede', req.url));
+  } else if (pathname == '/projects/steun-je-school') {
+    return NextResponse.redirect(new URL('/steun-je-school', req.url));
   }
   return NextResponse.next();
 }

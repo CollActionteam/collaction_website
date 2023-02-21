@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 import PageSEO from 'src/components/PageSEO';
 import InfoCard from 'src/components/InfoCard';
@@ -7,7 +6,8 @@ import AppLinkApple from 'src/components/AppLinkApple';
 import AppLinkGoogle from 'src/components/AppLinkGoogle';
 import ImageMasonry from 'src/components/ImageMasonry';
 
-import SteunSchool_banner from 'public/sjs_banner_3imgs.jpg';
+import PageHero from 'src/components/PageHero';
+import HeroImg from 'public/sjs_banner_3imgs.jpg';
 
 import img1 from 'public/sjs/sjs1.jpg';
 import img2 from 'public/sjs/sjs2.jpg';
@@ -15,53 +15,119 @@ import img3 from 'public/sjs/sjs3.jpg';
 import img4 from 'public/sjs/sjs4.jpg';
 import img5 from 'public/sjs/sjs5.jpg';
 import img6 from 'public/sjs/sjs6.jpg';
+import img7 from 'public/sjs/sjs7.jpg';
 import img8 from 'public/sjs/sjs8.jpg';
 import img9 from 'public/sjs/sjs9.jpg';
 import img10 from 'public/sjs/sjs10.jpg';
 import img11 from 'public/sjs/sjs11.jpg';
 import img12 from 'public/sjs/sjs12.jpg';
 import img13 from 'public/sjs/sjs13.jpg';
-import img14 from 'public/sjs/sjs14.jpeg';
-import img15 from 'public/sjs/sjs15.jpeg';
+import img14 from 'public/sjs/sjs14.jpg';
+
 import collactionTranslations from 'src/helpers/collactionTranslations';
 
 export default function UilenstedeIndexPage() {
   return (
     <>
-      <PageSEO title="CollAction op School | Steun je School" />
+      <PageSEO
+        title="CollAction op School | Steun je School"
+        description="CollAction organises CrowdAction for schools"
+      />
 
-      <main className="mt-8 mb-12">
+      <main className="mb-12">
+        <PageHero image={HeroImg} title={'Steun je School'} />
+
         <section>
-          <div className="text-center mx-auto max-w-700 sm:max-w-400 lg:max-w-600">
-            <h1 className="text-collaction text-center mb-8">
-              Steun je School
-            </h1>
-          </div>
-
-          <div className="relative block w-full md:w-11/12 lg:w-208 mx-auto">
-            <Image
-              priority
-              src={SteunSchool_banner}
-              alt="SteunSchool banner"
-              className="rounded-1"
-              sizes="(max-width: 768px) 90vw, 830px"
-              placeholder="blur"
-            />
-          </div>
           <div className="mx-auto w-full max-w-536 sm:max-w-600 md:max-w-600 lg:max-w-600 py-5 px-5">
             <h4 className="text-collaction mt-6 mb-2">
               Wat houdt de actie in?
             </h4>
             <p className="mb-2">
-              Op 1 februari start een groep basisscholen aan de actie 'Steun je
-              School'. Tijdens deze actie creëren we de gehele maand februari
-              bewustwording bij kinderen, gezinnen en ieder ander rondom het
-              thema energie. Dit kan door de thermostaat lager te zetten, korter
-              te douchen of op andere wijze energie te besparen. Of het nu opa's
-              en oma's zijn die warme sjaals breien, of de buren die kleedjes
-              uitlenen aan de school. Centraal staat dat iedereen op zijn of
-              haar manier kan meedoen: Steun je School en bespaar energie!
+              Op 1 februari starten basisscholen De Brug en Willem-Alexander aan
+              de actie 'Steun je School'. Tijdens deze actie creëren we de
+              gehele maand februari bewustwording bij kinderen, gezinnen en
+              ieder ander rondom het thema energie. Dit kan door de thermostaat
+              lager te zetten, korter te douchen of op andere wijze energie te
+              besparen. Of het nu opa's en oma's zijn die warme sjaals breien,
+              of de buren die kleedjes uitlenen aan de school. Centraal staat
+              dat iedereen op zijn of haar manier kan meedoen: Steun je School
+              en bespaar energie!
             </p>
+
+            <h4 className="text-collaction mt-6 mb-2">Actie in het nieuws</h4>
+
+            <ul style={{ listStyleType: 'disc' }} className="pl-7">
+              <li className="mb-2">
+                <a
+                  className="text-collaction"
+                  href="https://www.zo34.nl/nieuws/7078/150-meter-sjaal-uit-erica-voor-giro-555/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  ZO!34: 150 meter sjaal uit Erica voor Giro 555 op De
+                  Willem-Alexander
+                </a>
+              </li>
+              <li className="mb-2">
+                {
+                  <a
+                    className="text-collaction"
+                    href="https://www.rtvdrenthe.nl/article/f7a7e10d-7c93-547e-8f84-4e722fd0f0c7"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    RTV Drenthe: Sjaals verkopen voor Giro 555 op De
+                    Willem-Alexander
+                  </a>
+                }
+              </li>
+              <li className="mb-2">
+                {
+                  <a
+                    className="text-collaction"
+                    href="https://www.youtube.com/watch?v=d-bcFoEY8YI"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Radio Drenthe komt langs op De Willem-Alexander
+                  </a>
+                }
+              </li>
+            </ul>
+
+            <h4 className="text-collaction mt-6 mb-2">Actiefoto's</h4>
+            <p className="mb-2">
+              Jouw actiefoto's hier ook tussen? Stuur ze naar
+              school@collaction.org!
+            </p>
+          </div>
+        </section>
+        <section>
+          <div className="pb-2 mx-auto w-11/12 max-w-536 sm:max-w-640 md:max-w-960 lg:max-w-960 py-5 px-5">
+            <ImageMasonry
+              columnsCountBreakPoints={{ 320: 1, 640: 2, 960: 3, 1280: 4 }}
+              gutter="10px"
+              images={[
+                img1,
+                img2,
+                img3,
+                img4,
+                img5,
+                img6,
+                img7,
+                img8,
+                img9,
+                img10,
+                img11,
+                img12,
+                img13,
+                img14,
+              ]}
+            />
+          </div>
+        </section>
+        <section>
+          <div className="mx-auto w-full max-w-536 sm:max-w-600 md:max-w-600 lg:max-w-600 py-5 px-5">
             <h4 className="text-collaction mt-6 mb-2">
               Waarom zou ik meedoen?
             </h4>
@@ -116,41 +182,8 @@ export default function UilenstedeIndexPage() {
                 Bidons en bekers gebruiken in plaats van pakjes drinken
               </li>
               <li className="mb-2">Één doekje per keer na het handen wassen</li>
-              <li className="mb-2">Deuren sluiten</li>
+              <li className="mb-6">Deuren sluiten</li>
             </ul>
-          </div>
-        </section>
-
-        <section>
-          <div className="mx-auto w-full max-w-536 sm:max-w-600 md:max-w-600 lg:max-w-600 px-5">
-            <h4 className="text-collaction mt-2 mb-2">Actiefoto's</h4>
-            <p className="mb-6">
-              Jouw actiefoto's hier ook tussen? Stuur ze naar
-              school@collaction.org!
-            </p>
-          </div>
-          <div className="pb-10 w-full md:w-11/12 lg:w-208 mx-auto">
-            <ImageMasonry
-              columnsCountBreakPoints={{ 320: 1, 640: 2, 960: 3, 1280: 4 }}
-              gutter="10px"
-              images={[
-                img1,
-                img2,
-                img3,
-                img4,
-                img5,
-                img6,
-                img8,
-                img11,
-                img9,
-
-                img10,
-                img12,
-                img13,
-                img14,
-                img15,
-              ]}
-            />
           </div>
         </section>
 

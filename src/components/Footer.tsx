@@ -67,7 +67,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h5 className="text-headline mb-5">{t('app:footer.reach')}.</h5>
+          <h5 className="text-headline mb-5">{t('app:footer.reach')}</h5>
           <ul className="list-none">
             <li className="mb-5 md:mb-0">
               <a href={`tel:${phone}`}>{phone}</a>

@@ -5,13 +5,14 @@
     "team": "Team",
     "projects": "Projects",
     "donate": "Donate",
-    "contact": "Contact" 
+    "contact": "Contact"
   },
-  "footer":{
+  "footer": {
     "copyright": "Copyright",
-    "rights":"All Rights Reserved",
-    "reach":"Reach us",
-    "legal":"Legal",
-    "privacy":"Privacy policy",
-    "terms":"Terms of use"}
+    "rights": "All Rights Reserved",
+    "reach": "Reach us",
+    "legal": "General",
+    "privacy": "Privacy policy",
+    "terms": "Terms of use"
+  }
 }

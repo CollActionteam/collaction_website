@@ -1,18 +1,18 @@
 {
   "navbar": {
-    "home": "Thuis",
-    "about": "Wat betreft",
+    "home": "Start",
+    "about": "Over ons",
     "team": "Team",
     "projects": "Projecten",
     "donate": "Doneer",
     "contact": "Contact"
   },
-  "footer":{
-    "copyright": "Auteursrechten",
-    "rights":"Alle rechten voorbehouden",
-    "reach":"Bereik ons",
-    "legal":"Juridisch",
-    "privacy":"Privacybeleid",
-    "terms":"Gebruiksvoorwaarden"
+  "footer": {
+    "copyright": "Copyright",
+    "rights": "All Rights Reserved",
+    "reach": "Bereik ons",
+    "legal": "Algemeen",
+    "privacy": "Privacybeleid",
+    "terms": "Gebruiksvoorwaarden"
   }
 }
