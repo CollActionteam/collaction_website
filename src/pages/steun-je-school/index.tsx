@@ -23,6 +23,7 @@ import img11 from 'public/sjs/sjs11.jpg';
 import img12 from 'public/sjs/sjs12.jpg';
 import img13 from 'public/sjs/sjs13.jpg';
 import img14 from 'public/sjs/sjs14.jpg';
+import img15 from 'public/sjs/sjs15.jpg';
 
 import collactionTranslations from 'src/helpers/collactionTranslations';
 
@@ -57,6 +58,18 @@ export default function UilenstedeIndexPage() {
             <h4 className="text-collaction mt-6 mb-2">Actie in het nieuws</h4>
 
             <ul style={{ listStyleType: 'disc' }} className="pl-7">
+              <li className="mb-2">
+                <a
+                  className="text-collaction"
+                  href="https://dvhn.nl/weekbladendrenthe/emmercourant/Afval-scheiden-en-korter-douchen.-Leerlingen-van-CBS-Willem-Alexander-in-Erica-zijn-bezig-met-duurzaamheid-en-energie-28246194.html"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Dagblad van het Noorden: Afval scheiden en korter douchen. De
+                  leerlingen in Erica zijn bezig met duurzaamheid
+                </a>
+              </li>
+
               <li className="mb-2">
                 <a
                   className="text-collaction"
@@ -122,6 +135,7 @@ export default function UilenstedeIndexPage() {
                 img12,
                 img13,
                 img14,
+                img15,
               ]}
             />
           </div>
