@@ -43,7 +43,7 @@ export default function UilenstedeIndexPage() {
             <h4 className="text-collaction mt-6 mb-2">
               Meer dan €400 voor Giro555 door jullie!
             </h4>
-            <div className="mx-auto w-full py-5">
+            <div className="mx-auto w-full max-w-536 sm:max-w-600 md:max-w-600 lg:max-w-600 py-5">
               <iframe
                 width="600"
                 height="450"
@@ -56,7 +56,7 @@ export default function UilenstedeIndexPage() {
               Jordi op bezoek bij Energiefeest De Brug
             </h4>
 
-            <div className="mx-auto w-full py-5">
+            <div className="mx-auto w-full max-w-536 sm:max-w-600 md:max-w-600 lg:max-w-600 py-5">
               <iframe
                 width="600"
                 height="450"
@@ -133,12 +133,14 @@ export default function UilenstedeIndexPage() {
               </li>
             </ul>
 
-            <iframe
-              width="600"
-              height="450"
-              src="https://www.youtube.com/embed/d-bcFoEY8YI"
-              title="radio"
-            ></iframe>
+            <div className="mx-auto w-full max-w-536 sm:max-w-600 md:max-w-600 lg:max-w-600 py-5">
+              <iframe
+                width="600"
+                height="450"
+                src="https://www.youtube.com/embed/d-bcFoEY8YI"
+                title="radio"
+              ></iframe>
+            </div>
 
             <h4 className="text-collaction mt-8 mb-2">Actiefoto's</h4>
             <p className="mb-2">
