@@ -43,27 +43,24 @@ export default function UilenstedeIndexPage() {
             <h4 className="text-collaction mt-6 mb-2">
               Meer dan €400 voor Giro555 door jullie!
             </h4>
-            <div className="mx-auto w-full max-w-536 sm:max-w-600 md:max-w-600 lg:max-w-600 py-5">
-              <iframe
-                width="600"
-                height="450"
-                src="https://www.youtube.com/embed/9bQ-TGXBERw"
-                title="trots"
-              ></iframe>
-            </div>
+
+            <iframe
+              width="100%"
+              height="250"
+              src="https://www.youtube.com/embed/9bQ-TGXBERw"
+              title="trots"
+            ></iframe>
 
             <h4 className="text-collaction mt-6 mb-2">
               Jordi op bezoek bij Energiefeest De Brug
             </h4>
 
-            <div className="mx-auto w-full max-w-536 sm:max-w-600 md:max-w-600 lg:max-w-600 py-5">
-              <iframe
-                width="600"
-                height="450"
-                src="https://www.youtube.com/embed/Q3HjG6pdw9E"
-                title="werfTV"
-              ></iframe>
-            </div>
+            <iframe
+              width="100%"
+              height="250"
+              src="https://www.youtube.com/embed/Q3HjG6pdw9E"
+              title="werfTV"
+            ></iframe>
 
             <h4 className="text-collaction mt-6 mb-2">
               Wat houdt de actie in?
@@ -133,14 +130,12 @@ export default function UilenstedeIndexPage() {
               </li>
             </ul>
 
-            <div className="mx-auto w-full max-w-536 sm:max-w-600 md:max-w-600 lg:max-w-600 py-5">
-              <iframe
-                width="600"
-                height="450"
-                src="https://www.youtube.com/embed/d-bcFoEY8YI"
-                title="radio"
-              ></iframe>
-            </div>
+            <iframe
+              width="100%"
+              height="250"
+              src="https://www.youtube.com/embed/d-bcFoEY8YI"
+              title="radio"
+            ></iframe>
 
             <h4 className="text-collaction mt-8 mb-2">Actiefoto's</h4>
             <p className="mb-2">
