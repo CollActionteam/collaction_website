@@ -41,6 +41,31 @@ export default function UilenstedeIndexPage() {
         <section>
           <div className="mx-auto w-full max-w-536 sm:max-w-600 md:max-w-600 lg:max-w-600 py-5 px-5">
             <h4 className="text-collaction mt-6 mb-2">
+              Meer dan €400 voor Giro555 door jullie!
+            </h4>
+            <div className="mx-auto w-full py-5">
+              <iframe
+                width="600"
+                height="450"
+                src="https://www.youtube.com/embed/9bQ-TGXBERw"
+                title="trots"
+              ></iframe>
+            </div>
+
+            <h4 className="text-collaction mt-6 mb-2">
+              Jordi op bezoek bij Energiefeest De Brug
+            </h4>
+
+            <div className="mx-auto w-full py-5">
+              <iframe
+                width="600"
+                height="450"
+                src="https://www.youtube.com/embed/Q3HjG6pdw9E"
+                title="werfTV"
+              ></iframe>
+            </div>
+
+            <h4 className="text-collaction mt-6 mb-2">
               Wat houdt de actie in?
             </h4>
             <p className="mb-2">
@@ -58,6 +83,18 @@ export default function UilenstedeIndexPage() {
             <h4 className="text-collaction mt-6 mb-2">Actie in het nieuws</h4>
 
             <ul style={{ listStyleType: 'disc' }} className="pl-7">
+              <li className="mb-2">
+                <a
+                  className="text-collaction"
+                  href="https://dvhn.nl/weekbladendrenthe/emmercourant/Leerlingen-van-CB-De-Brug-in-Klazienaveen-douchen-korter-en-zetten-de-thermostaat-een-graadje-lager-28261461.html"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Dagblad van het Noorden: Korter douchen en de thermostaat een
+                  graadje lager op De Brug in Klazienaveen.
+                </a>
+              </li>
+
               <li className="mb-2">
                 <a
                   className="text-collaction"
@@ -81,7 +118,7 @@ export default function UilenstedeIndexPage() {
                   Willem-Alexander
                 </a>
               </li>
-              <li className="mb-2">
+              <li className="mb-4">
                 {
                   <a
                     className="text-collaction"
@@ -94,21 +131,16 @@ export default function UilenstedeIndexPage() {
                   </a>
                 }
               </li>
-              <li className="mb-2">
-                {
-                  <a
-                    className="text-collaction"
-                    href="https://www.youtube.com/watch?v=d-bcFoEY8YI"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Radio Drenthe komt langs op De Willem-Alexander
-                  </a>
-                }
-              </li>
             </ul>
 
-            <h4 className="text-collaction mt-6 mb-2">Actiefoto's</h4>
+            <iframe
+              width="600"
+              height="450"
+              src="https://www.youtube.com/embed/d-bcFoEY8YI"
+              title="radio"
+            ></iframe>
+
+            <h4 className="text-collaction mt-8 mb-2">Actiefoto's</h4>
             <p className="mb-2">
               Jouw actiefoto's hier ook tussen? Stuur ze naar
               school@collaction.org!
