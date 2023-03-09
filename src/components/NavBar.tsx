@@ -133,6 +133,9 @@ export default function NavBar() {
                   onKeyPress={() => setNavbar(false)}
                   role="button"
                   tabIndex={0}
+                  className={clsx(
+                    'flex block md:inline-block pl-3',
+                  )}
                 >
                   {t('app:navbar.home')}
                 </a>
@@ -155,8 +158,10 @@ export default function NavBar() {
                   onKeyPress={() => setNavbar(false)}
                   role="button"
                   tabIndex={0}
+                  className={clsx(
+                    'flex block md:inline-block pl-3',
+                  )}
                 >
-                  {' '}
                   {t('app:navbar.about')}
                 </a>
               </Link>
@@ -178,6 +183,9 @@ export default function NavBar() {
                   onKeyPress={() => setNavbar(false)}
                   role="button"
                   tabIndex={0}
+                  className={clsx(
+                    'flex block md:inline-block pl-3',
+                  )}
                 >
                   {t('app:navbar.team')}
                 </a>
@@ -200,6 +208,9 @@ export default function NavBar() {
                   onKeyPress={() => setNavbar(false)}
                   role="button"
                   tabIndex={0}
+                  className={clsx(
+                    'flex block md:inline-block pl-3',
+                  )}
                 >
                   {t('app:navbar.projects')}
                 </a>
@@ -222,6 +233,9 @@ export default function NavBar() {
                   onKeyPress={() => setNavbar(false)}
                   role="button"
                   tabIndex={0}
+                  className={clsx(
+                    'flex block md:inline-block pl-3',
+                  )}
                 >
                   {t('app:navbar.donate')}
                 </a>
