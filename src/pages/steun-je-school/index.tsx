@@ -23,6 +23,7 @@ import img11 from 'public/sjs/sjs11.jpg';
 import img12 from 'public/sjs/sjs12.jpg';
 import img13 from 'public/sjs/sjs13.jpg';
 import img14 from 'public/sjs/sjs14.jpg';
+import img15 from 'public/sjs/sjs15.jpg';
 
 import collactionTranslations from 'src/helpers/collactionTranslations';
 
@@ -39,6 +40,28 @@ export default function UilenstedeIndexPage() {
 
         <section>
           <div className="mx-auto w-full max-w-536 sm:max-w-600 md:max-w-600 lg:max-w-600 py-5 px-5">
+            <h4 className="text-collaction mt-6 mb-2">
+              Meer dan €400 voor Giro555 door jullie!
+            </h4>
+
+            <iframe
+              width="100%"
+              height="250"
+              src="https://www.youtube.com/embed/9bQ-TGXBERw"
+              title="trots"
+            ></iframe>
+
+            <h4 className="text-collaction mt-6 mb-2">
+              Jordi op bezoek bij Energiefeest De Brug
+            </h4>
+
+            <iframe
+              width="100%"
+              height="250"
+              src="https://www.youtube.com/embed/Q3HjG6pdw9E"
+              title="werfTV"
+            ></iframe>
+
             <h4 className="text-collaction mt-6 mb-2">
               Wat houdt de actie in?
             </h4>
@@ -60,6 +83,30 @@ export default function UilenstedeIndexPage() {
               <li className="mb-2">
                 <a
                   className="text-collaction"
+                  href="https://dvhn.nl/weekbladendrenthe/emmercourant/Leerlingen-van-CB-De-Brug-in-Klazienaveen-douchen-korter-en-zetten-de-thermostaat-een-graadje-lager-28261461.html"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Dagblad van het Noorden: Korter douchen en de thermostaat een
+                  graadje lager op De Brug in Klazienaveen.
+                </a>
+              </li>
+
+              <li className="mb-2">
+                <a
+                  className="text-collaction"
+                  href="https://dvhn.nl/weekbladendrenthe/emmercourant/Afval-scheiden-en-korter-douchen.-Leerlingen-van-CBS-Willem-Alexander-in-Erica-zijn-bezig-met-duurzaamheid-en-energie-28246194.html"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Dagblad van het Noorden: Afval scheiden en korter douchen. De
+                  leerlingen in Erica zijn bezig met duurzaamheid
+                </a>
+              </li>
+
+              <li className="mb-2">
+                <a
+                  className="text-collaction"
                   href="https://www.zo34.nl/nieuws/7078/150-meter-sjaal-uit-erica-voor-giro-555/"
                   target="_blank"
                   rel="noreferrer"
@@ -68,7 +115,7 @@ export default function UilenstedeIndexPage() {
                   Willem-Alexander
                 </a>
               </li>
-              <li className="mb-2">
+              <li className="mb-4">
                 {
                   <a
                     className="text-collaction"
@@ -81,21 +128,16 @@ export default function UilenstedeIndexPage() {
                   </a>
                 }
               </li>
-              <li className="mb-2">
-                {
-                  <a
-                    className="text-collaction"
-                    href="https://www.youtube.com/watch?v=d-bcFoEY8YI"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Radio Drenthe komt langs op De Willem-Alexander
-                  </a>
-                }
-              </li>
             </ul>
 
-            <h4 className="text-collaction mt-6 mb-2">Actiefoto's</h4>
+            <iframe
+              width="100%"
+              height="250"
+              src="https://www.youtube.com/embed/d-bcFoEY8YI"
+              title="radio"
+            ></iframe>
+
+            <h4 className="text-collaction mt-8 mb-2">Actiefoto's</h4>
             <p className="mb-2">
               Jouw actiefoto's hier ook tussen? Stuur ze naar
               school@collaction.org!
@@ -122,6 +164,7 @@ export default function UilenstedeIndexPage() {
                 img12,
                 img13,
                 img14,
+                img15,
               ]}
             />
           </div>
