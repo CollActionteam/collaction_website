@@ -74,7 +74,6 @@ export default function NavBar() {
             </Link>
             <div className="md:hidden">
               <button
-                // focus:border-gray-400 focus:border
                 className="p-2 text-gray-700 rounded-md outline-none"
                 onClick={() => setNavbar(!navbar)}
               >
