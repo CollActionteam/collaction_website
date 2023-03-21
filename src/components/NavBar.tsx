@@ -37,7 +37,7 @@ export default function NavBar() {
       <header
         className={clsx(
           'relative w-full',
-          router.pathname === '/asml' ? 'hidden' : 'block',
+          router.pathname === '/veganuary' ? 'hidden' : 'block',
           isInverted ? 'bg-collaction' : 'bg-secondary'
         )}
       >
