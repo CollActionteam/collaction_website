@@ -12,7 +12,7 @@ import { DealsCard } from 'src/components/DealsCard';
 import { getDealsData } from 'src/lib/getDeals';
 import * as Icons from 'src/components/Icons';
 
-import ASMLBanner from 'public/veganuary-ASML-banner.png';
+import Banner from 'public/veganuary-banner.png';
 import CollActionLogoWithText from 'public/logo-black-small.png';
 import CollActionLogoWithTextWhite from 'public/logo-white-small.png';
 
@@ -24,14 +24,14 @@ import AnimalsImg from 'public/impact/animals.jpeg';
 import CO2Img from 'public/impact/co2.jpeg';
 import WaterImg from 'public/impact/water.jpeg';
 
-export default function ASMLPage({
+export default function VeganuaryPage({
   deals,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <>
       <PageSEO
-        title="CollAction meets ASML | Make an impact together"
-        description="ASML participates in Veganuary: an annual challenge that promotes veganism and sustainable food consumption. Read recipes, tips, supplements, and more."
+        title="CollAction meets Veganuary | Make an impact together"
+        description="Veganuary: an annual challenge that promotes veganism and sustainable food consumption. Read recipes, tips, supplements, and more."
       />
 
       <div>
@@ -55,8 +55,8 @@ export default function ASMLPage({
           <div className="relative block w-full md:w-11/12 lg:w-208 mx-auto">
             <Image
               priority
-              src={ASMLBanner}
-              alt="asml veganuary banner"
+              src={Banner}
+              alt="veganuary banner"
               className="rounded-1"
               sizes="(max-width: 768px) 90vw, 830px"
               placeholder="blur"
@@ -67,11 +67,11 @@ export default function ASMLPage({
             <div className="w-full max-w-400 md:max-w-500 text-center mx-auto">
               {/* MAIN HEADING */}
               <h1 className="text-center mb-7 md:mb-8 break-words">
-                Congratulations ASML!
+                Congratulations!
               </h1>
               <p className="mb-15 md:mb-18 lg:mb-24">
                 Your effort paid off. Based on your individual commitments, we
-                calculated the impact of 135 participants in this year’s ASML
+                calculated the impact of 135 participants in this year’s
                 Veganuary challenge. Here are the numbers. Feel free to share
                 this and spread the word about your collective impact. Together,
                 you made waves!
@@ -85,91 +85,13 @@ export default function ASMLPage({
               ))}
             </div>
 
-            {/* YOUR INDIVIDUAL IMPACT */}
-            {/* <div className="w-full max-w-400 md:max-w-500 text-center mx-auto">
-              <h1 className="text-center mb-7 md:mb-8">
-                Your individual impact
-              </h1>
-              <p className="lg:mb-15">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                sit amet ultrices risus. Phasellus augue eros, bibendum non
-                viverra ut, posuere vel risus.
-              </p>
-            </div> */}
-
-            {/* ICON IMPACT CARDS */}
-            {/* <div className="flex justify-center lg:justify-start flex-wrap mx-auto max-w-864 md:px-7 lg:p-0">
-              {iconCards.map((card, i) => (
-                <IconCard key={card.top} card={card} index={i} />
-              ))}
-            </div> */}
-
-            {/* <div className="max-w-600 mx-auto mb-13">
-              <h4 className="mb-7">
-                Hi, welcome to the ASML edition of Veganuary!
-              </h4>
-              <p className="mb-6 last:mb-0">
-                Veganuary is an annual challenge that promotes veganism and
-                sustainable food consumption. Joining is easy, you will go
-                through the following steps:
-              </p>
-              <ul style={{ listStyleType: 'decimal' }} className="pl-7">
-                <li className="mb-2">
-                  Choose if you want to participate 5 or 7 days a week
-                </li>
-                <li className="mb-2">Choose your commitments</li>
-                <li className="mb-2">
-                  Stay tuned for extra activities and restaurant deals
-                </li>
-                <li className="mb-2">
-                  See the impact of you and your colleagues after the dietary
-                  change
-                </li>
-              </ul>
-              <p className="mb-6 last:mb-0">
-                <br />
-                Veganuary is a month where we can challenge ourselves. Let's try
-                it out together and help each other by sharing recipes, tips,
-                supplements, and more. Shifting to a more plant-based diet is
-                great for your health and the environment. Want to participate?
-                Click the participate button and fill out the form.
-              </p>
-            </div> */}
-
-            {/* <div className="max-w-600 mx-auto mb-13">
-              <h4 className="mb-7">Commitments</h4>
-              <p className="mb-6 last:mb-0">
-                We'd love to optimize your personal impact. Eating vegan for a
-                full month can be a difficult task. To maximize the impact of
-                the ASML edition of Veganuary, there are multiple levels at
-                which you can participate. Your challenge, your rules.
-                Therefore, you can join the challenge by eating vegan for a
-                month, but eating vegetarian, pescatarian, or simply not eating
-                beef/cheese is also possible. Would you like to have the
-                weekends off? We've got you covered with a '5/7 days as week'
-                option!
-              </p>
-            </div> */}
-
             <div className="mb-13 last:mb-0">
               <h4 className="max-w-600 mx-auto mb-7">Restaurant Deals</h4>
               {/* if we add another paragraph, use the commented line in both and remove the used one */}
               {/* <p className="max-w-500 mx-auto mb-6 last:mb-0"> */}
               <p className="max-w-600 mx-auto mb-0">
                 Besides us, restaurants would like to motivate you as well! See
-                below which deals are on offer. Note that for some restaurants
-                you're required to show the password in{' '}
-                {
-                  <a
-                    className="text-collaction"
-                    href="https://my.asml.com/Newsroom/Pages/Sustainability/Join-our-Veganuary-journey.aspx"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    this MyASML article
-                  </a>
-                }
-                .
+                below which deals are on offer.
               </p>
               <div className="flex flex-wrap justify-center mx-auto w-full mt-12 lg:mt-15">
                 {deals.map(deal => (
@@ -181,7 +103,7 @@ export default function ASMLPage({
 
           {/* SEE MORE DEALS */}
           <Link
-            href="/asml/deals"
+            href="/veganuary/deals"
             className="block bg-collaction font-bold leading-none text-button text-secondary text-center rounded-full p-3.5 mt-5 w-72 shadow sticky bottom-7 inset-x-0 mx-auto z-40"
           >
             See All Deals
