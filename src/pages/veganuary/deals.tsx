@@ -9,8 +9,8 @@ export default function DealsPage({
   return (
     <>
       <PageSEO
-        title="CollAction meets ASML | Make an impact together"
-        description="ASML participates in Veganuary: an annual challenge that promotes veganism and sustainable food consumption. Browse through all restaurant deals."
+        title="CollAction meets Veganuary | Make an impact together"
+        description="Participate in Veganuary: an annual challenge that promotes veganism and sustainable food consumption. Browse through all restaurant deals."
       />
 
       <div className="bg-primary-0 p-5 md:p-12">
