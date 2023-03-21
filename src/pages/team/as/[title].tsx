@@ -6,39 +6,43 @@ import { getJoinsData } from 'src/lib/getJoins';
 import { JoinDataType } from 'src/types/joins';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { getJoinData } from 'src/lib/getJoin';
+import { InferGetStaticPropsType } from 'next';
+import collactionTranslations from 'src/helpers/collactionTranslations';
+import { log } from 'console';
 
-export default function SingleJoinPage({ data }: { data: JoinDataType }) {
-  if (!data) return <></>;
+  export default function SingleJoinPage(props: InferGetStaticPropsType<typeof getStaticProps>) {
+  
+  if (!props) return <></>;
   return (
     <>
       <PageSEO
         title="CollAction | Join Our Team"
-        description={`Passionate about what we do? Consider joining our team as a ${data.title}.`}
+        description={`Passionate about what we do? Consider joining our team as a ${props.data.title}.`}
       />
 
       <main className="bg-secondary p-5 md:p-12">
         <div className="max-w-600 mx-auto">
-          <h1 className="text-primary-400 mb-6">{data.title}</h1>
-          <p className="text-primary-300 mb-7">{data.description}</p>
+          <h1 className="text-primary-400 mb-6">{props.data.title}</h1>
+          <p className="text-primary-300 mb-7">{props.data.description}</p>
 
           <h4 className="text-primary-400 mb-4">General</h4>
           <ul style={{ listStyleType: 'disc' }} className="pl-7 mb-7">
-            <li>Location: {data.location}</li>
-            <li>Pay: {data.pay}</li>
+            <li>Location: {props.data.location}</li>
+            <li>Pay: {props.data.pay}</li>
             <li>
               Contact:{' '}
               <a
-                href={`mailto:${data.contact}?subject=${data.title} Position at Collaction`}
+                href={`mailto:${props.data.contact}?subject=${props.data.title} Position at Collaction`}
                 className="text-collaction font-bold"
               >
-                {data.contact}
+                {props.data.contact}
               </a>
             </li>
           </ul>
 
           <h4 className="text-primary-400 mb-4">About you</h4>
           <ul style={{ listStyleType: 'disc' }} className="pl-7 mb-7">
-            {data.aboutYou.map(aboutYouPoint => (
+            {props.data.aboutYou.map( (aboutYouPoint : string) => (
               <li key={aboutYouPoint}>{aboutYouPoint}</li>
             ))}
           </ul>
@@ -101,12 +105,14 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-export const getStaticProps: GetStaticProps = async ctx => {
+export const getStaticProps: GetStaticProps = async (ctx) => {
   const data = getJoinData(ctx.params?.title as string);
+  const locale = ctx.locale as string;
 
   return {
     props: {
       data,
+      ...(await collactionTranslations(locale)),
     },
   };
 };
