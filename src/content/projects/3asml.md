@@ -4,7 +4,7 @@
   title: Veganuary challenge
   image: /veganuary-ASML-banner.png
   links: 
-    website: /asml
+    website: /veganuary
     phone: null
     location: null
     order: null

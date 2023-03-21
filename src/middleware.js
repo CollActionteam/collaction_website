@@ -3,10 +3,10 @@ import { NextResponse } from 'next/server';
 export async function middleware(req) {
   const { pathname } = req.nextUrl;
 
-  if (pathname == '/asml/impact') {
-    return NextResponse.redirect(new URL('/asml', req.url));
+  if (pathname == '/veganuary/impact') {
+    return NextResponse.redirect(new URL('/veganuary', req.url));
   } else if (pathname == '/impact') {
-    return NextResponse.redirect(new URL('/asml', req.url));
+    return NextResponse.redirect(new URL('/veganuary', req.url));
   } else if (pathname == '/link') {
     return NextResponse.redirect(new URL('/uilenstede', req.url));
   } else if (pathname == '/link2') {

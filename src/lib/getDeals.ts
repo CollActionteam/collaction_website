@@ -5,12 +5,12 @@ import { DealsType } from 'src/types/deals';
 
 export function getDealsData(type: 'featured' | 'all' = 'all') {
   // get deal file names
-  const asmlDealsDir = path.join(process.cwd(), 'src/content/asml');
-  const asmlDealsFiles = fs.readdirSync(asmlDealsDir);
+  const veganuaryDealsDir = path.join(process.cwd(), 'src/content/veganuary');
+  const veganuaryDealsFiles = fs.readdirSync(veganuaryDealsDir);
 
-  const allDealsData = asmlDealsFiles
+  const allDealsData = veganuaryDealsFiles
     .map(fileName => {
-      const filePath = path.join(`${asmlDealsDir}/${fileName}`);
+      const filePath = path.join(`${veganuaryDealsDir}/${fileName}`);
       const fileContents = fs.readFileSync(filePath, 'utf8');
       const matterResult = matter(fileContents);
       const matterContent = matterResult.content;
