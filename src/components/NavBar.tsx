@@ -74,7 +74,7 @@ export default function NavBar() {
             </Link>
             <div className="md:hidden">
               <button
-                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                className="p-2 text-gray-700 rounded-md outline-none"
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? (
@@ -117,6 +117,12 @@ export default function NavBar() {
             <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <Link
                 href="/"
+                onClick={() => {
+                  setNavbar(false);
+                }}
+                onKeyPress={() => setNavbar(false)}
+                role="button"
+                tabIndex={0}
                 className={clsx(
                   'flex items-center mx-4 md:mx-0 md:ml-8',
                   router.asPath === '/'
@@ -129,6 +135,12 @@ export default function NavBar() {
               </Link>
               <Link
                 href="/about"
+                onClick={() => {
+                  setNavbar(false);
+                }}
+                onKeyPress={() => setNavbar(false)}
+                role="button"
+                tabIndex={0}
                 className={clsx(
                   'flex items-center mx-4 md:mx-0 md:ml-8',
                   router.asPath === '/about'
@@ -141,6 +153,12 @@ export default function NavBar() {
               </Link>
               <Link
                 href="/team"
+                onClick={() => {
+                  setNavbar(false);
+                }}
+                onKeyPress={() => setNavbar(false)}
+                role="button"
+                tabIndex={0}
                 className={clsx(
                   'flex items-center mx-4 md:mx-0 md:ml-8',
                   router.asPath === '/team'
@@ -153,6 +171,12 @@ export default function NavBar() {
               </Link>
               <Link
                 href="/projects"
+                onClick={() => {
+                  setNavbar(false);
+                }}
+                onKeyPress={() => setNavbar(false)}
+                role="button"
+                tabIndex={0}
                 className={clsx(
                   'flex items-center mx-4 md:mx-0 md:ml-8',
                   router.asPath.includes('/projects')
@@ -165,6 +189,12 @@ export default function NavBar() {
               </Link>
               <Link
                 href="/donate"
+                onClick={() => {
+                  setNavbar(false);
+                }}
+                onKeyPress={() => setNavbar(false)}
+                role="button"
+                tabIndex={0}
                 className={clsx(
                   'flex items-center mx-4 md:mx-0 md:ml-8',
                   router.asPath === '/donate'
