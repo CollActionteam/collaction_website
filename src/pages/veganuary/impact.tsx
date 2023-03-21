@@ -13,16 +13,16 @@ import CO2Img from 'public/impact/co2.jpeg';
 import WaterImg from 'public/impact/water.jpeg';
 import CollActionLogoWithText from 'public/logo-white-small.png';
 
-export default function ASMLImpactPage() {
+export default function ImpactPage() {
   return (
     <>
-      <PageSEO title="Your Impact | ASML" />
+      <PageSEO title="Your Impact | Veganuary" />
 
       <div className="bg-primary-0 p-5 pt-26 md:pt-32">
         <div className="w-full max-w-400 md:max-w-500 text-center mx-auto">
           {/* MAIN HEADING */}
           <h1 className="text-center mb-7 md:mb-8 break-words">
-            Congratulations ASML!
+            Congratulations!
           </h1>
           <p className="mb-15 md:mb-18 lg:mb-24">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit
