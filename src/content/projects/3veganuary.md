@@ -2,7 +2,7 @@
   publish: true
   featured: false
   title: Veganuary challenge
-  image: /veganuary-ASML-banner.png
+  image: /veganuary-banner.png
   links: 
     website: /veganuary
     phone: null
