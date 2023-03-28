@@ -49,7 +49,7 @@ export default function NavBar() {
         )}
         <div
           className={clsx(
-            'flex flex-col md:flex-row flex-wrap px-6 lg:px-0 md:items-center justify-center md:justify-between mx-auto py-4',
+            'flex flex-col md:flex-row flex-wrap px-6 md:px-0 md:items-center justify-center md:justify-between mx-auto py-4',
             'md:max-w-[700px] lg:max-w-864',
             'z-20'
           )}
@@ -110,9 +110,8 @@ export default function NavBar() {
             </div>
           </div>
           <div
-            className={`justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-              navbar ? 'block' : 'hidden'
-            }`}
+            className={`justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? 'block' : 'hidden'
+              }`}
           >
             <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <Link
