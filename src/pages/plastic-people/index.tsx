@@ -26,13 +26,31 @@ export default function ActionIndexPage() {
         <section>
           <div className="mx-auto w-full max-w-536 sm:max-w-600 md:max-w-600 lg:max-w-600 py-5 px-5">
             <h4 className="text-collaction mt-6 mb-2">
-              Plastic People focuses on PMD waste
+              Plastic waste made fun & easy
             </h4>
 
             <p className="mb-2">Location: Uilenstede</p>
-            <p className="mb-6">Time: April 1 - April 15</p>
+            <p className="mb-6">Date: Saturday April 15</p>
 
-            <p className="mb-2">More info follows soon!</p>
+            <p className="mb-2">
+              At{' '}
+              <a
+                className="text-collaction"
+                href="https://www.instagram.com/greenlands.festivals/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Greenlands Festival
+              </a>{' '}
+              on April 15, Plastic People are present on the Uilenstede Campus.
+              Right next to the Plastic People, CollAction hands out free bins
+              and bags for Uilenstede citizens. Furthermore, you can play games
+              to win prizes, and ask us anything on how to start separating
+              plastic waste. That's how CollAction makes plastic waste fun &
+              easy!
+            </p>
+
+            <p className="mb-2 mt-6">More info follows soon!</p>
           </div>
         </section>
 
