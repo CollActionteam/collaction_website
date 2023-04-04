@@ -110,8 +110,9 @@ export default function NavBar() {
             </div>
           </div>
           <div
-            className={`justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? 'block' : 'hidden'
-              }`}
+            className={`justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+              navbar ? 'block' : 'hidden'
+            }`}
           >
             <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <Link
