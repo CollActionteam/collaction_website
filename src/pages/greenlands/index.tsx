@@ -28,7 +28,21 @@ export default function ActionIndexPage() {
           {/* mx-auto max-w-700 sm:max-w-400 lg:max-w-600
           relative block w-full md:w-11/12 lsm:max-w-600 lg:max-w-600 mx-auto mt-6 mb-6 */}
 
-          <div className="relative block w-full md:w-11/12 lsm:max-w-600 lg:max-w-750 mx-auto mt-6 mb-6">
+          <div className="relative block w-full md:w-11/12 lsm:max-w-600 lg:max-w-750 mx-auto mt-8 mb-6">
+            <div className="mx-auto w-full max-w-536 sm:max-w-600 md:max-w-600 lg:max-w-600 mt-4 px-5">
+              {/* <h4 className="text-collaction mt-6 mb-2">
+              Go Green at Greenlands 2023
+            </h4>
+            <p className="mb-2">Location: Uilenstede</p>
+            <p className="mb-6">Time: April 15, 13:00 - 23:00</p> */}
+              <p className="mb-2 text-center">
+                <strong>Location: Uilenstede</strong>
+              </p>
+              <p className="mb-2 text-center">
+                <strong>Time: April 15, 13:00 - 23:00</strong>
+              </p>
+            </div>
+
             <h4 className="text-collaction mt-8 mb-6 text-center">
               Program Greenlands
             </h4>
