@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 
 export interface ImageMasonryProps {
-  images: StaticImageData[];
+  images: string[] | StaticImageData[];
   columnsCountBreakPoints?: {
     [key: number]: number;
   };
