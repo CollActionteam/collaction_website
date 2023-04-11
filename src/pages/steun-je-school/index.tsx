@@ -13,7 +13,6 @@ import { getSteunJeImages } from 'src/lib/getSteunJeImages';
 import { InferGetStaticPropsType } from 'next';
 
 import collactionTranslations from 'src/helpers/collactionTranslations';
-const staticUrl = 'http://static.collaction.org/';
 
 export default function UilenstedeIndexPage({
   steunJeImages,
