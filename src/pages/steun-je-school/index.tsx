@@ -40,7 +40,7 @@ export default function UilenstedeIndexPage() {
 
         <section>
           <div className="mx-auto w-full max-w-536 sm:max-w-600 md:max-w-600 lg:max-w-600 py-5 px-5">
-            <h4 className="text-collaction mt-6 mb-2">
+            {/* <h4 className="text-collaction mt-6 mb-2">
               Meer dan €400 voor Giro555 door jullie!
             </h4>
 
@@ -49,7 +49,7 @@ export default function UilenstedeIndexPage() {
               height="250"
               src="https://www.youtube.com/embed/9bQ-TGXBERw"
               title="trots"
-            ></iframe>
+            ></iframe> */}
 
             <h4 className="text-collaction mt-6 mb-2">
               Jordi op bezoek bij Energiefeest De Brug
