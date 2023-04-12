@@ -6,7 +6,7 @@ import PageSEO from 'src/components/PageSEO';
 import PageHero from 'src/components/PageHero';
 import HeroImg from 'public/greenlands_website.jpg';
 
-import Program1 from 'public/GreenlandsWebsiteSlide1.png';
+import Program1 from 'public/GreenlandsWebsiteSlide11.png';
 import Program2 from 'public/GreenlandsWebsiteSlide2.png';
 
 import collactionTranslations from 'src/helpers/collactionTranslations';
