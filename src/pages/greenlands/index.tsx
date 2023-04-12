@@ -43,9 +43,7 @@ export default function ActionIndexPage() {
               </p>
             </div>
 
-            <h4 className="text-collaction mt-8 mb-6 text-center">
-              Program Greenlands
-            </h4>
+            <h4 className="mt-8 mb-6 text-center">Program</h4>
             <Image
               priority
               src={Program1}
@@ -57,9 +55,7 @@ export default function ActionIndexPage() {
           </div>
 
           <div className="relative block w-full md:w-11/12 lsm:max-w-600 lg:max-w-750 mx-auto mt-6 mb-6">
-            <h4 className="text-collaction mt-6 mb-4 text-center">
-              Stands Greenlands
-            </h4>
+            <h4 className="mt-6 mb-6 text-center">Stands</h4>
             <Image
               priority
               src={Program2}
