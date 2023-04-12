@@ -6,6 +6,7 @@ import { getJoinsData } from 'src/lib/getJoins';
 import { JoinDataType } from 'src/types/joins';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { getJoinData } from 'src/lib/getJoin';
+import collactionTranslations from 'src/helpers/collactionTranslations';
 
 export default function SingleJoinPage({ data }: { data: JoinDataType }) {
   if (!data) return <></>;
@@ -103,10 +104,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ctx => {
   const data = getJoinData(ctx.params?.title as string);
+  const locale = ctx.locale as string;
 
   return {
     props: {
       data,
+      ...(await collactionTranslations(locale)),
     },
   };
 };
