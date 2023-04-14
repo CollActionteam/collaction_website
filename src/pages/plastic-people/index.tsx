@@ -2,9 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 
 import PageSEO from 'src/components/PageSEO';
-import InfoCard from 'src/components/InfoCard';
-import AppLinkApple from 'src/components/AppLinkApple';
-import AppLinkGoogle from 'src/components/AppLinkGoogle';
 
 import PageHero from 'src/components/PageHero';
 import HeroImg from 'public/plasticpeople_banner.jpg';
@@ -36,7 +33,7 @@ export default function ActionIndexPage() {
               At{' '}
               <a
                 className="text-collaction"
-                href="https://www.instagram.com/greenlands.festivals/"
+                href="https://collaction.org/greenlands"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -50,11 +47,14 @@ export default function ActionIndexPage() {
               easy!
             </p>
 
-            <p className="mb-2 mt-6">More info follows soon!</p>
+            <p className="mb-2 mt-6">
+              Did you run out of transparent plastic bags? Get new ones for free
+              at Sportcentrum VU, DUWO or VBU! Black bags get burned :{'('}
+            </p>
           </div>
         </section>
 
-        <section>
+        {/* <section>
           <InfoCard
             isSecondaryBg
             title="Download the CollAction app"
@@ -65,7 +65,7 @@ export default function ActionIndexPage() {
               <AppLinkGoogle />
             </div>
           </InfoCard>
-        </section>
+        </section> */}
 
         <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-600 mb-6 mt-11">
           <h4 className="text-collaction mb-4">In collaboration with</h4>

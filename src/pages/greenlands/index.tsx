@@ -46,7 +46,7 @@ export default function ActionIndexPage() {
                 <strong>Time: 13:00 - 23:00</strong>
               </p>
               <p className="mb-2 text-center">
-                <strong>Afterparty: 22:00 - 03:00</strong>
+                <strong>Afterparty: 22:30 - 02:00</strong>
               </p>
             </div>
 
