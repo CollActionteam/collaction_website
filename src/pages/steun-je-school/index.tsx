@@ -56,6 +56,7 @@ export default function UilenstedeIndexPage() {
             </h4>
 
             <iframe
+              className="rounded-1"
               width="100%"
               height="250"
               src="https://www.youtube.com/embed/Q3HjG6pdw9E"
@@ -131,6 +132,7 @@ export default function UilenstedeIndexPage() {
             </ul>
 
             <iframe
+              className="rounded-1"
               width="100%"
               height="250"
               src="https://www.youtube.com/embed/d-bcFoEY8YI"
