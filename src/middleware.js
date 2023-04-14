@@ -15,6 +15,8 @@ export async function middleware(req) {
     return NextResponse.redirect('https://forms.gle/ARBP4LUd1qsgAFkB8');
   } else if (pathname == '/free') {
     return NextResponse.redirect('https://forms.gle/Vc2HEPNHSWVJB7FK7');
+  } else if (pathname == '/comedy') {
+    return NextResponse.redirect('https://forms.gle/p1vGDFi6GVXcTCcX6');
   } else if (pathname == '/projects/steun-je-school') {
     return NextResponse.redirect(new URL('/steun-je-school', req.url));
   }
