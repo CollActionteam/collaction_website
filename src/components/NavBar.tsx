@@ -170,7 +170,7 @@ export default function NavBar() {
                 {t('app:navbar.team')}
               </Link>
               <Link
-                href="/projects"
+                href="/projects?page=1"
                 onClick={() => {
                   setNavbar(false);
                 }}
