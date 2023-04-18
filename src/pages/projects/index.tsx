@@ -557,7 +557,7 @@ export default function ProjectListPage({ projects, pagination }: any) {
 }
 
 export async function getServerSideProps({ query, locale }: any) {
-  const page: string = query.page;
+  const page: string = query?.page || 1;
 
   const { items, pageInfo } = await fetch(
     `https://api.collaction.org/v1/crowdactions?page=${page}&pageSize=3`
