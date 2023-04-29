@@ -117,7 +117,6 @@ function ImageCard({ card, index }: { card: ImageCard; index: number }) {
     >
       <div className="block w-full h-full overflow-hidden rounded-1">
         <Image
-          priority={index < 2}
           src={card.image}
           alt={card.bottom}
           placeholder="blur"

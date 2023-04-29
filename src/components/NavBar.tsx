@@ -61,7 +61,6 @@ export default function NavBar() {
               aria-label="Home Page"
             >
               <Image
-                priority
                 src={
                   isInverted
                     ? CollActionWhiteLogoWithText

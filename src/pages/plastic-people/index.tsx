@@ -138,7 +138,6 @@ export default function ActionIndexPage() {
 
         <div className="relative block w-full md:w-11/12 lsm:max-w-600 lg:max-w-600 mx-auto mt-6 mb-6">
           <Image
-            priority
             src={Collaboration}
             alt="uilenstede banner"
             className="rounded-1"

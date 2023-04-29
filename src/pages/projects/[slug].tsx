@@ -31,7 +31,6 @@ export default function CrowdActionPage({ crowdAction, topParticipants }: any) {
 
       <div className="relative w-full min-h-[112px] lg:min-h-[210px]">
         <Image
-          priority
           src={`${staticUrl}${crowdAction.images.card}`}
           alt={crowdAction.title}
           className="absolute top-[-112px] lg:top-[-210px] left-[50%] transform translate-x-[-50%] h-[225px] lg:h-[420px] w-[350px] sm:w-[400px] lg:w-[744px] bg-white rounded-3xl"

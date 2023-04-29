@@ -43,7 +43,6 @@ export default function VeganuaryPage({
 
             <div className="w-32 mx-auto relative leading-none">
               <Image
-                priority
                 src={CollActionLogoWithText}
                 alt="black CollAction logo with text"
                 placeholder="blur"
@@ -54,7 +53,6 @@ export default function VeganuaryPage({
 
           <div className="relative block w-full md:w-11/12 lg:w-208 mx-auto">
             <Image
-              priority
               src={Banner}
               alt="veganuary banner"
               className="rounded-1"
@@ -257,7 +255,6 @@ function ImageCard({ card, index }: { card: ImageCard; index: number }) {
     >
       <div className="block w-full h-full overflow-hidden rounded-1">
         <Image
-          priority={index < 2}
           src={card.image}
           alt={card.bottom}
           placeholder="blur"
