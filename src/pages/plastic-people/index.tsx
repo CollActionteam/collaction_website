@@ -25,10 +25,6 @@ export default function ActionIndexPage() {
             <h4 className="text-collaction mt-6 mb-2">
               Plastic waste made fun & easy
             </h4>
-
-            <p className="mb-2">Location: Uilenstede</p>
-            <p className="mb-6">Date: Saturday April 15</p>
-
             <p className="mb-2">
               At{' '}
               <a
@@ -46,11 +42,84 @@ export default function ActionIndexPage() {
               plastic waste. That's how CollAction makes plastic waste fun &
               easy!
             </p>
-
             <p className="mb-2 mt-6">
               Did you run out of transparent plastic bags? Get new ones for free
               at Sportcentrum VU, DUWO or VBU! Black bags get burned :{'('}
             </p>
+            <h4 className="text-collaction mb-4 mt-6">Did you know</h4>
+            <ul style={{ listStyleType: 'disc' }} className="pl-7">
+              <li className="mb-2">
+                <strong>Make your waste valuable by separating it!</strong>{' '}
+                Separate your waste to prevent it from being burned or ending up
+                in landfills. Help nature by enabling the municipality to
+                recycle what you don't use anymore. Your tidy house can equal a
+                happy planet!
+              </li>
+
+              <li className="mb-2">
+                A big problem of recycled plastic is the smell originating from
+                organic material. Therefore, clean your plastic a bit before you
+                put it in your PMD bag and be careful not to put food in it.
+                Furthermore, don't put kit/aerosols/paint cans in PMD, as these
+                might explode in the machines
+              </li>
+              <li className="mb-2">
+                Dutch people throw away 120kg of plastic every year{' '}
+              </li>
+              <li className="mb-2">
+                Every municipality has its own waste policy. For example,
+                Amstelveen collects plastic seperately from general waste (
+                <i>voorsortering</i>), whereas Amsterdam puts everything on one
+                big pile (<i>nasortering</i>)
+              </li>
+              <li className="mb-2">
+                There are 4 worm hotels at Uilenstede that collect bio waste. If
+                you want to sign up for one, send us a message
+              </li>
+              <li className="mb-2">
+                Paper can be recycled and reused 7 times, aluminium cans
+                indefinitely
+              </li>
+              <li className="mb-2">
+                Making one can from raw materials uses the same amount of energy
+                that it takes to recycle 20 cans{' '}
+              </li>
+              <li className="mb-2">
+                Pizza boxes from the pizzeria should be placed in general waste
+                due to the oil in the paper. Pizza boxes from the supermarket
+                are suited for recycling
+              </li>
+
+              <li className="mb-2">
+                It costs €130 (including taxes!) in NL to burn 1000kg of waste
+              </li>
+
+              <li className="mb-2">
+                During 2020, more than 100 billion tonnes of raw materials were
+                extracted from the Earth. 70% of all 2020 greenhouse gas
+                emissions comes from extraction to end use of these materials
+              </li>
+              <li className="mb-2">
+                <a
+                  className="text-collaction"
+                  href="https://www.knapzak.nl/en/5/5-myths-about-separating-waste.aspx"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  5 myths about separating waste by knapzak
+                </a>
+              </li>
+            </ul>
+            Would you like to add something to this list? Send us a message at{' '}
+            <a
+              className="text-collaction"
+              href="mailto:tom@collaction.org"
+              target="_blank"
+              rel="noreferrer"
+            >
+              tom@collaction.org
+            </a>
+            .<h4 className="text-collaction mt-8 ">In collaboration with</h4>
           </div>
         </section>
 
@@ -66,10 +135,6 @@ export default function ActionIndexPage() {
             </div>
           </InfoCard>
         </section> */}
-
-        <div className="mx-auto w-full max-w-350 sm:max-w-400 lg:max-w-600 mb-6 mt-11">
-          <h4 className="text-collaction mb-4">In collaboration with</h4>
-        </div>
 
         <div className="relative block w-full md:w-11/12 lsm:max-w-600 lg:max-w-600 mx-auto mt-6 mb-6">
           <Image
