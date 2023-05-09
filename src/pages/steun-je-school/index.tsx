@@ -9,25 +9,14 @@ import ImageMasonry from 'src/components/ImageMasonry';
 import PageHero from 'src/components/PageHero';
 import HeroImg from 'public/sjs_banner_3imgs.jpg';
 
-import img1 from 'public/sjs/sjs1.jpg';
-import img2 from 'public/sjs/sjs2.jpg';
-import img3 from 'public/sjs/sjs3.jpg';
-import img4 from 'public/sjs/sjs4.jpg';
-import img5 from 'public/sjs/sjs5.jpg';
-import img6 from 'public/sjs/sjs6.jpg';
-import img7 from 'public/sjs/sjs7.jpg';
-import img8 from 'public/sjs/sjs8.jpg';
-import img9 from 'public/sjs/sjs9.jpg';
-import img10 from 'public/sjs/sjs10.jpg';
-import img11 from 'public/sjs/sjs11.jpg';
-import img12 from 'public/sjs/sjs12.jpg';
-import img13 from 'public/sjs/sjs13.jpg';
-import img14 from 'public/sjs/sjs14.jpg';
-import img15 from 'public/sjs/sjs15.jpg';
+import { getSteunJeImages } from 'src/lib/getSteunJeImages';
+import { InferGetStaticPropsType } from 'next';
 
 import collactionTranslations from 'src/helpers/collactionTranslations';
 
-export default function UilenstedeIndexPage() {
+export default function UilenstedeIndexPage({
+  steunJeImages,
+}: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <>
       <PageSEO
@@ -149,23 +138,7 @@ export default function UilenstedeIndexPage() {
             <ImageMasonry
               columnsCountBreakPoints={{ 320: 1, 640: 2, 960: 3, 1280: 4 }}
               gutter="10px"
-              images={[
-                img1,
-                img2,
-                img3,
-                img4,
-                img5,
-                img6,
-                img7,
-                img8,
-                img9,
-                img10,
-                img11,
-                img12,
-                img13,
-                img14,
-                img15,
-              ]}
+              images={steunJeImages}
             />
           </div>
         </section>
@@ -248,8 +221,10 @@ export default function UilenstedeIndexPage() {
 }
 
 export async function getStaticProps({ locale }: { locale: string }) {
+  const steunJeImages = getSteunJeImages();
   return {
     props: {
+      steunJeImages,
       locale,
       ...(await collactionTranslations(locale)),
     },

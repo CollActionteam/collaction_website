@@ -1,9 +1,8 @@
-import { StaticImageData } from 'next/image';
 import Image from 'next/image';
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 
 export interface ImageMasonryProps {
-  images: StaticImageData[];
+  images: string[];
   columnsCountBreakPoints?: {
     [key: number]: number;
   };
@@ -18,14 +17,17 @@ export default function ImageMasonry({
   return (
     <ResponsiveMasonry columnsCountBreakPoints={columnsCountBreakPoints}>
       <Masonry gutter={gutter}>
-        {images.map(image => (
+        {images.map((image, index) => (
           <Image
-            key={image.src}
+            key={index}
             priority
             src={image}
             alt="Actiefoto Image"
             className="rounded object-fit w-full"
             placeholder="blur"
+            blurDataURL={image}
+            height={50}
+            width={50}
           />
         ))}
       </Masonry>
