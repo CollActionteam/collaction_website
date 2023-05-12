@@ -52,7 +52,6 @@ export default function ActionIndexPage() {
 
             <h4 className="mt-8 mb-6 text-center">Program</h4>
             <Image
-              priority
               src={Program1}
               alt="Program Greenlands"
               className="rounded-1"
@@ -64,7 +63,6 @@ export default function ActionIndexPage() {
           <div className="relative block w-full md:w-11/12 lsm:max-w-600 lg:max-w-750 mx-auto mt-6 mb-6">
             <h4 className="text-center mb-6">Stands</h4>
             <Image
-              priority
               src={Program2}
               alt="Program Greenlands"
               className="rounded-1"
@@ -91,7 +89,6 @@ export default function ActionIndexPage() {
               rel="noreferrer"
             >
               <Image
-                priority
                 src={Insta}
                 alt="Instagram Greenlands"
                 className="rounded-1"
@@ -109,7 +106,6 @@ export default function ActionIndexPage() {
               rel="noreferrer"
             >
               <Image
-                priority
                 src={Program2}
                 alt="Program Greenlands"
                 className="rounded-1"

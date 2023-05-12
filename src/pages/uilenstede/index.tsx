@@ -30,7 +30,6 @@ export default function UilenstedeIndexPage() {
         </div>
         <div className="relative block w-full md:w-11/12 lg:w-208 mx-auto">
           <Image
-            priority
             src={Uilenstede_banner}
             alt="westland banner"
             className="rounded-1"
@@ -221,7 +220,6 @@ export default function UilenstedeIndexPage() {
 
         <div className="relative block w-full md:w-11/12 lsm:max-w-600 lg:max-w-600 mx-auto mt-6 mb-6">
           <Image
-            priority
             src={Uilenstede_map}
             alt="westland banner"
             className="rounded-1"
@@ -394,7 +392,6 @@ export default function UilenstedeIndexPage() {
 
         <div className="relative block w-full md:w-11/12 lsm:max-w-600 lg:max-w-600 mx-auto mt-6 mb-6">
           <Image
-            priority
             src={Collaboration}
             alt="uilenstede banner"
             className="rounded-1"

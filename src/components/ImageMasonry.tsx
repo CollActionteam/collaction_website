@@ -21,7 +21,6 @@ export default function ImageMasonry({
         {images.map(image => (
           <Image
             key={image.src}
-            priority
             src={image}
             alt="Actiefoto Image"
             className="rounded object-fit w-full"

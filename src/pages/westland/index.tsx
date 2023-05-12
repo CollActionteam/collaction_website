@@ -41,7 +41,6 @@ export default function WestlandIndexPage() {
         </div>
         <div className="relative block w-full md:w-11/12 lg:w-208 mx-auto">
           <Image
-            priority
             src={WestlandBanner}
             alt="westland banner"
             className="rounded-1"
@@ -115,7 +114,6 @@ export default function WestlandIndexPage() {
 
         <div className="relative block w-full md:w-11/12 lsm:max-w-600 lg:max-w-600 mx-auto mt-6 mb-6">
           <Image
-            priority
             src={Winactie}
             alt="uilenstede banner"
             className="rounded-1"
@@ -307,7 +305,6 @@ export default function WestlandIndexPage() {
       </InfoCard>
       <div className="relative block w-full md:w-11/12 lg:w-208 mx-auto">
         <Image
-          priority
           src={WestlandBanner2}
           alt="westland banner"
           className="rounded-1"
@@ -376,7 +373,6 @@ function ImageCard({ card, index }: { card: ImageCard; index: number }) {
     >
       <div className="block w-full h-full overflow-hidden rounded-1">
         <Image
-          priority={index < 2}
           src={card.image}
           alt={card.bottom}
           placeholder="blur"
