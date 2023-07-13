@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
@@ -15,6 +15,23 @@ import { useTranslation } from 'next-i18next';
 export default function NavBar() {
   const router = useRouter();
   const [navbar, setNavbar] = useState(false);
+  const [navBarHideScrollY, setNavBarHideScrollY] = useState(0);
+  const [isHidden, setIsHidden] = useState(false);
+
+  useEffect(() => {
+    const scrollHandler = () => {
+      if (navBarHideScrollY > window.scrollY) {
+        setIsHidden(false);
+      } else {
+        setIsHidden(true);
+      }
+      setNavBarHideScrollY(window.scrollY);
+    };
+    window.addEventListener('scroll', scrollHandler);
+    return () => {
+      window.removeEventListener('scroll', scrollHandler);
+    };
+  }, [navBarHideScrollY]);
 
   const onToggleLanguageClick = (newLocale: string) => {
     const { pathname, asPath, query } = router;
@@ -28,7 +45,7 @@ export default function NavBar() {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <div className={'sticky top-0 z-30 ' + (isHidden ? 'hidden' : '')}>
       <ToastContainer
         position="bottom-right"
         autoClose={2500}
