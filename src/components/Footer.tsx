@@ -77,8 +77,9 @@ export default function Footer() {
             </li>
             <li className="mb-5">NL20TRIO0391190008</li>
             <li className="mb-5 md:mb-0">
-              Uilenstede 26 <br />
-              1183AH Amstelveen
+              De Molenkamp 10 <br />
+              7822EH Emmen <br />
+              Netherlands
             </li>
           </ul>
         </div>
