@@ -9,7 +9,6 @@ import CollActionLogoWithText from 'public/logo-black-small.png';
 import PoweredByVercel from 'public/powered-by-vercel.svg';
 import { useTranslation } from 'next-i18next';
 
-const phone = '+31640394005';
 const email = 'contact@collaction.org';
 const KvK = '65628608';
 const RSIN = '856193690';
@@ -69,9 +68,6 @@ export default function Footer() {
         <div>
           <h5 className="text-headline mb-5">{t('app:footer.reach')}</h5>
           <ul className="list-none">
-            <li className="mb-5 md:mb-0">
-              <a href={`tel:${phone}`}>{phone}</a>
-            </li>
             <li className="mb-5 md:mb-0">
               <a href={`mailto:${email}`}>hello@collaction.org</a>
             </li>

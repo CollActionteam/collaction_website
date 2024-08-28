@@ -11,7 +11,7 @@ import ContactModal from 'src/components/ContactModal';
 import { v4 } from 'uuid';
 import { toggleBtnState } from 'src/helpers/toggleButtonState';
 
-import HeroImg from 'public/collaction_team.png';
+import HeroImg from 'public/uilenstede_banner.jpg';
 import PageHero from 'src/components/PageHero';
 
 import { useTranslation } from 'next-i18next';
