@@ -170,7 +170,7 @@ export default function VeganuaryPage({
                   placeholder="blur"
                 />
               </div>
-              <h4 className="text-primary-400 mb-5">Join the wave</h4>
+              <h4 className="text-primary-400 mb-5">Join the wave.</h4>
               <p className="text-primary-300">Make impact together.</p>
             </div>
           </div>
