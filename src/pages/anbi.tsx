@@ -48,7 +48,7 @@ export default function Impact() {
             recent annual report, including current policy and other required
             ANBI documentation, can be found
             <a
-              href="https://docs.google.com/document/d/1r80ESRH_BmW57iRAcB7GMRIkLrhwdMr-oy0In3rkXgo/edit?usp=sharing"
+              href="https://drive.google.com/file/d/14HHhbEHDA_BqpKR99RLyBsl68fo6VBvA/view?usp=sharing"
               className="text-collaction"
               target="_blank"
               rel="noreferrer"
